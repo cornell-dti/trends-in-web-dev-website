@@ -1,0 +1,14 @@
+name: continuous-integration
+on: pull_request
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - name: Set up Node
+        uses: actions/setup-node@v1
+      - name: Yarn Install
+        run: yarn install
+      - name: Build Website
+        run: yarn build
