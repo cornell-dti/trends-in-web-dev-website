@@ -2,7 +2,7 @@ module.exports = {
   title: 'Trends in Web Development',
   tagline: 'Course offered by Cornell DTI',
   url: 'https://web-dev.cornelldti.org',
-  baseUrl: '/',
+  baseUrl: '/trends-in-web-dev-website',
   favicon: 'img/logo.png',
   organizationName: 'cornell-dti',
   projectName: 'trends-in-web-dev-website',
