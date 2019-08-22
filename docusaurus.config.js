@@ -71,8 +71,8 @@ module.exports = {
         }
       ],
       logo: {
-        alt: 'Facebook Open Source Logo',
-        src: 'https://docusaurus.io/img/oss_logo.png'
+        alt: 'Cornell DTI Text Logo',
+        src: 'img/dti-text-logo.png'
       },
       copyright: `Copyright © ${new Date().getFullYear()} Cornell Design & Tech Initiative. Built with Docusaurus.`
     }
