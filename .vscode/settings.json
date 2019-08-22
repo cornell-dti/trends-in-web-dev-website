@@ -1,0 +1,5 @@
+{
+  // Let's keep it within 80 so that there won't be ugly line wraps in the
+  // rendered webpage.
+  "editor.rulers": [80]
+}

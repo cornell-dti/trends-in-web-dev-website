@@ -1,0 +1,16 @@
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #1e88e5;
+  --ifm-color-primary-dark: #1976d2;
+  --ifm-color-primary-darker: #1565c0;
+  --ifm-color-primary-darkest: #0d47a1;
+  --ifm-color-primary-light: #2196f3;
+  --ifm-color-primary-lighter: #42a5f5;
+  --ifm-color-primary-lightest: #64b5f6;
+}
+
+pre {
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
