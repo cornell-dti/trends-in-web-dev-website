@@ -5,7 +5,7 @@ module.exports = {
   baseUrl: '/',
   favicon: 'img/logo.png',
   organizationName: 'cornell-dti',
-  projectName: 'web-dev-fa19',
+  projectName: 'trends-in-web-dev-website',
   themeConfig: {
     prismTheme: require('./atom-one-light-theme'),
     navbar: {
