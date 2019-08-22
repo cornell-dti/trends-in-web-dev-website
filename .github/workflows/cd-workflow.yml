@@ -15,4 +15,4 @@ jobs:
           DEPLOY_GH_PAGE_TOKEN: ${{ secrets.DEPLOY_GH_PAGE_TOKEN }}
         run: |
           git config --global user.name "deployment-bot"
-          GIT_USER=$DEPLOY_GH_PAGE_TOKEN yarn workspace blog deploy
+          GIT_USER=$DEPLOY_GH_PAGE_TOKEN yarn deploy
