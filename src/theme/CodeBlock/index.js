@@ -13,8 +13,15 @@ import Clipboard from 'clipboard';
 import atomOneLightTheme from './atom-one-light-theme';
 import styles from './styles.module.css';
 
-const getTheme = () =>
-  localStorage.getItem('theme') === 'dark' ? nightOwlTheme : atomOneLightTheme;
+const getTheme = () => {
+  try {
+    return localStorage.getItem('theme') === 'dark'
+      ? nightOwlTheme
+      : atomOneLightTheme;
+  } catch (e) {
+    return atomOneLightTheme;
+  }
+};
 
 export default ({ children, className: languageClassName }) => {
   const [showCopied, setShowCopied] = useState(false);
