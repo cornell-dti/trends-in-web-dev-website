@@ -1,10 +1,6 @@
 ---
 id: lecture3
-title: Lecture 3 - Random JS Facts
+title: Lecture 3 - Frontend 2
 ---
 
-## Random Facts
-
-- `undefined == null`
-- `this` is fun.
-- Classes are functions.
+TODO
