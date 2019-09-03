@@ -1,7 +1,7 @@
 {
   "main": [
-    "/trends-in-web-dev-website/main.389bacb7c45d0d5e1bbd.css",
-    "/trends-in-web-dev-website/main.5a46a47a0c69ac572f78.js"
+    "/trends-in-web-dev-website/main.e33862e5bb126119e5a8.css",
+    "/trends-in-web-dev-website/main.4664aa02658ae02e525c.js"
   ],
   "component---site-src-pages-index-jsc-4-f-f99": [
     "/trends-in-web-dev-website/component---site-src-pages-index-jsc-4-f-f99.2003f819dd6df14076c8.css",
@@ -12,7 +12,7 @@
     "/trends-in-web-dev-website/component---theme-doc-legacy-page-9-e-7-ca5.d358e7bdb6cce8f44ae6.js"
   ],
   "docsMetadata---trends-in-web-dev-website-docsbbb-88b": [
-    "/trends-in-web-dev-website/docsMetadata---trends-in-web-dev-website-docsbbb-88b.7c51443092415b77da7c.js"
+    "/trends-in-web-dev-website/docsMetadata---trends-in-web-dev-website-docsbbb-88b.f3af5da032becbfebf54.js"
   ],
   "component---theme-doc-legacy-item-031-769": [
     "/trends-in-web-dev-website/component---theme-doc-legacy-item-031-769.1f1ce10374de019f5d3a.css",
@@ -25,10 +25,10 @@
     "/trends-in-web-dev-website/metadata---trends-in-web-dev-website-docs-introductiond-8-f-b0b.cf21fe9c0200b9b43979.js"
   ],
   "content---trends-in-web-dev-website-docs-lecture-1731-203": [
-    "/trends-in-web-dev-website/content---trends-in-web-dev-website-docs-lecture-1731-203.68da0dd4a29b64be4976.js"
+    "/trends-in-web-dev-website/content---trends-in-web-dev-website-docs-lecture-1731-203.ca29c9ccbf10fdd42f1b.js"
   ],
   "metadata---trends-in-web-dev-website-docs-lecture-10-f-3-6ce": [
-    "/trends-in-web-dev-website/metadata---trends-in-web-dev-website-docs-lecture-10-f-3-6ce.312b452d1a1c35b2f07f.js"
+    "/trends-in-web-dev-website/metadata---trends-in-web-dev-website-docs-lecture-10-f-3-6ce.cd143b543d94eda3f79b.js"
   ],
   "content---trends-in-web-dev-website-docs-lecture-10558-e1e": [
     "/trends-in-web-dev-website/content---trends-in-web-dev-website-docs-lecture-10558-e1e.2223a229db4a3db5f7c7.js"
@@ -37,34 +37,34 @@
     "/trends-in-web-dev-website/metadata---trends-in-web-dev-website-docs-lecture-10-b-97-b82.a27fc70d4ea2a510987f.js"
   ],
   "content---trends-in-web-dev-website-docs-lecture-2-e-17-8bc": [
-    "/trends-in-web-dev-website/content---trends-in-web-dev-website-docs-lecture-2-e-17-8bc.b8a4c20fa480a3ff6be1.js"
+    "/trends-in-web-dev-website/content---trends-in-web-dev-website-docs-lecture-2-e-17-8bc.3b34d9fc0b799c3930f8.js"
   ],
   "metadata---trends-in-web-dev-website-docs-lecture-21-bd-485": [
-    "/trends-in-web-dev-website/metadata---trends-in-web-dev-website-docs-lecture-21-bd-485.f4755fbd38b6cfaf3ce4.js"
-  ],
-  "content---trends-in-web-dev-website-docs-lecture-3325-d79": [
-    "/trends-in-web-dev-website/content---trends-in-web-dev-website-docs-lecture-3325-d79.50690c0f058ae88030e1.js"
-  ],
-  "metadata---trends-in-web-dev-website-docs-lecture-338-f-14e": [
-    "/trends-in-web-dev-website/metadata---trends-in-web-dev-website-docs-lecture-338-f-14e.2a2888edc12fe8edd016.js"
+    "/trends-in-web-dev-website/metadata---trends-in-web-dev-website-docs-lecture-21-bd-485.3e050a46814b4931d6ea.js"
   ],
   "content---trends-in-web-dev-website-docs-lecture-4-cf-8-27d": [
-    "/trends-in-web-dev-website/content---trends-in-web-dev-website-docs-lecture-4-cf-8-27d.4372be871a31969a7cb8.js"
+    "/trends-in-web-dev-website/content---trends-in-web-dev-website-docs-lecture-4-cf-8-27d.51155ef6c6557d81296a.js"
   ],
   "metadata---trends-in-web-dev-website-docs-lecture-482-b-14f": [
-    "/trends-in-web-dev-website/metadata---trends-in-web-dev-website-docs-lecture-482-b-14f.5a6a0995602fff8c810b.js"
+    "/trends-in-web-dev-website/metadata---trends-in-web-dev-website-docs-lecture-482-b-14f.0e9b37aa4cb3bfde9833.js"
   ],
   "content---trends-in-web-dev-website-docs-lecture-575-e-c26": [
-    "/trends-in-web-dev-website/content---trends-in-web-dev-website-docs-lecture-575-e-c26.2755e959123866a12573.js"
+    "/trends-in-web-dev-website/content---trends-in-web-dev-website-docs-lecture-575-e-c26.b3f800a9f02f84fb82ff.js"
   ],
   "metadata---trends-in-web-dev-website-docs-lecture-5-e-98-435": [
-    "/trends-in-web-dev-website/metadata---trends-in-web-dev-website-docs-lecture-5-e-98-435.9a226d6b1f52e99edfcf.js"
+    "/trends-in-web-dev-website/metadata---trends-in-web-dev-website-docs-lecture-5-e-98-435.fabc2d2f05f005e50700.js"
+  ],
+  "content---trends-in-web-dev-website-docs-lecture-3325-d79": [
+    "/trends-in-web-dev-website/content---trends-in-web-dev-website-docs-lecture-3325-d79.8c0de246c6e7a1b4a0e6.js"
+  ],
+  "metadata---trends-in-web-dev-website-docs-lecture-338-f-14e": [
+    "/trends-in-web-dev-website/metadata---trends-in-web-dev-website-docs-lecture-338-f-14e.d60f397b5019e4b8a355.js"
   ],
   "content---trends-in-web-dev-website-docs-lecture-6-b-1-c-510": [
     "/trends-in-web-dev-website/content---trends-in-web-dev-website-docs-lecture-6-b-1-c-510.413d6fc51b7b5c2308fe.js"
   ],
   "metadata---trends-in-web-dev-website-docs-lecture-6-cca-4ac": [
-    "/trends-in-web-dev-website/metadata---trends-in-web-dev-website-docs-lecture-6-cca-4ac.d76585025908da4f9e2b.js"
+    "/trends-in-web-dev-website/metadata---trends-in-web-dev-website-docs-lecture-6-cca-4ac.d6a5645bbaa68ec8e90f.js"
   ],
   "content---trends-in-web-dev-website-docs-lecture-8-eee-ab0": [
     "/trends-in-web-dev-website/content---trends-in-web-dev-website-docs-lecture-8-eee-ab0.d009ed279e34fab4a1c7.js"
@@ -82,7 +82,7 @@
     "/trends-in-web-dev-website/content---trends-in-web-dev-website-docs-setup-editor-264-858.57a03bf33e9fc5a6074d.js"
   ],
   "metadata---trends-in-web-dev-website-docs-setup-editorbc-1-b5c": [
-    "/trends-in-web-dev-website/metadata---trends-in-web-dev-website-docs-setup-editorbc-1-b5c.223d69b6ae92c4d9b1c9.js"
+    "/trends-in-web-dev-website/metadata---trends-in-web-dev-website-docs-setup-editorbc-1-b5c.6147ad1c401c7af46e30.js"
   ],
   "content---trends-in-web-dev-website-docs-setup-environmentd-04-718": [
     "/trends-in-web-dev-website/content---trends-in-web-dev-website-docs-setup-environmentd-04-718.33bc231be8646abaeb66.js"
