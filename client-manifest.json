@@ -74,50 +74,50 @@
     "@site/docs/setup-environment.md": [
       17
     ],
-    "/home/runner/work/trends-in-web-dev-website/trends-in-web-dev-website/.docusaurus/docusaurus-plugin-content-docs/trends-in-web-dev-website-docs-835.json": [
+    "/home/runner/work/trends-in-web-dev-website/trends-in-web-dev-website/.docusaurus/docusaurus-plugin-content-docs/docs-b5f.json": [
       18
     ],
     "main": [
       33,
       19
     ],
-    "/home/runner/work/trends-in-web-dev-website/trends-in-web-dev-website/.docusaurus/docusaurus-plugin-content-docs/trends-in-web-dev-website-docs-introduction-01d.json": [
+    "/home/runner/work/trends-in-web-dev-website/trends-in-web-dev-website/.docusaurus/docusaurus-plugin-content-docs/docs-introduction-bf7.json": [
       20
     ],
-    "/home/runner/work/trends-in-web-dev-website/trends-in-web-dev-website/.docusaurus/docusaurus-plugin-content-docs/trends-in-web-dev-website-docs-lecture-10-f3c.json": [
+    "/home/runner/work/trends-in-web-dev-website/trends-in-web-dev-website/.docusaurus/docusaurus-plugin-content-docs/docs-lecture-10-894.json": [
       21
     ],
-    "/home/runner/work/trends-in-web-dev-website/trends-in-web-dev-website/.docusaurus/docusaurus-plugin-content-docs/trends-in-web-dev-website-docs-lecture-1-76d.json": [
+    "/home/runner/work/trends-in-web-dev-website/trends-in-web-dev-website/.docusaurus/docusaurus-plugin-content-docs/docs-lecture-1-3ca.json": [
       22
     ],
-    "/home/runner/work/trends-in-web-dev-website/trends-in-web-dev-website/.docusaurus/docusaurus-plugin-content-docs/trends-in-web-dev-website-docs-lecture-2-fd4.json": [
+    "/home/runner/work/trends-in-web-dev-website/trends-in-web-dev-website/.docusaurus/docusaurus-plugin-content-docs/docs-lecture-2-67d.json": [
       23
     ],
-    "/home/runner/work/trends-in-web-dev-website/trends-in-web-dev-website/.docusaurus/docusaurus-plugin-content-docs/trends-in-web-dev-website-docs-lecture-3-ee2.json": [
+    "/home/runner/work/trends-in-web-dev-website/trends-in-web-dev-website/.docusaurus/docusaurus-plugin-content-docs/docs-lecture-3-776.json": [
       24
     ],
-    "/home/runner/work/trends-in-web-dev-website/trends-in-web-dev-website/.docusaurus/docusaurus-plugin-content-docs/trends-in-web-dev-website-docs-lecture-4-7c9.json": [
+    "/home/runner/work/trends-in-web-dev-website/trends-in-web-dev-website/.docusaurus/docusaurus-plugin-content-docs/docs-lecture-4-f37.json": [
       25
     ],
-    "/home/runner/work/trends-in-web-dev-website/trends-in-web-dev-website/.docusaurus/docusaurus-plugin-content-docs/trends-in-web-dev-website-docs-lecture-5-7f4.json": [
+    "/home/runner/work/trends-in-web-dev-website/trends-in-web-dev-website/.docusaurus/docusaurus-plugin-content-docs/docs-lecture-5-079.json": [
       26
     ],
-    "/home/runner/work/trends-in-web-dev-website/trends-in-web-dev-website/.docusaurus/docusaurus-plugin-content-docs/trends-in-web-dev-website-docs-lecture-6-622.json": [
+    "/home/runner/work/trends-in-web-dev-website/trends-in-web-dev-website/.docusaurus/docusaurus-plugin-content-docs/docs-lecture-6-395.json": [
       27
     ],
-    "/home/runner/work/trends-in-web-dev-website/trends-in-web-dev-website/.docusaurus/docusaurus-plugin-content-docs/trends-in-web-dev-website-docs-lecture-7-439.json": [
+    "/home/runner/work/trends-in-web-dev-website/trends-in-web-dev-website/.docusaurus/docusaurus-plugin-content-docs/docs-lecture-7-44d.json": [
       28
     ],
-    "/home/runner/work/trends-in-web-dev-website/trends-in-web-dev-website/.docusaurus/docusaurus-plugin-content-docs/trends-in-web-dev-website-docs-lecture-8-ff2.json": [
+    "/home/runner/work/trends-in-web-dev-website/trends-in-web-dev-website/.docusaurus/docusaurus-plugin-content-docs/docs-lecture-8-c14.json": [
       29
     ],
-    "/home/runner/work/trends-in-web-dev-website/trends-in-web-dev-website/.docusaurus/docusaurus-plugin-content-docs/trends-in-web-dev-website-docs-lecture-9-337.json": [
+    "/home/runner/work/trends-in-web-dev-website/trends-in-web-dev-website/.docusaurus/docusaurus-plugin-content-docs/docs-lecture-9-ee6.json": [
       30
     ],
-    "/home/runner/work/trends-in-web-dev-website/trends-in-web-dev-website/.docusaurus/docusaurus-plugin-content-docs/trends-in-web-dev-website-docs-setup-editor-03b.json": [
+    "/home/runner/work/trends-in-web-dev-website/trends-in-web-dev-website/.docusaurus/docusaurus-plugin-content-docs/docs-setup-editor-daf.json": [
       31
     ],
-    "/home/runner/work/trends-in-web-dev-website/trends-in-web-dev-website/.docusaurus/docusaurus-plugin-content-docs/trends-in-web-dev-website-docs-setup-environment-223.json": [
+    "/home/runner/work/trends-in-web-dev-website/trends-in-web-dev-website/.docusaurus/docusaurus-plugin-content-docs/docs-setup-environment-d1d.json": [
       32
     ],
     "runtime~main": [
@@ -142,7 +142,7 @@
         {
           "file": "0.46d7ca5d83a7f31f3f4f.js",
           "hash": "04b717a53bf9c4d379ac",
-          "publicPath": "/trends-in-web-dev-website/0.46d7ca5d83a7f31f3f4f.js"
+          "publicPath": "/0.46d7ca5d83a7f31f3f4f.js"
         }
       ]
     },
@@ -151,14 +151,14 @@
         {
           "file": "1.196ce05925ea6d776920.css",
           "hash": "8773eaa7b3f229320a25",
-          "publicPath": "/trends-in-web-dev-website/1.196ce05925ea6d776920.css"
+          "publicPath": "/1.196ce05925ea6d776920.css"
         }
       ],
       "js": [
         {
           "file": "1.808655ec42494dfa7d22.js",
           "hash": "8773eaa7b3f229320a25",
-          "publicPath": "/trends-in-web-dev-website/1.808655ec42494dfa7d22.js"
+          "publicPath": "/1.808655ec42494dfa7d22.js"
         }
       ]
     },
@@ -167,14 +167,14 @@
         {
           "file": "component---site-src-pages-index-jsc-4-f-f99.2003f819dd6df14076c8.css",
           "hash": "0ff0e2b9b6cf50b4c355",
-          "publicPath": "/trends-in-web-dev-website/component---site-src-pages-index-jsc-4-f-f99.2003f819dd6df14076c8.css"
+          "publicPath": "/component---site-src-pages-index-jsc-4-f-f99.2003f819dd6df14076c8.css"
         }
       ],
       "js": [
         {
           "file": "component---site-src-pages-index-jsc-4-f-f99.329d9e9aa30376af01fd.js",
           "hash": "0ff0e2b9b6cf50b4c355",
-          "publicPath": "/trends-in-web-dev-website/component---site-src-pages-index-jsc-4-f-f99.329d9e9aa30376af01fd.js"
+          "publicPath": "/component---site-src-pages-index-jsc-4-f-f99.329d9e9aa30376af01fd.js"
         }
       ]
     },
@@ -183,14 +183,14 @@
         {
           "file": "component---theme-doc-legacy-item-031-769.1f1ce10374de019f5d3a.css",
           "hash": "34a39da34d88a0231c03",
-          "publicPath": "/trends-in-web-dev-website/component---theme-doc-legacy-item-031-769.1f1ce10374de019f5d3a.css"
+          "publicPath": "/component---theme-doc-legacy-item-031-769.1f1ce10374de019f5d3a.css"
         }
       ],
       "js": [
         {
           "file": "component---theme-doc-legacy-item-031-769.60a6cccd9cb18a7a8653.js",
           "hash": "34a39da34d88a0231c03",
-          "publicPath": "/trends-in-web-dev-website/component---theme-doc-legacy-item-031-769.60a6cccd9cb18a7a8653.js"
+          "publicPath": "/component---theme-doc-legacy-item-031-769.60a6cccd9cb18a7a8653.js"
         }
       ]
     },
@@ -199,140 +199,140 @@
         {
           "file": "component---theme-doc-legacy-page-9-e-7-ca5.53f8d74e5c130f3e75d5.css",
           "hash": "490e755d0054152bf875",
-          "publicPath": "/trends-in-web-dev-website/component---theme-doc-legacy-page-9-e-7-ca5.53f8d74e5c130f3e75d5.css"
+          "publicPath": "/component---theme-doc-legacy-page-9-e-7-ca5.53f8d74e5c130f3e75d5.css"
         }
       ],
       "js": [
         {
           "file": "component---theme-doc-legacy-page-9-e-7-ca5.d358e7bdb6cce8f44ae6.js",
           "hash": "490e755d0054152bf875",
-          "publicPath": "/trends-in-web-dev-website/component---theme-doc-legacy-page-9-e-7-ca5.d358e7bdb6cce8f44ae6.js"
+          "publicPath": "/component---theme-doc-legacy-page-9-e-7-ca5.d358e7bdb6cce8f44ae6.js"
         }
       ]
     },
     "5": {
       "js": [
         {
-          "file": "content---trends-in-web-dev-website-docs-introductiona-09-b34.7ea60c4d5363dab7a904.js",
-          "hash": "dd9dadf2fd213d80b86c",
-          "publicPath": "/trends-in-web-dev-website/content---trends-in-web-dev-website-docs-introductiona-09-b34.7ea60c4d5363dab7a904.js"
+          "file": "content---docs-introductiona-09-6b4.7ea60c4d5363dab7a904.js",
+          "hash": "e257d52f5ffc63d8f6c9",
+          "publicPath": "/content---docs-introductiona-09-6b4.7ea60c4d5363dab7a904.js"
         }
       ]
     },
     "6": {
       "js": [
         {
-          "file": "content---trends-in-web-dev-website-docs-lecture-10558-e1e.2223a229db4a3db5f7c7.js",
-          "hash": "eb810c64d5937a2c2c17",
-          "publicPath": "/trends-in-web-dev-website/content---trends-in-web-dev-website-docs-lecture-10558-e1e.2223a229db4a3db5f7c7.js"
+          "file": "content---docs-lecture-10558-5fc.2223a229db4a3db5f7c7.js",
+          "hash": "0d4f1a799335d6d45d48",
+          "publicPath": "/content---docs-lecture-10558-5fc.2223a229db4a3db5f7c7.js"
         }
       ]
     },
     "7": {
       "js": [
         {
-          "file": "content---trends-in-web-dev-website-docs-lecture-1731-203.ca29c9ccbf10fdd42f1b.js",
-          "hash": "958c6f87659dd24dd241",
-          "publicPath": "/trends-in-web-dev-website/content---trends-in-web-dev-website-docs-lecture-1731-203.ca29c9ccbf10fdd42f1b.js"
+          "file": "content---docs-lecture-1731-db9.ca29c9ccbf10fdd42f1b.js",
+          "hash": "37772b97ad9c96870d83",
+          "publicPath": "/content---docs-lecture-1731-db9.ca29c9ccbf10fdd42f1b.js"
         }
       ]
     },
     "8": {
       "js": [
         {
-          "file": "content---trends-in-web-dev-website-docs-lecture-2-e-17-8bc.3b34d9fc0b799c3930f8.js",
-          "hash": "78737a569f3cc9bd4b7f",
-          "publicPath": "/trends-in-web-dev-website/content---trends-in-web-dev-website-docs-lecture-2-e-17-8bc.3b34d9fc0b799c3930f8.js"
+          "file": "content---docs-lecture-2-e-17-e6f.3b34d9fc0b799c3930f8.js",
+          "hash": "87295b37eff1f173efdd",
+          "publicPath": "/content---docs-lecture-2-e-17-e6f.3b34d9fc0b799c3930f8.js"
         }
       ]
     },
     "9": {
       "js": [
         {
-          "file": "content---trends-in-web-dev-website-docs-lecture-3325-d79.8c0de246c6e7a1b4a0e6.js",
-          "hash": "d71d132e24dcbe2f2261",
-          "publicPath": "/trends-in-web-dev-website/content---trends-in-web-dev-website-docs-lecture-3325-d79.8c0de246c6e7a1b4a0e6.js"
+          "file": "content---docs-lecture-3325-a5d.bf7715494b2b940a0619.js",
+          "hash": "421382eae4eb84beee4b",
+          "publicPath": "/content---docs-lecture-3325-a5d.bf7715494b2b940a0619.js"
         }
       ]
     },
     "10": {
       "js": [
         {
-          "file": "content---trends-in-web-dev-website-docs-lecture-4-cf-8-27d.51155ef6c6557d81296a.js",
-          "hash": "0f4a80c1401932304ae5",
-          "publicPath": "/trends-in-web-dev-website/content---trends-in-web-dev-website-docs-lecture-4-cf-8-27d.51155ef6c6557d81296a.js"
+          "file": "content---docs-lecture-4-cf-8-fc3.4f506b1a2ff3f2449ffd.js",
+          "hash": "226e4a5fc66e6520f64c",
+          "publicPath": "/content---docs-lecture-4-cf-8-fc3.4f506b1a2ff3f2449ffd.js"
         }
       ]
     },
     "11": {
       "js": [
         {
-          "file": "content---trends-in-web-dev-website-docs-lecture-575-e-c26.b3f800a9f02f84fb82ff.js",
-          "hash": "9aaf159243ca7491a289",
-          "publicPath": "/trends-in-web-dev-website/content---trends-in-web-dev-website-docs-lecture-575-e-c26.b3f800a9f02f84fb82ff.js"
+          "file": "content---docs-lecture-575-e-7b5.c605dd993cd585526065.js",
+          "hash": "e016e0f7f319036dc7bb",
+          "publicPath": "/content---docs-lecture-575-e-7b5.c605dd993cd585526065.js"
         }
       ]
     },
     "12": {
       "js": [
         {
-          "file": "content---trends-in-web-dev-website-docs-lecture-6-b-1-c-510.413d6fc51b7b5c2308fe.js",
-          "hash": "db66ed05632a4007e5c6",
-          "publicPath": "/trends-in-web-dev-website/content---trends-in-web-dev-website-docs-lecture-6-b-1-c-510.413d6fc51b7b5c2308fe.js"
+          "file": "content---docs-lecture-6-b-1-c-f07.413d6fc51b7b5c2308fe.js",
+          "hash": "0e79ad584864a287bbd3",
+          "publicPath": "/content---docs-lecture-6-b-1-c-f07.413d6fc51b7b5c2308fe.js"
         }
       ]
     },
     "13": {
       "js": [
         {
-          "file": "content---trends-in-web-dev-website-docs-lecture-73-ac-7c9.66b8dc928d6456075793.js",
-          "hash": "4ed970ef2d415b67e54a",
-          "publicPath": "/trends-in-web-dev-website/content---trends-in-web-dev-website-docs-lecture-73-ac-7c9.66b8dc928d6456075793.js"
+          "file": "content---docs-lecture-73-ac-9a0.66b8dc928d6456075793.js",
+          "hash": "cda728efffb8eab02652",
+          "publicPath": "/content---docs-lecture-73-ac-9a0.66b8dc928d6456075793.js"
         }
       ]
     },
     "14": {
       "js": [
         {
-          "file": "content---trends-in-web-dev-website-docs-lecture-8-eee-ab0.d009ed279e34fab4a1c7.js",
-          "hash": "a639fcbdf0483479b318",
-          "publicPath": "/trends-in-web-dev-website/content---trends-in-web-dev-website-docs-lecture-8-eee-ab0.d009ed279e34fab4a1c7.js"
+          "file": "content---docs-lecture-8-eee-b9d.d009ed279e34fab4a1c7.js",
+          "hash": "af2351ee327375e5ba46",
+          "publicPath": "/content---docs-lecture-8-eee-b9d.d009ed279e34fab4a1c7.js"
         }
       ]
     },
     "15": {
       "js": [
         {
-          "file": "content---trends-in-web-dev-website-docs-lecture-95-d-0-de7.f6ce534872dcfad9bbd3.js",
-          "hash": "37e15f56da48e738b721",
-          "publicPath": "/trends-in-web-dev-website/content---trends-in-web-dev-website-docs-lecture-95-d-0-de7.f6ce534872dcfad9bbd3.js"
+          "file": "content---docs-lecture-95-d-0-ab2.f6ce534872dcfad9bbd3.js",
+          "hash": "8d582c9c58f26ee7a8ba",
+          "publicPath": "/content---docs-lecture-95-d-0-ab2.f6ce534872dcfad9bbd3.js"
         }
       ]
     },
     "16": {
       "js": [
         {
-          "file": "content---trends-in-web-dev-website-docs-setup-editor-264-858.57a03bf33e9fc5a6074d.js",
-          "hash": "aac44c10f3ab9e0623a2",
-          "publicPath": "/trends-in-web-dev-website/content---trends-in-web-dev-website-docs-setup-editor-264-858.57a03bf33e9fc5a6074d.js"
+          "file": "content---docs-setup-editor-264-80b.57a03bf33e9fc5a6074d.js",
+          "hash": "5daab555591aa593c639",
+          "publicPath": "/content---docs-setup-editor-264-80b.57a03bf33e9fc5a6074d.js"
         }
       ]
     },
     "17": {
       "js": [
         {
-          "file": "content---trends-in-web-dev-website-docs-setup-environmentd-04-718.33bc231be8646abaeb66.js",
-          "hash": "b83c56f8f72aa1a02efb",
-          "publicPath": "/trends-in-web-dev-website/content---trends-in-web-dev-website-docs-setup-environmentd-04-718.33bc231be8646abaeb66.js"
+          "file": "content---docs-setup-environmentd-04-b1c.33bc231be8646abaeb66.js",
+          "hash": "62cfae687d2bfcdd4b59",
+          "publicPath": "/content---docs-setup-environmentd-04-b1c.33bc231be8646abaeb66.js"
         }
       ]
     },
     "18": {
       "js": [
         {
-          "file": "docsMetadata---trends-in-web-dev-website-docsbbb-88b.f3af5da032becbfebf54.js",
-          "hash": "0ab892fa2db3c663aa98",
-          "publicPath": "/trends-in-web-dev-website/docsMetadata---trends-in-web-dev-website-docsbbb-88b.f3af5da032becbfebf54.js"
+          "file": "docsMetadata---docsd-50-757.3d5ecd7bcb45580dfbe3.js",
+          "hash": "a90bf8da6cb8839b6b54",
+          "publicPath": "/docsMetadata---docsd-50-757.3d5ecd7bcb45580dfbe3.js"
         }
       ]
     },
@@ -340,141 +340,141 @@
       "css": [
         {
           "file": "main.e33862e5bb126119e5a8.css",
-          "hash": "c24e5c7527fef7b3b889",
-          "publicPath": "/trends-in-web-dev-website/main.e33862e5bb126119e5a8.css"
+          "hash": "1424d115119f4c2d2169",
+          "publicPath": "/main.e33862e5bb126119e5a8.css"
         }
       ],
       "js": [
         {
-          "file": "main.4664aa02658ae02e525c.js",
-          "hash": "c24e5c7527fef7b3b889",
-          "publicPath": "/trends-in-web-dev-website/main.4664aa02658ae02e525c.js"
+          "file": "main.93be71b2164776a19482.js",
+          "hash": "1424d115119f4c2d2169",
+          "publicPath": "/main.93be71b2164776a19482.js"
         }
       ]
     },
     "20": {
       "js": [
         {
-          "file": "metadata---trends-in-web-dev-website-docs-introductiond-8-f-b0b.cf21fe9c0200b9b43979.js",
-          "hash": "93ffd8e88f5cbd026cc9",
-          "publicPath": "/trends-in-web-dev-website/metadata---trends-in-web-dev-website-docs-introductiond-8-f-b0b.cf21fe9c0200b9b43979.js"
+          "file": "metadata---docs-introduction-469-0ce.b3123ebf40c8e6fe71aa.js",
+          "hash": "1c91c1b2fb1c9d9df451",
+          "publicPath": "/metadata---docs-introduction-469-0ce.b3123ebf40c8e6fe71aa.js"
         }
       ]
     },
     "21": {
       "js": [
         {
-          "file": "metadata---trends-in-web-dev-website-docs-lecture-10-b-97-b82.a27fc70d4ea2a510987f.js",
-          "hash": "f5e2a19c0e6df6458334",
-          "publicPath": "/trends-in-web-dev-website/metadata---trends-in-web-dev-website-docs-lecture-10-b-97-b82.a27fc70d4ea2a510987f.js"
+          "file": "metadata---docs-lecture-107-a-8-3d7.f042377430367fc2aeaf.js",
+          "hash": "5cbcadd7571026391467",
+          "publicPath": "/metadata---docs-lecture-107-a-8-3d7.f042377430367fc2aeaf.js"
         }
       ]
     },
     "22": {
       "js": [
         {
-          "file": "metadata---trends-in-web-dev-website-docs-lecture-10-f-3-6ce.cd143b543d94eda3f79b.js",
-          "hash": "536bd46f5a78ba1df7b9",
-          "publicPath": "/trends-in-web-dev-website/metadata---trends-in-web-dev-website-docs-lecture-10-f-3-6ce.cd143b543d94eda3f79b.js"
+          "file": "metadata---docs-lecture-17-f-2-df1.c66f78c229ca00d0f0d7.js",
+          "hash": "f4a761df853a854a3f96",
+          "publicPath": "/metadata---docs-lecture-17-f-2-df1.c66f78c229ca00d0f0d7.js"
         }
       ]
     },
     "23": {
       "js": [
         {
-          "file": "metadata---trends-in-web-dev-website-docs-lecture-21-bd-485.3e050a46814b4931d6ea.js",
-          "hash": "bb443f2f233cf91c59a7",
-          "publicPath": "/trends-in-web-dev-website/metadata---trends-in-web-dev-website-docs-lecture-21-bd-485.3e050a46814b4931d6ea.js"
+          "file": "metadata---docs-lecture-2-bbf-62e.8d19462a863f2ef34e66.js",
+          "hash": "f75882d330b6da25102f",
+          "publicPath": "/metadata---docs-lecture-2-bbf-62e.8d19462a863f2ef34e66.js"
         }
       ]
     },
     "24": {
       "js": [
         {
-          "file": "metadata---trends-in-web-dev-website-docs-lecture-338-f-14e.d60f397b5019e4b8a355.js",
-          "hash": "f17318253a9009c94848",
-          "publicPath": "/trends-in-web-dev-website/metadata---trends-in-web-dev-website-docs-lecture-338-f-14e.d60f397b5019e4b8a355.js"
+          "file": "metadata---docs-lecture-3-b-60-86d.4ed78fdd9aadd24ff084.js",
+          "hash": "76bcd04355d5e906e5e6",
+          "publicPath": "/metadata---docs-lecture-3-b-60-86d.4ed78fdd9aadd24ff084.js"
         }
       ]
     },
     "25": {
       "js": [
         {
-          "file": "metadata---trends-in-web-dev-website-docs-lecture-482-b-14f.0e9b37aa4cb3bfde9833.js",
-          "hash": "3b9efac5d7d2d5492b70",
-          "publicPath": "/trends-in-web-dev-website/metadata---trends-in-web-dev-website-docs-lecture-482-b-14f.0e9b37aa4cb3bfde9833.js"
+          "file": "metadata---docs-lecture-4520-c11.0f2a23df75706bdb9172.js",
+          "hash": "78d582e9b4d3c89d92d3",
+          "publicPath": "/metadata---docs-lecture-4520-c11.0f2a23df75706bdb9172.js"
         }
       ]
     },
     "26": {
       "js": [
         {
-          "file": "metadata---trends-in-web-dev-website-docs-lecture-5-e-98-435.fabc2d2f05f005e50700.js",
-          "hash": "133cd1517f2e16897f01",
-          "publicPath": "/trends-in-web-dev-website/metadata---trends-in-web-dev-website-docs-lecture-5-e-98-435.fabc2d2f05f005e50700.js"
+          "file": "metadata---docs-lecture-5-dae-e39.6a8cfd70a1afd6ba3390.js",
+          "hash": "4630f4a49053e13d13cd",
+          "publicPath": "/metadata---docs-lecture-5-dae-e39.6a8cfd70a1afd6ba3390.js"
         }
       ]
     },
     "27": {
       "js": [
         {
-          "file": "metadata---trends-in-web-dev-website-docs-lecture-6-cca-4ac.d6a5645bbaa68ec8e90f.js",
-          "hash": "17c3ce57a2deb9a57a6f",
-          "publicPath": "/trends-in-web-dev-website/metadata---trends-in-web-dev-website-docs-lecture-6-cca-4ac.d6a5645bbaa68ec8e90f.js"
+          "file": "metadata---docs-lecture-6-be-3-f6c.1a7fab6d12d63c733cee.js",
+          "hash": "7a33c6e248b6278957b5",
+          "publicPath": "/metadata---docs-lecture-6-be-3-f6c.1a7fab6d12d63c733cee.js"
         }
       ]
     },
     "28": {
       "js": [
         {
-          "file": "metadata---trends-in-web-dev-website-docs-lecture-7-d-49-3bd.6976467eff2e88cf3bd0.js",
-          "hash": "a1646ad95521b763210d",
-          "publicPath": "/trends-in-web-dev-website/metadata---trends-in-web-dev-website-docs-lecture-7-d-49-3bd.6976467eff2e88cf3bd0.js"
+          "file": "metadata---docs-lecture-7-b-18-761.c71928b255360619979c.js",
+          "hash": "9c49c84fdf5f9e43630c",
+          "publicPath": "/metadata---docs-lecture-7-b-18-761.c71928b255360619979c.js"
         }
       ]
     },
     "29": {
       "js": [
         {
-          "file": "metadata---trends-in-web-dev-website-docs-lecture-82-ad-80c.ccabd14360ba0b101708.js",
-          "hash": "27f5d7d5892b28bcb790",
-          "publicPath": "/trends-in-web-dev-website/metadata---trends-in-web-dev-website-docs-lecture-82-ad-80c.ccabd14360ba0b101708.js"
+          "file": "metadata---docs-lecture-82-fb-4c9.651e316b164f27605f9f.js",
+          "hash": "d9a9ef3a7cc7faf26e60",
+          "publicPath": "/metadata---docs-lecture-82-fb-4c9.651e316b164f27605f9f.js"
         }
       ]
     },
     "30": {
       "js": [
         {
-          "file": "metadata---trends-in-web-dev-website-docs-lecture-9-b-93-336.231c1b46308fba6e7378.js",
-          "hash": "2a61404533101dfb4edc",
-          "publicPath": "/trends-in-web-dev-website/metadata---trends-in-web-dev-website-docs-lecture-9-b-93-336.231c1b46308fba6e7378.js"
+          "file": "metadata---docs-lecture-98-bd-3be.25344e61662e25911cc6.js",
+          "hash": "5b4036503e99e5cccb39",
+          "publicPath": "/metadata---docs-lecture-98-bd-3be.25344e61662e25911cc6.js"
         }
       ]
     },
     "31": {
       "js": [
         {
-          "file": "metadata---trends-in-web-dev-website-docs-setup-editorbc-1-b5c.6147ad1c401c7af46e30.js",
-          "hash": "21075e7550609b52fffe",
-          "publicPath": "/trends-in-web-dev-website/metadata---trends-in-web-dev-website-docs-setup-editorbc-1-b5c.6147ad1c401c7af46e30.js"
+          "file": "metadata---docs-setup-editor-5-d-8-316.72e75b7e6d0650da128e.js",
+          "hash": "fcec0a3cf4d75ff96a8d",
+          "publicPath": "/metadata---docs-setup-editor-5-d-8-316.72e75b7e6d0650da128e.js"
         }
       ]
     },
     "32": {
       "js": [
         {
-          "file": "metadata---trends-in-web-dev-website-docs-setup-environment-89-a-cd7.6da9df266d549b95f04b.js",
-          "hash": "1841590fb5f45adacd0f",
-          "publicPath": "/trends-in-web-dev-website/metadata---trends-in-web-dev-website-docs-setup-environment-89-a-cd7.6da9df266d549b95f04b.js"
+          "file": "metadata---docs-setup-environment-76-c-8d0.3885339efc4d19e11da3.js",
+          "hash": "1ebf85890338b66a9967",
+          "publicPath": "/metadata---docs-setup-environment-76-c-8d0.3885339efc4d19e11da3.js"
         }
       ]
     },
     "33": {
       "js": [
         {
-          "file": "runtime~main.94bf8529da7684d515ef.js",
-          "hash": "2aa2565a73a2c4cbb8f8",
-          "publicPath": "/trends-in-web-dev-website/runtime~main.94bf8529da7684d515ef.js"
+          "file": "runtime~main.bf4e76da7a04e2ab3e49.js",
+          "hash": "7dc72a4b8fdc51bd3369",
+          "publicPath": "/runtime~main.bf4e76da7a04e2ab3e49.js"
         }
       ]
     },
@@ -483,14 +483,14 @@
         {
           "file": "34.34995f39ff228f78da24.css",
           "hash": "40ab67638fae1fc98f3a",
-          "publicPath": "/trends-in-web-dev-website/34.34995f39ff228f78da24.css"
+          "publicPath": "/34.34995f39ff228f78da24.css"
         }
       ],
       "js": [
         {
           "file": "34.eca27305c40b0a84b658.js",
           "hash": "40ab67638fae1fc98f3a",
-          "publicPath": "/trends-in-web-dev-website/34.eca27305c40b0a84b658.js"
+          "publicPath": "/34.eca27305c40b0a84b658.js"
         }
       ]
     },
@@ -499,7 +499,7 @@
         {
           "file": "35.745f1ef69ec70c71a57d.js",
           "hash": "cde7e256884e4d28d114",
-          "publicPath": "/trends-in-web-dev-website/35.745f1ef69ec70c71a57d.js"
+          "publicPath": "/35.745f1ef69ec70c71a57d.js"
         }
       ]
     }
