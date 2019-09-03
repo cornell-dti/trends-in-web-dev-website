@@ -7,6 +7,7 @@ import withBaseUrl from '@docusaurus/withBaseUrl';
 import styles from './styles.module.css';
 
 const features = [
+  /*
   {
     title: <>Easy to Use</>,
     imageUrl: 'img/undraw_docusaurus_mountain.svg',
@@ -37,6 +38,7 @@ const features = [
       </>
     )
   }
+*/
 ];
 
 export default () => {
@@ -44,13 +46,16 @@ export default () => {
   const { siteConfig = {} } = context;
   return (
     <Layout title={siteConfig.title} description={siteConfig.tagLine}>
-      <header className={classnames('hero hero--primary', styles.heroBanner)}>
+      <header className={classnames('hero', styles.heroBanner)}>
         <div className="container">
           <h1 className="hero__title">{siteConfig.title}</h1>
           <p className="hero__subtitle">{siteConfig.tagline}</p>
           <div className={styles.buttons}>
             <Link
-              className={classnames('button button--secondary button--lg', styles.getStarted)}
+              className={classnames(
+                'button button--primary button--lg',
+                styles.getStarted
+              )}
               to={withBaseUrl('docs/introduction')}
             >
               Start Learning
@@ -59,12 +64,15 @@ export default () => {
         </div>
       </header>
       <main>
-        {features && features.length && (
+        {features.length > 0 && (
           <section className={styles.features}>
             <div className="container">
               <div className="row">
                 {features.map(({ imageUrl, title, description }, idx) => (
-                  <div key={idx} className={classnames('col col--4', styles.feature)}>
+                  <div
+                    key={idx}
+                    className={classnames('col col--4', styles.feature)}
+                  >
                     {imageUrl && (
                       <div className="text--center">
                         <img

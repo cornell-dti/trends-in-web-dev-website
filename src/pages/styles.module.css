@@ -1,5 +1,7 @@
 .heroBanner {
-  padding: 4rem 0;
+  flex: 1 1 auto;
+  /* padding: 4rem 0; */
+  background: var(--ifm-background-color);
   text-align: center;
   position: relative;
   overflow: hidden;
