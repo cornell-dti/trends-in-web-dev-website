@@ -165,16 +165,16 @@
     "2": {
       "css": [
         {
-          "file": "component---site-src-pages-index-jsc-4-f-f99.ab35d379a09f44cbd6ac.css",
-          "hash": "adff7540873ea1ef9cb3",
-          "publicPath": "/trends-in-web-dev-website/component---site-src-pages-index-jsc-4-f-f99.ab35d379a09f44cbd6ac.css"
+          "file": "component---site-src-pages-index-jsc-4-f-f99.2003f819dd6df14076c8.css",
+          "hash": "0ff0e2b9b6cf50b4c355",
+          "publicPath": "/trends-in-web-dev-website/component---site-src-pages-index-jsc-4-f-f99.2003f819dd6df14076c8.css"
         }
       ],
       "js": [
         {
-          "file": "component---site-src-pages-index-jsc-4-f-f99.24d2d2c8e2c65cca61a8.js",
-          "hash": "adff7540873ea1ef9cb3",
-          "publicPath": "/trends-in-web-dev-website/component---site-src-pages-index-jsc-4-f-f99.24d2d2c8e2c65cca61a8.js"
+          "file": "component---site-src-pages-index-jsc-4-f-f99.329d9e9aa30376af01fd.js",
+          "hash": "0ff0e2b9b6cf50b4c355",
+          "publicPath": "/trends-in-web-dev-website/component---site-src-pages-index-jsc-4-f-f99.329d9e9aa30376af01fd.js"
         }
       ]
     },
@@ -339,15 +339,15 @@
     "19": {
       "css": [
         {
-          "file": "main.4e733f7009d245c69bfe.css",
-          "hash": "e902d59689a3ccee90f8",
-          "publicPath": "/trends-in-web-dev-website/main.4e733f7009d245c69bfe.css"
+          "file": "main.389bacb7c45d0d5e1bbd.css",
+          "hash": "5140a277f7d3f5f2d508",
+          "publicPath": "/trends-in-web-dev-website/main.389bacb7c45d0d5e1bbd.css"
         }
       ],
       "js": [
         {
           "file": "main.5a46a47a0c69ac572f78.js",
-          "hash": "e902d59689a3ccee90f8",
+          "hash": "5140a277f7d3f5f2d508",
           "publicPath": "/trends-in-web-dev-website/main.5a46a47a0c69ac572f78.js"
         }
       ]
@@ -472,9 +472,9 @@
     "33": {
       "js": [
         {
-          "file": "runtime~main.d7ab526eceed9e5f813f.js",
-          "hash": "9ad3e990421a8fb368a5",
-          "publicPath": "/trends-in-web-dev-website/runtime~main.d7ab526eceed9e5f813f.js"
+          "file": "runtime~main.9e69bbdf82b7fd6818e6.js",
+          "hash": "e4a034f712d6ced3cc4c",
+          "publicPath": "/trends-in-web-dev-website/runtime~main.9e69bbdf82b7fd6818e6.js"
         }
       ]
     },
