@@ -1,5 +1,5 @@
 module.exports = {
-  title: 'Trends in Web Development',
+  title: 'Trends in Web Dev',
   tagline: 'Course offered by Cornell DTI',
   url: 'https://webdev.cornelldti.org',
   baseUrl: '/',
@@ -8,7 +8,7 @@ module.exports = {
   projectName: 'trends-in-web-dev-website',
   themeConfig: {
     navbar: {
-      title: 'Trends in Web Development',
+      title: 'Trends in Web Dev',
       logo: {
         alt: 'Cornell DTI Web Development Course Logo',
         src: 'img/logo.png'
