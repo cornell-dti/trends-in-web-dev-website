@@ -9,7 +9,56 @@ TODO
 
 ## Arrow Functions
 
-TODO
+Before ES6 we wrote functions as such:
+
+```javascript
+myFunc(x) {
+  return x+1;
+}
+```
+or 
+
+```javascript
+myFunc = function(x) {
+  return x+1;
+}
+```
+
+Now we have this shorthand:
+
+```javascript
+myFunc = (x) => {
+  return x+1;
+}
+```
+
+The syntax is
+
+```javascript
+[function name] = ([function params]) => {
+  [function body]
+}
+
+```
+
+For this simple function, we have even shorter shorthand:
+
+```javascript
+myFunc = x => x+1;
+```
+
+This shorthand works if the function body is just one line that will be
+immediately returned. In this case, we are simply incrementing `x` and 
+returning the result.
+
+Anonymous Arrow Functions: just don't include `[function name]`
+
+```javascript
+([function params]) => {
+  [function body]
+}
+```
+
 
 ## Functional Programming
 
