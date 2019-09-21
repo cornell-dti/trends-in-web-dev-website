@@ -177,7 +177,23 @@ TODO
 
 ### Truthy, falsy
 
-TODO
+JavaScript values can be classified into 'truthy' and 'falsy'. Of course, `true`
+is truthy and false is `falsy`. Most values are truthy, except:
+
+- `false`
+- `''`
+- `0`
+- `{}`
+- `null`
+- `undefined`
+- `NaN`
+
+The `if` guard in JavaScript checks whether a value is truthy rather than
+whether the value is `true`. Similar mechanism applies to `&&` and `||`.
+Therefore, we have
+
+- `'' && 'haha'` evaluates to `''`
+- `'haha' || ''` evaluates to `'haha'`.
 
 ### Global variables
 
