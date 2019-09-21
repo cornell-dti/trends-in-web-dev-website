@@ -15,31 +15,49 @@ TODO
 
 ### `map`
 
-TODO
+`array.map(function)` runs `function` on each element of `array` and returns 
+an array containing the results.
+
+Example: `[1, 4, 9].map(x => Math.sqrt(x))` will return `[1, 2, 3]`. 
 
 ### `filter`
 
-TODO
+`array.filter(function)` runs `function` on each element of `array` and return
+an array containing all elements that satisfy the function requirements.
+
+Example: `[1, 4, 9].filter(x => x > 3)` will return `[4, 9]`
 
 ### `forEach`
 
-TODO
+`array.forEach(function)` runs `function` on each element of `array`.
+The difference between `map` and `forEach` is that map returns a value, whereas 
+forEach just applies the function to each element of the array.
+
+Example: `[1, 4, 9].forEach(x => console.log(x))` will print out each element
+to the console.
 
 ### `every`
 
-TODO
+`array.every(function)` runs `function` on each element of `array` and returns
+whether every element of the array satisfies the function requirements. 
 
-### `any`
-
-TODO
+Example: `[1, 4, 9].every(x => x > 0)` will return true. However, 
+`[1, 4, 9].every(x => x > 1)` will return false. 
 
 ### `some`
 
-TODO
+`array.every(function)` runs `function` on each element of `array` and returns
+whether any element of the array satisfies the function requirements. 
+
+Example: `[1, 4, 9].any(x => x == 1)` will return true. However,
+`[1, 4, 9].any(x => x == 2)` will return false.
 
 ### `reduce`
 
-TODO
+`array.reduce(function)` runs `function` on each element of `array` and returns
+a single value. 
+
+Example: `[1, 4, 9].reduce((sum, curr) => sum + curr)` will return 14.  
 
 ## Spreading and Destructuring
 
