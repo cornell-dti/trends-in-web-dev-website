@@ -181,7 +181,19 @@ TODO
 
 ### Global variables
 
-TODO
+You were told because that there are only one way to define a variable before
+ES6: `var`. This is a white lie. You can actually define a variable without
+`var`, `let`, and `const`:
+
+```javascript
+foo = 3;
+```
+
+If you do this, then you just define a **global variable**. It means you can use
+the variable `foo` everywhere. If you have a local variable, then you might
+accidentally use or override it with the wrong value.
+
+Lessons learned: never use or define global variables.
 
 ### Type coercion
 
