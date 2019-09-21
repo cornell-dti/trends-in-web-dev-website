@@ -14,6 +14,8 @@ jobs:
       - name: Yarn Install
         run: yarn install
       - name: Build & Deploy Website
+        env:
+          GIT_USER: ${{ secrets.DEPLOY_GH_PAGE_TOKEN }}
         run: |
           git config --global user.name "deployment-bot"
-          GIT_USER=x-access-token:${{ github.token }} yarn deploy
+          yarn deploy
