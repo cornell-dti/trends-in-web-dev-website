@@ -6,8 +6,8 @@ title: Lecture 2 - Frontend 1
 ## Before the Lecture
 
 ```bash
-npx create-react-app lecture4
-cd lecture4
+npx create-react-app lecture2
+cd lecture2
 npm start
 ```
 
