@@ -12,14 +12,14 @@ TODO
 Before ES6 we wrote functions as such:
 
 ```javascript
-myFunc(x) {
+function myFunc(x) {
   return x+1;
 }
 ```
 or 
 
 ```javascript
-myFunc = function(x) {
+let myFunc = function(x) {
   return x+1;
 }
 ```
@@ -38,7 +38,6 @@ The syntax is
 [function name] = ([function params]) => {
   [function body]
 }
-
 ```
 
 For this simple function, we have even shorter shorthand:
@@ -92,7 +91,59 @@ TODO
 
 ## Spreading and Destructuring
 
-TODO
+Say we have a function:
+
+```javascript
+let add3 = (a, b, c) => a+b+c;
+```
+
+Now if we had an object: 
+
+```javascript
+add3Object = {
+  a: 3,
+  b: 4,
+  c: 7
+}
+```
+
+If we wanted to add each of the three values in `add3Object` using `add3`
+we can simply use the **spread operator** `...` to *destructure* each of the 
+keys in the object to map to the variables.
+
+```javascript
+add3Object(...add3Object);
+```
+
+However, this only works if the parameter names match the keys in the object. 
+(Note: it is possible to have more keys and values, but this is not a good 
+practice)
+
+This also works for lists:
+
+```javascript
+const arr = [1, 2, 3];
+
+add3Object(...arr); // output 6
+```
+
+The spread operator and destructuring is especially useful in 
+*destructuring assignment*.
+
+```javascript
+const [a, b] = [1, 2];
+
+console.log(a); // 1
+console.log(b); // 2
+
+const arr1 = [1, 2, 3, 4, 5];
+const [c, d, ...rest] = arr1;
+
+console.log(c); // 1
+console.log(d); // 2
+console.log(rest); // [3, 4, 5]
+```
+
 
 ## Ugly Pieces of JavaScript
 
