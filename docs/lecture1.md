@@ -3,9 +3,70 @@ id: lecture1
 title: Lecture 1 - ES6 Basics
 ---
 
-## `~~var~~`, `let`, `const`
+## ~~`var`~~, `let`, and `const`
 
-TODO
+Before we have ES6, there are only one way to declare variable `var`. (Well,
+there are actually another way, but it's very bad and you should never use it.)
+
+For example, if you want to define a variable `a` initialized to `21 * 2`, you
+write
+
+```javascript
+var a = 21 * 2;
+```
+
+However, `var` has a big problem: it is function scoped instead of block scoped.
+Therefore, you might accidentally use a local variable that should not be used
+anymore!
+
+```javascript
+function someComplexFunction() {
+  var foo = 42;
+  if (someCondition()) {
+    var abc = 41 * 2;
+    foo += abc;
+  }
+  // You can still use abc here!
+}
+```
+
+In ES6, we finally have `let` and `const` that are block scoped. Using block
+scoped variables outside of the block will be a runtime error. You should use
+`const` whenever possible since it defines an immutable variable, only use `let`
+if the variable has to be mutable. As mentioned above, you should never use
+`const`.
+
+Here is a rewrite of the `someComplexFunction` above using only let and const:
+
+```javascript
+function someComplexFunction() {
+  let foo = 42; // foo might be re-assigned. We need to use `let`.
+  if (someCondition()) {
+    const abc = 41 * 2; // abc is never mutated. We can use `const`.
+    foo += abc;
+  }
+  // You can NOT use abc here! This is nice!
+}
+```
+
+Sometimes you have to use `let` even if the variable is only assigned one. This
+usually happens when then they are separately assigned inside two branches. For
+example,
+
+```javascript
+let myMood;
+if (hasPrelim()) {
+  myMood = 'bad';
+} else {
+  myMood = 'good';
+}
+```
+
+To prevent this, people use the **ternary operator**.
+
+```javascript
+const myMood = hasPrelim() ? 'bad' : 'good';
+```
 
 ## Arrow Functions
 
