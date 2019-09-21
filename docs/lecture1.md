@@ -73,14 +73,15 @@ const myMood = hasPrelim() ? 'bad' : 'good';
 Before ES6 we wrote functions as such:
 
 ```javascript
-function myFunc(x) {
+function myFunction(x) {
   return x+1;
 }
 ```
-or 
+
+or
 
 ```javascript
-let myFunc = function(x) {
+const myFunction = function(x) {
   return x+1;
 }
 ```
@@ -88,46 +89,45 @@ let myFunc = function(x) {
 Now we have this shorthand:
 
 ```javascript
-myFunc = (x) => {
+const myFunction = (x) => {
   return x+1;
-}
+};
 ```
 
 The syntax is
 
 ```javascript
-[function name] = ([function params]) => {
-  [function body]
-}
+const functionName = (parameter1, parameter2, parameter3) => {
+  // function body
+};
 ```
 
 For this simple function, we have even shorter shorthand:
 
 ```javascript
-myFunc = x => x+1;
+const myFunction = x => x+1;
 ```
 
 This shorthand works if the function body is just one line that will be
-immediately returned. In this case, we are simply incrementing `x` and 
+immediately returned. In this case, we are simply incrementing `x` and
 returning the result.
 
 Anonymous Arrow Functions: just don't include `[function name]`
 
 ```javascript
-([function params]) => {
-  [function body]
+(parameter1, parameter2, parameter3) => {
+  // function body
 }
 ```
-
 
 ## Functional Programming
 
 ### `map`
 
-`array.map(function)` runs `function` on each element of `array` and returns 
+`array.map(function)` runs `function` on each element of `array` and returns
 an array containing the results.
 
-Example: `[1, 4, 9].map(x => Math.sqrt(x))` will return `[1, 2, 3]`. 
+Example: `[1, 4, 9].map(x => Math.sqrt(x))` will return `[1, 2, 3]`.
 
 ### `filter`
 
@@ -139,7 +139,7 @@ Example: `[1, 4, 9].filter(x => x > 3)` will return `[4, 9]`
 ### `forEach`
 
 `array.forEach(function)` runs `function` on each element of `array`.
-The difference between `map` and `forEach` is that map returns a value, whereas 
+The difference between `map` and `forEach` is that map returns a value, whereas
 forEach just applies the function to each element of the array.
 
 Example: `[1, 4, 9].forEach(x => console.log(x))` will print out each element
@@ -148,15 +148,15 @@ to the console.
 ### `every`
 
 `array.every(function)` runs `function` on each element of `array` and returns
-whether every element of the array satisfies the function requirements. 
+whether every element of the array satisfies the function requirements.
 
-Example: `[1, 4, 9].every(x => x > 0)` will return true. However, 
-`[1, 4, 9].every(x => x > 1)` will return false. 
+Example: `[1, 4, 9].every(x => x > 0)` will return true. However,
+`[1, 4, 9].every(x => x > 1)` will return false.
 
 ### `some`
 
 `array.every(function)` runs `function` on each element of `array` and returns
-whether any element of the array satisfies the function requirements. 
+whether any element of the array satisfies the function requirements.
 
 Example: `[1, 4, 9].any(x => x == 1)` will return true. However,
 `[1, 4, 9].any(x => x == 2)` will return false.
@@ -164,7 +164,7 @@ Example: `[1, 4, 9].any(x => x == 1)` will return true. However,
 ### `reduce`
 
 `array.reduce(function)` runs `function` on each element of `array` and returns
-a single value. 
+a single value.
 
 Example: `[1, 4, 9].reduce((sum, curr) => sum + curr)` will return 14.  
 
@@ -173,13 +173,13 @@ Example: `[1, 4, 9].reduce((sum, curr) => sum + curr)` will return 14.  
 Say we have a function:
 
 ```javascript
-let add3 = (a, b, c) => a+b+c;
+const add3 = (a, b, c) => a + b + c;
 ```
 
-Now if we had an object: 
+Now if we had an object:
 
 ```javascript
-add3Object = {
+const add3Object = {
   a: 3,
   b: 4,
   c: 7
@@ -187,15 +187,15 @@ add3Object = {
 ```
 
 If we wanted to add each of the three values in `add3Object` using `add3`
-we can simply use the **spread operator** `...` to *destructure* each of the 
+we can simply use the **spread operator** `...` to *destructure* each of the
 keys in the object to map to the variables.
 
 ```javascript
 add3Object(...add3Object);
 ```
 
-However, this only works if the parameter names match the keys in the object. 
-(Note: it is possible to have more keys and values, but this is not a good 
+However, this only works if the parameter names match the keys in the object.
+(Note: it is possible to have more keys and values, but this is not a good
 practice)
 
 This also works for lists:
@@ -206,7 +206,7 @@ const arr = [1, 2, 3];
 add3Object(...arr); // output 6
 ```
 
-The spread operator and destructuring is especially useful in 
+The spread operator and destructuring is especially useful in
 *destructuring assignment*.
 
 ```javascript
