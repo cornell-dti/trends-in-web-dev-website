@@ -239,4 +239,13 @@ const fib2 =
 __ => (__ === zero || __ === one ? __ : fib2(__ - one) + fib2(__ - two));
 
 ```
-This is the Fibonacci sequence implemented using type coercion. 
+This is the Fibonacci sequence implemented using type coercion.
+
+### Why Linters Are Necessary
+
+You have just learned some darkest aspects of JavaScript. We must use it because
+it's the only language that can be understood by browser. To mitigrate the
+problem, people wrote _linters_ that try to automatically find these problems.
+They are well integrated with editors so you can directly see the warnings. If
+you follow the 'Setup your editor' section, you are good to go. You will see
+warnings when you accidentally write some wrong code.
