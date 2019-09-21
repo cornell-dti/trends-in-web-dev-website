@@ -213,8 +213,8 @@ Lessons learned: never use or define global variables.
 
 ### Type coercion
 
-Like most languages, JavaScript coerces types to better suit the operations 
-that are being applied. 
+Like most languages, JavaScript coerces types to better suit the operations
+that are being applied.
 
 #### Example 1
 
@@ -225,20 +225,20 @@ addition operator, and `true` gets coerced to 1 while `false` gets coerced to 0
 
 `{} + [] + {} + [1]` returns `0[object Object]1` because `{} + []`
 gets evaluated to 0, `{}` gets evaluated to [object Object], and they both get
-coerced to strings. Then, adding a list to a string simply adds the contents of 
+coerced to strings. Then, adding a list to a string simply adds the contents of
 the list to the string, so 1 gets appended to the end.
 
 #### Example 3
 
-```
+```javascript
 const zero = +[]; // + coerce [] into 0
 const one = +!![]; // ! coerce [] into false, got inverted, then coerce to 1
 const two = +!![] + +!![]; // 2 = 1 + 1
 
-const fib2 = 
-__ => (__ === zero || __ === one ? __ : fib2(__ - one) + fib2(__ - two));
-
+const fib2 =
+  __ => (__ === zero || __ === one ? __ : fib2(__ - one) + fib2(__ - two));
 ```
+
 This is the Fibonacci sequence implemented using type coercion.
 
 ### Why Linters Are Necessary
