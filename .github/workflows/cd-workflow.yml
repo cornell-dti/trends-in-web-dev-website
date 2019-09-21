@@ -15,5 +15,6 @@ jobs:
         run: yarn install
       - name: Build & Deploy Website
         run: |
-          git config --global user.name "deployment-bot"
-          GIT_USER=${{ github.token }} yarn deploy
+          git config user.name $(jq .pusher.username $GITHUB_PAYLOAD)
+          git config user.email $(jq .pusher.email $GITHUB_PAYLOAD)
+          GIT_USER=x-access-token:${{ github.token }} yarn deploy
