@@ -1,7 +1,7 @@
 {
   "main": [
     "/main.09486fb3197e8a1cfe0b.css",
-    "/main.3fe991b8080d2d6eb5c7.js"
+    "/main.12f0d6cfc77a7ddb96aa.js"
   ],
   "component---site-src-pages-index-jsc-4-f-f99": [
     "/component---site-src-pages-index-jsc-4-f-f99.2003f819dd6df14076c8.css",
@@ -12,7 +12,7 @@
     "/component---theme-doc-legacy-page-9-e-7-ca5.d358e7bdb6cce8f44ae6.js"
   ],
   "docsMetadata---docsd-50-757": [
-    "/docsMetadata---docsd-50-757.6d2caa6d5ff9404242b6.js"
+    "/docsMetadata---docsd-50-757.aa0c2db282028e759ca9.js"
   ],
   "component---theme-doc-legacy-item-031-769": [
     "/component---theme-doc-legacy-item-031-769.1f1ce10374de019f5d3a.css",
@@ -78,17 +78,17 @@
   "metadata---docs-lecture-98-bd-3be": [
     "/metadata---docs-lecture-98-bd-3be.25344e61662e25911cc6.js"
   ],
-  "content---docs-setup-editor-264-80b": [
-    "/content---docs-setup-editor-264-80b.d1bfd78e6087a82281a9.js"
-  ],
-  "metadata---docs-setup-editor-5-d-8-316": [
-    "/metadata---docs-setup-editor-5-d-8-316.4bdb33c7869a1f4976c7.js"
-  ],
   "content---docs-setup-environmentd-04-b1c": [
-    "/content---docs-setup-environmentd-04-b1c.33bc231be8646abaeb66.js"
+    "/content---docs-setup-environmentd-04-b1c.3efc7fc2e47f599e7cc0.js"
   ],
   "metadata---docs-setup-environment-76-c-8d0": [
-    "/metadata---docs-setup-environment-76-c-8d0.3885339efc4d19e11da3.js"
+    "/metadata---docs-setup-environment-76-c-8d0.455bbb3979237573a133.js"
+  ],
+  "content---docs-setup-editor-264-80b": [
+    "/content---docs-setup-editor-264-80b.278c04f174cb58c21891.js"
+  ],
+  "metadata---docs-setup-editor-5-d-8-316": [
+    "/metadata---docs-setup-editor-5-d-8-316.9607ef8b435271989a56.js"
   ],
   "content---docs-lecture-73-ac-9a0": [
     "/content---docs-lecture-73-ac-9a0.66b8dc928d6456075793.js"
