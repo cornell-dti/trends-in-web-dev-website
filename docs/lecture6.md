@@ -32,18 +32,21 @@ export default class FetchComponent extends Component {
   // component won't crash.
   state = {
     foundTaco: false,
-    randomTaco: {},
-  }
+    randomTaco: {}
+  };
 
   componentDidMount = () => {
     fetch('http://taco-randomizer.herokuapp.com/random/', { method: 'GET' })
       // The promise must be turned into a json.
       .then(response => response.json())
       // Change the state with the data we fetched from backend.
-      .then(responseJSON => this.setState({
-        foundTaco: true, randomTaco: responseJSON,
-      }));
-  }
+      .then(responseJSON =>
+        this.setState({
+          foundTaco: true,
+          randomTaco: responseJSON
+        })
+      );
+  };
 
   render() {
     const { foundTaco, randomTaco } = this.state;

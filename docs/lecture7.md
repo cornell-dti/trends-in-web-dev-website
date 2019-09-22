@@ -162,8 +162,8 @@ Example:
 ```yml
 alovelance: # id
   - name: # property name
-      first: "Ada" # Properties can be nested.
-      last: "Lovelace"
+      first: 'Ada' # Properties can be nested.
+      last: 'Lovelace'
     # Properties can have different types. Firestore doesn't enforce the schema.
     born: 1815
 ```
@@ -241,34 +241,37 @@ const postsCollection = db.collection('posts');
 // create a post
 app.put('/post', async (req, resp) => {
   const post = req.body;
-  const addedDoc = await postsCollection.doc("hi").set(post);
+  const addedDoc = await postsCollection.doc('hi').set(post);
   resp.status(200).send(addedDoc.id);
 });
 
 // read all posts
 app.get('/post', async (_, resp) => {
   const allPostsDoc = await postsCollection.get();
-  resp.status(200)
+  resp
+    .status(200)
     .json(allPostsDoc.docs.map(doc => ({ id: doc.id, ...doc.data() })));
 });
 
 // 2019-04-17
 app.get('/post/today', async (_, resp) => {
   const today = new Date();
-  const todayString =
-    `${today.getFullYear()}-${today.getMonth() + 1}-${today.getDate()}`;
-  const todayPostsDoc =
-    await postsCollection.where('date', '==', todayString).get();
-  resp.status(200)
-    .json(todayPostsDoc.docs.map(doc => ({ id: doc.id, ...doc.data()})));
+  const todayString = `${today.getFullYear()}-${today.getMonth() +
+    1}-${today.getDate()}`;
+  const todayPostsDoc = await postsCollection
+    .where('date', '==', todayString)
+    .get();
+  resp
+    .status(200)
+    .json(todayPostsDoc.docs.map(doc => ({ id: doc.id, ...doc.data() })));
 });
 
 // sorted posts
 app.get('/post/sorted', async (_, resp) => {
-  const sortedPosts =
-    await postsCollection.orderBy('date', 'desc').get();
-  resp.status(200)
-    .json(sortedPosts.docs.map(doc => ({id: doc.id, ...doc.data()})));
+  const sortedPosts = await postsCollection.orderBy('date', 'desc').get();
+  resp
+    .status(200)
+    .json(sortedPosts.docs.map(doc => ({ id: doc.id, ...doc.data() })));
 });
 
 // update a post

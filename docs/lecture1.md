@@ -74,7 +74,7 @@ Before ES6 we wrote functions as such:
 
 ```javascript
 function myFunction(x) {
-  return x+1;
+  return x + 1;
 }
 ```
 
@@ -82,15 +82,15 @@ or
 
 ```javascript
 const myFunction = function(x) {
-  return x+1;
-}
+  return x + 1;
+};
 ```
 
 Now we have this shorthand:
 
 ```javascript
-const myFunction = (x) => {
-  return x+1;
+const myFunction = x => {
+  return x + 1;
 };
 ```
 
@@ -105,7 +105,7 @@ const functionName = (parameter1, parameter2, parameter3) => {
 For this simple function, we have even shorter shorthand:
 
 ```javascript
-const myFunction = x => x+1;
+const myFunction = x => x + 1;
 ```
 
 This shorthand works if the function body is just one line that will be
@@ -117,7 +117,7 @@ Anonymous Arrow Functions: just don't include `[function name]`
 ```javascript
 (parameter1, parameter2, parameter3) => {
   // function body
-}
+};
 ```
 
 ## Functional Programming
@@ -166,7 +166,7 @@ Example: `[1, 4, 9].any(x => x == 1)` will return true. However,
 `array.reduce(function)` runs `function` on each element of `array` and returns
 a single value.
 
-Example: `[1, 4, 9].reduce((sum, curr) => sum + curr)` will return 14.  
+Example: `[1, 4, 9].reduce((sum, curr) => sum + curr)` will return 14.
 
 ## Spreading and Destructuring
 
@@ -183,11 +183,11 @@ const add3Object = {
   a: 3,
   b: 4,
   c: 7
-}
+};
 ```
 
 If we wanted to add each of the three values in `add3Object` using `add3`
-we can simply use the **spread operator** `...` to *destructure* each of the
+we can simply use the **spread operator** `...` to _destructure_ each of the
 keys in the object to map to the variables.
 
 ```javascript
@@ -207,7 +207,7 @@ add3Object(...arr); // output 6
 ```
 
 The spread operator and destructuring is especially useful in
-*destructuring assignment*.
+_destructuring assignment_.
 
 ```javascript
 const [a, b] = [1, 2];
@@ -222,7 +222,6 @@ console.log(c); // 1
 console.log(d); // 2
 console.log(rest); // [3, 4, 5]
 ```
-
 
 ## Ugly Pieces of JavaScript
 
@@ -286,8 +285,8 @@ const zero = +[]; // + coerce [] into 0
 const one = +!![]; // ! coerce [] into false, got inverted, then coerce to 1
 const two = +!![] + +!![]; // 2 = 1 + 1
 
-const fib2 =
-  __ => (__ === zero || __ === one ? __ : fib2(__ - one) + fib2(__ - two));
+const fib2 = __ =>
+  __ === zero || __ === one ? __ : fib2(__ - one) + fib2(__ - two);
 ```
 
 This is the Fibonacci sequence implemented using type coercion.
