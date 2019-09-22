@@ -13,7 +13,8 @@ import React, { Component } from 'react';
 export default class BadMessageComponent extends Component {
   state = { messages: [], newMessage: '' };
 
-  onNewMessageChange = e => this.setState({ newMessage: e.currentTarget.value });
+  onNewMessageChange = e =>
+    this.setState({ newMessage: e.currentTarget.value });
 
   onSubmitNew = () =>
     this.setState(({ messages, newMessage }) => ({
@@ -33,7 +34,10 @@ export default class BadMessageComponent extends Component {
         <div>
           <h4>Adder</h4>
           <div>
-            <input value={this.state.newMessage} onChange={this.onNewMessageChange} />
+            <input
+              value={this.state.newMessage}
+              onChange={this.onNewMessageChange}
+            />
             <button onClick={this.onSubmitNew}>Submit</button>
           </div>
         </div>
@@ -50,7 +54,10 @@ import React, { Component } from 'react';
 
 class List extends Component {
   state = { messageList: [] };
-  addMessage = msg => this.setState(({ messageList }) => ({ messageList: [...messageList, msg] }));
+  addMessage = msg =>
+    this.setState(({ messageList }) => ({
+      messageList: [...messageList, msg]
+    }));
   render() {
     return (
       <div>
@@ -64,7 +71,8 @@ class List extends Component {
 
 class Adder extends Component {
   state = { newMessage: '' };
-  onNewMessageChange = e => this.setState({ newMessage: e.currentTarget.value });
+  onNewMessageChange = e =>
+    this.setState({ newMessage: e.currentTarget.value });
   onSubmitNew = () => {
     this.props.listRef.current.addMessage(this.state.newMessage);
     this.setState({ newMessage: '' });
@@ -74,7 +82,10 @@ class Adder extends Component {
       <div>
         <h4>Adder</h4>
         <div>
-          <input value={this.state.newMessage} onChange={this.onNewMessageChange} />
+          <input
+            value={this.state.newMessage}
+            onChange={this.onNewMessageChange}
+          />
           <button onClick={this.onSubmitNew}>Submit</button>
         </div>
       </div>
@@ -112,7 +123,8 @@ const List = ({ messages }) => (
 export class MessageAdder extends Component {
   state = { newMessage: '' };
 
-  onNewMessageChange = e => this.setState({ newMessage: e.currentTarget.value });
+  onNewMessageChange = e =>
+    this.setState({ newMessage: e.currentTarget.value });
   buttonOnClick = () => {
     this.props.onAdd(this.state.newMessage);
     this.setState({ newMessage: '' });
@@ -123,7 +135,10 @@ export class MessageAdder extends Component {
       <div>
         <h4>Adder</h4>
         <div>
-          <input value={this.state.newMessage} onChange={this.onNewMessageChange} />
+          <input
+            value={this.state.newMessage}
+            onChange={this.onNewMessageChange}
+          />
           <button onClick={this.buttonOnClick}>Submit</button>
         </div>
       </div>
@@ -134,7 +149,8 @@ export class MessageAdder extends Component {
 export default class LiftingStateUp extends Component {
   state = { messages: [] };
 
-  onAdd = msg => this.setState(({ messages }) => ({ messages: [...messages, msg] }));
+  onAdd = msg =>
+    this.setState(({ messages }) => ({ messages: [...messages, msg] }));
 
   render() {
     return (
@@ -225,7 +241,9 @@ const gameRouter = require('./game');
 const messageBoardRouter = require('./message-board');
 
 const isProduction = process.env.NODE_ENV === 'production';
-require('dotenv').config({ path: isProduction ? '.env.production' : '.env.dev' });
+require('dotenv').config({
+  path: isProduction ? '.env.production' : '.env.dev'
+});
 
 const app = express();
 

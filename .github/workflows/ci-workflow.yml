@@ -1,4 +1,4 @@
-name: continuous-integration
+name: CI
 on: pull_request
 
 jobs:
@@ -10,5 +10,7 @@ jobs:
         uses: actions/setup-node@v1
       - name: Yarn Install
         run: yarn install
+      - name: Run Prettier
+        run: 'yarn format:check'
       - name: Build Website
         run: yarn build

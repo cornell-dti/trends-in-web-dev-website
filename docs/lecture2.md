@@ -34,7 +34,7 @@ import MyComponent from './MyComponent';
 const link = 'https://github.com/cornell-dti';
 ReactDOM.render(
   <MyComponent name="Cornell DTI" githubLink={link} />,
-  document.getElementById('root'),
+  document.getElementById('root')
 );
 ```
 
@@ -131,7 +131,7 @@ export default class SimpleEditor extends Component {
   // Define your initial state here.
   state = { name: '' };
 
-  changeName = (event) => {
+  changeName = event => {
     // To extract the value from input box, use the following line.
     const name = event.currentTarget.value;
     this.setState({ name });
@@ -171,7 +171,7 @@ import ContactCard from './ContactCard';
 const data = [
   { name: 'Sam1', email: 'foo@bar.com' },
   { name: 'Sam2', email: 'bar@baz.com' },
-  { name: 'Sam3', email: 'baz@foo.com' },
+  { name: 'Sam3', email: 'baz@foo.com' }
 ];
 
 const ListBySimpleMap = () => (
