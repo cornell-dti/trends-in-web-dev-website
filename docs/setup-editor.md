@@ -7,7 +7,7 @@ For convenience, we assume you will use VSCode. If you are using WebStorm and
 Atom, you are likely to find some extensions that provide similar
 functionalities.
 
-## Recommened Extensions
+## Recommeneded Extensions
 
 ### ESLint
 
@@ -28,3 +28,11 @@ Add these lines to your VSCode Settings:
     { "autoFix": true, "language": "typescriptreact" }
   ],
 ```
+
+### Bracket Pair Colorizer
+
+Highlights matching brackets to make code easier to read.
+
+### npm
+
+This will be useful later when looking at `package.json` files.
