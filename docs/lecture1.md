@@ -301,3 +301,9 @@ problem, people wrote _linters_ that try to automatically find these problems.
 They are well integrated with editors so you can directly see the warnings. If
 you follow the 'Setup your editor' section, you are good to go. You will see
 warnings when you accidentally write some wrong code.
+
+### Resources
+
+I recommend the _You Don't Know JS_ series by Kyle Simpson. The ebooks are
+available [for free on GitHub](https://github.com/getify/You-Dont-Know-JS/tree/1st-ed).
+The series is comprehensive and will teach you everything you want to know.
