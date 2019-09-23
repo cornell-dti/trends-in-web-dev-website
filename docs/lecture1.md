@@ -3,6 +3,8 @@ id: lecture1
 title: Lecture 1 - ES6 Basics
 ---
 
+[Lecture Slides](https://docs.google.com/presentation/d/1y_7EWaEBllqTSQOZw_43m02-wh49DatEh0OVSDJkf4A/edit?usp=sharing)
+
 ## ~~`var`~~, `let`, and `const`
 
 Before we have ES6, there are only one way to declare variable `var`. (Well,
@@ -34,7 +36,7 @@ In ES6, we finally have `let` and `const` that are block scoped. Using block
 scoped variables outside of the block will be a runtime error. You should use
 `const` whenever possible since it defines an immutable variable, only use `let`
 if the variable has to be mutable. As mentioned above, you should never use
-`const`.
+`var`.
 
 Here is a rewrite of the `someComplexFunction` above using only let and const:
 
