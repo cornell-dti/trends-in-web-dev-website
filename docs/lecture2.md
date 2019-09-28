@@ -6,9 +6,9 @@ title: Lecture 2 - Frontend 1
 ## Before the Lecture
 
 ```bash
-npx create-react-app lecture2
+yarn create react-app lecture2
 cd lecture2
-npm start
+yarn start
 ```
 
 ## Your First Component
