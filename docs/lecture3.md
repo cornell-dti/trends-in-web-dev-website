@@ -3,4 +3,87 @@ id: lecture3
 title: Lecture 3 - Frontend 2
 ---
 
-TODO
+## Conditional Rendering
+
+Sometimes we only want things to render when a certain condition is met. For
+example, only display text when we meet a certain condition. React has
+conditional rendering to make this very simple.
+
+```jsx
+// PrelimTime.jsx
+import React from 'react';
+
+export default ({ prelimToday }) => {
+  if (prelimToday) {
+    return <p>I have a prelim today.</p>;
+  } else {
+    return <p>I don't have a prelim today.</p>;
+  }
+};
+```
+
+In this example, we have a functional component `PrelimTime` that takes in a
+prop `prelimToday`. `prelimToday` is a boolean holding whether we have a prelim
+today or not. We want the component to display "I have a prelim today." if
+`prelimToday` is `true` and "I don't have a prelim today." if it is `false`.
+
+Traditionally, we would use the `if` statement for this behavior (as shown
+above). However, since this is so common, React has conditional rendering to
+make writing this functionality more convenient.
+
+First we can use the **ternary operator**:
+
+```jsx
+// PrelimTime.jsx
+import React from 'react';
+
+export default ({ prelimToday }) => (
+  prelimToday
+    ? <p>I have a prelim today.</p>
+    : <p>I don't have a prelim today.</p>;
+);
+```
+
+The ternary operator is also very common in other languages as well such as
+Java or Python. The basic syntax is as follows:
+
+```jsx
+<boolean expression> ? <true_result> : <false_result>
+```
+
+Before the `?` you have your expression producing `true` or `false`. The part
+after the `?` but before the `:` is the result/functionality you want if the
+boolean expression evaluates to `true`. The part after the `:` is what you want
+to happen if the expression is `false`.
+
+Connecting with the `PrelimTime` example, my boolean expression was just the
+prop `prelimToday`, although in your code it can be a more complex boolean
+expression. If `prelimToday` is true, I display "I have a prelim today." If
+`prelimToday` is false, I display "I have a prelim today."
+
+Notice though, how the only thing changing in this text is adding the word
+"don't" if `prelimToday` is `false`. So only if `prelimToday` is `false`, we
+want to add don't.
+
+React has the inline **`&&`** operator:
+
+```jsx
+// PrelimTime.jsx
+import React from 'react';
+
+export default ({ prelimToday }) => (
+  <p>I {!prelimToday && "don't"} have a prelim today.</p>
+);
+```
+
+Here, I display the text "I have a prelim today." However, in the curly braces,
+if `prelimToday` is `false` I insert the word "don't". Conditional rendering
+with `&&` is useful when you only have expected behavior for one branch of the
+conditional. In this case, I only had desired behavior if `prelimToday` were
+`false`.
+
+As you have seen, React's conditional rendering made modifying render behavior
+based on conditions a lot easier. In this small example, we went from five lines
+of code in the component to just one!
+
+## Lifting State Up
