@@ -3,6 +3,9 @@ id: lecture2
 title: Lecture 2 - Frontend 1
 ---
 
+[Lecture
+Slides](https://docs.google.com/presentation/d/1Kev9PeKaX_yrw71kuHVLf0nrbFG1kvd4z1k_b-FLYSw/edit?usp=sharing)
+
 ## Before the Lecture
 
 ```bash
