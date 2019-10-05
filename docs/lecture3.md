@@ -28,8 +28,8 @@ today or not. We want the component to display "I have a prelim today." if
 `prelimToday` is `true` and "I don't have a prelim today." if it is `false`.
 
 Traditionally, we would use the `if` statement for this behavior (as shown
-above). However, since this is so common, React has conditional rendering to
-make writing this functionality more convenient.
+above). We can also use conditional rendering to make writing this functionality
+more convenient.
 
 First we can use the **ternary operator**:
 
@@ -47,8 +47,8 @@ export default ({ prelimToday }) => (
 The ternary operator is also very common in other languages as well such as
 Java or Python. The basic syntax is as follows:
 
-```jsx
-<boolean expression> ? <true_result> : <false_result>
+```javascript
+[boolean expression] ? [true_result] : [false_result]
 ```
 
 Before the `?` you have your expression producing `true` or `false`. The part
@@ -65,7 +65,7 @@ Notice though, how the only thing changing in this text is adding the word
 "don't" if `prelimToday` is `false`. So only if `prelimToday` is `false`, we
 want to add don't.
 
-React has the inline **`&&`** operator:
+React supports the use of **`&&`** operator:
 
 ```jsx
 // PrelimTime.jsx
@@ -76,11 +76,11 @@ export default ({ prelimToday }) => (
 );
 ```
 
-Here, I display the text "I have a prelim today." However, in the curly braces,
-if `prelimToday` is `false` I insert the word "don't". Conditional rendering
-with `&&` is useful when you only have expected behavior for one branch of the
-conditional. In this case, I only had desired behavior if `prelimToday` were
-`false`.
+Here, we display the text "I have a prelim today.". However, in the curly
+braces, if `prelimToday` is `false` then the word "don't" will be rendered.
+Conditional rendering with `&&` is useful when you only have expected behavior
+for one branch of the conditional. In this case, I only had desired behavior if
+`prelimToday` were `false`.
 
 As you have seen, React's conditional rendering made modifying render behavior
 based on conditions a lot easier. In this small example, we went from five lines
