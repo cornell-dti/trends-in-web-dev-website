@@ -3,6 +3,8 @@ id: lecture3
 title: Lecture 3 - Frontend 2
 ---
 
+[Lecture Slides](https://docs.google.com/presentation/d/1heis2PITlZCH75tmn3ht9DqmeXsLQi0a3bboTkNpM-g/edit?usp=sharing)
+
 ## Conditional Rendering
 
 Sometimes we only want things to render when a certain condition is met. For
@@ -87,3 +89,67 @@ based on conditions a lot easier. In this small example, we went from five lines
 of code in the component to just one!
 
 ## Lifting State Up
+
+This section was a live demo, adapted from [this tutorial]() in the React docs.
+
+App.js
+```jsx
+import React from 'react';
+import { useState } from 'react';
+import './App.css';
+import FahrenheitInput from './FahrenheitInput';
+import CelciusInput from './CelciusInput';
+
+function App() {
+    const [temperature, setTemperature] = useState(-40);
+
+    return (
+        <div className="App">
+            <label>Fahrenheit:</label>
+            <FahrenheitInput temperature={temperature} callback={(temp) => setTemperature(temp)} />
+            <br />
+            <label>Celcius:</label>
+            <CelciusInput temperature={temperature} callback={(temp) => setTemperature(temp)} />
+            <br />
+            {temperature >= 100
+                ? <span>Water would boil here!</span>
+                : <span>Water wouldn't boil here!</span>
+            }
+            <br />
+            <span>Water would {temperature <= 0 && 'not'} freeze here!</span>
+        </div>
+    );
+}
+
+export default App;
+```
+
+CelciusInput.jsx
+```jsx
+import React from 'react';
+
+export default ({
+    temperature,
+    callback
+}) => {
+    const handlechange = (e) => {
+        callback(e.target.value || 0);
+    }
+    return (<input value={temperature} onChange={handlechange} />);
+}
+```
+
+FahrenheitInput.jsx
+```jsx
+import React from 'react';
+
+export default ({
+    temperature,
+    callback
+}) => {
+    const handlechange = (e) => {
+        callback(((e.target.value || 0) - 32) * 5 / 9);
+    }
+    return (<input value={(temperature * 9 / 5) + 32} onChange={handlechange} />);
+}
+```
