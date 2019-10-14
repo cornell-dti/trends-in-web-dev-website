@@ -93,6 +93,7 @@ of code in the component to just one!
 This section was a live demo, adapted from [this tutorial]() in the React docs.
 
 App.js
+
 ```jsx
 import React from 'react';
 import { useState } from 'react';
@@ -101,55 +102,58 @@ import FahrenheitInput from './FahrenheitInput';
 import CelciusInput from './CelciusInput';
 
 function App() {
-    const [temperature, setTemperature] = useState(-40);
+  const [temperature, setTemperature] = useState(-40);
 
-    return (
-        <div className="App">
-            <label>Fahrenheit:</label>
-            <FahrenheitInput temperature={temperature} callback={(temp) => setTemperature(temp)} />
-            <br />
-            <label>Celcius:</label>
-            <CelciusInput temperature={temperature} callback={(temp) => setTemperature(temp)} />
-            <br />
-            {temperature >= 100
-                ? <span>Water would boil here!</span>
-                : <span>Water wouldn't boil here!</span>
-            }
-            <br />
-            <span>Water would {temperature <= 0 && 'not'} freeze here!</span>
-        </div>
-    );
+  return (
+    <div className="App">
+      <label>Fahrenheit:</label>
+      <FahrenheitInput
+        temperature={temperature}
+        callback={temp => setTemperature(temp)}
+      />
+      <br />
+      <label>Celcius:</label>
+      <CelciusInput
+        temperature={temperature}
+        callback={temp => setTemperature(temp)}
+      />
+      <br />
+      {temperature >= 100 ? (
+        <span>Water would boil here!</span>
+      ) : (
+        <span>Water wouldn't boil here!</span>
+      )}
+      <br />
+      <span>Water would {temperature <= 0 && 'not'} freeze here!</span>
+    </div>
+  );
 }
 
 export default App;
 ```
 
 CelciusInput.jsx
+
 ```jsx
 import React from 'react';
 
-export default ({
-    temperature,
-    callback
-}) => {
-    const handlechange = (e) => {
-        callback(e.target.value || 0);
-    }
-    return (<input value={temperature} onChange={handlechange} />);
-}
+export default ({ temperature, callback }) => {
+  const handlechange = e => {
+    callback(e.target.value || 0);
+  };
+  return <input value={temperature} onChange={handlechange} />;
+};
 ```
 
 FahrenheitInput.jsx
+
 ```jsx
 import React from 'react';
 
-export default ({
-    temperature,
-    callback
-}) => {
-    const handlechange = (e) => {
-        callback(((e.target.value || 0) - 32) * 5 / 9);
-    }
-    return (<input value={(temperature * 9 / 5) + 32} onChange={handlechange} />);
-}
+export default ({ temperature, callback }) => {
+  const handlechange = e => {
+    callback((((e.target.value || 0) - 32) * 5) / 9);
+  };
+  return <input value={(temperature * 9) / 5 + 32} onChange={handlechange} />;
+};
 ```
