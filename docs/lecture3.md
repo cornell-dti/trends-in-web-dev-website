@@ -93,6 +93,7 @@ of code in the component to just one!
 This section was a live demo, adapted from [this tutorial]() in the React docs.
 
 App.js
+
 ```jsx
 import React from 'react';
 import { useState } from 'react';
