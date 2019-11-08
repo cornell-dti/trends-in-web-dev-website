@@ -3,7 +3,7 @@ import classnames from 'classnames';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import withBaseUrl from '@docusaurus/withBaseUrl';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
 
 const features = [
@@ -56,7 +56,7 @@ export default () => {
                 'button button--primary button--lg',
                 styles.getStarted
               )}
-              to={withBaseUrl('docs/introduction')}
+              to={useBaseUrl('docs/introduction')}
             >
               Start Learning
             </Link>
@@ -77,7 +77,7 @@ export default () => {
                       <div className="text--center">
                         <img
                           className={styles.featureImage}
-                          src={withBaseUrl(imageUrl)}
+                          src={useBaseUrl(imageUrl)}
                           alt={title}
                         />
                       </div>
