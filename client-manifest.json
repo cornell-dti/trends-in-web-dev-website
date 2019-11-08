@@ -4,502 +4,478 @@
   ],
   "origins": {
     "0": [
-      1,
-      2,
       3,
-      4,
+      22,
+      33,
       34,
-      35,
       0
     ],
-    "1": [
-      0,
-      2,
-      4,
-      34,
-      35,
+    "@docusaurus-plugin-content-docs/docs-lecture-3-776.json": [
       1
+    ],
+    "@theme/DocItem": [
+      2
+    ],
+    "1be78505": [
+      0,
+      33,
+      3
+    ],
+    "@docusaurus-plugin-content-docs/docs-b5f.json": [
+      4
+    ],
+    "@site/docs/setup-editor.md": [
+      5
+    ],
+    "@docusaurus-plugin-content-docs/docs-lecture-6-395.json": [
+      6
+    ],
+    "@site/docs/lecture3.md": [
+      7
+    ],
+    "@site/docs/lecture7.md": [
+      8
+    ],
+    "@docusaurus-plugin-content-docs/docs-lecture-1-3ca.json": [
+      9
+    ],
+    "@docusaurus-plugin-content-docs/docs-lecture-10-894.json": [
+      10
+    ],
+    "@docusaurus-plugin-content-docs/docs-lecture-9-ee6.json": [
+      11
+    ],
+    "@site/docs/lecture10.md": [
+      12
+    ],
+    "@site/docs/lecture9.md": [
+      13
+    ],
+    "@docusaurus-plugin-content-docs/docs-setup-environment-d1d.json": [
+      14
+    ],
+    "@site/docs/lecture1.md": [
+      15
+    ],
+    "@site/docs/lecture5.md": [
+      16
+    ],
+    "@docusaurus-plugin-content-docs/docs-lecture-8-c14.json": [
+      17
+    ],
+    "@docusaurus-plugin-content-docs/docs-setup-editor-daf.json": [
+      18
+    ],
+    "@site/docs/introduction.md": [
+      19
+    ],
+    "@docusaurus-plugin-content-docs/docs-lecture-5-079.json": [
+      20
+    ],
+    "@site/docs/lecture6.md": [
+      21
     ],
     "@site/src/pages/index.js": [
       0,
-      1,
-      2
-    ],
-    "@theme/DocLegacyItem": [
-      0,
-      3
-    ],
-    "component---theme-doc-legacy-page-9-e-7-ca5": [
-      0,
-      1,
-      34,
-      4
-    ],
-    "@site/docs/introduction.md": [
-      5
-    ],
-    "@site/docs/lecture10.md": [
-      6
-    ],
-    "@site/docs/lecture1.md": [
-      7
-    ],
-    "@site/docs/lecture2.md": [
-      8
-    ],
-    "@site/docs/lecture3.md": [
-      9
-    ],
-    "@site/docs/lecture4.md": [
-      10
-    ],
-    "@site/docs/lecture5.md": [
-      11
-    ],
-    "@site/docs/lecture6.md": [
-      12
-    ],
-    "@site/docs/lecture7.md": [
-      13
-    ],
-    "@site/docs/lecture8.md": [
-      14
-    ],
-    "@site/docs/lecture9.md": [
-      15
-    ],
-    "@site/docs/setup-editor.md": [
-      16
-    ],
-    "@site/docs/setup-environment.md": [
-      17
-    ],
-    "/home/runner/work/trends-in-web-dev-website/trends-in-web-dev-website/.docusaurus/docusaurus-plugin-content-docs/docs-b5f.json": [
-      18
-    ],
-    "main": [
-      33,
-      19
-    ],
-    "/home/runner/work/trends-in-web-dev-website/trends-in-web-dev-website/.docusaurus/docusaurus-plugin-content-docs/docs-introduction-bf7.json": [
-      20
-    ],
-    "/home/runner/work/trends-in-web-dev-website/trends-in-web-dev-website/.docusaurus/docusaurus-plugin-content-docs/docs-lecture-10-894.json": [
-      21
-    ],
-    "/home/runner/work/trends-in-web-dev-website/trends-in-web-dev-website/.docusaurus/docusaurus-plugin-content-docs/docs-lecture-1-3ca.json": [
       22
     ],
-    "/home/runner/work/trends-in-web-dev-website/trends-in-web-dev-website/.docusaurus/docusaurus-plugin-content-docs/docs-lecture-2-67d.json": [
+    "@site/docs/lecture4.md": [
       23
     ],
-    "/home/runner/work/trends-in-web-dev-website/trends-in-web-dev-website/.docusaurus/docusaurus-plugin-content-docs/docs-lecture-3-776.json": [
+    "@site/docs/setup-environment.md": [
       24
     ],
-    "/home/runner/work/trends-in-web-dev-website/trends-in-web-dev-website/.docusaurus/docusaurus-plugin-content-docs/docs-lecture-4-f37.json": [
+    "@docusaurus-plugin-content-docs/docs-lecture-7-44d.json": [
       25
     ],
-    "/home/runner/work/trends-in-web-dev-website/trends-in-web-dev-website/.docusaurus/docusaurus-plugin-content-docs/docs-lecture-5-079.json": [
+    "@docusaurus-plugin-content-docs/docs-lecture-2-67d.json": [
       26
     ],
-    "/home/runner/work/trends-in-web-dev-website/trends-in-web-dev-website/.docusaurus/docusaurus-plugin-content-docs/docs-lecture-6-395.json": [
+    "@site/docs/lecture2.md": [
       27
     ],
-    "/home/runner/work/trends-in-web-dev-website/trends-in-web-dev-website/.docusaurus/docusaurus-plugin-content-docs/docs-lecture-7-44d.json": [
+    "@docusaurus-plugin-content-docs/docs-lecture-4-f37.json": [
       28
     ],
-    "/home/runner/work/trends-in-web-dev-website/trends-in-web-dev-website/.docusaurus/docusaurus-plugin-content-docs/docs-lecture-8-c14.json": [
+    "@site/docs/lecture8.md": [
       29
     ],
-    "/home/runner/work/trends-in-web-dev-website/trends-in-web-dev-website/.docusaurus/docusaurus-plugin-content-docs/docs-lecture-9-ee6.json": [
+    "@docusaurus-plugin-content-docs/docs-introduction-bf7.json": [
       30
     ],
-    "/home/runner/work/trends-in-web-dev-website/trends-in-web-dev-website/.docusaurus/docusaurus-plugin-content-docs/docs-setup-editor-daf.json": [
+    "main": [
+      32,
       31
     ],
-    "/home/runner/work/trends-in-web-dev-website/trends-in-web-dev-website/.docusaurus/docusaurus-plugin-content-docs/docs-setup-environment-d1d.json": [
+    "runtime~main": [
+      31,
       32
     ],
-    "runtime~main": [
-      19,
-      33
-    ],
-    "@theme/DocLegacyPage": [
+    "@theme/DocPage": [
       0,
-      1,
-      4,
-      34
+      3,
+      33
     ],
     "@theme/NotFound": [
       0,
-      1,
-      35
+      34
     ]
   },
   "assets": {
     "0": {
-      "js": [
-        {
-          "file": "0.46d7ca5d83a7f31f3f4f.js",
-          "hash": "04b717a53bf9c4d379ac",
-          "publicPath": "/0.46d7ca5d83a7f31f3f4f.js"
-        }
-      ]
-    },
-    "1": {
       "css": [
         {
-          "file": "1.196ce05925ea6d776920.css",
-          "hash": "8773eaa7b3f229320a25",
-          "publicPath": "/1.196ce05925ea6d776920.css"
+          "file": "0.6f6572d2.css",
+          "hash": "72572b6bf8d2a1d08b8b",
+          "publicPath": "/0.6f6572d2.css"
         }
       ],
       "js": [
         {
-          "file": "1.808655ec42494dfa7d22.js",
-          "hash": "8773eaa7b3f229320a25",
-          "publicPath": "/1.808655ec42494dfa7d22.js"
+          "file": "0.d7336e2a.js",
+          "hash": "72572b6bf8d2a1d08b8b",
+          "publicPath": "/0.d7336e2a.js"
+        }
+      ]
+    },
+    "1": {
+      "js": [
+        {
+          "file": "0151309d.2126e532.js",
+          "hash": "d8e95870a1bf8bbc14fd",
+          "publicPath": "/0151309d.2126e532.js"
         }
       ]
     },
     "2": {
       "css": [
         {
-          "file": "component---site-src-pages-index-jsc-4-f-f99.2003f819dd6df14076c8.css",
-          "hash": "0ff0e2b9b6cf50b4c355",
-          "publicPath": "/component---site-src-pages-index-jsc-4-f-f99.2003f819dd6df14076c8.css"
+          "file": "17896441.de264834.css",
+          "hash": "24c76f91e041ae1ae886",
+          "publicPath": "/17896441.de264834.css"
         }
       ],
       "js": [
         {
-          "file": "component---site-src-pages-index-jsc-4-f-f99.329d9e9aa30376af01fd.js",
-          "hash": "0ff0e2b9b6cf50b4c355",
-          "publicPath": "/component---site-src-pages-index-jsc-4-f-f99.329d9e9aa30376af01fd.js"
+          "file": "17896441.86e63253.js",
+          "hash": "24c76f91e041ae1ae886",
+          "publicPath": "/17896441.86e63253.js"
         }
       ]
     },
     "3": {
       "css": [
         {
-          "file": "component---theme-doc-legacy-item-031-769.1f1ce10374de019f5d3a.css",
-          "hash": "34a39da34d88a0231c03",
-          "publicPath": "/component---theme-doc-legacy-item-031-769.1f1ce10374de019f5d3a.css"
+          "file": "1be78505.ac7d2f71.css",
+          "hash": "0921f964a865e7d77d27",
+          "publicPath": "/1be78505.ac7d2f71.css"
         }
       ],
       "js": [
         {
-          "file": "component---theme-doc-legacy-item-031-769.60a6cccd9cb18a7a8653.js",
-          "hash": "34a39da34d88a0231c03",
-          "publicPath": "/component---theme-doc-legacy-item-031-769.60a6cccd9cb18a7a8653.js"
+          "file": "1be78505.2aea2f52.js",
+          "hash": "0921f964a865e7d77d27",
+          "publicPath": "/1be78505.2aea2f52.js"
         }
       ]
     },
     "4": {
-      "css": [
-        {
-          "file": "component---theme-doc-legacy-page-9-e-7-ca5.53f8d74e5c130f3e75d5.css",
-          "hash": "490e755d0054152bf875",
-          "publicPath": "/component---theme-doc-legacy-page-9-e-7-ca5.53f8d74e5c130f3e75d5.css"
-        }
-      ],
       "js": [
         {
-          "file": "component---theme-doc-legacy-page-9-e-7-ca5.d358e7bdb6cce8f44ae6.js",
-          "hash": "490e755d0054152bf875",
-          "publicPath": "/component---theme-doc-legacy-page-9-e-7-ca5.d358e7bdb6cce8f44ae6.js"
+          "file": "1dafe4c4.b5a9bf09.js",
+          "hash": "6e7607704f704318bc1a",
+          "publicPath": "/1dafe4c4.b5a9bf09.js"
         }
       ]
     },
     "5": {
       "js": [
         {
-          "file": "content---docs-introductiona-09-6b4.3e007fce717062eb68bc.js",
-          "hash": "309d167761b8a6684323",
-          "publicPath": "/content---docs-introductiona-09-6b4.3e007fce717062eb68bc.js"
+          "file": "264881f6.8b4f9bbd.js",
+          "hash": "0480ec187fbd2c399751",
+          "publicPath": "/264881f6.8b4f9bbd.js"
         }
       ]
     },
     "6": {
       "js": [
         {
-          "file": "content---docs-lecture-10558-5fc.7cdcd12b174aca30e341.js",
-          "hash": "f31f905f7fbedcd5da29",
-          "publicPath": "/content---docs-lecture-10558-5fc.7cdcd12b174aca30e341.js"
+          "file": "2c177778.8459a324.js",
+          "hash": "fedf46ff5baace992fda",
+          "publicPath": "/2c177778.8459a324.js"
         }
       ]
     },
     "7": {
       "js": [
         {
-          "file": "content---docs-lecture-1731-db9.34b9eaf2230d7978f372.js",
-          "hash": "69812e5863403831c757",
-          "publicPath": "/content---docs-lecture-1731-db9.34b9eaf2230d7978f372.js"
+          "file": "325ecad1.f0c19192.js",
+          "hash": "c2cec2a78e320bedada5",
+          "publicPath": "/325ecad1.f0c19192.js"
         }
       ]
     },
     "8": {
       "js": [
         {
-          "file": "content---docs-lecture-2-e-17-e6f.80f09cc4636ead47138a.js",
-          "hash": "201fef556860d072351d",
-          "publicPath": "/content---docs-lecture-2-e-17-e6f.80f09cc4636ead47138a.js"
+          "file": "3accf0ae.df4a779e.js",
+          "hash": "22e265dfcc3111daf209",
+          "publicPath": "/3accf0ae.df4a779e.js"
         }
       ]
     },
     "9": {
       "js": [
         {
-          "file": "content---docs-lecture-3325-a5d.33e089dd7673706f4d0d.js",
-          "hash": "542577740fe22d11fe50",
-          "publicPath": "/content---docs-lecture-3325-a5d.33e089dd7673706f4d0d.js"
+          "file": "3c79a4c7.8ae9f9bc.js",
+          "hash": "3e758a67a5946bbcfa19",
+          "publicPath": "/3c79a4c7.8ae9f9bc.js"
         }
       ]
     },
     "10": {
       "js": [
         {
-          "file": "content---docs-lecture-4-cf-8-fc3.777284137cd8d74c5c29.js",
-          "hash": "1c09455db8287c72f32a",
-          "publicPath": "/content---docs-lecture-4-cf-8-fc3.777284137cd8d74c5c29.js"
+          "file": "43271a3c.1acffb35.js",
+          "hash": "ff61c463bc4b2d93c8f6",
+          "publicPath": "/43271a3c.1acffb35.js"
         }
       ]
     },
     "11": {
       "js": [
         {
-          "file": "content---docs-lecture-575-e-7b5.c605dd993cd585526065.js",
-          "hash": "e016e0f7f319036dc7bb",
-          "publicPath": "/content---docs-lecture-575-e-7b5.c605dd993cd585526065.js"
+          "file": "53b35c99.01225b2f.js",
+          "hash": "687016b1cdea0058d875",
+          "publicPath": "/53b35c99.01225b2f.js"
         }
       ]
     },
     "12": {
       "js": [
         {
-          "file": "content---docs-lecture-6-b-1-c-f07.26029554f3992ef393f9.js",
-          "hash": "3bf697e6219c949975f1",
-          "publicPath": "/content---docs-lecture-6-b-1-c-f07.26029554f3992ef393f9.js"
+          "file": "55856872.09c4be88.js",
+          "hash": "e059da53042b7e4f09c3",
+          "publicPath": "/55856872.09c4be88.js"
         }
       ]
     },
     "13": {
       "js": [
         {
-          "file": "content---docs-lecture-73-ac-9a0.0008e97a139a6812361b.js",
-          "hash": "b76965d98552a0092830",
-          "publicPath": "/content---docs-lecture-73-ac-9a0.0008e97a139a6812361b.js"
+          "file": "5d02c581.b73da9d6.js",
+          "hash": "398b4ac88ed4ea1f3020",
+          "publicPath": "/5d02c581.b73da9d6.js"
         }
       ]
     },
     "14": {
       "js": [
         {
-          "file": "content---docs-lecture-8-eee-b9d.d009ed279e34fab4a1c7.js",
-          "hash": "af2351ee327375e5ba46",
-          "publicPath": "/content---docs-lecture-8-eee-b9d.d009ed279e34fab4a1c7.js"
+          "file": "5dd2a73e.15863c95.js",
+          "hash": "3ec1eca75aa10734abb6",
+          "publicPath": "/5dd2a73e.15863c95.js"
         }
       ]
     },
     "15": {
       "js": [
         {
-          "file": "content---docs-lecture-95-d-0-ab2.987687441648b1b144e0.js",
-          "hash": "593fcbdfb5d818cd2bd9",
-          "publicPath": "/content---docs-lecture-95-d-0-ab2.987687441648b1b144e0.js"
+          "file": "73148213.79cf61ae.js",
+          "hash": "0574b91a8ca5e7031ab5",
+          "publicPath": "/73148213.79cf61ae.js"
         }
       ]
     },
     "16": {
       "js": [
         {
-          "file": "content---docs-setup-editor-264-80b.bee58a710155280e4197.js",
-          "hash": "b702490120f087045db7",
-          "publicPath": "/content---docs-setup-editor-264-80b.bee58a710155280e4197.js"
+          "file": "75ec82c7.1935817e.js",
+          "hash": "9492b28a8ce8e9ce30fe",
+          "publicPath": "/75ec82c7.1935817e.js"
         }
       ]
     },
     "17": {
       "js": [
         {
-          "file": "content---docs-setup-environmentd-04-b1c.33bc231be8646abaeb66.js",
-          "hash": "62cfae687d2bfcdd4b59",
-          "publicPath": "/content---docs-setup-environmentd-04-b1c.33bc231be8646abaeb66.js"
+          "file": "869053b8.1df6bdfc.js",
+          "hash": "89f56fb36d516f87d4a1",
+          "publicPath": "/869053b8.1df6bdfc.js"
         }
       ]
     },
     "18": {
       "js": [
         {
-          "file": "docsMetadata---docsd-50-757.66d71050c504fc687fdf.js",
-          "hash": "342b81349173eec7a44d",
-          "publicPath": "/docsMetadata---docsd-50-757.66d71050c504fc687fdf.js"
+          "file": "8fbecf3b.7169cb37.js",
+          "hash": "95f36ca6dff3fc1db2d0",
+          "publicPath": "/8fbecf3b.7169cb37.js"
         }
       ]
     },
     "19": {
-      "css": [
-        {
-          "file": "main.09486fb3197e8a1cfe0b.css",
-          "hash": "756a218f87620e9112b9",
-          "publicPath": "/main.09486fb3197e8a1cfe0b.css"
-        }
-      ],
       "js": [
         {
-          "file": "main.56ea0984a0d36768ad6c.js",
-          "hash": "756a218f87620e9112b9",
-          "publicPath": "/main.56ea0984a0d36768ad6c.js"
+          "file": "a09c2993.86ae3481.js",
+          "hash": "537ee081999a031d4e42",
+          "publicPath": "/a09c2993.86ae3481.js"
         }
       ]
     },
     "20": {
       "js": [
         {
-          "file": "metadata---docs-introduction-469-0ce.b3123ebf40c8e6fe71aa.js",
-          "hash": "1c91c1b2fb1c9d9df451",
-          "publicPath": "/metadata---docs-introduction-469-0ce.b3123ebf40c8e6fe71aa.js"
+          "file": "a747a797.27d5f706.js",
+          "hash": "89c5c98bde45232e3e08",
+          "publicPath": "/a747a797.27d5f706.js"
         }
       ]
     },
     "21": {
       "js": [
         {
-          "file": "metadata---docs-lecture-107-a-8-3d7.341518e0c1ffefb24522.js",
-          "hash": "3f8978599cac7aea2df9",
-          "publicPath": "/metadata---docs-lecture-107-a-8-3d7.341518e0c1ffefb24522.js"
+          "file": "b1c75849.0cd742ad.js",
+          "hash": "bd8c70c530252b342c3c",
+          "publicPath": "/b1c75849.0cd742ad.js"
         }
       ]
     },
     "22": {
+      "css": [
+        {
+          "file": "c4f5d8e4.2003f819.css",
+          "hash": "7653447dcd30ba966747",
+          "publicPath": "/c4f5d8e4.2003f819.css"
+        }
+      ],
       "js": [
         {
-          "file": "metadata---docs-lecture-17-f-2-df1.2b2f1b6b426debbab64f.js",
-          "hash": "f3e0621ad06d01bd24c4",
-          "publicPath": "/metadata---docs-lecture-17-f-2-df1.2b2f1b6b426debbab64f.js"
+          "file": "c4f5d8e4.35f2722e.js",
+          "hash": "7653447dcd30ba966747",
+          "publicPath": "/c4f5d8e4.35f2722e.js"
         }
       ]
     },
     "23": {
       "js": [
         {
-          "file": "metadata---docs-lecture-2-bbf-62e.ee8b777ee96714584b39.js",
-          "hash": "673f49209a0bebb592be",
-          "publicPath": "/metadata---docs-lecture-2-bbf-62e.ee8b777ee96714584b39.js"
+          "file": "cf8e4d3f.fa082452.js",
+          "hash": "5f2981bdc000c4f85293",
+          "publicPath": "/cf8e4d3f.fa082452.js"
         }
       ]
     },
     "24": {
       "js": [
         {
-          "file": "metadata---docs-lecture-3-b-60-86d.26053225a35b88d6434b.js",
-          "hash": "1935d20f4ccbb1ae2527",
-          "publicPath": "/metadata---docs-lecture-3-b-60-86d.26053225a35b88d6434b.js"
+          "file": "d0470129.1af1cced.js",
+          "hash": "46fc602807f78325ff23",
+          "publicPath": "/d0470129.1af1cced.js"
         }
       ]
     },
     "25": {
       "js": [
         {
-          "file": "metadata---docs-lecture-4520-c11.9e09342c92335085bd0a.js",
-          "hash": "e6cc99469aed897bcc55",
-          "publicPath": "/metadata---docs-lecture-4520-c11.9e09342c92335085bd0a.js"
+          "file": "d0cfa1b4.bc4dc92c.js",
+          "hash": "61eb72b8b0ad153a9512",
+          "publicPath": "/d0cfa1b4.bc4dc92c.js"
         }
       ]
     },
     "26": {
       "js": [
         {
-          "file": "metadata---docs-lecture-5-dae-e39.6a8cfd70a1afd6ba3390.js",
-          "hash": "4630f4a49053e13d13cd",
-          "publicPath": "/metadata---docs-lecture-5-dae-e39.6a8cfd70a1afd6ba3390.js"
+          "file": "d9b85e4e.812ccfec.js",
+          "hash": "d96e7dd01cd0be1d88ea",
+          "publicPath": "/d9b85e4e.812ccfec.js"
         }
       ]
     },
     "27": {
       "js": [
         {
-          "file": "metadata---docs-lecture-6-be-3-f6c.1a7fab6d12d63c733cee.js",
-          "hash": "7a33c6e248b6278957b5",
-          "publicPath": "/metadata---docs-lecture-6-be-3-f6c.1a7fab6d12d63c733cee.js"
+          "file": "e17170cd.93290564.js",
+          "hash": "1cae42712af6cd902fd8",
+          "publicPath": "/e17170cd.93290564.js"
         }
       ]
     },
     "28": {
       "js": [
         {
-          "file": "metadata---docs-lecture-7-b-18-761.c71928b255360619979c.js",
-          "hash": "9c49c84fdf5f9e43630c",
-          "publicPath": "/metadata---docs-lecture-7-b-18-761.c71928b255360619979c.js"
+          "file": "e93df3d3.cb02c548.js",
+          "hash": "a7aad15f8eb9f57829d0",
+          "publicPath": "/e93df3d3.cb02c548.js"
         }
       ]
     },
     "29": {
       "js": [
         {
-          "file": "metadata---docs-lecture-82-fb-4c9.651e316b164f27605f9f.js",
-          "hash": "d9a9ef3a7cc7faf26e60",
-          "publicPath": "/metadata---docs-lecture-82-fb-4c9.651e316b164f27605f9f.js"
+          "file": "eee5f7e2.980fa6d6.js",
+          "hash": "bf498cefe5924565f025",
+          "publicPath": "/eee5f7e2.980fa6d6.js"
         }
       ]
     },
     "30": {
       "js": [
         {
-          "file": "metadata---docs-lecture-98-bd-3be.25344e61662e25911cc6.js",
-          "hash": "5b4036503e99e5cccb39",
-          "publicPath": "/metadata---docs-lecture-98-bd-3be.25344e61662e25911cc6.js"
+          "file": "ef2910f4.f4951cfc.js",
+          "hash": "475cea8cffd86977a564",
+          "publicPath": "/ef2910f4.f4951cfc.js"
         }
       ]
     },
     "31": {
+      "css": [
+        {
+          "file": "main.f5b8b037.css",
+          "hash": "36975edc5755a4217bed",
+          "publicPath": "/main.f5b8b037.css"
+        }
+      ],
       "js": [
         {
-          "file": "metadata---docs-setup-editor-5-d-8-316.4bdb33c7869a1f4976c7.js",
-          "hash": "856d7a4082f9998691d9",
-          "publicPath": "/metadata---docs-setup-editor-5-d-8-316.4bdb33c7869a1f4976c7.js"
+          "file": "main.00652e1f.js",
+          "hash": "36975edc5755a4217bed",
+          "publicPath": "/main.00652e1f.js"
         }
       ]
     },
     "32": {
       "js": [
         {
-          "file": "metadata---docs-setup-environment-76-c-8d0.3885339efc4d19e11da3.js",
-          "hash": "1ebf85890338b66a9967",
-          "publicPath": "/metadata---docs-setup-environment-76-c-8d0.3885339efc4d19e11da3.js"
+          "file": "runtime~main.51a8e859.js",
+          "hash": "edd4bc6aebd8452c5854",
+          "publicPath": "/runtime~main.51a8e859.js"
         }
       ]
     },
     "33": {
-      "js": [
-        {
-          "file": "runtime~main.dbc0d36a5f93a5707db2.js",
-          "hash": "39df3be2d4b8152b4506",
-          "publicPath": "/runtime~main.dbc0d36a5f93a5707db2.js"
-        }
-      ]
-    },
-    "34": {
       "css": [
         {
-          "file": "34.34995f39ff228f78da24.css",
-          "hash": "40ab67638fae1fc98f3a",
-          "publicPath": "/34.34995f39ff228f78da24.css"
+          "file": "33.3c0732d0.css",
+          "hash": "1f3efa6289385fe265e5",
+          "publicPath": "/33.3c0732d0.css"
         }
       ],
       "js": [
         {
-          "file": "34.eca27305c40b0a84b658.js",
-          "hash": "40ab67638fae1fc98f3a",
-          "publicPath": "/34.eca27305c40b0a84b658.js"
+          "file": "33.fa89aa90.js",
+          "hash": "1f3efa6289385fe265e5",
+          "publicPath": "/33.fa89aa90.js"
         }
       ]
     },
-    "35": {
+    "34": {
       "js": [
         {
-          "file": "35.745f1ef69ec70c71a57d.js",
-          "hash": "cde7e256884e4d28d114",
-          "publicPath": "/35.745f1ef69ec70c71a57d.js"
+          "file": "34.d9f293a1.js",
+          "hash": "7d95e6a452d358a56cd0",
+          "publicPath": "/34.d9f293a1.js"
         }
       ]
     }
