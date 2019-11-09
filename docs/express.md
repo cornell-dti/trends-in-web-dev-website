@@ -84,7 +84,7 @@ You can match patterns in text rather than specific characters. For example, wha
 
 Take a look at this route, paying special attention to the `:` characters. Those denote parameters in the route.
 
-```
+```javascript
 app.get('/users/:userId/books/:bookId', function (req, res) {
   res.send(req.params)
 })
