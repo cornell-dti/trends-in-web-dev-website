@@ -17,5 +17,6 @@ jobs:
         env:
           GIT_USER: ${{ secrets.DEPLOY_GH_PAGE_TOKEN }}
         run: |
-          git config --global user.name "deployment-bot"
+          git config --global user.name "dti-github-bot"
+          git config --global user.email "admin@cornelldti.org"
           yarn deploy

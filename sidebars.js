@@ -2,6 +2,7 @@ module.exports = {
   docs: {
     'Getting Started': ['introduction', 'setup-environment', 'setup-editor'],
     Lectures: [
+      'express',
       'lecture1',
       'lecture2',
       'lecture3',

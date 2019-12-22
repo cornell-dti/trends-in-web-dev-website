@@ -3,6 +3,9 @@ id: lecture2
 title: Lecture 2 - Frontend 1
 ---
 
+[Lecture
+Slides](https://docs.google.com/presentation/d/1Kev9PeKaX_yrw71kuHVLf0nrbFG1kvd4z1k_b-FLYSw/edit?usp=sharing)
+
 ## Before the Lecture
 
 ```bash
@@ -121,40 +124,35 @@ renders your component into the DOM element that has id `root`.
 
 Imagine you are writing a message board app and you need to implement an editor.
 
-Unlike functional components, you need to maintain state. In React, you will
-need a class component:
+Unlike the previous components, you need to maintain state. In React, you will
+need `hooks`.
 
 ```jsx
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 
-export default class SimpleEditor extends Component {
-  // Define your initial state here.
-  state = { name: '' };
+export default function SimpleEditor(props) {
+  // name is the variable for the state, setName is the function you can use
+  // to change the state.
+  const [name, setName] = useState(''); // '' is the initial state for name.
 
-  changeName = event => {
+  const changeName = event => {
     // To extract the value from input box, use the following line.
     const name = event.currentTarget.value;
-    this.setState({ name });
-    // The above line is a short form of this.setState({ name: name });
+    setName(name);
   };
 
-  hello = ({ name }) => <p>Hello, {name}</p>;
-
-  render() {
-    const { name } = this.state;
-    return (
-      <div>
-        <div>{name !== '' ? this.hello({ name }) : ''}</div>
-        <input
-          className={styles.InputBox}
-          type="text"
-          placeholder="Type your name..."
-          value={name}
-          onChange={this.changeName}
-        />
-      </div>
-    );
-  }
+  return (
+    <div>
+      <div>{name !== '' ? `Hello, ${name}` : ''}</div>
+      <input
+        className={styles.InputBox}
+        type="text"
+        placeholder="Type your name..."
+        value={name}
+        onChange={changeName}
+      />
+    </div>
+  );
 }
 ```
 
