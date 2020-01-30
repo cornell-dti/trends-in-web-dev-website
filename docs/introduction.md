@@ -49,8 +49,6 @@ By the end of the course, students will be have a much more in-depth understandi
 
 Throughout this course, students will work as individuals and in groups to apply these skills to projects. These are both skills that are extremely important to employers: being able to function independently on assigned tasks, and being able to collaborate with different people on a wide variety of tasks. The idea is to closely resemble milestones and checkpoints in project development, which occur with one to many people.
 
-You can see an example of a past lecture [here](https://drive.google.com/open?id=1Ysm3deN2tHxK06fZqjK5Z47toehK1RrO7PYKkwzYfCU).
-
 ## What are the prerequisites?
 
 This course will be covering both client-facing and server-side technologies. INFO/CS 1300, or equivalent experience with HTML & CSS, is a pre-requisite.
