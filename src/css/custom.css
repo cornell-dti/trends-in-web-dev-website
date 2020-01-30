@@ -23,6 +23,6 @@ pre {
 
 @media screen and (min-width: 966px) {
   #__docusaurus {
-    height: calc(100vh - var(--ifm-navbar-height));
+    height: calc(100vh);
   }
 }
