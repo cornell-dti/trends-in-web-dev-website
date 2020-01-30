@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[20],{158:function(e){e.exports=JSON.parse('{"id":"lecture5","title":"Lecture 5","description":"","source":"@site/docs/lecture5.md","permalink":"/docs/lecture5","sidebar":"docs","next":{"title":"Lecture 6","permalink":"/docs/lecture6"},"previous":{"title":"Lecture 4","permalink":"/docs/lecture4"}}')}}]);
