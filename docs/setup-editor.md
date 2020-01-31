@@ -20,13 +20,7 @@ Add these lines to your VSCode Settings:
   "eslint.alwaysShowStatus": true,
   "eslint.autoFixOnSave": true,
   "eslint.enable": true,
-  "eslint.packageManager": "yarn",
-  "eslint.validate": [
-    { "autoFix": true, "language": "javascript" },
-    { "autoFix": true, "language": "javascriptreact" },
-    { "autoFix": true, "language": "typescript" },
-    { "autoFix": true, "language": "typescriptreact" }
-  ],
+  "eslint.packageManager": "yarn"
 ```
 
 ### Bracket Pair Colorizer
