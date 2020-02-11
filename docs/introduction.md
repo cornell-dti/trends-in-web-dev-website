@@ -57,11 +57,11 @@ There is a **mandatory** preassessment: https://bit.ly/38K6w5L. It should take l
 
 ## When is it?
 
-The first class meeting will be Wednesday, February 12th and end on Wednesday, April 29th. This course will be held Wednesday evenings from 8:30 - 9:30 PM, Phillips 307.
+The first class meeting will be Wednesday, February 12th and end on Wednesday, April 29th. This course will be held Wednesday evenings from 8:30 - 9:30 PM, Gates G01.
 
 ## Where does it meet?
 
-Phillips 307
+Gates G01
 
 ## What is the expected workload?
 
