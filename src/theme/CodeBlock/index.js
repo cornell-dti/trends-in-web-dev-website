@@ -13,27 +13,31 @@ import Clipboard from 'clipboard';
 import atomOneLightTheme from './atom-one-light-theme';
 import styles from './styles.module.css';
 
-const getTheme = () => {
+/** @returns {'dark' | 'light' | null} */
+const getThemeName = () => {
   try {
-    return localStorage.getItem('theme') === 'dark'
-      ? nightOwlTheme
-      : atomOneLightTheme;
+    return localStorage.getItem('theme') === 'dark' ? 'dark' : 'light';
   } catch (e) {
-    return atomOneLightTheme;
+    return null;
   }
 };
+
+/** @param {string} name */
+const getTheme = name => (name === 'dark' ? nightOwlTheme : atomOneLightTheme);
 
 export default ({ children, className: languageClassName }) => {
   const [showCopied, setShowCopied] = useState(false);
   const target = useRef(null);
   const button = useRef(null);
 
-  const [theme, setTheme] = useState(getTheme());
+  const [theme, setTheme] = useState(getThemeName());
 
   useEffect(() => {
     const interval = setInterval(() => {
-      const newTheme = getTheme();
+      const newTheme = getThemeName();
+      console.log(theme, newTheme, new Date().getTime());
       if (theme !== newTheme) {
+        console.log('set new theme!');
         setTheme(newTheme);
       }
     }, 50);
@@ -56,6 +60,10 @@ export default ({ children, className: languageClassName }) => {
     };
   }, [button.current, target.current]);
 
+  if (theme === null) {
+    return null;
+  }
+
   const language =
     languageClassName && languageClassName.replace(/language-/, '');
 
@@ -69,7 +77,7 @@ export default ({ children, className: languageClassName }) => {
   return (
     <Highlight
       {...defaultProps}
-      theme={theme}
+      theme={getTheme(theme)}
       code={children.trim()}
       language={language}
     >

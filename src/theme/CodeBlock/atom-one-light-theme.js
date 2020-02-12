@@ -28,7 +28,7 @@ var theme /*: PrismTheme */ = {
       }
     },
     {
-      types: ['constant', 'number', 'builtin', 'attr-name'],
+      types: ['constant', 'number', 'builtin', 'attr-name', 'property'],
       style: {
         color: 'rgb(152, 104, 1)'
       }
