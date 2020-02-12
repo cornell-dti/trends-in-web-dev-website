@@ -7,13 +7,15 @@ For convenience, we assume you will use VSCode. If you are using WebStorm and
 Atom, you are likely to find some extensions that provide similar
 functionalities.
 
-## Recommeneded Extensions
+## Recommended Extensions
+
+To install extensions in VS Code, navigate to the left-hand sidebar, and click the building blocks icon at the bottom. This should take you to the Extensions marketplace.
 
 ### ESLint
 
-Install ESLint in VSCode
+Installing ESLint in VSCode will give you real-time linter feedback in any JavaScript code you write, allowing you to quickly pinpoint many problems and have readable, proper formatting.
 
-Add these lines to your VSCode Settings:
+Once installed, add these lines to your VSCode Settings (refer to [this link](https://code.visualstudio.com/docs/getstarted/settings) if you need help getting there):
 
 ```json
   // Other settings ...
@@ -29,4 +31,4 @@ Highlights matching brackets to make code easier to read.
 
 ### npm
 
-This will be useful later when looking at `package.json` files.
+This will be useful later when inspecting `package.json` files.
