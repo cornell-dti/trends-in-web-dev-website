@@ -5,7 +5,7 @@ title: Syllabus
 
 # Trends in Modern Web Development
 
-[Cornell DTI](http://cornelldti.org/). Read our article about the first run of the course on [Medium](https://medium.com/cornell-design-tech-initiative/cornell-dti-trends-in-web-development-4cb5abc56776)!
+By [Cornell DTI](http://cornelldti.org/). Read our article about the first run of the course on [Medium](https://medium.com/cornell-design-tech-initiative/cornell-dti-trends-in-web-development-4cb5abc56776)!
 
 ## Course Application
 
@@ -99,7 +99,7 @@ As a programming course, you may find yourself in a position to copy or appropri
 
 ### Accessibility
 
-We seek to make this class as inclusive as possible for all students. All lectures will be video recorded for instructor use only. If you have accomodations with Student Disability Services and require access to these recordings, or any other class accommodations, please speak to an instructor before the first lecture and we will work with you to make arrangements as necessary.
+We seek to make this class as inclusive as possible for all students. All lectures will be video recorded for instructor use only. If you have accommodations with Student Disability Services and require access to these recordings, or any other class accommodations, please speak to an instructor before the first lecture and we will work with you to make arrangements as necessary.
 
 ### Cell Phones
 
