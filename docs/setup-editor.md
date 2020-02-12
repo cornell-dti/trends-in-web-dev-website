@@ -8,6 +8,7 @@ Atom, you are likely to find some extensions that provide similar
 functionalities.
 
 ## Recommended Extensions
+
 To install extensions in VS Code, navigate to the left-hand sidebar, and click the building blocks icon at the bottom. This should take you to the Extensions marketplace.
 
 ### ESLint
