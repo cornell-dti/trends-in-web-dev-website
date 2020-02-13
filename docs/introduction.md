@@ -61,13 +61,12 @@ Lecture 10 4/29/20: Student Choice
 
 ## Where are assignments released and submitted?
 
-Assignments will be released on [GitHub](https://github.com/ashneeldas2/trends-sp20) every Wednesday. Every assignment 
+Assignments will be released on [GitHub](https://github.com/ashneeldas2/trends-sp20) every Wednesday. Every assignment
 is due right before class of the following week at 7:59pm unless otherwise stated. You will have 6 slip days total to use on
-the assignments and each assignment you may only use up to 2 slip days. Use these judiciously because we will not be handling extensions outside of slip days. 
+the assignments and each assignment you may only use up to 2 slip days. Use these judiciously because we will not be handling extensions outside of slip days.
 
 Assignments must be submitted on CMS. We will not take submissions emailed to us. If you are not on the CMS please email
 Megan (my474@cornell.edu) or Ashneel (ad665@cornell.edu)
-
 
 ## What will be taught?
 
@@ -130,4 +129,3 @@ We seek to make this class as inclusive as possible for all students. All lectur
 ### Cell Phones
 
 Cell phones are distracting to you, people around you, and instructors. If you plan on taking this course and sitting in lectures on your phone and not paying attention, you may be asked to leave. Please be respectful of other people.
-
