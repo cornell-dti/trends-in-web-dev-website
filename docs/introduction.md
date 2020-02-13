@@ -27,7 +27,7 @@ Lecture 1 2/12/20: Syllabus, Intro to Node, Express Routes, HTTP Methods
 
 Lecture 2 2/19/20: NoSQL DB (Firebase)
 
-Lecture 3 2/26/20: Build a Rest API for DB model
+Lecture 3 2/26/20: More Firebase, Build a Rest API for DB model
 
 Lecture 4 3/04/20: Functional Programming (map, filter, reduce)
 
