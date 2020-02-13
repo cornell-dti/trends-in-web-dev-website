@@ -5,6 +5,8 @@ title: Lecture 1
 
 [Lecture Slides](https://docs.google.com/presentation/d/1hkIoGdaiNgzZwTkAWp3VW5ufsQaVeGzN7eHmULhyWpI/edit?usp=sharing)
 
+[Assignment 1](https://github.com/ashneeldas2/trends-sp20/tree/master/Assignments/a1) due **2/19 7:59pm**
+
 # Introduction to HTTP Methods
 
 When you want to visit a website in your browser, you send a request to the server asking for information. These requests have different types including POST, GET, PUT, PATCH, and DELETE. We'll primarily be concerning ourselves POST and GET. Here are MDN's definitions:
