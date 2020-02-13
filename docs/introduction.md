@@ -17,7 +17,21 @@ This class will teach students about modern web development technologies, practi
 
 ## When are office hours?
 
-TBD
+Office Hours are held in Rhodes 419.
+
+Ashneel: Wednesday 2:30-3:30pm
+
+Megan: Tuesday 1-2pm
+
+Sam: Monday 3:30-4:30pm
+
+Peter: Monday 4:30-5:30pm
+
+Enoch: Tuesday 2-3pm
+
+Jason: Thursday 1-2pm
+
+Additional times available by appointment.
 
 ## Is there a lecture schedule?
 
