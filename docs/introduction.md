@@ -5,7 +5,7 @@ title: Syllabus
 
 # Trends in Modern Web Development
 
-[Cornell DTI](http://cornelldti.org/). Read our article about the first run of the course on [Medium](https://medium.com/cornell-design-tech-initiative/cornell-dti-trends-in-web-development-4cb5abc56776)!
+By [Cornell DTI](http://cornelldti.org/). Read our article about the first run of the course on [Medium](https://medium.com/cornell-design-tech-initiative/cornell-dti-trends-in-web-development-4cb5abc56776)!
 
 ## Course Application
 
@@ -49,8 +49,6 @@ By the end of the course, students will be have a much more in-depth understandi
 
 Throughout this course, students will work as individuals and in groups to apply these skills to projects. These are both skills that are extremely important to employers: being able to function independently on assigned tasks, and being able to collaborate with different people on a wide variety of tasks. The idea is to closely resemble milestones and checkpoints in project development, which occur with one to many people.
 
-You can see an example of a past lecture [here](https://drive.google.com/open?id=1Ysm3deN2tHxK06fZqjK5Z47toehK1RrO7PYKkwzYfCU).
-
 ## What are the prerequisites?
 
 This course will be covering both client-facing and server-side technologies. INFO/CS 1300, or equivalent experience with HTML & CSS, is a pre-requisite.
@@ -59,11 +57,11 @@ There is a **mandatory** preassessment: https://bit.ly/38K6w5L. It should take l
 
 ## When is it?
 
-The first class meeting will be Wednesday, February 12th and end on Wednesday, April 29th. This course will be held Wednesday evenings from 8:30 - 9:30 PM, Phillips 307.
+The first class meeting will be Wednesday, February 12th and end on Wednesday, April 29th. This course will be held Wednesday evenings from 8:30 - 9:30 PM, Gates G01.
 
 ## Where does it meet?
 
-Phillips 307
+Gates G01
 
 ## What is the expected workload?
 
@@ -101,7 +99,7 @@ As a programming course, you may find yourself in a position to copy or appropri
 
 ### Accessibility
 
-We seek to make this class as inclusive as possible for all students. All lectures will be video recorded for instructor use only. If you have accomodations with Student Disability Services and require access to these recordings, or any other class accommodations, please speak to an instructor before the first lecture and we will work with you to make arrangements as necessary.
+We seek to make this class as inclusive as possible for all students. All lectures will be video recorded for instructor use only. If you have accommodations with Student Disability Services and require access to these recordings, or any other class accommodations, please speak to an instructor before the first lecture and we will work with you to make arrangements as necessary.
 
 ### Cell Phones
 
