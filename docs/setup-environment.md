@@ -7,7 +7,7 @@ title: Setup your development environment
 
 Go to [this website](https://nodejs.org/en/download/) and follow the instructions.
 
-For consistency, we will use Node version newer than LTS.
+For consistency, we will use Node LTS (current Node 12).
 
 ## Install Yarn
 
