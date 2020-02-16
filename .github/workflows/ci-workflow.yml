@@ -12,5 +12,3 @@ jobs:
         run: yarn install
       - name: Run Prettier
         run: 'yarn format:check'
-      - name: Build Website
-        run: yarn build
