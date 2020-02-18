@@ -5,7 +5,9 @@ title: Lecture 1
 
 [Lecture Slides](https://docs.google.com/presentation/d/1hkIoGdaiNgzZwTkAWp3VW5ufsQaVeGzN7eHmULhyWpI/edit?usp=sharing)
 
-# Introduction to HTTP Methods
+[Assignment 1](https://github.com/ashneeldas2/trends-sp20/tree/master/Assignments/a1) due **2/19 7:59pm**
+
+## Introduction to HTTP Methods
 
 When you want to visit a website in your browser, you send a request to the server asking for information. These requests have different types including POST, GET, PUT, PATCH, and DELETE. We'll primarily be concerning ourselves POST and GET. Here are MDN's definitions:
 
@@ -14,18 +16,18 @@ When you want to visit a website in your browser, you send a request to the serv
 
 You can see more details as well as the rest of the methods at the [official site](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods).
 
-# What is Node?
+## What is Node?
 
 > Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine.
 > Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient.
 
-## That didn't answer my question.
+### That didn't answer my question.
 
 Node is a program that will interpret your Javascript and is commonly used for web servers.
 
 Node serves as a way to unify the frontend and the backend in one language/framework. On the frontend we have many JavaScript libraries like React, Angular, Vue and on the backend we have Express, Koa, Happi.
 
-# Responding to Requests
+## Responding to Requests
 
 One of the first tasks when building a website is responding to the requests that come from the browser. In this lecture, we will be building a basic Node app using Express to interpret requests and respond to them.
 
@@ -52,7 +54,7 @@ app.get('/', function(req, res) {
 });
 ```
 
-# Custom URLs
+## Custom URLs
 
 We can respond differently for requests to different URLs. For example, if we wanted ‘/home' to respond with “Welcome Home!” we could add a second route.
 
@@ -66,7 +68,7 @@ Both of these blocks of code respond to GET requests, because we are using Expre
 
 https://expressjs.com/en/starter/basic-routing.html
 
-## POST methods
+### POST methods
 
 POST method is generally used to submit data to an endpoint.
 
@@ -78,11 +80,11 @@ app.post('/', function(req, res) {
 });
 ```
 
-## Regular Expressions
+### Regular Expressions
 
 You can match patterns in text rather than specific characters. For example, what if you want to return the same page for all URLs of `/users/[SOME NUMBER]`? We can use regular expressions so that the route will be used for any value. We can use the route string `/users/\d+` to match any number. Regular expressions are outside the scope of this class, but you may find more information in the references below.
 
-## Parameterized Routes
+### Parameterized Routes
 
 Take a look at this route, paying special attention to the `:` characters. Those denote parameters in the route.
 
@@ -103,7 +105,7 @@ app.get('/messages/:messageId', (req, res) => {
 });
 ```
 
-# References
+## References
 
 Don't know where to start? Check out [Express's official getting started page](https://expressjs.com/en/starter/installing.html). The rest of the pages have great content and will help you along your journey.
 
