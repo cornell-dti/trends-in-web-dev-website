@@ -111,6 +111,6 @@ Don't know where to start? Check out [Express's official getting started page](h
 
 For a more in-depth exploration of this topic, check out [this tutorial](https://www.robinwieruch.de/node-express-server-rest-api).
 
-[This](https://expressjs.com/en/guide/routing.html) is a useful tool to test your Express regular expressions to make sure that the routes match what you expect.
+[This](http://forbeslindesay.github.io/express-route-tester/) is a useful tool to test your Express regular expressions to make sure that the routes match what you expect.
 
 For an interactive way to learn regular expressions, [consider this site](https://regexone.com/).
