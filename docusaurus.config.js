@@ -7,6 +7,10 @@ module.exports = {
   organizationName: 'cornell-dti',
   projectName: 'trends-in-web-dev-website',
   themeConfig: {
+    prism: {
+      theme: require('./atom-one-light-theme'),
+      darkTheme: require('prism-react-renderer/themes/nightOwl')
+    },
     navbar: {
       title: 'Trends in Web Dev',
       logo: {
