@@ -31,11 +31,11 @@ Ashneel: Wednesday 2:30-3:30pm
 
 Jason: Thursday 1-2pm
 
-Megan: Thursday 2-3pm**
+Megan: Thursday 2-3pm\*\*
 
-Ashneel: Friday 3-4pm**
+Ashneel: Friday 3-4pm\*\*
 
-**Only 2/20 and 2/21
+\*\*Only 2/20 and 2/21
 
 Additional times available by appointment.
 
