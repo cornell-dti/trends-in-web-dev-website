@@ -19,7 +19,7 @@ Run `yarn init` in this folder on the terminal. (Use `cd` to navigate to you `he
 
 Upon running `yarn init`, you should be prompted to answer eight questions. Hit enter each time, we will use the default answer for all of these questions:
 
-```
+```bash
 yarn init v1.19.2
 question name (helloworld):
 question version (1.0.0):
@@ -35,7 +35,7 @@ success Saved package.json
 
 In the end, these questions create a `package.json` file. Your `package.json` should like this:
 
-```
+```json
 // package.json
 {
   "name": "helloworld",
@@ -57,7 +57,7 @@ Lets try installing a package. In the first assignment we asked you to use `expr
 
 After installation completes, take a look at your `package.json`:
 
-```
+```json
 {
   "name": "test",
   "version": "1.0.0",
@@ -89,7 +89,7 @@ Lets say you made a typo installing `express` and you instead ran
 
 Your `package.json` should look like this:
 
-```
+```json
 {
   "name": "test",
   "scripts": {
@@ -99,11 +99,10 @@ Your `package.json` should look like this:
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
     "experss": ""
   }
 }
-
 ```
 
 Unfortunately, some malicious developer capitalized on this typo mistake and made `experss` an actual package. How do you remove experss?
@@ -130,18 +129,18 @@ Lets make a simple endpoint that gets the value of a variable `x`.
 
 Create a new file called `index.js` and add the following:
 
-```
+```js
 // index.js
 const express = require('express');
 const app = express();
 let x = 0;
 
 app.get('/getX', function(req, res) {
-        res.send(x + "");
+  res.send(x + '');
 });
 
 app.listen(8080, function(req, res) {
-        console.log('Hello, World!')
+  console.log('Hello, World!');
 });
 ```
 
@@ -175,15 +174,15 @@ Another type of request we talked about was a POST request, used to send data to
 
 Add the following to your `index.js` file after your `app.get` call:
 
-```
+```js
 // index.js
 app.post('/addOne', function(req, res) {
-        if (req.query.variable === 'x') {
-                x += 1;
-                res.send(x + "");
-        } else {
-                res.send('We do not have that variable! :(');
-        }
+  if (req.query.variable === 'x') {
+    x += 1;
+    res.send(x + '');
+  } else {
+    res.send('We do not have that variable! :(');
+  }
 });
 ```
 
@@ -201,7 +200,7 @@ We can import it into our script using `const bodyParser = require('body-parser'
 
 Your index.js should now look like the following:
 
-```
+```js
 // index.js
 const express = require('express');
 const bodyParser = require('body-parser');
@@ -212,29 +211,29 @@ app.use(bodyParser.json());
 let x = 0;
 
 app.get('/getX', function(req, res) {
-        res.send(x + "");
+  res.send(x + '');
 });
 
 app.post('/add1', function(req, res) {
-        if (req.query.variable === 'x') {
-                x += 1;
-                res.send(x + "");
-        } else {
-                res.send('We don\'t have that variable! :(');
-        }
+  if (req.query.variable === 'x') {
+    x += 1;
+    res.send(x + '');
+  } else {
+    res.send("We don't have that variable! :(");
+  }
 });
 
 app.listen(8080, function(req, res) {
-        console.log('Hello, World!')
+  console.log('Hello, World!');
 });
 ```
 
 Now we can add the following function:
 
-```
+```js
 app.post('/updateVar', function(req, res) {
-        x = req.body.x;
-        res.send(x + "");
+  x = req.body.x;
+  res.send(x + '');
 });
 ```
 
@@ -242,9 +241,9 @@ This tells `express` to listen for `POST` requests at endpoint `/updateVar`. `re
 
 We can check that this endpoint is working using Postman. Set the request type to `POST` and url as `localhost:8080/updateVar`. To send a request body, first go to Headers and add a new key `Content-Type` with value `application/json`. This says we are sending JSON input (essentially, an object of dictionary) in our request body. In the Body section, select the raw radio button and enter the following in the text field:
 
-```
+```json
 {
-	"x": 3000
+  "x": 3000
 }
 ```
 
