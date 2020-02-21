@@ -103,7 +103,6 @@ Your `package.json` should look like this:
     "experss": ""
   }
 }
-
 ```
 
 Unfortunately, some malicious developer capitalized on this typo mistake and made `experss` an actual package. How do you remove experss?
@@ -137,11 +136,11 @@ const app = express();
 let x = 0;
 
 app.get('/getX', function(req, res) {
-        res.send(x + "");
+  res.send(x + '');
 });
 
 app.listen(8080, function(req, res) {
-        console.log('Hello, World!')
+  console.log('Hello, World!');
 });
 ```
 
@@ -178,12 +177,12 @@ Add the following to your `index.js` file after your `app.get` call:
 ```js
 // index.js
 app.post('/addOne', function(req, res) {
-        if (req.query.variable === 'x') {
-                x += 1;
-                res.send(x + "");
-        } else {
-                res.send('We do not have that variable! :(');
-        }
+  if (req.query.variable === 'x') {
+    x += 1;
+    res.send(x + '');
+  } else {
+    res.send('We do not have that variable! :(');
+  }
 });
 ```
 
@@ -212,20 +211,20 @@ app.use(bodyParser.json());
 let x = 0;
 
 app.get('/getX', function(req, res) {
-        res.send(x + "");
+  res.send(x + '');
 });
 
 app.post('/add1', function(req, res) {
-        if (req.query.variable === 'x') {
-                x += 1;
-                res.send(x + "");
-        } else {
-                res.send('We don\'t have that variable! :(');
-        }
+  if (req.query.variable === 'x') {
+    x += 1;
+    res.send(x + '');
+  } else {
+    res.send("We don't have that variable! :(");
+  }
 });
 
 app.listen(8080, function(req, res) {
-        console.log('Hello, World!')
+  console.log('Hello, World!');
 });
 ```
 
@@ -233,8 +232,8 @@ Now we can add the following function:
 
 ```js
 app.post('/updateVar', function(req, res) {
-        x = req.body.x;
-        res.send(x + "");
+  x = req.body.x;
+  res.send(x + '');
 });
 ```
 
