@@ -5,7 +5,7 @@ title: Lecture 2
 
 [Lecture Slides](https://docs.google.com/presentation/d/1DOnubRBOjOE8JWchbZziMK4COBPXyLq5MBfcTE2ZVRc/edit?usp=sharing)
 
-[Assignment 1](https://github.com/ashneeldas2/trends-sp20/tree/master/Assignments/a1) due **2/21 (extended the due date!) 7:59pm**
+No assignment this week; enjoy your break!
 
 ## How to set up a Node project
 
@@ -73,7 +73,7 @@ Notice that `express` was added to our dependencies. Now `express` is available 
 
 Every time you add a dependency with `yarn add <pkg_name>`, `<pkg_name>` will be added to your dependencies in `package.json` if it can be found. It will also be added to your `node_modules`.
 
-Take a look inside your `node_modules` folder. This is where all your packages will be installed. Notice that even though you just installed one package, multiple packages are in `package.json`. This is because `express` itself have several dependencies that also got installed.
+Take a look inside your `node_modules` folder. This is where all your packages will be installed. Notice that even though you just installed one package, multiple packages are in `package.json`. This is because `express` itself has several dependencies that also got installed.
 
 You can find packages to use on [npmjs.com](npmjs.com).
 
@@ -122,7 +122,7 @@ This fetches all your dependencies again based on your `package.json` and since 
 
 ## More Express and HTTP Methods
 
-Now that we have our Node project set up, we can start writing our first script using javascript and express.
+Now that we have our Node project set up, we can start writing our first script using JavaScript and express.
 
 ### GET Request
 
@@ -156,6 +156,8 @@ Lets test this script by running `node index.js` in the terminal at your `hellow
 `Hello, World!` should be printed on the terminal showing that the port is up and running and listening for requests.
 
 Use your web browser to navigate to `localhost:8080/getX`. You should see the value of `x`, 0, on the page.
+
+You can terminate the running of the script using CTRL/Command+C.
 
 ### Postman
 
