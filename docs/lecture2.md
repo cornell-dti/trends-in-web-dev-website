@@ -139,7 +139,7 @@ app.get('/getX', function(req, res) {
   res.send(x + '');
 });
 
-app.listen(8080, function(req, res) {
+app.listen(8080, function() {
   console.log('Hello, World!');
 });
 ```
@@ -223,7 +223,7 @@ app.post('/add1', function(req, res) {
   }
 });
 
-app.listen(8080, function(req, res) {
+app.listen(8080, function() {
   console.log('Hello, World!');
 });
 ```
