@@ -5,6 +5,10 @@ title: Lecture 3
 
 ## Before the lecture
 
+### Install Postman
+
+Install Postman from [https://www.postman.com/downloads/](https://www.postman.com/downloads/)
+
 ### Firebase Setup
 
 1. Create an account on [Firebase](https://firebase.google.com). You only need the free version.
@@ -17,7 +21,7 @@ title: Lecture 3
 
 #### Code
 
-Create an folder with empty `package.json` and empty `index.js`. Put the downloaded
+Create a folder with empty `package.json` and empty `index.js`. Put the downloaded
 `service-account.json` in this folder.
 
 Copy the following code into `package.json`.
@@ -37,7 +41,7 @@ Copy the following code into `package.json`.
 ```
 
 Copy the following code into `index.js`. Remember to replace `databaseURL` with
-the url of your own.
+the url of your own. You can find this `databaseURL` in the code snippet in the service accounts tab of Firebase.
 
 ```javascript
 const admin = require('firebase-admin');
