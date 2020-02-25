@@ -8,13 +8,16 @@ title: Lecture 3
 ### Install Postman
 
 Install Postman from [https://www.postman.com/downloads/](https://www.postman.com/downloads/)
+If necessary, set up a Postman account using your Cornell email address.
 
 ### Firebase Setup
 
 1. Create an account on [Firebase](https://firebase.google.com). You only need the free version.
-2. Go to the database tab in Firebase console. Choose to create **Firestore** starting in locked
-   mode.
-3. Download the service account in `Project Settings > Service accounts` as `service-account.json`. `Project Settings` can be found by clicking the gear button on the left panel next to `Project Overview`. Go to `Service accounts` tab and click the `Generate new private key button`. Save the downloaded file as `service-account.json`
+2. Go to Firebase console and click `Add project`. Choose any random name for the project name. You
+   won't need Google Analytics in this class but it is fine to enable it. Analytics location doesn't
+   matter, leave it at default United States and check the remaining boxes agreeing to terms and click `Create project`.
+3. Once your project is created, go into it and go to the `Database` tab under `Develop`. Choose to create **Firestore** starting in production mode. Keep the Firestore location as default.
+4. Download the service account in `Project Settings > Service accounts` as `service-account.json`. `Project Settings` can be found by clicking the gear button on the left panel next to `Project Overview`. Go to `Service accounts` tab and click the `Generate new private key button`. Save the downloaded file as `service-account.json`
    This json should be kept secret.
 
 ### Check your setup
@@ -42,6 +45,8 @@ Copy the following code into `package.json`.
 
 Copy the following code into `index.js`. Remember to replace `databaseURL` with
 the url of your own. You can find this `databaseURL` in the code snippet in the service accounts tab of Firebase.
+
+_Don't worry if you don't understand this code! You'll know what it does and how to write similar code by the end of this course!_
 
 ```javascript
 const admin = require('firebase-admin');
