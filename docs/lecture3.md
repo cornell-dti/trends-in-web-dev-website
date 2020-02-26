@@ -3,6 +3,8 @@ id: lecture3
 title: Lecture 3
 ---
 
+[Lecture Slides](https://docs.google.com/presentation/d/1iimIRpAw1ud1yhCCx1cdwypZw2J8VVN8mTLWXOc8g-U/edit?usp=sharing)
+
 ## Before the lecture
 
 ### Install Postman
@@ -129,4 +131,113 @@ Now we will try to remove it.
 The document is deleted.
 After all these operations, the db should be empty. We check that.
 We passed the check. The page in browser should say OK.
+```
+
+## Basic Database Manipulations
+
+People usually call that `CRUD`, which stands for:
+
+- **C**reate/Insert - Create a document (will fail if the document exists)
+- **R**ead/Find/Query - To search for documents based on their properties
+- **U**pdate - Update an existing document (will fail otherwise)
+- Delete - Delete an existing document
+
+For convenience, most NoSQL database also provides an _upsert_ operation. It
+will create the document or update an existing document. You can think of that
+as an atomic operation that does:
+
+```javascript
+if (document.exists()) {
+  database.update(document);
+} else {
+  database.insert(document);
+}
+```
+
+In Firestore, you can either insert a new document with a specified ID, or allow
+Firestore to generate its own ID for you.
+
+The update method in Firestore allows you to update certain fields of the
+document without overwriting the entire thing.
+
+## Sample code
+
+The following code demonstrate how we can do basic CRUD with Firestore.
+Note that the code below does not care about what are the fields of a post,
+because Firestore doesn't require you to have a predefined set of field. This
+gives you flexibility when writing your backend code.
+
+```javascript
+const admin = require('firebase-admin');
+const serviceAccount = require('./service-account.json');
+const express = require('express');
+const bodyParser = require('body-parser');
+
+admin.initializeApp({
+  credential: admin.credential.cert(serviceAccount),
+  databaseURL: 'https://dti-web-dev-sp19-db-demo.firebaseio.com'
+});
+
+const db = admin.firestore();
+
+const app = express();
+const port = 8080;
+app.use(bodyParser.json());
+
+app.get('/', (_, resp) => resp.send('Hello World!'));
+
+const postsCollection = db.collection('posts');
+
+// create a post
+app.put('/post', async (req, resp) => {
+  const post = req.body;
+  const addedDoc = await postsCollection.doc('hi').set(post);
+  resp.status(200).send(addedDoc.id);
+});
+
+// read all posts
+app.get('/post', async (_, resp) => {
+  const allPostsDoc = await postsCollection.get();
+  resp
+    .status(200)
+    .json(allPostsDoc.docs.map(doc => ({ id: doc.id, ...doc.data() })));
+});
+
+// 2019-04-17
+app.get('/post/today', async (_, resp) => {
+  const today = new Date();
+  const todayString = `${today.getFullYear()}-${today.getMonth() +
+    1}-${today.getDate()}`;
+  const todayPostsDoc = await postsCollection
+    .where('date', '==', todayString)
+    .get();
+  resp
+    .status(200)
+    .json(todayPostsDoc.docs.map(doc => ({ id: doc.id, ...doc.data() })));
+});
+
+// sorted posts
+app.get('/post/sorted', async (_, resp) => {
+  const sortedPosts = await postsCollection.orderBy('date', 'desc').get();
+  resp
+    .status(200)
+    .json(sortedPosts.docs.map(doc => ({ id: doc.id, ...doc.data() })));
+});
+
+// update a post
+app.post('/post/:id', async (req, res) => {
+  const id = req.params['id'];
+  const newPost = req.body;
+  await postsCollection.doc(id).update(newPost);
+  res.status(200).send('UPDATED');
+});
+
+// delete a post
+app.delete('/post/:id', async (req, res) => {
+  const id = req.params['id'];
+  await postsCollection.doc(id).delete();
+  res.status(200).send('DELETED');
+});
+
+app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 ```
