@@ -17,17 +17,17 @@ This class will teach students about modern web development technologies, practi
 
 ## When are office hours?
 
-Peter: Monday 4:30-5:30pm  Rhodes 402
+Peter: Monday 4:30-5:30pm Rhodes 402
 
-Ashneel: Wednesday 6:45pm-7:45pm  Rhodes 402
+Ashneel: Wednesday 6:45pm-7:45pm Rhodes 402
 
-Megan: Tuesday 1pm-2pm   Rhodes 574
+Megan: Tuesday 1pm-2pm Rhodes 574
 
-Enoch: Tuesday 2-3pm   Rhodes 408
+Enoch: Tuesday 2-3pm Rhodes 408
 
-Sam: Monday 3:30-4:30pm  Rhodes 406
+Sam: Monday 3:30-4:30pm Rhodes 406
 
-Jason: Thursday 1pm-2pm  Rhodes 574
+Jason: Thursday 1pm-2pm Rhodes 574
 
 In addition, enroll yourself on the [Piazza](https://piazza.com/class/k6in32n6fckgk?cid=4#).
 
