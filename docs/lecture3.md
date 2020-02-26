@@ -5,6 +5,8 @@ title: Lecture 3
 
 [Lecture Slides](https://docs.google.com/presentation/d/1iimIRpAw1ud1yhCCx1cdwypZw2J8VVN8mTLWXOc8g-U/edit?usp=sharing)
 
+[Firebase Documentation](https://firebase.google.com/docs/firestore)
+
 ## Before the lecture
 
 ### Install Postman
@@ -184,59 +186,68 @@ const app = express();
 const port = 8080;
 app.use(bodyParser.json());
 
-app.get('/', (_, resp) => resp.send('Hello World!'));
+app.get('/', (req, res) => res.send('Hello World!'));
 
 const postsCollection = db.collection('posts');
 
 // create a post
-app.put('/post', async (req, resp) => {
+app.post('/post', function(req, res) {
   const post = req.body;
-  const addedDoc = await postsCollection.doc('hi').set(post);
-  resp.status(200).send(addedDoc.id);
+  postsCollection.doc().set(post);
+  res.send('Post Created');
 });
 
 // read all posts
-app.get('/post', async (_, resp) => {
+app.get('/post', async function(req, res) {
   const allPostsDoc = await postsCollection.get();
-  resp
-    .status(200)
-    .json(allPostsDoc.docs.map(doc => ({ id: doc.id, ...doc.data() })));
+  const posts = [];
+  for (let doc of allPostsDoc.docs) {
+    let post = doc.data();
+    post.id = doc.id;
+    posts.push(post);
+  }
+  res.send(posts);
 });
 
-// 2019-04-17
-app.get('/post/today', async (_, resp) => {
-  const today = new Date();
-  const todayString = `${today.getFullYear()}-${today.getMonth() +
-    1}-${today.getDate()}`;
-  const todayPostsDoc = await postsCollection
-    .where('date', '==', todayString)
+// read posts by name
+app.get('/post/:name', async function(req, res) {
+  const namePostsDoc = await postsCollection
+    .where('name', '==', req.params.name)
     .get();
-  resp
-    .status(200)
-    .json(todayPostsDoc.docs.map(doc => ({ id: doc.id, ...doc.data() })));
+  const posts = [];
+  for (let doc of namePostsDoc.docs) {
+    let post = doc.data();
+    post.id = doc.id;
+    posts.push(post);
+  }
+  res.send(posts);
 });
 
-// sorted posts
-app.get('/post/sorted', async (_, resp) => {
-  const sortedPosts = await postsCollection.orderBy('date', 'desc').get();
-  resp
-    .status(200)
-    .json(sortedPosts.docs.map(doc => ({ id: doc.id, ...doc.data() })));
+// sorted posts by name
+app.get('/postsorted', async function(req, res) {
+  const sortedPosts = await postsCollection.orderBy('name', 'desc').get();
+  const posts = [];
+  for (let doc of sortedPosts.docs) {
+    let post = doc.data();
+    post.id = doc.id;
+    posts.push(post);
+  }
+  res.send(posts);
 });
 
 // update a post
-app.post('/post/:id', async (req, res) => {
-  const id = req.params['id'];
+app.post('/post/:id', async function(req, res) {
+  const id = req.params.id;
   const newPost = req.body;
   await postsCollection.doc(id).update(newPost);
-  res.status(200).send('UPDATED');
+  res.send('UPDATED');
 });
 
 // delete a post
-app.delete('/post/:id', async (req, res) => {
-  const id = req.params['id'];
+app.delete('/post/:id', async function(req, res) {
+  const id = req.params.id;
   await postsCollection.doc(id).delete();
-  res.status(200).send('DELETED');
+  res.send('DELETED');
 });
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
