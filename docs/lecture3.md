@@ -7,6 +7,8 @@ title: Lecture 3
 
 [Firebase Documentation](https://firebase.google.com/docs/firestore)
 
+[Assignment 2](https://github.com/ashneeldas2/trends-sp20/tree/master/Assignments/a2) due **03/04 7:59pm**
+
 ## Before the lecture
 
 ### Install Postman
@@ -142,7 +144,7 @@ People usually call that `CRUD`, which stands for:
 - **C**reate/Insert - Create a document (will fail if the document exists)
 - **R**ead/Find/Query - To search for documents based on their properties
 - **U**pdate - Update an existing document (will fail otherwise)
-- Delete - Delete an existing document
+- **D**elete - Delete an existing document
 
 For convenience, most NoSQL database also provides an _upsert_ operation. It
 will create the document or update an existing document. You can think of that
