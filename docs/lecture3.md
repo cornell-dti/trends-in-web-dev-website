@@ -5,6 +5,8 @@ title: Lecture 3
 
 [Lecture Slides](https://docs.google.com/presentation/d/1iimIRpAw1ud1yhCCx1cdwypZw2J8VVN8mTLWXOc8g-U/edit?usp=sharing)
 
+[Lecture Video](https://drive.google.com/file/d/14JeWpqIm4uiTl0bSO8hgvg_kqVadsR0Z/view?usp=sharing)
+
 [Firebase Documentation](https://firebase.google.com/docs/firestore)
 
 [Assignment 2](https://github.com/ashneeldas2/trends-sp20/tree/master/Assignments/a2) due **03/04 7:59pm**
@@ -195,8 +197,9 @@ const postsCollection = db.collection('posts');
 // create a post
 app.post('/post', function(req, res) {
   const post = req.body;
-  postsCollection.doc().set(post);
-  res.send('Post Created');
+  const myDoc = postsCollection.doc();
+  myDoc.set(post);
+  res.send(myDoc.id);
 });
 
 // read all posts
