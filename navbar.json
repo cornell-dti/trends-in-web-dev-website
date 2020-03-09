@@ -1,0 +1,16 @@
+{
+  "title": "Trends in Web Dev",
+  "logo": {
+    "alt": "Cornell DTI Web Development Course Logo",
+    "src": "img/logo.png"
+  },
+  "links": [
+    { "to": "docs/introduction", "label": "Getting Started", "position": "left" },
+    { "to": "docs/lecture1", "label": "Lectures", "position": "left" },
+    {
+      "href": "https://github.com/cornell-dti",
+      "label": "GitHub",
+      "position": "right"
+    }
+  ]
+}

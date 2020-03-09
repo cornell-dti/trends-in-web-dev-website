@@ -1,0 +1,53 @@
+{
+  "style": "dark",
+  "links": [
+    {
+      "title": "Course",
+      "items": [
+        { "label": "Introduction", "to": "docs/introduction" },
+        { "label": "Setup Environment", "to": "docs/setup-environment" },
+        { "label": "Setup Editor", "to": "docs/setup-editor" },
+        { "label": "First Lecture", "to": "docs/lecture1" }
+      ]
+    },
+    {
+      "title": "Cornell DTI",
+      "items": [
+        { "label": "Website", "href": "https://www.cornelldti.org" },
+        { "label": "GitHub", "href": "https://github.com/cornell-dti" },
+        { "label": "Facebook", "href": "https://www.facebook.com/cornelldti/" },
+        {
+          "label": "Medium",
+          "href": "https://medium.com/cornell-design-tech-initiative/"
+        }
+      ]
+    },
+    {
+      "title": "Cornell DTI Products",
+      "items": [
+        { "label": "Course Plan", "href": "https://courseplan.io/" },
+        { "label": "CU Reviews", "href": "https://www.cureviews.org/" },
+        {
+          "label": "eve",
+          "href": "https://www.cornelldti.org/Projects/events"
+        },
+        { "label": "Flux", "href": "https://www.cornelldti.org/Projects/flux" },
+        {
+          "label": "O-Week",
+          "href": "https://www.cornelldti.org/Projects/orientation"
+        },
+        { "label": "Queue Me In", "href": "https://queueme.in/" },
+        {
+          "label": "Research Connect",
+          "href": "https://www.research-connect.com/"
+        },
+        { "label": "Samwise", "href": "https://samwise.today" }
+      ]
+    }
+  ],
+  "logo": {
+    "alt": "Cornell DTI Text Logo",
+    "src": "img/dti-text-logo.png"
+  },
+  "copyright": "Copyright © 2020 Cornell Design & Tech Initiative. Built with Docusaurus."
+}
