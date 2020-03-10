@@ -9,8 +9,8 @@ title: Lecture 4
 
 ## ~~`var`~~, `let`, and `const`
 
-Before we have ES6, there are only one way to declare variable `var`. (Well,
-there are actually another way, but it's very bad and you should never use it.)
+Before we had ES6, there was only one way to declare variable: `var`. (Well,
+there is actually another way, but it's very bad and you should never use it.)
 
 For example, if you want to define a variable `a` initialized to `21 * 2`, you
 write
@@ -159,11 +159,11 @@ Example: `[1, 4, 9].every(x => x > 0)` will return true. However,
 
 ### `some`
 
-`array.every(function)` runs `function` on each element of `array` and returns
+`array.some(function)` runs `function` on each element of `array` and returns
 whether any element of the array satisfies the function requirements.
 
-Example: `[1, 4, 9].any(x => x == 1)` will return true. However,
-`[1, 4, 9].any(x => x == 2)` will return false.
+Example: `[1, 4, 9].some(x => x == 1)` will return true. However,
+`[1, 4, 9].some(x => x == 2)` will return false.
 
 ### `reduce`
 
