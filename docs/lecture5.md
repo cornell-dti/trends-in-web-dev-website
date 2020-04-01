@@ -139,7 +139,7 @@ export default function SimpleEditor(props) {
   // to change the state.
   const [name, setName] = useState(''); // '' is the initial state for name.
 
-  const changeName = event => {
+  const changeName = (event) => {
     // To extract the value from input box, use the following line.
     const name = event.currentTarget.value;
     setName(name);
@@ -174,12 +174,12 @@ import ContactCard from './ContactCard';
 const data = [
   { name: 'Sam1', email: 'foo@bar.com' },
   { name: 'Sam2', email: 'bar@baz.com' },
-  { name: 'Sam3', email: 'baz@foo.com' }
+  { name: 'Sam3', email: 'baz@foo.com' },
 ];
 
 const ListBySimpleMap = () => (
   <div>
-    {data.map(contact => (
+    {data.map((contact) => (
       <ContactCard
         key={contact.name}
         name={contact.name}
@@ -199,7 +199,7 @@ const ListBySimpleMapWithObjectDestructing = () => (
 
 const ListBySimpleMapWithSpread = () => (
   <div>
-    {data.map(contact => (
+    {data.map((contact) => (
       <ContactCard key={contact.name} {...contact} />
     ))}
   </div>

@@ -64,7 +64,7 @@ const bodyParser = require('body-parser');
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
-  databaseURL: '[YOUR_OWN_DATABASE_URL]'
+  databaseURL: '[YOUR_OWN_DATABASE_URL]',
 });
 
 const db = admin.firestore();
@@ -78,13 +78,10 @@ app.get('/', (_, resp) => resp.send('Hello World!'));
 app.get('/self-check', async (_, resp) => {
   const data = {
     name: 'Hello World',
-    time: admin.firestore.FieldValue.serverTimestamp()
+    time: admin.firestore.FieldValue.serverTimestamp(),
   };
   console.log('Sending doc to DB.');
-  await db
-    .collection('test')
-    .doc('random-id')
-    .set(data);
+  await db.collection('test').doc('random-id').set(data);
   console.log('Doc recorded in DB');
   const docRef = db.collection('test').doc('random-id');
   console.log('Trying to obtain doc in DB.');
@@ -101,7 +98,7 @@ app.get('/self-check', async (_, resp) => {
   );
   db.collection('test')
     .get()
-    .then(querySnapshot => {
+    .then((querySnapshot) => {
       if (querySnapshot.docs.length === 0) {
         console.log('We passed the check. The page in browser should say OK.');
         resp.status(200).send('OK.');
@@ -181,7 +178,7 @@ const bodyParser = require('body-parser');
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
-  databaseURL: 'https://dti-web-dev-sp19-db-demo.firebaseio.com'
+  databaseURL: 'https://dti-web-dev-sp19-db-demo.firebaseio.com',
 });
 
 const db = admin.firestore();
@@ -195,7 +192,7 @@ app.get('/', (req, res) => res.send('Hello World!'));
 const postsCollection = db.collection('posts');
 
 // create a post
-app.post('/post', function(req, res) {
+app.post('/post', function (req, res) {
   const post = req.body;
   const myDoc = postsCollection.doc();
   myDoc.set(post);
@@ -203,7 +200,7 @@ app.post('/post', function(req, res) {
 });
 
 // read all posts
-app.get('/post', async function(req, res) {
+app.get('/post', async function (req, res) {
   const allPostsDoc = await postsCollection.get();
   const posts = [];
   for (let doc of allPostsDoc.docs) {
@@ -215,7 +212,7 @@ app.get('/post', async function(req, res) {
 });
 
 // read posts by name
-app.get('/post/:name', async function(req, res) {
+app.get('/post/:name', async function (req, res) {
   const namePostsDoc = await postsCollection
     .where('name', '==', req.params.name)
     .get();
@@ -229,7 +226,7 @@ app.get('/post/:name', async function(req, res) {
 });
 
 // sorted posts by name
-app.get('/postsorted', async function(req, res) {
+app.get('/postsorted', async function (req, res) {
   const sortedPosts = await postsCollection.orderBy('name', 'desc').get();
   const posts = [];
   for (let doc of sortedPosts.docs) {
@@ -241,7 +238,7 @@ app.get('/postsorted', async function(req, res) {
 });
 
 // update a post
-app.post('/post/:id', async function(req, res) {
+app.post('/post/:id', async function (req, res) {
   const id = req.params.id;
   const newPost = req.body;
   await postsCollection.doc(id).update(newPost);
@@ -249,7 +246,7 @@ app.post('/post/:id', async function(req, res) {
 });
 
 // delete a post
-app.delete('/post/:id', async function(req, res) {
+app.delete('/post/:id', async function (req, res) {
   const id = req.params.id;
   await postsCollection.doc(id).delete();
   res.send('DELETED');

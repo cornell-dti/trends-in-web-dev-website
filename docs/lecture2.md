@@ -135,11 +135,11 @@ const express = require('express');
 const app = express();
 let x = 0;
 
-app.get('/getX', function(req, res) {
+app.get('/getX', function (req, res) {
   res.send(x + '');
 });
 
-app.listen(8080, function() {
+app.listen(8080, function () {
   console.log('Hello, World!');
 });
 ```
@@ -176,7 +176,7 @@ Add the following to your `index.js` file after your `app.get` call:
 
 ```js
 // index.js
-app.post('/addOne', function(req, res) {
+app.post('/addOne', function (req, res) {
   if (req.query.variable === 'x') {
     x += 1;
     res.send(x + '');
@@ -210,11 +210,11 @@ app.use(bodyParser.json());
 
 let x = 0;
 
-app.get('/getX', function(req, res) {
+app.get('/getX', function (req, res) {
   res.send(x + '');
 });
 
-app.post('/add1', function(req, res) {
+app.post('/add1', function (req, res) {
   if (req.query.variable === 'x') {
     x += 1;
     res.send(x + '');
@@ -223,7 +223,7 @@ app.post('/add1', function(req, res) {
   }
 });
 
-app.listen(8080, function() {
+app.listen(8080, function () {
   console.log('Hello, World!');
 });
 ```
@@ -231,7 +231,7 @@ app.listen(8080, function() {
 Now we can add the following function:
 
 ```js
-app.post('/updateVar', function(req, res) {
+app.post('/updateVar', function (req, res) {
   x = req.body.x;
   res.send(x + '');
 });

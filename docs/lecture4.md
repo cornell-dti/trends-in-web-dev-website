@@ -85,7 +85,7 @@ function myFunction(x) {
 or
 
 ```javascript
-const myFunction = function(x) {
+const myFunction = function (x) {
   return x + 1;
 };
 ```
@@ -93,7 +93,7 @@ const myFunction = function(x) {
 Now we have this shorthand:
 
 ```javascript
-const myFunction = x => {
+const myFunction = (x) => {
   return x + 1;
 };
 ```
@@ -109,7 +109,7 @@ const functionName = (parameter1, parameter2, parameter3) => {
 For this simple function, we have even shorter shorthand:
 
 ```javascript
-const myFunction = x => x + 1;
+const myFunction = (x) => x + 1;
 ```
 
 This shorthand works if the function body is just one line that will be
@@ -186,7 +186,7 @@ Now if we had an object:
 const add3Object = {
   a: 3,
   b: 4,
-  c: 7
+  c: 7,
 };
 ```
 
@@ -289,7 +289,7 @@ const zero = +[]; // + coerce [] into 0
 const one = +!![]; // ! coerce [] into false, got inverted, then coerce to 1
 const two = +!![] + +!![]; // 2 = 1 + 1
 
-const fib2 = __ =>
+const fib2 = (__) =>
   __ === zero || __ === one ? __ : fib2(__ - one) + fib2(__ - two);
 ```
 
