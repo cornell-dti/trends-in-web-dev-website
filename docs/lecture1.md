@@ -49,7 +49,7 @@ const express = require('express');
 const app = express();
 
 // respond with "hello world" when a GET request is made to the homepage
-app.get('/', function(req, res) {
+app.get('/', function (req, res) {
   res.send('hello world');
 });
 ```
@@ -59,7 +59,7 @@ app.get('/', function(req, res) {
 We can respond differently for requests to different URLs. For example, if we wanted ‘/home' to respond with “Welcome Home!” we could add a second route.
 
 ```javascript
-app.get('/home', function(req, res) {
+app.get('/home', function (req, res) {
   res.send('Welcome Home!');
 });
 ```
@@ -75,7 +75,7 @@ POST method is generally used to submit data to an endpoint.
 The following uses Express's `app.post()` method to send a POST request to ‘/' and responds with ‘Got a POST request'. Notice that `app.post()` has a second argument that is a function with two parameters, `req` and `res`. Usually, when you call POST you want to send data with the request. You would send that data as the `req` parameter.
 
 ```javascript
-app.post('/', function(req, res) {
+app.post('/', function (req, res) {
   res.send('Got a POST request');
 });
 ```
@@ -89,7 +89,7 @@ You can match patterns in text rather than specific characters. For example, wha
 Take a look at this route, paying special attention to the `:` characters. Those denote parameters in the route.
 
 ```javascript
-app.get('/users/:userId/books/:bookId', function(req, res) {
+app.get('/users/:userId/books/:bookId', function (req, res) {
   res.send(req.params);
 });
 ```
