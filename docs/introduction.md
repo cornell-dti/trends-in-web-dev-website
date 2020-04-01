@@ -7,6 +7,10 @@ title: Syllabus
 
 By [Cornell DTI](http://cornelldti.org/). Read our article about the first run of the course on [Medium](https://medium.com/cornell-design-tech-initiative/cornell-dti-trends-in-web-development-4cb5abc56776)!
 
+## COVID-19 Update
+
+Due to COVID-19, all lectures going forward will be administered remotely via Zoom **[here](https://cornell.zoom.us/j/8798851713)** on **Wednesdays 8:30-9:30pm**. If you are unable to make this time, the lectures will be recorded and posted on the course website the following day along with slides and lecture notes. _Attendance is not required._ (but we still hope to see some of you if you can make it!)
+
 ## Course Application
 
 Apply [here](http://bit.ly/webdevsp20).
@@ -17,19 +21,21 @@ This class will teach students about modern web development technologies, practi
 
 ## When are office hours?
 
-Peter: Monday 4:30-5:30pm Rhodes 402
+Office hours will start **Monday, April 6th** and be administered remotely via Zoom. See below for office hour times and Zoom links:
 
-Ashneel: Wednesday 6:45pm-7:45pm Rhodes 402
+Sam: Monday 3:30-4:30pm [Zoom Link](https://cornell.zoom.us/j/9389498164)
 
-Megan: Tuesday 1pm-2pm Rhodes 574
+Peter: Monday 4:30-5:30pm [Zoom Link](https://cornell.zoom.us/j/2749196798)
 
-Enoch: Tuesday 2-3pm Rhodes 408
+Megan: Tuesday 1pm-2pm [Zoom Link](https://cornell.zoom.us/j/7293410777)
 
-Sam: Monday 3:30-4:30pm Rhodes 406
+Enoch: Tuesday 2-3pm [Zoom Link](https://cornell.zoom.us/j/2233738601)
 
-Jason: Thursday 1pm-2pm Rhodes 574
+Ashneel: Wednesday 6:45pm-7:45pm [Zoom Link](https://cornell.zoom.us/j/8798851713)
 
-In addition, enroll yourself on the [Piazza](https://piazza.com/class/k6in32n6fckgk?cid=4#).
+Jason: Thursday 1pm-2pm [Zoom Link](https://cornell.zoom.us/j/5920726340)
+
+If you are unable to make any of those office hours times, you can ask questions on [Piazza](https://piazza.com/class/k6in32n6fckgk?cid=4#) or get in touch with Megan or Ashneel.
 
 ## Is there a lecture schedule?
 
@@ -45,15 +51,15 @@ Lecture 4 3/04/20: Functional Programming (map, filter, reduce)
 
 Lecture 5 3/11/20: React (Components and tooling)
 
-Lecture 6 3/18/20: React (JSX and conditional rendering)
+Lecture 6 4/08/20: React (JSX and conditional rendering)
 
-Lecture 7 3/25/20: React (ES6 and State)
+Lecture 7 4/15/20: React (ES6 and State)
 
-Lecture 8 4/8/20: frontend + backend (Data Fetching)
+Lecture 8 4/22/20: frontend + backend (Data Fetching)
 
-Lecture 9 4/22/20: Deployment
+Lecture 9 4/29/20: Deployment
 
-Lecture 10 4/29/20: Student Choice
+Lecture 10 5/06/20: Student Choice
 
 ## Where are assignments released and submitted?
 
