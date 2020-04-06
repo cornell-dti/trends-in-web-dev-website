@@ -25,7 +25,7 @@ Office hours will start **Monday, April 6th** and be administered remotely via Z
 
 Sam: Monday 3:30-4:30pm [Zoom Link](https://cornell.zoom.us/j/9389498164)
 
-Peter: Monday 4:30-5:30pm [Zoom Link](https://cornell.zoom.us/j/2749196798)
+Peter: Monday 4:30-5:30pm [Zoom Link](https://cornell.zoom.us/j/2749196798?pwd=RldMRXFocjBLcWZTblVXcUU1Q0dXZz09)
 
 Megan: Tuesday 1pm-2pm [Zoom Link](https://cornell.zoom.us/j/7293410777)
 
