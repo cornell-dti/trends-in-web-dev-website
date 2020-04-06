@@ -6,9 +6,24 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
-      - name: Set up Node
-        uses: actions/setup-node@v1
       - name: Yarn Install
         run: yarn install
       - name: Run Prettier
         run: 'yarn format:check'
+      - name: Build
+        run: yarn build
+      - name: Deploy to Netlify
+        env:
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+        run: ./node_modules/.bin/netlify deploy --dir=build --site=$NETLIFY_SITE_ID --json > a.json
+      - name: Parse deployment URL
+        run: |
+          DEPLOY_URL=$(echo "console.log(require('./a.json').deploy_url)" | node)
+          echo "::set-env name=DEPLOY_URL::$DEPLOY_URL"
+      - uses: cornell-dti/dti-repo-tools@master
+        env:
+          BOT_TOKEN: '${{ secrets.BOT_TOKEN }}'
+        with:
+          command: pr-comment
+          argument: '[deployment-bot] Deployed to ${{env.DEPLOY_URL}}.'
