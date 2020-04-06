@@ -15,7 +15,7 @@ jobs:
         run: yarn install
       - name: Build & Deploy Website
         env:
-          GIT_USER: ${{ secrets.DEPLOY_GH_PAGE_TOKEN }}
+          GIT_USER: ${{ secrets.BOT_TOKEN }}
         run: |
           git config --global user.name "dti-github-bot"
           git config --global user.email "admin@cornelldti.org"
