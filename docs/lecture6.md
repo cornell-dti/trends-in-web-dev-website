@@ -93,46 +93,48 @@ based on conditions a lot easier. In this small example, we went from five lines
 of code in the component to just one!
 
 ## Composition vs. Inheritance
+
 Composition and inheritance are two programming techniques for defining how classes relate to objects. (Think of classes as the blueprint for a house and objects the actual houses created from that blueprint)
 
 ### Composition
+
 **Composition** defines a class as the sum of its individual parts. This is a "has-a" relationship (e.g. a car has a steering wheel, has a window, etc). In Java (and other object oriented languages), these components are represented as _instance_ variables.
 
 ### Inheritance
+
 **Inheritance** derives one class from another. If class A is the parent of class B and C, B and C inherit the properties/functions of A. This is a "is-a" relationship (e.g. car is a vehicle, circle is a shape.)
 
 ### **React uses Composition**
-_“React has a powerful composition model, and we recommend using composition instead of inheritance to reuse code between components.”_ 
+
+_“React has a powerful composition model, and we recommend using composition instead of inheritance to reuse code between components.”_
 -- [React Docs](https://reactjs.org/docs/composition-vs-inheritance.html)
 
 ### Containment
-Components may not know their children ahead of time. 
+
+Components may not know their children ahead of time.
 
 Children are the components you put within another component:
 
 ```html
 <ComponentA>
-	// anything here is a child of Component A
+  // anything here is a child of Component A
 </ComponentA>
 ```
+
 Use the `children` prop to pass in children components.
 
 ```jsx
-const Container = (props) => (
- <div className="Border">
-   {props.children}
- </div>
-);
+const Container = (props) => <div className="Border">{props.children}</div>;
 ```
 
 ```jsx
 const App = () => (
-   <div className="App">
-     <Container>
-       <p>Hello!</p>
-       <p>Bye!</p>
-     </Container>
-   </div>
+  <div className="App">
+    <Container>
+      <p>Hello!</p>
+      <p>Bye!</p>
+    </Container>
+  </div>
 );
 ```
 
@@ -145,11 +147,7 @@ We didn't actually get to this live demo, adapted from [this tutorial](https://r
 import React from 'react';
 import './Container.css'; // this is how we import styles
 
-export default (props) => (
-  <div className="Border">
-    {props.children}
-  </div>
-);
+export default (props) => <div className="Border">{props.children}</div>;
 ```
 
 ```css
@@ -169,12 +167,8 @@ import './SplitPane.css';
 
 export default (props) => (
   <div>
-    <div className="LeftPane">
-      {props.left}
-    </div>
-    <div className="RightPane">
-      {props.right}
-    </div>
+    <div className="LeftPane">{props.left}</div>
+    <div className="RightPane">{props.right}</div>
   </div>
 );
 ```
@@ -207,17 +201,13 @@ export default () => {
         <p>Hello, world!</p>
       </Container>
       <SplitPane
-        left={
-          <div>I'm on the left!</div>
-        } right={
-          <div>I'm on the right!</div>
-        } />
+        left={<div>I'm on the left!</div>}
+        right={<div>I'm on the right!</div>}
+      />
     </div>
   );
-}
-
+};
 ```
-
 
 ## Lifting State Up
 
@@ -240,16 +230,20 @@ function App() {
       <label>Fahrenheit:</label>
       <FahrenheitInput
         temperature={temperature}
-        callback={temp => setTemperature(temp)}
+        callback={(temp) => setTemperature(temp)}
       />
       <br />
       <label>Celcius:</label>
       <CelsiusInput
         temperature={temperature}
-        callback={temp => setTemperature(temp)}
+        callback={(temp) => setTemperature(temp)}
       />
       <br />
-      {temperature >= 100 ? <span>Water would boil here!</span> : <span>Water would not boil here!</span>}
+      {temperature >= 100 ? (
+        <span>Water would boil here!</span>
+      ) : (
+        <span>Water would not boil here!</span>
+      )}
       <br />
       <span>Water would {temperature >= 0 && 'not'} freeze here!</span>
     </div>
@@ -265,7 +259,7 @@ CelciusInput.jsx
 import React from 'react';
 
 export default ({ temperature, callback }) => {
-  const handlechange = e => callback(parseInt(e.target.value) || 0);
+  const handlechange = (e) => callback(parseInt(e.target.value) || 0);
 
   return <input value={temperature} onChange={handlechange} />;
 };
@@ -277,7 +271,8 @@ FahrenheitInput.jsx
 import React from 'react';
 
 export default ({ temperature, callback }) => {
-  const handlechange = e => callback((((parseInt(e.target.value) || 0) - 32) * 5) / 9);
+  const handlechange = (e) =>
+    callback((((parseInt(e.target.value) || 0) - 32) * 5) / 9);
 
   return <input value={(temperature * 9) / 5 + 32} onChange={handlechange} />;
 };
