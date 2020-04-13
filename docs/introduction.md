@@ -23,7 +23,7 @@ This class will teach students about modern web development technologies, practi
 
 Office hours will start **Monday, April 6th** and be administered remotely via Zoom. See below for office hour times and Zoom links:
 
-Sam: Monday 3:30-4:30pm [Zoom Link](https://cornell.zoom.us/j/9389498164)
+Sam: Monday 3:30-4:30pm [Zoom Link](https://cornell.zoom.us/j/9389498164?pwd=cjI1Y1VBZGt6eTlBaWFQVnk0QTBrUT09)
 
 Peter: Monday 4:30-5:30pm [Zoom Link](https://cornell.zoom.us/j/2749196798?pwd=RldMRXFocjBLcWZTblVXcUU1Q0dXZz09)
 
