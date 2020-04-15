@@ -16,8 +16,7 @@ in true JavaScript library fashion. A major new concept leading the way of much
 innovation for React development is Hooks, released in **2019(!)**. While there
 exist many Hooks in React (and you can even develop your own), we will be focusing
 on two main Hooks in this class: `useState` and `useEffect`. You may read more about these other
-(equally as important but more involved) Hooks [here](https://reactjs.org/docs/hooks-reference.html
-).
+(equally as important but more involved) Hooks [here](https://reactjs.org/docs/hooks-reference.html).
 
 ## Hooks
 
@@ -52,6 +51,7 @@ outline the code in both the old class-based paradigm, and the new functional +
 Hooks paradigm.
 
 **The Class Component Way**
+
 ```jsx
 import React from 'react';
 
@@ -65,7 +65,7 @@ export default class Counter extends React.Component {
   handleClick(e) {
     const { count } = this.state;
     this.setState({
-      count: count + 1
+      count: count + 1,
     });
   }
 
@@ -73,31 +73,29 @@ export default class Counter extends React.Component {
     const { count } = this.state;
     return (
       <div>
-        <button onClick={this.handleClick}>
-          Click Me!
-        </button>
+        <button onClick={this.handleClick}>Click Me!</button>
         <p>You clicked {count} times</p>
       </div>
-    )
+    );
   }
 }
 ```
 
 **The Functional Component + Hooks Way**
+
 ```jsx
 // Counter.jsx
 import React, { useState } from 'react';
 
 export default function () {
- const [count, setCount] = useState(0);
- return (
-   <div>
-     <button onClick={() => setCount(count + 1)}>Click Me!</button>
-     <p>You clicked {count} times</p>
-   </div>
- )
+  const [count, setCount] = useState(0);
+  return (
+    <div>
+      <button onClick={() => setCount(count + 1)}>Click Me!</button>
+      <p>You clicked {count} times</p>
+    </div>
+  );
 }
-
 ```
 
 Right off the bat, we notice that the functional component with Hooks method is
@@ -108,7 +106,7 @@ access the state in one line!
 To generalize the syntax of the `useState` Hook, the form is as shown below:
 
 `const [varname, setterFunc] = useState(initValue);`
-*Note: states can be of any type.*
+_Note: states can be of any type._
 
 We can also share Hooks across multiple components, allowing for even better
 reusability of code.
@@ -116,8 +114,8 @@ reusability of code.
 ### `useEffect`
 
 The `useEffect` component allows use to trigger side effects in functional components.
-It takes in a function (we can pass in ES6 arrow functions), which is called *every
-time* after the component renders, which is to say every time one of the component's
+It takes in a function (we can pass in ES6 arrow functions), which is called _every
+time_ after the component renders, which is to say every time one of the component's
 states (in its `useState` Hooks) change.
 
 If we take the previous Counter example and want to change the title of the webpage
@@ -125,7 +123,7 @@ every time the Counter rerenders,
 
 ```jsx
 useEffect(() => {
- document.title = `You clicked ${count} times`;
+  document.title = `You clicked ${count} times`;
 });
 ```
 
@@ -138,15 +136,16 @@ component:
 ```jsx
 // This code will only invoke the function when the count changes - more optimized
 useEffect(() => {
- document.title = `You clicked ${count} times`;
+  document.title = `You clicked ${count} times`;
 }, [count]);
 ```
 
 ### Important Note
+
 While searching online for help / debugging, you will often
 run into StackOverflow answers or other resources for React dating back from
 a few years ago. Unfortunately, when it comes to developing with modern web
-technologies like  React, some solutions often include deprecated features of React
+technologies like React, some solutions often include deprecated features of React
 in the present day or need to be translated to the new paradigm (like Hooks).
 It is up to the developer to find the best solution that compromises between
 the bleeding-edge and practicality.
@@ -162,14 +161,14 @@ Here is a general thought-flow, from the perspective of a front-end engineer
 developing a React webapp from a design mock + API from the backend engineers:
 
 1. Break the UI into a component hierarchy. Each component should have a singular
-job, and should be reusable.
+   job, and should be reusable.
 2. Begin by building a static version of that component (not data-driven yet and
-not interactive), based on the JSON API provided by the backend.
+   not interactive), based on the JSON API provided by the backend.
 3. Identify minimal representation of the UI state.
 4. Determine where the state should "live": should it be lifted up into a parent component
-as a common owner between multiple child components?
+   as a common owner between multiple child components?
 5. Add inverse data flow - handle changes in the child component through a
-parent component
+   parent component
 6. Connect component to the backend (more on this in Lecture 8!)
 
 ## Filterable Product Table Example
@@ -185,12 +184,37 @@ import React from 'react';
 import FilterableProductTable from './FilterableProductTable';
 
 const PRODUCTS = [
-  { category: 'Sporting Goods', price: '$49.99', stocked: true, name: 'Football' },
-  { category: 'Sporting Goods', price: '$9.99', stocked: true, name: 'Baseball' },
-  { category: 'Sporting Goods', price: '$29.99', stocked: false, name: 'Basketball' },
-  { category: 'Electronics', price: '$99.99', stocked: true, name: 'iPod Touch' },
-  { category: 'Electronics', price: '$399.99', stocked: false, name: 'iPhone 5' },
-  { category: 'Electronics', price: '$199.99', stocked: true, name: 'Nexus 7' }
+  {
+    category: 'Sporting Goods',
+    price: '$49.99',
+    stocked: true,
+    name: 'Football',
+  },
+  {
+    category: 'Sporting Goods',
+    price: '$9.99',
+    stocked: true,
+    name: 'Baseball',
+  },
+  {
+    category: 'Sporting Goods',
+    price: '$29.99',
+    stocked: false,
+    name: 'Basketball',
+  },
+  {
+    category: 'Electronics',
+    price: '$99.99',
+    stocked: true,
+    name: 'iPod Touch',
+  },
+  {
+    category: 'Electronics',
+    price: '$399.99',
+    stocked: false,
+    name: 'iPhone 5',
+  },
+  { category: 'Electronics', price: '$199.99', stocked: true, name: 'Nexus 7' },
 ];
 
 const App = () => (
@@ -200,10 +224,10 @@ const App = () => (
 );
 
 export default App;
-
 ```
 
 FilterableProductTable.jsx
+
 ```jsx
 import React, { useState } from 'react';
 import ProductTable from './Starter';
@@ -212,26 +236,25 @@ const SearchBar = ({
   filterText,
   inStockOnly,
   handleFilterTextChange,
-  handleCheckBoxChange
+  handleCheckBoxChange,
 }) => (
-    <form>
+  <form>
+    <input
+      type="text"
+      placeholder="Search..."
+      value={filterText}
+      onChange={handleFilterTextChange}
+    />
+    <p>
       <input
-        type="text"
-        placeholder="Search..."
-        value={filterText}
-        onChange={handleFilterTextChange}
-      />
-      <p>
-        <input
-          type="checkbox"
-          checked={inStockOnly}
-          onChange={handleCheckBoxChange}
-        />
-        {' '}
+        type="checkbox"
+        checked={inStockOnly}
+        onChange={handleCheckBoxChange}
+      />{' '}
       Only show products in stock
     </p>
-    </form>
-  );
+  </form>
+);
 
 const FilterableProductTable = ({ products }) => {
   const [filterText, setFilterText] = useState('');
@@ -254,13 +277,14 @@ const FilterableProductTable = ({ products }) => {
         inStockOnly={inStockOnly} // states passed as prop to SearchBar
       />
     </div>
-  )
-}
+  );
+};
 
 export default FilterableProductTable;
 ```
 
 Starter.jsx
+
 ```jsx
 // Contains all the base components (we can put multiple components in a jsx file
 // for convenience, though this is not usually good practice).
@@ -271,24 +295,22 @@ import React from 'react';
 // Students encouraged to read this on their own time.
 
 const ProductRow = ({ product }) => {
-  const name = product.stocked ?
-    product.name :
-    <span style={{ color: 'red' }}>
-      {product.name}
-    </span>;
+  const name = product.stocked ? (
+    product.name
+  ) : (
+    <span style={{ color: 'red' }}>{product.name}</span>
+  );
   return (
     <tr>
       <td>{name}</td>
       <td>{product.price}</td>
     </tr>
   );
-}
+};
 
 const ProductCategoryRow = ({ category }) => (
   <tr>
-    <th colSpan="2">
-      {category}
-    </th>
+    <th colSpan="2">{category}</th>
   </tr>
 );
 
@@ -307,15 +329,11 @@ const ProductTable = ({ products, filterText, inStockOnly }) => {
       rows.push(
         <ProductCategoryRow
           category={product.category}
-          key={product.category} />
+          key={product.category}
+        />
       );
     }
-    rows.push(
-      <ProductRow
-        product={product}
-        key={product.name}
-      />
-    );
+    rows.push(<ProductRow product={product} key={product.name} />);
     lastCategory = product.category;
   });
 
@@ -330,7 +348,7 @@ const ProductTable = ({ products, filterText, inStockOnly }) => {
       <tbody>{rows}</tbody>
     </table>
   );
-}
+};
 
 // Here we can export all these components at once!
 // Notice also the name of the file does not match any single component name.
