@@ -86,7 +86,7 @@ Here, we display the text "I have a prelim today.". However, in the curly
 braces, if `prelimToday` is `false` then the word "don't" will be rendered.
 Conditional rendering with `&&` is useful when you only have expected behavior
 for one branch of the conditional. In this case, I only had desired behavior if
-`prelimToday` were `false`.
+`prelimToday` was `false`.
 
 As you have seen, React's conditional rendering made modifying render behavior
 based on conditions a lot easier. In this small example, we went from five lines
@@ -183,7 +183,7 @@ export default (props) => (
 }
 
 .RightPane {
-  float: left;
+  float: right;
   width: 50%;
   background-color: aquamarine;
 }
