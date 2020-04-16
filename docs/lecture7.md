@@ -5,9 +5,15 @@ title: Lecture 7
 
 [Lecture Slides](https://docs.google.com/presentation/d/1iIojQhqKkxoWzfysgNlOuQHDld9C5h96Vq2VKVvqgUQ/edit?usp=sharing)
 
-[Lecture Video (coming soon)](#)
+[Lecture Video](https://drive.google.com/file/d/16TuoTvZWy1KNoKI3vNwC_nl2AyatBw4m/view?usp=sharing)
 
-[Assignment 6 (coming soon)](#) due **04/22 7:59pm**
+[Final Project](https://github.com/ashneeldas2/trends-sp20/tree/master/FinalProject)
+
+[Milestone 0](https://forms.gle/7NtKLvJrFwaVgWu37) of Final Project due **04/18 11:59pm**
+
+Milestone 1 of Final Project due **04/22 7:59pm**
+
+_Optional GitHub Workshop **Saturday 04/18 7:30-8:30pm**_
 
 # Hooks, and More on Functional Components in React
 
