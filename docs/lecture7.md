@@ -13,7 +13,9 @@ title: Lecture 7
 
 Milestone 1 of Final Project due **04/22 7:59pm**
 
-_Optional GitHub Workshop **Saturday 04/18 7:30-8:30pm**_
+_Optional GitHub Workshop **Saturday 04/18 7:30-8:30pm**_  
+[GitHub Workshop Slides](https://docs.google.com/presentation/d/1f3rjNbsYns0Pyd9sPbg46uuUgxtSZ_fCnfZaTqHA754/edit?usp=sharing)  
+[GitHub Workshop Video](https://drive.google.com/file/d/1J7uVxpNQrwb8nRylIZLv_jeh7AC5HyoB/view)
 
 # Hooks, and More on Functional Components in React
 
