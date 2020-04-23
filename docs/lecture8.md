@@ -275,11 +275,11 @@ asynchronously.
 ```javascript
 const express = require('express');
 const admin = require('firebase-admin');
-const serviceAccount = require("./serviceAccount.json");
+const serviceAccount = require('./serviceAccount.json');
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
-  databaseURL: "https://webdev-lec3.firebaseio.com"
+  databaseURL: 'https://webdev-lec3.firebaseio.com',
 });
 
 const app = express();
@@ -290,9 +290,8 @@ const songsCollection = db.collection('songs');
 
 app.get('/getSongs', async (req, res) => {
   const songs = await songsCollection.get();
-  res.json(songs.docs.map(song => ({ ...song.data(), id: song.id })));
+  res.json(songs.docs.map((song) => ({ ...song.data(), id: song.id })));
 });
-
 
 app.post('/createSong', async (req, res) => {
   const newSong = req.body;
@@ -303,10 +302,10 @@ app.post('/createSong', async (req, res) => {
 app.post('/updateRating', async (req, res) => {
   const { id, rating } = req.query;
   await songsCollection.doc(id).update({ rating });
-  res.send('Song rating updated!')
+  res.send('Song rating updated!');
 });
 
-app.listen(8080, () => console.log("backend started"));
+app.listen(8080, () => console.log('backend started'));
 ```
 
 ### Frontend
@@ -323,7 +322,7 @@ export default () => {
 
   const [songs, setSongs] = useState([]);
 
-  // GET request using fetch 
+  // GET request using fetch
   const fetchSongs = () => {
     fetch('/getSongs')
       .then(res => res.json())
@@ -338,7 +337,7 @@ export default () => {
 
   useEffect(() => fetchSongs(), []);
 
-  // POST requset using fetch 
+  // POST requset using fetch
   const addSong = (name, artist, rating) => {
     fetch('/createSong', {
       method: 'POST',
@@ -365,7 +364,7 @@ export default () => {
       .then(res => setSongs(songs.map(song => song.id === id ? { name: song.name, artist: song.artist, rating, id } : song)))
   }
 
-  // POST request (update) using axios 
+  // POST request (update) using axios
   // const updateRating = (id, rating) => {
   //   axios.post(`/updateRating?id=${id}&rating=${rating}`)
   //     .then(res => setSongs(songs.map(song => song.id === id ? { name: song.name, artist: song.artist, rating, id } : song)))
@@ -385,7 +384,6 @@ export default () => {
 import React, { useState } from 'react';
 
 export default ({ callback }) => {
-
   const [name, setName] = useState('');
   const [artist, setArtist] = useState('');
   const [rating, setRating] = useState(0);
@@ -393,13 +391,23 @@ export default ({ callback }) => {
   return (
     <div>
       <h3> Add a new song! </h3>
-      <input placeholder="Song name" onChange={e => setName(e.target.value)} /> <br />
-      <input placeholder="Artist name" onChange={e => setArtist(e.target.value)} /> <br />
-      <input placeholder="Rating" onChange={e => setRating(e.target.value)} /> <br />
-      <button onClick={e => callback(name, artist, rating)}> Add song</button>
+      <input
+        placeholder="Song name"
+        onChange={(e) => setName(e.target.value)}
+      /> <br />
+      <input
+        placeholder="Artist name"
+        onChange={(e) => setArtist(e.target.value)}
+      />{' '}
+      <br />
+      <input
+        placeholder="Rating"
+        onChange={(e) => setRating(e.target.value)}
+      /> <br />
+      <button onClick={(e) => callback(name, artist, rating)}> Add song</button>
     </div>
-  )
-}
+  );
+};
 ```
 
 #### `Song.jsx`
@@ -408,15 +416,23 @@ export default ({ callback }) => {
 import React, { useState } from 'react';
 
 export default ({ id, name, artist, rating, updateRating }) => {
-
   const [newRating, setNewRating] = useState(rating);
 
   return (
     <div>
-      <div> The song {name} by {artist} currently has a rating of {rating}/5 </div>
-      <input placeholder="New rating" onChange={e => setNewRating(e.target.value)} />
-      <button onClick={e => updateRating(id, newRating)}> Update Rating </button>
+      <div>
+        {' '}
+        The song {name} by {artist} currently has a rating of {rating}/5{' '}
+      </div>
+      <input
+        placeholder="New rating"
+        onChange={(e) => setNewRating(e.target.value)}
+      />
+      <button onClick={(e) => updateRating(id, newRating)}>
+        {' '}
+        Update Rating{' '}
+      </button>
     </div>
-  )
-}
+  );
+};
 ```
