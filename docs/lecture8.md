@@ -5,7 +5,7 @@ title: Lecture 8
 
 [Lecture Slides](https://docs.google.com/presentation/d/1vzLbAXACKcGTcTSr-XPrMa9K0jrqawfwd1l3vEsDAfc/edit#slide=id.g825b4667a9_0_783)
 
-[Lecture Video (coming soon!)](#)
+[Lecture Video](https://drive.google.com/file/d/14VO3kfb_kBLSBRlqOaSepNADNPPXFQCp/view?usp=sharing)
 
 [Final Project](https://github.com/ashneeldas2/trends-sp20/tree/master/FinalProject)
 
