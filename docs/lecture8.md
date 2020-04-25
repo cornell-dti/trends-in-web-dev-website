@@ -255,7 +255,29 @@ const fetchData = async () => {
 };
 ```
 
-### Summary
+## CORS workaround: proxy
+
+When you are testing your backend and frontend together on localhost, you will come across some sort of **CORS policy error** when you try to call the backend from the frontend.
+
+One way to get around this is to add this line to your **frontend**'s `package.json`:
+
+```json
+  "proxy": "http://localhost:8080",
+```
+
+where `8080` is the the port of your **backend** (change it accordingly).
+
+After adding the proxy config, remove the base URL from your requests:
+
+```javascript
+// do this
+const posts = await axios.get('/getAllPosts');
+
+// instead of this
+const posts = await axios.get('http://localhost:8080/getAllPosts');
+```
+
+## Summary
 
 You keep track of your data in component state. Your app displays whatever data
 you have.
