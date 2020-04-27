@@ -12,8 +12,8 @@
     "format:check": "prettier --check '**/*.{ts,js,tsx,jsx,scss,css,html,md}'"
   },
   "dependencies": {
-    "@docusaurus/core": "^2.0.0-alpha.50",
-    "@docusaurus/preset-classic": "^2.0.0-alpha.50",
+    "@docusaurus/core": "^2.0.0-alpha.53",
+    "@docusaurus/preset-classic": "^2.0.0-alpha.53",
     "classnames": "^2.2.6",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
@@ -31,7 +31,7 @@
     ]
   },
   "devDependencies": {
-    "netlify-cli": "^2.40.0",
-    "prettier": "2.0.2"
+    "netlify-cli": "^2.48.0",
+    "prettier": "2.0.5"
   }
 }
