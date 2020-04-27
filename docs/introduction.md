@@ -33,7 +33,7 @@ Enoch: Tuesday 2-3pm [Zoom Link](https://cornell.zoom.us/j/2233738601)
 
 Ashneel: Wednesday 6:45pm-7:45pm [Zoom Link](https://cornell.zoom.us/j/8798851713)
 
-Jason: Thursday 1pm-2pm [Zoom Link](https://cornell.zoom.us/j/5920726340)
+Megan: Thursday 1pm-2pm [Zoom Link](https://cornell.zoom.us/j/7293410777)
 
 If you are unable to make any of those office hours times, you can ask questions on [Piazza](https://piazza.com/class/k6in32n6fckgk?cid=4#) or get in touch with Megan or Ashneel.
 
