@@ -5,7 +5,7 @@ title: Lecture 9
 
 Final Project due **May 6 7:59pm**
 
-[Lecture Video Coming Soon]()
+[Lecture Video](https://drive.google.com/file/d/1roLl69hhtFiPuw2Sq5har-9IeU_hwGSF/view?usp=sharing)
 
 [Lecture Slides](https://docs.google.com/presentation/d/1BBYlbYxKl2qpOOosClVwt-xVr-r7knLTzxY41x7Z6_c/edit?usp=sharing)
 
