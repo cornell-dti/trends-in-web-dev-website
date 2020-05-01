@@ -48,7 +48,7 @@ We will deploy backend on Heroku because deploying on Firebase is much more invo
 yarn global add heroku
 git init
 git add .
-git commit -m “COMMIT MESSAGE”
+git commit -m "COMMIT MESSAGE"
 heroku login
 heroku create <optional project name>
 git push heroku master
@@ -290,10 +290,10 @@ We can also have optional parameters:
 
 ```ts
 const introduce = (name: string, github?: string): string => {
- return github
-   ? ‘Hi, I'm ${name}. Checkout my GitHub @${github}’
-   : ‘Hi, I'm ${name}. I don't have a GitHub.’;
-}
+  return github
+    ? `Hi, I'm ${name}. Checkout my GitHub @${github}`
+    : `Hi, I'm ${name}. I don't have a GitHub.`;
+};
 ```
 
 `github?` designates `github` as an optional parameter that defaults to `undefined`.
@@ -377,7 +377,7 @@ First `b` should be a number because we are adding 1 to it. Knowing `b` should b
 
 We expect the following types:
 
-```
+```text
 a: number => boolean
 b: number
 c: number
@@ -386,7 +386,7 @@ return: number
 
 In reality TypeScript infers the following:
 
-```
+```text
 a: any
 b: any
 c: any
