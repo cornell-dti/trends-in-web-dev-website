@@ -19,8 +19,7 @@ yarn start
 
 ## Your First Component
 
-```jsx
-// MyComponent.jsx
+```jsx title="MyComponent.jsx"
 import React from 'react';
 
 export default ({ name, githubLink }) => (
@@ -31,8 +30,7 @@ export default ({ name, githubLink }) => (
 );
 ```
 
-```jsx
-// index.js
+```jsx title="index.js"
 import React from 'react';
 import ReactDOM from 'react-dom';
 import MyComponent from './MyComponent';
@@ -105,8 +103,7 @@ export default function MyFirstComponent({ name, githubLink }) {
 React does not care about the function definition syntax, so you can also write
 it in arrow function syntax:
 
-```jsx
-// MyComponent.jsx
+```jsx title="MyComponent.jsx"
 import React from 'react';
 
 export default ({ name, githubLink }) => (

@@ -9,7 +9,7 @@ title: Lecture 8
 
 [Final Project](https://github.com/ashneeldas2/trends-sp20/tree/master/FinalProject)
 
-# Bridging the Frontend & Backend
+## Bridging the Frontend & Backend
 
 We've worked with Express/Firebase on the backend and React on the frontend. So
 far, we've been learning about them separately. How can we bring both ends
@@ -25,8 +25,8 @@ Data fetching is **getting information (data) from an outside source (e.g. REST 
 
 The frontend wants to **fetch data** from the backend.
 
-Frontend tells Backend what it wants.  
-Backend sends the appropriate data to Frontend.  
+Frontend tells Backend what it wants.
+Backend sends the appropriate data to Frontend.
 Frontend displays the data to the user!
 
 In Trends, our React website will be fetching data from our Express server.
@@ -51,7 +51,7 @@ We want to keep track of our data in our component state, and use hooks like
 
 Consider this snippet of code:
 
-```javascript
+```javascript title="App.js"
 const App = () => {
   const [data, setData] = useState([]);
   useEffect(() => {
@@ -120,7 +120,7 @@ Promises are in one of three possible states:
 - `fulfilled`: operation completed successfully
 - `rejected`: operation failed
 
-#### `.then()`
+### `.then()`
 
 `.then()` is a function on Promises that return a promise.
 
@@ -145,7 +145,7 @@ p.then(
 );
 ```
 
-#### `.catch()`
+### `.catch()`
 
 `.catch()` is a function on Promises that catches a rejection.
 
@@ -292,9 +292,7 @@ asynchronously.
 
 ### Backend
 
-#### `index.js`
-
-```javascript
+```javascript title="index.js (backend)"
 const express = require('express');
 const admin = require('firebase-admin');
 const serviceAccount = require('./serviceAccount.json');
@@ -330,11 +328,7 @@ app.post('/updateRating', async (req, res) => {
 app.listen(8080, () => console.log('backend started'));
 ```
 
-### Frontend
-
-#### `SongList.jsx`
-
-```jsx
+```jsx title="SongList.jsx (frontend)"
 import React, { useState, useEffect } from 'react';
 import Song from './Song';
 import SongAdder from './SongAdder';
@@ -400,9 +394,7 @@ export default () => {
   )
 ```
 
-#### `SongAdder.jsx`
-
-```jsx
+```jsx title="SongAdder.jsx (frontend)"
 import React, { useState } from 'react';
 
 export default ({ callback }) => {
@@ -432,9 +424,7 @@ export default ({ callback }) => {
 };
 ```
 
-#### `Song.jsx`
-
-```jsx
+```jsx title="Song.jsx (frontend)"
 import React, { useState } from 'react';
 
 export default ({ id, name, artist, rating, updateRating }) => {

@@ -65,7 +65,7 @@ We did a Live Coding Demo here based on the Songs example from last week. I will
 
 To handle authentication we made a wrapper component `Authenticated` to handle all Authentication:
 
-```jsx
+```jsx title="Authenticated.jsx"
 import React, { useState } from 'react';
 import 'firebase/auth';
 import * as firebase from 'firebase/app';
@@ -105,7 +105,7 @@ export default (props) => {
 
 We then wrap our whole `SongList` app in `Authenticated`.
 
-```jsx
+```jsx title="App.js"
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';

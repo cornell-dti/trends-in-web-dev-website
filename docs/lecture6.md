@@ -15,8 +15,7 @@ Sometimes we only want things to render when a certain condition is met. For
 example, only display text when we meet a certain condition. React has
 conditional rendering to make this very simple.
 
-```jsx
-// PrelimTime.jsx
+```jsx title="PrelimTime.jsx"
 import React from 'react';
 
 export default ({ prelimToday }) => {
@@ -39,8 +38,7 @@ more convenient.
 
 First we can use the **ternary operator**:
 
-```jsx
-// PrelimTime.jsx
+```jsx title="PrelimTime.jsx"
 import React from 'react';
 
 export default ({ prelimToday }) => (
@@ -73,8 +71,7 @@ want to add don't.
 
 React supports the use of **`&&`** operator:
 
-```jsx
-// PrelimTime.jsx
+```jsx title="PrelimTime.jsx"
 import React from 'react';
 
 export default ({ prelimToday }) => (
@@ -115,10 +112,8 @@ Components may not know their children ahead of time.
 
 Children are the components you put within another component:
 
-```html
-<ComponentA>
-  // anything here is a child of Component A
-</ComponentA>
+```jsx
+<ComponentA>{/* anything here is a child of Component A */}</ComponentA>
 ```
 
 Use the `children` prop to pass in children components.
@@ -142,16 +137,14 @@ const App = () => (
 
 We didn't actually get to this live demo, adapted from [this tutorial](https://reactjs.org/docs/composition-vs-inheritance.html) in the React docs, during lecture but it is very simple if you want to try it out yourself. We also show how to import styles.
 
-```jsx
-// Container.jsx
+```jsx title="Container.jsx"
 import React from 'react';
 import './Container.css'; // this is how we import styles
 
 export default (props) => <div className="Border">{props.children}</div>;
 ```
 
-```css
-/* Container.css */
+```css title="Container.css"
 .Border {
   border: 4px solid black;
   background-color: azure;
@@ -160,8 +153,7 @@ export default (props) => <div className="Border">{props.children}</div>;
 
 Less common but you also may want multiple "holes" in your component (for example, a left and right child):
 
-```jsx
-// SplitPane.jsx
+```jsx title="SplintPane.jsx"
 import React from 'react';
 import './SplitPane.css';
 
@@ -173,8 +165,7 @@ export default (props) => (
 );
 ```
 
-```css
-/* SplitPane.css */
+```css title="SplitPane.css"
 /* these colors are ugly I know */
 .LeftPane {
   float: left;
@@ -213,9 +204,7 @@ export default () => {
 
 This section was a live demo, adapted from [this tutorial](https://reactjs.org/docs/lifting-state-up.html) in the React docs.
 
-App.js
-
-```jsx
+```jsx title="App.js"
 import React from 'react';
 import { useState } from 'react';
 import './App.css';
@@ -253,9 +242,7 @@ function App() {
 export default App;
 ```
 
-CelciusInput.jsx
-
-```jsx
+```jsx title="CalciusInput.jsx"
 import React from 'react';
 
 export default ({ temperature, callback }) => {
@@ -265,9 +252,7 @@ export default ({ temperature, callback }) => {
 };
 ```
 
-FahrenheitInput.jsx
-
-```jsx
+```jsx title="FahrenheitInput.jsx"
 import React from 'react';
 
 export default ({ temperature, callback }) => {
