@@ -13,11 +13,11 @@ title: Lecture 7
 
 Milestone 1 of Final Project due **04/22 7:59pm**
 
-_Optional GitHub Workshop **Saturday 04/18 7:30-8:30pm**_  
-[GitHub Workshop Slides](https://docs.google.com/presentation/d/1f3rjNbsYns0Pyd9sPbg46uuUgxtSZ_fCnfZaTqHA754/edit?usp=sharing)  
+_Optional GitHub Workshop **Saturday 04/18 7:30-8:30pm**_
+[GitHub Workshop Slides](https://docs.google.com/presentation/d/1f3rjNbsYns0Pyd9sPbg46uuUgxtSZ_fCnfZaTqHA754/edit?usp=sharing)
 [GitHub Workshop Video](https://drive.google.com/file/d/1J7uVxpNQrwb8nRylIZLv_jeh7AC5HyoB/view)
 
-# Hooks, and More on Functional Components in React
+## Hooks, and More on Functional Components in React
 
 React has changed a lot in the past few years since it was released in 2013,
 in true JavaScript library fashion. A major new concept leading the way of much
@@ -58,9 +58,9 @@ Let's consider a simple counter component requiring the use of states. We will
 outline the code in both the old class-based paradigm, and the new functional +
 Hooks paradigm.
 
-**The Class Component Way**
+##### The Class Component Way
 
-```jsx
+```jsx title="Counter.jsx"
 import React from 'react';
 
 export default class Counter extends React.Component {
@@ -89,10 +89,9 @@ export default class Counter extends React.Component {
 }
 ```
 
-**The Functional Component + Hooks Way**
+##### The Functional Component + Hooks Way
 
-```jsx
-// Counter.jsx
+```jsx title="Counter.jsx"
 import React, { useState } from 'react';
 
 export default function () {
@@ -185,9 +184,7 @@ This section contains the code from the live demo presented during class. Watch 
 lecture video linked at the top for an explanation of the code, intended to
 teach how to think in the React development paradigm.
 
-App.jsx (root component)
-
-```jsx
+```jsx title="App.js (root component)"
 import React from 'react';
 import FilterableProductTable from './FilterableProductTable';
 
@@ -234,9 +231,7 @@ const App = () => (
 export default App;
 ```
 
-FilterableProductTable.jsx
-
-```jsx
+```jsx title="FilterableProductTable.jsx"
 import React, { useState } from 'react';
 import ProductTable from './Starter';
 
@@ -291,9 +286,7 @@ const FilterableProductTable = ({ products }) => {
 export default FilterableProductTable;
 ```
 
-Starter.jsx
-
-```jsx
+```jsx title="Starter.jsx"
 // Contains all the base components (we can put multiple components in a jsx file
 // for convenience, though this is not usually good practice).
 import React from 'react';

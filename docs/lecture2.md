@@ -35,8 +35,7 @@ success Saved package.json
 
 In the end, these questions create a `package.json` file. Your `package.json` should like this:
 
-```json
-// package.json
+```json title="package.json"
 {
   "name": "helloworld",
   "version": "1.0.0",
@@ -129,8 +128,7 @@ Lets make a simple endpoint that gets the value of a variable `x`.
 
 Create a new file called `index.js` and add the following:
 
-```js
-// index.js
+```js title="index.js"
 const express = require('express');
 const app = express();
 let x = 0;
@@ -174,8 +172,7 @@ Another type of request we talked about was a POST request, used to send data to
 
 Add the following to your `index.js` file after your `app.get` call:
 
-```js
-// index.js
+```js title="index.js"
 app.post('/addOne', function (req, res) {
   if (req.query.variable === 'x') {
     x += 1;
@@ -200,8 +197,7 @@ We can import it into our script using `const bodyParser = require('body-parser'
 
 Your index.js should now look like the following:
 
-```js
-// index.js
+```js title="index.js"
 const express = require('express');
 const bodyParser = require('body-parser');
 

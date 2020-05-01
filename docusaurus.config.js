@@ -9,7 +9,7 @@ module.exports = {
   themeConfig: {
     prism: {
       theme: require('./atom-one-light-theme'),
-      darkTheme: require('prism-react-renderer/themes/nightOwl'),
+      darkTheme: require('prism-react-renderer/themes/dracula'),
     },
     navbar: require('./navbar'),
     footer: require('./footer'),
