@@ -3,6 +3,9 @@ id: lecture6
 title: Lecture 6
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 [Lecture Slides](https://docs.google.com/presentation/d/1sBLwqUIciol7970umm83ACJZPfp2TaUQ9x5IQQP5sIo/edit?usp=sharing)
 
 [Lecture Video](https://drive.google.com/file/d/1YWpFb_xJ5O1xjEyjCX9PKCpq-iSPtmrt/view?usp=sharing)
@@ -14,6 +17,31 @@ title: Lecture 6
 Sometimes we only want things to render when a certain condition is met. For
 example, only display text when we meet a certain condition. React has
 conditional rendering to make this very simple.
+
+<Tabs
+groupId="lang"
+defaultValue="ts"
+values={[
+{ label: 'TypeScript', value: 'ts', },
+{ label: 'JavaScript', value: 'js', },
+]
+}>
+<TabItem value="ts">
+
+```tsx title="PrelimTime.tsx"
+import React from 'react';
+
+export default ({ prelimToday }: { readonly prelimToday: boolean }) => {
+  if (prelimToday) {
+    return <p>I have a prelim today.</p>;
+  } else {
+    return <p>I don't have a prelim today.</p>;
+  }
+};
+```
+
+</TabItem>
+<TabItem value="js">
 
 ```jsx title="PrelimTime.jsx"
 import React from 'react';
@@ -27,6 +55,9 @@ export default ({ prelimToday }) => {
 };
 ```
 
+</TabItem>
+</Tabs>
+
 In this example, we have a functional component `PrelimTime` that takes in a
 prop `prelimToday`. `prelimToday` is a boolean holding whether we have a prelim
 today or not. We want the component to display "I have a prelim today." if
@@ -38,6 +69,29 @@ more convenient.
 
 First we can use the **ternary operator**:
 
+<Tabs
+groupId="lang"
+defaultValue="ts"
+values={[
+{ label: 'TypeScript', value: 'ts', },
+{ label: 'JavaScript', value: 'js', },
+]
+}>
+<TabItem value="ts">
+
+```tsx title="PrelimTime.ssx"
+import React from 'react';
+
+export default ({ prelimToday }: { readonly prelimToday: boolean }) => (
+  prelimToday
+    ? <p>I have a prelim today.</p>
+    : <p>I don't have a prelim today.</p>;
+);
+```
+
+</TabItem>
+<TabItem value="js">
+
 ```jsx title="PrelimTime.jsx"
 import React from 'react';
 
@@ -47,6 +101,9 @@ export default ({ prelimToday }) => (
     : <p>I don't have a prelim today.</p>;
 );
 ```
+
+</TabItem>
+</Tabs>
 
 The ternary operator is also very common in other languages as well such as
 Java or Python. The basic syntax is as follows:
@@ -71,6 +128,27 @@ want to add don't.
 
 React supports the use of **`&&`** operator:
 
+<Tabs
+groupId="lang"
+defaultValue="ts"
+values={[
+{ label: 'TypeScript', value: 'ts', },
+{ label: 'JavaScript', value: 'js', },
+]
+}>
+<TabItem value="ts">
+
+```tsx title="PrelimTime.tsx"
+import React from 'react';
+
+export default ({ prelimToday }: { readonly prelimToday: boolean }) => (
+  <p>I {!prelimToday && "don't"} have a prelim today.</p>
+);
+```
+
+</TabItem>
+<TabItem value="js">
+
 ```jsx title="PrelimTime.jsx"
 import React from 'react';
 
@@ -78,6 +156,9 @@ export default ({ prelimToday }) => (
   <p>I {!prelimToday && "don't"} have a prelim today.</p>
 );
 ```
+
+</TabItem>
+</Tabs>
 
 Here, we display the text "I have a prelim today.". However, in the curly
 braces, if `prelimToday` is `false` then the word "don't" will be rendered.
@@ -118,9 +199,35 @@ Children are the components you put within another component:
 
 Use the `children` prop to pass in children components.
 
-```jsx
+<Tabs
+groupId="lang"
+defaultValue="ts"
+values={[
+{ label: 'TypeScript', value: 'ts', },
+{ label: 'JavaScript', value: 'js', },
+]
+}>
+<TabItem value="ts">
+
+```tsx title="Container.tsx"
+import React, { ReactNode } from 'react';
+type Props = { readonly children: ReactNode };
+const Container = (props: Props) => (
+  <div className="Border">{props.children}</div>
+);
+```
+
+</TabItem>
+<TabItem value="js">
+
+```jsx title="Container.jsx"
+import React from 'react';
+
 const Container = (props) => <div className="Border">{props.children}</div>;
 ```
+
+</TabItem>
+</Tabs>
 
 ```jsx
 const App = () => (
@@ -137,12 +244,37 @@ const App = () => (
 
 We didn't actually get to this live demo, adapted from [this tutorial](https://reactjs.org/docs/composition-vs-inheritance.html) in the React docs, during lecture but it is very simple if you want to try it out yourself. We also show how to import styles.
 
+<Tabs
+groupId="lang"
+defaultValue="ts"
+values={[
+{ label: 'TypeScript', value: 'ts', },
+{ label: 'JavaScript', value: 'js', },
+]
+}>
+<TabItem value="ts">
+
+```tsx title="Container.tsx"
+import React, { ReactNode } from 'react';
+import './Container.css'; // this is how we import styles
+
+type Props = { readonly children: ReactNode };
+
+export default (props: Props) => <div className="Border">{props.children}</div>;
+```
+
+</TabItem>
+<TabItem value="js">
+
 ```jsx title="Container.jsx"
 import React from 'react';
 import './Container.css'; // this is how we import styles
 
 export default (props) => <div className="Border">{props.children}</div>;
 ```
+
+</TabItem>
+</Tabs>
 
 ```css title="Container.css"
 .Border {
@@ -152,6 +284,33 @@ export default (props) => <div className="Border">{props.children}</div>;
 ```
 
 Less common but you also may want multiple "holes" in your component (for example, a left and right child):
+
+<Tabs
+groupId="lang"
+defaultValue="ts"
+values={[
+{ label: 'TypeScript', value: 'ts', },
+{ label: 'JavaScript', value: 'js', },
+]
+}>
+<TabItem value="ts">
+
+```tsx title="SplintPane.tsx"
+import React, { ReactNode } from 'react';
+import './SplitPane.css';
+
+type Props = { readonly left: ReactNode; readonly right: ReactNode };
+
+export default (props: Props) => (
+  <div>
+    <div className="LeftPane">{props.left}</div>
+    <div className="RightPane">{props.right}</div>
+  </div>
+);
+```
+
+</TabItem>
+<TabItem value="js">
 
 ```jsx title="SplintPane.jsx"
 import React from 'react';
@@ -164,6 +323,9 @@ export default (props) => (
   </div>
 );
 ```
+
+</TabItem>
+</Tabs>
 
 ```css title="SplitPane.css"
 /* these colors are ugly I know */
@@ -205,8 +367,7 @@ export default () => {
 This section was a live demo, adapted from [this tutorial](https://reactjs.org/docs/lifting-state-up.html) in the React docs.
 
 ```jsx title="App.js"
-import React from 'react';
-import { useState } from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import FahrenheitInput from './FahrenheitInput';
 import CelsiusInput from './CelsiusInput';
@@ -242,6 +403,51 @@ function App() {
 export default App;
 ```
 
+<Tabs
+groupId="lang"
+defaultValue="ts"
+values={[
+{ label: 'TypeScript', value: 'ts', },
+{ label: 'JavaScript', value: 'js', },
+]
+}>
+<TabItem value="ts">
+
+```tsx title="CalciusInput.tsx"
+import React, { ChangeEvent } from 'react';
+
+type Props = {
+  readonly temperature: number;
+  readonly callback: (temperature: number) => void;
+};
+
+export default ({ temperature, callback }: Props) => {
+  const handlechange = (e: ChangeEvent<HTMLInputElement>) =>
+    callback(parseInt(e.target.value) || 0);
+
+  return <input value={temperature} onChange={handlechange} />;
+};
+```
+
+```tsx title="FahrenheitInput.tsx"
+import React from 'react';
+
+type Props = {
+  readonly temperature: number;
+  readonly callback: (temperature: number) => void;
+};
+
+export default ({ temperature, callback }: Props) => {
+  const handlechange = (e: ChangeEvent<HTMLInputElement>) =>
+    callback((((parseInt(e.target.value) || 0) - 32) * 5) / 9);
+
+  return <input value={(temperature * 9) / 5 + 32} onChange={handlechange} />;
+};
+```
+
+</TabItem>
+<TabItem value="js">
+
 ```jsx title="CalciusInput.jsx"
 import React from 'react';
 
@@ -262,5 +468,8 @@ export default ({ temperature, callback }) => {
   return <input value={(temperature * 9) / 5 + 32} onChange={handlechange} />;
 };
 ```
+
+</TabItem>
+</Tabs>
 
 Check lecture video for a more detailed explanation.
