@@ -64,25 +64,15 @@ Hooks paradigm.
 import React from 'react';
 
 export default class Counter extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { count: 0 };
-    this.handleClick = this.handleClick.bind(this);
-  }
+  state = { count: 0 };
 
-  handleClick(e) {
-    const { count } = this.state;
-    this.setState({
-      count: count + 1,
-    });
-  }
+  handleClick = () => this.setState({ count: this.state.count + 1 });
 
   render() {
-    const { count } = this.state;
     return (
       <div>
         <button onClick={this.handleClick}>Click Me!</button>
-        <p>You clicked {count} times</p>
+        <p>You clicked {this.state.count} times</p>
       </div>
     );
   }
@@ -91,10 +81,10 @@ export default class Counter extends React.Component {
 
 ##### The Functional Component + Hooks Way
 
-```jsx title="Counter.jsx"
+```jsx title="Counter.jsx / Counter.tsx"
 import React, { useState } from 'react';
 
-export default function () {
+export default () => {
   const [count, setCount] = useState(0);
   return (
     <div>
@@ -102,7 +92,7 @@ export default function () {
       <p>You clicked {count} times</p>
     </div>
   );
-}
+};
 ```
 
 Right off the bat, we notice that the functional component with Hooks method is
