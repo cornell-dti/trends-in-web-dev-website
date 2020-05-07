@@ -16,13 +16,13 @@ import TabItem from '@theme/TabItem';
 
 ### What is React Native?
 
-React Native allows for cross platform mobile development using a webdev framework we already know--React! 
+React Native allows for cross platform mobile development using a webdev framework we already know--React!
 
-React Native allows you to build UIs independent of the platform. Usually when developing an app you have to develop an Android version (using Java/Kotlin) and iOS version (using Objective-C/Swift) separately. React Native takes care of this conversion for you. 
+React Native allows you to build UIs independent of the platform. Usually when developing an app you have to develop an Android version (using Java/Kotlin) and iOS version (using Objective-C/Swift) separately. React Native takes care of this conversion for you.
 
 ### Core React Native Components
 
-Since React Native is really just React, many of the same concepts (`useState`, `props`, React Hooks, etc) still apply to React. However, instead of HTML we have `Views`. A view is the basic building block of UI in mobile development. Views can display images, hold text, handle user input, etc. 
+Since React Native is really just React, many of the same concepts (`useState`, `props`, React Hooks, etc) still apply to React. However, instead of HTML we have `Views`. A view is the basic building block of UI in mobile development. Views can display images, hold text, handle user input, etc.
 
 Some core React Native components are:
 
@@ -45,7 +45,7 @@ expo init <project name>
 yarn start
 ```
 
-`expo init` is similar to `create-react-app` in that it generates boilerplate code for you. 
+`expo init` is similar to `create-react-app` in that it generates boilerplate code for you.
 
 ### Demo
 
@@ -67,20 +67,26 @@ import React, { useState } from 'react';
 import { StyleSheet, Text, View, TextInput, Button } from 'react-native';
 
 export default function App(): React.ReactElement {
-
   const [item, setItem] = useState<string>('');
   const [items, setItems] = useState<string[]>([]);
 
   const updateItems = (): void => {
     setItems([...items, item]);
     setItem('');
-  }
+  };
 
   return (
     <View style={styles.container}>
-      <TextInput placeholder="Add an item" style={styles.input} value={item} onChangeText={(text) => setItem(text)} />
+      <TextInput
+        placeholder="Add an item"
+        style={styles.input}
+        value={item}
+        onChangeText={(text) => setItem(text)}
+      />
       <Button title="Add item" onPress={() => updateItems()} />
-      {items.map((i, index) => <Text key={index}> {i} </Text>)}
+      {items.map((i, index) => (
+        <Text key={index}> {i} </Text>
+      ))}
     </View>
   );
 }
@@ -95,8 +101,8 @@ const styles = StyleSheet.create({
 
   input: {
     borderWidth: 1,
-    width: 150
-  }
+    width: 150,
+  },
 });
 ```
 
@@ -109,20 +115,26 @@ import React, { useState } from 'react';
 import { StyleSheet, Text, View, TextInput, Button } from 'react-native';
 
 export default function App() {
-
   const [item, setItem] = useState('');
   const [items, setItems] = useState([]);
 
   const updateItems = () => {
     setItems([...items, item]);
     setItem('');
-  }
+  };
 
   return (
     <View style={styles.container}>
-      <TextInput placeholder="Add an item" style={styles.input} value={item} onChangeText={(text) => setItem(text)} />
+      <TextInput
+        placeholder="Add an item"
+        style={styles.input}
+        value={item}
+        onChangeText={(text) => setItem(text)}
+      />
       <Button title="Add item" onPress={() => updateItems()} />
-      {items.map((i, index) => <Text key={index}> {i} </Text>)}
+      {items.map((i, index) => (
+        <Text key={index}> {i} </Text>
+      ))}
     </View>
   );
 }
@@ -137,8 +149,8 @@ const styles = StyleSheet.create({
 
   input: {
     borderWidth: 1,
-    width: 150
-  }
+    width: 150,
+  },
 });
 ```
 
@@ -149,7 +161,7 @@ Once you `yarn start`, you should be taken to Expo where you can view your chang
 
 ### Learn more
 
-This was a very cursory introduction to React Native. You can learn more by referring to React docs. 
+This was a very cursory introduction to React Native. You can learn more by referring to React docs.
 
 React Docs: [https://reactnative.dev/docs/getting-started](https://reactnative.dev/docs/getting-started)
 
