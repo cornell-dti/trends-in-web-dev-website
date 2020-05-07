@@ -6,6 +6,8 @@ title: Lecture 10
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
+**Final Project extended to May 9th 7:59pm EDT** (late deadline May 12 7:59pm EDT slip days permitting)
+
 [Feedback Form](https://docs.google.com/forms/d/e/1FAIpQLScTsXb5MXUNimc0Jaa2E3DZqAplMZLhUJ3sbVbEiP4THmgUTw/viewform?usp=sf_link)
 
 [Lecture Video](https://drive.google.com/file/d/1E4EgcIwCGGsMHH7dLjhbP7VBAjyZTyG1/view?usp=sharing)
