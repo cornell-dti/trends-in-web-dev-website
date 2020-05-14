@@ -205,13 +205,13 @@ app.use(bodyParser.json());
 
 // Define a type for our Post document stored in Firebase
 type Post = {
-  content: string,
-  name: string,
-}
+  content: string;
+  name: string;
+};
 
 type PostwithID = Post & {
-  id: string,
-}
+  id: string;
+};
 
 app.get('/', (req: Request, res: Response) => res.send('Hello World!'));
 
@@ -226,7 +226,8 @@ app.post('/post', function (req: Request, res: Response) {
 });
 
 // read all posts
-app.get('/post', async function (_, res: Response) { // we don't use the first request parameter
+app.get('/post', async function (_, res: Response) {
+  // we don't use the first request parameter
   const allPostsDoc = await postsCollection.get();
   const posts: PostwithID[] = [];
   for (let doc of allPostsDoc.docs) {
@@ -252,7 +253,8 @@ app.get('/post/:name', async function (req: Request, res: Response) {
 });
 
 // sorted posts by name
-app.get('/postsorted', async function (_, res: Response) { // we don't use the first request parameter
+app.get('/postsorted', async function (_, res: Response) {
+  // we don't use the first request parameter
   const sortedPosts = await postsCollection.orderBy('name', 'desc').get();
   const posts: PostwithID[] = [];
   for (let doc of sortedPosts.docs) {
