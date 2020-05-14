@@ -3,6 +3,9 @@ id: lecture3
 title: Lecture 3
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 [Lecture Slides](https://docs.google.com/presentation/d/1iimIRpAw1ud1yhCCx1cdwypZw2J8VVN8mTLWXOc8g-U/edit?usp=sharing)
 
 [Lecture Video](https://drive.google.com/file/d/14JeWpqIm4uiTl0bSO8hgvg_kqVadsR0Z/view?usp=sharing)
@@ -170,7 +173,127 @@ Note that the code below does not care about what are the fields of a post,
 because Firestore doesn't require you to have a predefined set of field. This
 gives you flexibility when writing your backend code.
 
-```javascript
+<Tabs
+groupId="lang"
+defaultValue="ts"
+values={[
+{ label: 'TypeScript', value: 'ts', },
+{ label: 'JavaScript', value: 'js', },
+]}>
+<TabItem value="ts">
+
+```typescript title="index.ts"
+// in typescript import packages as modules
+import admin from 'firebase-admin';
+import express from 'express'; // also install type aliases for Request, Response
+import bodyParser from 'body-parser';
+
+const serviceAccount = require('./service-account.json');
+
+admin.initializeApp({
+  credential: admin.credential.cert(serviceAccount),
+  databaseURL: 'https://dti-web-dev-sp19-db-demo.firebaseio.com',
+});
+
+const db = admin.firestore();
+
+const app = express();
+const port: number = 8080;
+app.use(bodyParser.json());
+
+// Define a type for our Post document stored in Firebase
+type Post = {
+  content: string;
+  name: string;
+};
+
+type PostWithID = Post & {
+  id: string;
+};
+
+app.get('/', (_, res) => res.send('Hello World!'));
+
+const postsCollection = db.collection('posts');
+
+// create a post
+app.post('/post', function (req, res) {
+  const post: Post = req.body;
+  const myDoc = postsCollection.doc();
+  myDoc.set(post);
+  res.send(myDoc.id);
+});
+
+// read all posts
+app.get('/post', async function (_, res) {
+  // we don't use the first request parameter
+  const allPostsDoc = await postsCollection.get();
+  const posts: PostWithID[] = [];
+  for (let doc of allPostsDoc.docs) {
+    let post: PostWithID = doc.data() as PostWithID;
+    post.id = doc.id;
+    posts.push(post);
+  }
+  res.send(posts);
+});
+
+// read posts by name
+app.get('/post/:name', async function (req, res) {
+  const namePostsDoc = await postsCollection
+    .where('name', '==', req.params.name)
+    .get();
+  const posts: PostWithID[] = [];
+  for (let doc of namePostsDoc.docs) {
+    let post: PostWithID = doc.data() as PostWithID;
+    post.id = doc.id;
+    posts.push(post);
+  }
+  res.send(posts);
+});
+
+// sorted posts by name
+app.get('/postsorted', async function (_, res) {
+  // we don't use the first request parameter
+  const sortedPosts = await postsCollection.orderBy('name', 'desc').get();
+  const posts: PostWithID[] = [];
+  for (let doc of sortedPosts.docs) {
+    let post: PostWithID = doc.data() as PostWithID;
+    post.id = doc.id;
+    posts.push(post);
+  }
+  res.send(posts);
+});
+
+// update a post
+app.post('/post/:id', async function (req, res) {
+  const id: string = req.params.id;
+  const newPost = req.body;
+  await postsCollection.doc(id).update(newPost);
+  res.send('UPDATED');
+});
+
+// delete a post
+app.delete('/post/:id', async function (req, res) {
+  const id: string = req.params.id;
+  await postsCollection.doc(id).delete();
+  res.send('DELETED');
+});
+
+app.listen(port, () => console.log(`Example app listening on port ${port}!`));
+```
+
+For TypeScript, we need to compile this down to JavaScript before we run it:
+
+```bash
+tsc index.ts
+node index.js
+```
+
+The first command compiles `index.ts` to a JS file of the same name. The second runs that JS file.
+
+</TabItem>
+<TabItem value="js">
+
+```javascript title="index.js"
 const admin = require('firebase-admin');
 const serviceAccount = require('./service-account.json');
 const express = require('express');
@@ -254,3 +377,7 @@ app.delete('/post/:id', async function (req, res) {
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 ```
+
+Run it using `node index.js`!
+</TabItem>
+</Tabs>
