@@ -74,7 +74,7 @@ Every time you add a dependency with `yarn add <pkg_name>`, `<pkg_name>` will be
 
 Take a look inside your `node_modules` folder. This is where all your packages will be installed. Notice that even though you just installed one package, multiple packages are in `package.json`. This is because `express` itself has several dependencies that also got installed.
 
-You can find packages to use on [npmjs.com](npmjs.com).
+You can find packages to use on [npmjs.com](https://www.npmjs.com/).
 
 ### **Don't Submit `node_modules`!!**
 
