@@ -74,10 +74,10 @@ if __name__ == '__main__':
 
 #### Example Code
 
-For the frontend, we used the example code [here](./lecture7#filterable-product-table-example) taken from React docs [here](https://reactjs.org/docs/thinking-in-react.html), but instead of declaring all the products in the `App` component, we made a GET call to our backend `/products` endpoint in the `FilterableProductTable` to fetch the products list. The relevant changes are below:
+For the frontend, we used the example code [here](./lecture7#filterable-product-table-example) taken from React docs [here](https://reactjs.org/docs/thinking-in-react.html), but instead of declaring all the products in the `App` component, we make a GET call to our backend `/products` endpoint in the `FilterableProductTable` to fetch the products list. The relevant changes are below:
 
 :::note
-If you want to learn more about setting up a frontend React application, checkout lecture [5](./lecture5), [6](./lecture6), [7](./lecture7), [8](./lecture8).
+If you want to learn more about setting up a frontend React application, check out lecture [5](./lecture5), [6](./lecture6), [7](./lecture7), [8](./lecture8).
 :::
 
 ```jsx title="App.js"
@@ -137,10 +137,10 @@ export default FilterableProductTable;
 In testing, we can add this line to `package.json` to proxy our requests to a locally deployed backend:
 
 ```json
-  "proxy": "http://localhost:5000",
+  "proxy": "http://localhost:8080",
 ```
 
-The port is 5000 because our backend is running on port 5000 of localhost (equivalently, 0.0.0.0).
+The port is 8080 because our backend is running on port 8080 of localhost (equivalently, 0.0.0.0).
 :::
 
 <!-- prettier-ignore-start -->
