@@ -58,19 +58,21 @@ if __name__ == '__main__':
 2. Initialize cloud storage and firestore
 3. Enable billing – it won’t actually charge you
 4. Navigate to [Google Cloud Platform](https://console.cloud.google.com/) search for `Cloud Run API`, and enable it
-5. Go to `IAM` on the navigation bar on the left, and add the `cloud build` and `cloud run` permissions to the `<project-number>-compute@developer account`
+5. Go to `IAM` on the navigation bar on the left, and add the `cloud build` and `cloud run` permissions to the `<project-number>-compute@developer.gserviceaccount.com`
 6. Go to service accounts and under `actions` create a new key for the same account – move this file to your project directory and name it `key.json`
 
 #### Deployment Process
 
 1. First, you should have downloaded the gcloud command line interface (CLI) as per the pre-requisites
 2. In your project directory, type `gcloud auth login` and login with the same account used to create the project
-3. Type gcloud config set project `<project-id>`
+3. Type `gcloud config set project <project-id>`
 4. Then, modify the provided `cloudbuild.yaml` file to use your project name in place of ours, and your developer account email instead of ours
-5. Run `gcloud builds submit --config cloudbuild.yaml .`
+5. Run `gcloud builds submit --tag gcr.io/PROJECT_ID/products`. On success you should see a _SUCCESS_ message containing image name `gcr.io/PROJECT_ID/products`
+6. Run `gcloud beta run deploy --image gcr.io/PROJECT_ID/products`. Select region `us-central1`, confirm the service name `products`, respond `y` to **allow unauthenticated invocations**. On success, you should see a service URL like **https://products-RANDOM_HASH-uc.a.run.app**.
 
 ### Frontend Deployment
 
+#### Example Code
 For the frontend, we used the example code [here](./lecture7#filterable-product-table-example) taken from React docs [here](https://reactjs.org/docs/thinking-in-react.html), but instead of declaring all the products in the `App` component, we made a GET call to our backend `/products` endpoint in the `FilterableProductTable` to fetch the products list. The relevant changes are below:
 
 :::note
@@ -124,6 +126,15 @@ const FilterableProductTable = () => {
 };
 ```
 
+In testing, we can add this line to `package.json` to proxy our requests to a locally deployed backend:
+
+```json title="package.json"
+  "proxy": "http://localhost:5000",
+```
+
+The port is 5000 because our backend is running on port 5000 of localhost (equivalently, 0.0.0.0).
+
+#### Deployment Process
 To deploy frontend to Firebase enter the following commands into terminal:
 
 ```bash
@@ -144,7 +155,21 @@ firebase deploy
 1. Which Firebase CLI features do you want to set up for this folder? Select **Hosting**.
 2. Associate with a Firebase project. **Select your Firebase project**
 3. What do you want as your public directory? **build**
-4. Configure as a single-page app (rewrite all urls to /index.html)? **Yes**
+4. Configure as a single-page app (rewrite all urls to /index.html)? **No**
 5. Overwrite `index.html`? **No**
+
+To direct requests from your deployed frontend to backend, add this to `firebase.json`:
+
+```json title="firebase.json"
+"rewrites": [
+  {
+    "source": "**",
+    "run": {
+      "serviceId": "products",
+      "region": "us-central1"
+    }
+  }
+]
+```
 
 Running `firebase deploy` will push your build assets to Firebase remote server and give you a URL to your live Firebase app site! Now you can share this site and access it over the internet.
