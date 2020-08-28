@@ -70,77 +70,7 @@ Throughout this course, students will work as individuals and in groups to apply
 
 This course will be covering both client-facing and server-side technologies. CS 1110 or equivalent programming experience is a pre-requisite.
 
-Please complete the following pre-assessment. It should take less than an hour! This is not meant as a test, but rather a way of ensuring that you are familiar with the foundational material in the course. Upload your submissions as a zip to your application at https://bit.ly/web-dev-fa20. **This preassessment is mandatory, those who do not submit it will not be admitted in the course.**
-
-```typescript
-/*
-Trends in Web Development Pre-Assessment
-Name:
-NetID:
-*/
-
-// @ts-check
-
-/**
- * Question 1: Arrays
- *
- * Complete the function below. It should return the sum of the numbers in an array.
- *
- * @param {number[]} inputArray
- * @returns {number}
- */
-function mySum(inputArray) {
-  // TODO: Replace the dummy implementation
-  return 6;
-}
-
-/**
- * Write a function that returns the sum of the numbers in an array.
- *
- * Complete the function blow that checks if a year is a leap year or not.
- *
- * A leap year is defined as any year that is divisible by 4. However, a year
- * divisible by 100 is NOT a leap year, unless it is also divisible by 400.
- *
- * @param {number} year
- * @returns {boolean}
- */
-function isLeapYear(year) {
-  // TODO: Replace the dummy implementation
-  if (year === 2000) return true;
-  if (year === 2100) return false;
-  return true;
-}
-
-/**
- * Question 3: isPrime
- *
- * Complete the function below that checks if a number is prime.
- *
- * @param {number} n
- * @returns {boolean}
- */
-function isPrime(n) {
-  // TODO: Replace the dummy implementation
-  return n === 17;
-}
-
-/**
- * Question 4: Control flow
- *
- * Write a function that takes a given array, and returns a new array containing
- * only the elements that are perfect squares.
- *
- * @param {number[]} inputArray
- * @returns {number[]}
- */
-function perfectSquares(inputArray) {
-  // TODO: Replace the dummy implementation
-  return [0, 1, 4, 9];
-}
-
-module.exports = { mySum, isLeapYear, isPrime, perfectSquares };
-```
+Please complete the pre-assessment [here](/preassessment.zip). It should take less than an hour! This is not meant as a test, but rather a way of ensuring that you are familiar with the foundational material in the course. Upload your submissions as a zip to your application at https://bit.ly/web-dev-fa20. **This preassessment is mandatory, those who do not submit it will not be admitted in the course.**
 
 ## When is it?
 
