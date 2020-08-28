@@ -73,6 +73,7 @@ if __name__ == '__main__':
 ### Frontend Deployment
 
 #### Example Code
+
 For the frontend, we used the example code [here](./lecture7#filterable-product-table-example) taken from React docs [here](https://reactjs.org/docs/thinking-in-react.html), but instead of declaring all the products in the `App` component, we made a GET call to our backend `/products` endpoint in the `FilterableProductTable` to fetch the products list. The relevant changes are below:
 
 :::note
@@ -135,6 +136,7 @@ In testing, we can add this line to `package.json` to proxy our requests to a lo
 The port is 5000 because our backend is running on port 5000 of localhost (equivalently, 0.0.0.0).
 
 #### Deployment Process
+
 To deploy frontend to Firebase enter the following commands into terminal:
 
 ```bash
