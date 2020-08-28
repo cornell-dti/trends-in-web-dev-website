@@ -7,13 +7,13 @@ title: Syllabus
 
 By [Cornell DTI](http://cornelldti.org/). Read our article about the first run of the course on [Medium](https://medium.com/cornell-design-tech-initiative/cornell-dti-trends-in-web-development-4cb5abc56776)!
 
-## COVID-19 Update
+## COVID-19 Restrictions
 
-Due to COVID-19, all lectures going forward will be administered remotely via Zoom **[here](https://cornell.zoom.us/j/8798851713)** on **Wednesdays 8:30-9:30pm**. If you are unable to make this time, the lectures will be recorded and posted on the course website the following day along with slides and lecture notes. _Attendance is not required._ (but we still hope to see some of you if you can make it!)
+Due to COVID-19, **Trends in Web Development will be a completely online course this semester.** We will be having lectures [**here**](https://cornell.zoom.us/j/7293410777?pwd=UWxlMTh3VGd2ZXNXSUN6MnlEeFJjZz09) on **Tuesdays 4:30-5:30pm ET**. If you are unable to make this time, the lectures will be recorded and posted on the course website the following day along with slides and lecture notes. _Synchronous attendance is not required_ (but we still hope to see some of you if you can make it!). Attendance credit will be awarded based on short weekly quizzes.
 
 ## Course Application
 
-Apply [here](http://bit.ly/webdevsp20).
+Apply [here](https://bit.ly/web-dev-fa20).
 
 ## Introduction
 
@@ -21,51 +21,41 @@ This class will teach students about modern web development technologies, practi
 
 ## When are office hours?
 
-Office hours will start **Monday, April 6th** and be administered remotely via Zoom. See below for office hour times and Zoom links:
+Office hours times are still being worked out. Check back here when the class starts for accurate Zoom links and times!
 
-Sam: Monday 3:30-4:30pm [Zoom Link](https://cornell.zoom.us/j/9389498164?pwd=cjI1Y1VBZGt6eTlBaWFQVnk0QTBrUT09)
-
-Peter: Monday 4:30-5:30pm [Zoom Link](https://cornell.zoom.us/j/2749196798?pwd=RldMRXFocjBLcWZTblVXcUU1Q0dXZz09)
-
-Megan: Tuesday 1pm-2pm [Zoom Link](https://cornell.zoom.us/j/7293410777)
-
-Enoch: Tuesday 2-3pm [Zoom Link](https://cornell.zoom.us/j/2233738601)
-
-Ashneel: Wednesday 6:45pm-7:45pm [Zoom Link](https://cornell.zoom.us/j/8798851713)
-
-Megan: Thursday 1pm-2pm [Zoom Link](https://cornell.zoom.us/j/7293410777)
-
-If you are unable to make any of those office hours times, you can ask questions on [Piazza](https://piazza.com/class/k6in32n6fckgk?cid=4#) or get in touch with Megan or Ashneel.
+If you are unable to make any of those office hours times, you can ask questions on Piazza (link will be added closer to course start) or get in touch with Megan or Ashneel.
 
 ## Is there a lecture schedule?
 
-Yes!
+Yes! This is a tentative schedule and topics covered are subject to change. Exact dates are subject to change as well based on Cornell guidance on the ongoing pandemic. Currently, we are hoping to finish the course before Thanksgiving break.
 
-Lecture 1 2/12/20: Syllabus, Intro to Node, Express Routes, HTTP Methods
+Lecture 0 9/15: Syllabus, JavaScript/TypeScript
 
-Lecture 2 2/19/20: NoSQL DB (Firebase)
+Lecture 1 9/22: Intro to Node, Express Routes, HTTP Methods
 
-Lecture 3 2/26/20: More Firebase, Build a Rest API for DB model
+Lecture 2 9/29: NoSQL DB (Firebase)
 
-Lecture 4 3/04/20: Functional Programming (map, filter, reduce)
+Lecture 3 10/06: More Firebase, Build a Rest API for DB model
 
-Lecture 5 3/11/20: React (Components and tooling)
+Lecture 4 10/13: Functional Programming (map, filter, reduce)
 
-Lecture 6 4/08/20: React (JSX and conditional rendering)
+Lecture 5 10/20: React (Components and tooling)
 
-Lecture 7 4/15/20: React (ES6 and State)
+Lecture 6 10/27: React (JSX and conditional rendering)
 
-Lecture 8 4/22/20: frontend + backend (Data Fetching)
+Lecture 7 11/3: React (ES6 and State)
 
-Lecture 9 4/29/20: Deployment
+Lecture 8 11/10: frontend + backend (Data Fetching)
 
-Lecture 10 5/06/20: Student Choice
+Lecture 9 11/17: Deployment & TypeScript
+
+Lecture 10 11/24: Student Choice
 
 ## Where are assignments released and submitted?
 
-Assignments will be released on [GitHub](https://github.com/ashneeldas2/trends-sp20) every Wednesday. Every assignment
-is due right before class of the following week at 7:59pm unless otherwise stated. You will have 6 slip days total to use on
-the assignments and each assignment you may only use up to 2 slip days. Use these judiciously because we will not be handling extensions outside of slip days.
+Assignments will be released on [here](./assignments) every Tuesday. Every assignment
+is due right before class of the following week at 3:59pm unless otherwise stated. You will have 6 slip days total to use on
+the assignments but each assignment you may only use up to 2 slip days. Use these judiciously because we will not be handling extensions outside of slip days.
 
 Assignments must be submitted on CMS. We will not take submissions emailed to us. If you are not on the CMS please email
 Megan (my474@cornell.edu) or Ashneel (ad665@cornell.edu)
@@ -78,17 +68,87 @@ Throughout this course, students will work as individuals and in groups to apply
 
 ## What are the prerequisites?
 
-This course will be covering both client-facing and server-side technologies. INFO/CS 1300, or equivalent experience with HTML & CSS, is a pre-requisite.
+This course will be covering both client-facing and server-side technologies. CS 1110 or equivalent programming experience is a pre-requisite.
 
-There is a **mandatory** preassessment: https://bit.ly/38K6w5L. It should take less than an hour! This is not meant as a test, but rather a way of ensuring that you are familiar with the foundational material in the course. Upload your submissions as a zip to https://bit.ly/2O3ceYA.
+Please complete the following pre-assessment. It should take less than an hour! This is not meant as a test, but rather a way of ensuring that you are familiar with the foundational material in the course. Upload your submissions as a zip to your application at https://bit.ly/web-dev-fa20. **This preassessment is mandatory, those who do not submit it will not be admitted in the course.**
+
+```typescript
+/*
+Trends in Web Development Pre-Assessment
+Name:
+NetID:
+*/
+
+// @ts-check
+
+/**
+ * Question 1: Arrays
+ *
+ * Complete the function below. It should return the sum of the numbers in an array.
+ *
+ * @param {number[]} inputArray
+ * @returns {number}
+ */
+function mySum(inputArray) {
+  // TODO: Replace the dummy implementation
+  return 6;
+}
+
+/**
+ * Write a function that returns the sum of the numbers in an array.
+ *
+ * Complete the function blow that checks if a year is a leap year or not.
+ *
+ * A leap year is defined as any year that is divisible by 4. However, a year
+ * divisible by 100 is NOT a leap year, unless it is also divisible by 400.
+ *
+ * @param {number} year
+ * @returns {boolean}
+ */
+function isLeapYear(year) {
+  // TODO: Replace the dummy implementation
+  if (year === 2000) return true;
+  if (year === 2100) return false;
+  return true;
+}
+
+/**
+ * Question 3: isPrime
+ *
+ * Complete the function below that checks if a number is prime.
+ *
+ * @param {number} n
+ * @returns {boolean}
+ */
+function isPrime(n) {
+  // TODO: Replace the dummy implementation
+  return n === 17;
+}
+
+/**
+ * Question 4: Control flow
+ *
+ * Write a function that takes a given array, and returns a new array containing
+ * only the elements that are perfect squares.
+ *
+ * @param {number[]} inputArray
+ * @returns {number[]}
+ */
+function perfectSquares(inputArray) {
+  // TODO: Replace the dummy implementation
+  return [0, 1, 4, 9];
+}
+
+module.exports = { mySum, isLeapYear, isPrime, perfectSquares };
+```
 
 ## When is it?
 
-The first class meeting will be Wednesday, February 12th and end on Wednesday, April 29th. This course will be held Wednesday evenings from 8:30 - 9:30 PM, Gates G01.
+The first class meeting will be Tuesday, September 15th and end on Tuesday, November 24th (right before Thanksgiving). This course will be held Tuesday evenings from 4:30 - 5:30 PM on [Zoom](https://cornell.zoom.us/j/7293410777?pwd=UWxlMTh3VGd2ZXNXSUN6MnlEeFJjZz09).
 
 ## Where does it meet?
 
-Gates G01
+[Zoom](https://cornell.zoom.us/j/7293410777?pwd=UWxlMTh3VGd2ZXNXSUN6MnlEeFJjZz09)
 
 ## What is the expected workload?
 
@@ -100,11 +160,11 @@ You are free to use whichever text editor or programming IDE of your choice. How
 
 ## How many credits is it?
 
-Two credits S/U.
+Two credits S/U, although students are allowed to audit this course for 0 credits.
 
 ## What's the grading policy?
 
-Attendance - 20% (can miss 1 of 10 lectures without penalty)
+Attendance - 20% (based on weekly lecture quizzes, can miss 1 of 11 without penalty)
 
 Filling out Feedback - 10%
 
@@ -116,7 +176,7 @@ Keep in mind that you only need a C- (70) or higher to pass. If you ever feel th
 
 ## Who should I contact with questions?
 
-Email Megan (my474@cornell.edu) or Ashneel (ad665@cornell.edu).
+Email Megan ([my474@cornell.edu](mailto:my474@cornell.edu)) or Ashneel ([ad665@cornell.edu](mailto:ad665@cornell.edu)).
 
 ## Policies
 
