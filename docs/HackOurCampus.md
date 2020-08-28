@@ -126,7 +126,9 @@ const FilterableProductTable = () => {
   );
 };
 ```
+<!-- prettier-ignore-start -->
 
+:::tip
 In testing, we can add this line to `package.json` to proxy our requests to a locally deployed backend:
 
 ```json title="package.json"
@@ -134,6 +136,8 @@ In testing, we can add this line to `package.json` to proxy our requests to a lo
 ```
 
 The port is 5000 because our backend is running on port 5000 of localhost (equivalently, 0.0.0.0).
+:::
+<!-- prettier-ignore-start -->
 
 #### Deployment Process
 
