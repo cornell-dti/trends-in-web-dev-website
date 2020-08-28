@@ -132,7 +132,7 @@ const FilterableProductTable = () => {
 :::tip
 In testing, we can add this line to `package.json` to proxy our requests to a locally deployed backend:
 
-```json title="package.json"
+```json
   "proxy": "http://localhost:5000",
 ```
 
