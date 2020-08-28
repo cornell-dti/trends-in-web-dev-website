@@ -104,7 +104,7 @@ const FilterableProductTable = () => {
 
   // this function fetches the products data from our backend endpoint
   useEffect(() => {
-    fetch('<BACKEND DEPLOYED URL>/products')
+    fetch('/products')
       .then((resp) => resp.json())
       .then(({ products }) => setProducts(products));
   }, []);
@@ -166,7 +166,7 @@ firebase deploy
 4. Configure as a single-page app (rewrite all urls to /index.html)? **No**
 5. Overwrite `index.html`? **No**
 
-To direct requests from your deployed frontend to backend, add this to `firebase.json`:
+To direct requests from your deployed frontend to backend, add this to `firebase.json` ([source](https://firebase.google.com/docs/hosting/cloud-run)):
 
 ```json title="firebase.json"
 "rewrites": [
