@@ -94,6 +94,8 @@ export default App;
 ```
 
 ```jsx title="FilterableProductTable.jsx"
+import React from 'react';
+
 const FilterableProductTable = () => {
   const [products, setProducts] = useState([]);
   const [filterText, setFilterText] = useState('');
@@ -125,6 +127,8 @@ const FilterableProductTable = () => {
     </div>
   );
 };
+
+export default FilterableProductTable;
 ```
 
 <!-- prettier-ignore-start -->
