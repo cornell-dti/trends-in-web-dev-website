@@ -67,8 +67,9 @@ if __name__ == '__main__':
 2. In your project directory, type `gcloud auth login` and login with the same account used to create the project
 3. Type `gcloud config set project <project-id>`
 4. Then, modify the provided `cloudbuild.yaml` file to use your project name in place of ours, and your developer account email instead of ours
-5. Run `gcloud builds submit --tag gcr.io/PROJECT_ID/products`. On success you should see a _SUCCESS_ message containing image name `gcr.io/PROJECT_ID/products`
-6. Run `gcloud beta run deploy --image gcr.io/PROJECT_ID/products`. Select region `us-central1`, confirm the service name `products`, respond `y` to **allow unauthenticated invocations**. On success, you should see a service URL like **https://products-RANDOM_HASH-uc.a.run.app**.
+5. Run `gcloud builds submit --config cloudbuild.yaml .`
+
+You should get a link like https://todo-RANDOMHASH-uc.a.run.app/products. **Copy/save this outputted URL because you will using this in the frontend API call.**
 
 ### Frontend Deployment
 
@@ -106,7 +107,8 @@ const FilterableProductTable = () => {
 
   // this function fetches the products data from our backend endpoint
   useEffect(() => {
-    fetch('/products')
+    // add the BACKEND_URL you received from deploying your backend
+    fetch('[BACKEND_URL]/products')
       .then((resp) => resp.json())
       .then(({ products }) => setProducts(products));
   }, []);
@@ -131,8 +133,6 @@ const FilterableProductTable = () => {
 export default FilterableProductTable;
 ```
 
-<!-- prettier-ignore-start -->
-
 :::tip
 In testing, we can add this line to `package.json` to proxy our requests to a locally deployed backend:
 
@@ -142,8 +142,6 @@ In testing, we can add this line to `package.json` to proxy our requests to a lo
 
 The port is 8080 because our backend is running on port 8080 of localhost (equivalently, 0.0.0.0).
 :::
-
-<!-- prettier-ignore-start -->
 
 #### Deployment Process
 
@@ -167,21 +165,7 @@ firebase deploy
 1. Which Firebase CLI features do you want to set up for this folder? Select **Hosting**.
 2. Associate with a Firebase project. **Select your Firebase project**
 3. What do you want as your public directory? **build**
-4. Configure as a single-page app (rewrite all urls to /index.html)? **No**
+4. Configure as a single-page app (rewrite all urls to /index.html)? **Yes**
 5. Overwrite `index.html`? **No**
-
-To direct requests from your deployed frontend to backend, add this to `firebase.json` ([source](https://firebase.google.com/docs/hosting/cloud-run)):
-
-```json title="firebase.json"
-"rewrites": [
-  {
-    "source": "**",
-    "run": {
-      "serviceId": "products",
-      "region": "us-central1"
-    }
-  }
-]
-```
 
 Running `firebase deploy` will push your build assets to Firebase remote server and give you a URL to your live Firebase app site! Now you can share this site and access it over the internet.
