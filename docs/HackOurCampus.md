@@ -3,6 +3,10 @@ id: HackOurCampus
 title: Full Stack Integration Workshop
 ---
 
+[Slides](https://docs.google.com/presentation/d/1QvcN7QkEg55A4e5w-u7OtVuxVAtL2aU7TvFxkRXu1L8/edit?usp=sharing)
+
+[GitHub Repo](https://github.com/HackOurCampus/fullstack-integration-workshop)
+
 ## Prerequisites
 
 For this workshop you will need the following programs installed:
