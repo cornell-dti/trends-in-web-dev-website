@@ -45,7 +45,7 @@ Lecture 6 10/27: React (JSX and conditional rendering)
 
 Lecture 7 11/3: React (ES6 and State)
 
-Lecture 8 11/10: frontend + backend (Data Fetching)
+Lecture 8 11/10: Frontend + Backend (Data Fetching)
 
 Lecture 9 11/17: Deployment & TypeScript
 
@@ -55,7 +55,7 @@ Lecture 10 11/24: Student Choice
 
 Assignments will be released on [here](./assignments) every Tuesday. Every assignment
 is due right before class of the following week at 3:59pm unless otherwise stated. You will have 6 slip days total to use on
-the assignments but each assignment you may only use up to 2 slip days. Use these judiciously because we will not be handling extensions outside of slip days.
+the assignments, but for each assignment, you may only use up to 2 slip days. Use these judiciously because we will not be handling extensions outside of slip days.
 
 Assignments must be submitted on CMS. We will not take submissions emailed to us. If you are not on the CMS please email
 Megan (my474@cornell.edu) or Ashneel (ad665@cornell.edu)
@@ -70,7 +70,7 @@ Throughout this course, students will work as individuals and in groups to apply
 
 This course will be covering both client-facing and server-side technologies. CS 1110 or equivalent programming experience is a pre-requisite.
 
-Please complete the pre-assessment [here](/preassessment.zip). It should take less than an hour! This is not meant as a test, but rather a way of ensuring that you are familiar with the foundational material in the course. Upload your submissions as a zip to your application at https://bit.ly/web-dev-fa20. **This preassessment is mandatory, those who do not submit it will not be admitted in the course.**
+Please complete the pre-assessment [here](/preassessment.zip). It should take less than an hour! This is not meant as a test, but rather a way of ensuring that you are familiar with the foundational material in the course. Upload your submissions as a zip to your application at https://bit.ly/web-dev-fa20. **This preassessment is mandatory; those who do not submit it will not be admitted in the course.**
 
 ## When is it?
 
