@@ -1,5 +1,11 @@
 # dependencies
-/node_modules
+**/.yarn/*
+!**/.yarn/releases
+!**/.yarn/sdks
+!**/.yarn/plugins
+**/node_modules
+**/.pnp
+**/.pnp.js
 
 # production
 /build
