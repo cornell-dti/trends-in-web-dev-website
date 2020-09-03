@@ -5,9 +5,15 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@master
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2-beta
+      - uses: actions/cache@v2
+        with:
+          path: ".yarn/cache\n.pnp.js"
+          key: "yarn-berry-${{ hashFiles('**/yarn.lock') }}"
+          restore-keys: 'yarn-berry-'
       - name: Yarn Install
-        run: yarn install
+        run: yarn install --immutable
       - name: Run Prettier
         run: 'yarn format:check'
       - name: Build
@@ -16,7 +22,7 @@ jobs:
         env:
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-        run: ./node_modules/.bin/netlify deploy --dir=build --site=$NETLIFY_SITE_ID --json > a.json
+        run: NODE_NO_WARNINGS=1 yarn netlify deploy --dir=build --site=$NETLIFY_SITE_ID --json > a.json
       - name: Parse deployment URL
         run: |
           DEPLOY_URL=$(echo "console.log(require('./a.json').deploy_url)" | node)

@@ -8,11 +8,15 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@master
-      - name: Set up Node
-        uses: actions/setup-node@v1
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2-beta
+      - uses: actions/cache@v2
+        with:
+          path: ".yarn/cache\n.pnp.js"
+          key: "yarn-berry-${{ hashFiles('**/yarn.lock') }}"
+          restore-keys: 'yarn-berry-'
       - name: Yarn Install
-        run: yarn install
+        run: yarn install --immutable
       - name: Build & Deploy Website
         env:
           GIT_USER: ${{ secrets.BOT_TOKEN }}
