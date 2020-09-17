@@ -28,10 +28,10 @@ Java is to JavaScript as car is to carpet. They are very different languages!
 #### Variables
 
 There are three ways to create variables in JS:
-~1. `var x = 5`~
 
+1. ~~`var x = 5`~~
 2. `let x = 5`
-   **3. `const x = 5`**
+3. **`const x = 5`**
 
 We prefer using **const** for immutability although let is also accepted. _**Never use var.**_
 
@@ -88,16 +88,17 @@ for (const property in object) {
 #### while loops
 
 ```js
-const object = { a: 1, b: 2, c: 3 };
+let n = 0;
 
-for (const property in object) {
-  console.log(`${property}: ${object[property]}`);
+while (n < 3) {
+  console.log(n);
+  n++;
 }
 
 // expected output:
-// "a: 1"
-// "b: 2"
-// "c: 3"
+// "0"
+// "1"
+// "2"
 ```
 
 #### function declaration
