@@ -29,7 +29,7 @@ Java is to JavaScript as car is to carpet. They are very different languages!
 
 There are three ways to create variables in JS:
 
-1. ~`var x = 5`~
+1. ~~`var x = 5`~~
 2. `let x = 5`
 3. **`const x = 5`**
 
