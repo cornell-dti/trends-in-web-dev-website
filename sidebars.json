@@ -6,6 +6,7 @@
       "setup-editor"
     ],
     "Lectures": [
+      "lecture0",
       "lecture1",
       "lecture2",
       "lecture3",
@@ -15,8 +16,7 @@
       "lecture7",
       "lecture8",
       "lecture9",
-      "lecture10",
-      "lecture11"
+      "lecture10"
     ],
     "Assignments": [
       "assignments"
