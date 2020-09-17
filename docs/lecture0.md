@@ -12,41 +12,48 @@ No homework this week! We're still getting CMS/Piazza set up
 ## JavaScript
 
 ### What is JavaScript
-* JavaScript is the defacto language of the web
-* Commonly used in conjunction with HTML/CSS
-* Became really popular for powering client-side logic through AJAX
-  * Previously, languages like PHP had to communicate with the server before coming back with a response
-* These days JavaScript is everywhere!
+
+- JavaScript is the defacto language of the web
+- Commonly used in conjunction with HTML/CSS
+- Became really popular for powering client-side logic through AJAX
+  - Previously, languages like PHP had to communicate with the server before coming back with a response
+- These days JavaScript is everywhere!
 
 :::note
 Java is to JavaScript as car is to carpet. They are very different languages!
 :::
 
 ### Basic JavaScript Syntax
+
 #### Variables
+
 There are three ways to create variables in JS:
 ~1. `var x = 5`~
+
 2. `let x = 5`
-**3. `const x = 5`**
+   **3. `const x = 5`**
 
 We prefer using **const** for immutability although let is also accepted. _**Never use var.**_
 
 #### if statements
+
 ```js
 if (condition) {
-	// executes if condition is true
+  // executes if condition is true
 } else if (condition2) {
-	// executes if condition is false but condition2 is true
+  // executes if condition is false but condition2 is true
 } else {
-	// executes if condition is false
+  // executes if condition is false
 }
 ```
 
 #### for loops
+
 ##### regular counter for loop
+
 ```js
 for (let i = 0; i < 5; i++) {
-	console.log(i)
+  console.log(i);
 }
 ```
 
@@ -55,9 +62,9 @@ for (let i = 0; i < 5; i++) {
 We can use `for..of` loops to loop through elements of an array.
 
 ```js
-const arr = [10, 20, 30, 40]; 
+const arr = [10, 20, 30, 40];
 for (const val of arr) {
-  console.log(val); // prints values: 10, 20, 30, 40 
+  console.log(val); // prints values: 10, 20, 30, 40
 }
 ```
 
@@ -79,6 +86,7 @@ for (const property in object) {
 ```
 
 #### while loops
+
 ```js
 const object = { a: 1, b: 2, c: 3 };
 
@@ -104,12 +112,12 @@ function calcRectArea(width, height) {
 console.log(calcRectArea(5, 6)); // 30
 ```
 
-or we can use _arrow functions_: 
+or we can use _arrow functions_:
 
 ```js
 const calcRectArea = (width, height) => {
-  return width*height;
-}
+  return width * height;
+};
 ```
 
 More details on arrow functions in a few weeks when we talk about ES6!
@@ -357,37 +365,35 @@ yarn global add ts-node
 We used the following example code:
 
 ```typescript title="script.ts"
-const mySum = (inputArray: number []) : number => {
+const mySum = (inputArray: number[]): number => {
   let sum: number = 0;
   for (const num of inputArray) {
     sum += num;
   }
   return sum;
-}
+};
 
 console.log(mySum([1, 2, 3])); // expected 6
 
-const isLeapYear = (year: number) : boolean => {
-  return ((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0);
-}
+const isLeapYear = (year: number): boolean => {
+  return (year % 4 == 0 && year % 100 != 0) || year % 400 == 0;
+};
 
-console.log(isLeapYear(2000)); // is a leap year 
+console.log(isLeapYear(2000)); // is a leap year
 console.log(isLeapYear(2100)); // is NOT a leap year;
 
-const perfectSquares = (arr: number []): number [] => {
-  const ans : number [] = [];
+const perfectSquares = (arr: number[]): number[] => {
+  const ans: number[] = [];
   for (const num of arr) {
     if (Math.sqrt(num) % 1 === 0) {
       ans.push(num);
     }
   }
   return ans;
-}
+};
 
-console.log(perfectSquares([1, 4, 9])); // expected same as input 
+console.log(perfectSquares([1, 4, 9])); // expected same as input
 console.log(perfectSquares([1, 5, 9])); // expected [1, 9]
 ```
 
 Run it with `ts-node script.ts`
-
-
