@@ -21,7 +21,19 @@ This class will teach students about modern web development technologies, practi
 
 ## When are office hours?
 
-Office hours times are still being worked out. Check back here when the class starts for accurate Zoom links and times!
+Office hours will start **Wednesday, September 23**. Come by if you have any questions about homework, lecture material, etc.
+
+Sam: Monday 3:00-4:00pm [Zoom Link](https://cornell.zoom.us/j/9389498164?pwd=cjI1Y1VBZGt6eTlBaWFQVnk0QTBrUT09)
+
+Enoch: Tuesday 2:00pm-3:00pm [Zoom Link](https://cornell.zoom.us/j/2233738601?pwd=Y2pVY2VqUmxRbjFYR01HR3Z1ZVBHdz09)
+
+Jason: Wednesday 3:00-4:00pm [Zoom Link](https://cornell.zoom.us/j/5920726340?pwd=SzY3WSt5WmZDYUJsOWx5RTNXS0JHZz09)
+
+Peter: Thursday 3:00pm-4:00pm [Zoom Link](https://cornell.zoom.us/j/93354802016?pwd=NjNmQm1rdG9lRlJZclJYV2VhR2QyQT09)
+
+Megan: Friday 3:00pm-4:00pm [Zoom Link](https://cornell.zoom.us/j/7293410777?pwd=UWxlMTh3VGd2ZXNXSUN6MnlEeFJjZz09)
+
+Ashneel: Friday 4:00pm-5:00pm [Zoom Link](https://cornell.zoom.us/j/8798851713?pwd=blhqdVh6SHJUeDVXb3lsMjI4ZklKZz09)
 
 If you are unable to make any of those office hours times, you can ask questions on Piazza (link will be added closer to course start) or get in touch with Megan or Ashneel.
 
