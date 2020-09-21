@@ -70,7 +70,7 @@ for (const val of arr) {
 
 #### for in loop
 
-We can use `for..of` loops to loop through keys of an object.
+We can use `for..in` loops to loop through keys of an object.
 
 ```js
 const object = { a: 1, b: 2, c: 3 };
