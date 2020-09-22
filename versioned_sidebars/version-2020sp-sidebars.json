@@ -1,0 +1,46 @@
+{
+  "version-2020sp/docs": {
+    "Lectures": [
+      {
+        "type": "doc",
+        "id": "version-2020sp/lecture1"
+      },
+      {
+        "type": "doc",
+        "id": "version-2020sp/lecture2"
+      },
+      {
+        "type": "doc",
+        "id": "version-2020sp/lecture3"
+      },
+      {
+        "type": "doc",
+        "id": "version-2020sp/lecture4"
+      },
+      {
+        "type": "doc",
+        "id": "version-2020sp/lecture5"
+      },
+      {
+        "type": "doc",
+        "id": "version-2020sp/lecture6"
+      },
+      {
+        "type": "doc",
+        "id": "version-2020sp/lecture7"
+      },
+      {
+        "type": "doc",
+        "id": "version-2020sp/lecture8"
+      },
+      {
+        "type": "doc",
+        "id": "version-2020sp/lecture9"
+      },
+      {
+        "type": "doc",
+        "id": "version-2020sp/lecture10"
+      }
+    ]
+  }
+}

@@ -1704,10 +1704,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@docusaurus/module-type-aliases@npm:^2.0.0-alpha.54":
-  version: 2.0.0-alpha.54
-  resolution: "@docusaurus/module-type-aliases@npm:2.0.0-alpha.54"
-  checksum: ef23a6d3b13f17165c696c3fbc567d8b81478aa0a6c97b887af641706c5e5ad5997fdd5e95a41e90bb28c1ae5f68ea7ba20902c59fc8ebea9d65c314567d7647
+"@docusaurus/module-type-aliases@npm:^2.0.0-alpha.64":
+  version: 2.0.0-alpha.64
+  resolution: "@docusaurus/module-type-aliases@npm:2.0.0-alpha.64"
+  checksum: 461f5a77cd0442317e9a73766ef06c581b9d1f870b22a2e782997894c4f7db961f2e46d941734eb5e78d7dbf192619c70c30a5a3abd672ba34965e6c8f694332
   languageName: node
   linkType: hard
 
@@ -2107,21 +2107,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mdx-js/react@npm:^1.5.8":
+"@mdx-js/react@npm:1.6.16, @mdx-js/react@npm:^1.5.8":
   version: 1.6.16
   resolution: "@mdx-js/react@npm:1.6.16"
   peerDependencies:
     react: ^16.13.1
   checksum: a68aef2ce94cdde6c8a408e174c3d92cca4997356ab5e228f4d5689c2f3d35f28b63c1ae22e8b6b6db1539411e4f3a8275d1ea76987b5d73558296613c727ad8
-  languageName: node
-  linkType: hard
-
-"@mdx-js/react@npm:^1.6.18":
-  version: 1.6.18
-  resolution: "@mdx-js/react@npm:1.6.18"
-  peerDependencies:
-    react: ^16.13.1
-  checksum: 72670972a82fbe69787bfae91918a1d5f539df3b5e537df511aba93a8d814ff9fe1858c0a0e71b2b32c1ed9ecb8dfd4cb8513bc38ed25781a4076816508b83ef
   languageName: node
   linkType: hard
 
@@ -2866,6 +2857,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/history@npm:*":
+  version: 4.7.8
+  resolution: "@types/history@npm:4.7.8"
+  checksum: 54020371a412e949d0a329cc325253f16daf5b33e2e485135d39d3b30d3f9a8e323b00ce1162da82387c8ecf0397a8da49ad36ab309f06284326c064092879c7
+  languageName: node
+  linkType: hard
+
 "@types/html-minifier-terser@npm:^5.0.0":
   version: 5.0.0
   resolution: "@types/html-minifier-terser@npm:5.0.0"
@@ -2989,6 +2987,36 @@ __metadata:
   version: 1.5.2
   resolution: "@types/q@npm:1.5.2"
   checksum: e3d8fcf9aaf9e0c597b9279a7ffe8f0b96f71a7e921bf986ee735e7f698e88f629414d759ab401a71dc38cee7f88ef2d15e4811fec14c37aab3f9f7abe3b1371
+  languageName: node
+  linkType: hard
+
+"@types/react-helmet@npm:^6.1.0":
+  version: 6.1.0
+  resolution: "@types/react-helmet@npm:6.1.0"
+  dependencies:
+    "@types/react": "*"
+  checksum: b7aaa3aa2d81cd3b14a0e77a858de86934a3400f4ec35945117edb3979b8a41130e70b8a27241de295195e365962a9b5bc149a2a029d23795fd0f6c740d1de77
+  languageName: node
+  linkType: hard
+
+"@types/react-router-dom@npm:^5.1.5":
+  version: 5.1.5
+  resolution: "@types/react-router-dom@npm:5.1.5"
+  dependencies:
+    "@types/history": "*"
+    "@types/react": "*"
+    "@types/react-router": "*"
+  checksum: d25c11cb718653a01b0e2cd5e4a44b1910fd506b3141c49e4b47ee197ddc06a05f3ee3c6853c60c15d83b96aeea534321ab200d4fbfd4ba047413b2c7176bfcb
+  languageName: node
+  linkType: hard
+
+"@types/react-router@npm:*":
+  version: 5.1.8
+  resolution: "@types/react-router@npm:5.1.8"
+  dependencies:
+    "@types/history": "*"
+    "@types/react": "*"
+  checksum: 8b4c8fefdba877971aeaa642d81074d0fda0db9d8891709071c8586c32c75afca1baf478c3b26bcbd404503304599d8ea3243beb4e01080ee77f48f56815ee73
   languageName: node
   linkType: hard
 
@@ -16597,12 +16625,14 @@ resolve@^2.0.0-next.1:
   resolution: "trends-in-web-dev-website@workspace:."
   dependencies:
     "@docusaurus/core": ^2.0.0-alpha.64
-    "@docusaurus/module-type-aliases": ^2.0.0-alpha.54
+    "@docusaurus/module-type-aliases": ^2.0.0-alpha.64
     "@docusaurus/preset-classic": ^2.0.0-alpha.64
     "@docusaurus/theme-classic": ^2.0.0-alpha.64
-    "@mdx-js/react": ^1.6.18
+    "@mdx-js/react": 1.6.16
     "@types/node": ^14.6.3
     "@types/react": ^16.9.49
+    "@types/react-helmet": ^6.1.0
+    "@types/react-router-dom": ^5.1.5
     classnames: ^2.2.6
     netlify-cli: ^2.61.0
     prettier: 2.0.5

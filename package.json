@@ -15,7 +15,7 @@
     "@docusaurus/core": "^2.0.0-alpha.64",
     "@docusaurus/preset-classic": "^2.0.0-alpha.64",
     "@docusaurus/theme-classic": "^2.0.0-alpha.64",
-    "@mdx-js/react": "^1.6.18",
+    "@mdx-js/react": "1.6.16",
     "classnames": "^2.2.6",
     "prism-react-renderer": "^1.1.1",
     "react": "^16.13.1",
@@ -34,9 +34,11 @@
     ]
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "^2.0.0-alpha.54",
+    "@docusaurus/module-type-aliases": "^2.0.0-alpha.64",
     "@types/node": "^14.6.3",
     "@types/react": "^16.9.49",
+    "@types/react-helmet": "^6.1.0",
+    "@types/react-router-dom": "^5.1.5",
     "netlify-cli": "^2.61.0",
     "prettier": "2.0.5",
     "typescript": "^4.0.2"
