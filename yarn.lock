@@ -1704,10 +1704,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@docusaurus/module-type-aliases@npm:^2.0.0-alpha.54":
-  version: 2.0.0-alpha.54
-  resolution: "@docusaurus/module-type-aliases@npm:2.0.0-alpha.54"
-  checksum: ef23a6d3b13f17165c696c3fbc567d8b81478aa0a6c97b887af641706c5e5ad5997fdd5e95a41e90bb28c1ae5f68ea7ba20902c59fc8ebea9d65c314567d7647
+"@docusaurus/module-type-aliases@npm:^2.0.0-alpha.64":
+  version: 2.0.0-alpha.64
+  resolution: "@docusaurus/module-type-aliases@npm:2.0.0-alpha.64"
+  checksum: 461f5a77cd0442317e9a73766ef06c581b9d1f870b22a2e782997894c4f7db961f2e46d941734eb5e78d7dbf192619c70c30a5a3abd672ba34965e6c8f694332
   languageName: node
   linkType: hard
 
@@ -2107,21 +2107,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mdx-js/react@npm:^1.5.8":
+"@mdx-js/react@npm:1.6.16, @mdx-js/react@npm:^1.5.8":
   version: 1.6.16
   resolution: "@mdx-js/react@npm:1.6.16"
   peerDependencies:
     react: ^16.13.1
   checksum: a68aef2ce94cdde6c8a408e174c3d92cca4997356ab5e228f4d5689c2f3d35f28b63c1ae22e8b6b6db1539411e4f3a8275d1ea76987b5d73558296613c727ad8
-  languageName: node
-  linkType: hard
-
-"@mdx-js/react@npm:^1.6.18":
-  version: 1.6.18
-  resolution: "@mdx-js/react@npm:1.6.18"
-  peerDependencies:
-    react: ^16.13.1
-  checksum: 72670972a82fbe69787bfae91918a1d5f539df3b5e537df511aba93a8d814ff9fe1858c0a0e71b2b32c1ed9ecb8dfd4cb8513bc38ed25781a4076816508b83ef
   languageName: node
   linkType: hard
 
@@ -16597,10 +16588,10 @@ resolve@^2.0.0-next.1:
   resolution: "trends-in-web-dev-website@workspace:."
   dependencies:
     "@docusaurus/core": ^2.0.0-alpha.64
-    "@docusaurus/module-type-aliases": ^2.0.0-alpha.54
+    "@docusaurus/module-type-aliases": ^2.0.0-alpha.64
     "@docusaurus/preset-classic": ^2.0.0-alpha.64
     "@docusaurus/theme-classic": ^2.0.0-alpha.64
-    "@mdx-js/react": ^1.6.18
+    "@mdx-js/react": 1.6.16
     "@types/node": ^14.6.3
     "@types/react": ^16.9.49
     classnames: ^2.2.6
