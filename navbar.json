@@ -6,7 +6,11 @@
   },
   "items": [
     { "type": "docsVersionDropdown", "position": "left" },
-    { "to": "docs/introduction", "label": "Getting Started", "position": "left" },
+    {
+      "to": "docs/introduction",
+      "label": "Getting Started",
+      "position": "left"
+    },
     { "to": "docs/lecture0", "label": "Lectures", "position": "left" },
     {
       "href": "https://github.com/cornell-dti",
