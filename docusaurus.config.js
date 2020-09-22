@@ -1,3 +1,5 @@
+const versions = require('./versions.json');
+
 module.exports = {
   title: 'Trends in Web Dev',
   tagline: 'Course offered by Cornell DTI',
@@ -20,6 +22,7 @@ module.exports = {
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.json'),
+          includeCurrentVersion: false,
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),

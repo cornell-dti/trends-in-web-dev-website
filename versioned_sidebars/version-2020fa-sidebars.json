@@ -1,0 +1,76 @@
+{
+  "docs": {
+    "Getting Started": [
+      {
+        "type": "doc",
+        "id": "version-2020fa/introduction"
+      },
+      {
+        "type": "doc",
+        "id": "version-2020fa/setup-environment"
+      },
+      {
+        "type": "doc",
+        "id": "version-2020fa/setup-editor"
+      }
+    ],
+    "Lectures": [
+      {
+        "type": "doc",
+        "id": "version-2020fa/lecture0"
+      },
+      {
+        "type": "doc",
+        "id": "version-2020fa/lecture1"
+      },
+      {
+        "type": "doc",
+        "id": "version-2020fa/lecture2"
+      },
+      {
+        "type": "doc",
+        "id": "version-2020fa/lecture3"
+      },
+      {
+        "type": "doc",
+        "id": "version-2020fa/lecture4"
+      },
+      {
+        "type": "doc",
+        "id": "version-2020fa/lecture5"
+      },
+      {
+        "type": "doc",
+        "id": "version-2020fa/lecture6"
+      },
+      {
+        "type": "doc",
+        "id": "version-2020fa/lecture7"
+      },
+      {
+        "type": "doc",
+        "id": "version-2020fa/lecture8"
+      },
+      {
+        "type": "doc",
+        "id": "version-2020fa/lecture9"
+      },
+      {
+        "type": "doc",
+        "id": "version-2020fa/lecture10"
+      }
+    ],
+    "Assignments": [
+      {
+        "type": "doc",
+        "id": "version-2020fa/assignments"
+      }
+    ],
+    "HackOurCampus": [
+      {
+        "type": "doc",
+        "id": "version-2020fa/HackOurCampus"
+      }
+    ]
+  }
+}
