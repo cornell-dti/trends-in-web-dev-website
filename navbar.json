@@ -5,6 +5,7 @@
     "src": "img/logo.png"
   },
   "items": [
+    { "type": "docsVersionDropdown", "position": "left" },
     { "to": "docs/introduction", "label": "Getting Started", "position": "left" },
     { "to": "docs/lecture1", "label": "Lectures", "position": "left" },
     {
