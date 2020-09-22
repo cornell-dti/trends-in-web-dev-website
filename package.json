@@ -1,5 +1,5 @@
 {
-  "name": "web-dev-fa-19",
+  "name": "trends-in-web-dev-website",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -12,10 +12,10 @@
     "format:check": "prettier --check '**/*.{ts,js,tsx,jsx,scss,css,html,md}'"
   },
   "dependencies": {
-    "@docusaurus/core": "^2.0.0-alpha.63",
-    "@docusaurus/preset-classic": "^2.0.0-alpha.63",
-    "@docusaurus/theme-classic": "^2.0.0-alpha.63",
-    "@mdx-js/react": "^1.6.16",
+    "@docusaurus/core": "^2.0.0-alpha.64",
+    "@docusaurus/preset-classic": "^2.0.0-alpha.64",
+    "@docusaurus/theme-classic": "^2.0.0-alpha.64",
+    "@mdx-js/react": "^1.6.18",
     "classnames": "^2.2.6",
     "prism-react-renderer": "^1.1.1",
     "react": "^16.13.1",
