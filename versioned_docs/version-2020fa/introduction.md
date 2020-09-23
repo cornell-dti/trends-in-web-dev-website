@@ -27,7 +27,7 @@ Sam: Monday 3:00-4:00pm [Zoom Link](https://cornell.zoom.us/j/9389498164?pwd=cjI
 
 Enoch: Tuesday 2:00pm-3:00pm [Zoom Link](https://cornell.zoom.us/j/2233738601?pwd=Y2pVY2VqUmxRbjFYR01HR3Z1ZVBHdz09)
 
-Jason: Wednesday 3:00-4:00pm [Zoom Link](https://cornell.zoom.us/j/5920726340?pwd=SzY3WSt5WmZDYUJsOWx5RTNXS0JHZz09)
+Jason: Wednesday 4:15-5:15pm [Zoom Link](https://cornell.zoom.us/j/5920726340?pwd=SzY3WSt5WmZDYUJsOWx5RTNXS0JHZz09)
 
 Peter: Thursday 3:00pm-4:00pm [Zoom Link](https://cornell.zoom.us/j/93354802016?pwd=NjNmQm1rdG9lRlJZclJYV2VhR2QyQT09)
 
