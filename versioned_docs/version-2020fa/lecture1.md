@@ -9,7 +9,7 @@ title: Lecture 1
 
 [Assignment 1](./assignment1) due **9/29 3:59pm**
 
-**Join the [Piazza](http://piazza.com/cornelsl/fall2020/info1998section604)!**
+**Join the [Piazza](https://piazza.com/cornell/fall2020/info1998section604)!**
 
 ## Introduction to HTTP Methods
 
