@@ -3,7 +3,7 @@ id: lecture0
 title: Lecture 0
 ---
 
-[Lecture Video](https://drive.google.com/file/d/1fEn5b83n42-lX2Y3loyVFN7RQ_ca6y8I/view?usp=sharing)
+[Lecture Video](https://drive.google.com/file/d/1Y7KShrkY0IDFoVN0vsZ1XhGFMf3qopnE/view?usp=sharing)
 
 [Lecture Slides](https://docs.google.com/presentation/d/1WpfGvyGtjkEmM2MrV2yFfQ_b7pVHGbO-GlnViJOa4HY/edit?usp=sharing)
 
