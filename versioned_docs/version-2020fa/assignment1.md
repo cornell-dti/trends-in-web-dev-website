@@ -43,7 +43,7 @@ Example: a request to `/book/ashneel` will send "ashneel is really cool!" to the
 
 ## Testing your code
 
-To test your code run `ts-node index.ts`. Your server should be up and running (if not, debug!) and you should be able to navigate to `localhost:<PORT>/book` and specify query/path parameters that give the intended results.
+To test your code run `ts-node index.ts`. Your server should be up and running (if not, debug!) and you should be able to navigate to `localhost:<PORT>/book` where PORT is the port number express is listening for requests on (we usually use `8080`) and specify query/path parameters that give the intended results.
 
 ## Getting help
 
