@@ -35,7 +35,7 @@ Megan: Friday 3:00pm-4:00pm [Zoom Link](https://cornell.zoom.us/j/7293410777?pwd
 
 Ashneel: Friday 4:00pm-5:00pm [Zoom Link](https://cornell.zoom.us/j/8798851713?pwd=blhqdVh6SHJUeDVXb3lsMjI4ZklKZz09)
 
-If you are unable to make any of those office hours times, you can ask questions on Piazza (link will be added closer to course start) or get in touch with Megan or Ashneel.
+If you are unable to make any of those office hours times, you can ask questions on [Piazza](http://piazza.com/cornell/fall2020/info1998section604) or get in touch with Megan or Ashneel.
 
 ## Is there a lecture schedule?
 
