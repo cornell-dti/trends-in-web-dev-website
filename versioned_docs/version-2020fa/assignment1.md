@@ -3,11 +3,13 @@ id: assignment1
 title: Assignment 1
 ---
 
-For the first assignment, you will be setting up a basic server with 3 endpoints as follows:
+For the first assignment, you will be setting up a basic server with 3 simple GET endpoints.
 
 ## Set up your project
 
-To create a project, first make a folder for your assignment code using `mkdir a1` and change into that directory with `cd a1`. You can then use the command `code .` to open that folder in VSCode (install VSCode [here](https://code.visualstudio.com/)). You can also just open it in VSCode from the application directly.
+First, let's set up your first Node project!
+
+To create a project, first make a folder for your assignment code using `mkdir a1` in terminal and change into that directory with `cd a1`. You can then use the command `code .` to open that folder in VSCode (install VSCode [here](https://code.visualstudio.com/)). You can also just open it in VSCode from the application directly.
 
 Set up the yarn project by running `yarn init -y` in that `a1` folder. Add the necessary dependencies `express`, `typescript`, `ts-node`, `@types/node`, `@types/express` by running:
 
@@ -23,11 +25,13 @@ Check out [lecture1](./lecture1) for more details on how this setup works!
 
 Now you can create an `index.ts` file to add your routes and assignment code in.
 
-## Simple URL
+## Endpoints
+
+### 1. Simple URL
 
 The first endpoint will be a simple `GET` request to `/book`. You will send your favorite book's name to the frontend.
 
-## Query Parameters
+### 2. Query Parameters
 
 The second endpoint will be a `GET` request to `/book` with a query parameter called `name`. If the name is "Megan", you will return "Cracking the Coding Interview". If the name is "Ashneel", you will return "The Pragmatic Programmer". Otherwise, return the name of any book you choose!
 
@@ -35,7 +39,7 @@ Example: a request to `/book?name=megan` will return "Cracking the Coding Interv
 
 P.S. Don't worry, these aren't actually our favorite books.
 
-## Route Parameters
+### 3. Route Parameters
 
 The third endpoint will be a `GET` request to `/book/:userid`. This will simply send "`userid` is really cool!" to the frontend.
 
