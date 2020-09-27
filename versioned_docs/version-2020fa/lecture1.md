@@ -194,6 +194,15 @@ app.listen(8080, function () {
 });
 ```
 
-Run this using `ts-node index.ts`.
+Add the following to your `package.json`:
+
+```json
+// other package.json properties...
+"scripts": {
+  "start": "ts-node index.ts"
+},
+```
+
+This will allow you to run `ts-node` without having it installed globally (which is bad practice). Now you can run the app with `yarn start`.
 
 Now when you go to `localhost:8080/home` you should see `Welcome home!`. At `localhost:8080/users/<your_name>/<your_last_name>` or `localhost:8080/users/?name=<your_name>&lname=<your_last_name>` you should see `Hello <your_name> <your_last_name>`.
