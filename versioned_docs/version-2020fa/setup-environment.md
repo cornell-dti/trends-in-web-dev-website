@@ -13,4 +13,4 @@ For consistency, we will use Node LTS (current Node 12).
 
 For convenience, we assume you will use Yarn instead of npm.
 
-Go to [this website](https://yarnpkg.com/en/) and follow the instructions.
+Go to [this website](https://classic.yarnpkg.com/en/) and follow the instructions.
