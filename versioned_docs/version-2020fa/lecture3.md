@@ -21,9 +21,7 @@ Make sure you have this `tsconfig` before lecture!
     "moduleResolution": "node",
     "resolveJsonModule": true
   },
-  "types": [
-    "node"
-  ],
+  "types": ["node"],
   "include": ["./*"],
   "exclude": []
 }
