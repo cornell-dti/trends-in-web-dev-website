@@ -223,7 +223,7 @@ type songtype = {
 
 let songs: songtype[] = [];
 
-app.get('/getSongs', (req: any, res: any) => {
+app.get('/getSongs', (req, res) => {
   res.send(songs);
 });
 
@@ -270,7 +270,7 @@ Usually when you want to send a `POST` request you also want to send information
 Add the following to your `index.ts` file after your `app.get` call:
 
 ```js title="index.ts"
-app.post('/addSong', (req: any, res: any) => {
+app.post('/addSong', (req, res) => {
   const song: songtype = { name: req.body.name, rating: req.body.rating };
   console.log(song);
   songs.push(song);
@@ -298,7 +298,7 @@ Sending this request, you should see the corresponding song printed out to the c
 Now, let's create another `POST` endpoint to update a song's rating. This will also use a request body with just a `name` field, which should match the song we want to update.
 
 ```ts title="index.ts"
-app.post('/updateRating', (req: any, res: any) => {
+app.post('/updateRating', (req, res) => {
   for (const song of songs) {
     if (song.name === req.body.name) {
       song.rating = req.body.rating;
@@ -314,7 +314,7 @@ app.post('/updateRating', (req: any, res: any) => {
 When creating APIs, we use the `DELETE` request method to quite simply delete a specific resource. This should be pretty straightforward: we simply take the name of the song to delete through the request body, and create a new version of the songs without the specified song. We then send text to the requester that it was deleted.
 
 ```ts title="index.ts"
-app.delete('/removeSong', (req: any, res: any) => {
+app.delete('/removeSong', (req, res) => {
   const newSongs = [];
   for (let song of songs) {
     if (song.name !== req.body.name) {
