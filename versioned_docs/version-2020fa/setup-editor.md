@@ -15,7 +15,7 @@ To install extensions in VS Code, navigate to the left-hand sidebar, and click t
 
 Installing ESLint in VSCode will give you real-time linter feedback in any JavaScript code you write, allowing you to quickly pinpoint many problems and have readable, proper formatting.
 
-Once installed, add these lines to your VSCode Settings (refer to [this link](https://code.visualstudio.com/docs/getstarted/settings) if you need help getting there or alternatively open the command palette in VSCode with `CMD/CTRL+SHIFT+P` and search `settings.json`):
+Once installed, add these lines to your VSCode Settings (refer to [this link](https://code.visualstudio.com/docs/getstarted/settings) if you need help getting there or alternatively open the command palette in VSCode with <kbd>CMD</kbd>/<kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>P</kbd> and search `settings.json`):
 
 ```json
   // Other settings ...
