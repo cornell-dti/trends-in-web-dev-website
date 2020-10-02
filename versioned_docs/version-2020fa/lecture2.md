@@ -251,7 +251,7 @@ Let's test these endpoints by running `yarn start`.
 
 Use your web browser to navigate to `localhost:8080/getSongs`. You should see the value of `songs`, the empty array `[]`, on the page.
 
-You can terminate the running of the script using <kbd>Ctrl</kbd> + <kbd>C</kbd>
+You can terminate the running of the script using <kbd>Ctrl</kbd> + <kbd>C</kbd>.
 
 ### Postman
 
