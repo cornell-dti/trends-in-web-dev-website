@@ -3,11 +3,11 @@ id: lecture3
 title: Lecture 3
 ---
 
-Lecture Video (Coming Soon!)
+[Lecture Video](https://drive.google.com/file/d/10q7Ts6NbYREfNryvawNwYQwng2ZeaAF1/view?usp=sharing)
 
 [Lecture Slides](https://docs.google.com/presentation/d/11W-GdF6V9fgZyxzvjTrUieKTTIhoE7A30eZos86mfuo/edit?usp=sharing)
 
-Assignment 2 due **10/13 03:59pm** (Coming Soon!)
+[Assignment 2](./assignment2) due **10/13 03:59pm**
 
 ## Before the lecture
 
