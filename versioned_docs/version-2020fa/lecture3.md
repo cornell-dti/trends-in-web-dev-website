@@ -125,8 +125,7 @@ app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 
 1. Run `yarn install`;
 2. Run `node index.js`;
-3. Open [`http://localhost:8080`](http://localhost:8080). You will see `Hello
-   World!`;
+3. Open [`http://localhost:8080`](http://localhost:8080). You will see `Hello World!`;
 4. Open [`http://localhost:8080/self-check`](http://localhost:8080/self-check).
    You will see `OK!` in the browser. In the terminal, you will see something
    like this:
