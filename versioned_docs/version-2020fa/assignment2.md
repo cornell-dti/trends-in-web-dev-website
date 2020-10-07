@@ -31,7 +31,7 @@ respective values "Never Gonna Give You Up", "Rick Astley", and your
 personal rating of the song out of 5. At this point, your database should look
 something like this:
 
-<img src="/static/img/a2_db.png" height="120px" width="600px" />
+<img src="/img/a2_db.png" height="120px" width="600px" />
 
 ## Part 3: Create new songs
 
