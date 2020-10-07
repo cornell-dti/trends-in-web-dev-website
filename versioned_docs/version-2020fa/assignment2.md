@@ -17,7 +17,7 @@ This will make grading easier for us.
 First, navigate to [Firebase](https://firebase.google.com/) and create a
 new project. Go to the settings icon in the upper left, and click on it. Then,
 click project settings and go to service accounts. Copy and paste the code
-snippet provided into your `index.js` file. Generate a new private key
+snippet provided into your `index.ts` file. Generate a new private key
 and and rename it to `service-account.json`. Put this file in the root of your
 project. Go to the database section (in the navigation bar on the left) and
 create a new Firestore database.
@@ -93,7 +93,7 @@ Don't know where to start? Reference the [live coding demo Posts example](./lect
 
 ## Part 7: Submission
 
-Submit your assignment as a zip containing your `index.js`, `package.json`, and
+Submit your assignment as a zip containing your `index.ts`, `package.json`, and
 `yarn.lock` files. When you submit your code, comment out the initializeApp statement
 in the code so we can test it against our own database. Don't worry, we won't
 fill your database with junk! 😊😊😊
