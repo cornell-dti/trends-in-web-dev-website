@@ -86,13 +86,13 @@ const serviceAccount = require('../service-account.json');
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
-  databaseURL: 'databaseURL',
+  databaseURL: '[YOUR_OWN_DATABASE_URL]',
 });
 
 const db = admin.firestore();
 
 const app = express();
-const port: number = 8080;
+const port = 8080;
 app.use(bodyParser.json());
 
 app.get('/', (_, res) => res.send('Hello World!'));
@@ -209,7 +209,7 @@ admin.initializeApp({
 const db = admin.firestore();
 
 const app = express();
-const port: number = 8080;
+const port = 8080;
 app.use(bodyParser.json());
 
 // Define a type for our Post document stored in Firebase
