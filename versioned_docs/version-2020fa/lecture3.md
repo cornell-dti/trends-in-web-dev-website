@@ -67,7 +67,6 @@ Copy the following code into `package.json`.
     "typescript": "^4.0.3"
   }
 }
-
 ```
 
 Copy the following code into `index.ts`. Remember to replace `databaseURL` with
@@ -87,7 +86,7 @@ const serviceAccount = require('../service-account.json');
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
-  databaseURL: 'databaseURL'
+  databaseURL: 'databaseURL',
 });
 
 const db = admin.firestore();
