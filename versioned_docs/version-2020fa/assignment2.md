@@ -36,7 +36,7 @@ something like this:
 ## Part 3: Create new songs
 
 Write a `POST` request with route `/createSong`. This request will simply create
-a new song document in the songs collection of the database. The name of the
+a new song document in the songs collection of the database. The id of the
 document should be AUTOMATICALLY generated, not a name of your choice.
 
 We will be passing information in the request body (`req.body`) in the following format:
