@@ -39,37 +39,50 @@ necessary, set up a Postman account using your Cornell email address.
 
 #### Code
 
-Create a folder with empty `package.json` and empty `index.js`. Put the
+Create a folder with the following `package.json` and `index.ts`. Put the
 downloaded `service-account.json` in this folder.
+
+Also add `tsconfig.json`, which you can find in [Lecture 2](https://webdev.cornelldti.org/docs/lecture2#tsconfigjson) notes.
 
 Copy the following code into `package.json`.
 
-```json
+```json title="package.json"
 {
   "name": "self-check",
   "version": "0.1.0",
-  "main": "index.js",
+  "main": "index.ts",
   "license": "MIT",
+  "scripts": {
+    "tsc": "tsc -p tsconfig.json",
+    "start": "yarn tsc && node output/index"
+  },
   "dependencies": {
     "body-parser": "^1.18.3",
-    "express": "^4.16.4",
-    "firebase-admin": "^7.2.0"
+    "express": "^4.17.1",
+    "firebase-admin": "^9.2.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.8",
+    "@types/node": "^14.11.5",
+    "typescript": "^4.0.3"
   }
 }
 ```
 
-Copy the following code into `index.js`. Remember to replace `databaseURL` with
+Copy the following code into `index.ts`. Remember to replace `databaseURL` with
 the url of your own. You can find this `databaseURL` in the code snippet in the
 service accounts tab of Firebase.
 
 _Don't worry if you don't understand this code! You'll know what it does and how
 to write similar code by the end of this course!_
 
-```javascript title="index.js"
-const admin = require('firebase-admin');
-const serviceAccount = require('./service-account.json');
-const express = require('express');
-const bodyParser = require('body-parser');
+```typescript title="index.ts"
+import admin from 'firebase-admin';
+import express from 'express';
+import bodyParser from 'body-parser';
+
+// Path to wherever you put your service-account.json
+const serviceAccount = require('../service-account.json');
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
@@ -82,7 +95,7 @@ const app = express();
 const port = 8080;
 app.use(bodyParser.json());
 
-app.get('/', (_, resp) => resp.send('Hello World!'));
+app.get('/', (_, res) => res.send('Hello World!'));
 
 app.get('/self-check', async (_, resp) => {
   const data = {
@@ -124,7 +137,7 @@ app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 #### Verify that it works
 
 1. Run `yarn install`;
-2. Run `node index.js`;
+2. Run `yarn start`;
 3. Open [`http://localhost:8080`](http://localhost:8080). You will see `Hello World!`;
 4. Open [`http://localhost:8080/self-check`](http://localhost:8080/self-check).
    You will see `OK!` in the browser. In the terminal, you will see something
@@ -136,8 +149,10 @@ Sending doc to DB.
 Doc recorded in DB
 Trying to obtain doc in DB.
 We obtained a doc with id random-id. It's content is logged below:
-{ name: 'Hello World',
-  time: Timestamp { _seconds: 1554738493, _nanoseconds: 994000000 } }
+{
+  name: 'Hello World',
+  time: Timestamp { _seconds: 1602132872, _nanoseconds: 588000000 }
+}
 Now we will try to remove it.
 The document is deleted.
 After all these operations, the db should be empty. We check that.
@@ -194,7 +209,7 @@ admin.initializeApp({
 const db = admin.firestore();
 
 const app = express();
-const port: number = 8080;
+const port = 8080;
 app.use(bodyParser.json());
 
 // Define a type for our Post document stored in Firebase
