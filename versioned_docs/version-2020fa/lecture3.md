@@ -46,7 +46,7 @@ Also add `tsconfig.json`, which you can find in [Lecture 2](https://webdev.corne
 
 Copy the following code into `package.json`.
 
-```json
+```json title="package.json"
 {
   "name": "self-check",
   "version": "0.1.0",
