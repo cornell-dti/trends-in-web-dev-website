@@ -79,10 +79,10 @@ You should get a link like https://todo-RANDOMHASH-uc.a.run.app/products. **Copy
 
 #### Example Code
 
-For the frontend, we used the example code [here](./lecture7#filterable-product-table-example) taken from React docs [here](https://reactjs.org/docs/thinking-in-react.html), but instead of declaring all the products in the `App` component, we make a GET call to our backend `/products` endpoint in the `FilterableProductTable` to fetch the products list. The relevant changes are below:
+For the frontend, we used the example code [here](/docs/lecture7#filterable-product-table-example) taken from React docs [here](https://reactjs.org/docs/thinking-in-react.html), but instead of declaring all the products in the `App` component, we make a GET call to our backend `/products` endpoint in the `FilterableProductTable` to fetch the products list. The relevant changes are below:
 
 :::note
-If you want to learn more about setting up a frontend React application, check out lecture [5](./lecture5), [6](./lecture6), [7](./lecture7), [8](./lecture8).
+If you want to learn more about setting up a frontend React application, check out lecture [5](/docs/lecture5), [6](/docs/lecture6), [7](/docs/lecture7), [8](/docs/lecture8).
 :::
 
 ```jsx title="App.js"

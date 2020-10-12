@@ -88,7 +88,7 @@ that specific one, make sure you add it back, because we will be testing
 that it is there).
 
 :::tip
-Don't know where to start? Reference the [live coding demo Posts example](./lecture3#SampleCode) from lecture 3! Also, get help in [office hours](introduction#when-are-office-hours)!
+Don't know where to start? Reference the [live coding demo Posts example](/docs/lecture3#SampleCode) from lecture 3! Also, get help in [office hours](introduction#when-are-office-hours)!
 :::
 
 ## Part 7: Submission
