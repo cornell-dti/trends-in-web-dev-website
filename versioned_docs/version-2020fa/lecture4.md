@@ -3,7 +3,7 @@ id: lecture4
 title: Lecture 4
 ---
 
-[Lecture Video](https://drive.google.com/file/d/10QPrUJIeLJDUvbXeuaqC3_5OTQY79Zun/view?usp=sharing) 
+[Lecture Video](https://drive.google.com/file/d/10QPrUJIeLJDUvbXeuaqC3_5OTQY79Zun/view?usp=sharing)
 
 [Lecture Slides](https://docs.google.com/presentation/d/1xH0as-_nKNu4JiRL6fnqhZ2ii3FPRLkysLWQYEpj_98/edit?usp=sharing)
 
@@ -310,68 +310,56 @@ I recommend the _You Don't Know JS_ series by Kyle Simpson. The ebooks are
 available [for free on GitHub](https://github.com/getify/You-Dont-Know-JS/tree/1st-ed).
 The series is comprehensive and will teach you everything you want to know.
 
-### Demo Code 
+### Demo Code
 
-Need more examples? This code from the lecture's live coding demo rewrites 
-some functions from the preassessment first using loops then with map, filter, 
+Need more examples? This code from the lecture's live coding demo rewrites
+some functions from the preassessment first using loops then with map, filter,
 and reduce.
 
 ```typescript title="index.ts"
 // getSqrts: takes in an array and returns an array with all the square roots
 // of those numbers
 // example: [1, 4, 9] => [1, 2, 3]
-​
-const getSqrts = (arr: number []): number [] => {
-  const result: number [] = [];
+const getSqrts = (arr: number[]): number[] => {
+  const result: number[] = [];
   for (const num of arr) {
     result.push(Math.sqrt(num));
   }
   return result;
-}
-​
-const getSqrtsMap = (arr: number []): number [] => {
+};
+const getSqrtsMap = (arr: number[]): number[] => {
   return arr.map((num: number) => Math.sqrt(num));
-}
-​
-// perfectSquares: takes in an array and returns an array with only the 
+};
+// perfectSquares: takes in an array and returns an array with only the
 // elements that are perfect squares
 // example: [1, 2, 3] => [1]
-​
-const perfectSquares = (arr: number []): number [] => {
-  const result: number [] = [];
+const perfectSquares = (arr: number[]): number[] => {
+  const result: number[] = [];
   for (const num of arr) {
     if (Math.sqrt(num) % 1 === 0) {
       result.push(num);
     }
   }
   return result;
-}
-​
+};
 const isPerfectSquare = (num: number) => Math.sqrt(num) % 1 === 0;
-​
-const perfectSquaresFilter = (arr: number []): number [] => {
+const perfectSquaresFilter = (arr: number[]): number[] => {
   return arr.filter(isPerfectSquare);
-}
-​
+};
 // mySum: takes in an array and returns the sum of the elements
 // example: [1, 2, 3] => 6
-​
-const mySum = (arr: number []): number => {
+const mySum = (arr: number[]): number => {
   let sum = 0;
   for (const num of arr) {
     sum += num;
   }
   return sum;
-}
-​
-const mySumReduce = (arr: number []): number => {
+};
+const mySumReduce = (arr: number[]): number => {
   return arr.reduce((acc: number, curr: number) => acc + curr);
-}
-​
-// testing! 
-​
+};
+// testing!
 const input = [1, 2, 3];
-​
 console.log(getSqrts(input));
 console.log(getSqrtsMap(input));
 console.log(perfectSquares(input));
