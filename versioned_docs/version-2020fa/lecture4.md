@@ -197,7 +197,7 @@ we can simply use the **spread operator** `...` to _destructure_ each of the
 keys in the object to map to the variables.
 
 ```javascript
-add3Object(...add3Object);
+add3(...add3Object);
 ```
 
 However, this only works if the parameter names match the keys in the object.
@@ -300,7 +300,7 @@ This is the Fibonacci sequence implemented using type coercion.
 ### Why Linters Are Necessary
 
 You have just learned some darkest aspects of JavaScript. We must use it because
-it's the only language that can be understood by browser. To mitigrate the
+it's the only language that can be understood by browser. To mitigate the
 problem, people wrote _linters_ that try to automatically find these problems.
 They are well integrated with editors so you can directly see the warnings. If
 you follow the 'Setup your editor' section, you are good to go. You will see
@@ -330,7 +330,7 @@ const getSqrts = (arr: number[]): number[] => {
   return result;
 };
 const getSqrtsMap = (arr: number[]): number[] => {
-  return arr.map((num: number) => Math.sqrt(num));
+  return arr.map(Math.sqrt);
 };
 // perfectSquares: takes in an array and returns an array with only the
 // elements that are perfect squares
