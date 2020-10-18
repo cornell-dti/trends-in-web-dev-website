@@ -228,10 +228,10 @@ app.get('/', (_, res) => res.send('Hello World!'));
 const postsCollection = db.collection('posts');
 
 // create a post
-app.post('/post', function (req, res) {
+app.post('/post', async function (req, res) {
   const post: Post = req.body;
   const myDoc = postsCollection.doc();
-  myDoc.set(post);
+  await myDoc.set(post);
   res.send(myDoc.id);
 });
 
