@@ -15,10 +15,12 @@ Assignment 4 COMING SOON due **10/27 3:59pm**
 ## Before the Lecture
 
 ```bash
-yarn create react-app lecture2
-cd lecture2
+yarn create react-app lecture5 --template typescript
+cd lecture5
 yarn start
 ```
+
+This creates a hot-reloading (refreshes automatically when edits are made) dev version of your React site, hosted at `localhost:3000`.
 
 ## Your First Component
 
