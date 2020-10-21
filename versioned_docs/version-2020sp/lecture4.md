@@ -180,6 +180,19 @@ Say we have a function:
 const add3 = (a, b, c) => a + b + c;
 ```
 
+Now if we had an array:
+
+```typescript
+const arr = [1, 2, 3];
+```
+
+We can use the **spread operator** `...` to _destructure_ each element of the
+array as one of the arguments:
+
+```javascript
+add3(...arr); // same as add3(arr[0], arr[1], arr[2]) output 6
+```
+
 Now if we had an object:
 
 ```javascript
@@ -190,24 +203,20 @@ const add3Object = {
 };
 ```
 
-If we wanted to add each of the three values in `add3Object` using `add3`
-we can simply use the **spread operator** `...` to _destructure_ each of the
-keys in the object to map to the variables.
+`add3(...add3Object)` is illegal, since the order of fields in the object is
+not guaranteed. However, you can refactor the `add3` function to be:
 
 ```javascript
-add3Object(...add3Object);
+const add3 = ({ a, b, c }) => a + b + c;
+
+// equivalent to:
+const add3Uglier = (abc) => abc.a + abc.b + abc.c;
 ```
 
-However, this only works if the parameter names match the keys in the object.
-(Note: it is possible to have more keys and values, but this is not a good
-practice)
-
-This also works for lists:
+Then we can do
 
 ```javascript
-const arr = [1, 2, 3];
-
-add3Object(...arr); // output 6
+add3(add3Object);
 ```
 
 The spread operator and destructuring is especially useful in
