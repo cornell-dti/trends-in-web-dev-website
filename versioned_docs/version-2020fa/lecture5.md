@@ -10,7 +10,7 @@ import TabItem from '@theme/TabItem';
 
 [Lecture Video](https://drive.google.com/file/d/1r515SUWcLaFZ1cf9HiwXe4gh3SEv8A1g/view?usp=sharing)
 
-Assignment 4 COMING SOON due **10/27 3:59pm**
+[Assignment 4](/docs/assignment4) due **10/27 3:59pm**
 
 ## Before the Lecture
 
