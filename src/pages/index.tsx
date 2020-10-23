@@ -60,6 +60,15 @@ export default () => {
             >
               Start Learning
             </Link>
+            <Link
+              className={classnames(
+                'button button--primary button--lg',
+                styles.getStarted
+              )}
+              to="https://cornell.zoom.us/j/7293410777?pwd=UWxlMTh3VGd2ZXNXSUN6MnlEeFJjZz09"
+            >
+              Join Zoom Lecture
+            </Link>
           </div>
         </div>
       </header>
