@@ -39,12 +39,14 @@ import React from 'react';
 
 type Props = { readonly name: string; readonly githubLink: string };
 
-export default ({ name, githubLink }: Props) => (
+const MyComponent = ({ name, githubLink }: Props) => (
   <div>
     <div>My name is {name}.</div>
     <a href={githubLink}>My GitHub</a>
   </div>
 );
+
+export default MyComponent;
 ```
 
 </TabItem>
@@ -53,12 +55,14 @@ export default ({ name, githubLink }: Props) => (
 ```jsx title="MyComponent.jsx"
 import React from 'react';
 
-export default ({ name, githubLink }) => (
+const MyComponent = ({ name, githubLink }) => (
   <div>
     <div>My name is {name}.</div>
     <a href={githubLink}>My GitHub</a>
   </div>
 );
+
+export default MyComponent;
 ```
 
 </TabItem>
@@ -277,12 +281,14 @@ import React from 'react';
 
 type Props = { readonly name: string; readonly githubLink: string };
 
-export default ({ name, githubLink }: Props) => (
+const MyComponent = ({ name, githubLink }: Props) => (
   <div>
     <div>My name is {name}.</div>
     <a href={githubLink}>My GitHub</a>
   </div>
 );
+
+export default MyComponent;
 ```
 
 </TabItem>
@@ -291,12 +297,14 @@ export default ({ name, githubLink }: Props) => (
 ```jsx title="MyComponent.jsx"
 import React from 'react';
 
-export default ({ name, githubLink }) => (
+const MyComponent = ({ name, githubLink }) => (
   <div>
     <div>My name is {name}.</div>
     <a href={githubLink}>My GitHub</a>
   </div>
 );
+
+export default MyComponent;
 ```
 
 </TabItem>
@@ -354,7 +362,6 @@ export default function SimpleEditor() {
     </div>
   );
 }
-const [stateVar, setterFunc] = useState(initValue);
 ```
 
 </TabItem>
@@ -387,7 +394,6 @@ export default function SimpleEditor() {
     </div>
   );
 }
-const [stateVar, setterFunc] = useState(initValue);
 ```
 
 </TabItem>
