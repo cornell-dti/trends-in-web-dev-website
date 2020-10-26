@@ -53,8 +53,8 @@ If `belongToGroup1` returns `true`, then the element should go into `group1`. If
 **EXAMPLE**
 
 ```js
-partition([1, 2, 3, 4, 5, 6], (n) => n % 3 === 0); // { group1: [3, 6], [1, 2, 4, 5] }
-partition([1, 2, 3, 4, 5, 6], (n) => n % 2 === 0); // { group1: [2, 4, 6], [1, 3, 5] }
+partition([1, 2, 3, 4, 5, 6], (n) => n % 3 === 0); // { group1: [3, 6], group2: [1, 2, 4, 5] }
+partition([1, 2, 3, 4, 5, 6], (n) => n % 2 === 0); // { group1: [2, 4, 6], group2: [1, 3, 5] }
 ```
 
 Starter code:
