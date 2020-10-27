@@ -12,7 +12,7 @@ Create a component, Song, that represents a song in your playlist.
 It will be passed a prop called `info` that is an object which contains some information about the song. The fields in this object will be `title`, and `artist`.
 
 You can test this component by importing the Song component in
-App.js and creating a component:
+App.tsx and creating a component:
 
 ```js
 <Song info={{ title: 'Never Gonna Give You Up', artist: 'Rick Astley' }} />
@@ -26,9 +26,9 @@ Create a component, Playlist, that contains all of the songs you've added. This 
 - Have two input fields, one for title and one for artist.
 - Have a button which allows you to submit the new song and adds to the list.
 
-## Part 3: Adding Playlist to App.js
+## Part 3: Adding Playlist to App.ts
 
-Initialize your Playlist component in App.js. This can be done by
+Initialize your Playlist component in App.ts. This can be done by
 importing Playlist and creating a component:
 
 `<Playlist />`
