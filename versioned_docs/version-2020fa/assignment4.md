@@ -18,6 +18,8 @@ App.tsx and creating a component:
 <Song info={{ title: 'Never Gonna Give You Up', artist: 'Rick Astley' }} />
 ```
 
+Notice here that `info` acts a single prop. `Song` should expect only one prop, that being `info`.
+
 ## Part 2: Adding songs
 
 Create a component, Playlist, that contains all of the songs you've added. This will do the following:
