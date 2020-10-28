@@ -12,3 +12,5 @@ Assignments will be released here after lecture!
 [Assignment 3](/docs/assignment3): Due on CMS **10/20 at 3:59pm**
 
 [Assignment 4](/docs/assignment4): Due on CMS **10/27 at 3:59pm**
+
+[Assignment 5](/docs/assignment5): Due on CMS **11/3 at 3:59pm**
