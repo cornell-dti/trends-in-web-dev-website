@@ -31,13 +31,15 @@ values={[
 ```tsx title="PrelimTime.tsx"
 import React from 'react';
 
-export default ({ prelimToday }: { readonly prelimToday: boolean }) => {
+const PrelimTime = ({ prelimToday }: { readonly prelimToday: boolean }) => {
   if (prelimToday) {
     return <p>I have a prelim today.</p>;
   } else {
     return <p>I don't have a prelim today.</p>;
   }
 };
+
+export default PrelimTime;
 ```
 
 </TabItem>
@@ -46,13 +48,15 @@ export default ({ prelimToday }: { readonly prelimToday: boolean }) => {
 ```jsx title="PrelimTime.jsx"
 import React from 'react';
 
-export default ({ prelimToday }) => {
+const PrelimTime = ({ prelimToday }) => {
   if (prelimToday) {
     return <p>I have a prelim today.</p>;
   } else {
     return <p>I don't have a prelim today.</p>;
   }
 };
+
+export default PrelimTime;
 ```
 
 </TabItem>
@@ -82,11 +86,13 @@ values={[
 ```tsx title="PrelimTime.tsx"
 import React from 'react';
 
-export default ({ prelimToday }: { readonly prelimToday: boolean }) => (
+const PrelimTime = ({ prelimToday }: { readonly prelimToday: boolean }) => (
   prelimToday
     ? <p>I have a prelim today.</p>
     : <p>I don't have a prelim today.</p>;
 );
+
+export default PrelimTime;
 ```
 
 </TabItem>
@@ -95,11 +101,13 @@ export default ({ prelimToday }: { readonly prelimToday: boolean }) => (
 ```jsx title="PrelimTime.jsx"
 import React from 'react';
 
-export default ({ prelimToday }) => (
+const PrelimTime = ({ prelimToday }) => (
   prelimToday
     ? <p>I have a prelim today.</p>
     : <p>I don't have a prelim today.</p>;
 );
+
+export default PrelimTime;
 ```
 
 </TabItem>
@@ -141,9 +149,11 @@ values={[
 ```tsx title="PrelimTime.tsx"
 import React from 'react';
 
-export default ({ prelimToday }: { readonly prelimToday: boolean }) => (
+const PrelimTime = ({ prelimToday }: { readonly prelimToday: boolean }) => (
   <p>I {!prelimToday && "don't"} have a prelim today.</p>
 );
+
+export default PrelimTime;
 ```
 
 </TabItem>
@@ -152,9 +162,11 @@ export default ({ prelimToday }: { readonly prelimToday: boolean }) => (
 ```jsx title="PrelimTime.jsx"
 import React from 'react';
 
-export default ({ prelimToday }) => (
+const PrelimTime = ({ prelimToday }) => (
   <p>I {!prelimToday && "don't"} have a prelim today.</p>
 );
+
+export default PrelimTime;
 ```
 
 </TabItem>
@@ -260,7 +272,9 @@ import './Container.css'; // this is how we import styles
 
 type Props = { readonly children: ReactNode };
 
-export default (props: Props) => <div className="Border">{props.children}</div>;
+const Container = (props: Props) => <div className="Border">{props.children}</div>;
+
+export default Container;
 ```
 
 </TabItem>
@@ -270,7 +284,9 @@ export default (props: Props) => <div className="Border">{props.children}</div>;
 import React from 'react';
 import './Container.css'; // this is how we import styles
 
-export default (props) => <div className="Border">{props.children}</div>;
+const Container = (props) => <div className="Border">{props.children}</div>;
+
+export default Container;
 ```
 
 </TabItem>
@@ -301,12 +317,14 @@ import './SplitPane.css';
 
 type Props = { readonly left: ReactNode; readonly right: ReactNode };
 
-export default (props: Props) => (
+const SplitPane = (props: Props) => (
   <div>
     <div className="LeftPane">{props.left}</div>
     <div className="RightPane">{props.right}</div>
   </div>
 );
+
+export default SplitPane;
 ```
 
 </TabItem>
@@ -316,12 +334,14 @@ export default (props: Props) => (
 import React from 'react';
 import './SplitPane.css';
 
-export default (props) => (
+const SplitPane = (props) => (
   <div>
     <div className="LeftPane">{props.left}</div>
     <div className="RightPane">{props.right}</div>
   </div>
 );
+
+export default SplitPane;
 ```
 
 </TabItem>
@@ -342,12 +362,12 @@ export default (props) => (
 }
 ```
 
-```jsx
+```jsx title="App.jsx"
 import React from 'react';
 import SplitPane from './SplitPane';
 import Container from './Container';
 
-export default () => {
+const App = () => {
   return (
     <div className="App">
       <Container>
@@ -360,13 +380,15 @@ export default () => {
     </div>
   );
 };
+
+export default App;
 ```
 
 ## Lifting State Up
 
 This section was a live demo, adapted from [this tutorial](https://reactjs.org/docs/lifting-state-up.html) in the React docs.
 
-```tsx title="App.ts"
+```tsx title="App.tsx"
 import React, { useState } from 'react';
 import './App.css';
 import FahrenheitInput from './FahrenheitInput';
@@ -413,7 +435,7 @@ values={[
 }>
 <TabItem value="ts">
 
-```tsx title="CalciusInput.tsx"
+```tsx title="CelsiusInput.tsx"
 import React, { ChangeEvent } from 'react';
 
 type Props = {
@@ -421,12 +443,14 @@ type Props = {
   readonly callback: (temperature: number) => void;
 };
 
-export default ({ temperature, callback }: Props) => {
+const CelsiusInput = ({ temperature, callback }: Props) => {
   const handlechange = (e: ChangeEvent<HTMLInputElement>) =>
     callback(parseInt(e.target.value) || 0);
 
   return <input value={temperature} onChange={handlechange} />;
 };
+
+export default CelsiusInput;
 ```
 
 ```tsx title="FahrenheitInput.tsx"
@@ -437,36 +461,42 @@ type Props = {
   readonly callback: (temperature: number) => void;
 };
 
-export default ({ temperature, callback }: Props) => {
+const FahrenheitInput = ({ temperature, callback }: Props) => {
   const handlechange = (e: ChangeEvent<HTMLInputElement>) =>
     callback((((parseInt(e.target.value) || 0) - 32) * 5) / 9);
 
   return <input value={(temperature * 9) / 5 + 32} onChange={handlechange} />;
 };
+
+export default FahrenheitInput;
 ```
 
 </TabItem>
 <TabItem value="js">
 
-```jsx title="CalciusInput.jsx"
+```jsx title="CelsiusInput.jsx"
 import React from 'react';
 
-export default ({ temperature, callback }) => {
+const CelsiusInput = ({ temperature, callback }) => {
   const handlechange = (e) => callback(parseInt(e.target.value) || 0);
 
   return <input value={temperature} onChange={handlechange} />;
 };
+
+export default CelsiusInput;
 ```
 
 ```jsx title="FahrenheitInput.jsx"
 import React from 'react';
 
-export default ({ temperature, callback }) => {
+const FahrenheitInput = ({ temperature, callback }) => {
   const handlechange = (e) =>
     callback((((parseInt(e.target.value) || 0) - 32) * 5) / 9);
 
   return <input value={(temperature * 9) / 5 + 32} onChange={handlechange} />;
 };
+
+export default FahrenheitInput;
 ```
 
 </TabItem>
