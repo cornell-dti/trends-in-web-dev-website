@@ -20,7 +20,7 @@ the search query).
 In App.tsx, initialize a state variable that contains the search query.
 Also, create an input field that interacts with this state variable.
 
-Create a state variable that contains Sam's friends list. For simplicity, 
+Create a state variable that contains Sam's friends list. For simplicity,
 you can assume friends are just their name with type `string`. Make
 another input field and a button associated with it to add a name to
 Sam's list. Do not display the list in this component; we will be passing
