@@ -272,7 +272,9 @@ import './Container.css'; // this is how we import styles
 
 type Props = { readonly children: ReactNode };
 
-const Container = (props: Props) => <div className="Border">{props.children}</div>;
+const Container = (props: Props) => (
+  <div className="Border">{props.children}</div>
+);
 
 export default Container;
 ```
