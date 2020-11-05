@@ -15,7 +15,7 @@ Assignments will be released here after lecture!
 
 [Assignment 5](/docs/assignment5): Due on CMS **11/3 at 3:59pm**
 
-[Team Matching Form](/docs/finalproject#team-matching-form): Fill out [form](<(https://forms.gle/vzVCCknrFfEh3dTK8)>) by **11/7 at 11:59PM** (no slip days)
+[Team Matching Form](/docs/finalproject#team-matching-form): Fill out [form](https://forms.gle/vzVCCknrFfEh3dTK8) by **11/7 at 11:59PM** (no slip days)
 
 [Milestone 0](/docs/finalproject#milestone-0): Due on CMS **11/10 at 3:59PM** (no slip days)
 
