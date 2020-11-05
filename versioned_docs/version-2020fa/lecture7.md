@@ -171,8 +171,7 @@ const FriendStatusWithCounter = ({ friend }: Props) => {
 };
 ```
 
-### Important Note
-
+:::caution
 While searching online for help / debugging, you will often
 run into StackOverflow answers or other resources for React dating back from
 a few years ago. Unfortunately, when it comes to developing with modern web
@@ -180,6 +179,7 @@ technologies like React, some solutions often include deprecated features of Rea
 in the present day or need to be translated to the new paradigm (like Hooks).
 It is up to the developer to find the best solution that compromises between
 the bleeding-edge and practicality.
+:::
 
 ## Thinking React-ively
 
