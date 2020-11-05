@@ -88,6 +88,12 @@ Bridge the frontend and backend together using data fetching. This will involve 
 Need help? Come to [office hours](/docs/introduction#when-are-office-hours) and we can help you debug. Also feel free to post questions on Piazza!
 :::
 
+:::danger
+Do not push private API keys, Firebase service accounts, or other sensitive information to GitHub. Similarly, do not push `node_modules` up to GitHub/Heroku. **If we see these in your GitHub, you will lose points.**
+
+Do, however, submit your keys in your CMS submissions if they are necessary to run your app. Don't worry, your secrets are safe with us :)
+:::
+
 ## Optional Extensions
 
 If you're looking for an added challenge, consider doing one or more of these extensions! There is no extra credit for these extensions, but it will really enrich your understanding of webdev (and make us very impressed!) :)
@@ -139,3 +145,19 @@ and anything else that you think is important for us
 to know.
 
 As always, do not include your `node_modules`.
+
+## Tips for Success!
+
+* Get in contact with your partner early! 
+  * Milestone 0 is intended for you to get some discussion on what you want to build before you start implementation. Make sure you are both aligned on what needs to be built to avoid issues later on. _Better initial planning means less frustrations later on._
+* Be realistic.
+  * We know you are ambitious but also understand your own capabilities. Building something too complex may be too overwhelming. You are allowed to change ideas, but that would be time wasted on the old project.
+* Use GitHub
+  * GitHub is the best tool for sharing code between you and your partner/team members. _Please_ use GitHub instead of emailing code back and forth to each other.
+* Use branches!
+  * When developing a feature, you should open up a new GitHub branch rather than committing and pushing directly to master. This will allow you to develop your feature independently of the current state of master (and what your partner is doing) and only merge in when you are sure your feature is done and works.
+  * Branches can also protect you from weird frustrating merge conflicts (so you can focus on developing awesome features!)
+* Pair programming is fun!
+  * Ideally, you should both be actively involved in the whole development process. A good way to achieve this is to step up a time to [pair program](https://en.wikipedia.org/wiki/Pair_programming) and code together!
+* Also refer to tips in [How to Lose in CS 2112](https://www.cs.cornell.edu/courses/cs2112/2020fa/handouts/how-to-lose.html)
+
