@@ -29,7 +29,7 @@ to do all work together.
 - Use ES6 syntax (includes arrow functions, spreading, destructuring)
 - Use Functional programming (map/filter/reduce)
 - Use React Hooks
-- Use TypeScript (and code is well typed)
+- Use TypeScript (and code is well typed, so no `any`)
 
 ## Suggested Project Ideas
 
@@ -61,7 +61,7 @@ Please fill out [**this team matching form**](https://forms.gle/kzqW3r5fdP1u5Yix
 
 **Due: November 10 by 3:59 PM (no slip days)**
 
-Upload to CMS a mock and description of your web app! Your mock can be a picture (handdrawn or typed) and the description should be in `pdf` form. Your mock should include sketches of the different pages or views in your application. Your description should be at least 200 words and elaborate on what your project will be about. Also consider how you will structure your database schema! (What tables will you need, how will they be related, and what will they store). Please zip both of these together to submit to CMS.
+Upload to CMS a mock and description of your web app! Your mock can be a picture/pictures (handdrawn or created from a drawing program) and the description should be in `pdf` form. Your mock should include sketches of the different pages or views in your application. Your description should be **at least 200 words** and elaborate on what your project will be about. Also consider how you will structure your database schema! (What tables will you need, how will they be related, and what will they store). Please zip both of these together to submit to CMS.
 
 ### Milestone 1
 
@@ -92,7 +92,7 @@ Need help? Come to [office hours](/docs/introduction#when-are-office-hours) and 
 
 If you're looking for an added challenge, consider doing one or more of these extensions! There is no extra credit for these extensions, but it will really enrich your understanding of webdev (and make us very impressed!) :)
 
-1. Use Material-UI or Ionic or Bootstrap (libraries to help with styling!)
+1. Use Material-UI or Bootstrap (libraries to help with styling!)
 2. Mobile-friendly/Responsive
 3. Use an external API with your backend (note: this doesn't replace your Firebase backend)
 
