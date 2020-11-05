@@ -57,13 +57,13 @@ Each milestone is due before lecture on its due date. Your remaining slip days a
 
 Please fill out [**this team matching form**](https://forms.gle/kzqW3r5fdP1u5Yix9) by **Saturday, Nov. 7th**. This is a hard deadline because I want to pair you up on Sunday so you have enough time to work on Milestone 0 (due by next class).
 
-### Milestone 0 
+### Milestone 0
 
 **Due: November 10 by 3:59 PM (no slip days)**
 
 Upload to CMS a mock and description of your web app! Your mock can be a picture (handdrawn or typed) and the description should be in `pdf` form. Your mock should include sketches of the different pages or views in your application. Your description should be at least 200 words and elaborate on what your project will be about. Also consider how you will structure your database schema! (What tables will you need, how will they be related, and what will they store). Please zip both of these together to submit to CMS.
 
-### Milestone 1 
+### Milestone 1
 
 **Due: December 1 by 3:59 PM**
 
@@ -78,7 +78,7 @@ Work on the other side (if you did frontend for Milestone 1, do backend now and 
 
 Also have an authentication system set up using Firebase.
 
-### Milestone 3 
+### Milestone 3
 
 **Due: December 15 by 3:59PM**
 
