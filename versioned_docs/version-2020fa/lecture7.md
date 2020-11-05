@@ -52,8 +52,9 @@ Hooks paradigm.
 ```tsx title="Counter.tsx"
 import React from 'react';
 
-export default class Counter extends React.Component {
-  state = { count: 0 };
+type State = { readonly count: number };
+export default class Counter extends React.Component<{}, State> {
+  state: State = { count: 0 };
 
   handleClick = () => this.setState({ count: this.state.count + 1 });
 
@@ -73,7 +74,7 @@ export default class Counter extends React.Component {
 ```tsx title="Counter.tsx"
 import React, { useState } from 'react';
 
-export default () => {
+const Counter = () => {
   const [count, setCount] = useState(0);
   return (
     <div>
@@ -82,6 +83,8 @@ export default () => {
     </div>
   );
 };
+
+export default Counter;
 ```
 
 Right off the bat, we notice that the functional component with Hooks method is
@@ -162,7 +165,7 @@ const FriendStatusWithCounter = ({ friend }: Props) => {
 
   return (
     <div>
-      Your friend with id {id} is {isOnline ? ‘Online’ : ‘Offline’}.
+      Your friend with id {id} is {isOnline ? 'Online' : 'Offline'}.
     </div>
   );
 };
@@ -310,8 +313,8 @@ const FilterableProductTable = ({ products }: TableProps) => {
       <SearchBar
         filterText={filterText} // states passed as prop to SearchBar
         inStockOnly={inStockOnly} // states passed as prop to SearchBar
-        handleFilterTextChange={handleFilterTextChange} // only step 5
-        handleCheckBoxChange={handleCheckBoxChange} // only step 5
+        handleFilterTextChange={handleFilterTextChange} // pass down callbacks to update search state
+        handleCheckBoxChange={handleCheckBoxChange}
       />
       <ProductTable
         products={products} // JSON API model
@@ -335,10 +338,10 @@ import React, { ReactElement } from 'react';
 
 // Export since this is used in FilterableProductTable as well
 export type Product = {
-  category: string;
-  price: string;
-  stocked: boolean;
-  name: string;
+  readonly category: string;
+  readonly price: string;
+  readonly stocked: boolean;
+  readonly name: string;
 };
 
 const ProductRow = (product: Product) => {
@@ -356,7 +359,7 @@ const ProductRow = (product: Product) => {
 };
 
 type RowProps = {
-  category: string;
+  readonly category: string;
 };
 
 const ProductCategoryRow = ({ category }: RowProps) => (
@@ -366,9 +369,9 @@ const ProductCategoryRow = ({ category }: RowProps) => (
 );
 
 type Props = {
-  products: Product[];
-  filterText: string;
-  inStockOnly: boolean;
+  readonly products: Product[];
+  readonly filterText: string;
+  readonly inStockOnly: boolean;
 };
 
 const ProductTable = ({ products, filterText, inStockOnly }: Props) => {
