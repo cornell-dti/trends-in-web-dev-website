@@ -55,20 +55,20 @@ Each milestone is due before lecture on its due date. Your remaining slip days a
 
 **Due: November 7 by 11:59 PM (no slip days)**
 
-Please fill out [**this team matching form**](https://forms.gle/kzqW3r5fdP1u5Yix9) by **Saturday, Nov. 7th**. This is a hard deadline because I want to pair you up on Sunday so you have enough time to work on Milestone 0 (due by next class).
+Please fill out [**this team matching form**](https://forms.gle/kzqW3r5fdP1u5Yix9) by **Saturday, Nov. 7th**. This is a hard deadline because I want to assign partners on Sunday so you have enough time to work on Milestone 0 (due by next class).
 
 ### Milestone 0
 
 **Due: November 10 by 3:59 PM (no slip days)**
 
-Upload to CMS a mock and description of your web app! Your mock can be a picture/pictures (handdrawn or created from a drawing program) and the description should be in `pdf` form. Your mock should include sketches of the different pages or views in your application. Your description should be **at least 200 words** and elaborate on what your project will be about. Also consider how you will structure your database schema! (What tables will you need, how will they be related, and what will they store). Please zip both of these together to submit to CMS.
+Upload to CMS a mock and description of your web app! Your mock can be a picture/pictures (handdrawn or created from a drawing program) and the description should be in `pdf` form. Your mock should include sketches of the different pages or views in your application. Your description should be **at least 200 words** and elaborate on what your project will be about. Also consider how you will structure your database schema! (What tables will you need, how will they be related, and what will they store). Finally, if you are using GitHub (_highly recommended!_), please link it in your description (and make the GitHub repo public). Please zip both of these together to submit to CMS.
 
 ### Milestone 1
 
 **Due: December 1 by 3:59 PM**
 
 Get started implementing either the frontend or backend (you choose).
-If you're doing frontend, you can use hardcoded data for now just to get the layout done.
+If you're doing frontend, you can use hardcoded data for now just to get the layout done. This can be default values embedded in your frontend code like we had for [Thinking in React lecture 7](/docs/lecture7#filterable-product-table-example). You will connect it to a backend in the subsequent milestones. 
 
 ### Milestone 2
 
@@ -140,7 +140,7 @@ If you're looking for an added challenge, consider doing one or more of these ex
 
 Submission for each milestone will be a zip file of your code, along with a
 README containing a description of the project, a list of
-group members and netIDs, a link to the deployed site,
+group members and netIDs, a link to the deployed site, a link to the GitHub repo if you used GitHub,
 and anything else that you think is important for us
 to know.
 
