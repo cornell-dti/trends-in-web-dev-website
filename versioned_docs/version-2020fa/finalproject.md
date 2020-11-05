@@ -68,7 +68,7 @@ Upload to CMS a mock and description of your web app! Your mock can be a picture
 **Due: December 1 by 3:59 PM**
 
 Get started implementing either the frontend or backend (you choose).
-If you're doing frontend, you can use hardcoded data for now just to get the layout done. This can be default values embedded in your frontend code like we had for [Thinking in React lecture 7](/docs/lecture7#filterable-product-table-example). You will connect it to a backend in the subsequent milestones. 
+If you're doing frontend, you can use hardcoded data for now just to get the layout done. This can be default values embedded in your frontend code like we had for [Thinking in React lecture 7](/docs/lecture7#filterable-product-table-example). You will connect it to a backend in the subsequent milestones.
 
 ### Milestone 2
 
@@ -148,16 +148,15 @@ As always, do not include your `node_modules`.
 
 ## Tips for Success!
 
-* Get in contact with your partner early! 
-  * Milestone 0 is intended for you to get some discussion on what you want to build before you start implementation. Make sure you are both aligned on what needs to be built to avoid issues later on. _Better initial planning means less frustrations later on._
-* Be realistic.
-  * We know you are ambitious but also understand your own capabilities. Building something too complex may be too overwhelming. You are allowed to change ideas, but that would be time wasted on the old project.
-* Use GitHub
-  * GitHub is the best tool for sharing code between you and your partner/team members. _Please_ use GitHub instead of emailing code back and forth to each other.
-* Use branches!
-  * When developing a feature, you should open up a new GitHub branch rather than committing and pushing directly to master. This will allow you to develop your feature independently of the current state of master (and what your partner is doing) and only merge in when you are sure your feature is done and works.
-  * Branches can also protect you from weird frustrating merge conflicts (so you can focus on developing awesome features!)
-* Pair programming is fun!
-  * Ideally, you should both be actively involved in the whole development process. A good way to achieve this is to step up a time to [pair program](https://en.wikipedia.org/wiki/Pair_programming) and code together!
-* Also refer to tips in [How to Lose in CS 2112](https://www.cs.cornell.edu/courses/cs2112/2020fa/handouts/how-to-lose.html)
-
+- Get in contact with your partner early!
+  - Milestone 0 is intended for you to get some discussion on what you want to build before you start implementation. Make sure you are both aligned on what needs to be built to avoid issues later on. _Better initial planning means less frustrations later on._
+- Be realistic.
+  - We know you are ambitious but also understand your own capabilities. Building something too complex may be too overwhelming. You are allowed to change ideas, but that would be time wasted on the old project.
+- Use GitHub
+  - GitHub is the best tool for sharing code between you and your partner/team members. _Please_ use GitHub instead of emailing code back and forth to each other.
+- Use branches!
+  - When developing a feature, you should open up a new GitHub branch rather than committing and pushing directly to master. This will allow you to develop your feature independently of the current state of master (and what your partner is doing) and only merge in when you are sure your feature is done and works.
+  - Branches can also protect you from weird frustrating merge conflicts (so you can focus on developing awesome features!)
+- Pair programming is fun!
+  - Ideally, you should both be actively involved in the whole development process. A good way to achieve this is to step up a time to [pair program](https://en.wikipedia.org/wiki/Pair_programming) and code together!
+- Also refer to tips in [How to Lose in CS 2112](https://www.cs.cornell.edu/courses/cs2112/2020fa/handouts/how-to-lose.html)
