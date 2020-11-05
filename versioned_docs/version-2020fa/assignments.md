@@ -23,4 +23,4 @@ Assignments will be released here after lecture!
 
 [Milestone 2](/docs/finalproject#milestone-2): Due on CMS **12/8 at 3:59PM**
 
-[Final Submission/Milestone 3](/docs/finalproject#milestone-3): Due on CMS **12/8 at 3:59PM**
+[Final Submission/Milestone 3](/docs/finalproject#milestone-3): Due on CMS **12/15 at 3:59PM**
