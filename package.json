@@ -12,9 +12,9 @@
     "format:check": "prettier --check '**/*.{ts,js,tsx,jsx,scss,css,html,md}'"
   },
   "dependencies": {
-    "@docusaurus/core": "^2.0.0-alpha.65",
-    "@docusaurus/preset-classic": "^2.0.0-alpha.65",
-    "@docusaurus/theme-classic": "^2.0.0-alpha.65",
+    "@docusaurus/core": "^2.0.0-alpha.66",
+    "@docusaurus/preset-classic": "^2.0.0-alpha.66",
+    "@docusaurus/theme-classic": "^2.0.0-alpha.66",
     "@mdx-js/react": "1.6.16",
     "classnames": "^2.2.6",
     "prism-react-renderer": "^1.1.1",
