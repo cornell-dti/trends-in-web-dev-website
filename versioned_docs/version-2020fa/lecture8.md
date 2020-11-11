@@ -5,9 +5,11 @@ title: Lecture 8
 
 [Lecture Slides](https://docs.google.com/presentation/d/15IBTwZkLPmHWFRO8J1hTX4siZMNTer9_69XBfmPlHYw)
 
-Lecture Video - Coming Soon!
+[Lecture Video](https://drive.google.com/file/d/1DrAqa9fy4vfKaGRDiIGKz4ZqL33pZeQx/view?usp=sharing)
 
-[Final Project](https://github.com/ashneeldas2/trends-sp20/tree/master/FinalProject)
+[Final Project - Milestone 1 due 12/1](https://webdev.cornelldti.org/docs/finalproject#milestone-1)
+
+No classes until 12/1! Good luck on semi-finals and happy Thanksgiving!!
 
 ## Bridging the Frontend & Backend
 
