@@ -51,7 +51,7 @@ We want to keep track of our data in our component state, and use hooks like
 
 Consider this snippet of code:
 
-```typescript title="App.ts"
+```tsx title="App.tsx"
 // This corresponds to the type of data you get back in your response
 type DataType = readonly string[];
 
@@ -155,11 +155,11 @@ type `Promise<Response>`. If so, then `value` would have the type `Response`.
 Then, if the fulfillment function (which takes in `value`) returns type
 `string`, then the entire expression would be type `Promise<String>`.
 
-If you've taken CS 3110 or done some function programming/category theory, this
-might make you think of Monads/Applicatives/Functors. The specified behavior
-for `Promise`s in JS/TS don't exactly follow the laws of what was just listed,
-but for learning purposes it may be helpful to roughly compare the `then`
-function to `fmap` or `bind`.
+If you've taken CS 3110 or done some functional programming outside of this
+class/category theory, this might make you think of
+Monads/Applicatives/Functors. The specified behavior for `Promise`s in JS/TS
+don't exactly follow the laws of what was just listed, but for learning purposes
+it may be helpful to roughly compare the `then` function to `fmap` or `bind`.
 
 If you're interested, take a look at this snippet and notice how the types
 behave:
@@ -414,17 +414,17 @@ import { SongAdder } from './SongAdder';
 import axios from 'axios';
 
 type Song = {
-  name: string;
-  artist: string;
-  rating: number;
+  readonly name: string;
+  readonly artist: string;
+  readonly rating: number;
 };
 
 type SongWithID = Song & {
-  id: string;
+  readonly id: string;
 };
 
 export const SongList = () => {
-  const [songs, setSongs] = useState<SongWithID[]>([]);
+  const [songs, setSongs] = useState<readonly SongWithID[]>([]);
 
   // GET request using fetch
   const fetchSongs = () => {
@@ -435,7 +435,7 @@ export const SongList = () => {
 
   // GET request using axios and async/await
   // const fetchSongs = async () => {
-  //   const res = await axios.get<SongWithID[]>('/getSongs');
+  //   const res = await axios.get<readonly SongWithID[]>('/getSongs');
   //   setSongs(res.data)
   // }
 
@@ -499,7 +499,7 @@ export const SongList = () => {
 import React, { useState } from 'react';
 
 type Props = {
-  readonly callback: (name: any, artist: any, rating: any) => void;
+  readonly callback: (name: string, artist: string, rating: number) => void;
 };
 
 export const SongAdder = ({ callback }: Props) => {
