@@ -230,7 +230,7 @@ asynchronous function
 Within these `async` functions we can use await to designate which lines need to
 be “awaited” upon to resolve
 
-```javascript
+```typescript
 // .then
 const fetchData = () => {
   fetch(`https://jsonplaceholder.typicode.com/posts`)
