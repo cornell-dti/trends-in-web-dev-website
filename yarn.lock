@@ -3254,12 +3254,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:*, @types/react@npm:^16.9.49":
-  version: 16.14.1
-  resolution: "@types/react@npm:16.14.1"
+"@types/react@npm:*, @types/react@npm:^17.0.0":
+  version: 17.0.0
+  resolution: "@types/react@npm:17.0.0"
   dependencies:
     "@types/prop-types": "*"
-  checksum: 8fc0d7c32674ea86d79591d14cfaa440c8e70bbcd9fed62fb8f13495e02c5fdd2653901462a439950ecf184607ce58b4888cee934fae5a20dfcb3dc0d9727e33
+    csstype: ^3.0.2
+  checksum: dcef2034b822a949c5528fa8fa3c64da654fdbb822bd8f0488c0084d84cadb8b90af68813a6c95153d4754079f50b1cab206552c7c20f6b67a26c3641383fe31
   languageName: node
   linkType: hard
 
@@ -6398,6 +6399,13 @@ __metadata:
   dependencies:
     css-tree: ^1.0.0
   checksum: 2086d8c8e928c7ecc138c9cdf5974fba356d9d860b8aa5956dfd9ea9792869ba7a2557823b4061fb3bea834a1703e3bb1d56c83df24478776aa125bd1b7c935a
+  languageName: node
+  linkType: hard
+
+"csstype@npm:^3.0.2":
+  version: 3.0.5
+  resolution: "csstype@npm:3.0.5"
+  checksum: d15967edea15457961ab1e3f1c4080c83792a595055551a087923b2fb67fffaddaa2eedafe10f665d12dc3f493af03c08322c9410fcd58e3dcf48104de15043c
   languageName: node
   linkType: hard
 
@@ -17272,7 +17280,7 @@ resolve@^2.0.0-next.1:
     "@docusaurus/theme-classic": ^2.0.0-alpha.68
     "@mdx-js/react": 1.6.16
     "@types/node": ^14.6.3
-    "@types/react": ^16.9.49
+    "@types/react": ^17.0.0
     "@types/react-helmet": ^6.1.0
     "@types/react-router-dom": ^5.1.5
     classnames: ^2.2.6
