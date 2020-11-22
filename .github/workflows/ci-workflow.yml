@@ -24,12 +24,13 @@ jobs:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
         run: NODE_NO_WARNINGS=1 yarn netlify deploy --dir=build --site=$NETLIFY_SITE_ID --json > a.json
       - name: Parse deployment URL
+        id: deploy_url
         run: |
           DEPLOY_URL=$(echo "console.log(require('./a.json').deploy_url)" | node)
-          echo "::set-env name=DEPLOY_URL::$DEPLOY_URL"
+          echo "::set-output name=DEPLOY_URL::$DEPLOY_URL"
       - uses: cornell-dti/dti-repo-tools@master
         env:
           BOT_TOKEN: '${{ secrets.BOT_TOKEN }}'
         with:
           command: pr-comment
-          argument: '[deployment-bot] Deployed to ${{env.DEPLOY_URL}}.'
+          argument: '[deployment-bot] Deployed to ${{steps.deploy_url.outputs.DEPLOY_URL}}.'
