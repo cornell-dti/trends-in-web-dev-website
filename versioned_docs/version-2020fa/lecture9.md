@@ -14,21 +14,23 @@ Lecture Video (To be added)
 ### Replacing our familiar workflow
 
 Normally, to run both the backend and frontend, we have to do something like this:
+
 ```bash
 cd backend
 yarn install
 yarn start  # start the backend
 
-cd ../frontend 
+cd ../frontend
 yarn install
 yarn start  # start the frontend
 ```
 
 We can make managing the frontend and backend easier by creating a package.json in our root directory and declaring a workspaces!
+
 ```json title="package.json"
 {
- "private": true,
- "workspaces": ["frontend", "backend"]
+  "private": true,
+  "workspaces": ["frontend", "backend"]
 }
 ```
 
@@ -36,24 +38,25 @@ We can make managing the frontend and backend easier by creating a package.json 
 
 One advantage of doing this is that dependencies are installed at the root, so if both your frontend and backend use the same version of TypeScript, it is only installed once at the workspace root.
 
-Another thing you may notice is that only one lockfile is generated and it is placed at the workspace root with `package.json`. 
+Another thing you may notice is that only one lockfile is generated and it is placed at the workspace root with `package.json`.
 
-Having your package manager at your root also makes running scripts from both workspaces much simpler. To run the respective `start` script for the frontend or backend, you can 
+Having your package manager at your root also makes running scripts from both workspaces much simpler. To run the respective `start` script for the frontend or backend, you can
 run `yarn workspace frontend start` or `yarn workspace backend start`
 
 ### Local workspace as dependency
 
 If there is code that you wish to be shared between both your frontend and backend, for example, you can also declare that as another workspace in your `package.json`
 and include it in the respective frontend and backend `package.json` like so:
+
 ```json title="frontend/package.json"
 {
- "name": "frontend",
- "version": "1.0.0",
- "dependencies": {
-   "typescript": "^4.1.2",
-   "react": "^17.0.0",
-   "helper-functions": "1.0.0"
- }
+  "name": "frontend",
+  "version": "1.0.0",
+  "dependencies": {
+    "typescript": "^4.1.2",
+    "react": "^17.0.0",
+    "helper-functions": "1.0.0"
+  }
 }
 ```
 
@@ -61,7 +64,7 @@ and include it in the respective frontend and backend `package.json` like so:
 
 - Yarn workspaces allows your dependencies to be linked together, making it easier to manage a monorepo
 - Having one lockfile creates fewer conflicts and easier code reviews
-- Reduces redundancy in packages 
+- Reduces redundancy in packages
 - Including workspaces as dependencies makes it easier to test your utility functions locally before you publish them online
 
 ## Security
@@ -72,14 +75,14 @@ Web app security is integral in a world where people have malicious intentions. 
 
 Do NOT store passwords in plain text in your database!!
 
-If somehow there were a vulnerability in your database, the passwords of all of your users would be directly exposed to hackers. 
+If somehow there were a vulnerability in your database, the passwords of all of your users would be directly exposed to hackers.
 Moreover, many people reuse their passwords for some if not all other, so you could also compromise something like someone's banking credentials or emails.
 
 While it is safer to store hashed passwords, it is very easy to do it incorrectly, which is why we teach firebase authentication!
 
 ### 2. Input Sanitization
 
-Input sanitization 'cleanses' inputs so that they can not be used in unintended ways. 
+Input sanitization 'cleanses' inputs so that they can not be used in unintended ways.
 
 For example, it may seem reasonable to add every comment on a blog into a database entry like this:
 `“INSERT INTO 'comments' (comment) VALUES '” + user_input + “';”`, but it is actually incredibly unsafe
@@ -97,7 +100,7 @@ Recall that we used Postman at the beginning of the semester to test Express end
 
 Going hand-in-hand with the last point, when a request is made to your backend, make sure that the source of your request has the sufficient permissions to perform whatever action is being asked!
 
-For example, if the OfficeHours app recieved a request to edit the times to someone's office hours, the backend would check that this person is indeed the TA who owns that OH and not a student. 
+For example, if the OfficeHours app recieved a request to edit the times to someone's office hours, the backend would check that this person is indeed the TA who owns that OH and not a student.
 
 ## Deployment
 
@@ -189,7 +192,9 @@ const Authenticated = ({ children }: Props) => {
   return (
     <div>
       {user && children}
-      {!user && <FirebaseAuth uiConfig={uiConfig} firebaseAuth={firebase.auth()} />}
+      {!user && (
+        <FirebaseAuth uiConfig={uiConfig} firebaseAuth={firebase.auth()} />
+      )}
     </div>
   );
 };
