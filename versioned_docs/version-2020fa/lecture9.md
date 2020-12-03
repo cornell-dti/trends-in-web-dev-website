@@ -83,13 +83,10 @@ Most important lines here are 3-7 which define the workspaces and set `private: 
 {
   "name": "songs-app",
   "private": true,
-  "workspaces": [
-    "backend",
-    "frontend"
-  ],
+  "workspaces": ["backend", "frontend"],
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT",
+  "license": "MIT"
 }
 ```
 
@@ -129,7 +126,7 @@ Our frontend workspace will also look like the following. The full file can also
     "axios": "^0.19.2",
     "firebase": "^8.1.1",
     "firebase-tools": "^8.16.2",
-    "react": "^17.0.1",
+    "react": "^17.0.1"
   },
   // other dependencies, dev dependencies
   "scripts": {
@@ -137,7 +134,7 @@ Our frontend workspace will also look like the following. The full file can also
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
-  },
+  }
 }
 ```
 
@@ -153,14 +150,14 @@ In general the syntax for running a script for a workspace is `yarn workspace <w
 
 We notice we have two build scripts in backend and frontend. `yarn workspace run build` will tell yarn to run build script in all workspaces that have them.
 
-Of course, we can also run `yarn install` in the project root to install all the dependencies required in all of our workspaces. If there are duplicates, yarn will only install the dependency once. 
+Of course, we can also run `yarn install` in the project root to install all the dependencies required in all of our workspaces. If there are duplicates, yarn will only install the dependency once.
 
 ### Learn more!
 
 Yarn workspaces is super cool and we just covered a subset of functionality. If you want to learn more check out these links:
 
-* [How to use Yarn workspaces](https://classic.yarnpkg.com/en/docs/workspaces/#toc-how-to-use-it)
-* [Blog post](https://classic.yarnpkg.com/blog/2017/08/02/introducing-workspaces/)
+- [How to use Yarn workspaces](https://classic.yarnpkg.com/en/docs/workspaces/#toc-how-to-use-it)
+- [Blog post](https://classic.yarnpkg.com/blog/2017/08/02/introducing-workspaces/)
 
 ## Authentication
 
@@ -276,11 +273,11 @@ For example, if the OfficeHours app recieved a request to edit the times to some
 
 In lecture, we showed how to hack our very simple application by sending in bad unauthenticated input data. This caused our frontend to break a little bit. Check the lecture video for details!
 
-We fixed the backend by using Firebase Admin's verifyIdToken function to check whether the user had logged in or not. 
+We fixed the backend by using Firebase Admin's verifyIdToken function to check whether the user had logged in or not.
 
 #### Backend
 
-On the backend, we had the `post` endpoints check the `idtoken` in the request headers. 
+On the backend, we had the `post` endpoints check the `idtoken` in the request headers.
 
 ```ts title="backend/index.ts"
 // setup, GET route
@@ -314,11 +311,11 @@ app.post('/updateRating', async (req, res) => {
 });
 ```
 
-We call `admin.auth().verifyIdToken(req.headers.idtoken as string)` and only then do we allow the input to be saved. Otherwise, we log the error. 
+We call `admin.auth().verifyIdToken(req.headers.idtoken as string)` and only then do we allow the input to be saved. Otherwise, we log the error.
 
 #### Frontend
 
-Now when we send the request back, we need to send the idtoken with the request header. So in the `addSong` and `updateRating` methods that called the POST endpoints above, we send call `firebase.auth().currentUser?.getIdToken(true)` to get the user's idtoken. Then we pass it in as a field to `headers` in the fetch. However, if the currentUser is undefined for some reason (what the `?` catches), then we console that the user isn't authenticated. Everything else should be familiar from last lecture. 
+Now when we send the request back, we need to send the idtoken with the request header. So in the `addSong` and `updateRating` methods that called the POST endpoints above, we send call `firebase.auth().currentUser?.getIdToken(true)` to get the user's idtoken. Then we pass it in as a field to `headers` in the fetch. However, if the currentUser is undefined for some reason (what the `?` catches), then we console that the user isn't authenticated. Everything else should be familiar from last lecture.
 
 ```ts title="frontend/src/SongList.tsx"
 const addSong = (name: string, artist: string, rating: number) => {
@@ -355,7 +352,9 @@ const updateRating = (id: string, rating: number) => {
       }).then(() =>
         setSongs(
           songs.map((song) =>
-            song.id === id ? { name: song.name, artist: song.artist, rating, id } : song
+            song.id === id
+              ? { name: song.name, artist: song.artist, rating, id }
+              : song
           )
         )
       );
@@ -368,10 +367,11 @@ const updateRating = (id: string, rating: number) => {
 
 #### Security Best Practices
 
-There is a lot more we could've done in terms of security here. 
+There is a lot more we could've done in terms of security here.
 
 1. We should send back error messages to the user about why requests are failing instead of just doing `console.log()` since the user won't see that. This would be bad user experience since they don't have feedback about why things aren't working.
 2. We should also do input validation on the backend to ensure we are getting our expected inputs. What if we aren't passing an object that looks like:
+
 ```json
 {
   "artist": string
@@ -382,9 +382,9 @@ There is a lot more we could've done in terms of security here.
 
 ## Deployment
 
-To deploy your web application means to put it on a Web server so others can access it via the internet. We will deploy both our frontend and backend on Heroku. There are a variety of services you can use for deployment including Firebase, Amazon AWS, Microsoft Azure, etc, but we decided to show you Heroku deployment since it is easier and requires less setup. 
+To deploy your web application means to put it on a Web server so others can access it via the internet. We will deploy both our frontend and backend on Heroku. There are a variety of services you can use for deployment including Firebase, Amazon AWS, Microsoft Azure, etc, but we decided to show you Heroku deployment since it is easier and requires less setup.
 
-We will be taking our songs app we have been building throughout the course and deploying it to a remote server. To deploy your own app (for final project for example), you can follow the same steps usually. 
+We will be taking our songs app we have been building throughout the course and deploying it to a remote server. To deploy your own app (for final project for example), you can follow the same steps usually.
 
 ### Deployment Setup
 
@@ -469,7 +469,7 @@ No further setup required in our frontend folder.
 
 ##### `package.json`
 
-Our root `package.json` will look like the following. We are using yarn workspaces as described [above](./lecture9#root) and the `heroku-postbuild` script will build both workspaces to prep them for push to remote server. (We discussed `yarn workspaces run build` [above](./lecture9#profit)) `heroku-postbuild` is a special command recognized by Heroku to allow you to customize the build process. 
+Our root `package.json` will look like the following. We are using yarn workspaces as described [above](./lecture9#root) and the `heroku-postbuild` script will build both workspaces to prep them for push to remote server. (We discussed `yarn workspaces run build` [above](./lecture9#profit)) `heroku-postbuild` is a special command recognized by Heroku to allow you to customize the build process.
 
 ```json title="/package.json"
 {
@@ -478,10 +478,7 @@ Our root `package.json` will look like the following. We are using yarn workspac
   "scripts": {
     "heroku-postbuild": "yarn workspaces run build"
   },
-  "workspaces": [
-    "backend",
-    "frontend"
-  ],
+  "workspaces": ["backend", "frontend"],
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
