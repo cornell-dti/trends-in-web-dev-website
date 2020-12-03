@@ -9,6 +9,8 @@ title: Lecture 9
 
 [Final Project - Milestone 2 due 12/8](https://webdev.cornelldti.org/docs/finalproject#milestone-2)
 
+Vote for the Lecture 10 topic [here](https://bit.ly/lec10fa20vote) by **Friday 11:59PM ET**
+
 ## Yarn Workspaces
 
 ### Replacing our familiar workflow
