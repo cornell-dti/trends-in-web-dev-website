@@ -512,14 +512,14 @@ Read more about the Heroku Procfile [here](https://devcenter.heroku.com/articles
 We will now show the series of commands to deploy to Heroku. We will be using Heroku Git to deploy.
 
 ```bash
-yarn global add heroku
+yarn add heroku
 git init
 git add .
 git commit -m "COMMIT MESSAGE"
-heroku login
-heroku create <optional project name>
+yarn heroku login
+yarn heroku create <optional project name>
 git push heroku master
-(optional) heroku open
+(optional) yarn heroku open
 ```
 
 Visiting the URL should take you to the same application you had locally. Now you can share that link with your friends so they can visit your website too! Take a look at our deployed site here: [https://webdev-demo-fa20.herokuapp.com/](https://webdev-demo-fa20.herokuapp.com/) (If you have issues deploying feel free to submit this link for the attendance question, but please do come to [office hours](./introduction#when-are-office-hours) first!)
