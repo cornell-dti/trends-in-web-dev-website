@@ -427,7 +427,12 @@ app.get('/getSongs', async (req, res) => {
 });
 
 // other routes...
+app.listen(process.env.PORT || 8080, () => console.log('backend started'));
 ```
+
+:::note
+Notice we are having `app.listen` listen for either port 8080 or `process.env.PORT`. Previously, we hardcoded `8080` for this parameter. `process.env.PORT` will be defined by Heroku and we want the app to listen for requests on that port in the deployed site. 
+:::
 
 ##### `backend/package.json`
 
