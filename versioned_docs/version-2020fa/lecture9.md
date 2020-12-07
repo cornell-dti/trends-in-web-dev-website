@@ -237,7 +237,7 @@ If the user is logged in, `SongList` will show. Otherwise they will be asked to 
 We then deployed this app on Firebase for the frontend and Heroku for the backend. Refer to the commands above.
 
 :::tip
-We recommend using Firebase's built-in support for Google Authentication since storing passwords securely is _very hard_ (more details in the security section). Firebase also has support for many other accounts such as Facebook, GitHub, Microsoft, Apple, etc. Read more about Firebase Authentication [here](https://firebase.google.com/docs/auth/web/firebaseui). If for whatever reason you really want to implement your own user accounts, Firebase can still help you store passwords securely. Read more [here](https://firebase.google.com/docs/auth/web/password-auth). 
+We recommend using Firebase's built-in support for Google Authentication since storing passwords securely is _very hard_ (more details in the security section). Firebase also has support for many other accounts such as Facebook, GitHub, Microsoft, Apple, etc. Read more about Firebase Authentication [here](https://firebase.google.com/docs/auth/web/firebaseui). If for whatever reason you really want to implement your own user accounts, Firebase can still help you store passwords securely. Read more [here](https://firebase.google.com/docs/auth/web/password-auth).
 :::
 
 ## Security
