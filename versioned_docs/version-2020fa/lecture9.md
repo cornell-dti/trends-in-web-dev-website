@@ -165,23 +165,36 @@ Yarn workspaces is super cool and we just covered a subset of functionality. If 
 
 One of the best parts about Firebase is you can use Sign in with Google/Facebook/GitHub/etc! This way you don't have to deal with usernames and passwords yourself!
 
+Before writing any code, you need to setup Firebase Authentication first.
+
+In your project's firebase console, click on the authentication icon below the settings icon:
+
+![authentication icon](/img/lec9/authentication-icon.png)
+
+Then click on the sign-in method tab and enable Google login by following the setup instructions:
+
+![sign in method](/img/lec9/signin-method.png)
+
 We did a Live Coding Demo here based on the Songs example from last week. I will include the files changed here.
 
 To handle authentication we made a wrapper component `Authenticated` to handle all Authentication:
 
 ```tsx title="Authenticated.tsx"
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import 'firebase/auth';
 import firebase from 'firebase/app';
 import FirebaseAuth from 'react-firebaseui/FirebaseAuth';
-import { useEffect } from 'react';
 
-const firebaseConfig = {}; // put firebase config in here
+const firebaseConfig = {
+  // put firebase config in here.
+  // You can find the config in Project Settings > General
+  // and choose the Config option in Firebase SDK snippet
+};
 
 firebase.initializeApp(firebaseConfig);
 
 type Props = {
-  children: React.ReactNode;
+  readonly children: React.ReactNode;
 };
 
 const Authenticated = ({ children }: Props) => {
