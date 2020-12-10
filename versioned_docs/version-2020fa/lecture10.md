@@ -276,17 +276,6 @@ yarn start
 
 As part of the demo we built the simple TODO list app from assignment 4 in React Native! The code is here:
 
-<Tabs
-groupId="lang"
-defaultValue="ts"
-values={[
-{ label: 'TypeScript', value: 'ts', },
-{ label: 'JavaScript', value: 'js', },
-]
-}>
-
-<TabItem value="ts">
-
 ```tsx title="App.tsx"
 import React, { useState } from 'react';
 import { StyleSheet, Text, View, TextInput, Button } from 'react-native';
@@ -330,57 +319,6 @@ const styles = StyleSheet.create({
   },
 });
 ```
-
-</TabItem>
-
-<TabItem value="js">
-
-```jsx title="App.jsx"
-import React, { useState } from 'react';
-import { StyleSheet, Text, View, TextInput, Button } from 'react-native';
-
-export default function App() {
-  const [item, setItem] = useState('');
-  const [items, setItems] = useState([]);
-
-  const updateItems = () => {
-    setItems([...items, item]);
-    setItem('');
-  };
-
-  return (
-    <View style={styles.container}>
-      <TextInput
-        placeholder="Add an item"
-        style={styles.input}
-        value={item}
-        onChangeText={(text) => setItem(text)}
-      />
-      <Button title="Add item" onPress={() => updateItems()} />
-      {items.map((i, index) => (
-        <Text key={index}> {i} </Text>
-      ))}
-    </View>
-  );
-}
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-
-  input: {
-    borderWidth: 1,
-    width: 150,
-  },
-});
-```
-
-</TabItem>
-</Tabs>
 
 Once you `yarn start`, you should be taken to Expo where you can view your changes on your browser. On the bottom left, there should also be a QR code. If you download the Expo app and scan the QR code with your phone camera ([Android](https://play.google.com/store/apps/details?id=host.exp.exponent&hl=en_US), [iOS](https://apps.apple.com/us/app/expo-client/id982107779)), it should take you to the Expo app where you can see your application in mobile form!
 
