@@ -1,0 +1,19 @@
+{
+  "docs": {
+    "Getting Started": [
+      {
+        "type": "doc",
+        "id": "version-2021sp/introduction"
+      },
+      {
+        "type": "doc",
+        "id": "version-2021sp/setup-environment"
+      },
+      {
+        "type": "doc",
+        "id": "version-2021sp/setup-editor"
+      }
+    ],
+    "Lectures": []
+  }
+}
