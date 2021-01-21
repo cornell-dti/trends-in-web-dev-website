@@ -5,7 +5,6 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
-import TrendsMascot from '../../static/img/trends_mascot.png';
 
 const features = [
   /*
@@ -50,7 +49,7 @@ export default () => {
       <header className={classnames('hero', styles.heroBanner)}>
         <div className={`container ${styles.HeroContainer}`}>
           <img
-            src={TrendsMascot}
+            src={useBaseUrl('../../static/img/trends_mascot.png')}
             alt="Trends in Web Development Mascot"
             className={styles.HeroImage}
           />
