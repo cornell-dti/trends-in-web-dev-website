@@ -35,3 +35,29 @@
 .getStarted {
   margin: 1em;
 }
+
+@media (max-width: 801px) {
+  .HeroImage {
+    width: 60%;
+    height: 60%;
+  }
+}
+
+@media (min-width: 801px) {
+  .HeroImage {
+    width: 40%;
+    height: 40%;
+    margin-left: 0;
+  }
+
+  .HeroContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .HeroRight {
+    align-items: center;
+    justify-content: center;
+  }
+}

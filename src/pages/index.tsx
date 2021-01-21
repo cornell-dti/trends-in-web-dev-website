@@ -5,6 +5,7 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
+import TrendsMascot from '../../static/img/trends_mascot.png';
 
 const features = [
   /*
@@ -47,28 +48,35 @@ export default () => {
   return (
     <Layout title={siteConfig.title} description={siteConfig.tagLine}>
       <header className={classnames('hero', styles.heroBanner)}>
-        <div className="container">
-          <h1 className="hero__title">{siteConfig.title}</h1>
-          <p className="hero__subtitle">{siteConfig.tagline}</p>
-          <div className={styles.buttons}>
-            <Link
-              className={classnames(
-                'button button--primary button--lg',
-                styles.getStarted
-              )}
-              to={useBaseUrl('docs/introduction')}
-            >
-              Start Learning
-            </Link>
-            <Link
-              className={classnames(
-                'button button--primary button--lg',
-                styles.getStarted
-              )}
-              to="https://cornell.zoom.us/j/7293410777?pwd=UWxlMTh3VGd2ZXNXSUN6MnlEeFJjZz09"
-            >
-              Join Zoom Lecture
-            </Link>
+        <div className={`container ${styles.HeroContainer}`}>
+          <img
+            src={TrendsMascot}
+            alt="Trends in Web Development Mascot"
+            className={styles.HeroImage}
+          />
+          <div className={styles.HeroRight}>
+            <h1 className="hero__title">{siteConfig.title}</h1>
+            <p className="hero__subtitle">{siteConfig.tagline}</p>
+            <div className={styles.buttons}>
+              <Link
+                className={classnames(
+                  'button button--primary button--lg',
+                  styles.getStarted
+                )}
+                to={useBaseUrl('docs/introduction')}
+              >
+                Start Learning
+              </Link>
+              <Link
+                className={classnames(
+                  'button button--primary button--lg',
+                  styles.getStarted
+                )}
+                to="https://bit.ly/web-dev-sp21"
+              >
+                Spring 2021 Application
+              </Link>
+            </div>
           </div>
         </div>
       </header>
