@@ -51,15 +51,11 @@ Lecture 10: Deployment, Authentication, and Security
 
 ## Where are assignments released and submitted?
 
-Assignments will be released on [here](/docs/assignments) every Tuesday. Every assignment
-is due right before class of the following week (TBD time) unless otherwise stated. You will have 6 slip days total to use on the assignments, but for each assignment, you may only use up to 2 slip days. Use these judiciously because we will not be handling extensions outside of slip days.
-
-Assignments must be submitted on CMS. We will not take submissions emailed to us. If you are not on the CMS please email
-Peter (plw53@cornell.edu) or Becky (bh456@cornell.edu)
+TBD
 
 ## What will be taught?
 
-By the end of the course, students will be have a much more in-depth understanding of JavaScript as it pertains to many common software libraries used in web development. These libraries include (but are not limited to) React, Express, Node.js, NPM, Express, and Firebase. The exact technologies can shift from semester to semester as demands from students, and in the industry, evolve and change. What is in demand now may not be desired in two years from now. The primary technologies that this class is powered by can shift from semester to semester to reflect what employers are looking for.
+By the end of the course, students will be have a much more in-depth understanding of JavaScript as it pertains to many common software libraries used in web development. These libraries include (but are not limited to) React, Express, Node.js, Yarn / npm, Express, and Firebase. The exact technologies can shift from semester to semester as demands from students, and in the industry, evolve and change. What is in demand now may not be desired in two years from now. The primary technologies that this class is powered by can shift from semester to semester to reflect what employers are looking for.
 
 Throughout this course, students will work as individuals and in groups to apply these skills to projects. These are both skills that are extremely important to employers: being able to function independently on assigned tasks, and being able to collaborate with different people on a wide variety of tasks. The idea is to closely resemble milestones and checkpoints in project development, which occur with one to many people.
 
