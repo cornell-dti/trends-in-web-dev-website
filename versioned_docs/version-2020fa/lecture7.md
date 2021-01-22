@@ -7,11 +7,11 @@ title: Lecture 7
 
 [Lecture Video](https://drive.google.com/file/d/1MeeIoZl0wN8RMCJkSC17vPyTwrg-2tn3/view?usp=sharing)
 
-[Final Project Instructions](/docs/finalproject)
+[Final Project Instructions](/docs/2020fa/finalproject)
 
 [Final Project Team Matching Form](https://forms.gle/kzqW3r5fdP1u5Yix9) due **Saturday, Nov. 7th** (no slip days)
 
-[Milestone 0](/docs/finalproject#milestone-0) due **11/10 by 3:59pm** (no slip days)
+[Milestone 0](/docs/2020fa/finalproject#milestone-0) due **11/10 by 3:59pm** (no slip days)
 
 ## Hooks, and More on Functional Components in React
 

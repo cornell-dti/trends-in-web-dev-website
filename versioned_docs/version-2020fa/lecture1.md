@@ -7,7 +7,7 @@ title: Lecture 1
 
 [Lecture Slides](https://docs.google.com/presentation/d/1a3qkQruToLPrxLdNk06f30XIVgMavLr8n5KQah_7YRY/edit?usp=sharing)
 
-[Assignment 1](/docs/assignment1) due **10/2 11:59pm**
+[Assignment 1](/docs/2020fa/assignment1) due **10/2 11:59pm**
 
 **Join the [Piazza](https://piazza.com/cornell/fall2020/info1998section604)!**
 

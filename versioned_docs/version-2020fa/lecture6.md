@@ -10,7 +10,7 @@ import TabItem from '@theme/TabItem';
 
 [Lecture Video](https://drive.google.com/file/d/1r9g1X9XGGqTRfNX7gkg0bprLB7efPbNp/view?usp=sharing)
 
-[Assignment 5](/docs/assignment5) due **11/04 3:59pm**
+[Assignment 5](/docs/2020fa/assignment5) due **11/04 3:59pm**
 
 ## Conditional Rendering
 

@@ -2,7 +2,8 @@ const versions = require('./versions.json');
 
 module.exports = {
   title: 'Trends in Web Dev',
-  tagline: 'Course offered by Cornell DTI',
+  tagline:
+    "Build and deploy modern full-stack web applications using best practices in today's most used tech stacks.",
   url: 'https://webdev.cornelldti.org',
   baseUrl: '/',
   favicon: 'img/logo.png',

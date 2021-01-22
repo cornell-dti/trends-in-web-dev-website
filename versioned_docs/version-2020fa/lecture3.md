@@ -7,7 +7,7 @@ title: Lecture 3
 
 [Lecture Slides](https://docs.google.com/presentation/d/11W-GdF6V9fgZyxzvjTrUieKTTIhoE7A30eZos86mfuo/edit?usp=sharing)
 
-[Assignment 2](/docs/assignment2) due **10/13 03:59pm**
+[Assignment 2](/docs/2020fa/assignment2) due **10/13 03:59pm**
 
 ## Before the lecture
 
