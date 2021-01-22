@@ -49,7 +49,7 @@ export default () => {
       <header className={classnames('hero', styles.heroBanner)}>
         <div className={`container ${styles.HeroContainer}`}>
           <img
-            src={useBaseUrl('../../static/img/trends_mascot.png')}
+            src={useBaseUrl('img/trends_mascot.png')}
             alt="Trends in Web Development Mascot"
             className={styles.HeroImage}
           />
