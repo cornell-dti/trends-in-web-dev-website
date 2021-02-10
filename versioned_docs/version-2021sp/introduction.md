@@ -16,9 +16,9 @@ Due to COVID-19, **Trends in Web Development will be a completely online course 
 
 ## Course Application
 
-Apply [here](https://bit.ly/web-dev-sp21) by February 18th at 11:59 PM ET, a week before the course starts. It includes a general information questionnaire so we have the information necessary for enrollment, as well as a pretest. 
+Apply [here](https://bit.ly/web-dev-sp21) by February 18th at 11:59 PM ET, a week before the course starts. It includes a general information questionnaire so we have the information necessary for enrollment, as well as a pretest.
 
-We will be distributing enrollment/permission pins soon after the application period closes. The course number (not permission number) is `16062`. 
+We will be distributing enrollment/permission pins soon after the application period closes. The course number (not permission number) is `16062`.
 
 ## Introduction
 
