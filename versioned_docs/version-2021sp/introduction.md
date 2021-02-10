@@ -12,11 +12,13 @@ By [Cornell DTI](http://cornelldti.org/). Read our article about the first run o
 
 ## COVID-19 Restrictions
 
-Due to COVID-19, **Trends in Web Development will be a completely online course this semester.** While the current lecture time is to be determined, in all previous offerings of the class, the course has run on a weekday after 4PM for an hour each week. If you are unable to make this time, the lectures will be recorded and posted on the course website the following day along with slides and lecture notes. _Synchronous attendance is not required_ (but we still hope to see some of you if you can make it!). Attendance credit will be awarded based on short weekly quizzes found in lecture videos.
+Due to COVID-19, **Trends in Web Development will be a completely online course this semester.** Lectures will be held on Thursdays at 4:30 - 5:30 PM ET (Ithaca time) on Zoom, beginning on February 25th. If you are unable to make this time, the lectures will be recorded and posted on the course website the following day along with slides and lecture notes. _Synchronous attendance is not required_ (but we still hope to see some of you if you can make it!). Attendance credit will be awarded based on short weekly quizzes found in lecture videos.
 
 ## Course Application
 
-Apply [here](https://bit.ly/web-dev-sp21).
+Apply [here](https://bit.ly/web-dev-sp21) by February 18th at 11:59 PM ET, a week before the course starts. It includes a general information questionnaire so we have the information necessary for enrollment, as well as a pretest.
+
+We will be distributing enrollment/permission pins soon after the application period closes. The course number (not permission number) is `16062`.
 
 ## Introduction
 
@@ -29,7 +31,7 @@ TBD
 
 ## Is there a lecture schedule?
 
-Lecture times are TBD, but this is a tentative schedule for the topics that will be covered (subject to change). Currently, we are hoping to end the course before the start of May 2021.
+Lectures will begin on February 25th, 2021, but this is a tentative schedule for the topics that will be covered (subject to change). We are holding the last lecture on 4/29, well before finals week. Also, note that none of these classes will be affected by the wellness days.
 
 Lecture 1: Syllabus, JavaScript + Intro to TypeScript and Node.js
 
@@ -67,7 +69,7 @@ Please complete the pre-assessment [here](/preassessment.zip). It should take le
 
 ## When is it?
 
-TBD
+Thursdays at 4:30 - 5:30 PM ET beginning February 25th.
 
 ## Where does it meet?
 
