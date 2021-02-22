@@ -20,8 +20,9 @@ Once installed, add these lines to your VSCode Settings (refer to [this link](ht
 ```json
   // Other settings ...
   "eslint.alwaysShowStatus": true,
-  "eslint.autoFixOnSave": true,
-  "eslint.enable": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
   "eslint.packageManager": "yarn"
 ```
 
