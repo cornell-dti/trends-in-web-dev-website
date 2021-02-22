@@ -27,6 +27,8 @@ key experience in designing systems on both the frontend and backend using today
 
 ## When are office hours?
 
+Office hours will start **Friday, February 26**. Come by if you have any questions about homework, lecture material, etc.
+
 Sam: Monday 4:00-5:00pm
 
 Peter: Tuesday 3:00-4:00pm
@@ -40,6 +42,8 @@ Enoch: Thursday 5:00-6:00pm
 Jason: Friday 10:00-11:00am
 
 Becky: Friday 1:00-2:00pm
+
+If you are unable to make any of those office hours times, you can ask questions on Piazza or get in touch with Becky or Peter.
 
 ## Is there a lecture schedule?
 
@@ -65,7 +69,7 @@ Lecture 10: Deployment, Authentication, and Security
 
 ## Where are assignments released and submitted?
 
-Assignments will be released on here every Thursday. Every assignment
+Assignments will be released on [here](/docs/2021sp/assignments) every Thursday. Every assignment
 is due right before class of the following week at 3:59pm unless otherwise stated. You will have 6 slip days total to use on
 the assignments, but for each assignment, you may only use up to 2 slip days. Use these judiciously because we will not be handling extensions outside of slip days.
 
