@@ -71,9 +71,9 @@ export default () => {
                   'button button--primary button--lg',
                   styles.getStarted
                 )}
-                to="https://bit.ly/web-dev-sp21"
+                to="https://cornell.zoom.us/j/93354802016?pwd=NjNmQm1rdG9lRlJZclJYV2VhR2QyQT09"
               >
-                Spring 2021 Application
+                Join Zoom
               </Link>
             </div>
           </div>
