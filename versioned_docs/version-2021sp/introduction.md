@@ -69,7 +69,7 @@ Lecture 10: Deployment, Authentication, and Security
 
 ## Where are assignments released and submitted?
 
-Assignments will be released on [here](/docs/2021sp/assignments) every Thursday. Every assignment
+Assignments will be released on [here](/docs/assignments) every Thursday. Every assignment
 is due right before class of the following week at 3:59pm unless otherwise stated. You will have 6 slip days total to use on
 the assignments, but for each assignment, you may only use up to 2 slip days. Use these judiciously because we will not be handling extensions outside of slip days.
 
