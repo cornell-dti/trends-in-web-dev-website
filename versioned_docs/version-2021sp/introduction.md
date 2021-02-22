@@ -29,19 +29,19 @@ key experience in designing systems on both the frontend and backend using today
 
 Office hours will start **Friday, February 26**. Come by if you have any questions about homework, lecture material, etc.
 
-Sam: Monday 4:00-5:00pm
+Sam: Monday 4:00-5:00pm [Zoom Link](https://cornell.zoom.us/j/9389498164?pwd=cjI1Y1VBZGt6eTlBaWFQVnk0QTBrUT09)
 
-Peter: Tuesday 3:00-4:00pm
+Peter: Tuesday 3:00-4:00pm [Zoom Link](https://cornell.zoom.us/j/97666857025?pwd=MjB5NWZSZW1xTFVZZzJ1RStmUEpkZz09)
 
-Jessica: Thursday 2:00-3:00pm
+Jessica: Thursday 2:00-3:00pm [Zoom Link](https://cornell.zoom.us/j/91554333869?pwd=L29DL21zYWdtUStDYWludGY4alVBUT09)
 
-Tony: Thursday 3:00-4:00pm
+Tony: Thursday 3:00-4:00pm [Zoom Link](https://cornell.zoom.us/j/91756140189?pwd=MnlyOGF2c0ZUcjJJUURVMTJ4K0s5QT09)
 
-Enoch: Thursday 5:00-6:00pm
+Enoch: Thursday 5:00-6:00pm [Zoom Link](https://cornell.zoom.us/j/2233738601?pwd=Y2pVY2VqUmxRbjFYR01HR3Z1ZVBHdz09)
 
-Jason: Friday 10:00-11:00am
+Jason: Friday 10:00-11:00am [Zoom Link](https://cornell.zoom.us/j/5920726340?pwd=SzY3WSt5WmZDYUJsOWx5RTNXS0JHZz09)
 
-Becky: Friday 1:00-2:00pm
+Becky: Friday 1:00-2:00pm [Zoom Link](https://cornell.zoom.us/j/96236622719?pwd=cXg4TXg3RjBxSnA5Kzh0V3NFNlQ4QT09)
 
 If you are unable to make any of those office hours times, you can ask questions on Piazza or get in touch with Becky or Peter.
 
