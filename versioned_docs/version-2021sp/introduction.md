@@ -27,11 +27,27 @@ key experience in designing systems on both the frontend and backend using today
 
 ## When are office hours?
 
-TBD
+Office hours will start **Friday, February 26**. Come by if you have any questions about homework, lecture material, etc.
+
+Sam: Monday 4:00-5:00pm [Zoom Link](https://cornell.zoom.us/j/9389498164?pwd=cjI1Y1VBZGt6eTlBaWFQVnk0QTBrUT09)
+
+Peter: Tuesday 3:00-4:00pm [Zoom Link](https://cornell.zoom.us/j/97666857025?pwd=MjB5NWZSZW1xTFVZZzJ1RStmUEpkZz09)
+
+Jessica: Thursday 2:00-3:00pm [Zoom Link](https://cornell.zoom.us/j/91554333869?pwd=L29DL21zYWdtUStDYWludGY4alVBUT09)
+
+Tony: Thursday 3:00-4:00pm [Zoom Link](https://cornell.zoom.us/j/91756140189?pwd=MnlyOGF2c0ZUcjJJUURVMTJ4K0s5QT09)
+
+Enoch: Thursday 5:00-6:00pm [Zoom Link](https://cornell.zoom.us/j/2233738601?pwd=Y2pVY2VqUmxRbjFYR01HR3Z1ZVBHdz09)
+
+Jason: Friday 10:00-11:00am [Zoom Link](https://cornell.zoom.us/j/5920726340?pwd=SzY3WSt5WmZDYUJsOWx5RTNXS0JHZz09)
+
+Becky: Friday 1:00-2:00pm [Zoom Link](https://cornell.zoom.us/j/96236622719?pwd=cXg4TXg3RjBxSnA5Kzh0V3NFNlQ4QT09)
+
+If you are unable to make any of those office hours times, you can ask questions on Piazza or get in touch with Becky or Peter.
 
 ## Is there a lecture schedule?
 
-Lectures will begin on February 25th, 2021, but this is a tentative schedule for the topics that will be covered (subject to change). We are holding the last lecture on 4/29, well before finals week. Also, note that none of these classes will be affected by the wellness days.
+Lectures will begin on February 25th, 2021. Here is a tentative schedule for the topics that will be covered (subject to change). We are holding the last lecture on 4/29, well before finals week. Also, note that none of these classes will be affected by the wellness days.
 
 Lecture 1: Syllabus, JavaScript + Intro to TypeScript and Node.js
 
@@ -53,7 +69,12 @@ Lecture 10: Deployment, Authentication, and Security
 
 ## Where are assignments released and submitted?
 
-TBD
+Assignments will be released on [here](/docs/assignments) every Thursday. Every assignment
+is due right before class of the following week at 3:59pm unless otherwise stated. You will have 6 slip days total to use on
+the assignments, but for each assignment, you may only use up to 2 slip days. Use these judiciously because we will not be handling extensions outside of slip days.
+
+Assignments must be submitted on CMS. We will not take submissions emailed to us. If you are not on the CMS please email
+Peter (plw53@cornell.edu) or Becky (bh456@cornell.edu)
 
 ## What will be taught?
 
