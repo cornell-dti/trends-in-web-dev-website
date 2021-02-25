@@ -55,7 +55,7 @@ Lecture 2: More on Node, HTTP Methods, Express Routes
 
 Lecture 3: NoSQL Databases (Firebase)
 
-Lecture 4: Functional Programming in JavaScript / TypeScript (map, filter, reduce)
+Lecture 4: Modern JS (ES6+) and Functional Programming in JavaScript / TypeScript
 
 Lecture 5: React (Components, Tooling, and JSX)
 
@@ -65,7 +65,9 @@ Lecture 7: React (Hooks and Best Practices)
 
 Lecture 8: Connecting the Frontend + Backend (Data Fetching) and Yarn Workspaces
 
-Lecture 10: Deployment, Authentication, and Security
+Lecture 9: Deployment, Authentication, and Security
+
+Lecture 10: Student Choice!
 
 ## Where are assignments released and submitted?
 
