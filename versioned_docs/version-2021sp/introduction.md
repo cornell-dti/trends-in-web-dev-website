@@ -27,7 +27,7 @@ key experience in designing systems on both the frontend and backend using today
 
 ## When are office hours?
 
-Office hours will start **Friday, February 26**. Come by if you have any questions about homework, lecture material, etc.
+Office hours will start **Friday, March 5**. Come by if you have any questions about homework, lecture material, etc.
 
 Sam: Monday 4:00-5:00pm [Zoom Link](https://cornell.zoom.us/j/9389498164?pwd=cjI1Y1VBZGt6eTlBaWFQVnk0QTBrUT09)
 
