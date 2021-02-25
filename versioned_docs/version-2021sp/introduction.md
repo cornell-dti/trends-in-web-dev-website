@@ -27,7 +27,7 @@ key experience in designing systems on both the frontend and backend using today
 
 ## When are office hours?
 
-Office hours will start **Friday, February 26**. Come by if you have any questions about homework, lecture material, etc.
+Office hours will start **Friday, March 5**. Come by if you have any questions about homework, lecture material, etc.
 
 Sam: Monday 4:00-5:00pm [Zoom Link](https://cornell.zoom.us/j/9389498164?pwd=cjI1Y1VBZGt6eTlBaWFQVnk0QTBrUT09)
 
@@ -55,7 +55,7 @@ Lecture 2: More on Node, HTTP Methods, Express Routes
 
 Lecture 3: NoSQL Databases (Firebase)
 
-Lecture 4: Functional Programming in JavaScript / TypeScript (map, filter, reduce)
+Lecture 4: Modern JS (ES6+) and Functional Programming in JavaScript / TypeScript
 
 Lecture 5: React (Components, Tooling, and JSX)
 
@@ -65,7 +65,9 @@ Lecture 7: React (Hooks and Best Practices)
 
 Lecture 8: Connecting the Frontend + Backend (Data Fetching) and Yarn Workspaces
 
-Lecture 10: Deployment, Authentication, and Security
+Lecture 9: Deployment, Authentication, and Security
+
+Lecture 10: Student Choice!
 
 ## Where are assignments released and submitted?
 
@@ -110,7 +112,7 @@ Two credits S/U, although students are allowed to audit this course for 0 credit
 
 ## What's the grading policy?
 
-Attendance - 20% (based on weekly lecture quizzes, can miss 1 of 11 without penalty)
+Attendance - 20% (based on weekly lecture quizzes, can miss 1 of 10 without penalty)
 
 Filling out Feedback - 10%
 
