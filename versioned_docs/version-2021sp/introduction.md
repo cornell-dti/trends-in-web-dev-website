@@ -37,7 +37,7 @@ Jessica: Thursday 2:00-3:00pm [Zoom Link](https://cornell.zoom.us/j/91554333869?
 
 Tony: Thursday 3:00-4:00pm [Zoom Link](https://cornell.zoom.us/j/91756140189?pwd=MnlyOGF2c0ZUcjJJUURVMTJ4K0s5QT09)
 
-Enoch: Thursday 5:00-6:00pm [Zoom Link](https://cornell.zoom.us/j/2233738601?pwd=Y2pVY2VqUmxRbjFYR01HR3Z1ZVBHdz09)
+Enoch: Thursday 5:30-6:30pm [Zoom Link](https://cornell.zoom.us/j/2233738601?pwd=Y2pVY2VqUmxRbjFYR01HR3Z1ZVBHdz09)
 
 Jason: Friday 10:00-11:00am [Zoom Link](https://cornell.zoom.us/j/5920726340?pwd=SzY3WSt5WmZDYUJsOWx5RTNXS0JHZz09)
 
