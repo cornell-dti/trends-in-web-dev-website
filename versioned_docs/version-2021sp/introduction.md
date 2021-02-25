@@ -112,7 +112,7 @@ Two credits S/U, although students are allowed to audit this course for 0 credit
 
 ## What's the grading policy?
 
-Attendance - 20% (based on weekly lecture quizzes, can miss 1 of 11 without penalty)
+Attendance - 20% (based on weekly lecture quizzes, can miss 1 of 10 without penalty)
 
 Filling out Feedback - 10%
 
