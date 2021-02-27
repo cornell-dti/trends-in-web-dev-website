@@ -3,7 +3,7 @@ id: lecture1
 title: Lecture 1
 ---
 
-Lecture Video will be posted here after lecture.
+[Lecture Video](https://drive.google.com/file/d/1VCksbMae6-o_fYkHrdqa6aZrsr2_mqq6/view?usp=sharing)
 
 [Lecture Slides](https://docs.google.com/presentation/d/1Wio16ZI8E5bF3R-RrDpQx9ePqjHIbBvGYyOVgE9MESA/edit?usp=sharing)
 
