@@ -49,10 +49,6 @@ Example: a request to `/book/peter` will send "peter is really cool!" to the fro
 
 To test your code, run `ts-node index.ts`. Your server should be up and running (if not, debug!) and you should be able to navigate to `localhost:<PORT>/book` where PORT is the port number express is listening for requests on (we usually use `8080`) and specify query/path parameters that give the intended results.
 
-## Getting help
-
-If you're stuck, we have [TA office hours](/docs/introduction#when-are-office-hours) every week day so feel free to come and ask questions! In addition, you can join the [Piazza](http://piazza.com/cornell/fall2020/info1998section604) and post your question. Please make it public if it's just a general question with no code screenshots, otherwise make it private.
-
 ## Submission
 
 Please submit to CMS the `index.ts` file in which you've defined your routes by **Thursday 3/11 at 3:59pm**. You are allowed max 3 slip days (out of 6 total for all assignments and the final project) per an assignment.
@@ -80,4 +76,4 @@ Extra aside: you might have heard of REST APIs: they all follow certain design p
 
 ### I still need help. Where should I go?
 
-Check out the office hours schedule on [our syllabus](/docs/introduction#when-are-office-hours).
+Check out the office hours schedule on [our syllabus](/docs/introduction#when-are-office-hours). In addition, you can join the [Ed](https://edstem.org/us/courses/4868/discussion/) and post your question.
