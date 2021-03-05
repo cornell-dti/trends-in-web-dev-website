@@ -379,6 +379,14 @@ app.listen(8080, function () {
 });
 ```
 
+Add the following to your `package.json`:
+
+```json
+// other package.json properties...
+"scripts": {
+  "start": "ts-node index.ts"
+```
+
 Now when you go to `localhost:8080/home` you should see `Welcome home!`. At `localhost:8080/users/<your_name>/<your_last_name>` or `localhost:8080/users/?name=<your_name>&lname=<your_last_name>` you should see `Hello <your_name> <your_last_name>`.
 
 **This was Node.js (and Express)!**
