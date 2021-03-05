@@ -11,11 +11,11 @@ title: Lecture 2
 
 [Join the Ed!](https://edstem.org/us/courses/4868/discussion/) (🦀Piazza is gone🦀)
 
-*Topics: Node.js, Express, HTTP Methods*
+_Topics: Node.js, Express, HTTP Methods_
 
 ## How to build a web app
 
-*Intro to Node.js and Yarn*
+_Intro to Node.js and Yarn_
 
 ### How websites work
 
@@ -56,7 +56,7 @@ All of the code is available to you to view on [Github](https://github.com/nodej
 
 #### Event Loop
 
-- Client can send requests into the event loop 
+- Client can send requests into the event loop
 - Register callback to server when doing things that might take time (ie. search, query, intensive computation)
 - After operation completes, callback will fire and return to requests
 
@@ -68,22 +68,25 @@ All of the code is available to you to view on [Github](https://github.com/nodej
 - Extremely performant
 - Asynchronous and non-blocking
 - NPM (node package manager)
-  - a directory of many libraries and packages 
+  - a directory of many libraries and packages
   - access to huge libraries to use in projects and build upon
 
 #### Node Package Manager (NPM)
 
 NPM is a dependency manager, like pip for python or maven for java. Think of node packages as recipes made by other people you want to use in your site.
-Also part of the open sourced community! 
+Also part of the open sourced community!
 
 #### package.json
 
 - Tracks which node packages you use
 - **Dependencies**: packages needed at run-time
+
 ```
 npm install --save <pkg>
 ```
+
 - **devDependencies**: packages used during development (before pushing to production)
+
 ```
 npm install --save-dev <pkg>
 ```
@@ -97,6 +100,7 @@ npm install --save-dev <pkg>
 #### NPM vs Yarn commands
 
 - NPM
+
 ```
 npm init
 npm install <pkg_name>
@@ -104,7 +108,9 @@ npm uninstall <pkg_name>
 npm update <pkg_name>
 npm audit
 ```
+
 - Yarn
+
 ```
 yarn init
 yarn add <pkg_name>
@@ -112,17 +118,19 @@ yarn remove
 yarn upgrade
 yarn audit
 ```
+
 - Very similar
 - Audit: checks for vulnerabilities in dependencies
 
 ## Express
 
-*Intro to **backend routes***
+_Intro to **backend routes**_
 
 ### HTTP Methods
 
 When you want to visit a website in your browser, you send a request to the server asking for information.
-- Types 
+
+- Types
   - POST
   - GET
   - PUT
@@ -132,11 +140,10 @@ When you want to visit a website in your browser, you send a request to the serv
 - Definitions
   - **POST**: used to submit an entity to the specified resource, often causing a change in state or side effects on server
   - **GET**: requests a representation of the specified resource
-    - Should only *retrieve* data
-  - **PUT**: similar to POST request (uploads data), but *idempotently* 
+    - Should only _retrieve_ data
+  - **PUT**: similar to POST request (uploads data), but _idempotently_
     - updates data
     - ie. editing a Facebook post
-
 
 ### Express
 
@@ -147,15 +154,14 @@ When you want to visit a website in your browser, you send a request to the serv
 const express = require('express');
 const app = express();
 
-// respond with "hello world" when a GET request is made to 
+// respond with "hello world" when a GET request is made to
 // the homepage (root of website)
-app.get('/', function(req, res) {
- res.send('hello world');
+app.get('/', function (req, res) {
+  res.send('hello world');
 });
-app.listen(8080, function() { 
-  console.log("Listening on port 8080"); 
+app.listen(8080, function () {
+  console.log('Listening on port 8080');
 });
-
 ```
 
 ### Responding to Requests
@@ -184,16 +190,17 @@ const app = express();
 app.get('/', function (req, res) {
   res.send('hello world');
 });
-
 ```
 
 #### Route Parameters and Query Parameters
 
 `/route/some-param`
-  - typically used to identify a **specific** resource
+
+- typically used to identify a **specific** resource
 
 `/route?param=value`
-  - typically used to **sort/filter** through resources
+
+- typically used to **sort/filter** through resources
 
 #### Route Parameters in Express
 
@@ -219,27 +226,31 @@ app.get('/messages/:messageId', (req, res) => {
 #### Query Parameters in Express
 
 We can also send information in a request through query parameters.
-```js
-app.get('/users/', function(req, res){
-  res.send(req.query.id);
-})
-```
-- Example request: 
-`/users?id=samwise`
-  - `req.query.id` will be set to "samwise"
 
+```js
+app.get('/users/', function (req, res) {
+  res.send(req.query.id);
+});
+```
+
+- Example request:
+  `/users?id=samwise`
+  - `req.query.id` will be set to "samwise"
 
 #### Multiple Query Parameters
 
 We can define multiple query parameters
+
 ```js
-app.get('/products', function(req, res) {
+app.get('/products', function (req, res) {
   const name = req.query['name'];
   const maxPriceFilter = req.query['max-price'];
   // do some computation on the backend based on this data
 });
 ```
+
 Notice we can treat queries like objects (ie. the `req.query['name']` syntax).
+
 - Example request: `/products?name=apples&max-price=10`
 
 ## How to set up a Node Project
@@ -283,6 +294,7 @@ You can find more packages to use on [npmjs.com](https://www.npmjs.com/).
 ### How to use and interpret package.json
 
 `package.json` contains instructions for necessary packages and scripts that you can use to run your code.
+
 - Dependencies
   - Packages we use in code
   - if not installed on local end, this will cause an error
@@ -378,6 +390,5 @@ Add the following to your `package.json`:
 This will allow you to run `ts-node` without having it installed globally (which is bad practice). Now you can run the app with `yarn start`.
 
 Now when you go to `localhost:8080/home` you should see `Welcome home!`. At `localhost:8080/users/<your_name>/<your_last_name>` or `localhost:8080/users/?name=<your_name>&lname=<your_last_name>` you should see `Hello <your_name> <your_last_name>`.
-
 
 **This was Node.js (and Express)!**
