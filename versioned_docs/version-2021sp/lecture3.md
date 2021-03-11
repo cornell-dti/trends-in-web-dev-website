@@ -7,6 +7,8 @@ Lecture Video
 
 Lecture Slides
 
+[Assignment 2](/docs/assignment2) (due 3/18 3:59 PM on CMS)
+
 [Install Postman](https://www.postman.com/downloads/)
 
 ## Before the lecture
