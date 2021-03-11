@@ -3,17 +3,17 @@ id: lecture3
 title: Lecture 3
 ---
 
-lecture video
+Lecture Video
 
-lecture slides
+Lecture Slides
 
 [Install Postman](https://www.postman.com/downloads/)
 
 ## Before the lecture
 
-### create `tsconfig.json`
+### Create `tsconfig.json`
 
-From now on, we will be using a `tsconfig.json` file within every Node project we create (a recap on how to do that is below this section). Essentially, the `tsconfig.json` is a file at the root of a Node project which indicates it is using TypeScript, and allows us to configure the TypeScript compiler. If you'd like to follow the leccture synchronously, you can put the following chunk of code into the root directory of your lecture 3 project. If you're more curious about how the file works, you can refer [to this link](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html).
+From now on, we will be using a `tsconfig.json` file within every Node project we create (a recap on how to do that is below this section). Essentially, the `tsconfig.json` is a file at the root of a Node project which indicates it is using TypeScript, and allows us to configure the TypeScript compiler. If you'd like to follow the lecture synchronously, you can put the following chunk of code into the root directory of your lecture 3 project. If you're more curious about how the file works, you can refer [to this link](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html).
 
 ```json
 {
@@ -37,8 +37,8 @@ From now on, we will be using a `tsconfig.json` file within every Node project w
 }
 ```
 
-### Install Firebase
+### Install Postman
 
-Use the link above to install Firebase.
+Use the link above to install Postman.
 
 The rest of the notes is coming soon!
