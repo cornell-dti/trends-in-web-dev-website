@@ -105,6 +105,13 @@ Lots of points.
 
 ## FAQ
 
+### I can't initialize my app and nothing is working from the get-go.
+
+We're using Google's Cloud Firestore (which stores data as collections of documents)
+and not the older Realtime Database (which stores the data in a big JSON tree) for
+this class, so make sure you chose the right option. Otherwise, make sure you
+have the `serviceAccount.json` in the same directory as your src files.
+
 ### Alphabetic sorting isn't working for me. Why?
 
 This might happen because of the actual int value of ASCII characters conflicting
