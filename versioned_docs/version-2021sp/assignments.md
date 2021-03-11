@@ -3,8 +3,11 @@ id: assignments
 title: Assignments
 ---
 
-Assignments will be released here after lecture!
+Assignments will be released here after lecture! There will be 5 assignments total,
+as well as a final project spanning the last few weeks of the class.
 
 You are allowed max 3 slip days (out of 6 total for all assignments and the final project) per an assignment.
 
-[Assignment 1](/docs/assignment1): Due on CMS **3/11 at 3:59pm**
+[Assignment 1](/docs/assignment1): Due on CMS **3/13 at 3:59pm** (Wellness days)
+
+[Assignment 2](/docs/assignment2): Due on CMS **3/18 at 3:59pm**
