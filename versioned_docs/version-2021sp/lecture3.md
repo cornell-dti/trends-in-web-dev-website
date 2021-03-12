@@ -3,9 +3,9 @@ id: lecture3
 title: Lecture 3
 ---
 
-Lecture Video
+[Lecture Video](https://drive.google.com/file/d/1DYpGQdCfKa2XnOJjuJ2kjhVG-jg5hmZn/view?usp=sharing)
 
-Lecture Slides
+[Lecture Slides](https://docs.google.com/presentation/d/1CuHHTdguCDM3D4vZsoity0O8L43vLeTxvOACjnvem0A/edit?usp=sharing)
 
 [Assignment 2](/docs/assignment2) (due 3/18 3:59 PM on CMS)
 
