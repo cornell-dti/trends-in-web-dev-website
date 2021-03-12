@@ -64,17 +64,17 @@ Let's say we have this `addSong` endpoint:
 
 ```ts title="index.ts"
 app.post('/addSong', (req, res) => {
-  const song: songtype = { name: req.body.name, rating: req.body.rating };
+  const song: Song = { name: req.body.name, rating: req.body.rating };
   console.log(song);
   songs.push(song);
   res.send(`Song ${req.body.name} added!`);
 });
 ```
 
-where `songtype` is:
+where `Song` is the type:
 
 ```ts title="index.ts"
-type songtype = {
+type Song = {
   name: string;
   rating: number;
 };
