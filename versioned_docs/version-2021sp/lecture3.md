@@ -274,37 +274,46 @@ flexibility when writing your backend code.
 import admin from 'firebase-admin';
 import express from 'express';
 import bodyParser from 'body-parser';
+
 // require the service account: note the file path
 const serviceAccount = require('../service-account.json');
 // initialize the firebase app
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
 });
+
 const db = admin.firestore();
 const app = express();
 const port = 8080;
 // allow request body parsing
 app.use(bodyParser.json());
+
 // check connections
 app.get('/', (_, res) => {
   res.send('connected!');
 });
+
 // create a post type and post with id
 type Post = {
   content: string;
   name: string;
 };
+
 type PostWithID = Post & {
   id: string;
 };
+
 // CRUD with firestore
 let posts1: Post[] = [{ content: 'I miss wellness days', name: 'Becky' }];
+
 // posts collection from db
 const postsCollection = db.collection('posts');
+
 // GET requests: get the songs
 app.get('/posts', (_, res) => {
   res.send(posts1);
 });
+
 // use firebase instead
 app.get('/getPosts', async (_, res) => {
   const postsSnapshot = await postsCollection.get();
@@ -317,6 +326,7 @@ app.get('/getPosts', async (_, res) => {
   }
   res.send(posts);
 });
+
 // read posts by name
 app.get('/posts/:name', async function (req, res) {
   const name = req.params.name;
@@ -330,6 +340,7 @@ app.get('/posts/:name', async function (req, res) {
   }
   res.send(posts);
 });
+
 // read posts by id
 app.get('/postById/:id', async function (req, res) {
   const id = req.params.id;
@@ -337,6 +348,7 @@ app.get('/postById/:id', async function (req, res) {
   const post: PostWithID = postsSnapshot.data() as PostWithID;
   res.send(post);
 });
+
 // sort posts by name
 app.get('/postsorted', async function (req, res) {
   const postsSnapshot = await postsCollection.orderBy('name', 'desc').get();
@@ -349,12 +361,14 @@ app.get('/postsorted', async function (req, res) {
   }
   res.send(posts);
 });
+
 // POST method: create a new post
 app.post('/addPost', (req, res) => {
   const post: Post = req.body;
   posts1.push(post);
   res.send(`Post created by ${req.body.name}!`);
 });
+
 // generate a document with a random name to store the post's data
 app.post('/addPost2', async function (req, res) {
   const post: Post = req.body;
@@ -362,6 +376,7 @@ app.post('/addPost2', async function (req, res) {
   await postDoc.set(post);
   res.send(postDoc.id);
 });
+
 // POST method: update an existing post
 app.post('/updatePost', (req, res) => {
   for (let post of posts1) {
@@ -372,6 +387,7 @@ app.post('/updatePost', (req, res) => {
   console.log(posts1);
   res.send('content updated!');
 });
+
 // update by id
 app.post('/updatePost2/:id', async function (req, res) {
   const newPost: Post = req.body;
@@ -379,6 +395,7 @@ app.post('/updatePost2/:id', async function (req, res) {
   await postsCollection.doc(id).update(newPost);
   res.send('updated!');
 });
+
 // DELETE methdod: delete a post
 app.delete('/removePost', (req, res) => {
   const newPosts = [];
@@ -390,11 +407,13 @@ app.delete('/removePost', (req, res) => {
   posts1 = newPosts;
   res.send(`Post by ${req.body.name} deleted!`);
 });
+
 // delete by id
 app.delete('/removePost/:id', async function (req, res) {
   const id = req.params.id;
   await postsCollection.doc(id).delete();
   res.send('deleted!');
 });
+
 app.listen(port, () => console.log('App started!'));
 ```
