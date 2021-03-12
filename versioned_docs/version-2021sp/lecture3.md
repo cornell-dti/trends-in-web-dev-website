@@ -211,8 +211,8 @@ We will focus on NoSQL
   queries.
 - SQL databases tend to be less expensive for smaller datasets, but also less
   flexible.
-- SQL has strong consistency whereas NoSQL has eventual consistency (i.e. there
-  may be some delay in getting the response back)
+- SQL leans towards strong consistency whereas NoSQL favors eventual consistency
+  (i.e. there may be some delay in getting the response back)
 - SQL databases tend to be vertically scalable (need more computing power on one
   machine to store more data) while NoSQL databases tend to be horizontally
   scalable (can distribute storage and compute power on multiple machines)
