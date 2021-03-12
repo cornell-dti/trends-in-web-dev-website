@@ -213,9 +213,9 @@ We will focus on NoSQL
   flexible.
 - SQL has strong consistency whereas NoSQL has eventual consistency (i.e. there
   may be some delay in getting the response back)
-- SQL is vertically scalable (need more computing power on one machine to store
-  more data) while NoSQL is horizontally scalable (can distribute storage and
-  compute power on multiple machines)
+- SQL databases tend to be vertically scalable (need more computing power on one
+  machine to store more data) while NoSQL databases tend to be horizontally
+  scalable (can distribute storage and compute power on multiple machines)
 
 ### What is Firebase?
 
