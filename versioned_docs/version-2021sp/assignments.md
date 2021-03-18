@@ -11,3 +11,5 @@ You are allowed max 3 slip days (out of 6 total for all assignments and the fina
 [Assignment 1](/docs/assignment1): Due on CMS **3/13 at 3:59pm** (Wellness days)
 
 [Assignment 2](/docs/assignment2): Due on CMS **3/18 at 3:59pm**
+
+[Assignment 3](/docs/assignment3): Due on CMS **3/25 at 3:59pm**
