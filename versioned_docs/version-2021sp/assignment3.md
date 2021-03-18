@@ -104,7 +104,7 @@ Take a look at [this documentation](https://developer.mozilla.org/en-US/docs/Web
 const doggos = [
   { name: 'Sparky', age: 3.35, breed: 'Pomeranian Husky' },
   { name: 'Oreo', age: 5.42, breed: 'Dalmatian' },
-  { name: 'Stella', age: 4.30, breed: 'Alaskan Klee Kai' },
+  { name: 'Stella', age: 4, breed: 'Alaskan Klee Kai' },
 ];
 
 makeSentences(doggos);
@@ -116,7 +116,7 @@ should output
 [
   'Sparky is 3.4 years old and is a Pomeranian Husky',
   'Oreo is 5.4 years old and is a Dalmatian',
-  'Stella is 4.3 years old and is a Alaskan Klee Kai',
+  'Stella is 4.0 years old and is a Alaskan Klee Kai',
 ];
 ```
 
