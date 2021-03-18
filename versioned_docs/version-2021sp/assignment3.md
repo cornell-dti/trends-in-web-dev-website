@@ -90,7 +90,7 @@ documentation, methods are often denoted like: `Type.prototype.method()`
 
 Remember, anything in JavaScript/TypeScript can be an object!
 
-So, we can do: `5.toExponential(10)` or `let x = 5; x.toExponential()`
+So, we can do: `(5).toExponential(10)` or `let x = 5; x.toExponential()`
 
 Your goal is to round the age to the nearest tenth.
 
