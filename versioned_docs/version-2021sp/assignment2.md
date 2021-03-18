@@ -25,7 +25,7 @@ create a new Firestore database.
 ## Part 2: Manually make a collection
 
 After the Firestore database is created, make a new collection in the database
-called "Songs". Within this collection, create a document called "song1".
+called "songs". Within this collection, create a document called "song1".
 This document will have three fields, "name", "artist", and "rating", with
 respective values "Never Gonna Give You Up", "Rick Astley", and your
 personal rating of the song out of 5. At this point, your database should look
@@ -83,9 +83,7 @@ We will be passing the ID of the song in the query parameters (`req.query`)
 as a parameter called `id`.
 
 For example, a request to `/deleteSong?id=song1` would delete the song
-you created in the first part of the assignment (But if you do try deleting
-that specific one, make sure you add it back, because we will be testing
-that it is there).
+you created in the first part of the assignment.
 
 :::tip
 Don't know where to start? Reference the [live coding demo example](/docs/lecture3#SampleCode) from lecture 3! Also, get help in [office hours](introduction#when-are-office-hours)!
@@ -95,8 +93,7 @@ Don't know where to start? Reference the [live coding demo example](/docs/lectur
 
 Submit your assignment as a zip containing your `index.ts`, `package.json`, and
 `yarn.lock` files. When you submit your code, comment out the initializeApp statement
-in the code so we can test it against our own database. Don't worry, we won't
-fill your database with junk! 😊😊😊
+in the code so we can test it against our own database.
 
 :::caution
 DO NOT submit your `node_modules`. We WILL deduct points for this.
@@ -122,3 +119,7 @@ same case, and it'll be enough for us.
 
 Make sure to include the `tsconfig.json` from the [lecture 3 notes](/docs/lecture3)
 in your project directory.
+
+### Do we need to submit our `service-account.json` along with the other stuff?
+
+We're glad you trust us so much
