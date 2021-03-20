@@ -8,7 +8,6 @@ learn about some cool JavaScript/Typescript fundamentals!
 
 ALL questions in this assignment MUST be done using `.map`, `.filter`, or
 `.reduce`. We will give you no credit for an approach that is not functional.
-You don't need for loops to solve these problems!
 
 ALL functions must also be defined using **arrow functions**:
 
