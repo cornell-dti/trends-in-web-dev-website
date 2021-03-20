@@ -93,21 +93,6 @@ The snippet above tells `express` to listen for `POST` requests at endpoint
 `/addSong`. `req.body` is a JavaScript object, and we access its properties
 `req.body.name` and `req.body.rating` to add a new song to our array of songs.
 
-Before this snippet actually works, we need to import something called
-`body-parser`. This lets our express server to actually read `req.body`
-properly. To do this, we will add the following near the top of our `.ts` file:
-
-```ts title="index.ts"
-// To add `body-parser` to your project, run `yarn add body-parser`
-import bodyParser from 'body-parser';
-
-// ...
-// const app = express();
-// ...
-
-app.use(bodyParser.json());
-```
-
 Now, we should have a working `POST` endpoint that does something with the
 request body.
 
@@ -273,7 +258,6 @@ flexibility when writing your backend code.
 ```typescript title="index.ts"
 import admin from 'firebase-admin';
 import express from 'express';
-import bodyParser from 'body-parser';
 
 // require the service account: note the file path
 const serviceAccount = require('../service-account.json');
@@ -286,7 +270,7 @@ const db = admin.firestore();
 const app = express();
 const port = 8080;
 // allow request body parsing
-app.use(bodyParser.json());
+app.use(express.json());
 
 // check connections
 app.get('/', (_, res) => {
