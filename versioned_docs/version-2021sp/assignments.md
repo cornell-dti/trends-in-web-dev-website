@@ -13,3 +13,9 @@ You are allowed max 3 slip days (out of 6 total for all assignments and the fina
 [Assignment 2](/docs/assignment2): Due on CMS **3/18 at 3:59pm**
 
 [Assignment 3](/docs/assignment3): Due on CMS **3/25 at 3:59pm**
+
+[Assignment 4](/docs/assignment4): Due on CMS **4/1 at 3:59pm**
+
+Assignment 5 (unreleased): Due on CMS **4/8 at 3:59pm**
+
+The class is scheduled to finish well before finals week.

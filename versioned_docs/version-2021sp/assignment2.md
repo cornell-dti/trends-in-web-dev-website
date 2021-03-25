@@ -122,4 +122,5 @@ in your project directory.
 
 ### Do we need to submit our `service-account.json` along with the other stuff?
 
-We're glad you trust us so much
+We're glad you trust us so much, but we'll be testing your endpoints with our
+own `service-account.json` and Firestore database, so no need to include it.
