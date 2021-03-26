@@ -3,7 +3,7 @@ id: lecture5
 title: Lecture 5
 ---
 
-Lecture Video will be released after lecture.
+[Lecture Video](https://drive.google.com/file/d/1az7P1eYb42oSr8aF1-30lCED9WoRWyVh/view?usp=sharing)
 
 [Lecture Slides](https://docs.google.com/presentation/d/1EkK8zboXxakJYecXWlGR93NvyTevfyy6byxpXZEQVgI/edit?usp=sharing)
 
