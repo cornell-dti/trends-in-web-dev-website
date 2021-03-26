@@ -53,7 +53,7 @@ const ContactCard = (props: Props) => (
 ```
 
 Just calling the input `props` is not good for documentation purpose, so we
-usually use the object destruct syntax to make it more explicit:
+usually use object destructuring to make it more explicit:
 
 ```tsx title="ContactCard.tsx"
 import React from 'react';
@@ -131,7 +131,9 @@ renders your component into the DOM element that has id `root`.
 Imagine you are writing a contacts app and you need to implement an editor.
 
 Unlike the previous components, you need to maintain state. In React, you will
-need `hooks`.
+need `hooks`. Hooks are functions that use state and lifecycle methods inside
+functional components. The `useState` hook is the hook for maintaining state.
+Note that the general naming convention of a hook is `useXXXX`.
 
 ```tsx
 import { useState, ChangeEvent } from 'react';
@@ -210,4 +212,7 @@ const ListBySimpleMapWithSpread = () => (
 
 Note that we always need a `key` prop. Without this, React will give you
 warnings in the console. React needs a unique `key` for each item in the list to
-help it avoid rerendering everything when only one item in the list changes
+help it avoid rerendering everything when only one item in the list changes.
+In this particular example, you should only use `name` as the key if you know
+that the property `name` is unique. However, if there are multiple objects with
+the same name in the list that are used as a key, it would confuse React.
