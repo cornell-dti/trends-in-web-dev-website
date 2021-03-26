@@ -30,7 +30,7 @@ const ContactCard = ({ name, githubLink }: Props) => (
 
 ### Functional Component
 
-The simplest component in React is functional component. A functional component
+The simplest component in React is a functional component. A functional component
 does not have any internal state. You can think of it as a function whose inputs
 are some JavaScript object and the output is some HTML code that is generated
 from the data.
