@@ -12,8 +12,6 @@ title: Lecture 5
 ## Your First Component
 
 ```tsx title="ContactCard.tsx"
-import React from 'react';
-
 type Props = { readonly name: string; readonly githubLink: string };
 
 const ContactCard = ({ name, githubLink }: Props) => (
@@ -38,8 +36,6 @@ from the data.
 In React, we call the JavaScript object `props`, so you can see code like this:
 
 ```tsx title="ContactCard.tsx"
-import React from 'react';
-
 type Props = { readonly name: string; readonly githubLink: string };
 
 const ContactCard = (props: Props) => (
@@ -56,8 +52,6 @@ Just calling the input `props` is not good for documentation purpose, so we
 usually use object destructuring to make it more explicit:
 
 ```tsx title="ContactCard.tsx"
-import React from 'react';
-
 type Props = { readonly name: string; readonly githubLink: string };
 
 const ContactCard = ({ name, githubLink }: Props) => (
@@ -73,8 +67,6 @@ const ContactCard = ({ name, githubLink }: Props) => (
 In order for this component to be reused in another file, we need to export it:
 
 ```tsx title="ContactCard.tsx"
-import React from 'react';
-
 type Props = { readonly name: string; readonly githubLink: string };
 
 const ContactCard = ({ name, githubLink }: Props) => (
@@ -93,8 +85,6 @@ React does not care about the arrow function syntax, so you can also write
 it in function definition syntax:
 
 ```tsx title="ContactCard.tsx"
-import React from 'react';
-
 type Props = { readonly name: string; readonly githubLink: string };
 
 function ContactCard ({ name, githubLink }: Props) = (
@@ -113,7 +103,6 @@ For this course, we prefer that you use arrow function syntax.
 ### `index.tsx`
 
 ```tsx title="index.tsx"
-import React from 'react';
 import ReactDOM from 'react-dom';
 import ContactCard from './ContactCard';
 
@@ -169,7 +158,6 @@ You may want to render a list of `YourAwesomeComponent`. Here are some examples
 to show how you can achieve this in different ways.
 
 ```tsx
-import React from 'react';
 // Suppose you have a ContactCard component defined there.
 import ContactCard from './ContactCard';
 
