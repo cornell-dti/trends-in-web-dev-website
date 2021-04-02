@@ -326,7 +326,7 @@ export default App;
 
 Recall containment, which says that the parents don't know their children components beforehand. This brings up some issues when we do need the parents to access some states in the children components. The way we solve this problem is by lifting the states up.
 
-This section was a live demo, adapted from [this tutorial](https://reactjs.org/docs/lifting-state-up.html) in the React docs. In this demo we will create a convertor between Celcius and Fahrenheit. We will create two components, `FahrenheitInput` and `CelsiusInput`. They will each keep a state that stores the current temperature in its corresponding unit. However, this is not enough. Once we change the temperature input in a certain component, we need to update the other so that they will be on the same page. The way we do that is through lifting the states up to store the temperature in `App`. We pass the temperature setter as callbacks to each of the children components.
+This section was a live demo, adapted from [this tutorial](https://reactjs.org/docs/lifting-state-up.html) in the React docs. In this demo we will create a convertor between Celsius and Fahrenheit. We will create two components, `FahrenheitInput` and `CelsiusInput`. They will each keep a state that stores the current temperature in its corresponding unit. However, this is not enough. Once we change the temperature input in a certain component, we need to update the other so that they will be on the same page. The way we do that is through lifting the states up to store the temperature in `App`. We pass the temperature setter as callbacks to each of the children components.
 
 ```tsx title="App.tsx"
 import { useState } from 'react';
@@ -345,7 +345,7 @@ function App() {
         callback={(temp) => setTemperature(temp)}
       />
       <br />
-      <label>Celcius:</label>
+      <label>Celsius:</label>
       <CelsiusInput
         temperature={temperature}
         callback={(temp) => setTemperature(temp)}
