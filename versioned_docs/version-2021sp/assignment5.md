@@ -99,4 +99,4 @@ it in the prop type for each of the child components that need it.
 Unfortunately, TypeScript can't infer the type of your state if you set the initial
 value to simply `[]`, and it assumes that it's just a falsy value. To fix this,
 make sure to parametrize the `useState` hook using the type definition you created;
-for example, `const [state, setState] = useState<myType>([])`.
+for example, `const [state, setState] = useState<myType[]>([])`.
