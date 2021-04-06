@@ -16,10 +16,8 @@ type Props = { readonly name: string; readonly githubLink: string };
 
 const ContactCard = ({ name, githubLink }: Props) => (
   <div>
-    <div>
-      You can reach to {name} at
-      <a href={githubLink}>{githubLink}</a>
-    </div>
+    You can reach {name} at
+    <a href={githubLink}>{githubLink}</a>
   </div>
 );
 ```
@@ -40,10 +38,8 @@ type Props = { readonly name: string; readonly githubLink: string };
 
 const ContactCard = (props: Props) => (
   <div>
-    <div>
-      You can reach to {props.name} at
-      <a href={props.githubLink}>{props.githubLink}</a>
-    </div>
+    You can reach {props.name} at
+    <a href={props.githubLink}>{props.githubLink}</a>
   </div>
 );
 ```
@@ -56,10 +52,8 @@ type Props = { readonly name: string; readonly githubLink: string };
 
 const ContactCard = ({ name, githubLink }: Props) => (
   <div>
-    <div>
-      You can reach to {name} at
-      <a href={githubLink}>{githubLink}</a>
-    </div>
+    You can reach {name} at
+    <a href={githubLink}>{githubLink}</a>
   </div>
 );
 ```
@@ -71,10 +65,8 @@ type Props = { readonly name: string; readonly githubLink: string };
 
 const ContactCard = ({ name, githubLink }: Props) => (
   <div>
-    <div>
-      You can reach to {name} at
-      <a href={githubLink}>{githubLink}</a>
-    </div>
+    You can reach {name} at
+    <a href={githubLink}>{githubLink}</a>
   </div>
 );
 
@@ -87,13 +79,14 @@ it in function definition syntax:
 ```tsx title="ContactCard.tsx"
 type Props = { readonly name: string; readonly githubLink: string };
 
-function ContactCard ({ name, githubLink }: Props) = (
-  <div>
-    <div>You can reach to {name} at
+function ContactCard({ name, githubLink }: Props) {
+  return (
+    <div>
+      You can reach {name} at
       <a href={githubLink}>{githubLink}</a>
     </div>
-  </div>
-);
+  );
+}
 
 export default ContactCard;
 ```
@@ -138,7 +131,7 @@ const NewContact = () => {
   };
   return (
     <div>
-      <div>Name: {name}</div>
+      <p>Name: {name}</p>
       <input
         type="text"
         placeholder="enter the name here"
