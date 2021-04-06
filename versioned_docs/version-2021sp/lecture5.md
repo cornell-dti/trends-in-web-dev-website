@@ -79,7 +79,7 @@ it in function definition syntax:
 ```tsx title="ContactCard.tsx"
 type Props = { readonly name: string; readonly githubLink: string };
 
-function ContactCard ({ name, githubLink }: Props) = {
+function ContactCard({ name, githubLink }: Props) {
   return (
     <div>
       You can reach {name} at
