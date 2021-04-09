@@ -278,12 +278,14 @@ export default App;
 ```tsx title="FilterableProductTable.tsx"
 import { ChangeEvent, useEffect, useState } from 'react';
 import ProductTable, { Product } from './ProductTable';
+
 type SearchProps = {
   readonly filterText: string;
   readonly inStockOnly: boolean;
   readonly handleFilterTextChange: (e: ChangeEvent<HTMLInputElement>) => void;
   readonly handleCheckBoxChange: (e: ChangeEvent<HTMLInputElement>) => void;
 };
+
 const SearchBar = ({
   filterText,
   inStockOnly,
@@ -307,21 +309,26 @@ const SearchBar = ({
     </p>
   </form>
 );
+
 type TableProps = {
   readonly products: Product[];
 };
+
 const FilterableProductTable = ({ products }: TableProps) => {
   const [filterText, setFilterText] = useState('');
   const [inStockOnly, setInStockOnly] = useState(false);
   const [loading, setLoading] = useState(false);
+
   const handleFilterTextChange = (e: ChangeEvent<HTMLInputElement>) =>
     setFilterText(e.target.value);
   const handleCheckBoxChange = (e: ChangeEvent<HTMLInputElement>) =>
     setInStockOnly(e.target.checked);
+
   useEffect(() => {
     setLoading(true);
     setTimeout(() => setLoading(false), 3000);
   }, [inStockOnly]);
+
   return loading ? (
     <div>loading</div>
   ) : (
@@ -340,6 +347,7 @@ const FilterableProductTable = ({ products }: TableProps) => {
     </div>
   );
 };
+
 export default FilterableProductTable;
 ```
 
