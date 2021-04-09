@@ -80,7 +80,7 @@ export default class Counter extends React.Component {
 ```jsx title="Counter.jsx / Counter.tsx"
 import React, { useState } from 'react';
 
-export default () => {
+const Counter = () => {
   const [count, setCount] = useState(0);
   return (
     <div>
@@ -89,6 +89,8 @@ export default () => {
     </div>
   );
 };
+
+export default Counter;
 ```
 
 Immediately, we notice that the functional component with Hooks method is
