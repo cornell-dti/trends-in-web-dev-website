@@ -3,8 +3,6 @@ id: lecture8
 title: Lecture 8
 ---
 
-Lecture Video will be posted here after lecture
-
 [Lecture Slides](https://docs.google.com/presentation/d/13kdvV_IpDryZ0hh5GT73-ysfX7YUfbIWdubEJIEmFao/edit?usp=sharing)
 
 [Lecture Video](https://drive.google.com/file/d/1YoTS9HenT6w_K4LKZF9r_FOlqh4zhWvi/view?usp=sharing)
