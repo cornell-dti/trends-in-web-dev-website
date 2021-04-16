@@ -7,4 +7,4 @@ title: Lecture 8
 
 Lecture Video will be posted after lecture
 
-[Final Project - Milestone 1 now due 4/27 3:59 PM (Wellness Days)](https://webdev.cornelldti.org/docs/finalproject#milestone-1)
+[Final Project - Milestone 1 now due 4/27 3:59 PM (Wellness Days)](/docs/finalproject#milestone-1)
