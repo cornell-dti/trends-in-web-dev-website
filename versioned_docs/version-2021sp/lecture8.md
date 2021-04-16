@@ -3,4 +3,8 @@ id: lecture8
 title: Lecture 8
 ---
 
-Coming soon!
+[Lecture Slides](https://docs.google.com/presentation/d/13kdvV_IpDryZ0hh5GT73-ysfX7YUfbIWdubEJIEmFao/edit?usp=sharing)
+
+Lecture Video will be posted after lecture
+
+[Final Project - Milestone 1 now due 4/27 3:59 PM (Wellness Days)](/docs/finalproject#milestone-1)
