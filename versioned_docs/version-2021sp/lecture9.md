@@ -3,7 +3,9 @@ id: lecture9
 title: Lecture 9
 ---
 
-[Lecture Video](https://drive.google.com/file/d/1RbBM2LtTTU4R_azVPvVOl1AHC05o_K76/view?usp=sharing)
+[Lecture Video](https://drive.google.com/file/d/1RbBM2LtTTU4R_azVPvVOl1AHC05o_K76/view?usp=sharing) and
+[Additional Video](https://drive.google.com/file/d/1pNgP-2itYyRKrZz_DfIIqbXG47mV1tKV/view?usp=sharing)
+that fixes bugs in the lecture video
 
 [Lecture Slides](https://docs.google.com/presentation/d/1vFG1kfEBulYm02S9UEbIZwD3Vc3pb_2expQpj0jDWYs/edit?usp=sharing)
 
@@ -300,7 +302,7 @@ We fixed the backend by using Firebase Admin's verifyIdToken function to check w
 On the backend, we had the `post` endpoints check the `idtoken` in the request headers.
 
 ```ts title="backend/index.ts"
-app.post("/createProduct", async (req, res) => {
+app.post('/createProduct', async (req, res) => {
   admin
     .auth()
     .verifyIdToken(req.headers.idtoken as string)
@@ -309,7 +311,7 @@ app.post("/createProduct", async (req, res) => {
       const addedProduct = await productsCollection.add(newProduct);
       res.send(addedProduct.id);
     })
-    .catch(() => res.send("auth error"));
+    .catch(() => res.send('auth error'));
 });
 ```
 
@@ -332,10 +334,10 @@ const createProduct = () => {
     .auth()
     .currentUser?.getIdToken(true)
     .then((idtoken) => {
-      fetch("/createProduct", {
-        method: "POST",
+      fetch('/createProduct', {
+        method: 'POST',
         headers: {
-          "content-type": "application/json",
+          'content-type': 'application/json',
           idtoken,
         },
         body: JSON.stringify(newProduct),
@@ -346,7 +348,7 @@ const createProduct = () => {
           setProducts([...products, newProductWithID]);
         });
     })
-    .catch(() => console.log("not authenticated"));
+    .catch(() => console.log('not authenticated'));
 };
 ```
 
@@ -402,10 +404,10 @@ app.use(express.static(path.join(__dirname, '../frontend/build')));
 app.use(express.json());
 const db = admin.firestore();
 
-const productsCollection = db.collection("products");
+const productsCollection = db.collection('products');
 
-app.get("/getProducts", async (_, res) => {
-  const products = await productsCollection.orderBy("category").get();
+app.get('/getProducts', async (_, res) => {
+  const products = await productsCollection.orderBy('category').get();
   res.json(
     products.docs.map(
       (doc): ProductWithID => {
@@ -429,9 +431,10 @@ Notice we are having `app.listen` listen for either port 8080 or `process.env.PO
 Our `backend/package.json` will look like this since we need to compile the TypeScript to JavaScript first. The build step calls `tsc` the TypeScript compiler to compile the `index.ts` to `index.js`. You should see a new `index.js` file after you run `yarn build`.
 
 :::note
+
 1. We are using the same `tsconfig.json` as found in [lecture2](./lecture2#tsconfigjson).
 2. Remember to have all of the packages you installed inside `dependencies`, putting them into `devDependencies` will cause your deployment to crash.
-:::
+   :::
 
 ```json title="backend/package.json"
 {
