@@ -3,7 +3,9 @@ id: lecture9
 title: Lecture 9
 ---
 
-[Lecture Video](https://drive.google.com/file/d/1RbBM2LtTTU4R_azVPvVOl1AHC05o_K76/view?usp=sharing)
+[Lecture Video](https://drive.google.com/file/d/1RbBM2LtTTU4R_azVPvVOl1AHC05o_K76/view?usp=sharing) and
+[Additional Video](https://drive.google.com/file/d/1pNgP-2itYyRKrZz_DfIIqbXG47mV1tKV/view?usp=sharing)
+that fixes bugs in the lecture video
 
 [Lecture Slides](https://docs.google.com/presentation/d/1vFG1kfEBulYm02S9UEbIZwD3Vc3pb_2expQpj0jDWYs/edit?usp=sharing)
 
@@ -72,7 +74,7 @@ and include it in the respective frontend and backend `package.json` like so:
 
 ### Yarn workspaces setup
 
-We will be showing Yarn workspaces setup on our example Songs App we've been working on throughout the semester. After lecture 8, we bridged the frontend and the backend together to fetch data from our API endpoints defined in `backend/index.ts` to show in the frontend UI.
+We will be showing Yarn workspaces setup on our example Filterable Product Table App we've been working on throughout the semester. After lecture 8, we bridged the frontend and the backend together to fetch data from our API endpoints defined in `backend/index.ts` to show in the frontend UI.
 
 We kept these two folders separate and we showed the old way of `cd` into each folder and running Yarn install. Now with workspaces we can manage the package from the root and directly run `yarn install` once to install all frontend and backend dependencies!
 
@@ -291,10 +293,7 @@ For example, if the OfficeHours app recieved a request to edit the times to some
 
 ### Let's hack our app!
 
-Live Coding Demo coming soon!
-
-<!-- Currently commented out
-In lecture, we showed how to hack our very simple application by sending in bad unauthenticated input data. This caused our frontend to break a little bit. Check the lecture video for details!
+In the lecture we didn't have time to show you guys how we could hack our application. However, if you are interested you can do so by sending in bad unauthenticated input data.
 
 We fixed the backend by using Firebase Admin's verifyIdToken function to check whether the user had logged in or not.
 
@@ -303,34 +302,16 @@ We fixed the backend by using Firebase Admin's verifyIdToken function to check w
 On the backend, we had the `post` endpoints check the `idtoken` in the request headers.
 
 ```ts title="backend/index.ts"
-// setup, GET route
-app.post('/createSong', async (req, res) => {
+app.post('/createProduct', async (req, res) => {
   admin
     .auth()
     .verifyIdToken(req.headers.idtoken as string)
     .then(async () => {
-      const newSong = req.body;
-      const addedSong = await songsCollection.add(newSong);
-      res.send(addedSong.id);
+      const newProduct: Product = req.body;
+      const addedProduct = await productsCollection.add(newProduct);
+      res.send(addedProduct.id);
     })
-    .catch(() => {
-      console.log('auth error');
-    });
-});
-
-app.post('/updateRating', async (req, res) => {
-  admin
-    .auth()
-    .verifyIdToken(req.headers.idtoken as string)
-    .then(async () => {
-      const id = req.query.id as string;
-      const rating = req.query.rating;
-      await songsCollection.doc(id).update({ rating });
-      res.send('Song rating updated!');
-    })
-    .catch(() => {
-      console.log('auth error');
-    });
+    .catch(() => res.send('auth error'));
 });
 ```
 
@@ -338,55 +319,38 @@ We call `admin.auth().verifyIdToken(req.headers.idtoken as string)` and only the
 
 #### Frontend
 
-Now when we send the request back, we need to send the idtoken with the request header. So in the `addSong` and `updateRating` methods that called the POST endpoints above, we send call `firebase.auth().currentUser?.getIdToken(true)` to get the user's idtoken. Then we pass it in as a field to `headers` in the fetch. However, if the currentUser is undefined for some reason (what the `?` catches), then we console that the user isn't authenticated. Everything else should be familiar from last lecture.
+Now when we send the request back, we need to send the idtoken with the request header. So in the `createProduct` method that called the POST endpoints above, we send call `firebase.auth().currentUser?.getIdToken(true)` to get the user's idtoken. Then we pass it in as a field to `headers` in the fetch. However, if the currentUser is undefined for some reason (what the `?` catches), then we console that the user isn't authenticated. Everything else should be familiar from last lecture.
 
-```ts title="frontend/src/SongList.tsx"
-const addSong = (name: string, artist: string, rating: number) => {
+```ts title="frontend/src/FilterableProductTable.tsx"
+const createProduct = () => {
+  const newProduct = {
+    category: category,
+    price: price,
+    stocked: stocked,
+    name: name,
+  };
+
   firebase
     .auth()
     .currentUser?.getIdToken(true)
     .then((idtoken) => {
-      fetch('/createSong', {
+      fetch('/createProduct', {
         method: 'POST',
         headers: {
-          'Content-Type': 'application/json',
+          'content-type': 'application/json',
           idtoken,
         },
-        body: JSON.stringify({ name, artist, rating }),
+        body: JSON.stringify(newProduct),
       })
         .then((res) => res.text())
-        .then((id) => setSongs([...songs, { name, artist, rating, id }]));
+        .then((data) => {
+          const newProductWithID = { ...newProduct, id: data };
+          setProducts([...products, newProductWithID]);
+        });
     })
-    .catch(() => {
-      console.log('not authenticated');
-    });
+    .catch(() => console.log('not authenticated'));
 };
-
-const updateRating = (id: string, rating: number) => {
-  firebase
-    .auth()
-    .currentUser?.getIdToken(true)
-    .then((idtoken) => {
-      fetch(`/updateRating?id=${id}&rating=${rating}`, {
-        method: 'POST',
-        headers: {
-          idtoken,
-        },
-      }).then(() =>
-        setSongs(
-          songs.map((song) =>
-            song.id === id
-              ? { name: song.name, artist: song.artist, rating, id }
-              : song
-          )
-        )
-      );
-    })
-    .catch(() => {
-      console.log('not authenticated');
-    });
-};
-``` -->
+```
 
 #### Security Best Practices
 
@@ -408,7 +372,7 @@ There is a lot more we could've done in terms of security here.
 
 To deploy your web application means to put it on a Web server so others can access it via the internet. We will deploy both our frontend and backend on Heroku. There are a variety of services you can use for deployment including Firebase, Amazon AWS, Microsoft Azure, etc, but we decided to show you Heroku deployment since it is easier and requires less setup.
 
-We will be taking our songs app we have been building throughout the course and deploying it to a remote server. To deploy your own app (for final project for example), you can follow the same steps usually.
+We will be taking our filterable product table app we have been building throughout the course and deploying it to a remote server. To deploy your own app (for final project for example), you can follow the same steps usually.
 
 ### Deployment Setup
 
@@ -420,9 +384,7 @@ To deploy to Heroku we need some additional setup. We will be serving our fronte
 
 We will also be calling upon our express app to use CORS to allow cross origin requests. If your backend requests are being blocked be of some `CORS cross origin policy` issue you probably forgot to include the `app.use(cors());` line. (Note: this requires us to `import cors from 'cors';`)
 
-Live Coding Demo coming soon!
-
-<!-- The beginning of your `backend/index.ts` should look like the below. Note the CORS line (line 12) and express static serving line (line 13) we described above and the relevant import statements.
+The beginning of your `backend/index.ts` should look like the below. Note the CORS line (line 12) and express static serving line (line 13) we described above and the relevant import statements.
 
 ```ts title="backend/index.ts"
 import express from 'express';
@@ -434,7 +396,6 @@ const serviceAccount = require('./serviceAccount.json');
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
-  databaseURL: '', // add dbURL
 });
 
 const app = express();
@@ -443,11 +404,18 @@ app.use(express.static(path.join(__dirname, '../frontend/build')));
 app.use(express.json());
 const db = admin.firestore();
 
-const songsCollection = db.collection('songs');
+const productsCollection = db.collection('products');
 
-app.get('/getSongs', async (req, res) => {
-  const songs = await songsCollection.get();
-  res.json(songs.docs.map((song) => ({ ...song.data(), id: song.id })));
+app.get('/getProducts', async (_, res) => {
+  const products = await productsCollection.orderBy('category').get();
+  res.json(
+    products.docs.map(
+      (doc): ProductWithID => {
+        const product = doc.data() as Product;
+        return { ...product, id: doc.id };
+      }
+    )
+  );
 });
 
 // other routes...
@@ -456,38 +424,37 @@ app.listen(process.env.PORT || 8080, () => console.log('backend started'));
 
 :::note
 Notice we are having `app.listen` listen for either port 8080 or `process.env.PORT`. Previously, we hardcoded `8080` for this parameter. `process.env.PORT` will be defined by Heroku and we want the app to listen for requests on that port in the deployed site.
-::: -->
+:::
 
 ##### `backend/package.json`
 
 Our `backend/package.json` will look like this since we need to compile the TypeScript to JavaScript first. The build step calls `tsc` the TypeScript compiler to compile the `index.ts` to `index.js`. You should see a new `index.js` file after you run `yarn build`.
 
 :::note
-We are using the same `tsconfig.json` as found in [lecture2](./lecture2#tsconfigjson).
-:::
+
+1. We are using the same `tsconfig.json` as found in [lecture2](./lecture2#tsconfigjson).
+2. Remember to have all of the packages you installed inside `dependencies`, putting them into `devDependencies` will cause your deployment to crash.
+   :::
 
 ```json title="backend/package.json"
 {
   "name": "backend",
   "version": "1.0.0",
   "main": "index.js",
+  "license": "MIT",
   "scripts": {
     "build": "tsc -p tsconfig.json",
-    "start": "node index.js"
+    "start": "yarn build && node index.js"
   },
-  "license": "MIT",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.1",
-    "firebase-admin": "^9.4.1"
-  },
-  "devDependencies": {
-    "heroku": "^7.47.3",
-    "ts-node": "^9.0.0",
-    "typescript": "^4.1.2",
-    "@types/cors": "^2.8.8",
-    "@types/express": "^4.17.9",
-    "@types/node": "^14.14.10"
+    "firebase-admin": "^9.2.0",
+    "heroku": "^7.52.0",
+    "@types/cors": "^2.8.10",
+    "@types/express": "^4.17.8",
+    "@types/node": "^14.11.5",
+    "typescript": "^4.0.3"
   }
 }
 ```
@@ -514,7 +481,7 @@ Our root `package.json` will look like the following. We are using yarn workspac
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
-    "heroku": "^7.47.3"
+    "heroku": "^7.52.0"
   }
 }
 ```
@@ -550,9 +517,11 @@ git push heroku master
 (optional) yarn heroku open
 ```
 
-Visiting the URL should take you to the same application you had locally. Now you can share that link with your friends so they can visit your website too! Take a look at our deployed site here: COMING SOON
+:::note
+If you run into any bugs when running the code above (probably `yarn heroku create <optional project name>`), you can create a new project through Heroku's website [www.heroku.com](https://www.heroku.com)
+:::
 
-<!-- [https://webdev-demo-fa20.herokuapp.com/](https://webdev-demo-fa20.herokuapp.com/) (If you have issues deploying feel free to submit this link for the attendance question, but please do come to [office hours](./introduction#when-are-office-hours) first!) -->
+Visiting the URL should take you to the same application you had locally. Now you can share that link with your friends so they can visit your website too! Take a look at our deployed site here: [https://lec9-demo.herokuapp.com/](https://lec9-demo.herokuapp.com/) (If you have issues deploying feel free to submit this link for the attendance question, but please do come to [office hours](./introduction#when-are-office-hours) first!)
 
 :::note
 If you run into issues that the app isn't authorized to use authentication, go to your Firebase project on [firebase.google.com](https://firebase.google.com/) > Go to Console > [your project] > Authentication [on sidebar] > Sign-in Method > Authorized domains > Add Domain and enter the URL of your deployed site.
