@@ -36,7 +36,7 @@ A popular way to use React Native is through the `Expo` framework, which allows 
 
 To start a React Native project run the following:
 
-```bash 
+```bash
 yarn global add expo-cli
 expo init <project name>
 yarn start
