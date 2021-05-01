@@ -32,11 +32,11 @@ Some core React Native components are:
 
 ### How to start a React Native Project?
 
-React Native uses `Expo` framework to develop, build, and iterate on iOS, Android and webapps. Expo provides a UI for you to view your changes and if you download the Expo app ([Android](https://play.google.com/store/apps/details?id=host.exp.exponent&hl=en_US), [iOS](https://apps.apple.com/us/app/expo-client/id982107779)) you can see those changes on your phone as well! After all, we're doing mobile development.
+A popular way to use React Native is through the `Expo` framework, which allows developing, building, and iterating on iOS, Android and webapps. Expo provides a UI for you to view your changes and if you download the Expo app ([Android](https://play.google.com/store/apps/details?id=host.exp.exponent&hl=en_US), [iOS](https://apps.apple.com/us/app/expo-client/id982107779)) you can see those changes on your phone as well! After all, we're doing mobile development.
 
 To start a React Native project run the following:
 
-```bash
+```bash 
 yarn global add expo-cli
 expo init <project name>
 yarn start
@@ -49,30 +49,34 @@ yarn start
 As part of the demo we built the simple TODO list app from assignment 4 in React Native! The code is here:
 
 ```tsx title="App.tsx"
+import { StatusBar } from 'expo-status-bar';
 import React, { useState } from 'react';
 import { StyleSheet, Text, View, TextInput, Button } from 'react-native';
 
 export default function App(): React.ReactElement {
-  const [item, setItem] = useState<string>('');
+  const [inputItem, setInputItem] = useState<string>('');
   const [items, setItems] = useState<string[]>([]);
 
   const updateItems = (): void => {
-    setItems([...items, item]);
-    setItem('');
+    setItems([...items, inputItem]);
+    setInputItem('');
   };
 
   return (
     <View style={styles.container}>
+      <View style={styles.itemsView}>
+       {items.map((item, idx) => (
+         <Text key={idx}> {item} </Text>
+       ))}
+      </View>
       <TextInput
         placeholder="Add an item"
         style={styles.input}
-        value={item}
-        onChangeText={(text) => setItem(text)}
+        value={inputItem}
+        onChangeText={(text) => setInputItem(text)}
       />
-      <Button title="Add item" onPress={() => updateItems()} />
-      {items.map((i, index) => (
-        <Text key={index}> {i} </Text>
-      ))}
+      <Button title="Add Item" onPress={() => updateItems()} />
+      <StatusBar style="auto">
     </View>
   );
 }
@@ -84,11 +88,14 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-
   input: {
     borderWidth: 1,
     width: 150,
+    marginBottom: 10,
   },
+  itemsView: {
+    borderWidth: 1
+  }
 });
 ```
 
