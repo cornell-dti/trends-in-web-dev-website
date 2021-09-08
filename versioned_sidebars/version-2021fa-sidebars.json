@@ -1,0 +1,24 @@
+{
+  "docs": {
+    "Getting Started": [
+      {
+        "type": "doc",
+        "id": "version-2021fa/introduction"
+      },
+      {
+        "type": "doc",
+        "id": "version-2021fa/setup-environment"
+      },
+      {
+        "type": "doc",
+        "id": "version-2021fa/setup-editor"
+      }
+    ],
+    "Lectures": [
+      {
+        "type": "doc",
+        "id": "version-2021fa/lecture1"
+      }],
+    "Assignments": []
+  }
+}
