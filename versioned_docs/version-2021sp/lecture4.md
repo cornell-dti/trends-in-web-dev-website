@@ -7,7 +7,7 @@ title: Lecture 4
 
 [Lecture Slides](https://docs.google.com/presentation/d/1VseDHeXrYrP2NdsBJTA72mSTlLNUeXeFYkIFUzLuJ5Q/edit?usp=sharing)
 
-[Assignment 3](/docs/assignment3) (due 3/25 3:59 PM on CMS)
+[Assignment 3](/docs/2021sp/assignment3) (due 3/25 3:59 PM on CMS)
 
 ## ~~`var`~~, `let`, and `const`
 

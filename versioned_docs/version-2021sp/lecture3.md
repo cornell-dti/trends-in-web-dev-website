@@ -7,7 +7,7 @@ title: Lecture 3
 
 [Lecture Slides](https://docs.google.com/presentation/d/1CuHHTdguCDM3D4vZsoity0O8L43vLeTxvOACjnvem0A/edit?usp=sharing)
 
-[Assignment 2](/docs/assignment2) (due 3/18 3:59 PM on CMS)
+[Assignment 2](/docs/2021sp/assignment2) (due 3/18 3:59 PM on CMS)
 
 [Install Postman](https://www.postman.com/downloads/)
 

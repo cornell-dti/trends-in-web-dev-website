@@ -68,7 +68,7 @@ Upload to CMS a mock and description of your web app! Your mock can be a picture
 **Due: December 1 by 3:59 PM**
 
 Get started implementing either the frontend or backend (you choose).
-If you're doing frontend, you can use hardcoded data for now just to get the layout done. This can be default values embedded in your frontend code like we had for [Thinking in React lecture 7](/docs/lecture7#filterable-product-table-example). You will connect it to a backend in the subsequent milestones.
+If you're doing frontend, you can use hardcoded data for now just to get the layout done. This can be default values embedded in your frontend code like we had for [Thinking in React lecture 7](/docs/2020fa/lecture7#filterable-product-table-example). You will connect it to a backend in the subsequent milestones.
 
 ### Milestone 2
 

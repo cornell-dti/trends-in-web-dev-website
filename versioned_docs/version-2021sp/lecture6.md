@@ -7,7 +7,7 @@ title: Lecture 6
 
 [Lecture Slides](https://docs.google.com/presentation/d/1SpQ2gQpSmxF2R2paIgtYc-dWrFWCLKXpLwn3bHfCJ7s/edit?usp=sharing)
 
-[Assignment 5](/docs/assignment5) (due 4/8 3:59 PM on CMS.) Woo, last assignment!
+[Assignment 5](/docs/2021sp/assignment5) (due 4/8 3:59 PM on CMS.) Woo, last assignment!
 
 ## Conditional Rendering
 

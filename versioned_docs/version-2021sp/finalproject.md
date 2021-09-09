@@ -70,7 +70,7 @@ Upload to CMS a mock and description of your web app! Your mock can be a picture
 **Due: April 29 by 3:59 PM**
 
 Get started implementing either the frontend or backend (you choose).
-If you're doing frontend, you can use hardcoded data for now just to get the layout done. This can be default values embedded in your frontend code like we had for [Thinking in React lecture 7](/docs/lecture7#filterable-product-table-example). You will connect it to a backend in the subsequent milestones.
+If you're doing frontend, you can use hardcoded data for now just to get the layout done. This can be default values embedded in your frontend code like we had for [Thinking in React lecture 7](/docs/2021sp/lecture7#filterable-product-table-example). You will connect it to a backend in the subsequent milestones.
 
 ### Milestone 2
 
@@ -87,7 +87,7 @@ Also have an authentication system set up using Firebase.
 Bridge the frontend and backend together using data fetching. This will involve some full stack work! Also, the app should be fully deployed on Firebase and styled using any CSS you deem necessary. This is your final submission!
 
 :::tip
-Need help? Come to [office hours](/docs/introduction#when-are-office-hours) and we can help you debug. Also feel free to post questions on Piazza!
+Need help? Come to [office hours](/docs/2021sp/introduction#when-are-office-hours) and we can help you debug. Also feel free to post questions on Piazza!
 :::
 
 :::danger
