@@ -7,7 +7,7 @@ title: Lecture 8
 
 [Lecture Video](https://drive.google.com/file/d/1YoTS9HenT6w_K4LKZF9r_FOlqh4zhWvi/view?usp=sharing)
 
-[Final Project - Milestone 1 now due 4/27 3:59 PM (Wellness Days)](/docs/finalproject#milestone-1)
+[Final Project - Milestone 1 now due 4/27 3:59 PM (Wellness Days)](/docs/2021sp/finalproject#milestone-1)
 
 ## Concurrently
 

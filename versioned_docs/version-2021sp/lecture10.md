@@ -7,7 +7,7 @@ title: Lecture 10
 
 [Lecture Video](https://drive.google.com/file/d/1d2mCrRM_mavlNhCJk0kf-6ZoTS9VvVGP/view?usp=sharing)
 
-[Final Project - Milestone 2 due 5/6 3:59 PM](/docs/finalproject#milestone-2)
+[Final Project - Milestone 2 due 5/6 3:59 PM](/docs/2021sp/finalproject#milestone-2)
 
 ## React Native
 

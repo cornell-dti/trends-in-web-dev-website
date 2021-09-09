@@ -85,10 +85,10 @@ as a parameter called `id`.
 For example, a request to `/deleteSong?id=song1` would delete the song
 you created in the first part of the assignment (But if you do try deleting
 that specific one, make sure you add it back, because we will be testing
-that it is there).
+that it ifs there).
 
 :::tip
-Don't know where to start? Reference the [live coding demo Posts example](/docs/lecture3#SampleCode) from lecture 3! Also, get help in [office hours](introduction#when-are-office-hours)!
+Don't know where to start? Reference the [live coding demo Posts example](/docs/2020fa/lecture3#SampleCode) from lecture 3! Also, get help in [office hours](introduction#when-are-office-hours)!
 :::
 
 ## Part 7: Submission

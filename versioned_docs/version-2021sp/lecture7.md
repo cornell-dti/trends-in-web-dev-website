@@ -11,7 +11,7 @@ Lecture Video will be posted here after lecture
 
 [Final Project Team Formation Form due 4/11 11:59PM (NO SLIP DAYS USABLE)](https://forms.gle/wQnrAwEB44oYNbCa8)
 
-[Final Project (Milestone 0 due Thursday 4/15 3:59PM)](/docs/finalproject)
+[Final Project (Milestone 0 due Thursday 4/15 3:59PM)](/docs/2021sp/finalproject)
 
 ## Hooks, and More on Functional Components in React
 
