@@ -12,7 +12,7 @@ By [Cornell DTI](http://cornelldti.org/). Read our article about the first run o
 
 ## Logistics
 
-Assuming nothing goes wrong, Trends in Web Development will be **IN PERSION** this semester.
+Assuming nothing goes wrong, Trends in Web Development will be **IN PERSON** this semester.
 
 Lectures will be held on **Thursdays at 6:30 - 7:30 PM ET** at **(location TBA)**, beginning on **September 23rd**.
 
