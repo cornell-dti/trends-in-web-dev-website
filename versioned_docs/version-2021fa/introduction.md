@@ -18,8 +18,11 @@ Assuming nothing goes wrong, Trends in Web Development will be **IN PERSON**
 this semester. Unfortunately, we will not be able to provide recordings for
 lecture, although lecture notes will be posted on this website.
 
-Lectures will be held on **Thursdays at 6:30 - 7:30 PM ET** at **Barton Hall
-G01**, beginning on **September 23rd**.
+Lectures will be held on **Thursdays at 6:30 - 7:30 PM ET** at **Snee 1020\***,
+beginning on **September 23rd**.
+
+**\*NOTE: First lecture (September 23rd) will be held at Gates 122 instead of
+Snee!**
 
 ## Course Application
 
@@ -44,16 +47,18 @@ React, Firebase, and more.
 Office hours will start **Friday, September 24**. It will be in person at
 Rhodes. Come by if you have any questions about homework, lecture material, etc.
 
-| Day | Time           | Location   |
-| --- | -------------- | ---------- |
-| Mon | 3pm-4pm        | Rhodes 594 |
+| Day |      Time      | Location   |
+| --- | :------------: | ---------- |
+| Mon |    3pm-4pm     | Rhodes 594 |
 | Tue | 9:30am-10:30am | Rhodes 572 |
-| Wed | 10am-11am      | Rhodes 572 |
-| Wed | 5pm-6pm        | Rhodes 572 |
-| Thu | 11am-12pm      | Rhodes 572 |
+| Wed |   10am-11am    | Rhodes 572 |
+| Wed |    5pm-6pm     | Rhodes 572 |
+| Thu |   11am-12pm    | Rhodes 572 |
 | Fri | 1:45pm-2:45pm  | Rhodes 594 |
 
-If you are unable to make any of those office hours times, you can ask questions on EdStem or get in touch with [Enoch](mailto:yc728@cornell.edu) or [Scott](mailto:sw754@cornell.edu).
+If you are unable to make any of those office hours times, you can ask questions
+on EdStem or get in touch with [Enoch](mailto:yc728@cornell.edu) or
+[Scott](mailto:sw754@cornell.edu).
 
 ## Is there a lecture schedule?
 
