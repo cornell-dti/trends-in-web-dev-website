@@ -99,4 +99,4 @@ would `req.params.lastName` be?
 
 ### I still need help. Where should I go?
 
-Check out the office hours schedule on [our syllabus](/docs/2021fa/introduction#when-are-office-hours). In addition, you can join the [Ed](https://edstem.org/us/courses/14933/discussion/) and post your question.
+Check out the office hours schedule on [our syllabus](/docs/introduction#when-are-office-hours). In addition, you can join the [Ed](https://edstem.org/us/courses/14933/discussion/) and post your question.
