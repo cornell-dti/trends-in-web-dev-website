@@ -52,7 +52,7 @@ Rhodes. Come by if you have any questions about homework, lecture material, etc.
 | Tue | 9:30am-10:30am | Rhodes 572 |
 | Wed |   10am-11am    | Rhodes 572 |
 | Wed |    5pm-6pm     | Rhodes 572 |
-| Thu |   11am-12pm    | Rhodes 572 |
+| Thu |   10am-11am    | Rhodes 572 |
 | Fri | 1:45pm-2:45pm  | Rhodes 597 |
 
 If you are unable to make any of those office hours times, you can ask questions
