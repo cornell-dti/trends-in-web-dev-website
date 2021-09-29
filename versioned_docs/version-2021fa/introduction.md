@@ -48,12 +48,12 @@ Rhodes. Come by if you have any questions about homework, lecture material, etc.
 
 | Day |      Time      | Location   |
 | --- | :------------: | ---------- |
-| Mon |    3pm-4pm     | Rhodes 597 |
+| Mon |   3:30pm-4pm   | Rhodes 590 |
 | Tue | 9:30am-10:30am | Rhodes 572 |
 | Wed |   10am-11am    | Rhodes 572 |
 | Wed |    5pm-6pm     | Rhodes 572 |
 | Thu |   10am-11am    | Rhodes 572 |
-| Fri | 1:45pm-2:45pm  | Rhodes 597 |
+| Fri | 3:15pm-4:15pm  | Rhodes 572 |
 
 If you are unable to make any of those office hours times, you can ask questions
 on EdStem or get in touch with [Enoch](mailto:yc728@cornell.edu) or
