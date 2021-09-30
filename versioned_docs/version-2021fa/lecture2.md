@@ -363,12 +363,12 @@ Your `package.json` should now look like the following:
 Now we can define some basic express routes in a file `index.ts`:
 
 ```ts title="index.ts"
-import * as express from 'express';
+import express from 'express';
 
 const app = express();
 
 app.get('/home', function (req, res) {
-  res.send('Welcome home!');
+  res.send('Welcome Home!');
 });
 
 // example using path parameters
