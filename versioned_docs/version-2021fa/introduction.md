@@ -23,6 +23,8 @@ beginning on **September 23rd**.
 
 **\*NOTE: First lecture (September 23rd) will be held at Gates 122!**
 
+Also: [join our EdStem discussion here](https://edstem.org/us/join/Cm4Kt5)!
+
 ## Course Application
 
 Apply [here](https://bit.ly/web-dev-fa21) by September 18th at 11:59 PM ET, a
