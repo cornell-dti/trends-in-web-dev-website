@@ -7,7 +7,7 @@ title: Lecture 2
 
 [Assignment 1](/docs/assignment1) (due 10/7 6:29 PM on CMS)
 
-[Join the Ed!](https://edstem.org/us/join/Cm4Kt5) (🦀Piazza is gone🦀)
+[Join the Ed!](https://edstem.org/us/join/Cm4Kt5)
 
 _Topics: Node.js, Express, HTTP Methods_
 
@@ -32,15 +32,16 @@ All of the code is available to you to view on [Github](https://github.com/nodej
 #### Cross Platform JavaScript Runtime Environment
 
 - Historically you were only able to run JavaScript on the browser or client
-- Node.js takes the V8 Javascript engine powering Google Chrome outside of the browser allowing you to run Node.js **anywhere**
-  - V8 Javascript engine is a fast Javascript engine created by Google. Learn more about it [here](https://v8.dev/)!
+- Node.js takes the V8 JavaScript engine powering Google Chrome outside of the browser allowing you to run Node.js **anywhere**
+  - V8 JavaScript engine is a fast JavaScript engine created by Google. Learn more about it [here](https://v8.dev/)!
 - Can run Node.js on your terminal as well
-- Now, we can use Javascript as a **universal language**!
+- Now, we can use JavaScript as a **universal language**!
 
 #### Single-threaded
 
-- Threads allow computers to divide up tasks on different cores (multi-tasking)
-- Node.js uses a single-threaded event loop
+- Threads are a separate line of execution and can be ran in parallel - i.e. several at
+  the same time.
+- However, Node.js uses a single-threaded event loop
   - Run in a single process
   - Requests do not spawn new threads
 - Non-blocking
@@ -48,26 +49,34 @@ All of the code is available to you to view on [Github](https://github.com/nodej
 #### How does Node.js handle multiple requests?
 
 - Node.js is **asynchronous**
-- When a request is sent, it is dispatched to server
+- When a request is sent, it is dispatched to the server
 - Instead of blocking the thread and wasting CPU cycles waiting for the request to finish, Node.js continues its operations
 - Once the request is complete, a callback is triggered and information is sent back
 
 #### Event Loop
 
 - Client can send requests into the event loop
-- Register callback to server when doing things that might take time (ie. search, query, intensive computation)
+- We can register callbacks to server when doing things that might take time (ie. search, query, intensive computation)
 - After operation completes, callback will fire and return to requests
+
+:::info
+A callback is a function that you can pass to another function to be executed
+later. This is a common pattern in web development, since lots of data goes
+from the client to the server, and we want to implement certain behavior that fires
+after the data is received.
+:::
 
 #### Why Node.js?
 
 - Unites front-end and back-end in one language/framework
-  - Typescript/Javascript
-  - Front-end and Back-end in the same language
+  - TypeScript/JavaScript
+  - Frontend and backend in the same language
 - Extremely performant
 - Asynchronous and non-blocking
-- NPM (node package manager)
+- NPM (Node Package Manager)
   - a directory of many libraries and packages
   - access to huge libraries to use in projects and build upon
+  - similar to `pip` in Python, Gradle/Maven in Java, etc (it's okay if you've never heard of these!)
 
 #### Node Package Manager (NPM)
 
@@ -75,6 +84,10 @@ NPM is a dependency manager, like pip for python or maven for java. Think of nod
 Also part of the open sourced community!
 
 #### package.json
+
+The `package.json` is kind of like a directory for your Node project. It contains
+various metadata and information about it, as well as details on what it depends
+on, so others can reproduce the behavior of your project.
 
 - Tracks which node packages you use
 - **Dependencies**: packages needed at run-time
@@ -84,7 +97,9 @@ npm install --save <pkg_name>
 yarn add <pkg_name>
 ```
 
-- **devDependencies**: packages used during development (before pushing to production)
+- **devDependencies**: packages used during development (before pushing to production).
+  When a "production" or real version gets built prior to deployment, these dependencies
+  will not be included. Only install certain tools that ease development in this manner.
 
 ```
 npm install --save-dev <pkg_name>
@@ -93,8 +108,7 @@ yarn add --dev <pkg_name>
 
 #### We will use Yarn!
 
-- package-lock.json and yarn.lock prevent issues where a broken version of one package causes all dependent packages to break
-- Faster at installing dependencies
+- Faster at installing dependencies in practice
 - More optimized
 
 #### NPM vs Yarn commands
@@ -124,7 +138,7 @@ yarn audit
 
 ## Express
 
-_Intro to **backend routes**_
+_Intro to **backend routes**!_
 
 ### HTTP Methods
 
@@ -138,12 +152,19 @@ When you want to visit a website in your browser, you send a request to the serv
   - PATCH
   - (... and more)
 - Definitions
+
   - **POST**: used to submit an entity to the specified resource, often causing a change in state or side effects on server
   - **GET**: requests a representation of the specified resource
     - Should only _retrieve_ data
   - **PUT**: similar to POST request (uploads data), but _idempotently_
     - updates data
     - ie. editing a Facebook post
+
+  An important thing to note with these HTTP "verbs" is that they don't enforce
+  their intended properties; i.e. you could theoretically make a `GET` request that
+  does `POST` behavior. However, these methods are usually used to develop an API
+  that could have multiple users, from your frontend UI to other people using
+  your service, so you want them to be as self-documenting as possible.
 
 ### Express
 
@@ -235,8 +256,8 @@ app.get('/users/', function (req, res) {
 ```
 
 - Example request:
-  `/users?id=samwise`
-  - `req.query.id` will be set to "samwise"
+  `/users?name=samwise`
+  - `req.query.name` will be set to "samwise"
 
 #### Multiple Query Parameters
 
@@ -292,18 +313,6 @@ You can find more packages to use on [npmjs.com](https://www.npmjs.com/).
 
 `node_modules` can be potentially hundreds of megabytes of data for packages you installed. It is important to never submit this with your assignment or push it up to any remote repositories such as GitHub. Before submitting an assignment, remember to leave out `node_modules` when zipping your folder. _You will be penalized if `node_modules` is submitted_. Don't worry, we will be able to recover your dependencies simply by running `yarn install`.
 
-### How to use and interpret package.json
-
-`package.json` contains instructions for necessary packages and scripts that you can use to run your code.
-
-- Dependencies
-  - Packages we use in code
-  - if not installed on local end, this will cause an error
-  - ie. express, ts-node, typescript
-- devDependencies
-  - Toolkits used during development to make development easier
-  - ie. types, autocompletion
-
 ## Live Coding Demo
 
 We demoed how to set up a yarn project and create some basic getter HTTP routes.
@@ -354,12 +363,12 @@ Your `package.json` should now look like the following:
 Now we can define some basic express routes in a file `index.ts`:
 
 ```ts title="index.ts"
-import * as express from 'express';
+import express from 'express';
 
 const app = express();
 
 app.get('/home', function (req, res) {
-  res.send('Welcome home!');
+  res.send('Welcome Home!');
 });
 
 // example using path parameters

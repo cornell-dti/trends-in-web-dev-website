@@ -18,10 +18,7 @@ Assuming nothing goes wrong, Trends in Web Development will be **IN PERSON**
 this semester. Unfortunately, we will not be able to provide recordings for
 lecture, although lecture notes will be posted on this website.
 
-Lectures will be held on **Thursdays at 6:30 - 7:30 PM ET** at **Hollister 314**,
-beginning on **September 23rd**.
-
-**\*NOTE: First lecture (September 23rd) will be held at Gates 122!**
+Lectures will be held on **Thursdays at 6:30 - 7:30 PM ET** at **Hollister 314**.
 
 Also: [join our EdStem discussion here](https://edstem.org/us/join/Cm4Kt5)!
 
