@@ -41,11 +41,11 @@ document should be AUTOMATICALLY generated, not a name of your choice.
 
 We will be passing information in the request body (`req.body`) in the following format:
 
-```json
+```typescript
 {
-  name: string,
-  artist: string,
-  rating: int
+  "name": string,
+  "artist": string,
+  "rating": int
 }
 
 The endpoint should send back the ID of the added document to the frontend.
@@ -66,7 +66,7 @@ be identified by its ID in the collection.
 We will be passing information in the request body (`req.body`) in the
 following format:
 
-```json
+```typescript
 {
   "id": string,
   "rating": int
