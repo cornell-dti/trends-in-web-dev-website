@@ -18,22 +18,23 @@ From now on, we will be using a `tsconfig.json` file within every Node project w
 ```json
 {
   "compilerOptions": {
-    "target": "es6",
-    "outDir": "./output",
+    "target": "ES2021",
+    "outDir": "dist",
     "lib": ["dom", "dom.iterable", "esnext"],
+    "baseUrl": "./src",
     "skipLibCheck": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "noUnusedLocals": true,
     "importsNotUsedAsValues": "error",
     "module": "commonjs",
     "moduleResolution": "node",
     "resolveJsonModule": true
   },
-  "types": ["node"],
-  "include": ["./*"],
-  "exclude": []
+  "include": ["src"]
 }
 ```
 
