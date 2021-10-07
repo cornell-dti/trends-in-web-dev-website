@@ -22,6 +22,10 @@
       {
         "type": "doc",
         "id": "version-2021fa/lecture2"
+      },
+      {
+        "type": "doc",
+        "id": "version-2021fa/lecture3"
       }
     ],
     "Assignments": [
@@ -32,6 +36,10 @@
       {
         "type": "doc",
         "id": "version-2021fa/assignment1"
+      },
+      {
+        "type": "doc",
+        "id": "version-2021fa/assignment2"
       }
     ]
   }
