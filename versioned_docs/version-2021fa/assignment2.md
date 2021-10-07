@@ -68,8 +68,8 @@ following format:
 
 ```json
 {
-  id: string,
-  rating: int
+  "id": string,
+  "rating": int
 }
 ```
 
