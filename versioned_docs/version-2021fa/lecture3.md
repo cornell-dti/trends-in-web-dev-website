@@ -202,7 +202,7 @@ We will focus on NoSQL
   machine to store more data) while NoSQL databases tend to be horizontally
   scalable (can distribute storage and compute power on multiple machines)
 - Examples of SQL databases: MySQL, PostgreSQL
-- Examples of NoSQL databases: Fireabase, MongoDB
+- Examples of NoSQL databases: Firebase, MongoDB
 
 ### What is Firebase?
 
