@@ -35,7 +35,7 @@ export const arrayMean = (array: number[]): number => {
 ### Example for myMean
 
 ```typescript
-arrayMean([1,2,3,4,5]); // 3
+arrayMean([1, 2, 3, 4, 5]); // 3
 arrayMean([]); // undefined
 ```
 
