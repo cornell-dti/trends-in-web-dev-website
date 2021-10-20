@@ -385,12 +385,10 @@ const songsCollection = db.collection('songs');
 app.get('/getSongs', async (req, res) => {
   const songs = await songsCollection.get();
   res.json(
-    songs.docs.map(
-      (doc): SongWithID => {
-        const song = doc.data() as Song;
-        return { ...song, id: doc.id };
-      }
-    )
+    songs.docs.map((doc): SongWithID => {
+      const song = doc.data() as Song;
+      return { ...song, id: doc.id };
+    })
   );
 });
 

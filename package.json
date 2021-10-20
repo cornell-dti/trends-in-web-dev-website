@@ -4,32 +4,33 @@
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
-    "start": "docusaurus start",
-    "build": "tsc && docusaurus build",
+    "start": "NODE_NO_WARNINGS=1 docusaurus start",
+    "build": "tsc && NODE_NO_WARNINGS=1 docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "format": "prettier --write '**/*.{ts,js,tsx,jsx,scss,css,html,md}'",
     "format:check": "prettier --check '**/*.{ts,js,tsx,jsx,scss,css,html,md}'"
   },
   "dependencies": {
-    "@docusaurus/core": "2.0.0-alpha.70",
-    "@docusaurus/preset-classic": "2.0.0-alpha.70",
-    "@docusaurus/theme-classic": "2.0.0-alpha.70",
-    "@mdx-js/react": "^1.6.21",
-    "classnames": "^2.2.6",
-    "prism-react-renderer": "^1.1.1",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "@docusaurus/core": "2.0.0-beta.7",
+    "@docusaurus/preset-classic": "2.0.0-beta.7",
+    "@docusaurus/theme-classic": "2.0.0-beta.7",
+    "@mdx-js/react": "^1.6.22",
+    "clsx": "^1.1.1",
+    "prism-react-renderer": "^1.2.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "2.0.0-alpha.70",
-    "@types/node": "^14.6.3",
-    "@types/react": "^17.0.0",
-    "@types/react-helmet": "^6.1.0",
-    "@types/react-router-dom": "^5.1.5",
-    "netlify-cli": "^2.61.0",
-    "prettier": "2.0.5",
-    "typescript": "^4.1.2"
+    "@docusaurus/module-type-aliases": "2.0.0-beta.7",
+    "@types/node": "^16.11.1",
+    "@types/react": "17.0.0",
+    "@types/react-helmet": "^6.1.4",
+    "@types/react-router-dom": "^5.3.1",
+    "file-loader": "^6.2.0",
+    "prettier": "2.4.1",
+    "typescript": "^4.4.4",
+    "url-loader": "^4.1.1"
   },
   "browserslist": {
     "production": [
@@ -43,9 +44,5 @@
       "last 1 safari version"
     ]
   },
-  "dependenciesMeta": {
-    "netlify-cli@2.61.0": {
-      "unplugged": true
-    }
-  }
+  "packageManager": "yarn@3.0.2"
 }

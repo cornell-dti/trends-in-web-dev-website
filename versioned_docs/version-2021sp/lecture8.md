@@ -412,12 +412,10 @@ const productsCollection = db.collection('products');
 app.get('/getProducts', async (_, res) => {
   const products = await productsCollection.orderBy('category').get();
   res.json(
-    products.docs.map(
-      (doc): ProductWithID => {
-        const product = doc.data() as Product;
-        return { ...product, id: doc.id };
-      }
-    )
+    products.docs.map((doc): ProductWithID => {
+      const product = doc.data() as Product;
+      return { ...product, id: doc.id };
+    })
   );
 });
 
