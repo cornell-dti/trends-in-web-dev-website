@@ -1,5 +1,5 @@
 import React from 'react';
-import classnames from 'classnames';
+import clsx from 'clsx';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
@@ -43,10 +43,10 @@ const features = [
 
 export default () => {
   const context = useDocusaurusContext();
-  const { siteConfig = {} } = context;
+  const { siteConfig } = context;
   return (
-    <Layout title={siteConfig.title} description={siteConfig.tagLine}>
-      <header className={classnames('hero', styles.heroBanner)}>
+    <Layout title={siteConfig.title} description={siteConfig.tagline}>
+      <header className={clsx('hero', styles.heroBanner)}>
         <div className={`container ${styles.HeroContainer}`}>
           <img
             src={useBaseUrl('img/trends_mascot.png')}
@@ -58,7 +58,7 @@ export default () => {
             <p className="hero__subtitle">{siteConfig.tagline}</p>
             <div className={styles.buttons}>
               <Link
-                className={classnames(
+                className={clsx(
                   'button button--primary button--lg',
                   styles.getStarted
                 )}
@@ -76,10 +76,7 @@ export default () => {
             <div className="container">
               <div className="row">
                 {features.map(({ imageUrl, title, description }, idx) => (
-                  <div
-                    key={idx}
-                    className={classnames('col col--4', styles.feature)}
-                  >
+                  <div key={idx} className={clsx('col col--4', styles.feature)}>
                     {imageUrl && (
                       <div className="text--center">
                         <img

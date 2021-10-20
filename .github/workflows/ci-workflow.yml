@@ -22,7 +22,7 @@ jobs:
         env:
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-        run: NODE_NO_WARNINGS=1 yarn netlify deploy --dir=build --site=$NETLIFY_SITE_ID --json > a.json
+        run: netlify deploy --dir=build --site=$NETLIFY_SITE_ID --json > a.json
       - name: Parse deployment URL
         id: deploy_url
         run: |
