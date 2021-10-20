@@ -51,7 +51,6 @@ Starter code:
 type Apartment = {
   id: string;
   rent: number;
-  available: boolean;
 };
 
 export const affordableHousing = (
