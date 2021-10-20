@@ -76,8 +76,8 @@ affordableHousing(apts, 4000); // ['henesys']
 
 ## Question 3
 
-Write a function `evenEven` that takes in an array of strings and returns
-true if every even-length string has the substring `'even'` inside.
+Write a function `evenEven` that takes in an array of strings and returns true
+if every even-length string contains `'even'` as a substring.
 
 Starter code:
 
@@ -92,6 +92,7 @@ export const evenEven = (array: string[]): boolean => {
 ```typescript
 evenEven(['bob']); // true
 evenEven(['bob', 'steven']); // true
+evenEven(['bob', 'steven', 'even']); // true
 evenEven(['bob', 'steven', 'anna']); // false
 ```
 
