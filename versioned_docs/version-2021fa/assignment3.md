@@ -27,7 +27,7 @@ If the array is empty, return undefined.
 Starter code:
 
 ```typescript
-export const arrayMean = (array: number[]): number => {
+export const arrayMean = (array: number[]): number | undefined => {
   /* TODO: add your code */
 };
 ```
