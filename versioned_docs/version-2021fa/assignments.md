@@ -13,3 +13,5 @@ You are allowed max 3 slip days per assignment (out of 6 total for all assignmen
 [Assignment 2](/docs/assignment2): Due on CMS by **10/21 at 6:29pm**
 
 [Assignment 3](/docs/assignment3): Due on CMS by **10/28 at 6:29pm**
+
+[Assignment 4](/docs/assignment4): Due on CMS by **11/4 at 6:29pm**
