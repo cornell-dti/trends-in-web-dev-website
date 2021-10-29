@@ -381,7 +381,7 @@ function App() {
         callback={(temp) => setTemperature(temp)}
       />
       <br />
-      <label>Celcius:</label>
+      <label>Celsius:</label>
       <CelsiusInput
         temperature={temperature}
         callback={(temp) => setTemperature(temp)}
