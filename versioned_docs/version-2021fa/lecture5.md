@@ -7,6 +7,27 @@ title: Lecture 5
 
 [Assignment 3](/docs/assignment3) (due 10/28 6:29 PM on CMS)
 
+## Creating a React project
+
+When working with React, there are a bunch of libraries and tools that we want
+to use to make our lives easier. We _could_ set it up manually, but thankfully
+CRA (create-react-app) does a lot of it for us!
+
+We can set up a project with CRA with the following command:
+
+```bash
+yarn create react-app [APP_NAME] --template typescript
+```
+
+This will create a folder called `[APP_NAME]` (you can change it to whatever you
+want) which will contain a TypeScript React project with everything set up!
+
+You'll be able to run commands like `yarn start` inside that folder to do things
+like serve your website locally.
+
+The entry point of the program is (as usual) `src/index.tsx` and the main React
+component by convention is found in `src/App.tsx`.
+
 ## Your First Component
 
 ```tsx title="ContactCard.tsx"
@@ -91,20 +112,47 @@ export default ContactCard;
 
 For this course, we prefer that you use arrow function syntax.
 
+### `App.tsx`
+
+Convention has `App.tsx` as the main component of your React app. To add an
+instance of `ContactCard` to your app, you can add it to `App.tsx`.
+
+```tsx title="App.tsx"
+const link = 'https://github.com/cornell-dti';
+
+const App = () => {
+  return (
+    <div className="App">
+      <ContactCard name="Cornell DTI" githubLink={link} />
+    </div>
+  );
+};
+```
+
 ### `index.tsx`
 
 ```tsx title="index.tsx"
+import React from 'react';
 import ReactDOM from 'react-dom';
-import ContactCard from './ContactCard';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
 
-const link = 'https://github.com/cornell-dti';
-const root = document.getElementById('root');
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
 
-ReactDOM.render(<ContactCard name="Cornell DTI" githubLink={link} />, root);
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();
 ```
 
-In a React app, `index.tsx` is usually the entry point. In the code above, it
-renders your component into the DOM element that has id `root`.
+In a React app, `index.tsx` is usually the entry point. You usually won't need
+to touch this file too much.
 
 ## Stateful Component
 
