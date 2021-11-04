@@ -10,7 +10,7 @@ title: Lecture 5
 ## Creating a React project
 
 When working with React, there are a bunch of libraries and tools that we want
-to use to make our lives easier. We *could* set it up manually, but thankfully
+to use to make our lives easier. We _could_ set it up manually, but thankfully
 CRA (create-react-app) does a lot of it for us!
 
 We can set up a project with CRA with the following command:
@@ -126,7 +126,7 @@ const App = () => {
       <ContactCard name="Cornell DTI" githubLink={link} />
     </div>
   );
-}
+};
 ```
 
 ### `index.tsx`
