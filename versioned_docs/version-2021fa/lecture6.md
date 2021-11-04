@@ -3,28 +3,15 @@ id: lecture6
 title: Lecture 6
 ---
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-
 [Lecture Slides](https://docs.google.com/presentation/d/1WrI2lRkh-J9GOXuV7z8_SlQVXVrYlADWWYRLXjwAw1M/edit?usp=sharing)
 
-Assignment 4 due **11/4 6:29pm**
+[Assignment 4](/docs/assignment4) (due 11/4 6:29 PM on CMS)
 
 ## Conditional Rendering
 
 Sometimes we only want things to render when a certain condition is met. For
 example, only display text when we meet a certain condition. React has
 conditional rendering to make this very simple.
-
-<Tabs
-groupId="lang"
-defaultValue="ts"
-values={[
-{ label: 'TypeScript', value: 'ts', },
-{ label: 'JavaScript', value: 'js', },
-]
-}>
-<TabItem value="ts">
 
 ```tsx title="PrelimTime.tsx"
 import React from 'react';
@@ -38,24 +25,6 @@ export default ({ prelimToday }: { readonly prelimToday: boolean }) => {
 };
 ```
 
-</TabItem>
-<TabItem value="js">
-
-```jsx title="PrelimTime.jsx"
-import React from 'react';
-
-export default ({ prelimToday }) => {
-  if (prelimToday) {
-    return <p>I have a prelim today.</p>;
-  } else {
-    return <p>I don't have a prelim today.</p>;
-  }
-};
-```
-
-</TabItem>
-</Tabs>
-
 In this example, we have a functional component `PrelimTime` that takes in a
 prop `prelimToday`. `prelimToday` is a boolean holding whether we have a prelim
 today or not. We want the component to display "I have a prelim today." if
@@ -67,17 +36,7 @@ more convenient.
 
 First we can use the **ternary operator**:
 
-<Tabs
-groupId="lang"
-defaultValue="ts"
-values={[
-{ label: 'TypeScript', value: 'ts', },
-{ label: 'JavaScript', value: 'js', },
-]
-}>
-<TabItem value="ts">
-
-```tsx title="PrelimTime.ssx"
+```tsx title="PrelimTime.tsx"
 import React from 'react';
 
 export default ({ prelimToday }: { readonly prelimToday: boolean }) => (
@@ -87,26 +46,10 @@ export default ({ prelimToday }: { readonly prelimToday: boolean }) => (
 );
 ```
 
-</TabItem>
-<TabItem value="js">
-
-```jsx title="PrelimTime.jsx"
-import React from 'react';
-
-export default ({ prelimToday }) => (
-  prelimToday
-    ? <p>I have a prelim today.</p>
-    : <p>I don't have a prelim today.</p>;
-);
-```
-
-</TabItem>
-</Tabs>
-
 The ternary operator is also very common in other languages as well such as
 Java or Python. The basic syntax is as follows:
 
-```javascript
+```ts
 [boolean expression] ? [true_result] : [false_result]
 ```
 
@@ -126,16 +69,6 @@ want to add don't.
 
 React supports the use of **`&&`** operator:
 
-<Tabs
-groupId="lang"
-defaultValue="ts"
-values={[
-{ label: 'TypeScript', value: 'ts', },
-{ label: 'JavaScript', value: 'js', },
-]
-}>
-<TabItem value="ts">
-
 ```tsx title="PrelimTime.tsx"
 import React from 'react';
 
@@ -143,20 +76,6 @@ export default ({ prelimToday }: { readonly prelimToday: boolean }) => (
   <p>I {!prelimToday && "don't"} have a prelim today.</p>
 );
 ```
-
-</TabItem>
-<TabItem value="js">
-
-```jsx title="PrelimTime.jsx"
-import React from 'react';
-
-export default ({ prelimToday }) => (
-  <p>I {!prelimToday && "don't"} have a prelim today.</p>
-);
-```
-
-</TabItem>
-</Tabs>
 
 Here, we display the text "I have a prelim today.". However, in the curly
 braces, if `prelimToday` is `false` then the word "don't" will be rendered.
@@ -197,16 +116,6 @@ Children are the components you put within another component:
 
 Use the `children` prop to pass in children components.
 
-<Tabs
-groupId="lang"
-defaultValue="ts"
-values={[
-{ label: 'TypeScript', value: 'ts', },
-{ label: 'JavaScript', value: 'js', },
-]
-}>
-<TabItem value="ts">
-
 ```tsx title="Container.tsx"
 import React, { ReactNode } from 'react';
 type Props = { readonly children: ReactNode };
@@ -215,19 +124,7 @@ const Container = (props: Props) => (
 );
 ```
 
-</TabItem>
-<TabItem value="js">
-
-```jsx title="Container.jsx"
-import React from 'react';
-
-const Container = (props) => <div className="Border">{props.children}</div>;
-```
-
-</TabItem>
-</Tabs>
-
-```jsx
+```tsx
 const App = () => (
   <div className="App">
     <Container>
@@ -242,16 +139,6 @@ const App = () => (
 
 We didn't actually get to this live demo, adapted from [this tutorial](https://reactjs.org/docs/composition-vs-inheritance.html) in the React docs, during lecture but it is very simple if you want to try it out yourself. We also show how to import styles.
 
-<Tabs
-groupId="lang"
-defaultValue="ts"
-values={[
-{ label: 'TypeScript', value: 'ts', },
-{ label: 'JavaScript', value: 'js', },
-]
-}>
-<TabItem value="ts">
-
 ```tsx title="Container.tsx"
 import React, { ReactNode } from 'react';
 import './Container.css'; // this is how we import styles
@@ -261,19 +148,6 @@ type Props = { readonly children: ReactNode };
 export default (props: Props) => <div className="Border">{props.children}</div>;
 ```
 
-</TabItem>
-<TabItem value="js">
-
-```jsx title="Container.jsx"
-import React from 'react';
-import './Container.css'; // this is how we import styles
-
-export default (props) => <div className="Border">{props.children}</div>;
-```
-
-</TabItem>
-</Tabs>
-
 ```css title="Container.css"
 .Border {
   border: 4px solid black;
@@ -282,16 +156,6 @@ export default (props) => <div className="Border">{props.children}</div>;
 ```
 
 Less common but you also may want multiple "holes" in your component (for example, a left and right child):
-
-<Tabs
-groupId="lang"
-defaultValue="ts"
-values={[
-{ label: 'TypeScript', value: 'ts', },
-{ label: 'JavaScript', value: 'js', },
-]
-}>
-<TabItem value="ts">
 
 ```tsx title="SplintPane.tsx"
 import React, { ReactNode } from 'react';
@@ -306,24 +170,6 @@ export default (props: Props) => (
   </div>
 );
 ```
-
-</TabItem>
-<TabItem value="js">
-
-```jsx title="SplintPane.jsx"
-import React from 'react';
-import './SplitPane.css';
-
-export default (props) => (
-  <div>
-    <div className="LeftPane">{props.left}</div>
-    <div className="RightPane">{props.right}</div>
-  </div>
-);
-```
-
-</TabItem>
-</Tabs>
 
 ```css title="SplitPane.css"
 /* these colors are ugly I know */
@@ -340,7 +186,7 @@ export default (props) => (
 }
 ```
 
-```jsx
+```tsx
 import React from 'react';
 import SplitPane from './SplitPane';
 import Container from './Container';
@@ -364,110 +210,100 @@ export default () => {
 
 This section was a live demo, adapted from [this tutorial](https://reactjs.org/docs/lifting-state-up.html) in the React docs.
 
-```jsx title="App.js"
-import React, { useState } from 'react';
-import './App.css';
-import FahrenheitInput from './FahrenheitInput';
-import CelsiusInput from './CelsiusInput';
+```tsx title="Calculator.tsx"
+import { useState } from 'react';
+import TemperatureInput from './TemperatureInput';
 
-function App() {
-  const [temperature, setTemperature] = useState(-40);
+type Scale = 'celsius' | 'fahrenheit';
+
+const Calculator = () => {
+  const [temperature, setTemperature] = useState('');
+  const [scale, setScale] = useState<Scale>('celsius');
+
+  const onCelsiusChange = (t: string) => {
+    setTemperature(t);
+    setScale('celsius');
+  };
+
+  const onFahrenheitChange = (t: string) => {
+    setTemperature(t);
+    setScale('fahrenheit');
+  };
+
+  const fahrenheitToCelsius = (t: number) => {
+    return ((t - 32) * 5) / 9;
+  };
+
+  const celsiusToFahrenheit = (t: number) => {
+    return (t * 9) / 5 + 32;
+  };
+
+  const tryConvert = (targetScale: Scale) => {
+    const temp = parseFloat(temperature);
+    if (Number.isNaN(temp)) {
+      return '';
+    }
+    const res = getAppropriateTemperature(temp, targetScale);
+    const trimmed = Math.round(res * 1000) / 1000;
+    return trimmed.toString();
+  };
+
+  const getAppropriateTemperature = (tempNum: number, targetScale: Scale) => {
+    if (targetScale === scale) {
+      return tempNum;
+    } else {
+      if (targetScale === 'celsius') {
+        return fahrenheitToCelsius(tempNum);
+      } else {
+        return celsiusToFahrenheit(tempNum);
+      }
+    }
+  };
 
   return (
-    <div className="App">
-      <label>Fahrenheit:</label>
-      <FahrenheitInput
-        temperature={temperature}
-        callback={(temp) => setTemperature(temp)}
+    <div>
+      <TemperatureInput
+        scale="celsius"
+        temperature={tryConvert('celsius')}
+        onTemperatureChange={onCelsiusChange}
       />
-      <br />
-      <label>Celsius:</label>
-      <CelsiusInput
-        temperature={temperature}
-        callback={(temp) => setTemperature(temp)}
+      <TemperatureInput
+        scale="fahrenheit"
+        temperature={tryConvert('fahrenheit')}
+        onTemperatureChange={onFahrenheitChange}
       />
-      <br />
-      {temperature >= 100 ? (
-        <span>Water would boil here!</span>
-      ) : (
-        <span>Water would not boil here!</span>
-      )}
-      <br />
-      <span>Water would {temperature >= 0 && 'not'} freeze here!</span>
     </div>
   );
-}
+};
 
-export default App;
+export type { Scale };
+export default Calculator;
 ```
 
-<Tabs
-groupId="lang"
-defaultValue="ts"
-values={[
-{ label: 'TypeScript', value: 'ts', },
-{ label: 'JavaScript', value: 'js', },
-]
-}>
-<TabItem value="ts">
-
-```tsx title="CalciusInput.tsx"
-import React, { ChangeEvent } from 'react';
+```tsx title="TemperatureInput.tsx"
+import { Scale } from './Calculator';
 
 type Props = {
-  readonly temperature: number;
-  readonly callback: (temperature: number) => void;
+  readonly scale: Scale;
+  readonly temperature: string;
+  readonly onTemperatureChange: (t: string) => void;
 };
 
-export default ({ temperature, callback }: Props) => {
-  const handlechange = (e: ChangeEvent<HTMLInputElement>) =>
-    callback(parseInt(e.target.value) || 0);
-
-  return <input value={temperature} onChange={handlechange} />;
+const TemperatureInput = ({
+  scale,
+  temperature,
+  onTemperatureChange,
+}: Props) => {
+  return (
+    <div>
+      <legend>Enter temperature in {scale}</legend>
+      <input
+        value={temperature}
+        onChange={(event) => onTemperatureChange(event.target.value)}
+      />
+    </div>
+  );
 };
+
+export default TemperatureInput;
 ```
-
-```tsx title="FahrenheitInput.tsx"
-import React from 'react';
-
-type Props = {
-  readonly temperature: number;
-  readonly callback: (temperature: number) => void;
-};
-
-export default ({ temperature, callback }: Props) => {
-  const handlechange = (e: ChangeEvent<HTMLInputElement>) =>
-    callback((((parseInt(e.target.value) || 0) - 32) * 5) / 9);
-
-  return <input value={(temperature * 9) / 5 + 32} onChange={handlechange} />;
-};
-```
-
-</TabItem>
-<TabItem value="js">
-
-```jsx title="CalciusInput.jsx"
-import React from 'react';
-
-export default ({ temperature, callback }) => {
-  const handlechange = (e) => callback(parseInt(e.target.value) || 0);
-
-  return <input value={temperature} onChange={handlechange} />;
-};
-```
-
-```jsx title="FahrenheitInput.jsx"
-import React from 'react';
-
-export default ({ temperature, callback }) => {
-  const handlechange = (e) =>
-    callback((((parseInt(e.target.value) || 0) - 32) * 5) / 9);
-
-  return <input value={(temperature * 9) / 5 + 32} onChange={handlechange} />;
-};
-```
-
-</TabItem>
-</Tabs>
-
-Check lecture video for a more detailed explanation.
