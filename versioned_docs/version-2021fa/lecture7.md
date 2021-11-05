@@ -101,6 +101,19 @@ To generalize the syntax of the `useState` Hook, the form is as shown below:
 `const [varname, setterFunc] = useState(initValue);`
 _Note: states can be of any type._
 
+Additionally, we can add type parameters to the `useState` call. This is
+particularly important when we want to (1) ensure that state is always a certain
+type, or (2) make sure that TypeScript doesn't yell at us when we are trying to
+set a state for an iterable. That second case sounds confusing, so let's see an
+example. Imagine we have a `products` state that will eventually have an array
+of `Product` type objects. Then, we would use the following `useState` call:
+
+`const [products, setProducts] = useState<Product[]>([])`
+
+If we had simply done it without the `<Product>` parametrization, then TypeScript
+would not know what type that the state should hold, because of the ambiguity
+of the empty array `[]` type.
+
 We can also share Hooks across multiple components, allowing for even better
 reusability of code.
 
@@ -131,6 +144,13 @@ component:
 useEffect(() => {
   document.title = `You clicked ${count} times`;
 }, [count]);
+```
+
+```jsx
+// This code will only invoke the function when the component renders / re-renders.
+useEffect(() => {
+  document.title = `You clicked ${count} times`;
+}, []);
 ```
 
 #### `useEffect` - Subscribing to Outside Data and Separating Concerns
