@@ -91,6 +91,21 @@ const Counter = () => {
 export default Counter;
 ```
 
+:::caution
+
+Note: this caution is a rather advanced case and requires some understanding of
+asynchronous code.
+
+In the above example, note that we passed the callback
+`() => setCount(count + 1)` to the button's `onClick` prop. Sometimes, we end up
+with complicated callbacks involving states, and because of the nature of `count`
+as an immutable const,it will not behave as expected if you do multiple `setCount`
+calls involving the `count` variable. Instead, you can pass yet another callback
+to the setter function to make sure we evaluate the current value of the state
+up to the current point. This is done through `setCount((val) => val + 1)`.
+
+:::
+
 Immediately, we notice that the functional component with Hooks method is
 much more concise and easier to understand (16 lines to just 11 lines of code).
 We were able to define the counter's default (starting) value of 0, its
@@ -147,7 +162,7 @@ useEffect(() => {
 ```
 
 ```jsx
-// This code will only invoke the function when the component renders / re-renders.
+// This code will only invoke the function when the component first renders.
 useEffect(() => {
   document.title = `You clicked ${count} times`;
 }, []);
