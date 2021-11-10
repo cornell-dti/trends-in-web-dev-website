@@ -5,7 +5,7 @@ title: Lecture 7
 
 [Lecture Slides](https://docs.google.com/presentation/d/1s9rJRQdEVnHNxW_HxVFZWShuQDpseuov8QDaCPZCSAw/edit?usp=sharing)
 
-[Assignment 5](/docs/assignment5) (due 11/11 6:29 PM on CMS)
+[Assignment 5](/docs/assignment5) ~~(due 11/11 6:29 PM on CMS)~~ (due date extended to **11/14 by 11:59pm**)
 
 [Final Project Instructions](/docs/finalproject)
 
@@ -264,70 +264,82 @@ lecture video linked at the top for an explanation of the code, intended to
 teach how to think in the React development paradigm.
 
 ```tsx title="App.tsx (root component)"
-import React from 'react';
 import FilterableProductTable from './FilterableProductTable';
 
-const PRODUCTS = [
-  {
-    category: 'Sporting Goods',
-    price: '$49.99',
-    stocked: true,
-    name: 'Football',
-  },
-  {
-    category: 'Sporting Goods',
-    price: '$9.99',
-    stocked: true,
-    name: 'Baseball',
-  },
-  {
-    category: 'Sporting Goods',
-    price: '$29.99',
-    stocked: false,
-    name: 'Basketball',
-  },
-  {
-    category: 'Electronics',
-    price: '$99.99',
-    stocked: true,
-    name: 'iPod Touch',
-  },
-  {
-    category: 'Electronics',
-    price: '$399.99',
-    stocked: false,
-    name: 'iPhone 5',
-  },
-  {
-    category: 'Electronics',
-    price: '$199.99',
-    stocked: true,
-    name: 'Nexus 7',
-  },
+// Usually types would be placed in another file
+type Product = {
+  name: string;
+  stocked: boolean;
+  price: number;
+};
+
+const PRODUCTS: Product[] = [
+  { price: 49.99, stocked: true, name: 'Football' },
+  { price: 9.99, stocked: true, name: 'Baseball' },
+  { price: 29.99, stocked: false, name: 'Basketball' },
+  { price: 99.99, stocked: true, name: 'iPod Touch' },
+  { price: 999.99, stocked: false, name: 'iPhone 13' },
+  { price: 699.99, stocked: true, name: 'Pixel 6' },
 ];
 
 const App = () => (
-  <div className="App">
+  <div>
     <FilterableProductTable products={PRODUCTS} />
   </div>
 );
 
+export type { Product };
 export default App;
 ```
 
 ```tsx title="FilterableProductTable.tsx"
-import React, { ChangeEvent, useState } from 'react';
-import ProductTable, { Product } from './Starter';
+import { useEffect, useState } from 'react';
+import { Product } from './App';
+import ProductTable from './ProductTable';
+import SearchBar from './SearchBar';
 
-type TableProps = {
-  readonly products: Product[];
+type Props = {
+  products: Product[];
 };
 
-type SearchProps = {
-  readonly filterText: string;
-  readonly inStockOnly: boolean;
-  readonly handleFilterTextChange: (e: ChangeEvent<HTMLInputElement>) => void;
-  readonly handleCheckBoxChange: (e: ChangeEvent<HTMLInputElement>) => void;
+const FilterableProductTable = ({ products }: Props) => {
+  const [filterText, setFilterText] = useState('');
+  const [inStockOnly, setInStockOnly] = useState(false);
+
+  useEffect(() => {
+    document.title = filterText
+      ? `Searching for: ${filterText}`
+      : 'Searching for nothing, yet finding everything';
+  }, [filterText]);
+
+  return (
+    <div>
+      <SearchBar
+        filterText={filterText}
+        inStockOnly={inStockOnly}
+        handleFilterTextChange={(e) => setFilterText(e.target.value)}
+        handleCheckBoxChange={(e) => setInStockOnly(e.target.checked)}
+      />
+      <ProductTable
+        products={products}
+        filterText={filterText}
+        inStockOnly={inStockOnly}
+      />
+    </div>
+  );
+};
+
+export default FilterableProductTable;
+```
+
+```tsx title="SearchBar.tsx"
+import { ChangeEventHandler } from 'react';
+
+type Props = {
+  filterText: string;
+  inStockOnly: boolean;
+  handleFilterTextChange: ChangeEventHandler<HTMLInputElement>;
+  handleCheckBoxChange: ChangeEventHandler<HTMLInputElement>;
 };
 
 const SearchBar = ({
@@ -335,7 +347,7 @@ const SearchBar = ({
   inStockOnly,
   handleFilterTextChange,
   handleCheckBoxChange,
-}: SearchProps) => (
+}: Props) => (
   <form>
     <input
       type="text"
@@ -348,108 +360,43 @@ const SearchBar = ({
         type="checkbox"
         checked={inStockOnly}
         onChange={handleCheckBoxChange}
-      />{' '}
+      />
       Only show products in stock
     </p>
   </form>
 );
 
-const FilterableProductTable = ({ products }: TableProps) => {
-  const [filterText, setFilterText] = useState('');
-  const [inStockOnly, setInStockOnly] = useState(false);
-
-  const handleFilterTextChange = (e: ChangeEvent<HTMLInputElement>) =>
-    setFilterText(e.target.value);
-  const handleCheckBoxChange = (e: ChangeEvent<HTMLInputElement>) =>
-    setInStockOnly(e.target.checked);
-
-  return (
-    <div>
-      <SearchBar
-        filterText={filterText} // states passed as prop to SearchBar
-        inStockOnly={inStockOnly} // states passed as prop to SearchBar
-        handleFilterTextChange={handleFilterTextChange} // pass down callbacks to update search state
-        handleCheckBoxChange={handleCheckBoxChange}
-      />
-      <ProductTable
-        products={products} // JSON API model
-        filterText={filterText} // states passed as prop to SearchBar
-        inStockOnly={inStockOnly} // states passed as prop to SearchBar
-      />
-    </div>
-  );
-};
-
-export default FilterableProductTable;
+export default SearchBar;
 ```
 
-```tsx title="Starter.tsx"
-// Contains all the base components (we can put multiple components in a jsx file
-// for convenience, though this is not usually good practice).
-import React, { ReactElement } from 'react';
-// These components will be starter code because they are most self-explanatory
-// and purely presentational. We will go over this code briefly in lecture.
-// Students encouraged to read this on their own time.
+```tsx title="ProductTable.tsx"
+import { Product } from './App';
 
-// Export since this is used in FilterableProductTable as well
-export type Product = {
-  readonly category: string;
-  readonly price: string;
-  readonly stocked: boolean;
-  readonly name: string;
+// You could separate ProductRow and ProductTable into different files
+
+type RowProps = {
+  product: Product;
 };
 
-const ProductRow = (product: Product) => {
-  const name = product.stocked ? (
-    product.name
-  ) : (
-    <span style={{ color: 'red' }}>{product.name}</span>
-  );
+type TableProps = {
+  products: Product[];
+  filterText: string;
+  inStockOnly: boolean;
+};
+
+const ProductRow = ({ product: { name, stocked, price } }: RowProps) => {
+  const nameStyle = stocked ? { color: 'red' } : {};
   return (
     <tr>
-      <td>{name}</td>
-      <td>{product.price}</td>
+      <td style={{ ...nameStyle }}>{name}</td>
+      <td>{price}</td>
     </tr>
   );
 };
 
-type RowProps = {
-  readonly category: string;
-};
-
-const ProductCategoryRow = ({ category }: RowProps) => (
-  <tr>
-    <th colSpan={2}>{category}</th>
-  </tr>
-);
-
-type Props = {
-  readonly products: Product[];
-  readonly filterText: string;
-  readonly inStockOnly: boolean;
-};
-
-const ProductTable = ({ products, filterText, inStockOnly }: Props) => {
-  const rows: ReactElement[] = [];
-  let lastCategory: string | null = null;
-
-  products.forEach((product) => {
-    if (product.name.indexOf(filterText) === -1) {
-      return;
-    }
-    if (inStockOnly && !product.stocked) {
-      return;
-    }
-    if (product.category !== lastCategory) {
-      rows.push(
-        <ProductCategoryRow
-          category={product.category}
-          key={product.category}
-        />
-      );
-    }
-    rows.push(<ProductRow key={product.name} {...product} />);
-    lastCategory = product.category;
+const ProductTable = ({ products, filterText, inStockOnly }: TableProps) => {
+  const filteredProducts = products.filter(({ name, stocked }) => {
+    return name.includes(filterText) && (!inStockOnly || stocked);
   });
 
   return (
@@ -460,13 +407,21 @@ const ProductTable = ({ products, filterText, inStockOnly }: Props) => {
           <th>Price</th>
         </tr>
       </thead>
-      <tbody>{rows}</tbody>
+      <tbody>
+        {filteredProducts.map((product) => (
+          <ProductRow product={product} key={product.name} />
+        ))}
+      </tbody>
     </table>
   );
 };
 
 // Here we can export all these components at once!
-// Notice also the name of the file does not match any single component name.
-// export { ProductRow, ProductCategoryRow, ProductTable };
-export default ProductTable; // but we only need ProductTable here (in FilterableProductTable.tsx)
+// export { ProductRow, ProductTable };
+
+// but ProductRow is only used within this file, so we choose to not export it
+export default ProductTable;
+
+// You could also export a single thing through named exports:
+// export { ProductTable };
 ```

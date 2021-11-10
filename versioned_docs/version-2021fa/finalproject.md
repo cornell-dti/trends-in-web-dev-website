@@ -67,7 +67,7 @@ Upload to CMS a mock and description of your web app! Your mock can be a picture
 
 ### Milestone 1
 
-**Due: November 18 by 6:29 PM**
+**Due: November 21 by 11:59 PM**
 
 Get started implementing either the frontend or backend (you choose). If you're
 doing frontend, you can use hardcoded data for now just to get the layout done.
