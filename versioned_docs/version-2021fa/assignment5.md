@@ -42,8 +42,8 @@ have an `<input>` field representing the search bar, and will need to lift the
 value of the input up into the `App.tsx` parent. The second one will also have a
 input field, representing the name of the item to be added, as well as a button
 to actually add the data to the list. The button `onClick` prop will be useful
-for implementing this, as well as maintaining two internal states for the name
-and price values in `AddItemBar`.
+for implementing this, as well as maintaining the state for the name in
+`AddItemBar`.
 
 At this point we can also do some input validation by disabling the add button
 when the input field is empty. The `disabled` prop for buttons takes a boolean
