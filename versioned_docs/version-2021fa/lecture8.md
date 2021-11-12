@@ -401,7 +401,6 @@ const port = 8080;
 app.use(express.json());
 
 type Product = {
-  category: string;
   price: string;
   stocked: boolean;
   name: string;
@@ -414,7 +413,7 @@ type ProductWithID = Product & {
 const productsCollection = db.collection('products');
 
 app.get('/getProducts', async (_, res) => {
-  const products = await productsCollection.orderBy('category').get();
+  const products = await productsCollection.get();
   res.json(
     products.docs.map((doc): ProductWithID => {
       const product = doc.data() as Product;
@@ -424,7 +423,7 @@ app.get('/getProducts', async (_, res) => {
 });
 
 app.post('/createProduct', async (req, res) => {
-  const newProduct: Product = req.body;
+  const newProduct = req.body as Product;
   const addedProduct = await productsCollection.add(newProduct);
   res.send(addedProduct.id);
 });
@@ -444,11 +443,12 @@ app.delete('/deleteProduct', async (req, res) => {
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 ```
 
+### Frontend
+
 ```tsx title="ProductTable.tsx (frontend)"
-import { ReactElement } from 'react';
+// import axios from "axios";
 
 export type Product = {
-  readonly category: string;
   readonly price: string;
   readonly stocked: boolean;
   readonly name: string;
@@ -457,20 +457,15 @@ export type Product = {
 
 type ProductRowProps = {
   product: Product;
-  products: Product[];
 };
 
 // new code 3
-const ProductRow = ({ product, products }: ProductRowProps) => {
-  const name = product.stocked ? (
-    product.name
-  ) : (
-    <span style={{ color: 'red' }}>{product.name}</span>
-  );
-
+const ProductRow = ({
+  product: { name, stocked, price, id },
+}: ProductRowProps) => {
   // DELETE request using fetch
   const deleteProduct = () => {
-    fetch(`/deleteProduct?id=${product.id}`, {
+    fetch(`/deleteProduct?id=${id}`, {
       method: 'DELETE',
       headers: {
         'content-type': 'application/json',
@@ -480,29 +475,20 @@ const ProductRow = ({ product, products }: ProductRowProps) => {
 
   // DELETE request using axios and async/await
   // const deleteProduct = async () => {
-  //   await axios.delete('/deleteProduct?id=${product.id}');
+  //   await axios.delete('/deleteProduct?id=${id}');
   // }
 
+  const nameStyle = stocked ? {} : { color: 'red' };
   return (
     <tr>
-      <td>{name}</td>
-      <td>{product.price}</td>
+      <td style={{ ...nameStyle }}>{name}</td>
+      <td>{price}</td>
       <td>
-        <button onClick={() => deleteProduct()}>delete</button>
+        <button onClick={deleteProduct}>X</button>
       </td>
     </tr>
   );
 };
-
-type ProductCategoryRowProps = {
-  readonly category: string;
-};
-
-const ProductCategoryRow = ({ category }: ProductCategoryRowProps) => (
-  <tr>
-    <th colSpan={3}>{category}</th>
-  </tr>
-);
 
 type Props = {
   readonly products: Product[];
@@ -511,33 +497,23 @@ type Props = {
 };
 
 const ProductTable = ({ products, filterText, inStockOnly }: Props) => {
-  const rows: ReactElement[] = [];
-  let lastCategory: string | null = null;
-
-  products.forEach((product) => {
-    if (product.name.indexOf(filterText) === -1) return;
-    if (inStockOnly && !product.stocked) return;
-    if (product.category !== lastCategory) {
-      rows.push(
-        <ProductCategoryRow
-          category={product.category}
-          key={product.category}
-        />
-      );
-    }
-    rows.push(
-      <ProductRow key={product.name} product={product} products={products} />
-    );
-    lastCategory = product.category;
+  const filteredProducts = products.filter(({ name, stocked }) => {
+    return name.includes(filterText) && (!inStockOnly || stocked);
   });
 
   return (
     <table>
       <thead>
-        <th>Name</th>
-        <th>Price</th>
+        <tr>
+          <th>Name</th>
+          <th>Price</th>
+        </tr>
       </thead>
-      <tbody>{rows}</tbody>
+      <tbody>
+        {filteredProducts.map((product) => (
+          <ProductRow product={product} key={product.id} />
+        ))}
+      </tbody>
     </table>
   );
 };
@@ -546,6 +522,7 @@ export default ProductTable;
 ```
 
 ```tsx title="FilterableProductTable.tsx (frontend)"
+// import axios from "axios";
 import { ChangeEvent, useEffect, useState } from 'react';
 import ProductTable, { Product } from './ProductTable';
 
@@ -586,19 +563,13 @@ type NewProductProps = {
 };
 
 const NewProduct = ({ products, setProducts }: NewProductProps) => {
-  const [category, setCategory] = useState('');
   const [price, setPrice] = useState('');
   const [stocked, setStocked] = useState(true);
   const [name, setName] = useState('');
 
   // POST request using fetch
   const createProduct = () => {
-    const newProduct = {
-      category: category,
-      price: price,
-      stocked: stocked,
-      name: name,
-    };
+    const newProduct = { price, stocked, name };
     fetch('/createProduct', {
       method: 'POST',
       headers: {
@@ -615,7 +586,7 @@ const NewProduct = ({ products, setProducts }: NewProductProps) => {
 
   // POST request using axios and async/await
   // const createProduct = async () => {
-  //   const newProduct = { category, price, stocked, name };
+  //   const newProduct = { price, stocked, name };
   //   const { data } = await axios.post<string>('/createProduct', newProduct);
   //   const newProductWithID = { ...newProduct, id: data };
   //   setProducts([...products, newProductWithID]);
@@ -623,13 +594,13 @@ const NewProduct = ({ products, setProducts }: NewProductProps) => {
 
   return (
     <div>
-      <p>new product</p>
+      <p>Add New Product:</p>
       <input
         type="text"
-        name="category"
-        placeholder="category..."
-        value={category}
-        onChange={(e) => setCategory(e.target.value)}
+        name="name"
+        placeholder="name..."
+        value={name}
+        onChange={(e) => setName(e.target.value)}
       />
       <input
         type="text"
@@ -645,14 +616,7 @@ const NewProduct = ({ products, setProducts }: NewProductProps) => {
         <option value="true">in stock</option>
         <option value="false">out of stock</option>
       </select>
-      <input
-        type="text"
-        name="name"
-        placeholder="name..."
-        value={name}
-        onChange={(e) => setName(e.target.value)}
-      />
-      <button onClick={() => createProduct()}>add a product</button>
+      <button onClick={createProduct}>add a product</button>
     </div>
   );
 };
@@ -674,8 +638,8 @@ const FilterableProductTable = () => {
   // GET request using axios and async/await
   // useEffect(() => {
   //   (async () => {
-  //     const { data } = await axios.get<readonly Product[]>('/getProducts');
-  //   setProducts(data)
+  //     const { data } = await axios.get<Product[]>("/getProducts");
+  //     setProducts(data);
   //   })();
   // }, [products]);
 
@@ -706,4 +670,19 @@ const FilterableProductTable = () => {
 };
 
 export default FilterableProductTable;
+```
+
+```tsx title="App.tsx (frontend)"
+import './App.css';
+import FilterableProductTable from './FilterableProductTable';
+
+function App() {
+  return (
+    <div>
+      <FilterableProductTable />
+    </div>
+  );
+}
+
+export default App;
 ```
