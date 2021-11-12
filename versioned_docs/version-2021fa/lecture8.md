@@ -3,7 +3,7 @@ id: lecture8
 title: Lecture 8
 ---
 
-Lecture Slides to be added!
+[Lecture Slides](https://docs.google.com/presentation/d/1Htc7OxgJo8OVVxC6Sepl743kXdstj2k3s9kM7q3UYRc/edit?usp=sharing)
 
 [Assignment 5](/docs/assignment5) ~~(due 11/11 6:29 PM on CMS)~~ (due date extended to **11/14 by 11:59pm**)
 
