@@ -24,13 +24,15 @@ Make sure to remove it once you are done testing!
 
 Create a component, Playlist, that contains all of the songs you've added. This will do the following:
 
-- Maintain a state containing a list of `songs` (please remember to create a type for the songs!), which are objects containing the info about each song.
+- Maintain a state containing a list of `songs`, which are objects containing the info about each song.
 - Have two input fields, one for title and one for artist.
 - Have a button which allows you to submit the new song and adds to the list.
 
-Remember to use your `Song` component from part 1!
+Some things to remember about your implementation or **you will lose points!**:
 
-Please remember to [add a `key` prop when rendering lists](/docs/lecture5#rendering-lists) or **you will lose points!**
+- Create a type for your songs! Do not leave it as Object type.
+- Use your `Song` component from part 1 and pass it props instead of mapping directly into HTML elements.
+- Add a [`key` prop](/docs/lecture5#rendering-lists) when rendering lists.
 
 ## Part 3: Adding Playlist to App.tsx
 
