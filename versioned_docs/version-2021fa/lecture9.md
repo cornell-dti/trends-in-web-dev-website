@@ -13,7 +13,7 @@ title: Lecture 9
 
 [Final Project - Milestone 3](/docs/finalproject#milestone-3) due **12/9 by 6:59pm**
 
-Vote for the Lecture 10 topic [here](bit.ly/trends-choice) by **Thursday 11:59PM ET**
+Vote for the Lecture 10 topic [here](https://bit.ly/trends-choice) by **Thursday 11:59PM ET**
 
 ## Yarn Workspaces
 
@@ -105,21 +105,18 @@ Most important lines here are 3-7 which define the workspaces and set `private: 
 
 #### Backend
 
-Now our backend workspace will look like the following. I've omitted some of the dependencies part for brevity you can find the full file [below](./lecture9#backendpackagejson)
+Now our backend workspace will look like the following. I've omitted some of the dependencies part for brevity you can find the full file [here](https://github.com/Enochen/trends-fa21-lec9-demo/blob/main/backend/package.json)
 
 ```json title="backend/package.json"
 {
   "name": "backend",
   "version": "1.0.0",
+  "private": true,
   "main": "index.js",
-  "scripts": {
-    "build": "tsc -p tsconfig.json",
-    "start": "node index.js"
-  },
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.1",
-    "firebase-admin": "^9.4.1"
+    "firebase-admin": "^10.0.0"
   }
   // dev dependencies...
 }
@@ -127,27 +124,40 @@ Now our backend workspace will look like the following. I've omitted some of the
 
 #### Frontend
 
-Our frontend workspace will also look like the following. The full file can also be found is very similar to the default `package.json` from create react app we have been using all along.
+Our frontend workspace will also look like the following. The full file can also be found [here](https://github.com/Enochen/trends-fa21-lec9-demo/blob/main/frontend/package.json)
 
 ```json title="frontend/package.json"
 {
+  {
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://localhost:8080",
   "dependencies": {
-    "axios": "^0.19.2",
-    "firebase": "^8.1.1",
-    "firebase-tools": "^8.16.2",
-    "react": "^17.0.1"
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "@types/jest": "^26.0.15",
+    "@types/node": "^12.0.0",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "axios": "^0.24.0",
+    "firebase": "^9.4.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-firebaseui": "^6.0.0",
+    "react-scripts": "4.0.3",
+    "typescript": "^4.1.2",
+    "web-vitals": "^1.0.1"
   },
-  // other dependencies, dev dependencies
+  "proxy": "http://localhost:8080",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
-  }
+  },
+  // other config and browser dependencies
+}
 }
 ```
 
@@ -316,7 +326,7 @@ We fixed the backend by using Firebase Admin's verifyIdToken function to check w
 
 #### Backend
 
-On the backend, we had the `post` endpoints check the `idtoken` in the request headers.
+On the backend, we had the `post` endpoints check the `idtoken` in the request headers `authorization`.
 
 ```ts title="backend/index.ts"
 app.post('/createProduct', async (req, res) => {
@@ -332,11 +342,11 @@ app.post('/createProduct', async (req, res) => {
 });
 ```
 
-We call `admin.auth().verifyIdToken(req.headers.idtoken as string)` and only then do we allow the input to be saved. Otherwise, we log the error.
+We call `await auth.verifyIdToken(idToken)` and only then do we allow the input to be saved. Otherwise, we log the error.
 
 #### Frontend
 
-Now when we send the request back, we need to send the idtoken with the request header. So in the `createProduct` method that called the POST endpoints above, we send call `firebase.auth().currentUser?.getIdToken(true)` to get the user's idtoken. Then we pass it in as a field to `headers` in the fetch. However, if the currentUser is undefined for some reason (what the `?` catches), then we console that the user isn't authenticated. Everything else should be familiar from last lecture.
+Now when we send the request back, we need to send the idtoken with the request header. So in the `createProduct` method that called the POST endpoints above, we send call `getAuth().currentUser?.getIdToken()` to get the user's idtoken. Then we pass it in as a field to `headers` in the fetch. However, if the currentUser is undefined for some reason (what the `?` catches). Everything else should be familiar from last lecture.
 
 ```ts title="frontend/src/FilterableProductTable.tsx"
 const createProduct = async () => {
@@ -372,7 +382,7 @@ There is a lot more we could've done in terms of security here.
 1. We should send back error messages to the user about why requests are failing instead of just doing `console.log()` since the user won't see that. This would be bad user experience since they don't have feedback about why things aren't working.
 2. We should also do input validation on the backend to ensure we are getting our expected inputs. What if we aren't passing an object that looks like:
 
-```json
+```js
 {
   "category": string
   "price": string
@@ -383,7 +393,7 @@ There is a lot more we could've done in terms of security here.
 
 ## Deployment
 
-To deploy your web application means to put it on a Web server so others can access it via the internet. We will deploy both our frontend and backend on Heroku. There are a variety of services you can use for deployment including Firebase, Amazon AWS, Microsoft Azure, etc, but we decided to show you Heroku deployment since it is easier and requires less setup.
+To deploy your web application means to put it on a web server so others can access it via the internet. We will deploy both our frontend and backend on Heroku. There are a variety of services you can use for deployment including Firebase, Amazon AWS, Microsoft Azure, etc, but we decided to show you Heroku deployment since it is easier and requires less setup.
 
 We will be taking our filterable product table app we have been building throughout the course and deploying it to a remote server. To deploy your own app (for final project for example), you can follow the same steps usually.
 
@@ -501,7 +511,11 @@ Our root `package.json` will look like the following. We are using yarn workspac
 ```
 
 :::note
-The root `package.json` can have dependencies and yarn will install them with `yarn install` just like everything else. You will just need to run `yarn add -W <pkg_name>` since just using `yarn add` will show a warning message asking if you are sure about adding a dependency to the root. We add Heroku in this case to help with deployment!
+The root `package.json` can have dependencies and yarn will install them with `yarn install` just like everything else. You will just need to run `yarn add -D -W <pkg_name>` since just using `yarn add` will show a warning message asking if you are sure about adding a dependency to the root. We add Heroku in this case to help with deployment!
+:::
+
+:::note
+Normally, we don't need the resolution section, but the Heroku CLI is bugged at the time of writing, so we have to add this to our root package.json and then yarn install again as a workaround.
 :::
 
 Read more about `heroku-postbuild` [here](https://devcenter.heroku.com/articles/nodejs-support#customizing-the-build-process).
@@ -521,7 +535,7 @@ Read more about the Heroku Procfile [here](https://devcenter.heroku.com/articles
 We will now show the series of commands to deploy to Heroku. We will be using Heroku Git to deploy.
 
 ```bash
-yarn add heroku
+yarn add -D -W heroku
 git init
 git add .
 git commit -m "COMMIT MESSAGE"
@@ -535,7 +549,7 @@ git push heroku master
 If you run into any bugs when running the code above (probably `yarn heroku create <optional project name>`), you can create a new project through Heroku's website [www.heroku.com](https://www.heroku.com)
 :::
 
-Visiting the URL should take you to the same application you had locally. Now you can share that link with your friends so they can visit your website too! Take a look at our deployed site here: [https://lec9-demo.herokuapp.com/](https://lec9-demo.herokuapp.com/) (If you have issues deploying feel free to submit this link for the attendance question, but please do come to [office hours](./introduction#when-are-office-hours) first!)
+Visiting the URL should take you to the same application you had locally. Now you can share that link with your friends so they can visit your website too!
 
 :::note
 If you run into issues that the app isn't authorized to use authentication, go to your Firebase project on [firebase.google.com](https://firebase.google.com/) > Go to Console > [your project] > Authentication [on sidebar] > Sign-in Method > Authorized domains > Add Domain and enter the URL of your deployed site.
