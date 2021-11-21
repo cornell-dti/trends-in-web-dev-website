@@ -452,6 +452,8 @@ app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 Notice we are having `app.listen` listen for either `process.env.PORT` or port 8080. Previously, we hardcoded `8080` for this parameter. `process.env.PORT` will be defined by Heroku and we want the app to listen for requests on that port in the deployed site.
 :::
 
+We can load the FIREBASE_PRIVATE_KEY from the environment variable instead of having it in plaintext inside the firebase-adminsdk.json. This allows us to publish this code on a public repository without exposing our private key. To run our app locally we create a .env file inside the frontend folder that contains the actual value for the private key. However, in Heroku there is a section called "Config Vars" in the settings which you can use to set the environment variables for deployment.
+
 ```ts title="backend/firebase-config.ts"
 import * as admin from 'firebase-admin';
 import { readFileSync } from 'fs';
@@ -480,6 +482,10 @@ const auth = admin.auth();
 
 export { db, auth };
 ```
+
+:::note
+The `hydrateServiceAccount` function in `firebase-config.ts` reads the value from the environment variable, loads up the rest of the firebase-adminsdk json, and combines them together to get a full service account object which you can initialize firebase admin with.
+:::
 
 #### Frontend
 
