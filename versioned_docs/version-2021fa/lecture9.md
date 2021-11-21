@@ -382,7 +382,7 @@ There is a lot more we could've done in terms of security here.
 1. We should send back error messages to the user about why requests are failing instead of just doing `console.log()` since the user won't see that. This would be bad user experience since they don't have feedback about why things aren't working.
 2. We should also do input validation on the backend to ensure we are getting our expected inputs. What if we aren't passing an object that looks like:
 
-```js
+```ts
 {
   "category": string
   "price": string
@@ -403,7 +403,7 @@ We will be taking our filterable product table app we have been building through
 
 ##### `index.ts`
 
-To deploy to Heroku we need some additional setup. We will be serving our frontend via our backend so express should grab files from the `frontend/build` folder. In the frontend folder, when you run `yarn build`, you will get a `build` directory containing all the optimized, bundled frontend React code ready to be pushed to a remote server. We will include the line `app.use(express.static(path.join(__dirname, '../frontend/build')));` to do this. (Note: this requires us to `import path from 'path';`)
+To deploy to Heroku we need some additional setup. In the frontend folder, when you run `yarn build`, you will get a `build` directory containing all the optimized, bundled frontend React code ready to be pushed to a remote server. We will include the line `app.use(express.static(path.join(__dirname, '../frontend/build')));` to do this. (Note: this requires us to `import path from 'path';`)
 
 We will also be calling upon our express app to use CORS to allow cross origin requests. If your backend requests are being blocked be of some `CORS cross origin policy` issue you probably forgot to include the `app.use(cors());` line. (Note: this requires us to `import cors from 'cors';`)
 
@@ -484,7 +484,7 @@ export { db, auth };
 ```
 
 :::note
-The `hydrateServiceAccount` function in `firebase-config.ts` reads the value from the environment variable, loads up the rest of the firebase-adminsdk json, and combines them together to get a full service account object which you can initialize firebase admin with.
+`firebase-config.ts` contains the `hydrateServiceAccount` function which reads the value from the environment variable, loads up the rest of the firebase-adminsdk json, and combines them together to get a full service account object which you can initialize the Firebase admin with.
 :::
 
 #### Frontend
