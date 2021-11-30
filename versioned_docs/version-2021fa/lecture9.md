@@ -11,9 +11,9 @@ title: Lecture 9
 
 [Final Project - Milestone 1](/docs/finalproject#milestone-1) due **11/21 by 11:59pm**
 
-[Final Project - Milestone 2](/docs/finalproject#milestone-2) due **12/2 by 6:59pm**
+[Final Project - Milestone 2](/docs/finalproject#milestone-2) due **12/2 by 11:59pm**
 
-[Final Project - Milestone 3](/docs/finalproject#milestone-3) due **12/9 by 6:59pm**
+[Final Project - Milestone 3](/docs/finalproject#milestone-3) due **12/9 by 11:59pm**
 
 Vote for the Lecture 10 topic [here](https://bit.ly/trends-choice) by **11/24 11:59pm**
 

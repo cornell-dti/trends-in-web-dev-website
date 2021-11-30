@@ -76,7 +76,7 @@ to a backend in the subsequent milestones.
 
 ### Milestone 2
 
-**Due: December 2 by 6:29 PM**
+**Due: December 2 by 11:59 PM**
 
 Work on the other side (if you did frontend for Milestone 1, do backend now and vice versa).
 
@@ -84,7 +84,7 @@ Also have an authentication system set up using Firebase.
 
 ### Milestone 3
 
-**Due: December 9 by 6:29 PM**
+**Due: December 9 by 11:59 PM**
 
 Bridge the frontend and backend together using data fetching. This will involve some full stack work! Also, the app should be fully deployed on Firebase and styled using any CSS you deem necessary. This is your final submission!
 
