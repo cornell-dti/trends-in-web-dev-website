@@ -5,6 +5,8 @@ title: Lecture 9
 
 [Lecture Slides](https://docs.google.com/presentation/d/1khV0GSLhAAsbrWrQQ5PxH3R6cCNNllY0rOGeN1g9rpM/edit?usp=sharing)
 
+[Lecture Demo Source Code](https://github.com/Enochen/trends-fa21-lec9-demo/)
+
 [Final Project Instructions](/docs/finalproject)
 
 [Final Project - Milestone 1](/docs/finalproject#milestone-1) due **11/21 by 11:59pm**
@@ -13,7 +15,7 @@ title: Lecture 9
 
 [Final Project - Milestone 3](/docs/finalproject#milestone-3) due **12/9 by 6:59pm**
 
-Vote for the Lecture 10 topic [here](https://bit.ly/trends-choice) by **Thursday 11:59PM ET**
+Vote for the Lecture 10 topic [here](https://bit.ly/trends-choice) by **11/24 11:59pm**
 
 ## Yarn Workspaces
 
@@ -452,7 +454,55 @@ app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 Notice we are having `app.listen` listen for either `process.env.PORT` or port 8080. Previously, we hardcoded `8080` for this parameter. `process.env.PORT` will be defined by Heroku and we want the app to listen for requests on that port in the deployed site.
 :::
 
-We can load the FIREBASE_PRIVATE_KEY from the environment variable instead of having it in plaintext inside the firebase-adminsdk.json. This allows us to publish this code on a public repository without exposing our private key. To run our app locally we create a .env file inside the frontend folder that contains the actual value for the private key. However, in Heroku there is a section called "Config Vars" in the settings which you can use to set the environment variables for deployment.
+We can load the `FIREBASE_PRIVATE_KEY` from the environment variable instead of having it in plaintext inside the `firebase-adminsdk.json` file. This is the service account JSON we were working with with Firebase! By removing the private key from our file, we can publish this code on a public repository without exposing our private key.
+
+```ts title="firebase-adminsdk.json"
+{
+  "type": "service_account",
+  // ...stuff
+  "private_key": "",
+  // ...more stuff
+}
+```
+
+To run our app **locally** we create a .env file inside the frontend folder that contains the actual value for the private key.
+
+Make sure that the `.env` file is inside the `backend` folder!
+
+```env title=".env"
+FIREBASE_PRIVATE_KEY=-----BEGIN PRIVATE KEY-----\n...\n-----END PRIVATE KEY-----\n
+```
+
+However, our `.env` file does not get included with the repository, since it has sensitive information.
+
+In **Heroku** there is a section called "Config Vars" in the settings which you can use to set the environment variables for deployment.
+
+![Heroku Config Vars](/img/lec9/heroku-config.png)
+
+:::note
+**How do we stop the `.env` file from being included with the repository?**
+
+Sometimes we don't want a local file to be part of the repository. Each version
+control system has its own way of excluding files. We are using `git`, which
+uses the `.gitignore` file. You will most often see a `.gitignore` file in the
+top-level directory of a repository, but they can exist in any child directory
+as well.
+
+To specify what to ignore, we add lines to a `.gitingore` file containing a
+pattern (similar to globs). When a file or folder name matches a pattern inside
+the `.gitignore` file, it gets excluded from the repository.
+
+For example, we would add a line containing `.env` to ignore all files (and
+folders) named `.env`. Of course, you could do a lot more complex stuff with the
+patterns you have at your disposal!
+
+Learn more about the `.gitignore` file [here](https://git-scm.com/docs/gitignore).
+
+Find the `.gitignore` file for the lecture demo [here](https://github.com/Enochen/trends-fa21-lec9-demo/blob/main/.gitignore).
+
+:::
+
+Feel free to use the following code as-is to load the private key from the environment.
 
 ```ts title="backend/firebase-config.ts"
 import * as admin from 'firebase-admin';
@@ -484,7 +534,7 @@ export { db, auth };
 ```
 
 :::note
-`firebase-config.ts` contains the `hydrateServiceAccount` function which reads the value from the environment variable, loads up the rest of the firebase-adminsdk json, and combines them together to get a full service account object which you can initialize the Firebase admin with.
+`firebase-config.ts` contains the `hydrateServiceAccount` function which reads the value from the environment variable, loads up the rest of the `firebase-adminsdk json`, and combines them together to get a full service account object which you can initialize the Firebase admin with.
 :::
 
 #### Frontend
