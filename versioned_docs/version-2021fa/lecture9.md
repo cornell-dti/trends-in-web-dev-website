@@ -479,6 +479,29 @@ In **Heroku** there is a section called "Config Vars" in the settings which you 
 
 ![Heroku Config Vars](/img/lec9/heroku-config.png)
 
+:::note
+**How do we stop the `.env` file from being included with the repository?**
+
+Sometimes we don't want a local file to be part of the repository. Each version
+control system has its own way of excluding files. We are using `git`, which
+uses the `.gitignore` file. You will most often see a `.gitignore` file in the
+top-level directory of a repository, but they can exist in any child directory
+as well.
+
+To specify what to ignore, we add lines to a `.gitingore` file containing a
+pattern (similar to globs). When a file or folder name matches a pattern inside
+the `.gitignore` file, it gets excluded from the repository.
+
+For example, we would add a line containing `.env` to ignore all files (and
+folders) named `.env`. Of course, you could do a lot more complex stuff with the
+patterns you have at your disposal!
+
+Learn more about the `.gitignore` file [here](https://git-scm.com/docs/gitignore).
+
+Find the `.gitignore` file for the lecture demo [here](https://github.com/Enochen/trends-fa21-lec9-demo/blob/main/.gitignore).
+
+:::
+
 Feel free to use the following code as-is to load the private key from the environment.
 
 ```ts title="backend/firebase-config.ts"
