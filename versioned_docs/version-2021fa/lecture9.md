@@ -5,6 +5,8 @@ title: Lecture 9
 
 [Lecture Slides](https://docs.google.com/presentation/d/1khV0GSLhAAsbrWrQQ5PxH3R6cCNNllY0rOGeN1g9rpM/edit?usp=sharing)
 
+[Lecture Demo Source Code](https://github.com/Enochen/trends-fa21-lec9-demo/)
+
 [Final Project Instructions](/docs/finalproject)
 
 [Final Project - Milestone 1](/docs/finalproject#milestone-1) due **11/21 by 11:59pm**
