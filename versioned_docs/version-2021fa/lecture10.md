@@ -3,13 +3,7 @@ id: lecture10
 title: Lecture 10
 ---
 
-<!-- [Lecture Slides]() -->
-
-Lecture Slides (To be posted)
-
-<!-- [Lecture Demo Source Code](https://github.com/Enochen/trends-fa21-lec10-demo/) -->
-
-Lecture Demo Source Code (To be posted)
+[Lecture Slides](https://docs.google.com/presentation/d/1tVozUya-oCwHNIHjMt926mJxvxdInIAWSN_4j19a94I/edit?usp=sharing)
 
 [Final Project Instructions](/docs/finalproject)
 
