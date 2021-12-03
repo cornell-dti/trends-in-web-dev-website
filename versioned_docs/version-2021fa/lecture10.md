@@ -64,9 +64,7 @@ export default function App() {
   // Example of using a battery package from expo to access mobile features
   useEffect(() => {
     // initially gets battery level
-    async () => {
-      getBatteryLevelAsync().then(setBattery);
-    };
+    getBatteryLevelAsync().then(setBattery);
     // subscribe to battery level to keep it in sync
     const listener = addBatteryLevelListener((event) =>
       setBattery(event.batteryLevel)
