@@ -48,7 +48,9 @@ yarn start
 
 ### Demo
 
-As part of the demo we built the simple TODO list app from assignment 4 and battery tracker in React Native! The code is here:
+As part of the demo we built the simple TODO list app from [assignment 4](/docs/assignment4) and battery tracker in React Native!
+
+Before starting though, we have to install the `expo-battery` package by running `expo install expo-battery`. We use `expo install` to install expo packages instead of `yarn add` or `npm install` because it prevents you from installing incompatible versions with your particular Expo SDK version.
 
 ```tsx title="App.tsx"
 import { addBatteryLevelListener, getBatteryLevelAsync } from 'expo-battery';
@@ -127,6 +129,7 @@ export default () => {
       <FlatList data={tasks} renderItem={(info) => <Text>{info.item}</Text>} />
       <TextInput
         style={styles.input}
+        placeholder="Item Name"
         onChangeText={setInput}
         value={input}
       ></TextInput>
@@ -156,4 +159,4 @@ Expo Docs: [https://docs.expo.io/](https://docs.expo.io/)
 
 [Material UI](https://mui.com/) is a library that ships a bunch of pre-style and customizable components for you to use in your own React projects. Material UI comes with a variety of components ranging from [buttons](https://mui.com/components/buttons/) to [icons](https://mui.com/components/material-icons/) to [drawers](https://mui.com/components/drawers/), all of which are customizable and come with their own props that can do common tweaks to their existing components to fit your individual need.
 
-[Semantic UI](https://semantic-ui.com/) and [Bootstrap](https://getbootstrap.com/) are two other popular libraries used for styling and do not require projects written in React. Both of them come with pre-written classes for styling elements and organizing layout.
+[Semantic UI](https://semantic-ui.com/) and [Bootstrap](https://getbootstrap.com/) are two other popular libraries used for styling and do not require projects written in React and provide pre-written classes for styling elements and organizing layout. Nevertheless - they do come with "React component" versions ([Semantic UI React](https://react.semantic-ui.com/) and [React Bootstrap](https://react-bootstrap.github.io/)) similar to Material UI!
