@@ -1,89 +1,89 @@
 {
-  "version-2021fa/docs": {
+  "docs": {
     "Getting Started": [
       {
         "type": "doc",
-        "id": "version-2021fa/introduction"
+        "id": "version-2022sp/introduction"
       },
       {
         "type": "doc",
-        "id": "version-2021fa/setup-environment"
+        "id": "version-2022sp/setup-environment"
       },
       {
         "type": "doc",
-        "id": "version-2021fa/setup-editor"
+        "id": "version-2022sp/setup-editor"
       }
     ],
     "Lectures": [
       {
         "type": "doc",
-        "id": "version-2021fa/lecture1"
+        "id": "version-2022sp/lecture1"
       },
       {
         "type": "doc",
-        "id": "version-2021fa/lecture2"
+        "id": "version-2022sp/lecture2"
       },
       {
         "type": "doc",
-        "id": "version-2021fa/lecture3"
+        "id": "version-2022sp/lecture3"
       },
       {
         "type": "doc",
-        "id": "version-2021fa/lecture4"
+        "id": "version-2022sp/lecture4"
       },
       {
         "type": "doc",
-        "id": "version-2021fa/lecture5"
+        "id": "version-2022sp/lecture5"
       },
       {
         "type": "doc",
-        "id": "version-2021fa/lecture6"
+        "id": "version-2022sp/lecture6"
       },
       {
         "type": "doc",
-        "id": "version-2021fa/lecture7"
+        "id": "version-2022sp/lecture7"
       },
       {
         "type": "doc",
-        "id": "version-2021fa/lecture8"
+        "id": "version-2022sp/lecture8"
       },
       {
         "type": "doc",
-        "id": "version-2021fa/lecture9"
+        "id": "version-2022sp/lecture9"
       },
       {
         "type": "doc",
-        "id": "version-2021fa/lecture10"
+        "id": "version-2022sp/lecture10"
       }
     ],
     "Assignments": [
       {
         "type": "doc",
-        "id": "version-2021fa/assignments"
+        "id": "version-2022sp/assignments"
       },
       {
         "type": "doc",
-        "id": "version-2021fa/assignment1"
+        "id": "version-2022sp/assignment1"
       },
       {
         "type": "doc",
-        "id": "version-2021fa/assignment2"
+        "id": "version-2022sp/assignment2"
       },
       {
         "type": "doc",
-        "id": "version-2021fa/assignment3"
+        "id": "version-2022sp/assignment3"
       },
       {
         "type": "doc",
-        "id": "version-2021fa/assignment4"
+        "id": "version-2022sp/assignment4"
       },
       {
         "type": "doc",
-        "id": "version-2021fa/assignment5"
+        "id": "version-2022sp/assignment5"
       },
       {
         "type": "doc",
-        "id": "version-2021fa/finalproject"
+        "id": "version-2022sp/finalproject"
       }
     ]
   }
