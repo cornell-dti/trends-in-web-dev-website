@@ -14,77 +14,7 @@
         "id": "version-2022sp/setup-editor"
       }
     ],
-    "Lectures": [
-      {
-        "type": "doc",
-        "id": "version-2022sp/lecture1"
-      },
-      {
-        "type": "doc",
-        "id": "version-2022sp/lecture2"
-      },
-      {
-        "type": "doc",
-        "id": "version-2022sp/lecture3"
-      },
-      {
-        "type": "doc",
-        "id": "version-2022sp/lecture4"
-      },
-      {
-        "type": "doc",
-        "id": "version-2022sp/lecture5"
-      },
-      {
-        "type": "doc",
-        "id": "version-2022sp/lecture6"
-      },
-      {
-        "type": "doc",
-        "id": "version-2022sp/lecture7"
-      },
-      {
-        "type": "doc",
-        "id": "version-2022sp/lecture8"
-      },
-      {
-        "type": "doc",
-        "id": "version-2022sp/lecture9"
-      },
-      {
-        "type": "doc",
-        "id": "version-2022sp/lecture10"
-      }
-    ],
-    "Assignments": [
-      {
-        "type": "doc",
-        "id": "version-2022sp/assignments"
-      },
-      {
-        "type": "doc",
-        "id": "version-2022sp/assignment1"
-      },
-      {
-        "type": "doc",
-        "id": "version-2022sp/assignment2"
-      },
-      {
-        "type": "doc",
-        "id": "version-2022sp/assignment3"
-      },
-      {
-        "type": "doc",
-        "id": "version-2022sp/assignment4"
-      },
-      {
-        "type": "doc",
-        "id": "version-2022sp/assignment5"
-      },
-      {
-        "type": "doc",
-        "id": "version-2022sp/finalproject"
-      }
-    ]
+    "Lectures": [],
+    "Assignments": []
   }
 }
