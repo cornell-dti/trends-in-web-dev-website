@@ -29,7 +29,6 @@ key experience in designing systems on both the frontend and backend using today
 
 TBD
 
-
 If you are unable to make any of those office hours times, you can ask questions on Ed or get in touch with Enoch, Scott, or Jason.
 
 ## Is there a lecture schedule?
