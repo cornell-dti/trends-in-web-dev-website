@@ -15,6 +15,11 @@
       }
     ],
     "Lectures": [],
-    "Assignments": []
+    "Assignments": [
+      {
+        "type": "doc",
+        "id": "version-2021sp/assignments"
+      }
+    ]
   }
 }
