@@ -89,7 +89,7 @@ Also have an authentication system set up using Firebase.
 Bridge the frontend and backend together using data fetching. This will involve some full stack work! Also, the app should be fully deployed on Firebase and styled using any CSS you deem necessary. This is your final submission!
 
 :::tip
-Need help? Come to [office hours](/docs/introduction#when-are-office-hours) and we can help you debug. Also feel free to post questions on Piazza!
+Need help? Come to [office hours](/docs/2021fa/introduction#when-are-office-hours) and we can help you debug. Also feel free to post questions on Piazza!
 :::
 
 :::danger
