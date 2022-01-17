@@ -5,13 +5,13 @@ title: Lecture 8
 
 [Lecture Slides](https://docs.google.com/presentation/d/1Htc7OxgJo8OVVxC6Sepl743kXdstj2k3s9kM7q3UYRc/edit?usp=sharing)
 
-[Assignment 5](/docs/assignment5) ~~(due 11/11 6:29 PM on CMS)~~ (due date extended to **11/14 by 11:59pm**)
+[Assignment 5](/docs/2021fa/assignment5) ~~(due 11/11 6:29 PM on CMS)~~ (due date extended to **11/14 by 11:59pm**)
 
-[Final Project Instructions](/docs/finalproject)
+[Final Project Instructions](/docs/2021fa/finalproject)
 
-[Final Project - Milestone 0](/docs/finalproject#milestone-0) due **11/14 by 11:59pm**
+[Final Project - Milestone 0](/docs/2021fa/finalproject#milestone-0) due **11/14 by 11:59pm**
 
-[Final Project - Milestone 1](/docs/finalproject#milestone-1) due **11/21 by 11:59pm**
+[Final Project - Milestone 1](/docs/2021fa/finalproject#milestone-1) due **11/21 by 11:59pm**
 
 ## Concurrently
 
@@ -141,7 +141,7 @@ Its params are:
 ```
 
 - For more on the init object, refer to
-  [this link](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/fetch)!
+  [this link](https://developer.mozilla.org/en-US/docs/2021fa/Web/API/WindowOrWorkerGlobalScope/fetch)!
 
 **IMPORTANT: fetch() returns a PROMISE!**
 

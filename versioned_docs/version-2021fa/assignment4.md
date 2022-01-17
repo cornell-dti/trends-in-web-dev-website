@@ -32,7 +32,7 @@ Some things to remember about your implementation or **you will lose points!**:
 
 - Create a type for your songs! Do not leave it as `any` type.
 - Use your `Song` component from part 1 and pass it props instead of mapping directly into HTML elements.
-- Add a [`key` prop](/docs/lecture5#rendering-lists) when rendering lists.
+- Add a [`key` prop](/docs/2021fa/lecture5#rendering-lists) when rendering lists.
 
 ## Part 3: Adding Playlist to App.tsx
 

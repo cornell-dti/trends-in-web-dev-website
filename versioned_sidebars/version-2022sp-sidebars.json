@@ -14,7 +14,17 @@
         "id": "version-2022sp/setup-editor"
       }
     ],
-    "Lectures": [],
-    "Assignments": []
+    "Lectures": [
+      {
+        "type": "doc",
+        "id": "version-2022sp/lecture1"
+      }
+    ],
+    "Assignments": [
+      {
+        "type": "doc",
+        "id": "version-2022sp/assignments"
+      }
+    ]
   }
 }
