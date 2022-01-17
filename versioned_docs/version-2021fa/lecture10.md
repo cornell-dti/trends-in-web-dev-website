@@ -5,11 +5,11 @@ title: Lecture 10
 
 [Lecture Slides](https://docs.google.com/presentation/d/1tVozUya-oCwHNIHjMt926mJxvxdInIAWSN_4j19a94I/edit?usp=sharing)
 
-[Final Project Instructions](/docs/finalproject)
+[Final Project Instructions](/docs/2021fa/finalproject)
 
-[Final Project - Milestone 2](/docs/finalproject#milestone-2) due **12/2 by 11:59pm**
+[Final Project - Milestone 2](/docs/2021fa/finalproject#milestone-2) due **12/2 by 11:59pm**
 
-[Final Project - Milestone 3](/docs/finalproject#milestone-3) due **12/9 by 11:59pm**
+[Final Project - Milestone 3](/docs/2021fa/finalproject#milestone-3) due **12/9 by 11:59pm**
 
 ## React Native
 
@@ -48,7 +48,7 @@ yarn start
 
 ### Demo
 
-As part of the demo we built the simple TODO list app from [assignment 4](/docs/assignment4) and battery tracker in React Native!
+As part of the demo we built the simple TODO list app from [assignment 4](/docs/2021fa/assignment4) and battery tracker in React Native!
 
 Before starting though, we have to install the `expo-battery` package by running `expo install expo-battery`. We use `expo install` to install expo packages instead of `yarn add` or `npm install` because it prevents you from installing incompatible versions with your particular Expo SDK version.
 
@@ -151,7 +151,7 @@ Once you `yarn start`, you should be taken to Expo where you can view your chang
 
 This was a very cursory introduction to React Native. You can learn more by referring to React docs.
 
-React Docs: [https://reactnative.dev/docs/getting-started](https://reactnative.dev/docs/getting-started)
+React Docs: [https://reactnative.dev/docs/2021fa/getting-started](https://reactnative.dev/docs/2021fa/getting-started)
 
 Expo Docs: [https://docs.expo.io/](https://docs.expo.io/)
 

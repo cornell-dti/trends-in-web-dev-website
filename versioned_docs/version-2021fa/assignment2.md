@@ -86,7 +86,7 @@ For example, a request to `/deleteSong?id=song1` would delete the song
 you created in the first part of the assignment.
 
 :::tip
-Don't know where to start? Reference the [live coding demo example](/docs/2021sp/lecture3#SampleCode) from lecture 3! Also, get help in [office hours](introduction#when-are-office-hours)!
+Don't know where to start? Reference the [live coding demo example](/docs/2021fa/2021sp/lecture3#SampleCode) from lecture 3! Also, get help in [office hours](introduction#when-are-office-hours)!
 :::
 
 ## Part 7: Submission
@@ -117,7 +117,7 @@ same case, and it'll be enough for us.
 
 ### Getting a bunch of weird TypeScript errors, and I don't think my code is wrong.
 
-Make sure to include the `tsconfig.json` from the [lecture 3 notes](/docs/2021sp/lecture3)
+Make sure to include the `tsconfig.json` from the [lecture 3 notes](/docs/2021fa/2021sp/lecture3)
 in your project directory.
 
 ### Do we need to submit our `service-account.json` along with the other stuff?

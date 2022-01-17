@@ -20,7 +20,7 @@ yarn add --dev typescript ts-node @types/express
 ```
 
 :::info
-Check out [Lecture 2](/docs/lecture2) for more details on how this setup works!
+Check out [Lecture 2](/docs/2021fa/lecture2) for more details on how this setup works!
 :::
 
 Now you can create an `index.ts` file to add your routes and assignment code in.
@@ -99,4 +99,4 @@ would `req.params.lastName` be?
 
 ### I still need help. Where should I go?
 
-Check out the office hours schedule on [our syllabus](/docs/introduction#when-are-office-hours). In addition, you can join the [Ed](https://edstem.org/us/courses/14933/discussion/) and post your question.
+Check out the office hours schedule on [our syllabus](/docs/2021fa/introduction#when-are-office-hours). In addition, you can join the [Ed](https://edstem.org/us/courses/14933/discussion/) and post your question.

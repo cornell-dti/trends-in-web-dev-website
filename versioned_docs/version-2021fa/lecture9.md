@@ -7,13 +7,13 @@ title: Lecture 9
 
 [Lecture Demo Source Code](https://github.com/Enochen/trends-fa21-lec9-demo/)
 
-[Final Project Instructions](/docs/finalproject)
+[Final Project Instructions](/docs/2021fa/finalproject)
 
-[Final Project - Milestone 1](/docs/finalproject#milestone-1) due **11/21 by 11:59pm**
+[Final Project - Milestone 1](/docs/2021fa/finalproject#milestone-1) due **11/21 by 11:59pm**
 
-[Final Project - Milestone 2](/docs/finalproject#milestone-2) due **12/2 by 11:59pm**
+[Final Project - Milestone 2](/docs/2021fa/finalproject#milestone-2) due **12/2 by 11:59pm**
 
-[Final Project - Milestone 3](/docs/finalproject#milestone-3) due **12/9 by 11:59pm**
+[Final Project - Milestone 3](/docs/2021fa/finalproject#milestone-3) due **12/9 by 11:59pm**
 
 Vote for the Lecture 10 topic [here](https://bit.ly/trends-choice) by **11/24 11:59pm**
 
@@ -92,7 +92,7 @@ We kept these two folders separate and we showed the old way of `cd` into each f
 
 To do this, our root `package.json` will define the workspaces. (Note: root means outside of both the frontend and backend folders, on that same level of the directory hierarchy.)
 
-Most important lines here are 3-7 which define the workspaces and set `private: true` since [workspaces can't be published](https://classic.yarnpkg.com/en/docs/workspaces/#toc-how-to-use-it).
+Most important lines here are 3-7 which define the workspaces and set `private: true` since [workspaces can't be published](https://classic.yarnpkg.com/en/docs/2021fa/workspaces/#toc-how-to-use-it).
 
 ```json title="/package.json"
 {
@@ -181,7 +181,7 @@ Of course, we can also run `yarn install` in the project root to install all the
 
 Yarn workspaces is super cool and we just covered a subset of functionality. If you want to learn more check out these links:
 
-- [How to use Yarn workspaces](https://classic.yarnpkg.com/en/docs/workspaces/#toc-how-to-use-it)
+- [How to use Yarn workspaces](https://classic.yarnpkg.com/en/docs/2021fa/workspaces/#toc-how-to-use-it)
 - [Blog post](https://classic.yarnpkg.com/blog/2017/08/02/introducing-workspaces/)
 
 ## Authentication
@@ -282,7 +282,7 @@ If the user is logged in, `FilterableProductTable` will show. Otherwise they wil
 We then deployed this app on Firebase for the frontend and Heroku for the backend. Refer to the commands above.
 
 :::tip
-We recommend using Firebase's built-in support for Google Authentication since storing passwords securely is _very hard_ (more details in the security section). Firebase also has support for many other accounts such as Facebook, GitHub, Microsoft, Apple, etc. Read more about Firebase Authentication [here](https://firebase.google.com/docs/auth/web/firebaseui). If for whatever reason you really want to implement your own user accounts, Firebase can still help you store passwords securely. Read more [here](https://firebase.google.com/docs/auth/web/password-auth).
+We recommend using Firebase's built-in support for Google Authentication since storing passwords securely is _very hard_ (more details in the security section). Firebase also has support for many other accounts such as Facebook, GitHub, Microsoft, Apple, etc. Read more about Firebase Authentication [here](https://firebase.google.com/docs/2021fa/auth/web/firebaseui). If for whatever reason you really want to implement your own user accounts, Firebase can still help you store passwords securely. Read more [here](https://firebase.google.com/docs/2021fa/auth/web/password-auth).
 :::
 
 ## Security
@@ -306,7 +306,7 @@ For example, it may seem reasonable to add every comment on a blog into a databa
 `“INSERT INTO 'comments' (comment) VALUES '” + user_input + “';”`, but it is actually incredibly unsafe
 if `user_input` were something like `'; DROP TABLE comments;`.
 
-Luckily for us, [React DOM escapes values embedded in JSX before rendering them by default, preventing injection attacks](https://reactjs.org/docs/introducing-jsx.html#jsx-prevents-injection-attacks).
+Luckily for us, [React DOM escapes values embedded in JSX before rendering them by default, preventing injection attacks](https://reactjs.org/docs/2021fa/introducing-jsx.html#jsx-prevents-injection-attacks).
 
 ### 3. Don't Rely on Client Side Verification
 
@@ -496,7 +496,7 @@ For example, we would add a line containing `.env` to ignore all files (and
 folders) named `.env`. Of course, you could do a lot more complex stuff with the
 patterns you have at your disposal!
 
-Learn more about the `.gitignore` file [here](https://git-scm.com/docs/gitignore).
+Learn more about the `.gitignore` file [here](https://git-scm.com/docs/2021fa/gitignore).
 
 Find the `.gitignore` file for the lecture demo [here](https://github.com/Enochen/trends-fa21-lec9-demo/blob/main/.gitignore).
 
