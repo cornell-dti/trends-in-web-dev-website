@@ -86,7 +86,7 @@ Lecture 10: Student Choice!
 
 ## Where are assignments released and submitted?
 
-Assignments will be released on [here](/docs/assignments) every Thursday. Every
+Assignments will be released on [here](/docs/2021fa/assignments) every Thursday. Every
 assignment is due right before class of the following week at 3:59pm unless
 otherwise stated. You will have 6 slip days total to use on the assignments, but
 for each assignment, you may only use up to 2 slip days. Use these judiciously
@@ -136,7 +136,7 @@ We strongly recommend VSCode, but you are free to use whichever text editor or
 programming IDE of your choice. Keep in mind that course staff will have the
 most experience with VSCode.
 
-Set up your IDE [here](/docs/setup-editor)
+Set up your IDE [here](/docs/2021fa/setup-editor)
 
 ## How many credits is it?
 

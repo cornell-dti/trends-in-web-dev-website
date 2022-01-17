@@ -59,7 +59,7 @@ order to render a filtered list based on the query.
 Create a new component called `ShoppingList.tsx`. This should display the list
 in a similar way as the songs list from Assignment 4, but should be made up of
 the items that have the search query as a substring of their name
-([hint](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes)).
+([hint](https://developer.mozilla.org/en-US/docs/2021fa/Web/JavaScript/Reference/Global_Objects/Array/includes)).
 It should also show each item's name and purchased status (as a checkbox). You
 can format it as in the GIF.
 

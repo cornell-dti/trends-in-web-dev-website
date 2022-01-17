@@ -128,7 +128,7 @@ const calcRectArea = (width, height) => {
 More details on arrow functions in a few weeks when we talk about ES6 (Lecture 4)!
 
 :::tip
-JavaScript is a super powerful language and this was just a small sample of its language features. Check out Mozilla Developer Network (MDN) for the best JavaScript documentation: [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
+JavaScript is a super powerful language and this was just a small sample of its language features. Check out Mozilla Developer Network (MDN) for the best JavaScript documentation: [https://developer.mozilla.org/en-US/docs/2021fa/Web/JavaScript/Guide](https://developer.mozilla.org/en-US/docs/2021fa/Web/JavaScript/Guide)
 :::
 
 ## TypeScript
@@ -364,7 +364,7 @@ type intersect = PrimaryColors & TrafficLightColors; // "red" | "green"
 ```
 
 :::tip
-There's also so much more to TypeScript. Checkout TypeScript docs to learn more! [https://www.typescriptlang.org/docs/](https://www.typescriptlang.org/docs/)
+There's also so much more to TypeScript. Checkout TypeScript docs to learn more! [https://www.typescriptlang.org/docs/2021fa/](https://www.typescriptlang.org/docs/2021fa/)
 :::
 
 ### Demo
@@ -531,4 +531,4 @@ console.log(perfectSquares([1, 5, 9])); // expected [1, 9]
 ```
 
 Run it with `ts-node script.ts`. Voilà! That's a basic introduction to TypeScript.
-For more language quirks and useful syntax, visit the [TypeScript website and pick the tutorial that best fits you](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html).
+For more language quirks and useful syntax, visit the [TypeScript website and pick the tutorial that best fits you](https://www.typescriptlang.org/docs/2021fa/handbook/typescript-in-5-minutes.html).

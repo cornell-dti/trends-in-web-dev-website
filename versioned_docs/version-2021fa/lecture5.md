@@ -5,7 +5,7 @@ title: Lecture 5
 
 [Lecture Slides](https://docs.google.com/presentation/d/1LKOlGi1fo_6BewlhKCMEH_rsUZyutd4mfRJeWsSq1Uc/edit?usp=sharing)
 
-[Assignment 3](/docs/assignment3) (due 10/28 6:29 PM on CMS)
+[Assignment 3](/docs/2021fa/assignment3) (due 10/28 6:29 PM on CMS)
 
 ## Creating a React project
 

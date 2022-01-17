@@ -5,7 +5,7 @@ title: Lecture 6
 
 [Lecture Slides](https://docs.google.com/presentation/d/1WrI2lRkh-J9GOXuV7z8_SlQVXVrYlADWWYRLXjwAw1M/edit?usp=sharing)
 
-[Assignment 4](/docs/assignment4) (due 11/4 6:29 PM on CMS)
+[Assignment 4](/docs/2021fa/assignment4) (due 11/4 6:29 PM on CMS)
 
 ## Conditional Rendering
 
@@ -102,7 +102,7 @@ Composition and inheritance are two programming techniques for defining how clas
 ### **React uses Composition**
 
 _“React has a powerful composition model, and we recommend using composition instead of inheritance to reuse code between components.”_
--- [React Docs](https://reactjs.org/docs/composition-vs-inheritance.html)
+-- [React Docs](https://reactjs.org/docs/2021fa/composition-vs-inheritance.html)
 
 ### Containment
 
@@ -137,7 +137,7 @@ const App = () => (
 
 `props.children` will have the paragraph elements.
 
-We didn't actually get to this live demo, adapted from [this tutorial](https://reactjs.org/docs/composition-vs-inheritance.html) in the React docs, during lecture but it is very simple if you want to try it out yourself. We also show how to import styles.
+We didn't actually get to this live demo, adapted from [this tutorial](https://reactjs.org/docs/2021fa/composition-vs-inheritance.html) in the React docs, during lecture but it is very simple if you want to try it out yourself. We also show how to import styles.
 
 ```tsx title="Container.tsx"
 import React, { ReactNode } from 'react';
@@ -208,7 +208,7 @@ export default () => {
 
 ## Lifting State Up
 
-This section was a live demo, adapted from [this tutorial](https://reactjs.org/docs/lifting-state-up.html) in the React docs.
+This section was a live demo, adapted from [this tutorial](https://reactjs.org/docs/2021fa/lifting-state-up.html) in the React docs.
 
 ```tsx title="Calculator.tsx"
 import { useState } from 'react';

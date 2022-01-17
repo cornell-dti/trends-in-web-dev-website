@@ -5,7 +5,7 @@ title: Lecture 2
 
 [Lecture Slides](https://docs.google.com/presentation/d/18MXoE6d0WGPSffV_vnuE1prbs5qLchwKce_ZTCsISEw/edit?usp=sharing)
 
-[Assignment 1](/docs/assignment1) (due 10/7 6:29 PM on CMS)
+[Assignment 1](/docs/2021fa/assignment1) (due 10/7 6:29 PM on CMS)
 
 [Join the Ed!](https://edstem.org/us/join/Cm4Kt5)
 

@@ -5,13 +5,13 @@ title: Lecture 7
 
 [Lecture Slides](https://docs.google.com/presentation/d/1s9rJRQdEVnHNxW_HxVFZWShuQDpseuov8QDaCPZCSAw/edit?usp=sharing)
 
-[Assignment 5](/docs/assignment5) ~~(due 11/11 6:29 PM on CMS)~~ (due date extended to **11/14 by 11:59pm**)
+[Assignment 5](/docs/2021fa/assignment5) ~~(due 11/11 6:29 PM on CMS)~~ (due date extended to **11/14 by 11:59pm**)
 
-[Final Project Instructions](/docs/finalproject)
+[Final Project Instructions](/docs/2021fa/finalproject)
 
 [Final Project Team Matching Form](https://forms.gle/Ro4QT8tLMDFArkFx9) due **Sunday, 11/7 at 11:59 PM** (no slip days)
 
-[Milestone 0](/docs/finalproject#milestone-0) due **11/14 by 11:59pm** (no slip days)
+[Milestone 0](/docs/2021fa/finalproject#milestone-0) due **11/14 by 11:59pm** (no slip days)
 
 ## Hooks, and More on Functional Components in React
 
@@ -20,7 +20,7 @@ since it was released in 2013. A major new concept leading the way of much
 innovation for React development is Hooks, released in **2019(!)**. While there
 are many Hooks in React (and you can even develop your own), we will be focusing
 on two main Hooks in this class: `useState` and `useEffect`. You may read more about these other
-(equally as important but more involved) Hooks [here](https://reactjs.org/docs/hooks-reference.html).
+(equally as important but more involved) Hooks [here](https://reactjs.org/docs/2021fa/hooks-reference.html).
 
 ## Hooks
 
