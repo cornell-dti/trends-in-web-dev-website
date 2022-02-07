@@ -18,7 +18,7 @@ Assuming nothing goes wrong, Trends in Web Development will be **IN PERSON**
 this semester. Unfortunately, we will not be able to provide recordings for
 lecture, although lecture notes will be posted on this website.
 
-Lectures will be held on **Wednesdays at 4:30 - 5:30 PM ET** at (location TBA).
+Lectures will be held on **Wednesdays at 5:00 - 6:00 PM ET** at (location TBA).
 
 Join our EdStem discussion here: (link TBA)
 
