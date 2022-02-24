@@ -3,7 +3,7 @@ id: lecture1
 title: Lecture 1
 ---
 
-Lecture Slides(to be added later)
+[Lecture Slides](https://docs.google.com/presentation/d/14LCzgpdo6381cS3gfda4fxdumJyl0WS2tRW5PY4EqGg/edit?usp=sharing)
 
 No homework this week!
 
@@ -32,7 +32,7 @@ There are three ways to create variables in JS:
 2. `let x = 5`
 3. **`const x = 5`**
 
-We prefer using **const** for immutability although let is also accepted.
+We prefer using **const** for declaring non-reassignable variables although let is also accepted.
 _**Never use var.**_ We'll talk more about why in Lecture 4, where we cover
 best-practices in modern JavaScript (ES6).
 
