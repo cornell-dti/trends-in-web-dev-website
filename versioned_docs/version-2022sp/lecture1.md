@@ -367,7 +367,65 @@ type intersect = PrimaryColors & TrafficLightColors; // "red" | "green"
 There's also so much more to TypeScript. Checkout TypeScript docs to learn more! [https://www.typescriptlang.org/docs/](https://www.typescriptlang.org/docs/)
 :::
 
-### Demo
+### Demo 1 - Types demonstration!
+
+```
+type OS = "android" | "ios"
+
+// Types are perfect to describe different formats of data.
+// If it has no functionality besides storing values, it's data.
+
+// Interfaces are much more similar to traditional Java interfaces.
+// Interfaces specify the pieces of functionality that need
+// implementation for classes.
+// If your datatype will have methods, use an interface.
+
+
+// Suppose we are building a product list for
+// different types of phone.
+// Since products are data, we should use types.
+
+// We can "factor out" the basic ingredients for a phone
+type BasePhone = {
+  simID: string
+}
+
+// We use intersection types to "combine" types
+type Smartphone = {
+  camera: string[],
+  gps: boolean,
+  os: OS
+} & BasePhone
+
+// We use "optional" types on data that may undefined
+type DumbPhone = {
+  camera?: string,  // My Nokia 3310 does not have
+  works: boolean    // it's debatable
+} & BasePhone
+
+type Phone = Smartphone | DumbPhone
+
+
+
+const iphoneX: Smartphone = {
+  simID: "6072544636",
+  camera: ["14 mp front", "2 mp spying tool"],
+  gps: false,
+  os: "ios"
+};
+
+const burnerPhone: DumbPhone = {
+  simID: "random",
+  works: false
+}
+
+function showPhone(phone: Phone) {
+  //...
+}
+
+```
+
+### Demo 2 - Preassessment Check-in
 
 We went through a demo of writing and running code in TypeScript using the
 preassessment as an example. Run the following commands to first create a Node
