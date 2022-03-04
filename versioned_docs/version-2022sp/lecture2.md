@@ -450,6 +450,28 @@ The series is comprehensive and will teach you everything you want to know.
 Additionally, the [MDN Web Docs](https://developer.mozilla.org/en-US/) are a great
 resource for quickly looking up the documentation for various features in Javascript, complete with examples.
 
+### JavaScript
+
+We mentioned Mozilla Developer Network as a site for documentation about the JavaScript language, but it's also a great way to get familiar with the language.
+
+Here is their JavaScript guide: [JavaScript Guide - JavaScript | MDN (mozilla.org)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
+
+It's a bit long, so I recommend skimming through the first few parts, up to and including the Objects section ([Working with objects - JavaScript | MDN (mozilla.org)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects)).
+
+JavaScript objects will show up a good amount in this course, so make sure you understand the basics!
+
+### TypeScript
+
+The official TypeScript website is a great resource to get familiar with the language. There are different guides that assume different programming backgrounds. Choose the article that best suits your background.
+
+Take a look at the Get Started section here: [TypeScript: The starting point for learning TypeScript (typescriptlang.org)](https://www.typescriptlang.org/docs/)
+
+If you've gone through the MDN JavaScript guide, fill in your TypeScript knowledge with this: [TypeScript: Documentation - TypeScript for JavaScript Programmers (typescriptlang.org)](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html)
+
+There is also a Handbook that you can chug through if interested (not necessary at all): [TypeScript: Handbook - The TypeScript Handbook (typescriptlang.org)](https://www.typescriptlang.org/docs/handbook/intro.html)
+
+Hope this is helpful for you all! This will be the language you'll be working with all-semester, so being comfortable with the language will pay off.
+
 ## Demo Code
 
 Need more examples? This code from last year's lecture's live coding demo rewrites
@@ -470,6 +492,7 @@ const getSqrts = (arr: number[]): number[] => {
 const getSqrtsMap = (arr: number[]): number[] => {
   return arr.map(Math.sqrt);
 };
+
 // perfectSquares: takes in an array and returns an array with only the
 // elements that are perfect squares
 // example: [1, 2, 3] => [1]
@@ -486,6 +509,7 @@ const isPerfectSquare = (num: number) => Math.sqrt(num) % 1 === 0;
 const perfectSquaresFilter = (arr: number[]): number[] => {
   return arr.filter(isPerfectSquare);
 };
+
 // mySum: takes in an array and returns the sum of the elements
 // example: [1, 2, 3] => 6
 const mySum = (arr: number[]): number => {
@@ -498,6 +522,7 @@ const mySum = (arr: number[]): number => {
 const mySumReduce = (arr: number[]): number => {
   return arr.reduce((acc: number, curr: number) => acc + curr);
 };
+
 // testing!
 const input = [1, 2, 3];
 console.log(getSqrts(input));
