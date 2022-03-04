@@ -3,6 +3,10 @@ id: lecture2
 title: Lecture 2
 ---
 
+[Lecture Slides](https://docs.google.com/presentation/d/1ZLiN4SOXepDaDzWj7RTBJCHTC8pLOkaGs60OoNqyjiI/edit?usp=sharing)
+
+[Assignment 1](/docs/assignment1) (due 3/09 4:59 PM on CMS)
+
 ## How to build a web app
 
 _Intro to Node.js and Yarn_
