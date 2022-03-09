@@ -9,17 +9,21 @@ Lecture Slides: to be added
 
 ### Create a Next.js Project
 
+This will create a Next.js project with TypeScript.
+
 First, make sure that `yarn` is set up on your system.
 
 Then run this command to set up everything!
+
+NOTE: This will **create** a new folder in the current directory containing all
+the project files, so run this where you want your project folder to be.
 
 ```zsh
 yarn create next-app --typescript [optional: directory name]
 ```
 
-If you don't specify a directory in your command, you'll be prompted later.
-
-This will create a Next.js project with TypeScript for us!
+If you don't specify a directory name in your command, you'll be prompted for
+one.
 
 ## Websites
 
