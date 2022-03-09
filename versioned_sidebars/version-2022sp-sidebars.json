@@ -18,12 +18,20 @@
       {
         "type": "doc",
         "id": "version-2022sp/lecture1"
+      },
+      {
+        "type": "doc",
+        "id": "version-2022sp/lecture2"
       }
     ],
     "Assignments": [
       {
         "type": "doc",
         "id": "version-2022sp/assignments"
+      },
+      {
+        "type": "doc",
+        "id": "version-2022sp/assignment1"
       }
     ]
   }

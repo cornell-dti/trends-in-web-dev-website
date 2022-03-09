@@ -18,7 +18,9 @@ Assuming nothing goes wrong, Trends in Web Development will be **IN PERSON**
 this semester. Unfortunately, we will not be able to provide recordings for
 lecture, although lecture notes will be posted on this website.
 
-Lectures will be held on **Wednesdays at 4:30 - 5:30 PM ET** at (location TBA).
+Lectures will be held on **Wednesdays at 5:00 - 6:00 PM ET** at **Gates 122**.
+
+Note that for the lecture scheduled 4/13, we will instead be at **Gates 114** from **5:30 - 6:30PM**.
 
 Join our EdStem discussion here: (link TBA)
 
@@ -39,7 +41,19 @@ React, Firebase, and more.
 
 ## When are office hours?
 
-TBD
+We are in the process of reserving rooms for office hours.
+In the meanwhile, please see Ed for Zoom links for OH.
+
+Office hours will start on Thursday, March 3rd.
+
+| Day |      Time      | Location |
+| --- | :------------: | -------- |
+| Mon | 12:30pm-2:30pm | Zoom     |
+| Mon | 1:30pm-2:30pm  | Zoom     |
+| Wed | 2:15pm-3:15pm  | Zoom     |
+| Thu | 12:10pm-1:10pm | Zoom     |
+| Fri |    1pm-2pm     | Zoom     |
+| Fri |    3pm-4pm     | Zoom     |
 
 If you are unable to make any of those office hours times, you can ask questions
 on Ed or get in touch with [Enoch](mailto:yc728@cornell.edu),
