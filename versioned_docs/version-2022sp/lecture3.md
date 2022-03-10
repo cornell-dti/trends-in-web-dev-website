@@ -3,7 +3,7 @@ id: lecture3
 title: Lecture 3
 ---
 
-Lecture Slides: to be added
+[Lecture Slides](https://docs.google.com/presentation/d/1eKPi-GJBQuygUuyoWjU7k8WevSD4xlg703MDIourngw/edit?usp=sharing)
 
 ## Before the lecture
 
