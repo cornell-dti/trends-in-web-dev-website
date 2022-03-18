@@ -128,6 +128,37 @@ const NewContact = () => {
 export default NewContact;
 ```
 
+`useState` returns a length-2 array that includes the following elements (in order):
+
+1. a state variable that is always synchronized (in a consistent state everywhere any time)
+2. a function that can be used to update the state variable.
+
+**Note that the names of the two should always be in the form x, setX.**
+
+```tsx
+const [prosAndCons, setProsAndCons] = useState([]);
+```
+
+The `useState` statement above uses **array destructuring** syntax, which is explained below.
+
+_Aside: array destructuring syntax_
+
+```tsx
+const [firstElement, secondElement, ...rest] = [1, 2, 3, 4, 5, 6];
+const [...rest, beforeTailElement, tailElement] = [1, 2, 3, 4, 5, 6];
+```
+
+**Array destructuring** is a shorthand that allows you to store the contents of specific element in an array into a variable, without the cumbersome syntax of manually indexing into an array. The `...rest` expression uses the spread (`...`) operator to capture the remaining contents of the array (as a subset).
+
+In TypeScript, we can parametrize the useState hook to be of a certain type. (`useState` is called a “generic” function because it can handle any type that you specify.) This is **good** because in TypeScript (and other typed languges), we work to _restrict_ the scope of possible types of our code in order to reduce the space for errors.
+
+```tsx
+const [prosAndCons, setProsAndCons] = useState<Array<Pro | Con>>([
+  new Pro('yummy'),
+  new Con('unhealthy'),
+]);
+```
+
 ## Rendering lists
 
 You may want to render a list of `YourAwesomeComponent`. Here are some examples
