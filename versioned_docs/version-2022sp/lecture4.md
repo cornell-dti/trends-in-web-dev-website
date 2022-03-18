@@ -5,6 +5,8 @@ title: Lecture 4
 
 [Lecture Slides](https://docs.google.com/presentation/d/1CNKnsXYA4BnNFwQY2ixZne5XmZdpqGi8FVuoLOg0aHA/edit?usp=sharing)
 
+[Assignment 2](/docs/assignment2) (due 3/23 4:59pm on CMS)
+
 ## Your First Component
 
 ```tsx title="ContactCard.tsx"
@@ -126,6 +128,37 @@ const NewContact = () => {
 export default NewContact;
 ```
 
+`useState` returns a length-2 array that includes the following elements (in order):
+
+1. a state variable that is always synchronized (in a consistent state everywhere any time)
+2. a function that can be used to update the state variable.
+
+**Note that the names of the two should always be in the form x, setX.**
+
+```tsx
+const [prosAndCons, setProsAndCons] = useState([]);
+```
+
+The `useState` statement above uses **array destructuring** syntax, which is explained below.
+
+_Aside: array destructuring syntax_
+
+```tsx
+const [firstElement, secondElement, ...rest] = [1, 2, 3, 4, 5, 6];
+const [...rest, beforeTailElement, tailElement] = [1, 2, 3, 4, 5, 6];
+```
+
+**Array destructuring** is a shorthand that allows you to store the contents of specific element in an array into a variable, without the cumbersome syntax of manually indexing into an array. The `...rest` expression uses the spread (`...`) operator to capture the remaining contents of the array (as a subset).
+
+In TypeScript, we can parametrize the useState hook to be of a certain type. (`useState` is called a “generic” function because it can handle any type that you specify.) This is **good** because in TypeScript (and other typed languges), we work to _restrict_ the scope of possible types of our code in order to reduce the space for errors.
+
+```tsx
+const [prosAndCons, setProsAndCons] = useState<Array<Pro | Con>>([
+  new Pro('yummy'),
+  new Con('unhealthy'),
+]);
+```
+
 ## Rendering lists
 
 You may want to render a list of `YourAwesomeComponent`. Here are some examples
@@ -194,7 +227,9 @@ The function can have any arbitrary logic/function calls… such as the `setCoun
 `useEffect(function, filters)`
 `useEffect` triggers the function at every component update, but you can restrict this to occur only when the variables in the `filters` array update. This makes your React component more optimized. You could say that these variables are a _dependency_ of the `useEffect` statement. Example below:
 
-`useEffect(function, [prop1, observable])`
+```tsx
+useEffect(function, [prop1, observable])
+```
 
 As a fun fact, it is possible to enter an infinite loop if the dependencies are state variables that are also set inside the effect. Don't do this!
 
@@ -202,18 +237,26 @@ As a fun fact, it is possible to enter an infinite loop if the dependencies are 
 
 A good use of useEffect is to hook into file streams, WebSockets, Firebase hooks, or some other Observable-like API in order to make your component _reactive_ to changes in data. (when the observed data/value/file stream updates, the React component should update.) In order to use an API for this purpose, it is often necessary to open up an initial connection or subscription. It is _good manners_ to _cleanup_ by closing or unsubscribing. In a `useEffect` statement, the cleanup code is stored in a function that is returned by the effect (function).
 
-```
+```tsx
 useEffect(() => {
-    return () => { cleanup(); };
+  return () => {
+    cleanup();
+  };
 });
 ```
 
 Example usage below:
 
-```
+```tsx
 useEffect(() => {
-    return setLine(fileStream)}, [fileStream]);
+  return () => {
+    ObservableAPI.unsubscribe()
+  });
+}, [valueFromObservableApi]);
 
 useEffect(() => {
-    return setTAs(taQueryResult)}, [taQueryResult]);
+  return () => {
+    dataStream.close()
+  });
+}, [dataStreamContents]);
 ```
