@@ -10,7 +10,7 @@ In this assignment we will be getting familiar with React!
 Create a Next.js using our **starter code** with the following command:
 
 ```
-yarn create next-app --typescript --example "https://github.com/cornell-dti/trends-sp22-starters/tree/a2/assignment2" YOUR_DIR_NAME
+yarn create next-app --typescript --example "https://github.com/cornell-dti/trends-sp22-starters/tree/main/assignment2" YOUR_DIR_NAME
 ```
 
 ## Step 1 - Get Comfortable
