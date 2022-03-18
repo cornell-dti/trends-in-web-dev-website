@@ -249,10 +249,14 @@ Example usage below:
 
 ```tsx
 useEffect(() => {
-  return setLine(fileStream);
-}, [fileStream]);
+  return () => {
+    ObservableAPI.unsubscribe()
+  });
+}, [valueFromObservableApi]);
 
 useEffect(() => {
-  return setTAs(taQueryResult);
-}, [taQueryResult]);
+  return () => {
+    dataStream.close()
+  });
+}, [dataStreamContents]);
 ```
