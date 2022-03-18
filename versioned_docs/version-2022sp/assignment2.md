@@ -107,6 +107,6 @@ If in doubt, wrap it in an anonymous function: eg. `() => console.log("hi")` vs
 ## Step 4 - Submission
 
 Once you are done, please zip up everything in your project folder EXCEPT the
-`node_modules` folder.
+`node_modules` and `.next` folders.
 
 Then submit to CMS!
