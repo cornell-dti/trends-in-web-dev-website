@@ -41,19 +41,18 @@ React, Firebase, and more.
 
 ## When are office hours?
 
-We are in the process of reserving rooms for office hours.
-In the meanwhile, please see Ed for Zoom links for OH.
+Please check Ed for any updates to OH times or locations!
 
 Office hours will start on Thursday, March 3rd.
 
-| Day |      Time      | Location |
-| --- | :------------: | -------- |
-| Mon | 12:30pm-2:30pm | Zoom     |
-| Mon | 1:30pm-2:30pm  | Zoom     |
-| Wed | 2:15pm-3:15pm  | Zoom     |
-| Thu | 12:10pm-1:10pm | Zoom     |
-| Fri |    1pm-2pm     | Zoom     |
-| Fri |    3pm-4pm     | Zoom     |
+| Day |      Time      | Location   |
+| --- | :------------: | ---------- |
+| Mon | 12:30pm-2:30pm | Rhodes 574 |
+| Mon | 1:30pm-2:30pm  | Rhodes 574 |
+| Wed | 2:15pm-3:15pm  | Rhodes 404 |
+| Thu | 12:10pm-1:10pm | Rhodes 501 |
+| Fri |    1pm-2pm     | Rhodes 408 |
+| Fri |    3pm-4pm     | Rhodes 404 |
 
 If you are unable to make any of those office hours times, you can ask questions
 on Ed or get in touch with [Enoch](mailto:yc728@cornell.edu),
