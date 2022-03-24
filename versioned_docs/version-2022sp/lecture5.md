@@ -3,9 +3,7 @@ id: lecture5
 title: Lecture 5
 ---
 
-Lecture Slides (To be added after class)
-
-<!-- [Lecture Slides](https://docs.google.com/presentation/d/1WrI2lRkh-J9GOXuV7z8_SlQVXVrYlADWWYRLXjwAw1M/edit?usp=sharing) -->
+[Lecture Slides](https://docs.google.com/presentation/d/1tswPifJjsH5ElZWmbi7WSswKBkcMOwXF-j9PlAQ25lk/edit?usp=sharing)
 
 Assignment 3 (To be posted)
 
@@ -314,7 +312,9 @@ export default TemperatureInput;
 
 ## Live Demo Material
 
-Here's the [live demo material](/lec5skeleton.zip) for this semester (written in Next!)
+You can get the starter code for the live demo by running:
+`yarn create next-app --typescript --example "https://github.com/cornell-dti/trends-sp22-starters/tree/main/lec5-demo" YOUR_DIR_NAME`
 
-I'll post my completed version after lecture - please prod me over email or Ed
-if I forget!
+(Replace YOUR_DIR_NAME with whatever you want to name your directory!)
+
+Here's my [completed version](https://github.com/cornell-dti/trends-sp22-starters/tree/main/lec5-soln) from class.
