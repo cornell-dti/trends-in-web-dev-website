@@ -201,6 +201,7 @@ Here is a list of features to add:
   - Refresh your memory on Conditional Rendering from
     [Lecture 5](/docs/lecture5#conditional-rendering) if you're stuck!
 - In `ClickerSection`, make the "Acquire BRB" button work!
+  - Each click should increase BRBs by the value of `clickIncome`
   - This will be very similar to what you did in A2, using the `onClick` prop
 - In `UpgradeDisplay`, we need to increase the price of an upgrade each time we
   purchase it.
