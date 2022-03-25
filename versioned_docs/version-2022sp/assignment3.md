@@ -170,21 +170,21 @@ To make a change to an existing Map, do the following
 ```typescript
 // This *modifies* the Map that upgradeCounts points to
 // newValue points to the SAME Map as upgradeCounts
-const newValue = upgradeCounts.set(key, newValue)
+const newValue = upgradeCounts.set(key, newValue);
 ```
 
 **IMPORTANT** Note that `setUpgradeCounts` may not behave as you expect when
 working with object references. If you call `setUpgradeCounts(newValue)` where
-`newValue` is the same reference as `upgradeCounts`, then this *WILL NOT*
+`newValue` is the same reference as `upgradeCounts`, then this _WILL NOT_
 trigger an update/rerender!
 
 To get around this issue, do the following
 
 ```typescript
-const newValue: Map<Upgrade, number> = upgradeCounts
-setUpgradeCounts(newValue) // this is BAD
+const newValue: Map<Upgrade, number> = upgradeCounts;
+setUpgradeCounts(newValue); // this is BAD
 // Creates a copy of the map so that React knows that newValue is different
-setUpgradeCounts(new Map(newValue)) // this is GOOD
+setUpgradeCounts(new Map(newValue)); // this is GOOD
 ```
 
 ## Step 4 - Finishing Touches
