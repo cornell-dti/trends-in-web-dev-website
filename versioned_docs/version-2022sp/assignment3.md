@@ -214,6 +214,9 @@ Here is a list of features to add:
 
 ## Step 5 - Submission
 
+Make sure you've completed all of the TODOs, including your name/netid in
+`Footer.tsx` and the hours worked in `index.tsx`
+
 Once you are done, please zip up everything in your project folder EXCEPT the
 `node_modules` and `.next` folders.
 
