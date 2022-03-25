@@ -103,6 +103,13 @@ However(ever), in our assignment we calculate `tickIncome` in `Game` instead of
 TL;DR - Props do not have to mirror state in parent components, you should aim
 to design them in most understandable/practical way!
 
+#### Why do the `Props` types have the `readonly` thing?
+
+We like to add the `readonly` keyword to attributes in `Props` types to remind
+ourselves that props are passed down and cannot be directly modified. If we try
+to do so, we will be warned by TypeScript b/c we have specified it to be
+readonly. This is an optional code style thing but we like it :)
+
 ## Step 3 - Tracking Upgrades
 
 In A2, we had only 1 upgrade you could buy. Now we can add as many upgrades as
