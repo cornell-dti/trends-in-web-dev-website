@@ -388,7 +388,7 @@ Consider this snippet, similar to one shown above:
 
 ```typescript
 fetch(`https://jsonplaceholder.typicode.com/posts`)
-  .then((response) => response.json())
+  .then((res) => res.json())
   .then((d) => setData(d))
   .catch((err) => console.log(err));
 ```
