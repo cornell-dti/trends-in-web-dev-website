@@ -61,7 +61,6 @@ Here are all the **additional** props that need to be passed down:
 - `ClickerSection`
   - `brbs`
   - `setBRBs`
-  - `upgradeCounts`
 - `UpgradesSection`
   - `setBRBs`
   - `upgradeCounts`
