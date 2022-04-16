@@ -7,114 +7,7 @@ title: Lecture 7
 
 [Assignment 4](/docs/assignment4) (Due 4/22 at 11:59pm)
 
-[Final Project Team Matching Form](https://docs.google.com/forms/d/e/1FAIpQLScq9DA5jLy1TnvEWqG-DCz5FvOV8tzLyCvKs93ifu0UbjW0UA/viewform) due **Friday, 4/22 at 11:59 PM** (no slip days)
-
-## Promises
-
-Operations like web requests don't complete instantly! You want to do other stuff
-while the operation is still going on.
-
-Promises represent the **eventual** completion (or failure) of an async operation.
-
-Promises are in one of three possible states:
-
-- `pending`: initial state; neither fulfilled nor rejected
-- `fulfilled`: operation completed successfully
-- `rejected`: operation failed
-
-### `.then()`
-
-`.then()` is a function on Promises that return a promise.
-
-```typescript
-p.then(onFulfilled[, onRejected])
-```
-
-Let's break this down!
-
-- `p` is a Promise.
-- `onFulfilled` is the callback function that is run when `p` is fulfilled
-- `onRejected` (OPTIONAL) is the callback for when `p` is rejected
-
-```typescript
-p.then(
-  (value) => {
-    // fulfillment
-  },
-  (reason) => {
-    // rejection
-  }
-);
-```
-
-Let's talk about types! `p` in this case might be `fetch()`, which returns the
-type `Promise<Response>`. If so, then `value` would have the type `Response`.
-Then, if the fulfillment function (which takes in `value`) returns type
-`string`, then the entire expression would be type `Promise<String>`.
-
-If you've taken CS 3110 or done some functional programming outside of this
-class/category theory, this might make you think of
-Monads/Applicatives/Functors. The specified behavior for `Promise`s in JS/TS
-don't exactly follow the laws of what was just listed, but for learning purposes
-it may be helpful to roughly compare the `then` function to `fmap` or `bind`.
-
-If you're interested, take a look at this snippet and notice how the types
-behave:
-
-```typescript
-// promise: Promise<Response>
-const promise = fetch('something');
-
-// kindaFunctor: (res: Response) => number
-const kindaFunctor = (res: Response) => res.status;
-
-// kindaMonad: (res: Response) => Promise<string>
-const kindaMonad = (res: Response) => res.text();
-
-// newPromise1: Promise<number>
-const newPromise1 = promise.then(kindaFunctor);
-
-// newPromise2: Promise<string>
-const newPromise2 = promise.then(kindaMonad);
-```
-
-### `.catch()`
-
-`.catch()` is a function on Promises that catches a rejection.
-
-```typescript
-p.catch(onRejected);
-```
-
-For example, you might want to `console.log` errors:
-
-```typescript
-fetch(`https://jsonplaceholder.typicode.com/posts`)
-  .then(...)
-  .catch((err) => console.log(err))
-```
-
-Note that `onRejected` takes a parameter of type `any`, since we don't know the
-type of the error we will get.
-
-### Using `.then()` with `fetch()`
-
-`fetch()` returns a `Promise` that resolves to a `Response` object.
-
-Consider this snippet, similar to one shown above:
-
-```typescript
-fetch(`https://jsonplaceholder.typicode.com/posts`)
-  .then((response) => response.json())
-  .then((d) => setData(d));
-  .catch((err) => console.log(err))
-```
-
-Here we are getting the response from an endpoint **and then** calling `.json()`
-on the response **and then** calling `setData` on the result of `json()`.
-
-If a promise gets rejected anywhere along this chain, we will log the error in
-our console.
+[Final Project Team Matching Form](https://docs.google.com/forms/d/e/1FAIpQLScq9DA5jLy1TnvEWqG-DCz5FvOV8tzLyCvKs93ifu0UbjW0UA/viewform) due **Sunday, 4/17 at 11:59 PM** (no slip days)
 
 ### async/await
 
@@ -142,22 +35,6 @@ const fetchData = async () => {
   setData(posts);
 };
 ```
-
-### I still don't understand Promises
-
-Let's say you are at a store and you want to know whether the store has
-something in stock. So you ask an employee named Joe and he **promises** you
-that he'll be back with the results.
-
-You are now waiting for Joe to come back. The Promise will be **pending** for as
-long as Joe is gone.
-
-Let's say Joe comes back with the results. Now you know whether the store is in
-stock or not. Now the Promise is **fulfilled**.
-
-Let's say Joe doesn't come back with the results. Unfortunately an anvil fell on
-him or something. Now you know that Joe will not come back with the result. Now
-the Promise is **rejected**.
 
 ## Intro to Databases and Firebase
 
