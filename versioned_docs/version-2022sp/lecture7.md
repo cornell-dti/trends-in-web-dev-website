@@ -103,8 +103,11 @@ We will focus on NoSQL
 - Integration with other Google services
 - Structure we’re familiar with!
 
-## Basic Database Manipulations
+## Getting Started With Firestore
 
+If you're having trouble setting up your project, feel free to refer to this video
+of me setting one up from [scratch](https://drive.google.com/file/d/18qj5XFPXgZhixGbyBBLMIYkuiyiW-HWs/view?usp=sharing).
+If you still have questions, feel free to post on Ed or come to Office Hours!
 Let's finally start talking about how we can perform operations on our database
 using Typescript.
 
