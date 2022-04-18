@@ -92,7 +92,7 @@ Need help? Come to [office hours](/docs/introduction#when-are-office-hours) and 
 :::danger
 Do not push private API keys, Firebase service accounts, or other sensitive information to GitHub. Similarly, do not push `node_modules` up to GitHub. **If we see these in your GitHub, you will lose points.**
 
-Do, however, submit your keys in your CMS submissions if they are necessary to run your app. Don't worry, your secrets are safe with us :)
+Note that firebase configs for the frontend are fine (and should be) included in your submission
 :::
 
 ## Optional Extensions
