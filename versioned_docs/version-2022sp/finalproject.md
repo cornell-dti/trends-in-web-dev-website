@@ -79,7 +79,11 @@ Also work on having an authentication system set up using Firebase Auth.
 
 **Due: May 13 by 11:59 PM**
 
-Finish up the authentication system on your site
+This is the last milestone!
+
+Finish up the authentication system on your site and deploy your website.
+
+Include the url of your deployed site in your submission!
 
 :::tip
 Need help? Come to [office hours](/docs/introduction#when-are-office-hours) and we can help you debug. Also feel free to post questions on Ed!
