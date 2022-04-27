@@ -205,7 +205,7 @@ After creating this Context Provider, we can wrap our root component in
 `pages/_app.tsx` so that any child component can access and interact with our
 context.
 
-```typescript title="AuthUserProvider.tsx"
+```tsx title="AuthUserProvider.tsx"
 // other imports
 import { WrappedComponentProps } from 'react-with-firebase-auth';
 import { createComponentWithAuth } from '../../util/firebase';
@@ -232,6 +232,16 @@ export default createComponentWithAuth(AuthUserProvider);
 export const useAuth = () => useContext(AuthUserContext);
 ```
 
+Once that is done, you can log in by calling the function inside the context:
+
+```tsx title="frodo.tsx"
+import { signInWithGoogle } from '../util/firebase';
+
+//...
+
+<Button onClick={signInWithGoogle}>Sign In</Button>;
+```
+
 See `components/auth/AuthUserProvider.tsx` in the demo code below for more!
 
 ### Protecting Actions
@@ -246,7 +256,7 @@ specifies who created the task.
 Then in our query to retrieve from the database, we can filter for only tasks
 that belong to the current user.
 
-```typescript title="Frodo.tsx"
+```tsx title="Frodo.tsx"
 const { user } = useAuth();
 
 //...
@@ -259,7 +269,7 @@ const taskQuery = query(
 
 Similarly, we can populate the `owner` field whenever we create a task.
 
-```typescript title="TaskAddControl.tsx"
+```tsx title="TaskAddControl.tsx"
 const { user } = useAuth();
 
 //...
