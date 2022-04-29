@@ -186,16 +186,16 @@ const signInWithGoogle = () => {
   signInWithPopup(auth, providers.googleProvider);
 };
 
-​const​ ​signOutFirebase​ ​=​ ​(​)​ ​=>​ ​{
- ​ ​signOut​(​auth​);
-​};
+const signOutFirebase = () => {
+  signOut(auth);
+};
 
-export​ ​{
- ​ db​,
- ​ auth​,
- ​ ​createComponentWithAuth​,
- ​ signInWithGoogle​,
- ​ signOutFirebase​ ​as​ ​signOut​,
+export {
+  db,
+  auth,
+  createComponentWithAuth,
+  signInWithGoogle,
+  signOutFirebase as signOut,
 };
 ```
 
@@ -221,7 +221,7 @@ context.
 // other imports
 ​import​ ​{​ ​WrappedComponentProps​ ​}​ ​from​ ​"react-with-firebase-auth";
 import​ ​{​ ​createComponentWithAuth​ ​}​ ​from​ ​"../../util/firebase";
-  
+
 type​ ​AuthData​ ​=​ ​Omit​<​WrappedComponentProps​,​ ​"user"​>​ ​&​ ​{
  ​ user​?: ​User​ ​|​ ​null;
 ​};
