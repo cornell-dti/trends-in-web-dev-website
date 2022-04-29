@@ -5,6 +5,8 @@ title: Lecture 9
 
 [Lecture Slides](https://docs.google.com/presentation/d/1J73ok4GlWVpunQ1eQeKR4aDqkSfXKZh1LOikKifY9tE/edit?usp=sharing)
 
+[Demo Code Supplemental Video](https://drive.google.com/file/d/1C20ap_2kjPkiRsMMKLzADWK4uj6MlPjN/view?usp=sharing)
+
 [Final Project Instructions](/docs/finalproject)
 
 [Final Project - Milestone 1](/docs/finalproject#milestone-1) due **4/29 by 11:59pm**
@@ -184,7 +186,17 @@ const signInWithGoogle = () => {
   signInWithPopup(auth, providers.googleProvider);
 };
 
-export { auth, db, createComponentWithAuth, signInWithGoogle };
+const signOutFirebase = () => {
+  signOut(auth);
+};
+
+export {
+  db,
+  auth,
+  createComponentWithAuth,
+  signInWithGoogle,
+  signOutFirebase as signOut,
+};
 ```
 
 See `util/firebase.ts` in the demo code below for more!
@@ -207,29 +219,26 @@ context.
 
 ```tsx title="AuthUserProvider.tsx"
 // other imports
-import { WrappedComponentProps } from 'react-with-firebase-auth';
-import { createComponentWithAuth } from '../../util/firebase';
+​import​ ​{​ ​WrappedComponentProps​ ​}​ ​from​ ​"react-with-firebase-auth";
+import​ ​{​ ​createComponentWithAuth​ ​}​ ​from​ ​"../../util/firebase";
 
-type Props = WrappedComponentProps & {
-  children?: ReactNode;
-};
+type​ ​AuthData​ ​=​ ​Omit​<​WrappedComponentProps​,​ ​"user"​>​ ​&​ ​{
+ ​ user​?: ​User​ ​|​ ​null;
+​};
 
-const AuthUserContext = createContext<AuthData>({
-  signInWithGoogle: () => {},
-  signOut: () => {},
-  user: null,
-  loading: true,
-});
+const​ ​AuthUserContext​ ​=​ ​createContext​<​AuthData​ ​|​ ​undefined​>​(​undefined​);
 
-const AuthUserProvider = ({ children, ...auth }: Props) => {
-  return (
-    <AuthUserContext.Provider value={auth}>{children}</AuthUserContext.Provider>
-  );
-};
+​const​ ​AuthUserProvider​: ​FC​<​WrappedComponentProps​>​ ​=​ ​(​{​ children​,​ ...​auth​ ​}​)​ ​=>​ ​(
+ ​ ​<​AuthUserContext​.​Provider​ ​value​=​{​auth​}​>​{​children​}​<​/​AuthUserContext​.​Provider​>
+​);
 
-export default createComponentWithAuth(AuthUserProvider);
+export​ ​default​ ​createComponentWithAuth​(​AuthUserProvider​);
 
-export const useAuth = () => useContext(AuthUserContext);
+​export​ ​const​ ​useAuth​ ​=​ ​(​)​ ​=>​ ​{
+ ​ const​ ​context​ ​=​ ​useContext​(​AuthUserContext​);
+ ​ if​ ​(​!​context​)​ ​throw​ ​new​ ​Error​(​"AuthUserContext has no value"​);
+ ​ ​return​ ​context;
+​};
 ```
 
 Once that is done, you can log in by calling the function inside the context:
@@ -263,7 +272,7 @@ const { user } = useAuth();
 
 const taskQuery = query(
   collection(db, 'tasks'),
-  where('owner', '==', user!.email!)
+  where('owner', '==', user!.uid)
 );
 ```
 
@@ -277,7 +286,7 @@ const { user } = useAuth();
 const task: Task = {
   text: input,
   checked: false,
-  owner: user!.email!,
+  owner: user!.uid,
 };
 addDoc(collection(db, 'tasks'), task);
 ```
@@ -286,3 +295,5 @@ addDoc(collection(db, 'tasks'), task);
 
 Feel free to reference our [demo code](https://github.com/cornell-dti/trends-sp22-starters/tree/main/lec9-soln)
 to implement authentication in your final project!
+
+In addition, here is a supplemental video explaining the demo code: [Video Link](https://drive.google.com/file/d/1C20ap_2kjPkiRsMMKLzADWK4uj6MlPjN/view?usp=sharing)
