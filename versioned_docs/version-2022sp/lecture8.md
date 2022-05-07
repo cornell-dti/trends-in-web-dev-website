@@ -145,8 +145,12 @@ Authors are not a primary entity. The author is a very simple object that does n
 
 #### Aside: Types or Interfaces?
 
-| Type                                                                          | Interface                                                                   |
-| ----------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
-| Better suited for data                                                        | Useful for a communication protocol or for objects with behavior (methods)  |
-| (typically) has no functionality                                              | Implemented by a class, which handles methods (class functions) efficiently |
-| Supports declaring methods, but this can only be implemented less efficiently | Usually wrapped in a library like RxJS’s Observable data type               |
+| Type                                                                          | Interface                                                                       |
+| ----------------------------------------------------------------------------- | ------------------------------------------------------------------------------- |
+| Better suited for raw data                                                    | Useful for a communication protocol or for rich objects with behavior (methods) |
+| (typically) has no functionality                                              | Implemented by a class, which handles methods (class functions) efficiently     |
+| Supports declaring methods, but this can only be implemented less efficiently | Usually wrapped in a library like RxJS’s Observable data type                   |
+
+#### So what will our types look like?
+
+### Pt. 2: What will our database schema look like? (hint: we will adapt our TypeScript Types!)
