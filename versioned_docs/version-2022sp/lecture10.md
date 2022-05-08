@@ -168,7 +168,7 @@ If you are interested in the backend side, we recommend looking through [our
 notes on Express](/docs/2021fa/lecture2#express) from past semesters! Take it up
 a notch with [Nest.js](https://nestjs.com/) for a more complete backend
 framework. You may have built backends in Python or Java, but using TypeScript
-for both allows you to do nifty things like share types!
+for both frontend and backend allows you to do nifty things like share types!
 
 On the full-stack side, check out technologies like
 [GraphQL](https://graphql.org/) and
