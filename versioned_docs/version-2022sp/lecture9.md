@@ -213,32 +213,49 @@ props over and over...
 We can use React Context with the `useContext` hook (discussed in [Lecture
 6](/docs/lecture6#usecontext)) to solve this **prop drilling** problem.
 
+```tsx title="AuthUserProvider.tsx"
+// other imports
+import { WrappedComponentProps } from 'react-with-firebase-auth';
+import { createComponentWithAuth } from '../../util/firebase';
+
+type AuthData = Omit<WrappedComponentProps, 'user'> & {
+  user?: User | null;
+};
+
+const AuthUserContext = createContext<AuthData | undefined>(undefined);
+
+const AuthUserProvider: FC<WrappedComponentProps> = ({ children, ...auth }) => (
+  <AuthUserContext.Provider value={auth}>{children}</AuthUserContext.Provider>
+);
+
+export default createComponentWithAuth(AuthUserProvider);
+
+export const useAuth = () => {
+  const context = useContext(AuthUserContext);
+  if (!context) throw new Error('AuthUserContext has no value');
+  return context;
+};
+```
+
 After creating this Context Provider, we can wrap our root component in
 `pages/_app.tsx` so that any child component can access and interact with our
 context.
 
-```tsx title="AuthUserProvider.tsx"
+```tsx title="_app.tsx"
 // other imports
-​import​ ​{​ ​WrappedComponentProps​ ​}​ ​from​ ​"react-with-firebase-auth";
-import​ ​{​ ​createComponentWithAuth​ ​}​ ​from​ ​"../../util/firebase";
+import AuthUserProvider from '../components/auth/AuthUserProvider';
 
-type​ ​AuthData​ ​=​ ​Omit​<​WrappedComponentProps​,​ ​"user"​>​ ​&​ ​{
- ​ user​?: ​User​ ​|​ ​null;
-​};
+function App({ Component, pageProps }: AppProps) {
+  return (
+    <ChakraProvider>
+      <AuthUserProvider>
+        <Component {...pageProps} />
+      </AuthUserProvider>
+    </ChakraProvider>
+  );
+}
 
-const​ ​AuthUserContext​ ​=​ ​createContext​<​AuthData​ ​|​ ​undefined​>​(​undefined​);
-
-​const​ ​AuthUserProvider​: ​FC​<​WrappedComponentProps​>​ ​=​ ​(​{​ children​,​ ...​auth​ ​}​)​ ​=>​ ​(
- ​ ​<​AuthUserContext​.​Provider​ ​value​=​{​auth​}​>​{​children​}​<​/​AuthUserContext​.​Provider​>
-​);
-
-export​ ​default​ ​createComponentWithAuth​(​AuthUserProvider​);
-
-​export​ ​const​ ​useAuth​ ​=​ ​(​)​ ​=>​ ​{
- ​ const​ ​context​ ​=​ ​useContext​(​AuthUserContext​);
- ​ if​ ​(​!​context​)​ ​throw​ ​new​ ​Error​(​"AuthUserContext has no value"​);
- ​ ​return​ ​context;
-​};
+export default App;
 ```
 
 Once that is done, you can log in by calling the function inside the context:
