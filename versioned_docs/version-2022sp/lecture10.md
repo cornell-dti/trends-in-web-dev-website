@@ -53,6 +53,8 @@ Then to deploy your Next.js app, run this in the project's root:
 vercel
 ```
 
+That's it!
+
 So... what's the catch?
 
 Vercel can be a bit pricy, especially when you compare it to other competitors.
@@ -93,6 +95,7 @@ Once you have a public URL for your website, here are some things to check:
 - Make sure your app doesn't hardcode urls like `localhost:3000`
 - If using Firebase auth, add your new URL to the list of Authorized Domains
   (else authentication won't work)
+  - Navigate: [Firebase Console](https://console.firebase.google.com/) -> Authentication -> Sign-in method -> Authorized domains
 
 And that's pretty much it! Enjoy your website 😍
 
