@@ -213,10 +213,6 @@ props over and over...
 We can use React Context with the `useContext` hook (discussed in [Lecture
 6](/docs/lecture6#usecontext)) to solve this **prop drilling** problem.
 
-After creating this Context Provider, we can wrap our root component in
-`pages/_app.tsx` so that any child component can access and interact with our
-context.
-
 ```tsx title="AuthUserProvider.tsx"
 // other imports
 import { WrappedComponentProps } from 'react-with-firebase-auth';
@@ -239,6 +235,27 @@ export const useAuth = () => {
   if (!context) throw new Error('AuthUserContext has no value');
   return context;
 };
+```
+
+After creating this Context Provider, we can wrap our root component in
+`pages/_app.tsx` so that any child component can access and interact with our
+context.
+
+```tsx title="_app.tsx"
+// other imports
+import AuthUserProvider from '../components/auth/AuthUserProvider';
+
+function App({ Component, pageProps }: AppProps) {
+  return (
+    <ChakraProvider>
+      <AuthUserProvider>
+        <Component {...pageProps} />
+      </AuthUserProvider>
+    </ChakraProvider>
+  );
+}
+
+export default App;
 ```
 
 Once that is done, you can log in by calling the function inside the context:
