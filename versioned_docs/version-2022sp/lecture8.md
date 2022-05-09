@@ -7,6 +7,8 @@ title: Lecture 8
 
 [Assignment 4](/docs/assignment4) (Due 4/22 at 11:59pm)
 
+[Final Project](/docs/finalproject) (MS0 Due 4/17, MS1 Due 4/29, MS2 Due 5/6, MS3 Due 5/13 at 11:59pm)
+
 # Some Theory
 
 ## Querying Methods for your React/Next.js App
@@ -31,15 +33,13 @@ title: Lecture 8
 
 ### How Do Callback/Promised Based vs. Real-Time Queries Work?
 
-| Promise-Based                                                            | Real-Time                                                                                                          |
-| ------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------ |
-| Typically calls a (backend) API route that fetches & returns data to you | Might call a backend route to pass data over a WebSocket                                                           |
-| Uusuallyuilt on top of HTTP requests                                     | Or simply uses an API library to make calls directly to a database                                                 |
-| - built on top pf HTTP Requests                                          | - ex: Firebase Firestore call                                                                                      |
-|                                                                          | Usually wrapped in a library like RxJS’s Observable data type or a library that allows you to subscribe to changes |
-|                                                                          |                                                                                                                    |
-|                                                                          |                                                                                                                    |
-|                                                                          |                                                                                                                    |
+| Promise-Based                                                            | Real-Time                                                                                                              |
+| ------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------- |
+| Typically calls a (backend) API route that fetches & returns data to you | Might call a backend route to pass data over a WebSocket                                                               |
+| Usually built on top of HTTP requests                                    | Or simply uses an API library to make calls directly to a database                                                     |
+| Built on top pf HTTP Requests                                            | - ex: Firebase Firestore call                                                                                          |
+|                                                                          | Usually wrapped in a library like RxJS’s Observable data type or function calls that allow you to subscribe to changes |
+|                                                                          |                                                                                                                        |
 
 ### Choosing a Querying Method
 
