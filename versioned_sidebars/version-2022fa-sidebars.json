@@ -1,0 +1,26 @@
+{
+  "docs": {
+    "Getting Started": [
+      {
+        "type": "doc",
+        "id": "version-2022fa/introduction"
+      },
+      {
+        "type": "doc",
+        "id": "version-2022fa/setup-environment"
+      },
+      {
+        "type": "doc",
+        "id": "version-2022fa/setup-editor"
+      }
+    ],
+    "Lectures": [
+    ],
+    "Assignments": [
+      {
+        "type": "doc",
+        "id": "version-2022fa/assignments"
+      }
+    ]
+  }
+}
