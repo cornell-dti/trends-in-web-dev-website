@@ -18,15 +18,13 @@ Assuming nothing goes wrong, Trends in Web Development will be **IN PERSON**
 this semester. Unfortunately, we will not be able to provide recordings for
 lecture, although lecture notes will be posted on this website.
 
-Lectures will be held on **Wednesdays at 5:00 - 6:00 PM ET** at **Gates 122**.
-
-Note that for the lecture scheduled 4/13, we will instead be at **Gates 114** from **5:30 - 6:30PM**.
+Lectures will be held on **TBA** at **TBA** (after 5pm most likely).
 
 Join our EdStem discussion here: (link TBA)
 
 ## Course Application
 
-Apply [here](https://bit.ly/web-dev-sp22) by February 21st at 11:59 PM ET. It includes a general information questionnaire so we have the information necessary for enrollment, as well as a preassessment you must complete.
+Apply [here](https://bit.ly/web-dev-fa22) by TBA at 11:59 PM ET. It includes a general information questionnaire so we have the information necessary for enrollment, as well as a preassessment you must complete.
 
 We will be distributing enrollment/permission pins soon after the application period closes.
 
@@ -43,41 +41,33 @@ React, Firebase, and more.
 
 Please check Ed for any updates to OH times or locations!
 
-Office hours will start on Thursday, March 3rd.
+Office hours will start on TBA.
 
-| Day |      Time      | Location   |
-| --- | :------------: | ---------- |
-| Mon | 12:30pm-2:30pm | Rhodes 574 |
-| Mon | 1:30pm-2:30pm  | Rhodes 574 |
-| Wed | 2:15pm-3:15pm  | Rhodes 404 |
-| Thu | 12:10pm-1:10pm | Rhodes 501 |
-| Fri |    1pm-2pm     | Rhodes 408 |
-| Fri |    3pm-4pm     | Rhodes 404 |
+TBA
 
 If you are unable to make any of those office hours times, you can ask questions
-on Ed or get in touch with [Enoch](mailto:yc728@cornell.edu),
-[Scott](mailto:sw754@cornell.edu), or [Jason](mailto:jt568@cornell.edu).
+on Ed or get in touch with [Michael](mailto:met236@cornell.edu),
+[Akash](mailto:aa753@cornell.edu).
 
 ## Is there a lecture schedule?
 
-Lectures will begin on February 23rd, 2022. Here is a tentative schedule for the
+Lectures will begin on **TBA** (latter half of september). Here is a tentative schedule for the
 topics that will be covered (subject to change). We are holding the last lecture
-on 5/4, well before finals week. Also, note that we will not have lecture during
-Spring Break.
+on **TBA** (well before finals week).
 
 Lecture Schedule TBD
 
 ## Where are assignments released and submitted?
 
-Assignments will be released on [here](/docs/2022sp/assignments) every Thursday. Every
+Assignments will be released on [here](/docs/assignments) every TBA. Every
 assignment is due right before class of the following week at 3:59pm unless
 otherwise stated. You will have 6 slip days total to use on the assignments, but
 for each assignment, you may only use up to 2 slip days. Use these judiciously
 because we will not be handling extensions outside of slip days.
 
 Assignments must be submitted on CMS. We will not take submissions emailed to
-us. If you are not on the CMS please email [Enoch](mailto:yc728@cornell.edu),
-[Scott](mailto:sw754@cornell.edu), or [Jason](mailto:jt568@cornell.edu).
+us. If you are not on the CMS please email [Michael](mailto:met236@cornell.edu),
+[Akash](mailto:aa753@cornell.edu).
 
 ## What will be taught?
 
@@ -105,7 +95,7 @@ This course will be covering both client-facing and server-side technologies. CS
 Please complete the pre-assessment [here](/preassessment.zip). It should take
 less than an hour! This is not meant as a test, but rather a way of ensuring
 that you are familiar with the foundational material in the course. Upload your
-submissions as a zip to your application at https://bit.ly/web-dev-sp22. **This
+submissions as a zip to your application at https://bit.ly/web-dev-fa22. **This
 preassessment is mandatory; those who do not submit it will not be admitted in
 the course.**
 
@@ -139,7 +129,7 @@ best to find a solution.
 
 ## Who should I contact with questions?
 
-Email Enoch ([yc728@cornell.edu](mailto:yc728@cornell.edu)), Scott ([sw754@cornell.edu](mailto:sw754@cornell.edu)), or Jason ([jt568@cornell.edu](mailto:jt568@cornell.edu)).
+[Michael](mailto:met236@cornell.edu) or [Akash](mailto:aa753@cornell.edu)
 
 ## Policies
 

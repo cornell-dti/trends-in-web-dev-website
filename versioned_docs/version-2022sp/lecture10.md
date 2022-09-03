@@ -5,13 +5,13 @@ title: Lecture 10
 
 [Lecture Slides](https://docs.google.com/presentation/d/1MOFsKAfAH2kVq9B__ZwHC_HHtpL5YpGoePVsZgzow7o/edit?usp=sharing)
 
-[Final Project Instructions](/docs/finalproject)
+[Final Project Instructions](/docs/2022sp/finalproject)
 
-[Final Project - Milestone 1](/docs/finalproject#milestone-1) due **4/29 by 11:59pm**
+[Final Project - Milestone 1](/docs/2022sp/finalproject#milestone-1) due **4/29 by 11:59pm**
 
-[Final Project - Milestone 2](/docs/finalproject#milestone-2) due **5/6 by 11:59pm**
+[Final Project - Milestone 2](/docs/2022sp/finalproject#milestone-2) due **5/6 by 11:59pm**
 
-[Final Project - Milestone 3](/docs/finalproject#milestone-3) due **5/13 by 11:59pm**
+[Final Project - Milestone 3](/docs/2022sp/finalproject#milestone-3) due **5/13 by 11:59pm**
 
 ## Deployment
 

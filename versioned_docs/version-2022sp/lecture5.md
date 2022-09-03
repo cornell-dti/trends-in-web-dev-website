@@ -5,7 +5,7 @@ title: Lecture 5
 
 [Lecture Slides](https://docs.google.com/presentation/d/1tswPifJjsH5ElZWmbi7WSswKBkcMOwXF-j9PlAQ25lk/edit?usp=sharing)
 
-[Assignment 3](/docs/assignment3) (due Friday 4/1 11:59 PM on CMS)
+[Assignment 3](/docs/2022sp/assignment3) (due Friday 4/1 11:59 PM on CMS)
 
 ## Conditional Rendering
 

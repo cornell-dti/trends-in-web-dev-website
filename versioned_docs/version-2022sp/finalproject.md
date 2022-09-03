@@ -86,7 +86,7 @@ Finish up the authentication system on your site and deploy your website.
 Include the url of your deployed site in your submission!
 
 :::tip
-Need help? Come to [office hours](/docs/introduction#when-are-office-hours) and we can help you debug. Also feel free to post questions on Ed!
+Need help? Come to [office hours](/docs/2022sp/introduction#when-are-office-hours) and we can help you debug. Also feel free to post questions on Ed!
 :::
 
 :::danger

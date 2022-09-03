@@ -205,7 +205,7 @@ Here is a list of features to add:
     - Replace the text with `💰BRB Clicker💰` instead (with `h1` tags still)
     - Right under the header `h1` tag, add a win message in a `p` tag
   - Refresh your memory on Conditional Rendering from
-    [Lecture 5](/docs/lecture5#conditional-rendering) if you're stuck!
+    [Lecture 5](/docs/2022sp/lecture5#conditional-rendering) if you're stuck!
 - In `ClickerSection`, make the "Acquire BRB" button work!
   - Each click should increase BRBs by the value of `clickIncome`
   - This will be very similar to what you did in A2, using the `onClick` prop

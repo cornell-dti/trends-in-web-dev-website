@@ -5,7 +5,7 @@ title: Lecture 2
 
 [Lecture Slides](https://docs.google.com/presentation/d/1ZLiN4SOXepDaDzWj7RTBJCHTC8pLOkaGs60OoNqyjiI/edit?usp=sharing)
 
-[Assignment 1](/docs/assignment1) (due ~~3/09 4:59 PM~~ on CMS) **Extended to 3/11 11:59 PM!**
+[Assignment 1](/docs/2022sp/assignment1) (due ~~3/09 4:59 PM~~ on CMS) **Extended to 3/11 11:59 PM!**
 
 ## How to build a web app
 
