@@ -20,7 +20,7 @@ yarn add --dev typescript ts-node @types/express
 ```
 
 :::info
-Check out [lecture1](/docs/lecture1) for more details on how this setup works!
+Check out [lecture1](/docs/2020fa/lecture1) for more details on how this setup works!
 :::
 
 Now you can create an `index.ts` file to add your routes and assignment code in.
@@ -51,7 +51,7 @@ To test your code run `ts-node index.ts`. Your server should be up and running (
 
 ## Getting help
 
-If you're stuck, we have [TA office hours](/docs/introduction#when-are-office-hours) every week day so feel free to come and ask questions! In addition, you can join the [Piazza](http://piazza.com/cornell/fall2020/info1998section604) and post your question. Please make it public if it's just a general question with no code screenshots, otherwise make it private.
+If you're stuck, we have [TA office hours](/docs/2020fa/introduction#when-are-office-hours) every week day so feel free to come and ask questions! In addition, you can join the [Piazza](http://piazza.com/cornell/fall2020/info1998section604) and post your question. Please make it public if it's just a general question with no code screenshots, otherwise make it private.
 
 ## Submission
 

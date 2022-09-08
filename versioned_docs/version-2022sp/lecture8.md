@@ -5,9 +5,9 @@ title: Lecture 8
 
 [Lecture Slides](https://docs.google.com/presentation/d/1hTeo4xK5m54hoik8U2tct8t8Tm5iBx5kpZ3Z7YVZx6M/edit?usp=sharing)
 
-[Assignment 4](/docs/assignment4) (Due 4/22 at 11:59pm)
+[Assignment 4](/docs/2022sp/assignment4) (Due 4/22 at 11:59pm)
 
-[Final Project](/docs/finalproject) (MS0 Due 4/17, MS1 Due 4/29, MS2 Due 5/6, MS3 Due 5/13 at 11:59pm)
+[Final Project](/docs/2022sp/finalproject) (MS0 Due 4/17, MS1 Due 4/29, MS2 Due 5/6, MS3 Due 5/13 at 11:59pm)
 
 # Some Theory
 
