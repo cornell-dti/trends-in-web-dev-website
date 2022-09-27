@@ -15,6 +15,10 @@
       }
     ],
     "Lectures": [
+      {
+        "type": "doc",
+        "id": "version-2022fa/lecture1"
+      }
     ],
     "Assignments": [
       {
