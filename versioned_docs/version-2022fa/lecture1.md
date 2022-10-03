@@ -3,7 +3,7 @@ id: lecture1
 title: Lecture 1
 ---
 
-[Lecture Slides](https://docs.google.com/presentation/d/14LCzgpdo6381cS3gfda4fxdumJyl0WS2tRW5PY4EqGg/edit?usp=sharing)
+[Lecture Slides](https://docs.google.com/presentation/d/1yb15uleIM_3Mx1IZh1DFi8efCF7ZeIM1/edit?usp=sharing&ouid=110839432285233804143&rtpof=true&sd=true)
 
 No homework this week!
 

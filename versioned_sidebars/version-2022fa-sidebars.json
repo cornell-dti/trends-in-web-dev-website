@@ -18,13 +18,22 @@
       {
         "type": "doc",
         "id": "version-2022fa/lecture1"
+      },
+      {
+        "type": "doc",
+        "id": "version-2022fa/lecture2"
       }
     ],
     "Assignments": [
       {
         "type": "doc",
         "id": "version-2022fa/assignments"
+      },
+      {
+        "type": "doc",
+        "id": "version-2022fa/assignment1"
       }
+      
     ]
   }
 }
