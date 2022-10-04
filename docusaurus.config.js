@@ -8,6 +8,7 @@ module.exports = {
   baseUrl: '/',
   favicon: 'img/logo.png',
   organizationName: 'cornell-dti',
+  onBrokenLinks: 'warn',
   projectName: 'trends-in-web-dev-website',
   themeConfig: {
     prism: {
