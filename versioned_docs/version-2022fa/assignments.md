@@ -10,4 +10,4 @@ You are allowed max 3 slip days (out of 6 total for all assignments and the fina
 
 The class is scheduled to finish well before finals week.
 
-[Assignment 1](/docs/2022fa/assignment1): Due on CMS by 10/17 by 7:30pm
+[Assignment 1](assignment1): Due on CMS by 10/17 by 7:30pm
