@@ -24,7 +24,7 @@ module.exports = {
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.json'),
-          includeCurrentVersion: true,
+          includeCurrentVersion: false,
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
