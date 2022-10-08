@@ -18,9 +18,9 @@ Assuming nothing goes wrong, Trends in Web Development will be **IN PERSON**
 this semester. Unfortunately, we will not be able to provide recordings for
 lecture, although lecture notes will be posted on this website.
 
-Lectures will be held on **TBA** at **TBA** (after 5pm most likely).
+Lectures will be held on **Mondays** at **7:30pm**.
 
-Join our EdStem discussion here: (link TBA)
+Join our EdStem discussion [here](https://edstem.org/us/join/d6JEFD).
 
 ## Course Application
 
@@ -41,9 +41,9 @@ React, Firebase, and more.
 
 Please check Ed for any updates to OH times or locations!
 
-Office hours will start on TBA.
+Office hours will start on 10/03.
 
-TBA
+Info concerning office hours can be found on Edstem.
 
 If you are unable to make any of those office hours times, you can ask questions
 on Ed or get in touch with [Michael](mailto:met236@cornell.edu),
@@ -51,7 +51,7 @@ on Ed or get in touch with [Michael](mailto:met236@cornell.edu),
 
 ## Is there a lecture schedule?
 
-Lectures will begin on **TBA** (latter half of september). Here is a tentative schedule for the
+Lectures will begin on 09/26 (latter half of september). Here is a tentative schedule for the
 topics that will be covered (subject to change). We are holding the last lecture
 on **TBA** (well before finals week).
 
@@ -60,7 +60,7 @@ Lecture Schedule TBD
 ## Where are assignments released and submitted?
 
 Assignments will be released on [here](/docs/assignments) every TBA. Every
-assignment is due right before class of the following week at 3:59pm unless
+assignment is due right before class of the following week at 7:30pm unless
 otherwise stated. You will have 6 slip days total to use on the assignments, but
 for each assignment, you may only use up to 2 slip days. Use these judiciously
 because we will not be handling extensions outside of slip days.
