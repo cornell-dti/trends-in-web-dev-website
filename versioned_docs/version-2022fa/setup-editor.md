@@ -3,13 +3,11 @@ id: setup-editor
 title: Setup your editor
 ---
 
-For convenience, we assume you will use VSCode.You can download VS Code [here](https://code.visualstudio.com/download). 
+For convenience, we assume you will use VSCode.You can download VS Code [here](https://code.visualstudio.com/download).
 
 These are some recommended extensions for your editor. If you are using WebStorm and
 Atom, you are likely to find some extensions that provide similar
 functionalities.
-
-
 
 ## Recommended Extensions
 
