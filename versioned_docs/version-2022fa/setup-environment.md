@@ -20,6 +20,7 @@ Go to [this website](https://classic.yarnpkg.com/en/) and follow the instruction
 ```zsh
  npm install -g ts-node
 ```
+
 Then to run a file `file.ts`
 
 ```zsh
