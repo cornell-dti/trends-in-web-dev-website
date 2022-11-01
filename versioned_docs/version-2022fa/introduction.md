@@ -67,7 +67,6 @@ Lecture Schedule
 **Lecture 9:** Authentication and Security
 **Lecture 10:** Deployment!!
 
-
 ## Where are assignments released and submitted?
 
 Assignments will be released on [here](/docs/assignments) every week. Every
