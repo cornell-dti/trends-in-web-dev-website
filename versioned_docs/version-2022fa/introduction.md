@@ -24,7 +24,7 @@ Join our EdStem discussion [here](https://edstem.org/us/join/d6JEFD).
 
 ## Course Application
 
-Apply [here](https://bit.ly/web-dev-fa22) by TBA at 11:59 PM ET. It includes a general information questionnaire so we have the information necessary for enrollment, as well as a preassessment you must complete.
+Apply [here](https://bit.ly/web-dev-fa22) by 09/23 at 11:59 PM ET. It includes a general information questionnaire so we have the information necessary for enrollment, as well as a preassessment you must complete.
 
 We will be distributing enrollment/permission pins soon after the application period closes.
 
@@ -53,13 +53,24 @@ on Ed or get in touch with [Michael](mailto:met236@cornell.edu),
 
 Lectures will begin on 09/26 (latter half of september). Here is a tentative schedule for the
 topics that will be covered (subject to change). We are holding the last lecture
-on **TBA** (well before finals week).
+on 12/05 (well before finals week).
 
-Lecture Schedule TBD
+Lecture Schedule
+**Lecture 1:** Syllabus, JavaScript/TypeScript
+**Lecture 2:** Intro to Node, Modern JS (ES6+) and Functional Programming in JavaScript / TypeScript
+**Lecture 3:** Server-side Rendering and Next.js
+**Lecture 4:** React (Components, Tooling, and JSX)
+**Lecture 5:** React (Hooks and Best Practices)
+**Lecture 6:** React (Conditional Rendering and Lifting State Up)
+**Lecture 7:** NoSQL Databases (Firebase)
+**Lecture 8:** Connecting the Frontend + Backend (Data Fetching)
+**Lecture 9:** Authentication and Security
+**Lecture 10:** Deployment!!
+
 
 ## Where are assignments released and submitted?
 
-Assignments will be released on [here](/docs/assignments) every TBA. Every
+Assignments will be released on [here](/docs/assignments) every week. Every
 assignment is due right before class of the following week at 7:30pm unless
 otherwise stated. You will have 6 slip days total to use on the assignments, but
 for each assignment, you may only use up to 2 slip days. Use these judiciously
