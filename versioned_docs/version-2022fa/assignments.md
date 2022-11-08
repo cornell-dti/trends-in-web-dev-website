@@ -15,3 +15,5 @@ The class is scheduled to finish well before finals week.
 [Assignment 2](assignment2): Due on CMS by 1/2 by 7:30pm
 
 [Assignment 3](assignment3): Due on CMS by 1/7 by 7:30pm
+
+[Assignment 4](assignment4): Due on CMS by 1/14 by 7:30pm
