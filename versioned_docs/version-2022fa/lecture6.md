@@ -7,9 +7,9 @@ title: Lecture 6
 
 [Main Lecture Slides](https://docs.google.com/presentation/d/1eZNqJOUIht1_0M5Dat7h7HJOk8GlYYTE/edit?usp=sharing&ouid=117514670142351828517&rtpof=true&sd=true)
 
-[Assignment 3](/docs/2022fa/assignment4) (due Monday 1/14 7:30 PM on CMS)
+[Assignment 3](assignment4) (due Monday 11/14 7:30 PM on CMS)
 
-[Final Project Team Matching Form](https://forms.gle/TWQbB4Z67PiukRPq8) due **Sunday, 1/13 at 11:59 PM** (no slip days)
+[Final Project Team Matching Form](https://forms.gle/TWQbB4Z67PiukRPq8) due **Sunday, 11/14 at 11:59 PM** (no slip days)
 
 ### Async/Await
 
