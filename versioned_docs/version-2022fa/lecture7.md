@@ -1,6 +1,6 @@
 ---
-id: lecture8
-title: Lecture 8
+id: lecture7
+title: Lecture 7
 ---
 
 [Lecture Slides](https://docs.google.com/presentation/d/1kvB0qMpubHe0dUMLni_e4GrGujrWF1ie/edit#slide=id.p39)
