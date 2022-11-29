@@ -51,37 +51,32 @@ Your remaining slip days are still valid for this. The group's allotted slip day
 
 #### Due: November 13 by 11:59 PM (no slip days)
 
-Please fill out [**this team matching form**](https://forms.gle/ZPabB97jHYceg5Eo7) by **Sunday, April 17th**. This is a hard deadline because we want to assign group members on Sunday so you have enough time to work on Milestone 0.
+Please fill out [**this team matching form**](https://forms.gle/ZPabB97jHYceg5Eo7) by **Sunday, November 13th**. This is a hard deadline because we want to assign group members on Sunday so you have enough time to work on Milestone 0.
 
 ### Milestone 0
 
-**Due: November 21 by 11:59 PM**
+**Due: November 30 by 11:59 PM**
 
 Upload to CMS a mock and description of your web app! Your mock can be a picture/pictures (handdrawn or created from a drawing program) and the description should be in `pdf` form. Your mock should include sketches of the different pages or views in your application. Your description should be **at least 200 words** and elaborate on what your project will be about. Also consider how you will structure your database schema! (What collections will you need, how will they be related, and what documents will they store). Finally, if you are using GitHub (_highly recommended!_), please link it in your description (and make the GitHub repo public). Please zip both of these together to submit to CMS.
 
 ### Milestone 1
 
-**Due: November 28 by 11:59 PM**
+**Due: December 7 by 11:59 PM**
 
-Get started implementing the frontend. Use hardcoded data for now just to get
-the layout done. This can be default values embedded in your frontend code. You
-will connect it to the database in the subsequent milestones.
-
-### Milestone 2
-
-**Due: December 5 by 11:59 PM**
+Get started implementing the frontend. Use hardcoded data initially to get
+the layout done. This can be default values embedded in your frontend code. 
 
 Connect the app to Firebase by replacing hardcoded data with database calls.
 
-Also work on having an authentication system set up using Firebase Auth.
+### Milestone 2
 
-### Milestone 3
-
-**Due: December 13 by 11:59 PM**
+**Due: December 14 by 11:59 PM**
 
 This is the last milestone!
 
-Finish up the authentication system on your site and deploy your website.
+Set up an authentication system using Firebase Auth.
+
+Finish up any features/bug fixes and deploy your website.
 
 Include the url of your deployed site in your submission!
 
