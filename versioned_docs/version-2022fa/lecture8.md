@@ -9,11 +9,9 @@ title: Lecture 8
 
 [Final Project Instructions](finalproject)
 
-[Final Project - Milestone 1](finalproject#milestone-1) due **4/29 by 11:59pm**
+[Final Project - Milestone 1](finalproject#milestone-1) due **12/7 by 11:59pm**
 
-[Final Project - Milestone 2](finalproject#milestone-2) due **5/6 by 11:59pm**
-
-[Final Project - Milestone 3](finalproject#milestone-3) due **5/13 by 11:59pm**
+[Final Project - Milestone 2](finalproject#milestone-2) due **12/14 by 11:59pm**
 
 ## What is Authentication?
 
