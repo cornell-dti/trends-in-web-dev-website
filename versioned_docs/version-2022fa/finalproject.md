@@ -64,7 +64,7 @@ Upload to CMS a mock and description of your web app! Your mock can be a picture
 **Due: December 7 by 11:59 PM**
 
 Get started implementing the frontend. Use hardcoded data initially to get
-the layout done. This can be default values embedded in your frontend code. 
+the layout done. This can be default values embedded in your frontend code.
 
 Connect the app to Firebase by replacing hardcoded data with database calls.
 
