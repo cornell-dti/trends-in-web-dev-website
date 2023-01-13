@@ -7,13 +7,13 @@ title: Lecture 9
 
 [Demo Code Supplemental Video](https://drive.google.com/file/d/1C20ap_2kjPkiRsMMKLzADWK4uj6MlPjN/view?usp=sharing)
 
-[Final Project Instructions](/docs/2022sp/finalproject)
+[Final Project Instructions](finalproject)
 
-[Final Project - Milestone 1](/docs/2022sp/finalproject#milestone-1) due **4/29 by 11:59pm**
+[Final Project - Milestone 1](finalproject#milestone-1) due **4/29 by 11:59pm**
 
-[Final Project - Milestone 2](/docs/2022sp/finalproject#milestone-2) due **5/6 by 11:59pm**
+[Final Project - Milestone 2](finalproject#milestone-2) due **5/6 by 11:59pm**
 
-[Final Project - Milestone 3](/docs/2022sp/finalproject#milestone-3) due **5/13 by 11:59pm**
+[Final Project - Milestone 3](finalproject#milestone-3) due **5/13 by 11:59pm**
 
 ## What is Authentication?
 
@@ -211,7 +211,7 @@ component in our component tree, but that would have to be passed down through
 props over and over...
 
 We can use React Context with the `useContext` hook (discussed in [Lecture
-6](/docs/2022sp/lecture6#usecontext)) to solve this **prop drilling** problem.
+6](/docs/2023sp/lecture6#usecontext)) to solve this **prop drilling** problem.
 
 ```tsx title="AuthUserProvider.tsx"
 // other imports

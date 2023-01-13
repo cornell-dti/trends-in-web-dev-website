@@ -5,7 +5,7 @@ title: Lecture 6
 
 [Lecture Slides](https://docs.google.com/presentation/d/1gS0nwkjPdHZpO2uI6FdMb3jpyhgwn6c_SV4Juf8uBoQ/edit?usp=sharing)
 
-[Assignment 3](/docs/2022sp/assignment3) (due Friday 4/1 11:59 PM on CMS)
+[Assignment 3](assignment3) (due Friday 4/1 11:59 PM on CMS)
 
 ## More On Hooks
 

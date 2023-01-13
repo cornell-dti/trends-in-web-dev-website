@@ -5,13 +5,11 @@ title: Lecture 8
 
 [Lecture Slides](https://docs.google.com/presentation/d/1hTeo4xK5m54hoik8U2tct8t8Tm5iBx5kpZ3Z7YVZx6M/edit?usp=sharing)
 
-[Assignment 4](/docs/2022sp/assignment4) (Due 4/22 at 11:59pm)
+[Assignment 4](assignment4) (Due 4/22 at 11:59pm)
 
-[Final Project](/docs/2022sp/finalproject) (MS0 Due 4/17, MS1 Due 4/29, MS2 Due 5/6, MS3 Due 5/13 at 11:59pm)
+[Final Project](finalproject) (MS0 Due 4/17, MS1 Due 4/29, MS2 Due 5/6, MS3 Due 5/13 at 11:59pm)
 
-# Some Theory
-
-## Querying Methods for your React/Next.js App
+# Callback/Promise-based or Real-Time Queries
 
 | Promise-Based                                                                                                                   | Real-Time                                                                                                                                                      |
 | ------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -51,14 +49,14 @@ In particular, real-time queries play nicely with having a centralized query tha
 
 That is not to say that your app cannot use both types of queries. It is just that a real-time application requires a specific architecture in which all data is queried first and passed along to components as props or referenced by components via (potentially custom) React/Redux hooks. This does not play nicely with callback/Promise-based queries because the data from the callback/Promise-based queries may be in an inconsistent state by the time the data from a real-time query has updated.
 
-## Your Firebase Firestore Application: Callback/Promise-based or Real-Time Queries
+## Firebase Firestore Application: Callback/Promise-based or Real-Time Queries
 
 Firestore offers you a database that nicely organizes your data into _documents_ and _collections_ (groups of documents). It allows you to build queries that can either
 
 1. return _once_ with a single snapshot of data (a Promise-based query), or
 2. allow you to hook into the data's live values (a real-time query).
 
-## Firestore Real-time Queries
+### Firestore Real-time Queries
 
 Provides collection + document data as an listenable (subscribable) data object
 
@@ -66,7 +64,7 @@ Provides collection + document data as an listenable (subscribable) data object
 - As soon as a doc updates, the doc access object publishes a new version of the doc
   This can be passed as a React prop or an effect dependency, which triggers a component update!
 
-## Anatomy of a Firebase Firestore Real-Time Application (The "Full" Stack)
+### Anatomy of a Firebase Firestore Real-Time Application (The "Full" Stack)
 
 ![Anatomy of a Firebase Firestore Real-Time Update](/img/lec8/firestore-real-time.png)
 

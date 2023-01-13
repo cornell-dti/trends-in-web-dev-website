@@ -5,7 +5,7 @@ title: Lecture 4
 
 [Lecture Slides](https://docs.google.com/presentation/d/1CNKnsXYA4BnNFwQY2ixZne5XmZdpqGi8FVuoLOg0aHA/edit?usp=sharing)
 
-[Assignment 2](/docs/2022sp/assignment2) (due 3/23 4:59pm on CMS)
+[Assignment 2](assignment2) (due 3/23 4:59pm on CMS)
 
 ## Your First Component
 
