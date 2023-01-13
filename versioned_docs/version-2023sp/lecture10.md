@@ -155,7 +155,7 @@ at other JavaScript frameworks aside from React such as
 [Svelte](https://svelte.dev/).
 
 If you want to do more React, look into [Redux](https://redux-toolkit.js.org/)
-(more advanced state management), [SWR](https://swr.vercel.app/) (data
+(more advanced state management), [SWR](https://swr.vercel.app/) or [Axios](https://axios-http.com/docs/api_intro) (data
 fetching), or [Cypress](https://www.cypress.io/) (end-to-end testing).
 
 If you think Next.js and SSR is cool, there are tons of features we couldn't
