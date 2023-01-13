@@ -3,7 +3,11 @@ id: lecture3
 title: Lecture 3
 ---
 
-[Lecture Slides](https://docs.google.com/presentation/d/1eKPi-GJBQuygUuyoWjU7k8WevSD4xlg703MDIourngw/edit?usp=sharing)
+Homework: TODO: @daniel
+
+Slides: TODO: @daniel
+
+Explore more: N/A
 
 ## Before the lecture
 
@@ -19,13 +23,13 @@ NOTE: This will **create** a new folder in the current directory containing all
 the project files, so run this where you want your project folder to be.
 
 ```zsh
-yarn create next-app --typescript [optional: directory name]
+yarn create next-app --typescript [optional: directory-name]
 ```
 
 If you don't specify a directory name in your command, you'll be prompted for
 one.
 
-## Websites
+## Why React?
 
 ### HTTP requests and responses
 
@@ -69,11 +73,13 @@ the website to render!
 
 ## Rendering
 
-### A Bit About React
+### React.js, specifically, in-depth
 
-We will be exploring React much more deeply in the following lectures, but for
-now it might be helpful to know what drives many web developers to use libraries
-like React to create their website, rather than pure HTML/CSS/JS.
+We loosely covered a _ton_ of frameworks in the last lesson, but in this lesson and for the remainder of the course, we will be focusing on React.js (and Next.js, which is built atop it).
+
+So, let's review what we covered last time, but in-depth for Next.js specifically.
+
+#### Why React/Next.js?
 
 One important reason, among many others, is that using regular JavaScript to
 implement interactivity is hard. React and similar technologies simply make
@@ -186,7 +192,9 @@ one's you'll be interacting with the most:
 
 - We will see `/api/` folders a lot, which are designated for _backend_ related
   files. You'll find `.ts` files here, which compose the backend API of your
-  Next.js server.
+  Next.js server. This frequently serves as "middleware" between the frontend and
+  the database. This is important, since we don't want to expose our database
+  directly to the frontend.
 
 #### `styles/`
 
@@ -225,3 +233,107 @@ You can run these scripts with `yarn [script]`, for example `yarn dev`.
 
 And that's it! Feel free to play around with this project, and we'll be diving
 into React in the next lecture.
+
+## How React?
+
+Allows developers to create reusable UI components and manage the state of those components efficiently. React uses a virtual DOM (Document Object Model) to improve performance by minimizing the amount of DOM manipulation required when a user interacts with a React application. This allows for efficient updates and rendering of components, making it a popular choice for building complex and high-performing web and mobile applications.
+
+In essence, it's built around a few core features:
+
+- Reusable components
+- Reactivity (state management)
+
+Conceptually, everything in React is a _function_. Your entire UI is therefore a function of your state. This is a very powerful concept.
+
+### Components
+
+Components are the building blocks of visual React. They are reusable pieces of code that can be used to build more complex components. These functional components form the visual basis of all React applications. They are defined as functions that return a React element. They are the simplest way to define a component.
+
+Here, an example of a functional component (implemented as an arrow function):
+
+```jsx
+const MyComponent = () => {
+  return <div>Hello World!</div>;
+};
+```
+
+Then, elsewhere, you can reuse MyComponent, such as in a higher-order App.tsx component:
+
+```jsx
+const App = () => {
+  return (
+    <div>
+      <MyComponent />
+    </div>
+  );
+};
+```
+
+The returned code is JSX, which is a JavaScript extension that allows you to write HTML-like code in JavaScript. It is compiled to JavaScript by Babel, and then inserted as HTML into the DOM.
+
+Thus, we can _compose_ components together to build more complex components. This is the basis of React's component-based architecture, which is _compositional_. This is a very powerful concept, and we'll cover it in more detail later in the next lecture, once you have a more firm grasp of basic React.
+
+### Hooks
+
+Hooks are the building blocks of logical React. They are reusable pieces of code that can be used to manage the state of your application, and are the most powerful feature of React. Changes to a hook variable will cause components and other hooks that depend on it to re-render or re-calculate their values, which is the basis of React's reactivity.
+
+Like for components, you can create custom hooks to encapsulate logic and reuse it across your application. However, extremely frequently, you'll also use the built-in hooks provided by React.
+
+The most important hook is useState, which simply provides a getter and setter for a variable. This is the basis of React's state management.
+
+Here, an example of a component that uses useState:
+
+```jsx
+const MyComponent = () => {
+  const [count, setCount] = useState(0);
+
+  return (
+    <div>
+      <p>You clicked {count} times</p>
+      <button onClick={() => setCount(count + 1)}>Click me</button>
+    </div>
+  );
+};
+```
+
+The other most important built-in hook is useEffect, which allows you to run code when a component is mounted or unmounted, or when a variable changes. This is the basis of React's lifecycle management.
+
+Lifecycle management is when you want to run code when a component is mounted or unmounted, or when a variable changes, or on every render. It encapsulates logic that must in essence run at certain points during a component's lifecycle.
+
+Here, an example of a component that uses useEffect:
+
+```jsx
+const MyComponent = () => {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    console.log('The count changed!'); // this will fire every time count variable changes
+  }, [count]);
+
+  useEffect(() => {
+    console.log('The component mounted or the count changed!'); // this will fire every render (all the time)
+  });
+
+  useEffect(() => {
+    console.log('The component mounted!'); // this will fire once, when the component is mounted
+    return () => {
+      console.log('The component unmounted!'); // this will fire once, when the component is unmounted
+    };
+  }, []);
+
+  return (
+    <div>
+      <p>You clicked {count} times</p>
+      <button onClick={() => setCount(count + 1)}>Click me</button>
+    </div>
+  );
+};
+```
+
+Combining components and hooks, you can build complex applications with React that respond to events, update their state accordingly, and then re-render the UI to reflect the new state!
+
+Today, let's build an extremely simple React app to get a feel for how React works. Next time, we'll use useState, useEffect, and components more extensively, along with other React features.
+
+## In-class Demo 1: An Extremely Simple React App
+
+TODO: @daniel

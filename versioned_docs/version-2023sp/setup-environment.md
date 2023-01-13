@@ -7,7 +7,9 @@ title: Setup your development environment
 
 Go to [this website](https://nodejs.org/en/download/) and follow the instructions.
 
-For consistency, we will use Node LTS (currently, as of Spring 2022, this is Node 16).
+For consistency, we will use Node LTS (currently, as of Spring 2023, this is Node 18).
+
+After installing, you should be able to run `node` in your terminal and get a command-line interface to execute JavaScript code, line-by-line.
 
 ## Install Yarn
 
