@@ -7,9 +7,9 @@ title: Lecture 8
 
 [Demo Code Supplemental Video](https://drive.google.com/file/d/1C20ap_2kjPkiRsMMKLzADWK4uj6MlPjN/view?usp=sharing)
 
-[Assignment 4](assignment4) (Due 4/22 at 11:59pm)
+[Assignment 4](assignment4) **Due 4/22 at 11:59pm**
 
-[Final Project](finalproject) (MS0 Due 4/17, MS1 Due 4/29, MS2 Due 5/6, MS3 Due 5/13 at 11:59pm)
+[Final Project](finalproject) **MS0 Due TBD, MS1 Due TBD, MS2 Due TBD, MS3 Due TBD**
 
 ## Callback/Promise-based vs Real-Time Queries
 

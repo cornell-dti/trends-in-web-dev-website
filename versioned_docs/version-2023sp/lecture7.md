@@ -5,9 +5,9 @@ title: Lecture 7
 
 [Lecture Slides](https://docs.google.com/presentation/d/11pBxUz-CxxT3kQdTvZKewqxzIbhJXgZPUhDILi7n7Ms/edit?usp=sharing)
 
-[Assignment 4](assignment4) (Due 4/22 at 11:59pm)
+[Assignment 4](assignment4) **Due 4/22 at 11:59pm**
 
-[Final Project Team Matching Form](https://docs.google.com/forms/d/e/1FAIpQLScq9DA5jLy1TnvEWqG-DCz5FvOV8tzLyCvKs93ifu0UbjW0UA/viewform) due **Sunday, 4/17 at 11:59 PM** (no slip days)
+[Final Project Team Matching Form](https://docs.google.com/forms/d/e/1FAIpQLScq9DA5jLy1TnvEWqG-DCz5FvOV8tzLyCvKs93ifu0UbjW0UA/viewform) due **TBD (no slip days)**
 
 ## Intro to Databases and Firebase
 

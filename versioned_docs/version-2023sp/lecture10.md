@@ -7,11 +7,11 @@ title: Lecture 10
 
 [Final Project Instructions](finalproject)
 
-[Final Project - Milestone 1](finalproject#milestone-1) due **4/29 by 11:59pm**
+[Final Project - Milestone 1](finalproject#milestone-1) due **TBD**
 
-[Final Project - Milestone 2](finalproject#milestone-2) due **5/6 by 11:59pm**
+[Final Project - Milestone 2](finalproject#milestone-2) due **TBD**
 
-[Final Project - Milestone 3](finalproject#milestone-3) due **5/13 by 11:59pm**
+[Final Project - Milestone 3](finalproject#milestone-3) due **TBD**
 
 ## Deployment
 
