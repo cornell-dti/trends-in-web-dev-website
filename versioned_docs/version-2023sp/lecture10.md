@@ -7,11 +7,11 @@ title: Lecture 10
 
 [Final Project Instructions](finalproject)
 
-[Final Project - Milestone 1](finalproject#milestone-1) due **4/29 by 11:59pm**
+[Final Project - Milestone 1](finalproject#milestone-1) due **TBD**
 
-[Final Project - Milestone 2](finalproject#milestone-2) due **5/6 by 11:59pm**
+[Final Project - Milestone 2](finalproject#milestone-2) due **TBD**
 
-[Final Project - Milestone 3](finalproject#milestone-3) due **5/13 by 11:59pm**
+[Final Project - Milestone 3](finalproject#milestone-3) due **TBD**
 
 ## Deployment
 
@@ -155,7 +155,7 @@ at other JavaScript frameworks aside from React such as
 [Svelte](https://svelte.dev/).
 
 If you want to do more React, look into [Redux](https://redux-toolkit.js.org/)
-(more advanced state management), [SWR](https://swr.vercel.app/) (data
+(more advanced state management), [SWR](https://swr.vercel.app/) or [Axios](https://axios-http.com/docs/api_intro) (data
 fetching), or [Cypress](https://www.cypress.io/) (end-to-end testing).
 
 If you think Next.js and SSR is cool, there are tons of features we couldn't

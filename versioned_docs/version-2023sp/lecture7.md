@@ -5,44 +5,16 @@ title: Lecture 7
 
 [Lecture Slides](https://docs.google.com/presentation/d/11pBxUz-CxxT3kQdTvZKewqxzIbhJXgZPUhDILi7n7Ms/edit?usp=sharing)
 
-[Assignment 4](assignment4) (Due 4/22 at 11:59pm)
+[Assignment 4](assignment4) **Due 4/22 at 11:59pm**
 
-[Final Project Team Matching Form](https://docs.google.com/forms/d/e/1FAIpQLScq9DA5jLy1TnvEWqG-DCz5FvOV8tzLyCvKs93ifu0UbjW0UA/viewform) due **Sunday, 4/17 at 11:59 PM** (no slip days)
-
-### async/await
-
-If you have too many `.then()` calls within each other, you might build a
-PYRAMID OF DOOM ☠.
-
-Adding the `async` keyword to a function designates that function as an
-asynchronous function
-
-Within these `async` functions we can use await to designate which lines need to
-be “awaited” upon to resolve
-
-```typescript
-// .then
-const fetchData = () => {
-  fetch(`https://jsonplaceholder.typicode.com/posts`)
-    .then((response) => response.json())
-    .then((d) => setData(d));
-};
-
-// async/await
-const fetchData = async () => {
-  const response = await fetch('https://jsonplaceholder.typicode.com/posts');
-  const posts = await response.json();
-  setData(posts);
-};
-```
+[Final Project Team Matching Form](https://docs.google.com/forms/d/e/1FAIpQLScq9DA5jLy1TnvEWqG-DCz5FvOV8tzLyCvKs93ifu0UbjW0UA/viewform) due **TBD (no slip days)**
 
 ## Intro to Databases and Firebase
 
 A lot of the apps we have been making work and maintain states throughout the
 lifetime of the app, but lack one critical feature - if we restart the app
 or refresh the page, all of our data disappears! We need
-some kind of persistent storage for this data: through—you guessed it—a
-database.
+some kind of persistent storage for this data, which is where **databases** get involved.
 
 ### Why do we need a database for our backend?
 
@@ -52,37 +24,17 @@ database.
 - Performant data location
 - Offloading unneeded data from memory
 
-### MySQL + Relational Databases
+### Types of Databases
 
-- Stores data in tables, utilizing rows and tables.
-- Is relational (think a tuple)
-- Has a schema
-
-### NoSQL and Firestore
-
-We will focus on NoSQL
-
-- Many NoSQL implementations are schema-less or have a partial schema
-- Firestore is a cloud-hosted NoSQL database
-- Very flexible and can be used with most popular languages
-- Uses documents to store data
-- Efficient querying for data
-
-### SQL vs NoSQL
-
-- SQL databases have a predefined schema, whereas NoSQL databases can abide to
-  any structure you want it to.
-- NoSQL databases are better suited for large sets of data, but not for complex
-  queries.
-- SQL databases tend to be less expensive for smaller datasets, but also less
-  flexible.
-- SQL leans towards strong consistency whereas NoSQL favors eventual consistency
-  (i.e. there may be some delay in getting the response back)
-- SQL databases tend to be vertically scalable (need more computing power on one
-  machine to store more data) while NoSQL databases tend to be horizontally
-  scalable (can distribute storage and compute power on multiple machines)
-- Examples of SQL databases: MySQL, PostgreSQL
-- Examples of NoSQL databases: Firebase, MongoDB
+| SQL                                                                                                               | NoSQL                                                                                |
+| ----------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
+| Stores data in tables, utilizing rows and tables                                                                  | Stores data in documents                                                             |
+| Has predefined schema, which can be relational (tables can provide access to related data points in other tables) | Can abide to any structure you want (no schema or partial schema)                    |
+| Less expensive for smaller datasets and can execute complex queries                                               | Better for large sets of data, but not complex queries                               |
+| Less flexible                                                                                                     | More flexible (can be used with most popular languages)                              |
+| Leans towards strong consistency                                                                                  | Favors eventual consistency (here may be some delay in getting response back)        |
+| Vertically scalable (need more computing power on one machine to store more data)                                 | Horizontally scalable (can distribute storage and compute power on multiple machines |
+| Examples: MySQL, PostgreSQL                                                                                       | Examples: **Firebase**, MongoDB                                                      |
 
 ### What is Firebase?
 
@@ -94,7 +46,7 @@ We will focus on NoSQL
   - Not only SQL
   - Non relational
 
-### Why Firebase?
+#### Why Firebase?
 
 - Real-time operations
 - Firebase Authentication

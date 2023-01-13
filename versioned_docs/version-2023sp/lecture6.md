@@ -5,7 +5,7 @@ title: Lecture 6
 
 [Lecture Slides](https://docs.google.com/presentation/d/1gS0nwkjPdHZpO2uI6FdMb3jpyhgwn6c_SV4Juf8uBoQ/edit?usp=sharing)
 
-[Assignment 3](assignment3) (due Friday 4/1 11:59 PM on CMS)
+[Assignment 3](assignment3) **Due Friday 4/9 11:59 PM**
 
 ## Data Fetching
 
@@ -78,19 +78,22 @@ Its params are:
 - `init`: optional object containing any custom settings you want to apply to
   the request.
 
-```typescript
-    // your init object might look like this
-    {
-      // HTTP request method
-       method: 'GET', // | 'POST' | 'PUT' | 'DELETE' | etc
-       // Any request headers you want to add
-       headers: {
-         'content-type': 'application/json'
-       },
-       // Request body (remember to stringify!)
-       body: JSON.stringify(requestBody)
-       // ... other settings
-    }
+```tsx
+fetch(
+  url,
+  // your init object might look like this
+  {
+    // HTTP request method
+    method: 'GET', // | 'POST' | 'PUT' | 'DELETE' | etc
+    // Any request headers you want to add
+    headers: {
+      'content-type': 'application/json',
+    },
+    // Request body (remember to stringify!)
+    body: JSON.stringify(requestBody),
+    // ... other settings
+  }
+);
 ```
 
 - For more on the init object, refer to
@@ -115,8 +118,8 @@ Promises are in one of three possible states:
 
 `.then()` is a function on Promises that return a promise.
 
-```typescript
-p.then(onFulfilled[, onRejected])
+```tsx
+p.then(onFulfilled, onRejected);
 ```
 
 Let's break this down!
@@ -128,10 +131,10 @@ Let's break this down!
 ```typescript
 p.then(
   (value) => {
-    // fulfillment
+    // fulfullment handler
   },
   (reason) => {
-    // rejection
+    // rejection handler
   }
 );
 ```
@@ -171,13 +174,13 @@ const newPromise2 = promise.then(kindaMonad);
 
 `.catch()` is a function on Promises that catches a rejection.
 
-```typescript
+```tsx
 p.catch(onRejected);
 ```
 
 For example, you might want to `console.log` errors:
 
-```typescript
+```tsx
 fetch(`https://jsonplaceholder.typicode.com/posts`)
   .then(...)
   .catch((err) => console.log(err));
@@ -192,23 +195,23 @@ type of the error we will get.
 
 Consider this snippet, similar to one shown above:
 
-```typescript
+```tsx
 fetch(`https://jsonplaceholder.typicode.com/posts`)
   .then((res) => res.json())
   .then((d) => setData(d))
   .catch((err) => console.log(err));
 ```
 
-Here we are getting the response from an endpoint **and then** calling `.json()`
+We can have multiple `.then()` calls within each other! Here we are getting the response from an endpoint **and then** calling `.json()`
 on the response **and then** calling `setData` on the result of `json()`.
 
 If a promise gets rejected anywhere along this chain, we will log the error in
 our console.
 
-### Async/Await
+### async/await
 
-We'll cover this in the future but `async`/`await` is an alternative (sometimes
-preferred) syntax for `.then()` and `.catch()` calls.
+If you have too many `.then()` calls within each other, you might build a
+PYRAMID OF DOOM ☠.
 
 By adding the `async` keyword to a function, we make it an _asynchronous_
 function. Within `async` functions, we can use the `await` keyword to wait for a
@@ -217,7 +220,7 @@ function.
 
 Here is an example of doing equivalent things with either syntax:
 
-```typescript
+```tsx
 const thenCatchExample = () => {
   fetch(`https://jsonplaceholder.typicode.com/posts`)
     .then((res) => res.json())
@@ -234,10 +237,18 @@ const asyncAwaitExample = async () => {
 In order to handle rejected Promises using async/await, just wrap all your await
 statements in a [try...catch](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch) block!
 
-## Live Demo Material
+Like this:
 
-The demo only covers the latter half of the lecture (data fetching). Feel free
-to play around with hooks on your own time!
+```tsx
+try {
+  asyncAwaitExample();
+} catch (error) {
+  // display any errors that may occur from async/await function
+  console.error(error);
+}
+```
+
+## Live Demo Material
 
 You can get the starter code for the live demo by running:
 `yarn create next-app --typescript --example "https://github.com/cornell-dti/trends-sp22-starters/tree/main/lec6-demo" YOUR_DIR_NAME`
