@@ -541,7 +541,7 @@ function InputExample() {
 }
 ```
 
-In this example, we're creating a ref to an <input> element using useRef. We pass null as the initial value, which is the default. Then we're passing the ref to the <input> element using the ref attribute. We can access the input element using inputRef.current and call focus() on it.
+In this example, we're creating a ref to an `<input>` element using useRef. We pass null as the initial value, which is the default. Then we're passing the ref to the `<input>` element using the ref attribute. We can access the input element using inputRef.current and call focus() on it.
 
 ### useCallback
 
