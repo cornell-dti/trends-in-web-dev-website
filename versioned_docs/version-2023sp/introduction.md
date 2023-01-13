@@ -68,6 +68,8 @@ Apply [here](https://forms.gle/GRj7NyKKz3z3oZ9W8) by 02/18/2023 at 11:59 PM ET. 
 
 We will be distributing enrollment/permission pins soon after the application period closes.
 
+The first lecture is tentatively on 02/20/2023.
+
 ### Pre-Course Assessment
 
 Please complete the pre-assessment [here](https://webdev.cornelldti.org/assets/files/preassessment-b10fef745a7d911c1d56342a90e7076b.zip). It should take
@@ -102,9 +104,9 @@ The class is scheduled to finish well before finals week.
 
 | Assignment   | Topic                                      | Due Date        |
 | ------------ | ------------------------------------------ | --------------- |
-| Assignment 1 | JavaScript and TypeScript fundamentals     | 3/9 by 11:59pm  |
-| Assignment 2 | React Fundamentals                         | 3/23 by 11:59pm |
-| Assignment 3 | State Management and Conditional Rendering | 4/1 by 11:59pm  |
+| Assignment 1 | JavaScript and TypeScript fundamentals     | 3/11 by 11:59pm |
+| Assignment 2 | React Fundamentals                         | 3/25 by 11:59pm |
+| Assignment 3 | State Management and Conditional Rendering | 4/8 by 11:59pm  |
 | Assignment 4 | Connecting to and using Firebase           | 4/22 by 11:59pm |
 | Assignment 5 | Final Project                              | TBD             |
 
