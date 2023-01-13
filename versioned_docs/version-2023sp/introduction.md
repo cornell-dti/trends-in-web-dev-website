@@ -42,7 +42,7 @@ Office hours: Fridays 4-6pm location TBD.
 
 ## Time and Location
 
-This course meets once a week for 9 weeks for a total of 9 lectures.
+This course meets once a week for 10 weeks for a total of 10 lectures.
 
 Further information about specific day, time, and location the class is TBD.
 
