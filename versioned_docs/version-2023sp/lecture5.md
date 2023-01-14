@@ -3,13 +3,24 @@ id: lecture5
 title: Lecture 5
 ---
 
-Homework: TODO: @daniel
+Homework: Assignment 2: CSS and Complex React, is due 3/25 by 11:59pm
 
 Slides: TODO: @daniel
 
-Explore more: TODO: @daniel
+Explore more:
+
+- Prefabricated React components in Google's Material UI Style: [React MUI](https://mui.com/)
+- Prefabricated Tailwind CSS components: [Daisy UI](https://daisyui.com/)
 
 Now that we have a complete understanding of React for building the raw HTML frontend of our application and manipulating that interface, let's take a look at that most-loved of frontend tasks: styling.
+
+# Today's Lecture 3/20
+
+By the end of today, you should be able to:
+
+- Understand the evolution of CSS and styling solutions
+- Understand the different ways to style React components
+- Be able to style a React component using CSS-in-JS solutions.
 
 ## Styling Options
 
@@ -251,22 +262,14 @@ You'll notice that it's also a string, but it's simply passed to the `className`
 
 https://tinyurl.com/6mdndykp
 
-TODO: @daniel
-
 ## Demo 2: Inline CSS
 
 https://tinyurl.com/45w66v3t
-
-TODO: @daniel
 
 # Demo 3: styled-components
 
 https://tinyurl.com/mt8ca7pu
 
-TODO: @daniel
-
 # Demo 4: Tailwind
 
 https://tinyurl.com/nhcba3ns
-
-TODO: @daniel

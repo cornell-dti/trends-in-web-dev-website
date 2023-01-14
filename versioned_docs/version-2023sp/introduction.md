@@ -104,8 +104,8 @@ The class is scheduled to finish well before finals week.
 
 | Assignment   | Topic                                      | Due Date        |
 | ------------ | ------------------------------------------ | --------------- |
-| Assignment 1 | JavaScript and TypeScript fundamentals     | 3/11 by 11:59pm |
-| Assignment 2 | React Fundamentals                         | 3/25 by 11:59pm |
+| Assignment 1 | JS, TS, and Basic React                    | 3/11 by 11:59pm |
+| Assignment 2 | CSS and Complex React                      | 3/25 by 11:59pm |
 | Assignment 3 | State Management and Conditional Rendering | 4/8 by 11:59pm  |
 | Assignment 4 | Connecting to and using Firebase           | 4/22 by 11:59pm |
 | Assignment 5 | Final Project                              | TBD             |

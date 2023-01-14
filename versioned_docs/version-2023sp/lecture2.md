@@ -3,7 +3,7 @@ id: lecture2
 title: Lecture 2
 ---
 
-Homework: TODO: @daniel
+Homework: Assignment 1: JS, TS, and Basic React, is due 3/11 by 11:59pm
 
 Slides: TODO: @daniel
 
@@ -11,6 +11,15 @@ Explore more:
 
 - [tRPC](https://trpc.io/): End-to-end type safety for a full-stack TypeScript app
 - [Turborepo](https://turborepo.com/): A monorepo tool for TypeScript, to keep all libraries, backend, and frontend code in one place
+
+# Today's Lecture 2/27
+
+By the end of today, you should be able to:
+
+- Understand the evolution of web development
+- Understand how websites work under the hood
+- Understand the difference between Node.js and Browser JS
+- Understand the ecosystem of modern web development tools (Yarn, JS Frameworks, Linting, etc.), how each tool fits into the development process, why each is present, and how to use them.
 
 ## How to build a web app
 
@@ -226,3 +235,6 @@ Hope this is helpful for you all! This will be the language you'll be working wi
 ## In-Class Demo 1: Executing Javascript in `node` and in the browser
 
 TODO: @daniel
+
+- Walk them through using node to execute javascript line by line, as well as using the console to execute javascript line-by-line.
+- Specifically,

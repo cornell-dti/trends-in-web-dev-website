@@ -3,14 +3,20 @@ id: lecture1
 title: Lecture 1
 ---
 
-Homework: TODO: @daniel
+Homework: None!
 
 Slides: TODO: @daniel
 
-Explore more (cool stuff tangentially related to this lecture):
+Explore more:
 
-- A library for functional [Pattern Matching](https://github.com/gvergnaud/ts-pattern) in TypeScript
--
+- A library for functional [Pattern Matching](https://github.com/gvergnaud/ts-pattern) in TypeScript, to make it even easier to write functional code.
+
+# Today's Lecture 2/20
+
+By the end of today, you should be able to:
+
+- Understand the basics of JavaScript
+- Understand the basics of TypeScript
 
 ## JavaScript
 
@@ -58,6 +64,52 @@ The differences between the three are:
   We prefer using `const` for declaring non-reassignable variables, as it also enforces immutability and the functional paradigm (easier to debug, test, and reason about).
 
 Now that we've gone over the basics of variables, let's see how we can use them.
+
+#### Objects
+
+Objects are a collection of key-value pairs. They are similar to dictionaries in Python, or maps in Java.
+
+```js
+const person = {
+  name: 'John',
+  age: 30,
+  height: 6.0,
+  isTall: true,
+};
+```
+
+You can access the values of an object using the dot operator, which brings up the autocomplete menu.
+
+```js
+console.log(person.name); // "John"
+console.log(person.age); // 30
+```
+
+You can also access the values of an object using the bracket operator, which lets you compute the key on the fly if needed.
+
+```js
+console.log(person['name']); // "John"
+console.log(person['age']); // 30
+```
+
+Objects can also be nested.
+
+```js
+const person = {
+  name: 'John',
+  age: 30,
+  height: 6.0,
+  isTall: true,
+  address: {
+    street: '123 Main St',
+    city: 'New York',
+    state: 'NY',
+    zip: 10001,
+  },
+};
+```
+
+This is the basis of the "JSON" format, which is a common way to store data. In essence, JSON is just the string representation of a big JavaScript object.
 
 #### if statements
 
@@ -232,6 +284,18 @@ const obj = { a: 1, b: 2, c: 3 };
 const { a, b, c } = obj; // a = 1, b = 2, c = 3
 ```
 
+#### String interpolation and template literals (JS-specific)
+
+String interpolation is a way to insert variables into a string. In JavaScript, we can use template literals to do this.
+
+This is especially powerful because you can actually insert a full computed Javascript expression into the string, and it will be evaluated and inserted into the string.
+
+```js
+const name = 'John';
+const age = 30;
+const greeting = `Hello, my name is ${name} and I am ${age + 1} years old.`;
+```
+
 ### combining spreading and destructuring
 
 Say we have a function:
@@ -267,7 +331,7 @@ Head buzzing already? JavaScript is a super powerful language and this was just 
 
 ### What is TypeScript?
 
-TypeScript is a typed _superset_ of JavaScript that compiles to plain JavaScript. Superset means TypeScript has everything in JavaScript and more. (Built by Microsoft!)
+TypeScript is a typed _superset_ of JavaScript that compiles to plain JavaScript (actually, all the types will disappear on compilation!). Superset means TypeScript has everything in JavaScript and more. (Built by Microsoft back in 2012, so now it's a little over a decade old!)
 
 ### TypeScript, conceptually.
 
@@ -408,7 +472,7 @@ Besides the basic types, TypeScript also has 4 more ambiguous types:
 // Any: can be anything!
 let notSure: any = 4;
 notSure = 'maybe a string instead';
-notSure = false; // okay, definitely a boolean
+notSure = false; // now its a boolean
 ```
 
 If you were to use `any` everywhere though you might as well just use JavaScript.
@@ -586,7 +650,7 @@ type intersect = PrimaryColors & TrafficLightColors; // "red" | "green"
 
 #### Enumerations
 
-Enumerations are a way to give more friendly names to sets of pre-determined values.
+Enumerations are a way to give more friendly names to key-value pair sets of pre-determined values.
 
 ```ts
 enum TrafficLightColors {
@@ -649,6 +713,65 @@ const introduce = (person: Person): PersonIntroduction => {
 };
 ```
 
+##### Bonus Content: Complex Interface Usage
+
+1. We can enforce the type of an unlimited number of children key-value pairs.
+
+```ts
+interface Person {
+  name: string;
+  age: number;
+  isAlive: boolean;
+  [key: string]: number | string | boolean;
+}
+```
+
+Now, we can add any number of key-value pairs to `Person`, keyed by string, with values of type `number | string | boolean`.
+
+2. We can extend other, existing interfaces.
+
+```ts
+interface Person {
+  name: string;
+  age: number;
+  isAlive: boolean;
+}
+
+interface PersonIntroduction {
+  introduction: string;
+  isAlive: boolean;
+}
+
+interface PersonWithIntroduction extends Person, PersonIntroduction {}
+```
+
+Here, PersonWithIntroduction contains the keys: `name, age, isAlive, introduction`.
+
+3. We can reopen interfaces to add new keys.
+
+```ts
+interface Person {
+  name: string;
+  age: number;
+  isAlive: boolean;
+}
+
+interface PersonIntroduction {
+  introduction: string;
+  isAlive: boolean;
+}
+
+interface PersonWithIntroduction extends Person, PersonIntroduction {}
+
+interface PersonWithIntroduction {
+  favoriteColor: string;
+}
+```
+
+Here, PersonWithIntroduction contains the keys: `name, age, isAlive, introduction, favoriteColor`.
+
+This is because we "reopened" PersonWithIntroduction to add a new key, and this now redefines PersonWithIntroduction.
+
 #### Type Assertions
 
 Type assertions are a way to tell TypeScript that you know better than it does. This is useful when you know that a variable is of a certain type but TypeScript doesn't.
@@ -671,7 +794,7 @@ Here, we use the `!` operator to tell TypeScript that `myString` is not `null` o
 
 #### Generics
 
-Generics are a way to make a function or class more flexible. They allow you to specify a type parameter that can be used in the function or class.
+Generics are a way to make a function more flexible. They allow you to specify a type parameter that can be used in the function.
 
 ```ts
 const introduce = <T>(name: T): string => {
@@ -868,168 +991,4 @@ This is the Fibonacci sequence implemented using type coercion.
 
 TODO: @daniel
 
-### At-Home Demo 2 - JavaScript! (Preassessment Check-in)
-
-We went through a demo of writing and running code in TypeScript using the
-preassessment as an example. Run the following commands to first create a Node
-project and then install `typescript` as well as `ts-node`, a package that runs
-TypeScript files through the terminal. Don't worry about the files that appear
-when you run these commands for now; we'll explain what they mean next week.
-
-```bash
-yarn init # answer the questions as well
-yarn add typescript
-yarn add ts-node
-```
-
-We used the following example code. (note that TypeScript files have a `.ts`
-extension, as opposed to JavaScript's `.js`. This will allow VS Code to
-recognize that you are coding in TS)
-
-```typescript title="demo.ts"
-/*
-We want to implement the code concisely and clearly.
-Yes, there are many ways to do this.
-Yes, there are shorter ways, and more "elegant" ways.
-
-But prioritize readability and modifiability! (Why should you do this?)
-*/
-
-// @ts-check
-
-/**
- * Question 1: Arrays
- *
- * Complete the function below. It should return the sum of the numbers in an array.
- *
- * @param {number[]} inputArray
- * @returns {number}
- */
-function mySum(inputArray) {
-  let total = 0;
-  for (let i = 0; i < inputArray.length; i++) {
-    total += inputArray[i];
-  }
-  return total;
-}
-
-/**
- * Write a function that returns the sum of the numbers in an array.
- *
- * Complete the function blow that checks if a year is a leap year or not.
- *
- * A leap year is defined as any year that is divisible by 4. However, a year
- * divisible by 100 is NOT a leap year, unless it is also divisible by 400.
- *
- * @param {number} year
- * @returns {boolean}
- */
-function isLeapYear(year) {
-  if (year % 4 == 0) {
-    if (year % 100 == 0) {
-      if (year % 400 == 0) {
-        return true;
-      }
-      return false;
-    }
-    return true;
-  }
-  return false;
-}
-
-/**
- * Question 3: isPrime
- *
- * Complete the function below that checks if a number is prime.
- *
- * @param {number} n
- * @returns {boolean}
- */
-function isPrime(n) {
-  // optimization! We only need to go up to sqrt(n)
-  const root = Math.floor(Math.sqrt(n));
-
-  for (let i = 2; i < root; i++) {
-    // if number i divides n, then n is not prime.
-    if (n % i == 0) {
-      return false;
-    }
-  }
-  return true;
-}
-
-/**
- * Question 4: Control flow
- *
- * Write a function that takes a given array, and returns a new array containing
- * only the elements that are perfect squares.
- *
- * @param {number[]} inputArray
- * @returns {number[]}
- */
-function perfectSquares(inputArray) {
-  const squares = [];
-
-  for (let i = 0; i < inputArray.length; i++) {
-    if (
-      inputArray[i] > 0 &&
-      inputArray[i] == Math.floor(inputArray[i]) &&
-      inputArray[i] == Math.round(Math.pow(Math.sqrt(inputArray[i]), 2))
-    ) {
-      squares.push(inputArray[i]);
-      // Or more functionally:
-      // if squares has been declared with a "let" instead of const
-      // squares = [...squares, inputArray[i]];
-    }
-  }
-
-  return squares;
-
-  // smorte: filter out non-integers, then filter out negatives, then filter out numbers that don't match the
-  // return inputArray
-  //   .filter(x => x >= 0)
-  //   .filter(x => x == Math.floor(x))
-  //   .filter(x => x == Math.round(Math.pow(Math.floor(Math.sqrt(x)), 2)));
-}
-
-module.exports = { mySum, isLeapYear, isPrime, perfectSquares };
-```
-
-Here is another preassessment solution, this time with excessive type
-annotations and the use of arrow function syntax! See if you can spot any
-explicit type annotations that can be inferred instead.
-
-```typescript title="demo2.ts"
-const mySum = (inputArray: number[]): number => {
-  let sum: number = 0;
-  for (const num of inputArray) {
-    sum += num;
-  }
-  return sum;
-};
-
-console.log(mySum([1, 2, 3])); // expected 6
-
-const isLeapYear = (year: number): boolean => {
-  return (year % 4 == 0 && year % 100 != 0) || year % 400 == 0;
-};
-
-console.log(isLeapYear(2000)); // is a leap year
-console.log(isLeapYear(2100)); // is NOT a leap year;
-
-const perfectSquares = (arr: number[]): number[] => {
-  const ans: number[] = [];
-  for (const num of arr) {
-    if (Math.sqrt(num) % 1 === 0) {
-      ans.push(num);
-    }
-  }
-  return ans;
-};
-
-console.log(perfectSquares([1, 4, 9])); // expected same as input
-console.log(perfectSquares([1, 5, 9])); // expected [1, 9]
-```
-
-Run it with `ts-node script.ts`. Voilà! That's a basic introduction to TypeScript.
-For more language quirks and useful syntax, visit the [TypeScript website and pick the tutorial that best fits you](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html).
+- Pre-assessment solutions, but walk them through it and use types
