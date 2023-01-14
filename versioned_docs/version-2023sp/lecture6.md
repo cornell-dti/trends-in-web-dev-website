@@ -15,6 +15,39 @@ In this lecture we'll be discussing how to fetch data through traditional HTTP
 requests (so far the most popular way), but keep in mind that there are other
 ways to fetch data out there, which we will cover later.
 
+### HTTP Requests and Responses
+
+So far, the information we've talked about has been mostly about the client side of a web application. Clients are computers users use to access our web applications (phones, tablets, laptops, gaming consoles, etc). Client side refers to the **processing that takes place locally** on the user's machine where the client can see the results. So, tasks that requires browsers to run scripes on the client machine without involving any processing on the server are client side tasks. Examples of client side operations are rendering images, registering user input, or clicking buttons.
+
+In the final half of he course, we will be talking about the server side of a web application. Servers are also computers, however servers centralize information and run code to communicate with multiple clients in addition to executing operations on data. So, server side refers to the processing that is **not visible** to the client and is done on the server. So, tasks such as validating submitted data and requests, storing and retrieving data from databases, and sending corrent data to the client are all examples of server side operations.
+
+![client server model](/img/lec6/client-server-model.png)
+
+#### Requests
+
+HTTP requests require one method that indicates the type of request being sent and how to handle the request. The most common methods used are:
+
+- **`GET`**: retrieving information
+- **`POST`**: sending information with the request
+- **`DELETE`**: deleting information
+- **`PUT/PATCH`** updating information
+
+Metadata can be put in the _body_ of a request and can be written in many forms (most common is JSON or XML). For example, a `POST` request to login into a users' account will likely contain account information such as an email and pasword to be authenticated on the server in the body.
+
+#### Responses
+
+After sending a HTTP request, the server will respond with a specific status code to give us a general summary of how the request was handled. This helps us determine whether a request was successful or why it was unsuccessful.
+
+##### Most common response codes:
+
+| Code | Meaning                                    |
+| ---- | ------------------------------------------ |
+| 200  | Successful                                 |
+| 404  | Not found                                  |
+| 500  | Internal server error (uncaught exception) |
+
+For a more comprehensive list, click [here](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status).
+
 ### How do we fetch (in React)?
 
 So how do we fetch data with our React frontend?

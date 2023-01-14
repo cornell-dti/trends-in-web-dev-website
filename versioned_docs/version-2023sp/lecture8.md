@@ -3,7 +3,7 @@ id: lecture8
 title: Lecture 8
 ---
 
-[Lecture Slides]()
+[Lecture Slides](https://docs.google.com/presentation/d/1hTeo4xK5m54hoik8U2tct8t8Tm5iBx5kpZ3Z7YVZx6M/edit?usp=sharing)
 
 [Demo Code Supplemental Video](https://drive.google.com/file/d/1C20ap_2kjPkiRsMMKLzADWK4uj6MlPjN/view?usp=sharing)
 
