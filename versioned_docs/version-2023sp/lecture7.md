@@ -3,7 +3,7 @@ id: lecture7
 title: Lecture 7
 ---
 
-[Lecture Slides]()
+[Lecture Slides](https://docs.google.com/presentation/d/11pBxUz-CxxT3kQdTvZKewqxzIbhJXgZPUhDILi7n7Ms/edit?usp=sharing)
 
 [Assignment 4](assignment4) **Due 4/22 at 11:59pm**
 
