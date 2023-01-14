@@ -34,6 +34,8 @@ HTTP requests require one method that indicates the type of request being sent a
 
 Metadata can be put in the _body_ of a request and can be written in many forms (most common is JSON or XML). For example, a `POST` request to login into a users' account will likely contain account information such as an email and pasword to be authenticated on the server in the body.
 
+Tools like [Postman](https://www.postman.com/) allow you to make these requests. So, if you're ever building a backend server, you can test that your API routes are working.
+
 #### Responses
 
 After sending a HTTP request, the server will respond with a specific status code to give us a general summary of how the request was handled. This helps us determine whether a request was successful or why it was unsuccessful.
@@ -285,6 +287,10 @@ try {
   console.error(error);
 }
 ```
+
+### Quick Postman Demo
+
+TODO @michelle
 
 ## Live Demo Material
 
