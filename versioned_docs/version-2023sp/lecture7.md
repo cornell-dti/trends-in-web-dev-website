@@ -200,6 +200,69 @@ Deleting a document removes it from the collection.
 await deleteDoc(jasonDocRef);
 ```
 
+## Callback/Promise-based vs Real-Time Queries
+
+| Promise-Based                                                                                                                                          | Real-Time                                                                                                                                                      |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| If you need the data now, you can query for it                                                                                                         | You already have the data                                                                                                                                      |
+| Data queries can be decentralized (done in any component)                                                                                              | Data queries are fetched and memoized through centralized (React) hooks                                                                                        |
+| Querying data is imperative, but can quickly become hard to maintain and track (and you lose some of the advantages of a declarative web UI framework) | Up-front cost to query data pays off (because you don't _hopefully_ have to query it again)                                                                    |
+| There is no cleanup code                                                                                                                               | You first have to "subscribe" to changes in the data, then unsubscribe after you are done (kind of like opening and closing a file stream when reading a file) |
+
+### What do Callback/Promise-based vs. Real-Time Queries Look Like?
+
+**Promise-based queries** are single queries that return a single async result. So, they are run once and then passed along downstream to children and other descendants of your component. Typically, they are used to react to some update (i.e user clicks a button, a component loads).
+
+**Real-time queries** are single queries that return a stream of async results such as weather data. These types of queries are used once the data is listenable and needs to be "subscribed to". These take a stream of results and are built on top of wbe sockets, which are abstractions over a byte stream. So, they're good for ... real-time applications.
+
+### How Do Callback/Promised Based vs. Real-Time Queries Work?
+
+**Promise based queries** typically calls some backend API route, which fetches and returns data to you. They're built on top of traditional HTTP requests.
+
+**Real-time queries** might call a backend route to pass data over to a web socket or it'll simply use an API library to makes calls directly to a database (ex. Firebase Firestore call). These queries are usually wrapped in a library like [RxJS](https://rxjs.dev/)'s observable data type or function calls that allow you to subsribe to changes.
+
+### Choosing a Querying Method
+
+As described in the first section, the type of queries your application will use will affect the app's architecture.
+In particular, real-time queries play nicely with having a centralized query that runs over a listenable data access object that is "owned" either by
+
+1. a top-level component (OK in small apps, but prone to prop drilling in more complex apps), or
+2. a custom React hook that wraps an effect (triggering an update when the data access object publishes a new version of the data)
+
+That is not to say that your app cannot use both types of queries. It is just that a real-time application requires a specific architecture in which all data is queried first and passed along to components as props or referenced by components via (potentially custom) React/Redux hooks. This does not play nicely with callback/Promise-based queries because the data from the callback/Promise-based queries may be in an inconsistent state by the time the data from a real-time query has updated.
+
+### Firebase Firestore Application: Callback/Promise-based or Real-Time Queries
+
+Firestore offers you a database that nicely organizes your data into _documents_ and _collections_ (groups of documents). It allows you to build queries that can either
+
+1. return _once_ with a single snapshot of data (a Promise-based query), or
+2. allow you to hook into the data's live values (a real-time query).
+
+#### Firestore Real-time Queries
+
+Provides collection + document data as an listenable (subscribable) data object
+
+- As soon as a collection updates, the collection access object publishes a new version of the collection
+- As soon as a doc updates, the doc access object publishes a new version of the doc
+  This can be passed as a React prop or an effect dependency, which triggers a component update!
+
+#### Anatomy of a Firebase Firestore Real-Time Application (The "Full" Stack)
+
+![Anatomy of a Firebase Firestore Real-Time Update](/img/lec8/firestore-real-time.png)
+
+Unlike callback/promise-based queries, the connection between updating and fetching data is completely gone. Updating data occurs along an entirely separate channel from subscribing to the data. This means that implementing calls to update data will look very different
+
+#### Miscellaneous Advice
+
+When designing a system:
+
+- avoid two-way dependencies (or as many dependencies as possible)
+  - as with React & declarative web frameworks, one-way data binding is the way to go
+  - avoids: more things to update
+  - avoids: more surface area for synchronization errors
+
+This philosophy helps us prefer real-time queries over Promise-based queries, because there is only a single dependency for the queried data, rather than the set of all the decentralized Promise-based queries.
+
 ## Sample code
 
 This week's sample code can be found in the files under [this directory](https://github.com/cornell-dti/trends-sp22-starters/tree/main/lec7-soln/components/roster).

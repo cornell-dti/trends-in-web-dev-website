@@ -75,7 +75,7 @@ Let's take a deeper look at `fetch`!
 Its params are:
 
 - `resource`: URL of the site you are fetching from
-- `init`: optional object containing any custom settings you want to apply to
+- `init`: _optional_ object containing any custom settings you want to apply to
   the request.
 
 ```tsx
@@ -103,10 +103,11 @@ fetch(
 
 ### Promises
 
-Operations like web requests don't complete instantly! You want to do other stuff
-while the operation is still going on.
+Operations like web requests don't complete instantly! So, while the request is being completed, you want the browser to work on other more important tasks instead of stalling everything and waiting until the operation is complete.
 
-Promises represent the **eventual** completion (or failure) of an async operation.
+Promises represent the **eventual** completion (or failure) of an async operation. What does async mean?
+
+_async_: the result arrives at an unspecified time, outside the sequential execution context of the rest of your code
 
 Promises are in one of three possible states:
 
@@ -126,22 +127,26 @@ Let's break this down!
 
 - `p` is a Promise.
 - `onFulfilled` is the callback function that is run when `p` is fulfilled
-- `onRejected` (OPTIONAL) is the callback for when `p` is rejected
+- `onRejected` (OPTIONAL) is the callback function for when `p` is rejected
 
 ```typescript
 p.then(
   (value) => {
     // fulfullment handler
+    console.log('Success');
   },
   (reason) => {
     // rejection handler
+    console.log('Rejected');
   }
 );
 ```
 
+You don't usually have to include an rejection handler since the `.catch()` method is an alternative you will typically use to handle rejections and errors. More on that later...
+
 Let's talk about types! `p` in this case might be `fetch()`, which returns the
 type `Promise<Response>`. If so, then `value` would have the type `Response`.
-Then, if the fulfillment function (which takes in `value`) returns type
+Then, if the fulfillment handler (which takes in `value`) returns type
 `string`, then the entire expression would be type `Promise<String>`.
 
 If you've taken CS 3110 or done some functional programming outside of this

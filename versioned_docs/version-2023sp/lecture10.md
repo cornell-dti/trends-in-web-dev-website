@@ -7,11 +7,11 @@ title: Lecture 10
 
 [Final Project Instructions](finalproject)
 
-[Final Project - Milestone 1](finalproject#milestone-1) due **TBD**
+[Final Project - Milestone 1](finalproject#milestone-1) due **TBD @michelle**
 
-[Final Project - Milestone 2](finalproject#milestone-2) due **TBD**
+[Final Project - Milestone 2](finalproject#milestone-2) due **TBD @michelle**
 
-[Final Project - Milestone 3](finalproject#milestone-3) due **TBD**
+[Final Project - Milestone 3](finalproject#milestone-3) due **TBD @michelle**
 
 ## Deployment
 
