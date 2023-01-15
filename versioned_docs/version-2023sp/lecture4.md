@@ -3,11 +3,20 @@ id: lecture4
 title: Lecture 4
 ---
 
-Homework: TODO: @daniel
+Homework: Assignment 2: CSS and Complex React, is due 3/25 by 11:59pm
 
 Slides: TODO: @daniel
 
-Explore more: TODO: @daniel
+Explore more:
+
+- [useSWR](https://swr.vercel.app/), a custom React hook for data fetching developed by Vercel, the team behind Next.js
+
+# Today's Lecture 3/13
+
+By the end of today, you should be able to:
+
+- Understand how to build complex React apps using multiple components and hooks
+- Understand concepts like composition and props
 
 ## Introducing Complexity into our React Apps
 
@@ -767,6 +776,6 @@ Learn more about custom hooks [here](https://reactjs.org/docs/hooks-custom.html)
 
 Using useRef, useMemo, useCallback, useState, and useEffect, as well a custom hook or two,
 and multiple levels of composition,
-we'll create a complete contact book interface!
+we'll create a complete and searchable contact book interface!
 
 TODO: @daniel

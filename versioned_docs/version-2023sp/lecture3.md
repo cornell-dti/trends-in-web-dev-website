@@ -3,11 +3,18 @@ id: lecture3
 title: Lecture 3
 ---
 
-Homework: TODO: @daniel
+Homework: Assignment 1: JS, TS, and Basic React, is due 3/11 by 11:59pm
 
 Slides: TODO: @daniel
 
 Explore more: N/A
+
+# Today's Lecture 3/6
+
+By the end of today, you should be able to:
+
+- Understand how to create a Next.js project, and what the project structure is
+- Understand how to create a React project utilizing hooks and components.
 
 ## Before the lecture
 
@@ -29,7 +36,7 @@ yarn create next-app --typescript [optional: directory-name]
 If you don't specify a directory name in your command, you'll be prompted for
 one.
 
-## Why React?
+## Recap of Last Lecture: Why React?
 
 ### HTTP requests and responses
 
@@ -337,3 +344,5 @@ Today, let's build an extremely simple React app to get a feel for how React wor
 ## In-class Demo 1: An Extremely Simple React App
 
 TODO: @daniel
+
+- Let's implement a simple minutes-since-event counter. It'll increase indefinitely, but can be reset to 0.
