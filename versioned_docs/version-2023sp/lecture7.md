@@ -213,7 +213,7 @@ await deleteDoc(jasonDocRef);
 
 **Promise-based queries** are single queries that return a single async result. So, they are run once and then passed along downstream to children and other descendants of your component. Typically, they are used to react to some update (i.e user clicks a button, a component loads).
 
-**Real-time queries** are single queries that return a stream of async results such as weather data. These types of queries are used once the data is listenable and needs to be "subscribed to". These take a stream of results and are built on top of wbe sockets, which are abstractions over a byte stream. So, they're good for ... real-time applications.
+**Real-time queries** are single queries that return a stream of async results such as weather data. These types of queries are used once the data is listenable and needs to be "subscribed to". These take a stream of results and are built on top of web sockets, which are abstractions over a byte stream. So, they're good for ... real-time applications.
 
 ### How Do Callback/Promised Based vs. Real-Time Queries Work?
 
