@@ -38,7 +38,7 @@ Office hours: Fridays 4-6pm location TBD.
 
 ## Credits and Credit Hour Options
 
-2.0-credits, S/U
+1.0-credits, S/U
 
 ## Time and Location
 
