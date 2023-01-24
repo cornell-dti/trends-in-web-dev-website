@@ -5,7 +5,7 @@ title: Lecture 2
 
 Homework: Assignment 1: JS, TS, and Basic React, is due 3/11 by 11:59pm
 
-Slides: TODO: @daniel
+Slides: [Here](https://docs.google.com/presentation/d/1jv8itKRUyCkyRJCdipxk8znlYjsHsk5c78OdkP7UQaQ/edit?usp=sharing)
 
 Explore more:
 

@@ -5,7 +5,7 @@ title: Lecture 4
 
 Homework: Assignment 2: CSS and Complex React, is due 3/25 by 11:59pm
 
-Slides: TODO: @daniel
+Slides: [Here](https://docs.google.com/presentation/d/1JxQXUwKh0oa_nkLB9rkQJ9HVxO0-hgwJ1mxQ54h0c-Q/edit?usp=sharing)
 
 Explore more:
 
@@ -634,8 +634,8 @@ Developer Tools found in most browsers.
 
 ### useContext
 
-We've covered passing down props in previous React lectures. However, that's
-pretty annoying if _every_ component within a hierarchy needs that prop.
+We've covered passing down props. However, that's
+pretty annoying if _every_ component within a hierarchy needs that prop. That could lead to "prop drilling", where we just repetitively pass props down every branch to get to every leaf.
 
 Is there a better way then manually passing down that prop to every component
 that needs it?
