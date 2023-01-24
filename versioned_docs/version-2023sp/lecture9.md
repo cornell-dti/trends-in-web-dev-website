@@ -3,7 +3,7 @@ id: lecture9
 title: Lecture 9
 ---
 
-[Lecture Slides](https://docs.google.com/presentation/d/1J73ok4GlWVpunQ1eQeKR4aDqkSfXKZh1LOikKifY9tE/edit?usp=sharing)
+[Lecture Slides](https://docs.google.com/presentation/d/1UB0fAUHIkU2UTdNaZrs1jsA0sNEKpkhgp_d7mtj6q50/edit?usp=sharing)
 
 [Final Project Instructions](finalproject)
 
