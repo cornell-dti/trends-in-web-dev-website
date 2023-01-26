@@ -1,0 +1,18 @@
+{
+  "docs": {
+    "Getting Started": [
+      {
+        "type": "doc",
+        "id": "version-2023sp/introduction"
+      },
+      {
+        "type": "doc",
+        "id": "version-2023sp/setup-environment"
+      },
+      {
+        "type": "doc",
+        "id": "version-2023sp/setup-editor"
+      }
+    ]
+  }
+}
