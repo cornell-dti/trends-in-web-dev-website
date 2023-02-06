@@ -21,13 +21,13 @@ Email: [kyle.harms@cornell.edu](mailto:kyle.harms@cornell.edu)
 
 Email: [dlw266@cornell.edu](mailto:dlw266@cornell.edu)
 
-Office hours: Mondays, 4-6pm, location TBD.
+Office hours: Mondays, 4-6pm, location Hollister 312.
 
 **Michelle Li**
 
 Email: [myl39@cornell.edu](mailto:myl39@cornell.edu)
 
-Office hours: Fridays 4-6pm location TBD.
+Office hours: Fridays 4-6pm location Hollister 314.
 
 ### Office Hours Schedule (TBD)
 
@@ -44,7 +44,7 @@ Office hours: Fridays 4-6pm location TBD.
 
 This course meets once a week for 10 weeks for a total of 10 lectures.
 
-Further information about specific day, time, and location the class is TBD.
+We will meet weekly on **Wednesdays from 7:30-8:45pm**. The start of the class will be on **2/22/23**
 
 ## Course Description
 
