@@ -68,7 +68,7 @@ Apply [here](https://forms.gle/GRj7NyKKz3z3oZ9W8) by 02/18/2023 at 11:59 PM ET. 
 
 We will be distributing enrollment/permission pins soon after the application period closes.
 
-The first lecture is tentatively on 02/20/2023.
+The first lecture is tentatively on 02/22/2023.
 
 ### Pre-Course Assessment
 
