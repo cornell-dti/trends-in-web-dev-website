@@ -44,7 +44,7 @@ Office hours: Fridays 4-6pm location Hollister 314.
 
 This course meets once a week for 10 weeks for a total of 10 lectures.
 
-We will meet weekly on **Wednesdays from 7:30-8:45pm**. The start of the class will be on **2/22/23**
+We will meet weekly on **Mondays from 7:30-8:45pm**. The start of the class will be on **2/20/23**
 
 ## Course Description
 
@@ -68,7 +68,7 @@ Apply [here](https://forms.gle/GRj7NyKKz3z3oZ9W8) by 02/18/2023 at 11:59 PM ET. 
 
 We will be distributing enrollment/permission pins soon after the application period closes.
 
-The first lecture is tentatively on 02/22/2023.
+The first lecture is tentatively on 02/20/2023.
 
 ### Pre-Course Assessment
 
