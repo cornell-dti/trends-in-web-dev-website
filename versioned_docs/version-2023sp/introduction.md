@@ -44,7 +44,7 @@ Office hours: Fridays 4-6pm location Hollister 314.
 
 This course meets once a week for 10 weeks for a total of 10 lectures.
 
-We will meet weekly on **Mondays from 7:30-8:45pm**. The start of the class will be on **2/20/23**
+We will meet weekly on **Mondays from 7:30-8:45pm** at **Hollister B14**. The start of the class will be on **2/20/23**
 
 ## Course Description
 
