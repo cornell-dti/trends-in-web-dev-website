@@ -29,7 +29,7 @@ Email: [myl39@cornell.edu](mailto:myl39@cornell.edu)
 
 Office hours: Fridays 4-6pm location Hollister 314.
 
-### Office Hours Schedule (TBD)
+### Office Hours Schedule
 
 | Name          | Day       | Time        | Location |
 | ------------- | --------- | ----------- | -------- |
