@@ -29,14 +29,12 @@ Email: [myl39@cornell.edu](mailto:myl39@cornell.edu)
 
 Office hours: Fridays 4-6pm location Hollister 314.
 
-### Office Hours Schedule
+### Office Hours Schedule (TBD)
 
-| Name          | Day       | Time        | Location |
-| ------------- | --------- | ----------- | -------- |
-| Changyuan Lin | Mondays   | 1 - 2pm     | TBD      |
-| Will Zhang    | Thursdays | 12-1PM      | TBD      |
-| Miranda Luo   | Tuesdays  | 4:30-5:30PM | TBD      |
-| Richard Gu    | Fridays   | 12-1PM      | TBD      |
+| Name | Day | Time | Location |
+| ---- | --- | ---- | -------- |
+|      |     |      |          |
+|      |     |      |          |
 
 ## Credits and Credit Hour Options
 
