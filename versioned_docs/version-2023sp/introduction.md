@@ -31,12 +31,12 @@ Office hours: Fridays 4-6pm location Hollister 314.
 
 ### Office Hours Schedule
 
-| Name          | Day       | Time        | Location |
-| ------------- | --------- | ----------- | -------- |
-| Changyuan Lin | Mondays   | 12:15 - 1:15pm     | TBD      |
-| Will Zhang    | Thursdays | 12-1PM      | TBD      |
-| Miranda Luo   | Tuesdays  | 4:30-5:30PM | TBD      |
-| Richard Gu    | Fridays   | 12-1PM      | TBD      |
+| Name          | Day       | Time           | Location |
+| ------------- | --------- | -------------- | -------- |
+| Changyuan Lin | Mondays   | 12:15 - 1:15pm | TBD      |
+| Will Zhang    | Thursdays | 12-1PM         | TBD      |
+| Miranda Luo   | Tuesdays  | 4:30-5:30PM    | TBD      |
+| Richard Gu    | Fridays   | 12-1PM         | TBD      |
 
 ## Credits and Credit Hour Options
 
@@ -46,7 +46,9 @@ Office hours: Fridays 4-6pm location Hollister 314.
 
 This course meets once a week for 10 weeks for a total of 10 lectures.
 
-We will meet weekly on **Mondays from 7:30-8:45pm** at **Hollister B14**. The start of the class will be on **2/20/23**
+We will meet weekly on **Mondays from 7:30-8:45pm** at **Hollister B14**. The start of the class will be on **2/20/23**.
+
+**You can find our course calendar with lecture dates and times, TA office hours with locations, and assignment due dates [here](https://calendar.google.com/calendar/u/1?cid=Y182OGYxOGE0YjVmODMyZmViODFhOGNlMzFmMTJhNzFkYzA5OTk0ODJlYmMzYTQ2NDg0NjM3OTM5MWM2NDU4N2QyQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20).**
 
 ## Course Description
 
