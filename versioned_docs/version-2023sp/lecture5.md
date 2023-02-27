@@ -5,7 +5,7 @@ title: Lecture 5
 
 Homework: Assignment 2: CSS and Complex React, is due 3/25 by 11:59pm
 
-Slides: TODO: @daniel
+Slides: [Here](https://docs.google.com/presentation/d/1-wR_8W7M_2CbL-32t_CpCes1iwwsh_TY-T8Lt9Xmwfg/edit?usp=sharing)
 
 Explore more:
 

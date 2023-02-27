@@ -5,7 +5,7 @@ title: Lecture 1
 
 Homework: None!
 
-Slides: TODO: @daniel
+Slides: [Here](https://docs.google.com/presentation/d/1BlAPMcTlbvqgjwhDZv3GlOiGQhcY9am-dQTrMaGWbbI/edit?usp=sharing)
 
 Explore more:
 
