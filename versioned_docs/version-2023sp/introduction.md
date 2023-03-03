@@ -31,12 +31,12 @@ Office hours: Fridays 4-6pm location Hollister 314.
 
 ### Office Hours Schedule
 
-| Name          | Day       | Time         | Location      |
-| ------------- | --------- | ------------ | ------------- |
-| Changyuan Lin | Mondays   | 12:15-1:15pm | Hollister 368 |
-| Will Zhang    | Thursdays | 3:30-4:30PM  | TBD           |
-| Miranda Luo   | Tuesdays  | 4:30-5:30PM  | Uris 394      |
-| Richard Gu    | Fridays   | 12-1PM       | Hollister 320 |
+| Name          | Day      | Time         | Location      |
+| ------------- | -------- | ------------ | ------------- |
+| Changyuan Lin | Mondays  | 12:15-1:15pm | Hollister 368 |
+| Will Zhang    | Fridays  | 3:30-4:30PM  | TBD           |
+| Miranda Luo   | Tuesdays | 4:30-5:30PM  | Uris 394      |
+| Richard Gu    | Fridays  | 12-1PM       | Hollister 320 |
 
 ## Credits and Credit Hour Options
 
