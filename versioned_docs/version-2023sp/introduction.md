@@ -33,6 +33,8 @@ Office hours: Fridays 4-6pm location Hollister 314.
 
 | Name          | Day        | Time         | Location      |
 | ------------- | ---------- | ------------ | ------------- |
+| Michelle Li   | Fridays    | 4-6pm        | Hollister 314 |
+| Daniel Wei    | Mondays    | 4-6pm        | Hollister 312 |
 | Changyuan Lin | Mondays    | 12:15-1:15pm | Hollister 368 |
 | Will Zhang    | Fridays    | 3:30-4:30PM  | TBD           |
 | Miranda Luo   | Wednesdays | 5-6PM        | TBD           |
