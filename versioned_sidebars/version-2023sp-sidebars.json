@@ -13,6 +13,22 @@
         "type": "doc",
         "id": "version-2023sp/setup-editor"
       }
+    ],
+    "Lectures": [
+      {
+        "type": "doc",
+        "id": "version-2023sp/lecture1"
+      }
+    ],
+    "Assignments": [
+      {
+        "type": "doc",
+        "id": "version-2023sp/assignments"
+      },
+      {
+        "type": "doc",
+        "id": "version-2023sp/assignment1"
+      }
     ]
   }
 }
