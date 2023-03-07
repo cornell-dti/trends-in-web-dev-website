@@ -3,6 +3,8 @@ id: assignment1
 title: Assignment 1
 ---
 
+### Starter template [here](https://github.com/cornell-dti/trends-sp23-starters/releases/download/1.0/a1.zip)
+
 For this assignment, we will be practicing JavaScript/Typescript fundamentals!
 
 **ALL questions in this assignment MUST be done using `.map`, `.filter`, or
