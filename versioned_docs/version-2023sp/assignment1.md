@@ -16,8 +16,10 @@ ALL functions must also be defined using **arrow functions**:
 };
 ```
 
-You must write your functions from the starter code. You are not allowed to
-change the function signature.
+This assignment does NOT have a starter template. Instead, create an empty
+`index.ts` file anywhere on your computer. You can then copy and paste the
+starter code for each question into your `index.ts` file, and then write your
+code implementing the requirement.
 
 ## Question 1
 
