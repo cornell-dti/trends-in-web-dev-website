@@ -3,6 +3,8 @@ id: assignment1
 title: Assignment 1
 ---
 
+### Starter template [here](https://github.com/cornell-dti/trends-sp23-starters/releases/download/1.0/a1.zip)
+
 For this assignment, we will be practicing JavaScript/Typescript fundamentals!
 
 **ALL questions in this assignment MUST be done using `.map`, `.filter`, or
@@ -16,10 +18,8 @@ ALL functions must also be defined using **arrow functions**:
 };
 ```
 
-This assignment does NOT have a starter template. Instead, create an empty
-`index.ts` file anywhere on your computer. You can then copy and paste the
-starter code for each question into your `index.ts` file, and then write your
-code implementing the requirement.
+You must write your functions from the starter code. You are not allowed to
+change the function signature.
 
 ## Question 1
 
