@@ -10,7 +10,6 @@ Slides: [Here](https://docs.google.com/presentation/d/1-wR_8W7M_2CbL-32t_CpCes1i
 Explore more:
 
 - Prefabricated React components in Google's Material UI Style: [React MUI](https://mui.com/)
-- Prefabricated Tailwind CSS components: [Daisy UI](https://daisyui.com/)
 
 Now that we have a complete understanding of React for building the raw HTML frontend of our application and manipulating that interface, let's take a look at that most-loved of frontend tasks: styling.
 
@@ -18,187 +17,134 @@ Now that we have a complete understanding of React for building the raw HTML fro
 
 By the end of today, you should be able to:
 
-- Understand the basics of how to use CSS.
-- Understand the evolution of CSS and styling solutions
-- Understand the different ways to style React components
+- Understand the basics of how to use CSS
 
-## The Basics of CSS
+## An Intro to CSS
 
-### CSS Properties
-
-```html
-<div className="“container”">
-  <button id="”click-me”" />
-  <hr />
-</div>
-```
-
-```css
-.container {
-  padding: 2rem 1rem 2rem 1rem;
-  margin: 30px;
-}
-
-#click-me {
-  border: 5px solid #ff0000;
-}
-
-hr {
-  color: red;
-}
-```
-
-Above, you can see how we use **_selectors_** to select elements in our HTML and then apply **_properties_** to them. In the above example, we have three selectors: `.container`, `#click-me`, and `hr`. Each selector has a set of properties that are applied to it. For example, the `.container` selector has a `padding` property, a `margin` property, and a `border` property. The `#click-me` selector has a `border` property, and the `hr` selector has a `color` property.
-
-You can check out more properties [here](https://web.stanford.edu/group/csp/cs21/csscheatsheet.pdf).
+CSS, or Cascading Style Sheets, allows us to control the appearance of HTML elements. It’s the standard “language” of styling. Along with HTML and JS, it’s considered one of the three fundamental web languages.
+It’s also an extremely simple, non-Turing-complete language.
 
 ### CSS Selectors
 
-```html
-<div className="“container”">
-  <button id="”click-me”" />
-  <hr />
-</div>
-```
+CSS selectors are the things that we use to select HTML elements. For example, we can use the `h1` selector to select all `h1` elements, or the `.my-class` selector to select all elements with the `my-class` class.
+
+### CSS Properties
+
+CSS properties are the building blocks of CSS. They are the things that we use to style our HTML elements. For example, we can use the `color` property to change the color of text, or the `background-color` property to change the background color of an element.
+
+## CSS Concepts
+
+### The Box Model
+
+The box model is a concept that describes how HTML elements are laid out on the page. It’s a very simple concept, but it’s important to understand it in order to style elements properly.
+
+The box model is a box that wraps around every HTML element. It consists of margins, borders, padding, and the actual content.
+
+Refer to the slides, or [this article](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model) for more information.
+
+### Positioning
+
+Positioning is a concept that describes how HTML elements are positioned on the page. It’s a very simple concept, but it’s important to understand it in order to style elements properly.
+
+There are four types of positioning:
+
+- Static
+- Relative
+- Absolute
+- Fixed
+
+#### Static Positioning
+
+Static positioning is the default positioning of HTML elements. It means that the element is positioned according to the normal flow of the page. This means that the element will be positioned where it would be if no positioning was applied.
+
+#### Relative Positioning
+
+Relative positioning is a type of positioning that is relative to the normal flow of the page. This means that the element will be positioned where it would be if no positioning was applied, but then offset by the specified amount.
+
+#### Absolute Positioning
+
+Absolute positioning is a type of positioning that is relative to the nearest positioned ancestor. This means that the element will be positioned where it would be if no positioning was applied, but then offset by the specified amount.
+
+This removes the element from the normal flow of the page, and it will not affect the position of other elements on the page.
+
+#### Fixed Positioning
+
+Fixed positioning is a type of positioning that is relative to the viewport. This means that the element will be positioned where it would be if no positioning was applied, but then offset by the specified amount.
+
+This removes the element from the normal flow of the page, and it will not affect the position of other elements on the page.
+
+### CSS Selectors
+
+CSS selectors are the things that we use to select HTML elements. For example, we can use the `h1` selector to select all `h1` elements, or the `.my-class` selector to select all elements with the `my-class` class, or the `#my-id` selector to select the element with the `my-id` id.
+
+We can also combine selectors to select multiple elements. For example, we can use the `h1.my-class` selector to select all `h1` elements with the `my-class` class, or the `h1, h2, h3` selector to select all `h1`, `h2`, and `h3` elements.
+
+You can also apply multiple classes to an element. For example, `<h1 class="my-class my-other-class">Hello, world!</h1>`.
+
+You can also apply the same properties to multiple selectors. For example, `h1, h2, h3 { color: red; }` will make all `h1`, `h2`, and `h3` elements red.
+
+You can also select elements based on their ancestors. For example, `ul li { color: red; }` will make all `li` elements that are descendants of `ul` elements red.
+
+A more advanced concept is to select elements based on their immediate and direct parent elements: `ul > li { color: red; }` will make all `li` elements that are direct descendants of `ul` elements red.
+
+### Units
+
+There are many different units that we can use to specify the size of things in CSS. The most common ones are:
+
+- `px`: Pixels. This is the default unit of measurement for CSS. It’s a fixed unit of measurement, meaning that it will always be the same size on the screen.
+- `rem`: Relative to the font size of the root element. This is a relative unit of measurement, meaning that it will be a different size depending on the font size of the root element.
+- `%`: Relative to the parent element. This is a relative unit of measurement, meaning that it will be a different size depending on the size of the parent element.
+- `vh`: Relative to the height of the viewport. This is a relative unit of measurement, meaning that it will be a different size depending on the height of the viewport.
+- `vw`: Relative to the width of the viewport. This is a relative unit of measurement, meaning that it will be a different size depending on the width of the viewport.
+
+### Calculations
+
+We can also perform calculations in CSS. For example, `width: calc(100% - 20px);` will make the width of an element 100% of the width of its parent element, minus 20 pixels.
+
+### Pseudo-classes
+
+Pseudo-classes are special selectors that allow us to select elements based on their state. For example, we can use the `:hover` pseudo-class to select elements when the user is hovering over them with their mouse.
+
+### Cascading
+
+CSS is a cascading language. This means that the order in which we apply CSS rules matters. The last rule that is applied to an element will be the one that is used. Later properties can effectively override earlier properties.
+
+### Media Queries and Clamping
+
+Media queries allow us to apply different CSS rules based on the size of the viewport. For example, we can use a media query to apply different CSS rules when the viewport is less than 600 pixels wide. For example:
 
 ```css
-div hr:hover {
-  background-color: black;
-}
-
-.container > #click-me {
-  background-color: grey;
+@media (max-width: 600px) {
+  .my-class {
+    width: 100%;
+  }
 }
 ```
 
-Above, you can see how we use **_selectors_** to select elements in our HTML and then apply **_properties_** to them. In the above example, we have two selectors: `div hr:hover` and `.container > #click-me`. The first refers to any `hr` element that is a child of a `div` element and is being hovered over by the mouse. The second refers to any `#click-me` element that is a child of a `.container` element.
+Alternatively, clamping is a way to clamp a value between a minimum and maximum value. For example, `clamp(0px, 100%, 600px)` will return the value 100% if the value is between 0px and 600px, and will return the value 0px if the value is less than 0px, and will return the value 600px if the value is greater than 600px.
 
-You can check out more selectors [here](https://htmlcheatsheet.com/css/).
+### CSS Variables
 
-## Styling Options
+CSS variables are a way to define variables in CSS. For example, `--my-variable: red;` will define a variable called `--my-variable` with the value `red`. We can then use this variable in our CSS rules. For example, `color: var(--my-variable);` will set the color of an element to the value of the `--my-variable` variable.
 
-There are a few different ways to style your React components. We'll go over the most common ones here.
-
-### CSS
-
-CSS is the most common way to style your React components. You can use CSS in a few different ways:
-
-### Inline styles
-
-You can use the `style` prop to pass in a JavaScript object with CSS properties and values. This is the most common way to style React components.
-
-Conceptually, the styles prop takes in an object with camelCased properties, where the names correspond to CSS properties, and the values correspond to the CSS values. For example, the following code will set the color of the text to red:
-
-```tsx
-<div style={{ color: 'red' }}>This text is red!</div>
-```
-
-Thus, you can manipulate CSS just like you would any other object. For instance,
-
-```tsx
-import React from 'react';
-
-const MyComponent: React.FC = () => {
-  const styles = {
-    container: {
-      backgroundColor: 'red',
-      padding: '20px',
-    },
-    text: {
-      color: 'white',
-    },
-  };
-
-  return (
-    <div style={styles.container}>
-      <p style={styles.text}>Hello, world!</p>
-    </div>
-  );
-};
-
-export default MyComponent;
-```
-
-However, because the CSS is camelCased, this comes at a cost: you can't use CSS pseudo-selectors, media queries, or other CSS features that aren't supported by JavaScript. You can't use CSS classes, either.
-
-### CSS files
-
-In React, just like in normal HTML, you can use external CSS files to apply styles to your components. Here's an example of how you can use an external CSS file in a React function component written in TypeScript:
-
-1. Create a new CSS file in your project directory, for example, styles.css.
+Normally, CSS variables are defined in the `:root` selector. For example:
 
 ```css
-/* styles.css */
-.container {
-  background-color: red;
-  padding: 20px;
-}
-
-.text {
-  color: white;
+:root {
+  --my-variable: red;
 }
 ```
 
-2. Import the CSS file in your React component file.
-
-```tsx
-import React from 'react';
-import './styles.css';
-
-const MyComponent: React.FC = () => {
-  return (
-    <div className="container">
-      <p className="text">Hello, world!</p>
-    </div>
-  );
-};
-
-export default MyComponent;
-```
-
-In the above example, we import the CSS file styles.css in the React component file, and then we use the className property to apply the classes to the div and p elements.
-
-### CSS modules
-
-CSS modules are a way to use CSS files in a modular way. This means that you can use the same CSS class names in different files without worrying about them conflicting with each other. This is useful when you have a large project with many CSS files.
-
-1. Create a new CSS file in your project directory, for example, `styles.module.css`.
+We can then use this variable in our CSS rules. For example:
 
 ```css
-/* styles.module.css */
-.container {
-  background-color: red;
-  padding: 20px;
-}
-
-.text {
-  color: white;
+.my-class {
+  color: var(--my-variable);
 }
 ```
 
-2. Import the CSS file in your React component file.
+### Flexbox and CSS Grid
 
-```tsx
-import React from 'react';
-import styles from './styles.module.css';
+Flexbox and CSS Grid are two different ways to layout elements on the page. Flexbox is a one-dimensional layout system, meaning that it only works on one axis at a time. CSS Grid is a two-dimensional layout system, meaning that it works on both the horizontal and vertical axes at the same time.
 
-const MyComponent: React.FC = () => {
-  return (
-    <div className={styles.container}>
-      <p className={styles.text}>Hello, world!</p>
-    </div>
-  );
-};
-
-export default MyComponent;
-```
-
-In the above example, we import the CSS file styles.module.css in the React component file, and then we use the className property to apply the classes to the div and p elements. Instead of passing a string, we pass the imported object, which contains the scoped class names as properties.
-
-## Demo 1: External CSS
-
-https://tinyurl.com/6mdndykp
-
-## Demo 2: Inline CSS
-
-https://tinyurl.com/45w66v3t
+Refer to the documentation for Flexbox [here](https://css-tricks.com/snippets/css/a-guide-to-flexbox/), and for CSS Grid [here](https://css-tricks.com/snippets/css/complete-guide-grid/).
