@@ -21,20 +21,16 @@ Email: [kyle.harms@cornell.edu](mailto:kyle.harms@cornell.edu)
 
 Email: [dlw266@cornell.edu](mailto:dlw266@cornell.edu)
 
-Office hours: Mondays, 4-6pm, location Hollister 312.
-
 **Michelle Li**
 
 Email: [myl39@cornell.edu](mailto:myl39@cornell.edu)
-
-Office hours: Fridays 4-6pm location Hollister 314.
 
 ### Office Hours Schedule
 
 | Name          | Day        | Time         | Location      |
 | ------------- | ---------- | ------------ | ------------- |
 | Michelle Li   | Fridays    | 4-6pm        | Hollister 314 |
-| Daniel Wei    | Mondays    | 4-6pm        | Hollister 312 |
+| Daniel Wei    | Mondays    | 4-6pm        | Snee 1150     |
 | Changyuan Lin | Mondays    | 12:15-1:15pm | Hollister 368 |
 | Will Zhang    | Fridays    | 3:30-4:30PM  | TBD           |
 | Miranda Luo   | Wednesdays | 5-6PM        | TBD           |
