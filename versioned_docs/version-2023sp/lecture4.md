@@ -7,6 +7,8 @@ Homework: Assignment 2: CSS and Complex React, is due 3/25 by 11:59pm
 
 Slides: [Here](https://docs.google.com/presentation/d/1JxQXUwKh0oa_nkLB9rkQJ9HVxO0-hgwJ1mxQ54h0c-Q/edit?usp=sharing)
 
+In-class Demo: [Here](https://github.com/epicdragon44/trends-sp23-unofficial-demo-lec4)
+
 Explore more:
 
 - [useSWR](https://swr.vercel.app/), a custom React hook for data fetching developed by Vercel, the team behind Next.js
