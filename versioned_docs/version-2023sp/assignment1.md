@@ -3,7 +3,7 @@ id: assignment1
 title: Assignment 1
 ---
 
-### Starter template [here](https://github.com/cornell-dti/trends-sp23-starters/releases/download/1.0/a1.zip)
+### Unofficial Starter Repo [here](https://github.com/epicdragon44/trends-sp23-unofficial-starter-a1)
 
 For this assignment, we will be practicing JavaScript/Typescript fundamentals!
 

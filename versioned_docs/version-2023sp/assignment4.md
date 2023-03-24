@@ -3,8 +3,6 @@ id: assignment4
 title: Assignment 4
 ---
 
-## Starter Template [here](https://github.com/cornell-dti/trends-sp23-starters/releases/download/1.0/a4.zip)
-
 In this assignment we will be connecting to a database directly through our
 frontend!
 
