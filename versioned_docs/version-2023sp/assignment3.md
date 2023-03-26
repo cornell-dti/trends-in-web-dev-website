@@ -3,8 +3,6 @@ id: assignment3
 title: Assignment 3
 ---
 
-## Starter Template [here](https://github.com/cornell-dti/trends-sp23-starters/releases/download/1.0/a3.zip)
-
 In this assignment we will be practicing conditional rendering and lifting state
 up!
 

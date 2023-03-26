@@ -3,8 +3,6 @@ id: assignment2
 title: Assignment 2
 ---
 
-## Starter template [here](https://github.com/cornell-dti/trends-sp23-starters/releases/download/1.0/a2.zip)
-
 In this assignment we will be getting familiar with React!
 
 ## Step 0 - Setup
