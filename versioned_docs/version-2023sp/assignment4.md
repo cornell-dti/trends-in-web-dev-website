@@ -11,7 +11,7 @@ frontend!
 Create a Next.js using our **starter code** with the following command:
 
 ```bash
-yarn create next-app --typescript --example "https://github.com/cornell-dti/trends-sp22-starters/tree/main/a4" YOUR_DIR_NAME
+yarn create next-app --typescript --example "https://github.com/cornell-dti/trends-sp23-a4" YOUR_PROJECT_NAME
 ```
 
 ## Create a Firebase Project
