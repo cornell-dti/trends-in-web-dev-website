@@ -3,7 +3,16 @@ id: assignment1
 title: Assignment 1
 ---
 
-### Unofficial Starter Repo [here](https://github.com/epicdragon44/trends-sp23-unofficial-starter-a1)
+# Setting up your Assignment
+
+Starter code [here](https://github.com/cornell-dti/trends-sp23-a1).
+
+Get started by clicking **Code > Download ZIP** and extracting the downloaded files, _or_
+running `git clone https://github.com/cornell-dti/trends-sp23-a1.git` in a directory of your choice.
+
+After extracting or cloning, just open the new `trends-sp23-a1` folder in VSCode to get started!
+
+# Working on your Assignment
 
 For this assignment, we will be practicing JavaScript/Typescript fundamentals!
 
