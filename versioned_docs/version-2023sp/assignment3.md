@@ -14,6 +14,12 @@ Create a Next.js using our **starter code** with the following command:
 yarn create next-app --typescript --example "https://github.com/cornell-dti/trends-sp23-a3" YOUR_PROJECT_NAME
 ```
 
+if that command doesn't work, try
+
+```bash
+npx create-next-app --typescript --example "https://github.com/cornell-dti/trends-sp23-a3" YOUR_PROJECT_NAME
+```
+
 ## Step 1 - Hit The Ground Running
 
 As with A2, run `yarn dev` in the project directory to start the server and
