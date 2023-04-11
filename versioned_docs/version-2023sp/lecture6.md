@@ -3,9 +3,9 @@ id: lecture6
 title: Lecture 6
 ---
 
-[Lecture Slides](https://docs.google.com/presentation/d/1gS0nwkjPdHZpO2uI6FdMb3jpyhgwn6c_SV4Juf8uBoQ/edit?usp=sharing)
+[Lecture Slides](https://docs.google.com/presentation/d/1HyzeRweOAhfW3fjxfk9IfRqMLVVnEZFqEQ0HlkK3w5Y/edit?usp=sharing)
 
-[Assignment 3](assignment3) **Due Friday 4/9 11:59 PM**
+[Assignment 3](assignment3) **Due Wednesday 4/19 11:59 PM**
 
 ## Data Fetching
 
@@ -290,11 +290,11 @@ try {
 
 ### Quick Postman Demo
 
-TODO @michelle
+Check out Postman to send API requests! [Here](https://www.postman.com/)
 
 ## Live Demo Material
 
 You can get the starter code for the live demo by running:
-`yarn create next-app --typescript --example "https://github.com/cornell-dti/trends-sp22-starters/tree/main/lec6-demo" YOUR_DIR_NAME`
+`yarn create next-app --typescript --example "https://github.com/cornell-dti/trends-sp23-lec6-demo" YOUR_DIR_NAME`
 
 (Replace YOUR_DIR_NAME with whatever you want to name your directory!)
