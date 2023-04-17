@@ -9,7 +9,7 @@ title: Lecture 7
 
 [Final Project Team Matching Form](https://docs.google.com/forms/d/e/1FAIpQLScq9DA5jLy1TnvEWqG-DCz5FvOV8tzLyCvKs93ifu0UbjW0UA/viewform) due **4/19 @ 11:59pm (no slip days)**
 
-[Final Project](finalproject) **MS1 due 4/23 @ 11:59pm**
+[MS1](finalproject) **MS1 due 4/23 @ 11:59pm**
 
 ## Intro to Databases and Firebase
 
