@@ -49,9 +49,9 @@ Your remaining slip days are still valid for this. The group's allotted slip day
 
 ### Team Matching Form
 
-#### Due: April 17 by 11:59 PM (no slip days)
+#### Due: April 23 by 11:59 PM (no slip days)
 
-Please fill out [**this team matching form**](https://forms.gle/ZPabB97jHYceg5Eo7) by **Sunday, April 17th**. This is a hard deadline because we want to assign group members on Sunday so you have enough time to work on Milestone 0.
+Please fill out [**this team matching form**](https://forms.gle/ZPabB97jHYceg5Eo7) by **Sunday, April 23th**. This is a hard deadline because we want to assign group members on Sunday so you have enough time to work on Milestone 0.
 
 ### Milestone 0
 
