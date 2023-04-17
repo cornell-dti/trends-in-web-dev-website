@@ -38,6 +38,10 @@
       {
         "type": "doc",
         "id": "version-2023sp/lecture6"
+      },
+      {
+        "type": "doc",
+        "id": "version-2023sp/lecture7"
       }
     ],
     "Assignments": [
@@ -56,6 +60,10 @@
       {
         "type": "doc",
         "id": "version-2023sp/assignment3"
+      },
+      {
+        "type": "doc",
+        "id": "version-2023sp/finalproject"
       }
     ]
   }

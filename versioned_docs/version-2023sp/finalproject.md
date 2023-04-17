@@ -49,17 +49,17 @@ Your remaining slip days are still valid for this. The group's allotted slip day
 
 ### Team Matching Form
 
-#### Due: April 23 by 11:59 PM (no slip days)
+#### Due: April 19 by 11:59 PM (no slip days)
 
-Please fill out [**this team matching form**](https://forms.gle/ZPabB97jHYceg5Eo7) by **Sunday, April 23th**. This is a hard deadline because we want to assign group members on Sunday so you have enough time to work on Milestone 0.
+Please fill out [**this team matching form**](https://forms.gle/ZPabB97jHYceg5Eo7) by **Wednesday, April 19th**. This is a hard deadline because we want to assign group members the same day so you have enough time to work on Milestone 1.
 
-### Milestone 0
+### Milestone 1
 
-**Due: April 22 by 11:59 PM**
+**Due: April 23 by 11:59 PM**
 
 Upload to CMS a mock and description of your web app! Your mock can be a picture/pictures (handdrawn or created from a drawing program) and the description should be in `pdf` form. Your mock should include sketches of the different pages or views in your application. Your description should be **at least 200 words** and elaborate on what your project will be about. Also consider how you will structure your database schema! (What collections will you need, how will they be related, and what documents will they store). Finally, if you are using GitHub (_highly recommended!_), please link it in your description (and make the GitHub repo public). Please zip both of these together to submit to CMS.
 
-### Milestone 1
+### Milestone 2
 
 **Due: April 29 by 11:59 PM**
 
@@ -67,7 +67,7 @@ Get started implementing the frontend. Use hardcoded data for now just to get
 the layout done. This can be default values embedded in your frontend code. You
 will connect it to the database in the subsequent milestones.
 
-### Milestone 2
+### Milestone 3
 
 **Due: May 6 by 11:59 PM**
 
@@ -75,7 +75,7 @@ Connect the app to Firebase by replacing hardcoded data with database calls.
 
 Also work on having an authentication system set up using Firebase Auth.
 
-### Milestone 3
+### Final Project
 
 **Due: May 13 by 11:59 PM**
 
