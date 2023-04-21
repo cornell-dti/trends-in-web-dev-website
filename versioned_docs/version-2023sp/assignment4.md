@@ -144,11 +144,7 @@ You may find `updateDoc` and `deleteDoc` helpful for this part.
 ## Step 6 - Submission
 
 Make sure you've completed all of the TODOs, including your name/netid in
-`components/layout/Footer.tsx` and the hours worked in `pages/index.tsx`
-
-Feel free to remove the contents of your `firebaseConfig` object in
-`firebase.ts` before submission. We will be grading by connecting your app to
-our own database.
+`components/layout/Footer.tsx` and the hours worked in `pages/index.tsx`.
 
 Once you are done, please zip up everything in your project folder EXCEPT the
 `node_modules` and `.next` folders.
