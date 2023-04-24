@@ -57,23 +57,48 @@ Please fill out [**this team matching form**](https://forms.gle/pwzpcwkL9rXWqJnz
 
 **Due: April 23 by 11:59 PM**
 
-Upload to CMS a mock and description of your web app! Your mock can be a picture/pictures (handdrawn or created from a drawing program) and the description should be in `pdf` form. Your mock should include sketches of the different pages or views in your application. Your description should be **at least 200 words** and elaborate on what your project will be about. Also consider how you will structure your database schema! (What collections will you need, how will they be related, and what documents will they store). Finally, if you are using GitHub (_highly recommended!_), please link it in your description (and make the GitHub repo public). Please zip both of these together to submit to CMS.
+Let's get started early! You'll want to really think about what you want to build and how you want to build it. This milestone is intended to help you get started on that.
+
+**Steps:**
+
+1. Create a mock of your web app. This can be a picture, or multiple pictures (handdrawn or created from a design program such as Figma etc.). Your mock should include sketches of the different pages or views in your application. You will attach these pictures to the document in step 2.
+
+2. Create a proposal for your web app. This should be a `pdf` file at least **200 words long**. It should contain:
+
+- A description that outlines what your project will be about, what it does, etc.
+- Technical considerations! For instance, how will you structure your database schema! (What collections will you need, how will they be related, and what documents will they store).
+- A link to your GitHub repo link, if you are using GitHub (_highly recommended!_). Make sure the repo is public!
+- The mockups you created in step 1.
+
+**Submission**
+
+Submit the PDF document to CMSX by the deadline!
 
 ### Milestone 2
 
-**Due: April 30 by 11:59 PM**
+**Due: May 3 by 11:59 PM**
 
-Get started implementing the frontend. Use hardcoded data for now just to get
-the layout done. This can be default values embedded in your frontend code. You
-will connect it to the database in the subsequent milestones.
+Time to properly get started coding!
+
+Get started implementing the frontend, using the skills we learned in class (Next.js, CSS, etc.).
+
+To get started, you may need to reference the materials we covered in [Lecture 3](https://webdev.cornelldti.org/docs/lecture3#create-a-nextjs-project).
+
+Use hardcoded data for now as necessary just to get the layout done. These can be default values embedded in your frontend code. You will connect it to the database in the subsequent milestones.
+
+Submit a zip file of your project to CMSX by the deadline! Along with your code, include a README containing a description of the project, a list of group members and netIDs, a link to the deployed site, a link to the GitHub repo if you used GitHub, and anything else that you think is important for us to know. This is _separate_ from the proposal you submitted in Milestone 1.
 
 ### Milestone 3
 
 **Due: May 7 by 11:59 PM**
 
+Now, it's time to connect your frontend to your backend, using the skills we learned in class (Firebase, Firestore, etc.).
+
 Connect the app to Firebase by replacing hardcoded data with database calls.
 
 Also work on having an authentication system set up using Firebase Auth.
+
+Submit a zip file of your project to CMSX by the deadline! Include all the same things as in Milestone 2.
 
 ### Final Project
 
@@ -83,25 +108,28 @@ This is the last milestone!
 
 Finish up the authentication system on your site and deploy your website.
 
-Include the url of your deployed site in your submission!
-
 :::tip
 Need help? Come to [office hours](/docs/2023sp/introduction) and we can help you debug. Also feel free to post questions on Ed!
 :::
 
 :::danger
-Do not push private API keys, Firebase service accounts, or other sensitive information to GitHub. Similarly, do not push `node_modules` up to GitHub. **If we see these in your GitHub, you will lose points.**
+Do not push private API keys, Firebase service accounts, or other sensitive information to GitHub. Similarly, do not push `node_modules` up to GitHub. If we see these in your GitHub, you **will** lose points.
 
-Note that firebase configs for the frontend are fine (and should be) included in your submission
+Note that firebase configs for the frontend are fine (and **should be**) included in your submission.
 :::
+
+Submit a zip file of your project to CMSX by the deadline! Include all the same things as in Milestone 2, _PLUS_ the URL of your deployed site.
 
 ## Optional Extensions
 
 If you're looking for an added challenge, consider doing one or more of these extensions! There is no extra credit for these extensions, but it will really enrich your understanding of webdev (and make us very impressed!) :)
 
-1. Use Material-UI (MUI) or Bootstrap or Semantic UI or Chakra UI (component libraries that help with styling!)
-2. Make your website mobile-friendly/responsive
-3. Use an external API (in additional to your Firebase backend!)
+1. Use [Material UI](https://mui.com/), [Boostrap](https://getbootstrap.com/), [Mantine](https://mantine.dev/), or another pre-fabricated component library.
+2. Make your website mobile-friendly/responsive to different screen sizes. You can get started using Media Queries and Clamping in CSS, which we [covered in Lecture 5](https://webdev.cornelldti.org/docs/lecture5#media-queries-and-clamping).
+3. Use an external API (in additional to your Firebase backend!). For instance, you could use the [Spotify API](https://developer.spotify.com/documentation/web-api/) to pull in song data, or the [OpenWeather API](https://openweathermap.org/api) to pull in weather data.
+4. Implement testing using [Jest](https://jestjs.io/) and/or the [React Testing Library](https://testing-library.com/docs/react-testing-library/).
+5. Use Vercel's `useSWR` hook to implement [client-side data fetching](https://swr.vercel.app).
+6. If you're a CS 3110 student, use a [TypeScript Pattern-Matching Library](https://github.com/gvergnaud/ts-pattern) to go further with functional programming in your frontend.
 
 ## Grading
 
@@ -133,16 +161,6 @@ If you're looking for an added challenge, consider doing one or more of these ex
     get most of the points here; the only way to lose points is if it is
     clear that not a lot of effort has been put in or you are consistently
     missing milestones.
-
-## Submission
-
-Submission for each milestone will be a zip file of your code, along with a
-README containing a description of the project, a list of
-group members and netIDs, a link to the deployed site, a link to the GitHub repo if you used GitHub,
-and anything else that you think is important for us
-to know.
-
-As always, do not include your `node_modules`.
 
 ## Tips for Success!
 
