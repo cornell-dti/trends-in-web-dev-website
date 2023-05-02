@@ -3,15 +3,13 @@ id: lecture8
 title: Lecture 8
 ---
 
-[Lecture Slides](https://docs.google.com/presentation/d/1J73ok4GlWVpunQ1eQeKR4aDqkSfXKZh1LOikKifY9tE/edit?usp=sharing)
+[Lecture Slides](https://docs.google.com/presentation/d/1UB0fAUHIkU2UTdNaZrs1jsA0sNEKpkhgp_d7mtj6q50/edit?usp=sharing)
 
 [Final Project Instructions](finalproject)
 
-[Final Project - Milestone 1](finalproject#milestone-1) due **TBD @michelle**
+[Final Project - Milestone 1](finalproject#milestone-1) due **4/23**
 
-[Final Project - Milestone 2](finalproject#milestone-2) due **TBD @michelle**
-
-[Final Project - Milestone 3](finalproject#milestone-3) due **TBD @michelle**
+[Final Project - Milestone 2](finalproject#milestone-2) due **5/3**
 
 ## Practice
 
