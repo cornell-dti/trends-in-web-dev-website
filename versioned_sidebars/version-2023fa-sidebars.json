@@ -1,0 +1,54 @@
+{
+  "docs": {
+    "Getting Started": [
+      {
+        "type": "doc",
+        "id": "version-2023fa/introduction"
+      },
+      {
+        "type": "doc",
+        "id": "version-2023fa/setup-environment"
+      },
+      {
+        "type": "doc",
+        "id": "version-2023fa/setup-editor"
+      }
+    ],
+    "Lectures": [
+      {
+        "type": "doc",
+        "id": "version-2023fa/unit1"
+      },
+      {
+        "type": "doc",
+        "id": "version-2023fa/unit2"
+      }
+    ],
+    "Assignments": [
+      {
+        "type": "doc",
+        "id": "version-2023fa/assignments"
+      },
+      {
+        "type": "doc",
+        "id": "version-2023fa/assignment1"
+      },
+      {
+        "type": "doc",
+        "id": "version-2023fa/assignment2"
+      },
+      {
+        "type": "doc",
+        "id": "version-2023fa/assignment3"
+      },
+      {
+        "type": "doc",
+        "id": "version-2023fa/assignment4"
+      },
+      {
+        "type": "doc",
+        "id": "version-2023fa/finalproject"
+      }
+    ]
+  }
+}
