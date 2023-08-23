@@ -148,7 +148,7 @@ p.then(
   },
   (reason) => {
     // rejection
-  },
+  }
 );
 ```
 
@@ -388,7 +388,7 @@ app.get('/getSongs', async (req, res) => {
     songs.docs.map((doc): SongWithID => {
       const song = doc.data() as Song;
       return { ...song, id: doc.id };
-    }),
+    })
   );
 });
 
@@ -468,8 +468,8 @@ export const SongList = () => {
       method: 'POST',
     }).then((res) =>
       setSongs(
-        songs.map((song) => (song.id === id ? { ...song, rating } : song)),
-      ),
+        songs.map((song) => (song.id === id ? { ...song, rating } : song))
+      )
     );
   };
 

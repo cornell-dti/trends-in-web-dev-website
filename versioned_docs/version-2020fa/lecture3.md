@@ -109,14 +109,14 @@ app.get('/self-check', async (_, resp) => {
   console.log('Trying to obtain doc in DB.');
   const docSnapshot = await docRef.get();
   console.log(
-    `We obtained a doc with id ${docSnapshot.id}. It's content is logged below:`,
+    `We obtained a doc with id ${docSnapshot.id}. It's content is logged below:`
   );
   console.log(docSnapshot.data());
   console.log('Now we will try to remove it.');
   await docRef.delete();
   console.log('The document is deleted.');
   console.log(
-    'After all these operations, the db should be empty. We check that.',
+    'After all these operations, the db should be empty. We check that.'
   );
   db.collection('test')
     .get()

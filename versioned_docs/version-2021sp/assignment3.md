@@ -68,7 +68,7 @@ Starter code:
 ```typescript
 export const partition = (
   array: number[],
-  belongToGroup1: (element: number) => boolean,
+  belongToGroup1: (element: number) => boolean
 ): { group1: number[]; group2: number[] } => {
   /* TODO: add your code */
 };

@@ -96,7 +96,7 @@ import MyComponent from './MyComponent';
 const link = 'https://github.com/cornell-dti';
 ReactDOM.render(
   <MyComponent name="Cornell DTI" githubLink={link} />,
-  document.getElementById('root'),
+  document.getElementById('root')
 );
 ```
 

@@ -66,7 +66,7 @@ type Apartment = {
 
 export const affordableHousing = (
   listings: Apartment[],
-  budget: number,
+  budget: number
 ): string[] => {
   /* TODO: add your code */
 };
