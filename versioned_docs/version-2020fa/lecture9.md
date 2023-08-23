@@ -373,9 +373,9 @@ const updateRating = (id: string, rating: number) => {
           songs.map((song) =>
             song.id === id
               ? { name: song.name, artist: song.artist, rating, id }
-              : song
-          )
-        )
+              : song,
+          ),
+        ),
       );
     })
     .catch(() => {

@@ -287,7 +287,7 @@ const { user } = useAuth();
 
 const taskQuery = query(
   collection(db, 'tasks'),
-  where('owner', '==', user!.uid)
+  where('owner', '==', user!.uid),
 );
 ```
 

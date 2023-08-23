@@ -99,13 +99,13 @@ You are allowed max 3 slip days (out of 6 total for all assignments and the fina
 
 The class is scheduled to finish well before finals week.
 
-| Assignment   | Topic                                      | Due Date        |
-| ------------ | ------------------------------------------ | --------------- |
-| Assignment 1 | JavaScript Fundamentals                    | TBA  by 11:59pm |
-| Assignment 2 | TypeScript Fundamentals                    | TBA  by 11:59pm |
-| Assignment 3 | React Fundamentals                         | TBA by 11:59pm  |
-| Assignment 4 | Frontend Capstone                          | TBA  by 11:59pm |
-| Assignment 5 | Final Project                              | TBA             |
+| Assignment   | Topic                   | Due Date       |
+| ------------ | ----------------------- | -------------- |
+| Assignment 1 | JavaScript Fundamentals | TBA by 11:59pm |
+| Assignment 2 | TypeScript Fundamentals | TBA by 11:59pm |
+| Assignment 3 | React Fundamentals      | TBA by 11:59pm |
+| Assignment 4 | Frontend Capstone       | TBA by 11:59pm |
+| Assignment 5 | Final Project           | TBA            |
 
 ## Method of Assessing Student Achievement
 

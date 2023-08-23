@@ -667,7 +667,7 @@ type Person = {
   name: string;
   age: number;
   isAlive: boolean;
-}
+};
 ```
 
 We can use types to type object variables:
@@ -687,12 +687,12 @@ type Person = {
   name: string;
   age: number;
   isAlive: boolean;
-}
+};
 
 type PersonIntroduction = {
   introduction: string;
   isAlive: boolean;
-}
+};
 
 const introduce = (person: Person): PersonIntroduction => {
   return {
@@ -727,7 +727,7 @@ Here, we use the `!` operator to tell TypeScript that `myString` is not `null` o
 Generics are a way to make a function more flexible. They allow you to specify a type parameter that can be used in the function.
 
 ```ts
-const introduce = <T>(name: T): string => {
+const introduce = <T,>(name: T): string => {
   return `Hi, I'm ${name}.`;
 };
 ```

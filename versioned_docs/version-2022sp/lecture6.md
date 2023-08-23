@@ -326,7 +326,7 @@ p.then(
   },
   (reason) => {
     // rejection
-  }
+  },
 );
 ```
 

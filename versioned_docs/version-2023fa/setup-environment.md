@@ -13,7 +13,7 @@ For consistency, please use the latest Node LTS (currently, as of Fall 2023, thi
 
 ## Install Additional Packages
 
-We will be using a few additional packages to help us with development. 
+We will be using a few additional packages to help us with development.
 
 #### Deno
 
@@ -28,4 +28,3 @@ Pnpm is a package manager that is faster and more efficient than the default `np
 ```bash
 npm install -g pnpm
 ```
-

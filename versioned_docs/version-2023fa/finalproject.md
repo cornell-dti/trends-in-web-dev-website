@@ -123,7 +123,7 @@ This is subject to change. TBA!
 
 - Get in contact with your partner early! _Better initial planning means less frustrations later on._
 - Be realistic. We know you are ambitious, but also understand your own capabilities, and avoid changing ideas halfway through.
-- Use git. 
+- Use git.
   - It is great for sharing code between you and your partner/team members. _Please_ don't just email code back and forth.
   - Use git branches!
     - When developing a feature, you should open up a new GitHub branch rather than committing and pushing directly to the main branch. This will allow you to develop your feature independently of the current state of main (and what your partners are doing) and only merge in when you are sure your feature is done and works.

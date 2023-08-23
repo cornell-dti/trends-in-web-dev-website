@@ -222,7 +222,7 @@ We can start this a file `fireHooks.ts`:
 ```ts
 const useCollectionWithCallback = (
   collectionId: string,
-  callback: () => void
+  callback: () => void,
 ) => {
   const [coll, setColl] = useState<DocumentData[] | undefined>();
   const collectionRef = collection(db, collectionId);
@@ -250,7 +250,7 @@ Alternatively, in a slightly nicer (more functional, more Observable-y way), we 
 ```ts
 const useCollectionWithCallback2 = (
   collectionId: string,
-  callback: () => void
+  callback: () => void,
 ) => {
   const [coll, setColl] = useState<DocumentData[] | undefined>();
   const collectionRef = collection(db, collectionId);
@@ -261,7 +261,7 @@ const useCollectionWithCallback2 = (
         // in the effect, set the collection data. This triggers an update in any component using 'coll' (using this collection hook).
         setColl(c);
         callback();
-      }
+      },
     );
     return () => {
       // run any any cleanup code
@@ -377,10 +377,10 @@ export const filterByReviewer = (reviews: FireReview[], reviewer: string) =>
 export const filterByBook = (
   reviews: FireReview[],
   title: string,
-  author: string
+  author: string,
 ) =>
   reviews.filter(
-    (review) => review.title === title && review.author === author
+    (review) => review.title === title && review.author === author,
   );
 ```
 
@@ -390,7 +390,7 @@ Now how can we use the above functions to implement the main feature of our book
 export const getAvgRatingForBook = (
   reviews: FireReview[],
   title: string,
-  author: string
+  author: string,
 ) => {
   const filteredList = filterByBook(reviews, title, author);
   return (
@@ -402,7 +402,7 @@ export const getAvgRatingForBook = (
 export const paginateReviews = (
   reviews: FireReview[],
   resultsPerPage: number,
-  page: number
+  page: number,
 ) => {
   const lastPage = Math.ceil((reviews.length + 1) / page);
   const pageSanitized = Math.min(Math.max(0, page), lastPage);
@@ -410,7 +410,7 @@ export const paginateReviews = (
   return reviews.filter(
     (value, i) =>
       i > pageSanitized * resultsPerPage &&
-      i < Math.min(pageSanitized + 1, lastPage)
+      i < Math.min(pageSanitized + 1, lastPage),
   );
 };
 ```

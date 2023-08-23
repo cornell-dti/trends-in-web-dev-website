@@ -321,7 +321,7 @@ const ProductTable = ({ products, filterText, inStockOnly }) => {
         <ProductCategoryRow
           category={product.category}
           key={product.category}
-        />
+        />,
       );
     }
     rows.push(<ProductRow product={product} key={product.name} />);

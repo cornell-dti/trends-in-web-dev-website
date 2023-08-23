@@ -1,9 +1,7 @@
 {
   // Let's keep it within 80 so that there won't be ugly line wraps in the
   // rendered webpage.
-  "editor.rulers": [
-    80
-  ],
+  "editor.rulers": [80],
   "search.exclude": {
     "**/.yarn": true,
     "**/.pnp.*": true
