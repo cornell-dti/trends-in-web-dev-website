@@ -27,21 +27,9 @@
       "items": [
         { "label": "Course Plan", "href": "https://courseplan.io/" },
         { "label": "CU Reviews", "href": "https://www.cureviews.org/" },
-        {
-          "label": "eve",
-          "href": "https://www.cornelldti.org/Projects/events"
-        },
-        { "label": "Flux", "href": "https://www.cornelldti.org/Projects/flux" },
-        {
-          "label": "O-Week",
-          "href": "https://www.cornelldti.org/Projects/orientation"
-        },
         { "label": "Queue Me In", "href": "https://queueme.in/" },
-        {
-          "label": "Research Connect",
-          "href": "https://www.research-connect.com/"
-        },
-        { "label": "Samwise", "href": "https://samwise.today" }
+        { "label": "Design @ Cornell", "href": "https://www.cudesign.io/" },
+        { "label": "Zing", "href": "https://zing-lsc-prod.web.app/" }
       ]
     }
   ],
