@@ -3,7 +3,11 @@ id: unit2
 title: Frontend / Unit 2
 ---
 
-Homework: HW3 and HW4 (TBA)
+Welcome to Unit 2!
+
+This unit will cover the basics of frontend development using React, a popular frontend framework.
+
+Homework: HW3 and HW4, due 10/10 and 10/17 respectively.
 
 Slides: [Here](https://docs.google.com/presentation/d/1JRflVjtGvkqgrGemb98fCALpkdYL7fpaVZy9ZF2hH3o/edit?usp=sharing)
 
