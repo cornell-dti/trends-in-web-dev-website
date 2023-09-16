@@ -31,7 +31,7 @@ Email: [sy398@cornell.edu](sy398@cornell.edu)
 
 ### Office Hours Schedule
 
-TBA
+TBA!
 
 ## Credits and Credit Hour Options
 
@@ -39,11 +39,11 @@ TBA
 
 ## Time and Location
 
-This course meets once a week for 10 weeks for a total of 10 lectures.
+This course meets once a week for 9 weeks for a total of 9 lectures.
 
-We will meet weekly on [Dates and Times TBA] at [Location TBA]. The start of the class will be on [Date TBA].
+We will meet weekly on Wednesdays, from **7:30pm to 8:45pm** in **Hollister B14**. The start of the class will be on **September 27th**.
 
-**You can find our course calendar with lecture dates and times, TA office hours with locations, and assignment due dates at the following GCal Link, TBA.**
+**You can find our course calendar with lecture dates and times, TA office hours with locations, and assignment due dates at [this](https://calendar.google.com/calendar/u/0?cid=Y18zMTljZjYyZmI1MTA4MTk4NDkxM2FmMGFiMTIyYWFkNzE1YTVjNjVlNDg0Nzk1YWFjYTY4OTFiNGUxMTZlOWQ0QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20) Google Calendar link.**
 
 ## Course Description
 
@@ -63,7 +63,7 @@ However, we _highly_ recommend that you have taken CS 1110, or have equivalent p
 
 ## Course Application
 
-Apply [here](https://forms.gle/wPCRRXHDA1SzHr1U8) by [Date TBA] at 11:59 PM ET. It includes a general information questionnaire so we have the information necessary for enrollment, as well as a preassessment you must complete (see Pre-Course Assessment below).
+Apply [here](https://forms.gle/wPCRRXHDA1SzHr1U8) by **September 24th at 11:59 PM ET**. It includes a general information questionnaire so we have the information necessary for enrollment, as well as a preassessment you must complete (see Pre-Course Assessment below).
 
 We will be distributing enrollment/permission pins soon after the application period closes.
 
@@ -99,13 +99,13 @@ You are allowed max 3 slip days (out of 6 total for all assignments and the fina
 
 The class is scheduled to finish well before finals week.
 
-| Assignment   | Topic                   | Due Date       |
-| ------------ | ----------------------- | -------------- |
-| Assignment 1 | JavaScript Fundamentals | TBA by 11:59pm |
-| Assignment 2 | TypeScript Fundamentals | TBA by 11:59pm |
-| Assignment 3 | React Fundamentals      | TBA by 11:59pm |
-| Assignment 4 | Frontend Capstone       | TBA by 11:59pm |
-| Assignment 5 | Final Project           | TBA            |
+| Assignment   | Topic                   | Due Date                 |
+| ------------ | ----------------------- | ------------------------ |
+| Assignment 1 | JavaScript Fundamentals | Sept 26 by 11:59pm       |
+| Assignment 2 | TypeScript Fundamentals | Oct 3 by 11:59pm         |
+| Assignment 3 | React Fundamentals      | Oct 10 by 11:59pm        |
+| Assignment 4 | Frontend Capstone       | Oct 17 by 11:59pm        |
+| Assignment 5 | Final Project           | TBA - Tentatively Nov 26 |
 
 ## Method of Assessing Student Achievement
 
@@ -117,8 +117,8 @@ First, we will determine your numerical grade. This will be done by the followin
 | -------------------- | ---------------------------------------------------------------------- |
 | Attendance           | 20% (based on weekly lecture quizzes, can miss 1 of 9 without penalty) |
 | Filling out Feedback | 10%                                                                    |
-| Final Project        | 20%                                                                    |
-| Assignments          | 50%                                                                    |
+| Final Project        | 30%                                                                    |
+| Assignments          | 40%                                                                    |
 |                      |
 
 Your final grade will be determined by your numerical grade calculated above:

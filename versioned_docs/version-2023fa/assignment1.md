@@ -5,6 +5,8 @@ title: Assignment 1
 
 # Assignment
 
+## Due Sept 26 by 11:59pm
+
 Run the following command in an appropriate folder on your system:
 
 ```bash
