@@ -63,7 +63,7 @@ However, we _highly_ recommend that you have taken CS 1110, or have equivalent p
 
 ## Course Application
 
-Apply [here](https://forms.gle/wPCRRXHDA1SzHr1U8) by **September 24th at 11:59 PM ET**. It includes a general information questionnaire so we have the information necessary for enrollment, as well as a preassessment you must complete (see Pre-Course Assessment below).
+Apply [here](https://forms.gle/wPCRRXHDA1SzHr1U8) by **September 21st at Noon (12pm)**. It includes a general information questionnaire so we have the information necessary for enrollment, as well as a preassessment you must complete (see Pre-Course Assessment below).
 
 We will be distributing enrollment/permission pins soon after the application period closes.
 
@@ -101,10 +101,10 @@ The class is scheduled to finish well before finals week.
 
 | Assignment   | Topic                   | Due Date                 |
 | ------------ | ----------------------- | ------------------------ |
-| Assignment 1 | JavaScript Fundamentals | Sept 26 by 11:59pm       |
-| Assignment 2 | TypeScript Fundamentals | Oct 3 by 11:59pm         |
-| Assignment 3 | React Fundamentals      | Oct 10 by 11:59pm        |
-| Assignment 4 | Frontend Capstone       | Oct 17 by 11:59pm        |
+| Assignment 1 | JavaScript Fundamentals | Oct 3 by 11:59pm         |
+| Assignment 2 | TypeScript Fundamentals | Oct 10 by 11:59pm        |
+| Assignment 3 | React Fundamentals      | Oct 17 by 11:59pm        |
+| Assignment 4 | Frontend Capstone       | Oct 24 by 11:59pm        |
 | Assignment 5 | Final Project           | TBA - Tentatively Nov 26 |
 
 ## Method of Assessing Student Achievement
