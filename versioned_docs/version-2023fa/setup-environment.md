@@ -28,3 +28,19 @@ Pnpm is a package manager that is faster and more efficient than the default `np
 ```bash
 npm install -g pnpm
 ```
+
+## Making a React Project
+
+To make sure you've got everything set up correctly, `cd` into a directory of your choice and run:
+
+```bash
+pnpm dlx degit cornell-dti/trends-mono/frontend-starter your-project-name
+```
+
+This will create a new directory called `your-project-name` with a React project inside. `cd` into it and run `pnpm install` to install all the dependencies.
+
+Take a look around and edit the code if you'd like.
+
+When you're ready, run `pnpm dev` to start the development server. If everything works as it should, you should be able to navigate to `localhost:5173` and see a React app running!
+
+You can also use that command to create a new 'blank' React project at any time. Bookmark this page and come back to it!

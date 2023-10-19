@@ -31,7 +31,7 @@ Email: [sy398@cornell.edu](sy398@cornell.edu)
 
 ### Office Hours Schedule
 
-TBA!
+View at [this](https://calendar.google.com/calendar/u/0?cid=Y18zMTljZjYyZmI1MTA4MTk4NDkxM2FmMGFiMTIyYWFkNzE1YTVjNjVlNDg0Nzk1YWFjYTY4OTFiNGUxMTZlOWQ0QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20) Google Calendar link.
 
 ## Credits and Credit Hour Options
 
