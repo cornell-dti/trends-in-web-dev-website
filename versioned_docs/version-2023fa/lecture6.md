@@ -2,6 +2,7 @@
 id: lecture6
 title: Lecture 6
 ---
+
 ## Intro to Express.js
 
 Now that we understand the difference between what we mean by client side programming and server side programming. Our primary focus for the first 4 lectures was client side programming. Now we’re going to dive deeper into server side programming. One tool we can use to create our own server is a framework called Express.js. Express.js is a minimal and flexible web application framework that provides us a set of features to create our own APIs.
@@ -9,21 +10,22 @@ Now that we understand the difference between what we mean by client side progra
 To install Express, run `npm install express` or `yarn add express` in your preferred directory. If you're using `yarn`, make sure `yarn` is properly installed on your local development environment.
 
 ### Quick Example
-```typescript
-import express from "express";
 
-const app = express()
-const port = 8080
+```typescript
+import express from 'express';
+
+const app = express();
+const port = 8080;
 app.use(express.json());
 app.use(cors());
 
 app.get('/', (req, res) => {
-  res.send('Hello World!')
-})
+  res.send('Hello World!');
+});
 
 app.listen(port, () => {
-  console.log(`Server listening on port ${port}`)
-})
+  console.log(`Server listening on port ${port}`);
+});
 ```
 
 Here is a quick example on how to set up the boiler plate code for creating an express server.
@@ -43,6 +45,7 @@ Finally, this last section is where our server application will actually listen 
 When running the application with `npm start`, the server will be listening on `http://localhost:[insert port number here]`.
 
 ### Routing
+
 Routing determines how our server responses to a client request to particular endpoint. An endpoint simply consists of a URI (or path) and a specific HTTP request method (`GET`, `POST`, `PUT`, `DELETE`)
 
 ```typescript
@@ -50,43 +53,53 @@ app.[METHOD]([PATH], [HANDLER])
 ```
 
 #### GET Endpoint
+
 ```typescript
 app.get('/', (req, res) => {
-  res.send('Hello World!')
-})
+  res.send('Hello World!');
+});
 ```
+
 Here we go back to the get request that we saw previously. Essentially here again we have a `GET` request with the path at the root. We could change this string to anything we want. Then the next parameter is the handler, which is a call back function that is executed when the route is matched. So, when the client makes a `GET` request to the root path of our server running on port 8080, the server will match that request to this function right here and call the handler. The req and res objects are created automatically by the framework and is passed as an argument to route handler functions.
 
 The handler takes in the request object and a response object as parameters and executes the body of this function. The request object represents an HTTP request and contains any data that the client may have sent over to the server (query strings, parameters, body, HTTP headers, etc). This isn’t applicable to `GET` request since `GET` requests are only used to request data. But, we will look at other method types later. The second parameter is the response object which represents the HTTP response object the server will send back to the client. So, this in example, when the client request is routed to this handler, the server will send an object containing the string `Hello World.`
 
 #### POST Endpoint
+
 ```typescript
 app.post('/', (req, res) => {
   	const body = req.body
 res.send(‘This is a POST request’)
 })
 ```
+
 Here we have a `POST` request with the path at the root. We are allowed to have multiple endpoints with the same path they just have to be different HTTP methods. So, we can have a `GET` endpoint and a `POST` endpoint at the same path. But, we cannot have two `GET` endpoints with the same path.
 
 #### PUT Endpoint
+
 ```typescript
 app.put('/user', (req, res) => {
-  	const body = req.body
-	const username = req.body.username
-res.send('This is a PUT request')
-})
+  const body = req.body;
+  const username = req.body.username;
+  res.send('This is a PUT request');
+});
 ```
+
 Here we have a `PUT` request with the path at `/user`.
 Here the handler will get the variable called body to the req.body, which represents any data that the client may have sent over to the server at this endpoint. The handler also sets a constant called username to the username parameter sent in through the body of the client’s HTTP request. Then the handler will send a response back saying `This is a PUT request.` A `PUT` request is typically used for updating data, we will take more of a deep dive into all this in the next lecture when we talk about databases.
 
 #### DELETE Endpoint
+
 ```typescript
-app.delete('/user/:id', (req, res)=> {
-res.send('This is a delete request for id ${req.params.id}')})
+app.delete('/user/:id', (req, res) => {
+  res.send('This is a delete request for id ${req.params.id}');
+});
 ```
+
 Here we have a `DELETE` request with the path at “/user/:id”. This is an interesting path because we have :id. Here we have defined a route that takes in a parameter called id. When we visit something like /user/1, the server will respond with `This is a DELETE request for id 1.` You can include parameters into any endpoint path for your server and read them from the request object sent from the client’s HTTP request. This is an example of a dynamic route.
 
 ## Postman
+
 In order to test our APIs and make sure that they are responding appropriately for certain routes, Postman is a great tool for sending and receiving API requests directly to and from the server.
 
 Postman is an API platform used for building and using APIs.
