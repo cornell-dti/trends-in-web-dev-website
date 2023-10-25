@@ -6,14 +6,6 @@ title: Final Project
 This semester, we've learned some great tools for web development. Now, we will
 put them all together to make an amazing final project!
 
-## Outline
-
-TBA
-
-## Requirements
-
-TBA
-
 ## Suggested Project Ideas
 
 - Picnic items
@@ -35,35 +27,44 @@ a reasonable way.
 
 Your remaining slip days are still valid for this. The group's allotted slip days is the max of your group members'. **You are allowed to use at most 3 slip days per each of Milestones 1, 2, 3.**
 
-### Team Matching Form
-
-#### Due: TBA by 11:59 PM (no slip days)
-
-Please fill out [TBA] by **TBA**. This is a hard deadline because we want to assign group members the same day so you have enough time to work on Milestone 1.
+#### Due: Dec 3rd, 2023 by 11:59 PM (no slip days)
 
 ### Milestone 1
 
-**Due: TBA by 11:59 PM**
+**Due: Oct 23rd, 2023 by 11:59 PM**
+This milestone is primarily focused to allow you to ideate ideas with your team (check out project suggestions for inspiration!). You will meet with your assigned TA for idea approval and roadmapping. Your assigned TA will be your primary point of contact for any trouble you face while working on the project. All our TAs are incredibly kind and supportive so don't feel intimidated!
 
-**Steps**
-
-**Submission**
+**Requirements**
+- Text document detailing project idea and road map (make sure this has been approved by your TA)
 
 ### Milestone 2
 
-**Due: TBA by 11:59 PM**
+**Due: Nov 6th, 2023 by 11:59 PM**
+For this milestone, we expect a skeleton of a website. So, by this checkpoint, you should have established your frontend pages and outlined the API routes you plan on implementing in Express. Your frontend and backend should be properly connected and can communicate with one another locally. Again, make sure your TA approves and has checked in with you.
+
+**Requirements**
+- Frontend UI (at least 3 pages)
+- Express API & server that supports HTTP requests
+  - at least one of each HTTP request type (`GET`, `POST`, `PUT`, `DELETE`)
+  - full implementation is not necessary, we just want to see the outline of each route function
 
 ### Milestone 3
 
-**Due: TBA by 11:59 PM**
+**Due: Nov 27th, 2023 by 11:59 PM**
+For this milestone, you should have fully functioning prototype with maybe some minor bugs and getting your web application ready to be deployed. This is your final TA check in.
+
+**Requirements**
+- Frontend UI (at least 3 pages)
+- Express API & server that supports HTTP requests
+  - at least one of each HTTP request type (`GET`, `POST`, `PUT`, `DELETE`)
+  - full implementation should be completed here with proper read/write functonality to your Firebase database
+- Authentication
 
 ### Final Project
 
-**Due: TBA by 11:59 PM**
+**Due: Dec 3rd by 11:59 PM**
+#### FINAL PRESENTATION DAY: December 4th, 2023 (Time and Location TBA)
 
-This is the last milestone!
-
-Finish up the authentication system on your site and deploy your website.
 
 :::tip
 Need help? Come to [office hours](/docs/2023sp/introduction) and we can help you debug. Also feel free to post questions on Ed!
@@ -88,20 +89,21 @@ If you're looking for an added challenge, consider doing one or more of these ex
 
 ## Grading
 
-This is subject to change. TBA!
+This is subject to change.
 
-- Frontend (35%)
+- Frontend (25%)
 
   - Use of ES6 & TypeScript
   - Component structure
   - Use of hooks
   - Functional programming
 
-- Database/Backend (15%)
+- Database/Backend (25%)
 
   - Data fetching
   - Data insertion
   - Data deletion
+  - Proper frontend/backend communication
 
 - Auth (10%)
 
