@@ -63,6 +63,9 @@ For this milestone, you should have fully functioning prototype with maybe some 
 ### Final Project
 
 **Due: Dec 3rd by 11:59 PM**
+Submit your final work! Great job and we're all excited for demo day!!
+**Make sure to fill out [this peer review](https://forms.gle/tRxrAPtmcmrBoUvd8) form for all members on your team**
+
 #### FINAL PRESENTATION DAY: December 4th, 2023 (Time and Location TBA)
 
 
@@ -98,7 +101,7 @@ This is subject to change.
   - Use of hooks
   - Functional programming
 
-- Database/Backend (25%)
+- Database/Backend (20%)
 
   - Data fetching
   - Data insertion
@@ -120,6 +123,9 @@ This is subject to change.
     get most of the points here; the only way to lose points is if it is
     clear that not a lot of effort has been put in or you are consistently
     missing milestones.
+
+- Peer Review (5%)
+  - Fill out [this peer review](https://forms.gle/tRxrAPtmcmrBoUvd8) form for all members on your team
 
 ## Tips for Success!
 
