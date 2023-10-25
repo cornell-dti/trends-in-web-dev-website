@@ -31,7 +31,7 @@ Your remaining slip days are still valid for this. The group's allotted slip day
 
 ### Milestone 1
 
-**Due: Oct 23rd, 2023 by 11:59 PM**
+**Due: Nov 1nd, 2023 by 11:59 PM**
 This milestone is primarily focused to allow you to ideate ideas with your team (check out project suggestions for inspiration!). You will meet with your assigned TA for idea approval and roadmapping. Your assigned TA will be your primary point of contact for any trouble you face while working on the project. All our TAs are incredibly kind and supportive so don't feel intimidated!
 
 **Requirements**
@@ -39,7 +39,7 @@ This milestone is primarily focused to allow you to ideate ideas with your team 
 
 ### Milestone 2
 
-**Due: Nov 6th, 2023 by 11:59 PM**
+**Due: Nov 12th, 2023 by 11:59 PM**
 For this milestone, we expect a skeleton of a website. So, by this checkpoint, you should have established your frontend pages and outlined the API routes you plan on implementing in Express. Your frontend and backend should be properly connected and can communicate with one another locally. Again, make sure your TA approves and has checked in with you.
 
 **Requirements**
