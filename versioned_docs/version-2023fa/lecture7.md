@@ -266,4 +266,6 @@ This philosophy helps us prefer real-time queries over Promise-based queries, be
 
 ## Sample code
 
-This week's sample code starter can be found in the files under [this directory](https://github.com/cornell-dti/trends-sp23-lec7-demo).
+This week's sample code starter can be found in the files under [this directory](https://github.com/cornell-dti/trends-fp23-lec7-demo).
+
+[demo solution](https://github.com/michelleli01/trends-lec7-demo-soln)

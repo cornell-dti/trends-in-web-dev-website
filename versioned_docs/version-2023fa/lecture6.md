@@ -108,4 +108,6 @@ Postman is an API platform used for building and using APIs.
 
 ## Sample code
 
-This week's sample code starter can be found in the files under [this directory](TODO).
+This week's sample code starter can be found in the files under [this directory](https://github.com/cornell-dti/fa23-trends-lec6-demo).
+
+[demo solution](https://github.com/michelleli01/trends-fa23-lec6-demo-soln)
