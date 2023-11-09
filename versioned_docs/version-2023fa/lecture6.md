@@ -3,6 +3,8 @@ id: lecture6
 title: Lecture 6
 ---
 
+[Lecture Slides](https://docs.google.com/presentation/u/1/d/1K3KljkgWdJIDIK7sEObq12MTk-AYB6pNJ0GtTaVNFvA/edit)
+
 ## Intro to Express.js
 
 Now that we understand the difference between what we mean by client side programming and server side programming. Our primary focus for the first 4 lectures was client side programming. Now we’re going to dive deeper into server side programming. One tool we can use to create our own server is a framework called Express.js. Express.js is a minimal and flexible web application framework that provides us a set of features to create our own APIs.
