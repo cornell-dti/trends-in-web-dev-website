@@ -118,11 +118,14 @@ This is subject to change.
 
 - Code style and file structure (5%)
 
-- Effort (25%)
+- Effort (10%)
   - This may seem like an arbitrary measure, but we expect most people to
     get most of the points here; the only way to lose points is if it is
     clear that not a lot of effort has been put in or you are consistently
     missing milestones.
+
+- Milestones (15%)
+  - Each milestone is worth 5% of your grade.
 
 - Peer Review (5%)
   - Fill out [this peer review](https://forms.gle/tRxrAPtmcmrBoUvd8) form for all members on your team

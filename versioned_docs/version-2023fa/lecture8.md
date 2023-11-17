@@ -1,13 +1,10 @@
 ---
-id: lecture9
-title: Lecture 9
+id: lecture8
+title: Lecture 8
 ---
 
 [Lecture Slides](https://docs.google.com/presentation/d/1enuaGBnQWxxcU59_qi49vIR1zWhsHd1YsAZV9s2ruT4/edit?usp=sharing)
 
-[Demo Code Supplemental Video](https://drive.google.com/file/d/1C20ap_2kjPkiRsMMKLzADWK4uj6MlPjN/view?usp=sharing)
-
-[Assignment 4](assignment4) **Due 4/30 at 11:59pm**
 
 [Final Project](finalproject)
 
@@ -306,7 +303,7 @@ addDoc(collection(db, 'tasks'), task);
 
 ## Demo code
 
-Feel free to reference our [demo code](https://github.com/michelleli01/trends-sp23-lec9-demo-soln)
+Feel free to reference our [demo code](https://github.com/cornell-dti/trends-fa23-lec8-demo)
 to implement authentication in your final project!
 
-In addition, here is a supplemental video explaining the demo code: [Video Link](https://drive.google.com/file/d/1C20ap_2kjPkiRsMMKLzADWK4uj6MlPjN/view?usp=sharing)
+Here is the [final solution](https://github.com/michelleli01/trends-fa23-lec8-demo-soln) to the in class demo
