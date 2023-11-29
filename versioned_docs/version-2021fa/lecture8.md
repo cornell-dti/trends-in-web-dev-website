@@ -179,7 +179,7 @@ p.then(
   },
   (reason) => {
     // rejection
-  }
+  },
 );
 ```
 
@@ -418,7 +418,7 @@ app.get('/getProducts', async (_, res) => {
     products.docs.map((doc): ProductWithID => {
       const product = doc.data() as Product;
       return { ...product, id: doc.id };
-    })
+    }),
   );
 });
 

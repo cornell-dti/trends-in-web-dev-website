@@ -125,7 +125,7 @@ fetch(
     // Request body (remember to stringify!)
     body: JSON.stringify(requestBody),
     // ... other settings
-  }
+  },
 );
 ```
 
@@ -171,7 +171,7 @@ p.then(
   (reason) => {
     // rejection handler
     console.log('Rejected');
-  }
+  },
 );
 ```
 

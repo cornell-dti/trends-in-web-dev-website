@@ -69,7 +69,7 @@ export default function App() {
     getBatteryLevelAsync().then(setBattery);
     // subscribe to battery level to keep it in sync
     const listener = addBatteryLevelListener((event) =>
-      setBattery(event.batteryLevel)
+      setBattery(event.batteryLevel),
     );
     // remove the subscription after unmounting
     return listener.remove;

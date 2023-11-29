@@ -659,7 +659,7 @@ function Parent({ data }) {
     (index) => {
       console.log(data[index]);
     },
-    [data]
+    [data],
   );
 
   return <Child onClick={handleClick} />;

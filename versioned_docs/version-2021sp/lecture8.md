@@ -175,7 +175,7 @@ p.then(
   },
   (reason) => {
     // rejection
-  }
+  },
 );
 ```
 
@@ -415,7 +415,7 @@ app.get('/getProducts', async (_, res) => {
     products.docs.map((doc): ProductWithID => {
       const product = doc.data() as Product;
       return { ...product, id: doc.id };
-    })
+    }),
   );
 });
 
@@ -518,11 +518,11 @@ const ProductTable = ({ products, filterText, inStockOnly }: Props) => {
         <ProductCategoryRow
           category={product.category}
           key={product.category}
-        />
+        />,
       );
     }
     rows.push(
-      <ProductRow key={product.name} product={product} products={products} />
+      <ProductRow key={product.name} product={product} products={products} />,
     );
     lastCategory = product.category;
   });
