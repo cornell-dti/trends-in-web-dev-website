@@ -5,7 +5,6 @@ title: Lecture 8
 
 [Lecture Slides](https://docs.google.com/presentation/d/1enuaGBnQWxxcU59_qi49vIR1zWhsHd1YsAZV9s2ruT4/edit?usp=sharing)
 
-
 [Final Project](finalproject)
 
 ## Authentication
@@ -282,7 +281,7 @@ const { user } = useAuth();
 
 const taskQuery = query(
   collection(db, 'tasks'),
-  where('owner', '==', user!.uid)
+  where('owner', '==', user!.uid),
 );
 ```
 

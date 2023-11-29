@@ -35,6 +35,7 @@ Your remaining slip days are still valid for this. The group's allotted slip day
 This milestone is primarily focused to allow you to ideate ideas with your team (check out project suggestions for inspiration!). You will meet with your assigned TA for idea approval and roadmapping. Your assigned TA will be your primary point of contact for any trouble you face while working on the project. All our TAs are incredibly kind and supportive so don't feel intimidated!
 
 **Requirements**
+
 - Text document detailing project idea and road map (make sure this has been approved by your TA)
 
 ### Milestone 2
@@ -43,6 +44,7 @@ This milestone is primarily focused to allow you to ideate ideas with your team 
 For this milestone, we expect a skeleton of a website. So, by this checkpoint, you should have established your frontend pages and outlined the API routes you plan on implementing in Express. Your frontend and backend should be properly connected and can communicate with one another locally. Again, make sure your TA approves and has checked in with you.
 
 **Requirements**
+
 - Frontend UI (at least 3 pages)
 - Express API & server that supports HTTP requests
   - at least one of each HTTP request type (`GET`, `POST`, `PUT`, `DELETE`)
@@ -54,6 +56,7 @@ For this milestone, we expect a skeleton of a website. So, by this checkpoint, y
 For this milestone, you should have fully functioning prototype with maybe some minor bugs and getting your web application ready to be deployed. This is your final TA check in.
 
 **Requirements**
+
 - Frontend UI (at least 3 pages)
 - Express API & server that supports HTTP requests
   - at least one of each HTTP request type (`GET`, `POST`, `PUT`, `DELETE`)
@@ -66,8 +69,18 @@ For this milestone, you should have fully functioning prototype with maybe some 
 Submit your final work! Great job and we're all excited for demo day!!
 **Make sure to fill out [this peer review](https://forms.gle/tRxrAPtmcmrBoUvd8) form for all members on your team**
 
-#### FINAL PRESENTATION DAY: December 4th, 2023 (Time and Location TBA)
+#### FINAL PRESENTATION DAY: December 5th, 2023 1-2PM Upson 222
 
+**Requirements**
+
+Please prepare to present a demo that is approximately **5 minutes**. Please also include information regarding
+
+- A feature you are really proud of
+- Something you learned in creating this project
+- Something you would like to improve upon if you were to continue working on the project
+
+Completing your first full-stack web development project is something worth celebrating! If you are in a group, please try to have all members present. We are excited to see all of your presentations! If there are any questions or concerns,
+reach out to Michelle, Daniel, and Sarah.
 
 :::tip
 Need help? Come to [office hours](/docs/2023sp/introduction) and we can help you debug. Also feel free to post questions on Ed!
@@ -119,12 +132,14 @@ This is subject to change.
 - Code style and file structure (5%)
 
 - Effort (10%)
+
   - This may seem like an arbitrary measure, but we expect most people to
     get most of the points here; the only way to lose points is if it is
     clear that not a lot of effort has been put in or you are consistently
     missing milestones.
 
 - Milestones (15%)
+
   - Each milestone is worth 5% of your grade.
 
 - Peer Review (5%)

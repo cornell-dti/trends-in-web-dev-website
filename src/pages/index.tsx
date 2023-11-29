@@ -60,7 +60,7 @@ export default () => {
               <Link
                 className={clsx(
                   'button button--primary button--lg',
-                  styles.getStarted
+                  styles.getStarted,
                 )}
                 to={useBaseUrl('docs/introduction')}
               >

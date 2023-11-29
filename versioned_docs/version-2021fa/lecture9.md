@@ -367,7 +367,7 @@ const createProduct = async () => {
           authorization: idToken,
         },
         body: JSON.stringify(newProduct),
-      })
+      }),
     )
     .then((res) => res.text())
     .then((data) => {
@@ -442,7 +442,7 @@ app.get('/getProducts', async (_, res) => {
     products.docs.map((doc): ProductWithID => {
       const product = doc.data() as Product;
       return { ...product, id: doc.id };
-    })
+    }),
   );
 });
 
@@ -514,10 +514,10 @@ config();
 const serviceAccountPath = './firebase-adminsdk.json';
 
 const hydrateServiceAccount = (
-  serviceAccountPath: string
+  serviceAccountPath: string,
 ): admin.ServiceAccount => {
   const serviceAccount = JSON.parse(
-    readFileSync(serviceAccountPath).toString()
+    readFileSync(serviceAccountPath).toString(),
   );
   const privateKey = process.env.FIREBASE_PRIVATE_KEY?.replace(/\\n/g, '\n');
   return { ...serviceAccount, privateKey };

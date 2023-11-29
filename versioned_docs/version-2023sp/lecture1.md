@@ -847,10 +847,10 @@ With nested ternary operators, we can take care of many possible cases with surp
 condition1
   ? trueValue1
   : condition2
-  ? trueValue2
-  : condition3
-  ? trueValue3
-  : falseValue;
+    ? trueValue2
+    : condition3
+      ? trueValue3
+      : falseValue;
 ```
 
 Some syntactic sugar operators include `??` (nullish coalescing) and `||` (logical OR). These operators are used to assign a value to a variable if the variable is nullish or falsy, respectively. For example:

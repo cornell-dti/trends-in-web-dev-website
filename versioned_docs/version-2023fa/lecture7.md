@@ -5,7 +5,6 @@ title: Lecture 7
 
 [Lecture Slides](https://docs.google.com/presentation/d/1D_WsOfPfHNKNirbX5L2KtbdP5kANpshhXtGGUlZRtMQ/edit?usp=sharing)
 
-
 ## Intro to Databases and Firebase
 
 A lot of the apps we have been making work and maintain states throughout the
