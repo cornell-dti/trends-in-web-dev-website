@@ -66,7 +66,16 @@ For this milestone, you should have fully functioning prototype with maybe some 
 Submit your final work! Great job and we're all excited for demo day!!
 **Make sure to fill out [this peer review](https://forms.gle/tRxrAPtmcmrBoUvd8) form for all members on your team**
 
-#### FINAL PRESENTATION DAY: December 4th, 2023 (Time and Location TBA)
+#### FINAL PRESENTATION DAY: December 5th, 2023 1-2PM Upson 222
+**Requirements**
+
+Please prepare to present a demo that is approximately **5 minutes**. Please also include information regarding
+- A feature you are really proud of
+- Something you learned in creating this project
+- Something you would like to improve upon if you were to continue working on the project
+
+Completing your first full-stack web development project is something worth celebrating! If you are in a group, please try to have all members present. We are excited to see all of your presentations! If there are any questions or concerns,
+reach out to Michelle, Daniel, and Sarah.
 
 
 :::tip
