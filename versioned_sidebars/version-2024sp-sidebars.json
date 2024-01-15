@@ -1,0 +1,44 @@
+{
+  "docs": {
+    "Getting Started": [
+      {
+        "type": "doc",
+        "id": "version-2024sp/introduction"
+      },
+      {
+        "type": "doc",
+        "id": "version-2024sp/setup-environment"
+      },
+      {
+        "type": "doc",
+        "id": "version-2024sp/setup-editor"
+      }
+    ],
+    "Assignments": [
+      {
+        "type": "doc",
+        "id": "version-2024sp/assignments"
+      },
+      {
+        "type": "doc",
+        "id": "version-2024sp/assignment1"
+      },
+      {
+        "type": "doc",
+        "id": "version-2024sp/assignment2"
+      },
+      {
+        "type": "doc",
+        "id": "version-2024sp/assignment3"
+      },
+      {
+        "type": "doc",
+        "id": "version-2024sp/assignment4"
+      },
+      {
+        "type": "doc",
+        "id": "version-2024sp/finalproject"
+      }
+    ]
+  }
+}
