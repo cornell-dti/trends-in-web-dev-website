@@ -27,7 +27,7 @@ a reasonable way.
 
 Your remaining slip days are still valid for this. The group's allotted slip days is the max of your group members'. **You are allowed to use at most 3 slip days per each of Milestones 1 and 2.**
 
-Information regarding milestones will be updated at a later time. 
+Information regarding milestones will be updated at a later time.
 
 #### Due: April 29 by 11:59 PM (no slip days)
 
@@ -69,6 +69,7 @@ For this milestone, you should have fully functioning prototype with maybe some 
 
 **Due: April 29 by 11:59 PM**
 Submit your final work! Great job and we're all excited for demo day!!
+
 <!-- **Make sure to fill out [this peer review](https://forms.gle/tRxrAPtmcmrBoUvd8) form for all members on your team** -->
 
 #### FINAL PRESENTATION DAY: May 1st, 2024 7:30pm to 8:45pm Hollister 110

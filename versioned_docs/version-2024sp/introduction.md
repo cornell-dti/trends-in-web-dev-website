@@ -25,7 +25,6 @@ Email: [sy398@cornell.edu](sy398@cornell.edu)
 
 Email: [tpp38@cornell.edu](tpp38@cornell.edu)
 
-
 ### Office Hours Schedule
 
 TBD
@@ -92,18 +91,18 @@ We highly recommend that you have a computer capable of running a modern web bro
 
 Assignments are released after each lecture! There are 5 assignments total, which includes a final project spanning the last few weeks of the class.
 
-You are allowed max 3 slip days (out of 6 total for all assignments and the final project) per an assignment. 
+You are allowed max 3 slip days (out of 6 total for all assignments and the final project) per an assignment.
 **Please note that you are NOT allowed to use slip days for the final submission of the final project.**
 
 The class is scheduled to finish well before finals week.
 
-| Assignment   | Topic                   | Due Date                 |
-| ------------ | ----------------------- | ------------------------ |
-| Assignment 1 | JavaScript Fundamentals | Feb 29 by 11:59pm        |
-| Assignment 2 | TypeScript Fundamentals | Mar 7 by 11:59pm         |
-| Assignment 3 | React Fundamentals      | Mar 21 by 11:59pm        |
-| Assignment 4 | Frontend Capstone       | Apr 11 by 11:59pm        |
-| Assignment 5 | Final Project           | Apr 29 by 11:59pm        | 
+| Assignment   | Topic                   | Due Date          |
+| ------------ | ----------------------- | ----------------- |
+| Assignment 1 | JavaScript Fundamentals | Feb 29 by 11:59pm |
+| Assignment 2 | TypeScript Fundamentals | Mar 7 by 11:59pm  |
+| Assignment 3 | React Fundamentals      | Mar 21 by 11:59pm |
+| Assignment 4 | Frontend Capstone       | Apr 11 by 11:59pm |
+| Assignment 5 | Final Project           | Apr 29 by 11:59pm |
 
 More details regarding the final project will be released upon starting the course.
 
