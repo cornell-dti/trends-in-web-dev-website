@@ -10,10 +10,10 @@ title: Lecture 9
 # Quick Announcements
 
 - Final Project Demonstration
-    - Tuesday 12/5 12:30 – 2:00pm
-    - Location: Upson 222
-    - Demo required (5 minutes max)
-    - Presentation optional
+  - Tuesday 12/5 12:30 – 2:00pm
+  - Location: Upson 222
+  - Demo required (5 minutes max)
+  - Presentation optional
 
 # Containerization Concepts
 
