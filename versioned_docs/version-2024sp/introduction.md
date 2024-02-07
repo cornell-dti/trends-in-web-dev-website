@@ -37,7 +37,7 @@ TBD
 
 This course meets once a week for 9 weeks for a total of 9 lectures.
 
-We will meet weekly on Wednesdays, from **7:30pm to 8:45pm** in **Hollister 110**. The start of the class will TENTATIVELY start on **Wednesday, February 14**.
+We will meet weekly on Wednesdays, from **7:30pm to 8:20pm** in **Hollister 110**. The start of the class will TENTATIVELY start on **Wednesday, February 19**.
 
 <!-- **You can find our course calendar with lecture dates and times, TA office hours with locations, and assignment due dates at [this](https://calendar.google.com/calendar/u/0?cid=Y18zMTljZjYyZmI1MTA4MTk4NDkxM2FmMGFiMTIyYWFkNzE1YTVjNjVlNDg0Nzk1YWFjYTY4OTFiNGUxMTZlOWQ0QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20) Google Calendar link.** -->
 
@@ -98,11 +98,11 @@ The class is scheduled to finish well before finals week.
 
 | Assignment   | Topic                   | Due Date          |
 | ------------ | ----------------------- | ----------------- |
-| Assignment 1 | JavaScript Fundamentals | Feb 29 by 11:59pm |
-| Assignment 2 | TypeScript Fundamentals | Mar 7 by 11:59pm  |
-| Assignment 3 | React Fundamentals      | Mar 21 by 11:59pm |
-| Assignment 4 | Frontend Capstone       | Apr 11 by 11:59pm |
-| Assignment 5 | Final Project           | Apr 29 by 11:59pm |
+| Assignment 1 | JavaScript Fundamentals | Mar 4 by 11:59pm  |
+| Assignment 2 | TypeScript Fundamentals | Mar 11 by 11:59pm |
+| Assignment 3 | React Fundamentals      | Mar 25 by 11:59pm |
+| Assignment 4 | Frontend Capstone       | Apr 8 by 11:59pm  |
+| Assignment 5 | Final Project           | May 4 by 11:59pm  |
 
 More details regarding the final project will be released upon starting the course.
 
