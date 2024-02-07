@@ -14,6 +14,12 @@
         "id": "version-2024sp/setup-editor"
       }
     ],
+    "Lectures": [
+      {
+        "type": "doc",
+        "id": "version-2024sp/unit1"
+      }
+    ],
     "Assignments": [
       {
         "type": "doc",
