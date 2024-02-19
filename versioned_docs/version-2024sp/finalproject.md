@@ -29,7 +29,7 @@ Your remaining slip days are still valid for this. The group's allotted slip day
 
 Information regarding milestones will be updated at a later time.
 
-#### Due: April 29 by 11:59 PM (no slip days)
+#### Due: May 4 by 11:59 PM (no slip days)
 
 <!-- ### Milestone 1
 

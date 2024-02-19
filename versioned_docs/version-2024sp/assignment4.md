@@ -5,7 +5,7 @@ title: Assignment 4
 
 # Assignment
 
-## Due Apr 11 at 11:59pm
+## Due Apr 8 at 11:59pm
 
 Run the following command in an appropriate folder on your system:
 
