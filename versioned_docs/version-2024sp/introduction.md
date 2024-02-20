@@ -37,7 +37,7 @@ TBD
 
 This course meets once a week for 9 weeks for a total of 9 lectures.
 
-We will meet weekly on Mondays, from **7:30pm to 8:20pm** in **Hollister 110**. The start of the class will TENTATIVELY start on **Monday, February 19**.
+We will meet weekly on Mondays, from **7:30pm to 8:45pm** in **Hollister 110**. The start of the class will TENTATIVELY start on **Monday, February 19**.
 
 <!-- **You can find our course calendar with lecture dates and times, TA office hours with locations, and assignment due dates at [this](https://calendar.google.com/calendar/u/0?cid=Y18zMTljZjYyZmI1MTA4MTk4NDkxM2FmMGFiMTIyYWFkNzE1YTVjNjVlNDg0Nzk1YWFjYTY4OTFiNGUxMTZlOWQ0QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20) Google Calendar link.** -->
 
