@@ -293,6 +293,6 @@ Check out Postman to send API requests! [Here](https://www.postman.com/)
 ## Live Demo Material
 
 You can get the starter code for the live demo by running:
-`yarn create next-app --typescript --example "https://github.com/cornell-dti/trends-sp23-lec6-demo" YOUR_DIR_NAME`
+`yarn create next-app --typescript --example "https://github.com/cornell-dti/trends-sp24-lec5-demo" YOUR_DIR_NAME`
 
 (Replace YOUR_DIR_NAME with whatever you want to name your directory!)
