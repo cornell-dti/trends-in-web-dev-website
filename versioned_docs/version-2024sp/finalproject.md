@@ -25,15 +25,11 @@ we've seen in the past that might help you get started!
 The project will be divided into a number of milestones to help you progress in
 a reasonable way.
 
-Your remaining slip days are still valid for this. The group's allotted slip days is the max of your group members'. **You are allowed to use at most 3 slip days per each of Milestones 1 and 2.**
+Your remaining slip days are still valid for this. The group's allotted slip days is the max of your group members'. **You are allowed to use at most 3 slip days per each of Milestones 1, 2, 2.5.**
 
-Information regarding milestones will be updated at a later time.
+### Milestone 1
 
-#### Due: May 4 by 11:59 PM (no slip days)
-
-<!-- ### Milestone 1
-
-**Due: Nov 1nd, 2023 by 11:59 PM**
+**Due: April 12th, 2024 by 11:59 PM**
 This milestone is primarily focused to allow you to ideate ideas with your team (check out project suggestions for inspiration!). You will meet with your assigned TA for idea approval and roadmapping. Your assigned TA will be your primary point of contact for any trouble you face while working on the project. All our TAs are incredibly kind and supportive so don't feel intimidated!
 
 **Requirements**
@@ -42,7 +38,7 @@ This milestone is primarily focused to allow you to ideate ideas with your team 
 
 ### Milestone 2
 
-**Due: Nov 12th, 2023 by 11:59 PM**
+**Due: April 22nd, 2024 by 11:59 PM**
 For this milestone, we expect a skeleton of a website. So, by this checkpoint, you should have established your frontend pages and outlined the API routes you plan on implementing in Express. Your frontend and backend should be properly connected and can communicate with one another locally. Again, make sure your TA approves and has checked in with you.
 
 **Requirements**
@@ -52,9 +48,9 @@ For this milestone, we expect a skeleton of a website. So, by this checkpoint, y
   - at least one of each HTTP request type (`GET`, `POST`, `PUT`, `DELETE`)
   - full implementation is not necessary, we just want to see the outline of each route function
 
-### Milestone 3
+### Milestone 2.5
 
-**Due: Nov 27th, 2023 by 11:59 PM**
+**Due: May 4th, 2024 by 11:59 PM (No slip days allowed for this check-in)**
 For this milestone, you should have fully functioning prototype with maybe some minor bugs and getting your web application ready to be deployed. This is your final TA check in.
 
 **Requirements**
@@ -63,16 +59,15 @@ For this milestone, you should have fully functioning prototype with maybe some 
 - Express API & server that supports HTTP requests
   - at least one of each HTTP request type (`GET`, `POST`, `PUT`, `DELETE`)
   - full implementation should be completed here with proper read/write functonality to your Firebase database
-- Authentication -->
+- Authentication
 
 ### Final Project
 
-**Due: April 29 by 11:59 PM**
+**Due: May 4th, 2024 by 11:59 PM**
 Submit your final work! Great job and we're all excited for demo day!!
+**Make sure to fill out this peer review form (TBD) for all members on your team**
 
-<!-- **Make sure to fill out [this peer review](https://forms.gle/tRxrAPtmcmrBoUvd8) form for all members on your team** -->
-
-#### FINAL PRESENTATION DAY: May 1st, 2024 7:30pm to 8:45pm Hollister 110
+#### FINAL PRESENTATION DAY (in-class): May 6th, 2024
 
 **Requirements**
 
@@ -86,7 +81,7 @@ Completing your first full-stack web development project is something worth cele
 reach out to Michelle, Daniel, and Sarah.
 
 :::tip
-Need help? Come to [office hours](/docs/2023sp/introduction) and we can help you debug. Also feel free to post questions on Ed!
+Need help? Come to [office hours](/docs/2024sp/introduction) and we can help you debug. Also feel free to post questions on Ed!
 :::
 
 :::danger
@@ -141,13 +136,12 @@ This is subject to change.
     clear that not a lot of effort has been put in or you are consistently
     missing milestones.
 
-- Milestones + Final Presentation (15%)
+- Milestones (15%)
 
   - Each milestone is worth 5% of your grade.
-  - Attending the final presentation is worth 5% of your grade.
 
 - Peer Review (5%)
-  - Fill out [this peer review](https://forms.gle/tRxrAPtmcmrBoUvd8) form for all members on your team
+  - Fill out this peer review form (TBD) for all members on your team
 
 ## Tips for Success!
 
