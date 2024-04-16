@@ -294,10 +294,10 @@ const db = getFirestore();
 export { db };
 ```
 
- 6. Import `db` wherever you need to interact with the database!
+6. Import `db` wherever you need to interact with the database!
 
- ``` typescript
- import { db } from "./firebase";
- ```
+``` typescript
+import { db } from "./firebase";
+```
 
 
