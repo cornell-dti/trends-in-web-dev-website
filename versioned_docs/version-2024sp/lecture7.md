@@ -255,3 +255,49 @@ This philosophy helps us prefer real-time queries over Promise-based queries, be
 This week's sample code starter can be found in the files under [this directory](https://github.com/cornell-dti/trends-fa23-lec7-demo).
 
 [demo solution](https://github.com/michelleli01/trends-lec7-demo-soln)
+
+## Instruction to connect Firebase with demo code
+
+### Create new Firebase webapp and database
+1. Login to [Firebase Console](https://console.firebase.google.com/u/2/) and _Add project_:
+- Add desired name for the project (ex: `trends-demo`)
+- Turn off Google Analytics for simplicity (can manually integrate later)
+2. Create new Webapp:
+- On landing page, click web icon (`</>`) OR click _Add app_ to create new webapp
+- Choose app nickname (ex: `lec7-demo`) then register
+- Use default choice in _Add Firebase SDK_ then continue to console
+3. Create new Database:
+- On left sidebar, under _Product categories_, expand _Build_, then choose _Firestore Database_
+- Click _Create database_, choose location in _United States_
+- Start in **test mode** (allow anyone to read and write, need to be changed when deployed)
+- Add some data to database for testing (collection -> document -> data fields)
+
+### Connect your codebase to Firebase
+  This guideline specifically refers to this lecture's demo code
+
+1. On left sidebar, click Setting icon (next to _Project Overview_), then _Project settings_
+2. Choose _Service accounts_ tab, then _Generate new private key_ (do not expose this key on internet - ex: Git, each of the team members need to generate separate private key themselves)
+3. Move the newly downloaded json file to your project backend folder (`server`), then rename it to `service_account.json`
+4. Add `service_account.json` to your `.gitignore` (in your root folder)
+5. Modify your `server/firebase.ts` to get database as bellow:
+
+```typescript
+import { initializeApp, applicationDefault, cert } from "firebase-admin/app";
+import { getFirestore } from "firebase-admin/firestore";
+import serviceAccount from "./service_account.json";
+
+const app = initializeApp({
+  credential: cert(serviceAccount),
+});
+const db = getFirestore();
+
+export { db };
+```
+
+ 6. Import `db` wherever you need to interact with the database!
+
+ ``` typescript
+ import { db } from "./firebase";
+ ```
+
+
