@@ -65,7 +65,7 @@ For this milestone, you should have fully functioning prototype with maybe some 
 
 **Due: May 4th, 2024 by 11:59 PM**
 Submit your final work! Great job and we're all excited for demo day!!
-**Make sure to fill out this peer review form (TBD) for all members on your team**
+**Make sure to fill out this [Peer review Form](https://forms.gle/yV834xgC4SuRSvEW9) for all members on your team**
 
 #### FINAL PRESENTATION DAY (in-class): May 6th, 2024
 
@@ -90,7 +90,7 @@ Do not push private API keys, Firebase service accounts, or other sensitive info
 Note that firebase configs for the frontend are fine (and **should be**) included in your submission.
 :::
 
-Submit a zip file of your project to CMSX by the deadline!
+Submit a zip file of your project to CMSX and fill out this [Final Project Link](https://forms.gle/DKrJwevzCmtCkNSF9) by the deadline!
 
 ## Optional Extensions
 
@@ -141,7 +141,7 @@ This is subject to change.
   - Each milestone is worth 5% of your grade.
 
 - Peer Review (5%)
-  - Fill out this peer review form (TBD) for all members on your team
+  - Fill out this [Peer Review Form](https://forms.gle/yV834xgC4SuRSvEW9) for all members on your team
 
 ## Tips for Success!
 
