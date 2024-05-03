@@ -67,7 +67,7 @@ For this milestone, you should have fully functioning prototype with maybe some 
 Submit your final work! Great job and we're all excited for demo day!!
 **Make sure to fill out this [Peer review Form](https://forms.gle/yV834xgC4SuRSvEW9) for all members on your team**
 
-#### FINAL PRESENTATION DAY (in-class): May 6th, 2024
+#### FINAL PRESENTATION DAY: May 6th, 2024 (7:30PM) in Rhodes 655
 
 **Requirements**
 

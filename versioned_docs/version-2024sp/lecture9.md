@@ -11,7 +11,7 @@ title: Lecture 9
 
 - Final Project Demonstration
   - Monday 5/6 7:30 - 8:45 PM
-  - Location: TBD (We will post announcement on Ed)
+  - Location: Rhodes 655
   - Attendance of your whole team is required!
   - Structure of the demo day:
     - Each team will be assigned a personal table to demo your project.
