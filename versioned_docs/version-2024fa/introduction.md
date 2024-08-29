@@ -31,7 +31,7 @@ This course meets once a week for 9 weeks for a total of 9 lectures.
 
 We will meet weekly on Mondays, from **7:30pm to 8:45pm** in **Upson 216**. The start of the class will TENTATIVELY start on **Wednesday, September 25**.
 
-\*\*You can find our course calendar with lecture dates and times, TA office hours with locations, and assignment due dates at [this](https://calendar.google.com/calendar/u/1?cid=Y183OTJmZmZmM2E3OWNjYTI2M2UwNTE2OTNmZDQ0YjlmMDI1NGQ4Y2JjYjk5YzUwODcxMmJkYmNhNDQ4YjMyODdlQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20) Google Calendar link.
+<!-- \*\*You can find our course calendar with lecture dates and times, TA office hours with locations, and assignment due dates at [this](https://calendar.google.com/calendar/u/1?cid=Y183OTJmZmZmM2E3OWNjYTI2M2UwNTE2OTNmZDQ0YjlmMDI1NGQ4Y2JjYjk5YzUwODcxMmJkYmNhNDQ4YjMyODdlQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20) Google Calendar link. -->
 
 ## Course Description
 
@@ -51,7 +51,7 @@ However, we _highly_ recommend that you have taken CS 1110, or have equivalent p
 
 ## Course Application
 
-Apply [here](https://forms.gle/qJ43gEPByvg2Myfv8) by **September 23rd at Noon (12pm)**. It includes a general information questionnaire so we have the information necessary for enrollment, as well as a preassessment you must complete (see Pre-Course Assessment below).
+Apply [here](https://forms.gle/kSq5Dcwt85VHx4eT6) by **September 23rd at Noon (12pm)**. It includes a general information questionnaire so we have the information necessary for enrollment, as well as a preassessment you must complete (see Pre-Course Assessment below).
 
 We will be distributing enrollment/permission pins soon after the application period closes.
 
@@ -61,7 +61,7 @@ Please complete the pre-assessment [here](https://webdev.cornelldti.org/assets/f
 less than an hour! This is not meant as a test, but rather a way of ensuring
 that you are familiar with the foundational material in the course.
 
-Upload your submissions as a zip to your application [here](https://forms.gle/qJ43gEPByvg2Myfv8).
+Upload your submissions as a zip to your application [here](https://forms.gle/kSq5Dcwt85VHx4eT6).
 
 **This preassessment is mandatory; those who do not submit it will not be admitted in the course.**
 
