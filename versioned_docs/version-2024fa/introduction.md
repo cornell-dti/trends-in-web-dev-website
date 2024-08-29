@@ -29,7 +29,7 @@ TBD
 
 This course meets once a week for 9 weeks for a total of 9 lectures.
 
-We will meet weekly on Mondays, from **7:30pm to 8:45pm** in **Upson 216**. The start of the class will TENTATIVELY start on **Wednesday, September 25**.
+We will meet weekly on Wednesdays, from **7:30pm to 8:45pm** in **Upson 216**. The start of the class will TENTATIVELY start on **Wednesday, September 25**.
 
 <!-- \*\*You can find our course calendar with lecture dates and times, TA office hours with locations, and assignment due dates at [this](https://calendar.google.com/calendar/u/1?cid=Y183OTJmZmZmM2E3OWNjYTI2M2UwNTE2OTNmZDQ0YjlmMDI1NGQ4Y2JjYjk5YzUwODcxMmJkYmNhNDQ4YjMyODdlQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20) Google Calendar link. -->
 
