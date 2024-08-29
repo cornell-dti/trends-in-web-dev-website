@@ -4,7 +4,19 @@
       {
         "type": "doc",
         "id": "version-2024fa/introduction"
+      },
+      {
+        "type": "doc",
+        "id": "version-2024fa/setup-editor"
+      },
+      {
+        "type": "doc",
+        "id": "version-2024fa/setup-environment"
       }
+    ],
+    "Lectures": [
+    ],
+    "Assignments": [
     ]
   }
 }
