@@ -11,22 +11,32 @@ Go to [this website](https://nodejs.org/en/download/) and follow the instruction
 
 For consistency, please use the latest Node LTS (currently, as of Fall 2023, this is Node 18).
 
-## Install Additional Packages
+## Install Additional Package
 
-We will be using a few additional packages to help us with development.
-
-#### Deno
-
-Deno is a drop-in replacement for Node that's faster, more secure, and critically -- supports TypeScript out of the box. We use it for its "REPL" (Read-Eval-Print-Loop) functionality, which allows us to run TypeScript code interactively during demos in class. Install it if you want to follow along with the demos.
-
-[Instructions](https://deno.land/manual@v1.36.1/getting_started/installation)
+We will be using an additional package manager to help us with development.
 
 #### Pnpm
 
-Pnpm is a package manager that is faster and more efficient than the default `npm` package manager.
+Pnpm is a package manager that is faster and more efficient than the default `npm` package manager. (It caches everything.)
 
 ```bash
 npm install -g pnpm
+```
+
+## REPL
+
+To be able to follow along with / later try out the demos in class, you'll need a REPL (Read-Eval-Print-Loop). We just use Node for this.
+
+The command you can run to enter Node in REPL mode is:
+
+```bash
+node
+```
+
+We highly recommend adding a flag to get rid of extra `undefined`s at the end of all lines.
+
+```bash
+node -e "require('repl').start({ignoreUndefined: true})"
 ```
 
 ## Making a React Project

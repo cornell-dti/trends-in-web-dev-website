@@ -25,9 +25,11 @@ Email: cc2785@cornell.edu
 
 Email: sci24@cornell.edu
 
+We also have four amazing TAs — Oscar Wang (ow39@cornell.edu), Kevin Ram (kmr232@cornell.edu), Hannah Zhou (hyz4@cornell.edu), and Andrew Qian (ajq22@cornell.edu).
+
 ### Office Hours Schedule
 
-TBD
+Pending School Administration Approval — check back here or on the website soon.
 
 ## Credits and Credit Hour Options
 
@@ -114,11 +116,10 @@ First, we will determine your numerical grade. This will be done by the followin
 
 | Assignment           | Percentage of Grade                                                    |
 | -------------------- | ---------------------------------------------------------------------- |
-| Attendance           | 20% (based on weekly lecture quizzes, can miss 1 of 9 without penalty) |
+| Attendance           | 20% (based on weekly lecture forms, can miss 1 of 9 without penalty) |
 | Filling out Feedback | 10%                                                                    |
 | Final Project        | 30%                                                                    |
 | Assignments          | 40%                                                                    |
-|                      |
 
 Your final grade will be determined by your numerical grade calculated above:
 
