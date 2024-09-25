@@ -15,7 +15,15 @@ Learn to build and deploy scalable, modern full-stack web applications using bes
 
 Email: [kyle.harms@cornell.edu](mailto:kyle.harms@cornell.edu)
 
-## Instructors: TBD
+## Instructors: 
+
+**Chris Chen** 
+
+Email: cc2785@cornell.edu
+
+**Simon Illincev** 
+
+Email: sci24@cornell.edu
 
 ### Office Hours Schedule
 
@@ -29,7 +37,7 @@ TBD
 
 This course meets once a week for 9 weeks for a total of 9 lectures.
 
-We will meet weekly on Wednesdays, from **7:30pm to 8:45pm** in **Upson 216**. The start of the class will TENTATIVELY start on **Wednesday, September 25**.
+We will meet weekly on Wednesdays, from **7:30pm to 8:45pm** in **Upson 222**. The start of the class will start on **Wednesday, September 25**.
 
 <!-- \*\*You can find our course calendar with lecture dates and times, TA office hours with locations, and assignment due dates at [this](https://calendar.google.com/calendar/u/1?cid=Y183OTJmZmZmM2E3OWNjYTI2M2UwNTE2OTNmZDQ0YjlmMDI1NGQ4Y2JjYjk5YzUwODcxMmJkYmNhNDQ4YjMyODdlQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20) Google Calendar link. -->
 
@@ -51,7 +59,7 @@ However, we _highly_ recommend that you have taken CS 1110, or have equivalent p
 
 ## Course Application
 
-Apply [here](https://forms.gle/kSq5Dcwt85VHx4eT6) by **September 23rd at Noon (12pm)**. It includes a general information questionnaire so we have the information necessary for enrollment, as well as a preassessment you must complete (see Pre-Course Assessment below).
+Apply [here](https://forms.gle/kSq5Dcwt85VHx4eT6) by **September 24th at Noon (12pm)**. It includes a general information questionnaire so we have the information necessary for enrollment, as well as a preassessment you must complete (see Pre-Course Assessment below).
 
 We will be distributing enrollment/permission pins soon after the application period closes.
 
