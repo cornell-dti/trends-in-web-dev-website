@@ -15,8 +15,20 @@
       }
     ],
     "Lectures": [
+      {
+        "type": "doc",
+        "id": "version-2024fa/unit1"
+      }
     ],
     "Assignments": [
+      {
+        "type": "doc",
+        "id": "version-2024fa/assignments"
+      },
+      {
+        "type": "doc",
+        "id": "version-2024fa/assignment1"
+      }
     ]
   }
 }

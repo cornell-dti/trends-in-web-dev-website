@@ -7,7 +7,7 @@
         { "label": "Introduction", "to": "docs/introduction" },
         { "label": "Setup Environment", "to": "docs/setup-environment" },
         { "label": "Setup Editor", "to": "docs/setup-editor" },
-        { "label": "First Lecture", "to": "docs/lecture1" }
+        { "label": "First Lecture", "to": "docs/unit1" }
       ]
     },
     {
