@@ -11,7 +11,7 @@ Homework: HW1 and HW2, due Oct 2 and Oct 9 respectively.
 
 Slides: [Here](https://docs.google.com/presentation/d/1TcfC6hFcqD-eYZLPfd-UAeheqhL0gRnzhpsw04_beOY/edit?usp=sharing)
 
-Demos: will be shared on a GitHub repo shortly
+Demos: [Here, under demos](https://github.com/cornell-dti/trends-mono-fa24/tree/main/demos)
 
 ## JavaScript
 

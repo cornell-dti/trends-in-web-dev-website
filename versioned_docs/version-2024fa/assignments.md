@@ -33,13 +33,13 @@ If you're trying to create a new frontend React project on your own, `cd` into a
 The following command creates an incredibly simple React project:
 
 ```bash
-pnpm dlx degit cornell-dti/trends-mono/frontend-starter your-project-name
+pnpm dlx degit cornell-dti/trends-mono-fa24/frontend-starter your-project-name
 ```
 
 The following command creates a more advanced React project with a component library, icons, and routing built in for you:
 
 ```bash
-pnpm dlx degit cornell-dti/trends-mono/frontend-starter-advanced your-project-name
+pnpm dlx degit cornell-dti/trends-mono-fa24/frontend-starter-advanced your-project-name
 ```
 
 Note that neither of these projects include a backend!
