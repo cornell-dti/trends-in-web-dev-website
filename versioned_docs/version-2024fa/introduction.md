@@ -29,7 +29,18 @@ We also have four amazing TAs — Oscar Wang (ow39@cornell.edu), Kevin Ram (kmr2
 
 ### Office Hours Schedule
 
-Pending School Administration Approval — check back here or on the website soon.
+The instructor and TA office hours schedule is as follows:
+
+- Chris Chen: Thursdays 9:30am-10:30am in Phillips Hall 318
+- Simon Ilincev: Thursdays 6pm-7pm in Goldwin Smith 158
+- Oscar Wang: Saturdays 10am-11am in Upson 146
+- Kevin Ram: Monday 12pm-1pm in Hollister 362
+- Hannah Zhou: Wednesday 12-1pm in TBD (TBC)
+- Andrew Qian: Tuesdays 5pm-6pm in TBD (TBC)
+
+For TBD / TBC we are still pending school approval, please check back later, check EdStem, or email the TAs.
+
+Please note that some schedules may be subject to change; always check the latest announcements or the course website for the most up-to-date information.
 
 ## Credits and Credit Hour Options
 
