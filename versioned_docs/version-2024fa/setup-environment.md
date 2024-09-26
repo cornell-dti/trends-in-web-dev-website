@@ -39,6 +39,16 @@ We highly recommend adding a flag to get rid of extra `undefined`s at the end of
 node -e "require('repl').start({ignoreUndefined: true})"
 ```
 
+## Running simple JS files
+
+If you have a simple single JS file, you can run it with Node.
+
+```bash
+node your-file.js
+```
+
+Where `your-file.js` is the name of the file you want to run, **relative to the current directory**.
+
 ## Making a React Project
 
 To make sure you've got everything set up correctly, `cd` into a directory of your choice and run:
