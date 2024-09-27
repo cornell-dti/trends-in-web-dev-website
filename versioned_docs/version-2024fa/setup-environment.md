@@ -11,6 +11,21 @@ Go to [this website](https://nodejs.org/en/download/) and follow the instruction
 
 For consistency, please use the latest Node LTS (currently, as of Fall 2023, this is Node 18).
 
+## Install `ts-node`
+
+`ts-node` is a package that allows you to run TypeScript code directly from the command line.
+
+```bash
+npm install -g typescript
+npm install -g ts-node
+```
+
+You can test that you have it installed by running:
+
+```bash
+ts-node -v
+```
+
 ## Install Additional Package
 
 We will be using an additional package manager to help us with development.
