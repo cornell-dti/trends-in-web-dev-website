@@ -14,7 +14,7 @@ The class is scheduled to finish well before finals week.
 
 [Assignment 1](/docs/assignment1): Due on CMSX by Oct 2 at 11:59pm
 
-Assignment 2: Due on CMSX by Oct 9 at 11:59pm
+[Assignment 2](/docs/assignment2): Due on CMSX by Oct 9 at 11:59pm
 
 Assignment 3: Due on CMSX by Oct 23 at 11:59pm
 
