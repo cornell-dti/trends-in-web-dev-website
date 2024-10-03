@@ -11,6 +11,12 @@ Go to [this website](https://nodejs.org/en/download/) and follow the instruction
 
 For consistency, please use the latest Node LTS (currently, as of Fall 2023, this is Node 18).
 
+## Install `git`
+
+Git is a version control system that allows you to track changes to your code and collaborate with others.
+
+Go to [this website](https://git-scm.com/downloads) and follow the instructions to install it on your workstation.
+
 ## Install `ts-node`
 
 `ts-node` is a package that allows you to run TypeScript code directly from the command line.
@@ -24,6 +30,13 @@ You can test that you have it installed by running:
 
 ```bash
 ts-node -v
+```
+
+If you get weird `export {}` errors with `ts-node`, you can call with `ts-node your-file.ts --esm` / `ts-node --esm` or try using `npx` and `tsx` as alternatives:
+
+```bash
+npm install -g tsx
+npx tsx your-file.ts  # or `npx tsx` for REPL (interactive mode)
 ```
 
 ## Install Additional Package
