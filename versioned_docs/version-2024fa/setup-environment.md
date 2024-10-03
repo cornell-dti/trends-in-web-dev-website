@@ -23,28 +23,6 @@ git --version
 
 If this command fails, you can install git by going to [this website](https://git-scm.com/downloads) and following the instructions for your operating system.
 
-## Install `ts-node`
-
-`ts-node` is a package that allows you to run TypeScript code directly from the command line.
-
-```bash
-npm install -g typescript
-npm install -g ts-node
-```
-
-You can test that you have it installed by running:
-
-```bash
-ts-node -v
-```
-
-If you get weird `export {}` errors with `ts-node`, you can call with `ts-node your-file.ts --esm` / `ts-node --esm` or try using `npx` and `tsx` as alternatives:
-
-```bash
-npm install -g tsx
-npx tsx your-file.ts  # or `npx tsx` for REPL (interactive mode)
-```
-
 ## Install Additional Package
 
 We will be using an additional package manager to help us with development.
@@ -82,6 +60,28 @@ node your-file.js
 ```
 
 Where `your-file.js` is the name of the file you want to run, **relative to the current directory**.
+
+## Install `ts-node`
+
+`ts-node` is a package that allows you to run TypeScript code directly from the command line.
+
+```bash
+npm install -g typescript
+npm install -g ts-node
+```
+
+You can test that you have it installed by running:
+
+```bash
+ts-node -v
+```
+
+If you get weird `export {}` errors with `ts-node`, you can call with `ts-node your-file.ts --esm` / `ts-node --esm` or try using `npx` and `tsx` as alternatives:
+
+```bash
+npm install -g tsx
+npx tsx your-file.ts  # or `npx tsx` for REPL (interactive mode)
+```
 
 ## Making a React Project
 
