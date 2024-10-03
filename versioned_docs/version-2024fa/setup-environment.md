@@ -15,7 +15,13 @@ For consistency, please use the latest Node LTS (currently, as of Fall 2023, thi
 
 Git is a version control system that allows you to track changes to your code and collaborate with others.
 
-Go to [this website](https://git-scm.com/downloads) and follow the instructions to install it on your workstation.
+It is extremely likely that you already have git installed on your system. You can check this by running:
+
+```bash
+git --version
+```
+
+If this command fails, you can install git by going to [this website](https://git-scm.com/downloads) and following the instructions for your operating system.
 
 ## Install `ts-node`
 
