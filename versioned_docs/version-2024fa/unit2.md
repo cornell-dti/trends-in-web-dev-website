@@ -11,6 +11,8 @@ Homework: HW3 and HW4, due Oct 23 and Oct 30 respectively.
 
 Slides: [Here](https://docs.google.com/presentation/d/1pq-Gb8AvDyY_EjeCcRvPA8g7kVAcKDh9MyHOFgYkf94/edit?usp=sharing)
 
+Demos: [Here, under `lec3`](https://github.com/cornell-dti/trends-mono-fa24/tree/main/demos)
+
 ## How React?
 
 Allows developers to create reusable UI components and manage the state of those components efficiently. React uses a virtual DOM (Document Object Model) to improve performance by minimizing the amount of DOM manipulation required when a user interacts with a React application. This allows for efficient updates and rendering of components, making it a popular choice for building complex and high-performing web and mobile applications.
