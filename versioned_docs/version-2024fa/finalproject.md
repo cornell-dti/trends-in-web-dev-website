@@ -25,11 +25,11 @@ we've seen in the past that might help you get started!
 The project will be divided into a number of milestones to help you progress in
 a reasonable way.
 
-Your remaining slip days are still valid for this. The group's allotted slip days is the max of your group members'. **You are allowed to use at most 3 slip days per each of Milestones 1, 2, 2.5.**
+Your remaining slip days are still valid for this. The group's allotted slip days is the max of your group members'. **You are allowed to use at most 3 slip days per each of Milestones 1, 2, 3.**
 
 ### Milestone 1
 
-**Due: November 1st, 2024 by 11:59 PM**
+**Due: November 3rd, 2024 by 11:59 PM**
 This milestone is primarily focused to allow you to ideate ideas with your team (check out project suggestions for inspiration!). You will meet with your assigned TA for idea approval and roadmapping. Your assigned TA will be your primary point of contact for any trouble you face while working on the project. All our TAs are incredibly kind and supportive so don't feel intimidated!
 
 **Requirements**
@@ -78,7 +78,7 @@ Please prepare to present a demo that is approximately **5 minutes**. Please als
 - Something you would like to improve upon if you were to continue working on the project
 
 Completing your first full-stack web development project is something worth celebrating! If you are in a group, please try to have all members present. We are excited to see all of your presentations! If there are any questions or concerns,
-reach out to Michelle, Daniel, and Sarah.
+reach out to Chris, Simon, or any of the TAs.
 
 :::tip
 Need help? Come to [office hours](/docs/2024fa/introduction) and we can help you debug. Also feel free to post questions on Ed!
