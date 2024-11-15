@@ -60,6 +60,9 @@ For this milestone, you should have fully functioning prototype with maybe some 
   - at least one of each HTTP request type (`GET`, `POST`, `PUT`, `DELETE`)
   - full implementation should be completed here with proper read/write functonality to your Firebase database
 - Authentication
+- **[Updated 11/15]** GitHub use
+  - no sensitive information pushed
+  - descriptive README
 
 ### Final Project
 
@@ -129,12 +132,14 @@ This is subject to change.
 
 - Code style and file structure (5%)
 
-- Effort (10%)
+- Effort (**[Updated 11/15]** ~~10%~~ 5%)
 
   - This may seem like an arbitrary measure, but we expect most people to
     get most of the points here; the only way to lose points is if it is
     clear that not a lot of effort has been put in or you are consistently
     missing milestones.
+
+- **[Updated 11/15]** GitHub use (5%)
 
 - Milestones (15%)
 
