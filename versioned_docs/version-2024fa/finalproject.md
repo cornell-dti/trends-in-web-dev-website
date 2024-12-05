@@ -67,8 +67,12 @@ For this milestone, you should have fully functioning prototype with maybe some 
 ### Final Project
 
 **Due: December 3rd, 2024 by 11:59 PM**
+
+*Soft extension till Friday December 6th, 2024 by 11:59 PM*
+
 Submit your final work! Great job and we're all excited for demo day!!
-**Make sure to fill out the Peer Review Form (*coming soon*) for all members on your team**
+
+**Make sure to fill out [the Peer Review Form](https://forms.gle/unPA9h7FWRhiwtWe7) for all members on your team (if you did not work alone).**
 
 #### FINAL PRESENTATION DAY: December 4th, 2024 (7:30PM) in Upson 222
 
@@ -93,7 +97,7 @@ Do not push private API keys, Firebase service accounts, or other sensitive info
 Note that firebase configs for the frontend are fine (and **should be**) included in your submission.
 :::
 
-Submit a zip file of your project to CMSX and fill out the Final Project Link (*coming soon*) by the deadline!
+Submit a zip file of your project to CMSX and fill out the [Course Feedback Form](https://forms.gle/DH2JCEuzbEXt65vt9) and [Final Project Feedback Form](https://docs.google.com/forms/d/e/1FAIpQLSfvIO73pkH2W3WwQBtdRdHrQ3lmCXP58QccXYWCGppIAHFeQw/viewform?usp=sf_link) (both worth 5% of your grade!).
 
 ## Optional Extensions
 
@@ -146,7 +150,7 @@ This is subject to change.
   - Each milestone is worth 5% of your grade.
 
 - Peer Review (5%)
-  - Fill out this Peer Review Form (*coming soon*) for all members on your team
+  - Fill out [the Peer Review Form](https://forms.gle/unPA9h7FWRhiwtWe7) for all members on your team (if you did not work alone).
 
 ## Tips for Success!
 
