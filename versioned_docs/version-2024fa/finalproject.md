@@ -68,7 +68,7 @@ For this milestone, you should have fully functioning prototype with maybe some 
 
 **Due: December 3rd, 2024 by 11:59 PM**
 
-*Soft extension till Friday December 6th, 2024 by 11:59 PM*
+_Soft extension till Friday December 6th, 2024 by 11:59 PM_
 
 Submit your final work! Great job and we're all excited for demo day!!
 

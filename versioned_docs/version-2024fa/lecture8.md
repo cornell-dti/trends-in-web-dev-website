@@ -304,4 +304,3 @@ addDoc(collection(db, 'tasks'), task);
 
 Feel free to reference our [demo code](https://github.com/cornell-dti/trends-mono-fa24/tree/main/demos/lec8)
 to implement authentication in your final project!
-

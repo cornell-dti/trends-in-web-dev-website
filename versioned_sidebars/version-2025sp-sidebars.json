@@ -1,0 +1,20 @@
+{
+  "docs": {
+    "Getting Started": [
+      {
+        "type": "doc",
+        "id": "version-2025sp/introduction"
+      },
+      {
+        "type": "doc",
+        "id": "version-2025sp/setup-editor"
+      },
+      {
+        "type": "doc",
+        "id": "version-2025sp/setup-environment"
+      }
+    ],
+    "Lectures": [],
+    "Assignments": []
+  }
+}

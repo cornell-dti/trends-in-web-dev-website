@@ -5,7 +5,7 @@ title: Syllabus
 
 # INFO 1998: Trends in Modern Web Development
 
-### Fall 2024
+### Spring 2025
 
 **Course Website**: [https://webdev.cornelldti.org/docs/introduction](https://webdev.cornelldti.org/docs/introduction)
 
@@ -17,26 +17,21 @@ Email: [kyle.harms@cornell.edu](mailto:kyle.harms@cornell.edu)
 
 ## Instructors:
 
-**Chris Chen**
+**Oscar Wang**
 
-Email: cc2785@cornell.edu
+Email: [ow39@cornell.edu](mailto:ow39@cornell.edu)
 
-**Simon Illincev**
+**TBA**
 
-Email: sci24@cornell.edu
+Email: TBA
 
-We also have four amazing TAs — Oscar Wang (ow39@cornell.edu), Kevin Ram (kmr232@cornell.edu), Hannah Zhou (hyz4@cornell.edu), and Andrew Qian (ajq22@cornell.edu).
+We also have many amazing TAs — TBA.
 
 ### Office Hours Schedule
 
 The instructor and TA office hours schedule is as follows:
 
-- Chris Chen: Thursdays 9:30am-10:30am in Phillips Hall 318
-- Simon Ilincev: Thursdays 6pm-7pm in Goldwin Smith 348
-- Oscar Wang: Saturdays 10am-11am in Upson 146
-- Kevin Ram: Mondays 12pm-1pm in Hollister 362
-- Hannah Zhou: Wednesdays 12-1pm in Hollister 368
-- Andrew Qian: Tuesdays 5pm-6pm in Rhodes 655
+- TBA
 
 Please note that some schedules may be subject to change; always check the latest comments under the pinned OH thread or the course website for the most up-to-date information.
 
@@ -46,9 +41,9 @@ Please note that some schedules may be subject to change; always check the lates
 
 ## Time and Location
 
-This course meets once a week for 9 weeks for a total of 9 lectures.
+This course meets once a week for 10 weeks for a total of 10 lectures.
 
-We will meet weekly on Wednesdays, from **7:30pm to 8:45pm** in **Upson 222**. The start of the class will start on **Wednesday, September 25**.
+We will meet weekly on Wednesdays, from **TBA** in **TBA**. The start of the class will start on **February 12th**.
 
 <!-- \*\*You can find our course calendar with lecture dates and times, TA office hours with locations, and assignment due dates at [this](https://calendar.google.com/calendar/u/1?cid=Y183OTJmZmZmM2E3OWNjYTI2M2UwNTE2OTNmZDQ0YjlmMDI1NGQ4Y2JjYjk5YzUwODcxMmJkYmNhNDQ4YjMyODdlQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20) Google Calendar link. -->
 
@@ -70,7 +65,7 @@ However, we _highly_ recommend that you have taken CS 1110, or have equivalent p
 
 ## Course Application
 
-Apply [here](https://forms.gle/kSq5Dcwt85VHx4eT6) by **September 24th at Noon (12pm)**. It includes a general information questionnaire so we have the information necessary for enrollment, as well as a preassessment you must complete (see Pre-Course Assessment below).
+Apply [here (not open yet)](https://forms.gle/nshadTFzkzTenvjv8) by **TBA (early in the semester)**. It includes a general information questionnaire so we have the information necessary for enrollment, as well as a preassessment you must complete (see Pre-Course Assessment below).
 
 We will be distributing enrollment/permission pins soon after the application period closes.
 
@@ -80,7 +75,7 @@ Please complete the pre-assessment [here](https://webdev.cornelldti.org/assets/f
 less than an hour! This is not meant as a test, but rather a way of ensuring
 that you are familiar with the foundational material in the course.
 
-Upload your submissions as a zip to your application [here](https://forms.gle/kSq5Dcwt85VHx4eT6).
+Upload your submissions as a zip to your application [here](https://forms.gle/nshadTFzkzTenvjv8).
 
 **This preassessment is mandatory; those who do not submit it will not be admitted in the course.**
 
@@ -109,11 +104,11 @@ The class is scheduled to finish well before finals week.
 
 | Assignment   | Topic                   | Due Date          |
 | ------------ | ----------------------- | ----------------- |
-| Assignment 1 | JavaScript Fundamentals | Oct 2 by 11:59pm  |
-| Assignment 2 | TypeScript Fundamentals | Oct 9 by 11:59pm  |
-| Assignment 3 | React Fundamentals      | Oct 23 by 11:59pm |
-| Assignment 4 | Frontend Capstone       | Oct 30 by 11:59pm |
-| Assignment 5 | Final Project           | Dec 3 by 11:59pm  |
+| Assignment 1 | JavaScript Fundamentals | Feb 26 by 11:59pm |
+| Assignment 2 | TypeScript Fundamentals | Mar 12 by 11:59pm |
+| Assignment 3 | React Fundamentals      | Mar 19 by 11:59pm |
+| Assignment 4 | Frontend Capstone       | Mar 26 by 11:59pm |
+| Assignment 5 | Final Project           | May 4 by 11:59pm  |
 
 More details regarding the final project will be released upon starting the course.
 
