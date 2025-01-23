@@ -21,9 +21,13 @@ Email: [kyle.harms@cornell.edu](mailto:kyle.harms@cornell.edu)
 
 Email: [ow39@cornell.edu](mailto:ow39@cornell.edu)
 
-**TBA**
+**Chris Chen**
 
-Email: TBA
+Email: [cc2785@cornell.edu](mailto:cc2785@cornell.edu)
+
+**Simon Ilincev**
+
+Email: [sci24@cornell.edu](mailto:sci24@cornell.edu)
 
 We also have many amazing TAs — TBA.
 
@@ -43,7 +47,7 @@ Please note that some schedules may be subject to change; always check the lates
 
 This course meets once a week for 10 weeks for a total of 10 lectures.
 
-We will meet weekly on Wednesdays, from **7:30pm** to **8:45pm** in **TBA**. The start of the class will start on **February 12th**.
+We will meet weekly on **Mondays**, from **7:30pm** to **8:45pm** in **Gates 114**. The start of the class will start on **February 12th**.
 
 <!-- \*\*You can find our course calendar with lecture dates and times, TA office hours with locations, and assignment due dates at [this](https://calendar.google.com/calendar/u/1?cid=Y183OTJmZmZmM2E3OWNjYTI2M2UwNTE2OTNmZDQ0YjlmMDI1NGQ4Y2JjYjk5YzUwODcxMmJkYmNhNDQ4YjMyODdlQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20) Google Calendar link. -->
 
@@ -65,7 +69,7 @@ However, we _highly_ recommend that you have taken CS 1110, or have equivalent p
 
 ## Course Application
 
-Apply [here (not open yet)](https://forms.gle/nshadTFzkzTenvjv8) by **TBA (early in the semester)**. It includes a general information questionnaire so we have the information necessary for enrollment, as well as a preassessment you must complete (see Pre-Course Assessment below).
+Apply [here (not open yet)](https://forms.gle/nshadTFzkzTenvjv8) by **February 21st**. It includes a general information questionnaire so we have the information necessary for enrollment, as well as a preassessment you must complete (see Pre-Course Assessment below).
 
 We will be distributing enrollment/permission pins soon after the application period closes.
 
