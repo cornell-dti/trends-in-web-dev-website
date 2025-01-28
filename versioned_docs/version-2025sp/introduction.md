@@ -47,7 +47,7 @@ Please note that some schedules may be subject to change; always check the lates
 
 This course meets once a week for 10 weeks for a total of 10 lectures.
 
-We will meet weekly on **Mondays**, from **7:30pm** to **8:45pm** in **Gates 114**. The start of the class will start on **February 12th**.
+We will meet weekly on **Mondays**, from **7:30pm** to **8:45pm** in **Gates 114**. The start of the class will start on **February 10th**.
 
 <!-- \*\*You can find our course calendar with lecture dates and times, TA office hours with locations, and assignment due dates at [this](https://calendar.google.com/calendar/u/1?cid=Y183OTJmZmZmM2E3OWNjYTI2M2UwNTE2OTNmZDQ0YjlmMDI1NGQ4Y2JjYjk5YzUwODcxMmJkYmNhNDQ4YjMyODdlQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20) Google Calendar link. -->
 
