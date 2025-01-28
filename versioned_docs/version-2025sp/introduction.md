@@ -21,15 +21,14 @@ Email: [kyle.harms@cornell.edu](mailto:kyle.harms@cornell.edu)
 
 Email: [ow39@cornell.edu](mailto:ow39@cornell.edu)
 
-**Chris Chen**
-
-Email: [cc2785@cornell.edu](mailto:cc2785@cornell.edu)
-
 **Simon Ilincev**
 
 Email: [sci24@cornell.edu](mailto:sci24@cornell.edu)
 
-We also have many amazing TAs — TBA.
+We also have many amazing TAs:
+
+- **Chris Chen** [cc2785@cornell.edu](mailto:cc2785@cornell.edu)
+- ...more TBA
 
 ### Office Hours Schedule
 
