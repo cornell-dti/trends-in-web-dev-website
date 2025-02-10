@@ -68,7 +68,7 @@ However, we _highly_ recommend that you have taken CS 1110, or have equivalent p
 
 ## Course Application
 
-Apply [here (not open yet)](https://forms.gle/nshadTFzkzTenvjv8) by **February 21st**. It includes a general information questionnaire so we have the information necessary for enrollment, as well as a preassessment you must complete (see Pre-Course Assessment below).
+Apply [here](https://forms.gle/nshadTFzkzTenvjv8) by **February 21st**. It includes a general information questionnaire so we have the information necessary for enrollment, as well as a preassessment you must complete (see Pre-Course Assessment below).
 
 We will be distributing enrollment/permission pins soon after the application period closes.
 
