@@ -25,10 +25,16 @@ Email: [ow39@cornell.edu](mailto:ow39@cornell.edu)
 
 Email: [sci24@cornell.edu](mailto:sci24@cornell.edu)
 
+**Chris Chen**
+
+Email: [cc2785@cornell.edu](mailto:cc2785@cornell.edu)
+
 We also have many amazing TAs:
 
-- **Chris Chen** [cc2785@cornell.edu](mailto:cc2785@cornell.edu)
-- ...more TBA
+- **Lily Pham**: [lnp35@cornell.edu](mailto:lnp35@cornell.edu)
+- **Ryan Qiu**: [rwq3@cornell.edu](mailto:rwq3@cornell.edu)
+- **Jacqueline Cai**: [jxc6@cornell.edu](mailto:jxc6@cornell.edu)
+- **Eric Cheng**: [ejc264@cornell.edu](mailto:ejc264@cornell.edu)
 
 ### Office Hours Schedule
 
