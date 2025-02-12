@@ -151,7 +151,7 @@ Web Development is a creative process, one that depends heavily on current techn
 
 For the following sections, the word "us" refers to the course staff.
 
-When in contact with us, contact with either of the two primary instructors (Sarah Young and Sophia Pham) is sufficient to qualify as contact with us.
+When in contact with us, contact with one of the three primary instructors (Oscar Wang, Simon Ilincev, and Chris Chen) is sufficient to qualify as contact with us.
 
 The contact information can be found above in the "Instructors" section.
 
