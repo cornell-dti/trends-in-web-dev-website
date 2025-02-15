@@ -88,7 +88,7 @@ npx tsx your-file.ts  # or `npx tsx` for REPL (interactive mode)
 To make sure you've got everything set up correctly, `cd` into a directory of your choice and run:
 
 ```bash
-pnpm dlx degit cornell-dti/trends-mono-fa24/frontend-starter your-project-name
+pnpm dlx degit cornell-dti/trends-mono-sp25/frontend-starter your-project-name
 ```
 
 This will create a new directory called `your-project-name` with a React project inside. `cd` into it and run `pnpm install` to install all the dependencies.
