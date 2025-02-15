@@ -14,7 +14,16 @@
         "id": "version-2025sp/setup-environment"
       }
     ],
-    "Lectures": [],
+    "Lectures": [
+      {
+        "type": "doc",
+        "id": "version-2025sp/lec0"
+      },
+      {
+        "type": "doc",
+        "id": "version-2025sp/unit1"
+      }
+    ],
     "Assignments": []
   }
 }
