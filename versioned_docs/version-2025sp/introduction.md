@@ -40,7 +40,7 @@ We also have many amazing TAs:
 
 The instructor and TA office hours schedule is as follows:
 
-- TBA
+- TBA, contact an instructor or TA if you need help in the meantime!
 
 Please note that some schedules may be subject to change; always check the latest comments under the pinned OH thread or the course website for the most up-to-date information.
 
@@ -113,10 +113,10 @@ The class is scheduled to finish well before finals week.
 
 | Assignment   | Topic                   | Due Date          |
 | ------------ | ----------------------- | ----------------- |
-| Assignment 1 | JavaScript Fundamentals | Feb 26 by 11:59pm |
-| Assignment 2 | TypeScript Fundamentals | Mar 12 by 11:59pm |
-| Assignment 3 | React Fundamentals      | Mar 19 by 11:59pm |
-| Assignment 4 | Frontend Capstone       | Mar 26 by 11:59pm |
+| Assignment 1 | JavaScript Fundamentals | Feb 24 by 11:59pm |
+| Assignment 2 | TypeScript Fundamentals | Mar 10 by 11:59pm |
+| Assignment 3 | React Fundamentals      | Mar 17 by 11:59pm |
+| Assignment 4 | Frontend Capstone       | Mar 24 by 11:59pm |
 | Assignment 5 | Final Project           | May 4 by 11:59pm  |
 
 More details regarding the final project will be released upon starting the course.
