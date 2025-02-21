@@ -38,9 +38,15 @@ We also have many amazing TAs:
 
 ### Office Hours Schedule
 
-The instructor and TA office hours schedule is as follows:
+The instructor and TA office hours schedule is as follows. Please note that **OH is online as we wait for the school to sort out room bookings**, but many will move to in-person in early March or so. If you need, you can also contact your favorite instructors or TAs for in-person meetings.
 
-- TBA, contact an instructor or TA if you need help in the meantime!
+- Oscar Wang: TBA
+- Simon Ilincev: Fridays 1:00pm-2:00pm [on Google Meet](https://meet.google.com/gti-kpok-ust?hs=122&authuser=0)
+- Chris Chen: Tuesdays 10:00am-11:00am [on Zoom](https://cornell.zoom.us/j/93709912241?pwd=fPcbk4uOyzR7syyqqoFmara0Epa8rI.1)
+- Lily Pham: TBA
+- Ryan Qiu: TBA
+- Jacqueline Cai: TBA
+- Eric Cheng: TBA
 
 Please note that some schedules may be subject to change; always check the latest comments under the pinned OH thread or the course website for the most up-to-date information.
 
