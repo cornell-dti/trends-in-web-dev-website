@@ -44,9 +44,9 @@ The instructor and TA office hours schedule is as follows. Please note that **OH
 - Simon Ilincev: Fridays 1:00pm-2:00pm [on Google Meet](https://meet.google.com/gti-kpok-ust?hs=122&authuser=0)
 - Chris Chen: Tuesdays 10:00am-11:00am [on Zoom](https://cornell.zoom.us/j/93709912241?pwd=fPcbk4uOyzR7syyqqoFmara0Epa8rI.1)
 - Lily Pham: TBA
-- Ryan Qiu: TBA
+- Ryan Qiu: Mondays 2:00pm-2:50pm [on Zoom](https://cornell.zoom.us/j/96503166676?pwd=pOYrCcQVbHn47x9lhIjWRM5YCtrVKM.1)
 - Jacqueline Cai: TBA
-- Eric Cheng: TBA
+- Eric Cheng: Mondays 3:30pm-5:00pm [on Google Meet](https://meet.google.com/szh-vxua-efi)
 
 Please note that some schedules may be subject to change; always check the latest comments under the pinned OH thread or the course website for the most up-to-date information.
 
