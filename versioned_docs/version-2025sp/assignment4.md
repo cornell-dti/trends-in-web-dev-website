@@ -10,7 +10,7 @@ title: Assignment 4
 Run the following command in an appropriate folder on your system:
 
 ```bash
-pnpm dlx degit cornell-dti/trends-mono/frontend-hw-4-starter my-project-name
+pnpm dlx degit cornell-dti/trends-mono-sp25/frontend-hw-4-starter my-project-name
 cd my-project-name
 pnpm install
 ```
