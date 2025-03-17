@@ -40,13 +40,13 @@ We also have many amazing TAs:
 
 The instructor and TA office hours schedule is as follows. Please note that **OH is online as we wait for the school to sort out room bookings**, but many will move to in-person in early March or so. If you need, you can also contact your favorite instructors or TAs for in-person meetings.
 
-- Oscar Wang: Saturdays 12:00pm-1:00pm [on Google Meet](https://meet.google.com/yet-wcck-tti) 
-- Simon Ilincev: Fridays 1:00pm-2:00pm [on Google Meet](https://meet.google.com/gti-kpok-ust?hs=122&authuser=0)
+- Oscar Wang: Mondays 1:00pm-2:00pm **in Upson 102** 
+- Simon Ilincev: Thursdays 2:30-3:30pm **in Klarman KG44**
 - Chris Chen: Tuesdays 10:00am-11:00am [on Zoom](https://cornell.zoom.us/j/93709912241?pwd=fPcbk4uOyzR7syyqqoFmara0Epa8rI.1)
-- Lily Pham: Wednesdays 1:30pm-2:30pm [on Zoom](https://cornell.zoom.us/j/5605456811?pwd=WRjBlRi8elau8t3Y8csU9UzmIacBLA.1)
-- Ryan Qiu: Mondays 2:00pm-2:50pm [on Zoom](https://cornell.zoom.us/j/96503166676?pwd=pOYrCcQVbHn47x9lhIjWRM5YCtrVKM.1)
-- Jacqueline Cai: Wednesdays 6:30pm-7:30pm [on Zoom](https://cornell.zoom.us/j/96465075261?pwd=ab3p9BZjAdojpO9OWATFsfPP2myQNX.1)
-- Eric Cheng: Mondays 3:30pm-5:00pm [on Google Meet](https://meet.google.com/szh-vxua-efi)
+- Lily Pham: Wednesdays 1:30pm-2:30pm [on Zoom](https://cornell.zoom.us/j/5605456811?pwd=WRjBlRi8elau8t3Y8csU9UzmIacBLA.1) (*room inbound when school approves*)
+- Ryan Qiu: Fridays 2:00pm-3:00pm **in Klarman KG44**
+- Jacqueline Cai: Wednesdays 2:30pm-3:30pm **in Klarman KG44**
+- Eric Cheng: Wednesdays 4:30pm-5:15pm **in Rockefeller 112**
 
 Please note that some schedules may be subject to change; always check the latest comments under the pinned OH thread or the course website for the most up-to-date information.
 
