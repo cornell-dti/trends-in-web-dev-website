@@ -77,7 +77,7 @@ Please prepare to present a demo that is approximately **5 minutes**. Please als
 - Something you would like to improve upon if you were to continue working on the project
 
 Completing your first full-stack web development project is something worth celebrating! If you are in a group, please try to have all members present. We are excited to see all of your presentations! If there are any questions or concerns,
-reach out to Michelle, Daniel, and Sarah.
+reach out to Simon, Chris, and/or Oscar.
 
 :::tip
 Need help? Come to [office hours](/docs/2025sp/introduction) and we can help you debug. Also feel free to post questions on Ed!
