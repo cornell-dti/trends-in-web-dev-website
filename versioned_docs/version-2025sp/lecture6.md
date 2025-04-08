@@ -1,305 +1,115 @@
 ---
-id: lecture7
-title: Lecture 7
+id: lecture6
+title: Lecture 6
 ---
 
 [Lecture Slides](https://docs.google.com/presentation/d/170J_skDhKaFKu5xFvbdgDcb9XyEztm5H8WgL0P9WlUk/edit?usp=sharing)
 
-## Intro to Databases and Firebase
+## Intro to Express.js
 
-A lot of the apps we have been making work and maintain states throughout the
-lifetime of the app, but lack one critical feature - if we restart the app
-or refresh the page, all of our data disappears! We need
-some kind of persistent storage for this data, which is where **databases** get involved.
+Now that we understand the difference between what we mean by client side programming and server side programming. Our primary focus for the first 4 lectures was client side programming. Now we’re going to dive deeper into server side programming. One tool we can use to create our own server is a framework called Express.js. Express.js is a minimal and flexible web application framework that provides us a set of features to create our own APIs.
 
-### Why do we need a database for our backend?
+To install Express, run `npm install express` or `yarn add express` in your preferred directory. If you're using `yarn`, make sure `yarn` is properly installed on your local development environment.
 
-- Data stored within Node.js is per instance
-- Most applications require persistence
-- Data analysis
-- Performant data location
-- Offloading unneeded data from memory
-
-### Types of Databases
-
-| SQL                                                                                                               | NoSQL                                                                                |
-| ----------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
-| Stores data in tables, utilizing rows and tables                                                                  | Stores data in documents                                                             |
-| Has predefined schema, which can be relational (tables can provide access to related data points in other tables) | Can abide to any structure you want (no schema or partial schema)                    |
-| Less expensive for smaller datasets and can execute complex queries                                               | Better for large sets of data, but not complex queries                               |
-| Less flexible                                                                                                     | More flexible (can be used with most popular languages)                              |
-| Leans towards strong consistency                                                                                  | Favors eventual consistency (here may be some delay in getting response back)        |
-| Vertically scalable (need more computing power on one machine to store more data)                                 | Horizontally scalable (can distribute storage and compute power on multiple machines |
-| Examples: MySQL, PostgreSQL                                                                                       | Examples: **Firebase**, MongoDB                                                      |
-
-### What is Firebase?
-
-- Firebase is a Backend as a Service (BaaS) offered by Google
-  - Allows you to store data
-  - Host websites
-  - Authentication
-- NoSQL DB
-  - Not only SQL
-  - Non relational
-
-#### Why Firebase?
-
-- Real-time operations
-- Firebase Authentication
-- Built-in analytics
-- Also supports hosting/deployment
-- Integration with other Google services
-- Structure we’re familiar with!
-
-## Getting Started With Firestore
-
-Let's finally start talking about how we can perform operations on our database
-using Typescript.
-
-### Firestore Data Model
-
-Firstly, a Firestore database is NOSQL, document-model database generally comprised of multiple collections,
-which may house differing data. To take a simplified example, a Cornell database
-could have some of the following collections: `people`, `courses`, `locations`.
-Certain collections may be broken up into multiple collections, such as breaking
-up `people` into `staff` and `students` or even into subcollections, which we will
-not discuss but they exist for those who are interested, as we could simply distinguish
-different people with a field, such as `role: Student | Staff`. The id of a collection,
-which is what is used to access it, is generally a descriptive name of the collection.
-
-A typical model, including that of Firestore, has collections comprised of documents,
-or docs for short, which would be the "items" we want to store. Going back to our
-Cornell example, our `people` collection would probably have documents pertaining
-to students or staff at Cornell, with each document being uniquely identified
-by a unique id, like netid. Within each document, we may have fields like `age`
-and `address`, so in this way, documents can be thought of as Objects. But as you
-may have already noticed, some documents would have fields that others don't - students
-may have a `major` field while staff may have a `salary` field. As it turns out, that's
-totally ok! Generally speaking, having more uniform document fields across a collection
-gives stronger guarantees about each document and is often a more natural fit, but Firestore
-does not require us to have uniform fields within all the documents of a collection, which gives
-us a layer of flexibility.
-
-Using the following code, we can create references to both the `people` collection and
-specific docs such as the `myl39` doc (which represents me!).
+### Quick Example
 
 ```typescript
-const peopleCollectionRef = db.collection('people');
-const michelleDocRef = peopleCollectionRef.doc('myl39');
-```
+import express from 'express';
 
-### Firestore Operations
+const app = express();
+const port = 8080;
+app.use(express.json());
+app.use(cors());
 
-We generally refer to database operations as `CRUD`, which stands for:
+app.get('/', (req, res) => {
+  res.send('Hello World!');
+});
 
-- **C**reate/Insert - Create a document (will fail if the document exists)
-- **R**ead/Find/Query - To search for documents based on their properties
-- **U**pdate - Update an existing document (will fail otherwise)
-- **D**elete - Delete an existing document
-
-### Create
-
-To create a document in Firestore, we primarily use the `set` function.
-Here's an example of setting a document in our `people` database.
-
-```typescript
-await peopleCollectionRef.set(michelleDocRef, {
-  year: '2023',
-  age: 20,
+app.listen(port, () => {
+  console.log(`Server listening on port ${port}`);
 });
 ```
 
-`set` will write to the document `myl39` within the `people` collection, creating it
-if it does not yet exist.
+Here is a quick example on how to set up the boiler plate code for creating an express server.
 
-Note that ids are autogenerated if the name of the document is not specified in the `doc()` call with the `set` function.
+We start by importing the express function from the `express` framework that we just installed using npm.
 
-### Read
+Then we’re going to create a variable called app. This is just an instance of express, which is used to create an application. In our case, we’re using this instance of express to create our server application.
 
-To read data in Firestore, we first need to take a snapshot of the data we want to read. Then,
-we check if that snapshot of the document we want actually exists before trying to extract its data.
+This next line is `app.use(express.json())`. This just automatically parses any incoming requests into JSON objects. This makes it easier to handle data sent from the client.
 
-Here's a simple example logging my data. Notice I log `doc.data()` and not `doc` because
-the former is where the data actually resides.
+There’s an interesting line `app.use(cors());` This line enables the express app to respond to something called preflight requests. A preflight request is something like an OPTION request sent to the server before the actual request is sent. An OPTION request is an HTTP method that is sent by browsers to find out what methods are allowed by the server. This allows clients to obtain any parameters and requirements for specific resources and server capabilities that might be necessary. This is just an aside and isn’t crucial. If you’re interested in learning more about OPTION requests, come to office hours! Basically, this line allows our server to be accessible to any domain that requests a resource from our server via a browser. This basically relaxes the security applied to an API. These CORS errors can get really painful, so remember to add this line if you run into them.
+
+The next section is where we’re actually creating our API endpoints. Using the app instance, we’re going ot create a `GET` endpoint with the location at the root, which is indicated by the string in the function. Then here is some interesting syntax, which I will go into in more detail later. Essentially, we’re creating a `GET` endpoint at the root path and then sending a response to the client saying “Hello World”
+
+Finally, this last section is where our server application will actually listen for any connections from clients on the specified port, which we indicated before as `8080`. When our server is up and running, we will console log “Server listening on port `[insert port number]` in this case it’s `8080`. This function will constantly listen for any connections being made.
+
+When running the application with `npm start`, the server will be listening on `http://localhost:[insert port number here]`.
+
+### Routing
+
+Routing determines how our server responses to a client request to particular endpoint. An endpoint simply consists of a URI (or path) and a specific HTTP request method (`GET`, `POST`, `PUT`, `DELETE`)
 
 ```typescript
-const doc = await peopleCollectionRef.doc(netid).get();
-
-if (doc.exists) {
-  console.log('Document data:', doc.data());
-} else {
-  console.log('No such document!');
-}
+app.[METHOD]([PATH], [HANDLER])
 ```
 
-We can also perform querying on collections, where we filter the database with certain
-criteria. Here's a simple example of looking for all people in `people` who are 20.
+#### GET Endpoint
 
 ```typescript
-const snapshot = await peopleCollectionRef
-.where(“age”, “==”, 20)
-.get();
-
-snapshot .forEach((doc) => {
- console.log(doc.id, ' => ', doc.data());
+app.get('/', (req, res) => {
+  res.send('Hello World!');
 });
 ```
 
-Line by line, we first take a snapshot of all such documents in the query specified, and then, we perform the same `doc.data()` approach. We do not need to check if each doc exists because we are using a for loop, and if a doc does not exist, it simply would not be part of the for loop.
+Here we go back to the get request that we saw previously. Essentially here again we have a `GET` request with the path at the root. We could change this string to anything we want. Then the next parameter is the handler, which is a call back function that is executed when the route is matched. So, when the client makes a `GET` request to the root path of our server running on port 8080, the server will match that request to this function right here and call the handler. The req and res objects are created automatically by the framework and is passed as an argument to route handler functions.
 
-We can also order our search results. Here is an example of querying for people who are at least 20 and then ordering them in descending order.
+The handler takes in the request object and a response object as parameters and executes the body of this function. The request object represents an HTTP request and contains any data that the client may have sent over to the server (query strings, parameters, body, HTTP headers, etc). This isn’t applicable to `GET` request since `GET` requests are only used to request data. But, we will look at other method types later. The second parameter is the response object which represents the HTTP response object the server will send back to the client. So, this in example, when the client request is routed to this handler, the server will send an object containing the string `Hello World.`
+
+#### POST Endpoint
 
 ```typescript
-const snapshot = await peopleCollectionRef
-.where(“age”, “>=”, 20)
-.orderBy(“age”, “desc”)
-.limit(3).get();
+app.post('/', (req, res) => {
+  	const body = req.body
+res.send(‘This is a POST request’)
+})
+```
 
-querySnapshot.forEach((doc) => {
- console.log(doc.id, ' => ', doc.data());
+Here we have a `POST` request with the path at the root. We are allowed to have multiple endpoints with the same path they just have to be different HTTP methods. So, we can have a `GET` endpoint and a `POST` endpoint at the same path. But, we cannot have two `GET` endpoints with the same path.
+
+#### PUT Endpoint
+
+```typescript
+app.put('/user', (req, res) => {
+  const body = req.body;
+  const username = req.body.username;
+  res.send('This is a PUT request');
 });
 ```
 
-### Update
+Here we have a `PUT` request with the path at `/user`.
+Here the handler will get the variable called body to the req.body, which represents any data that the client may have sent over to the server at this endpoint. The handler also sets a constant called username to the username parameter sent in through the body of the client’s HTTP request. Then the handler will send a response back saying `This is a PUT request.` A `PUT` request is typically used for updating data, we will take more of a deep dive into all this in the next lecture when we talk about databases.
 
-Updating a document will only replace the specified fields within a doc and maintain
-unmodified fields. So the following code keep the `last` field but change `age` and
-`first`.
-
-```typescript
-await peopleCollectionRef
-.doc(‘myl39’)
-.update({ age: '20', first: 'michelle' });
-```
-
-Note if the document we're trying to access is not available, an error will occur.
-
-### Delete
-
-Deleting a document removes it from the collection.
+#### DELETE Endpoint
 
 ```typescript
-await peopleCollectionRef
-.doc(‘myl39’)
-.delete();
+app.delete('/user/:id', (req, res) => {
+  res.send('This is a delete request for id ${req.params.id}');
+});
 ```
 
-## Callback/Promise-based vs Real-Time Queries
+Here we have a `DELETE` request with the path at “/user/:id”. This is an interesting path because we have :id. Here we have defined a route that takes in a parameter called id. When we visit something like /user/1, the server will respond with `This is a DELETE request for id 1.` You can include parameters into any endpoint path for your server and read them from the request object sent from the client’s HTTP request. This is an example of a dynamic route.
 
-| Promise-Based                                                                                                                                          | Real-Time                                                                                                                                                      |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| If you need the data now, you can query for it                                                                                                         | You already have the data                                                                                                                                      |
-| Data queries can be decentralized (done in any component)                                                                                              | Data queries are fetched and memoized through centralized (React) hooks                                                                                        |
-| Querying data is imperative, but can quickly become hard to maintain and track (and you lose some of the advantages of a declarative web UI framework) | Up-front cost to query data pays off (because you don't _hopefully_ have to query it again)                                                                    |
-| There is no cleanup code                                                                                                                               | You first have to "subscribe" to changes in the data, then unsubscribe after you are done (kind of like opening and closing a file stream when reading a file) |
+## Postman
 
-### What do Callback/Promise-based vs. Real-Time Queries Look Like?
+In order to test our APIs and make sure that they are responding appropriately for certain routes, Postman is a great tool for sending and receiving API requests directly to and from the server.
 
-**Promise-based queries** are single queries that return a single async result. So, they are run once and then passed along downstream to children and other descendants of your component. Typically, they are used to react to some update (i.e user clicks a button, a component loads).
+Postman is an API platform used for building and using APIs.
 
-**Real-time queries** are single queries that return a stream of async results such as weather data. These types of queries are used once the data is listenable and needs to be "subscribed to". These take a stream of results and are built on top of wbe sockets, which are abstractions over a byte stream. So, they're good for ... real-time applications.
-
-### How Do Callback/Promised Based vs. Real-Time Queries Work?
-
-**Promise based queries** typically calls some backend API route, which fetches and returns data to you. They're built on top of traditional HTTP requests.
-
-**Real-time queries** might call a backend route to pass data over to a web socket or it'll simply use an API library to makes calls directly to a database (ex. Firebase Firestore call). These queries are usually wrapped in a library like [RxJS](https://rxjs.dev/)'s observable data type or function calls that allow you to subsribe to changes.
-
-### Choosing a Querying Method
-
-As described in the first section, the type of queries your application will use will affect the app's architecture.
-In particular, real-time queries play nicely with having a centralized query that runs over a listenable data access object that is "owned" either by
-
-1. a top-level component (OK in small apps, but prone to prop drilling in more complex apps), or
-2. a custom React hook that wraps an effect (triggering an update when the data access object publishes a new version of the data)
-
-That is not to say that your app cannot use both types of queries. It is just that a real-time application requires a specific architecture in which all data is queried first and passed along to components as props or referenced by components via (potentially custom) React/Redux hooks. This does not play nicely with callback/Promise-based queries because the data from the callback/Promise-based queries may be in an inconsistent state by the time the data from a real-time query has updated.
-
-### Firebase Firestore Application: Callback/Promise-based or Real-Time Queries
-
-Firestore offers you a database that nicely organizes your data into _documents_ and _collections_ (groups of documents). It allows you to build queries that can either
-
-1. return _once_ with a single snapshot of data (a Promise-based query), or
-2. allow you to hook into the data's live values (a real-time query).
-
-#### Firestore Real-time Queries
-
-Provides collection + document data as an listenable (subscribable) data object
-
-- As soon as a collection updates, the collection access object publishes a new version of the collection
-- As soon as a doc updates, the doc access object publishes a new version of the doc
-  This can be passed as a React prop or an effect dependency, which triggers a component update!
-
-#### Anatomy of a Firebase Firestore Real-Time Application (The "Full" Stack)
-
-![Anatomy of a Firebase Firestore Real-Time Update](/img/lec8/firestore-real-time.png)
-
-Unlike callback/promise-based queries, the connection between updating and fetching data is completely gone. Updating data occurs along an entirely separate channel from subscribing to the data. This means that implementing calls to update data will look very different
-
-#### Miscellaneous Advice
-
-When designing a system:
-
-- avoid two-way dependencies (or as many dependencies as possible)
-  - as with React & declarative web frameworks, one-way data binding is the way to go
-  - avoids: more things to update
-  - avoids: more surface area for synchronization errors
-
-This philosophy helps us prefer real-time queries over Promise-based queries, because there is only a single dependency for the queried data, rather than the set of all the decentralized Promise-based queries.
+[Download here](https://www.postman.com/)
 
 ## Sample code
 
-This week's sample code starter can be found in the files under [this directory](https://github.com/cornell-dti/trends-fa23-lec7-demo).
+This week's sample code starter can be found in the files under [this directory](https://github.com/cornell-dti/fa23-trends-lec6-demo).
 
-[demo solution](https://github.com/michelleli01/trends-lec7-demo-soln)
-
-## Instruction to connect Firebase with demo code
-
-### Create new Firebase webapp and database
-
-1. Login to [Firebase Console](https://console.firebase.google.com/u/2/) and _Add project_:
-
-- Add desired name for the project (ex: `trends-demo`)
-- Turn off Google Analytics for simplicity (can manually integrate later)
-
-2. Create new Webapp:
-
-- On landing page, click web icon (`</>`) OR click _Add app_ to create new webapp
-- Choose app nickname (ex: `lec7-demo`) then register
-- Use default choice in _Add Firebase SDK_ then continue to console
-
-3. Create new Database:
-
-- On left sidebar, under _Product categories_, expand _Build_, then choose _Firestore Database_
-- Click _Create database_, choose location in _United States_
-- Start in **test mode** (allow anyone to read and write, need to be changed when deployed)
-- Add some data to database for testing (collection -> document -> data fields)
-
-### Connect your codebase to Firebase
-
-This guideline specifically refers to this lecture's demo code
-
-1. On left sidebar, click Setting icon (next to _Project Overview_), then _Project settings_
-2. Choose _Service accounts_ tab, then _Generate new private key_ (do not expose this key on internet - ex: Git, each of the team members need to generate separate private key themselves)
-3. Move the newly downloaded json file to your project backend folder (`server`), then rename it to `service_account.json`
-4. Add `service_account.json` to your `.gitignore` (in your root folder)
-5. Modify your `server/firebase.ts` to get database as bellow:
-
-```typescript
-import { initializeApp, applicationDefault, cert } from 'firebase-admin/app';
-import { getFirestore } from 'firebase-admin/firestore';
-import serviceAccount from './service_account.json';
-
-const app = initializeApp({
-  credential: cert(serviceAccount),
-});
-const db = getFirestore();
-
-export { db };
-```
-
-6. Import `db` wherever you need to interact with the database!
-
-```typescript
-import { db } from './firebase';
-```
+[demo solution](https://github.com/michelleli01/trends-fa23-lec6-demo-soln)
