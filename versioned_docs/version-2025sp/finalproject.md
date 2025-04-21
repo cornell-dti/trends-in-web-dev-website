@@ -37,7 +37,7 @@ This milestone is primarily focused to allow you to ideate ideas with your team 
 
 ### Milestone 2
 
-**Due: April 20th, 2025 by 11:59 PM**
+**Due: April 25th, 2025 by 11:59 PM**
 For this milestone, we expect a skeleton of a website. So, by this checkpoint, you should have established your frontend pages and outlined the API routes you plan on implementing in Express. Your frontend and backend should be properly connected and can communicate with one another locally. Again, make sure your TA approves and has checked in with you.
 
 **Requirements**
@@ -47,7 +47,7 @@ For this milestone, we expect a skeleton of a website. So, by this checkpoint, y
   - at least one of each HTTP request type (`GET`, `POST`, `PUT`, `DELETE`)
   - full implementation is not necessary, we just want to see the outline of each route function
 
-### Milestone 2.5
+### Milestone 3 
 
 **Due: May 4th, 2025 by 11:59 PM (No slip days allowed for this check-in)**
 For this milestone, you should have fully functioning prototype with maybe some minor bugs and getting your web application ready to be deployed. This is your final TA check in.
