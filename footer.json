@@ -15,7 +15,7 @@
       "items": [
         { "label": "Website", "href": "https://www.cornelldti.org" },
         { "label": "GitHub", "href": "https://github.com/cornell-dti" },
-        { "label": "Facebook", "href": "https://www.facebook.com/cornelldti/" },
+        { "label": "Instagram", "href": "https://www.instagram.com/cornelldti/?hl=en" },
         {
           "label": "Medium",
           "href": "https://medium.com/cornell-design-tech-initiative/"
@@ -28,6 +28,7 @@
         { "label": "Course Plan", "href": "https://courseplan.io/" },
         { "label": "CU Reviews", "href": "https://www.cureviews.org/" },
         { "label": "Queue Me In", "href": "https://queueme.in/" },
+        { "label": "CUApts", "href": "https://www.cuapts.org/"},
         { "label": "Design @ Cornell", "href": "https://www.cudesign.io/" },
         { "label": "Zing", "href": "https://zing-lsc-prod.web.app/" }
       ]
@@ -37,5 +38,5 @@
     "alt": "Cornell DTI Text Logo",
     "src": "img/dti-text-logo.png"
   },
-  "copyright": "Copyright © 2021 Cornell Design & Tech Initiative. Built with Docusaurus."
+  "copyright": "Copyright © 2025 Cornell Design & Tech Initiative. Built with Docusaurus."
 }
