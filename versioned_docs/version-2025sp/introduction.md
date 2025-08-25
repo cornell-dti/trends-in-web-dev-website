@@ -40,10 +40,10 @@ We also have many amazing TAs:
 
 The instructor and TA office hours schedule is as follows. Please note that **OH is online as we wait for the school to sort out room bookings**, but many will move to in-person in early March or so. If you need, you can also contact your favorite instructors or TAs for in-person meetings.
 
-- Oscar Wang: Mondays 1:00pm-2:00pm **in Upson 102** 
+- Oscar Wang: Mondays 1:00pm-2:00pm **in Upson 102**
 - Simon Ilincev: Thursdays 2:30-3:30pm **in Klarman KG44**
 - Chris Chen: Tuesdays 10:00am-11:00am [on Zoom](https://cornell.zoom.us/j/93709912241?pwd=fPcbk4uOyzR7syyqqoFmara0Epa8rI.1)
-- Lily Pham: Wednesdays 1:30pm-2:30pm [on Zoom](https://cornell.zoom.us/j/5605456811?pwd=WRjBlRi8elau8t3Y8csU9UzmIacBLA.1) (*room inbound when school approves*)
+- Lily Pham: Wednesdays 1:30pm-2:30pm [on Zoom](https://cornell.zoom.us/j/5605456811?pwd=WRjBlRi8elau8t3Y8csU9UzmIacBLA.1) (_room inbound when school approves_)
 - Ryan Qiu: Fridays 2:00pm-3:00pm **in Klarman KG44**
 - Jacqueline Cai: Wednesdays 2:30pm-3:30pm **in Klarman KG44**
 - Eric Cheng: Wednesdays 4:30pm-5:15pm **in Rockefeller 112**

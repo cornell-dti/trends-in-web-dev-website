@@ -47,7 +47,7 @@ For this milestone, we expect a skeleton of a website. So, by this checkpoint, y
   - at least one of each HTTP request type (`GET`, `POST`, `PUT`, `DELETE`)
   - full implementation is not necessary, we just want to see the outline of each route function
 
-### Milestone 3 
+### Milestone 3
 
 **Due: May 4th, 2025 by 11:59 PM (No slip days allowed for this check-in)**
 For this milestone, you should have fully functioning prototype with maybe some minor bugs and getting your web application ready to be deployed. This is your final TA check in.
@@ -66,7 +66,7 @@ For this milestone, you should have fully functioning prototype with maybe some 
 Submit your final work! Great job and we're all excited for demo day!!
 **Make sure to fill out this [Peer Review Form (coming soon)](#) for all members on your team**
 
-#### FINAL PRESENTATION DAY: *(tentative)* May 5th, 2025 (7:30 PM) in Gates 114
+#### FINAL PRESENTATION DAY: _(tentative)_ May 5th, 2025 (7:30 PM) in Gates 114
 
 **Requirements**
 
