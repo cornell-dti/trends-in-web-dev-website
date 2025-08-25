@@ -5,7 +5,7 @@ title: Syllabus
 
 # INFO 1998: Trends in Modern Web Development
 
-### Spring 2025
+### Fall 2024
 
 **Course Website**: [https://webdev.cornelldti.org/docs/introduction](https://webdev.cornelldti.org/docs/introduction)
 
@@ -17,36 +17,21 @@ Email: [kyle.harms@cornell.edu](mailto:kyle.harms@cornell.edu)
 
 ## Instructors:
 
-**Oscar Wang**
+**Chris Chen**
 
-Email: [ow39@cornell.edu](mailto:ow39@cornell.edu)
+Email: cc2785@cornell.edu
 
 **Simon Ilincev**
 
-Email: [sci24@cornell.edu](mailto:sci24@cornell.edu)
+Email: sci24@cornell.edu
 
-**Chris Chen**
-
-Email: [cc2785@cornell.edu](mailto:cc2785@cornell.edu)
-
-We also have many amazing TAs:
-
-- **Lily Pham**: [lnp35@cornell.edu](mailto:lnp35@cornell.edu)
-- **Ryan Qiu**: [rwq3@cornell.edu](mailto:rwq3@cornell.edu)
-- **Jacqueline Cai**: [jxc6@cornell.edu](mailto:jxc6@cornell.edu)
-- **Eric Cheng**: [ejc264@cornell.edu](mailto:ejc264@cornell.edu)
+**Jacqueline Cai**
+Email: jxc6@cornell.edu
 
 ### Office Hours Schedule
 
-The instructor and TA office hours schedule is as follows. Please note that **OH is online as we wait for the school to sort out room bookings**, but many will move to in-person in early March or so. If you need, you can also contact your favorite instructors or TAs for in-person meetings.
-
-- Oscar Wang: Mondays 1:00pm-2:00pm **in Upson 102**
-- Simon Ilincev: Thursdays 2:30-3:30pm **in Klarman KG44**
-- Chris Chen: Tuesdays 10:00am-11:00am [on Zoom](https://cornell.zoom.us/j/93709912241?pwd=fPcbk4uOyzR7syyqqoFmara0Epa8rI.1)
-- Lily Pham: Wednesdays 1:30pm-2:30pm [on Zoom](https://cornell.zoom.us/j/5605456811?pwd=WRjBlRi8elau8t3Y8csU9UzmIacBLA.1) (_room inbound when school approves_)
-- Ryan Qiu: Fridays 2:00pm-3:00pm **in Klarman KG44**
-- Jacqueline Cai: Wednesdays 2:30pm-3:30pm **in Klarman KG44**
-- Eric Cheng: Wednesdays 4:30pm-5:15pm **in Rockefeller 112**
+The instructor and TA office hours schedule is as follows:
+**TBD**
 
 Please note that some schedules may be subject to change; always check the latest comments under the pinned OH thread or the course website for the most up-to-date information.
 
@@ -56,11 +41,9 @@ Please note that some schedules may be subject to change; always check the lates
 
 ## Time and Location
 
-This course meets once a week for 10 weeks for a total of 10 lectures.
+This course meets once a week for 9 weeks for a total of 9 lectures.
 
-We will meet weekly on **Mondays**, from **7:30pm** to **8:45pm** in **Gates 114**. The start of the class will start on **February 10th**.
-
-<!-- \*\*You can find our course calendar with lecture dates and times, TA office hours with locations, and assignment due dates at [this](https://calendar.google.com/calendar/u/1?cid=Y183OTJmZmZmM2E3OWNjYTI2M2UwNTE2OTNmZDQ0YjlmMDI1NGQ4Y2JjYjk5YzUwODcxMmJkYmNhNDQ4YjMyODdlQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20) Google Calendar link. -->
+We will meet weekly on Wednesdays, from **7:30pm to 8:45pm** in **Upson 206**. Lecture 1 will start on **Wednesday, September 24**.
 
 ## Course Description
 
@@ -80,7 +63,7 @@ However, we _highly_ recommend that you have taken CS 1110, or have equivalent p
 
 ## Course Application
 
-Apply [here](https://forms.gle/nshadTFzkzTenvjv8) by **February 21st**. It includes a general information questionnaire so we have the information necessary for enrollment, as well as a preassessment you must complete (see Pre-Course Assessment below).
+Apply [here](https://forms.gle/nscnfdWx3ydTHVc78) by **September 15th at Noon (12pm)**. It includes a general information questionnaire so we have the information necessary for enrollment, as well as a preassessment you must complete (see Pre-Course Assessment below).
 
 We will be distributing enrollment/permission pins soon after the application period closes.
 
@@ -90,7 +73,7 @@ Please complete the pre-assessment [here](https://webdev.cornelldti.org/assets/f
 less than an hour! This is not meant as a test, but rather a way of ensuring
 that you are familiar with the foundational material in the course.
 
-Upload your submissions as a zip to your application [here](https://forms.gle/nshadTFzkzTenvjv8).
+Upload your submissions as a zip to your application [here](https://forms.gle/nscnfdWx3ydTHVc78).
 
 **This preassessment is mandatory; those who do not submit it will not be admitted in the course.**
 
@@ -119,11 +102,11 @@ The class is scheduled to finish well before finals week.
 
 | Assignment   | Topic                   | Due Date          |
 | ------------ | ----------------------- | ----------------- |
-| Assignment 1 | JavaScript Fundamentals | Feb 24 by 11:59pm |
-| Assignment 2 | TypeScript Fundamentals | Mar 10 by 11:59pm |
-| Assignment 3 | React Fundamentals      | Mar 17 by 11:59pm |
-| Assignment 4 | Frontend Capstone       | Mar 24 by 11:59pm |
-| Assignment 5 | Final Project           | May 4 by 11:59pm  |
+| Assignment 1 | JavaScript Fundamentals | Oct 1 by 11:59pm  |
+| Assignment 2 | TypeScript Fundamentals | Oct 8 by 11:59pm  |
+| Assignment 3 | React Fundamentals      | Oct 17 by 11:59pm |
+| Assignment 4 | Frontend Capstone       | Oct 29 by 11:59pm |
+| Assignment 5 | Final Project           | Dec 3 by 11:59pm  |
 
 More details regarding the final project will be released upon starting the course.
 
@@ -157,7 +140,7 @@ Web Development is a creative process, one that depends heavily on current techn
 
 For the following sections, the word "us" refers to the course staff.
 
-When in contact with us, contact with one of the three primary instructors (Oscar Wang, Simon Ilincev, and Chris Chen) is sufficient to qualify as contact with us.
+When in contact with us, contact with either of the two primary instructors (Simon Ilincev, Jacqueline Cai, Chris Chen) is sufficient to qualify as contact with us.
 
 The contact information can be found above in the "Instructors" section.
 
