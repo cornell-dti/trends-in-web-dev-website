@@ -5,11 +5,11 @@ title: Syllabus
 
 # INFO 1998: Trends in Modern Web Development
 
-### Fall 2024
+### Fall 2025
 
 **Course Website**: [https://webdev.cornelldti.org/docs/introduction](https://webdev.cornelldti.org/docs/introduction)
 
-Learn to build and deploy scalable, modern full-stack web applications using best practices and the industry's most-used technologies. This is a student run course by [Cornell DTI](http://cornelldti.org/)
+Learn to build and deploy scalable, modern full-stack web applications using best practices and the industry's most-used technologies. This is a student run course by [Cornell DTI](http://cornelldti.org/).
 
 **Faculty Advisor: Kyle Harms**
 
@@ -26,6 +26,7 @@ Email: cc2785@cornell.edu
 Email: sci24@cornell.edu
 
 **Jacqueline Cai**
+
 Email: jxc6@cornell.edu
 
 ### Office Hours Schedule
