@@ -105,8 +105,8 @@ The class is scheduled to finish well before finals week.
 | ------------ | ----------------------- | ----------------- |
 | Assignment 1 | JavaScript Fundamentals | Oct 1 by 11:59pm  |
 | Assignment 2 | TypeScript Fundamentals | Oct 8 by 11:59pm  |
-| Assignment 3 | React Fundamentals      | Oct 17 by 11:59pm |
-| Assignment 4 | Frontend Capstone       | Oct 29 by 11:59pm |
+| Assignment 3 | Frontend Capstone       | Oct 22 by 11:59pm |
+| Assignment 4 | Data Fetching           | Oct 29 by 11:59pm |
 | Assignment 5 | Final Project           | Dec 3 by 11:59pm  |
 
 More details regarding the final project will be released upon starting the course.
