@@ -7,7 +7,7 @@ title: Assignment 4
 
 **Due Oct 29 at 11:59pm**. As with all assignments, you are allowed up to 3 slip days for this assignment.
 
-For this short assignemnt, you'll be fetching data from an API and using the data on the frontend. We will be ~~participating in identity fraud~~ building an identity picker, sort of like a character select screen.
+For this short assignment, you'll be fetching data from an API and using the data on the frontend. We will be ~~participating in identity fraud~~ building an identity picker, sort of like a character select screen.
 ![Identity picker preview](./a4preview.png)
 
 Download the starter code here, and get your development environment ready.
