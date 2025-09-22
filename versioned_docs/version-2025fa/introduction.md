@@ -37,7 +37,7 @@ The instructor and TA office hours schedule is as follows:
 
 **Simon Ilincev:** TBD
 
-**Jacqueline Cai:** 12 - 1pm on [Zoom](https://cornell.zoom.us/j/96409821413?pwd=4bIWRHcu3kJeKDzBbWm8IslxCe0cyL.1)
+**Jacqueline Cai:** Wednesday 12-1pm on [Zoom](https://cornell.zoom.us/j/96409821413?pwd=4bIWRHcu3kJeKDzBbWm8IslxCe0cyL.1)
 
 Please note that some schedules may be subject to change; always check the latest comments under the pinned OH thread or the course website for the most up-to-date information.
 
