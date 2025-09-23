@@ -98,4 +98,3 @@ Take a look around and edit the code if you'd like.
 When you're ready, run `pnpm dev` to start the development server. If everything works as it should, you should be able to navigate to `localhost:5173` and see a React app running!
 
 You can also use that command to create a new 'blank' React project at any time. Bookmark this page and come back to it!
-s
