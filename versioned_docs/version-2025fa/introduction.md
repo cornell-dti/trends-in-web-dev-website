@@ -33,7 +33,7 @@ Email: jxc6@cornell.edu
 
 The instructor and TA office hours schedule is as follows:
 
-**Chris Chen:** TBD
+**Chris Chen:** Thursdays 10:30-11:30am on [Zoom](https://cornell.zoom.us/j/98998800391?pwd=H9ub8bUw5WfWTnPOMPYdHbsXI89M6x.1)
 
 **Simon Ilincev:** TBD
 
