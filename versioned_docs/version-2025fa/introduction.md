@@ -35,7 +35,7 @@ The instructor and TA office hours schedule is as follows:
 
 **Chris Chen:** Thursdays 10:30-11:30am on [Zoom](https://cornell.zoom.us/j/98998800391?pwd=H9ub8bUw5WfWTnPOMPYdHbsXI89M6x.1)
 
-**Simon Ilincev:** Mondays 1:15-2:15pm on [Google Meet](https://meet.google.com/azg-zvhf-jac) (pending room booking approval)
+**Simon Ilincev:** Mondays 1:15-2:15pm in Klarman KG44
 
 **Jacqueline Cai:** Wednesday 12-1pm on [Zoom](https://cornell.zoom.us/j/96409821413?pwd=4bIWRHcu3kJeKDzBbWm8IslxCe0cyL.1)
 
