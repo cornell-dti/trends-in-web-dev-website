@@ -18,6 +18,10 @@
       {
         "type": "doc",
         "id": "version-2025fa/unit1"
+      },
+            {
+        "type": "doc",
+        "id": "version-2025fa/unit2"
       }
     ],
     "Assignments": [
@@ -32,6 +36,10 @@
       {
         "type": "doc",
         "id": "version-2025fa/assignment2"
+      },
+      {
+        "type": "doc",
+        "id": "version-2025fa/assignment3"
       }
     ]
   }
