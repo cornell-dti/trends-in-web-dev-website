@@ -16,7 +16,7 @@ Download the starter code here, and get your development environment ready.
    ```bash
    pnpm dlx degit cornell-dti/trends-mono-fa25/hw-4-starter a4
    ```
-2. Open the folder in your IDE. Make sure you open the directory right above `src`.
+2. Open the folder in your IDE. Make sure you open the directory right above `pages`.
 3. Download dependencies.
    ```bash
    pnpm install
