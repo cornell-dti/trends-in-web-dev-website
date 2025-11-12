@@ -1,5 +1,5 @@
 ---
-id: lecture8
+id: lec8
 title: Lecture 8
 ---
 
