@@ -45,7 +45,7 @@ Please note that some schedules may be subject to change; always check the lates
 
 This course meets once a week for 10 weeks for a total of 9 lectures and a final project presentation.
 
-We will meet weekly on Mondays, from **7:30pm to 8:45pm** in **Upson 216**. Lecture 1 will start **mid-late February**.
+We will meet weekly on Mondays, from **7:30pm to 8:45pm** in **Upson 216**. Lecture 1 will start **February 23rd**.
 
 ## Course Description
 
@@ -65,7 +65,7 @@ However, we _highly_ recommend that you have taken CS 1110, or have equivalent p
 
 ## Course Application
 
-Apply [here](https://forms.gle/dncsyqkkrZF5t3ob9) by **TBD**. It includes a general information questionnaire so we have the information necessary for enrollment, as well as a preassessment you must complete (see Pre-Course Assessment below).
+Apply [here](https://forms.gle/dncsyqkkrZF5t3ob9) by **Tuesday, February 10th** at **11:59pm**. It includes a general information questionnaire so we have the information necessary for enrollment, as well as a preassessment you must complete (see Pre-Course Assessment below).
 
 We will be distributing enrollment/permission pins soon after the application period closes.
 
@@ -106,44 +106,44 @@ We highly recommend that you have a computer capable of running a modern web bro
       <td colSpan="2" style={{textAlign: "center"}}>Frontend</td>
     </tr>
     <tr>
-      <td>TBD</td>
+      <td>2/23</td>
       <td rowSpan="2">Unit 1: JavaScript and TypeScript</td>
     </tr>
     <tr>
-      <td>TBD</td>
+      <td>3/2</td>
     </tr>
     <tr>
-      <td>TBD</td>
+      <td>3/9</td>
       <td rowSpan="2">Unit 2: React</td>
     </tr>
     <tr>
-      <td>TBD</td>
+      <td>3/16</td>
     </tr>
     <tr>
       <td colSpan="2" style={{textAlign: "center"}}>Backend</td>
     </tr>
     <tr>
-      <td>TBD</td>
+      <td>3/23</td>
       <td>Data Fetching</td>
     </tr>
     <tr>
-      <td>TBD</td>
+      <td>4/6</td>
       <td>Express</td>
     </tr>
     <tr>
-      <td>TBD</td>
+      <td>4/13</td>
       <td>Databases</td>
     </tr>
     <tr>
-      <td>TBD</td>
+      <td>4/20</td>
       <td>Authentication</td>
     </tr>
     <tr>
-      <td>TBD</td>
+      <td>4/27</td>
       <td>Deployment</td>
     </tr>
     <tr>
-      <td>May 4</td>
+      <td>5/4</td>
       <td>Final Project Presentation</td>
     </tr>
   </tbody>
@@ -160,10 +160,10 @@ The class is scheduled to finish well before finals week.
 
 | Assignment   | Topic                   | Due Date          |
 | ------------ | ----------------------- | ----------------- |
-| Assignment 1 | JavaScript Fundamentals | TBD  |
-| Assignment 2 | TypeScript Fundamentals | TBD  |
-| Assignment 3 | Frontend Capstone       | TBD |
-| Assignment 4 | Data Fetching           | TBD |
+| Assignment 1 | JavaScript Fundamentals | March 2nd  |
+| Assignment 2 | TypeScript Fundamentals | March 9th  |
+| Assignment 3 | Frontend Capstone       | March 23rd |
+| Assignment 4 | Data Fetching           | April 6th |
 | Assignment 5 | Final Project           | May 5th by 11:59pm  |
 
 More details regarding the final project will be released upon starting the course.
