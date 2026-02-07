@@ -17,17 +17,43 @@ Email: [kyle.harms@cornell.edu](mailto:kyle.harms@cornell.edu)
 
 ## Instructors:
 
-**Chris Chen**
-
-Email: cc2785@cornell.edu
-
 **Esha Shah**
 
 Email: es999@cornell.edu
+Office Hours: Wednesday, 3-4pm in Gates 114
 
 **Hannah Zhou**
 
 Email: hyz4@cornell.edu
+Office Hours: Thursday 4:30-5:30pm in Hollister 372
+
+**Lauren Pothuru**
+Email: lsp75@cornell.edu
+Office Hours: TBD
+
+## TAs:
+
+**Chris Chen**
+
+Email: cc2785@cornell.edu
+Office Hours: Friday, 10-11am in Hollister 206
+
+**Temi Adebowale**
+Email: ta375@cornell.edu
+Office Hours: TBD
+
+**Annie Chen**
+Email: anc76@cornell.edu
+Office Hours: TBD
+
+**Chelsea She**
+Email: cms556@cornell.edu
+Office Hours: TBD
+
+**Arsh Singh**
+Email: as4274@cornell.edu
+Office Hours: TBD
+
 
 ### Office Hours Schedule
 
@@ -198,7 +224,7 @@ Web Development is a creative process, one that depends heavily on current techn
 
 For the following sections, the word "us" refers to the course staff.
 
-When in contact with us, contact with either of the three primary instructors (Chris Chen, Esha Shah, Hannah Zhou) is sufficient to qualify as contact with us.
+When in contact with us, contact with either of the three primary instructors (Esha Shah, Hannah Zhou, Lauren Pothuru) is sufficient to qualify as contact with us.
 
 The contact information can be found above in the "Instructors" section.
 
