@@ -19,47 +19,45 @@ Email: [kyle.harms@cornell.edu](mailto:kyle.harms@cornell.edu)
 
 **Esha Shah**
 
-Email: es999@cornell.edu
+Email: es999@cornell.edu <br>
 Office Hours: Wednesday, 3-4pm in Gates 114
 
 **Hannah Zhou**
 
-Email: hyz4@cornell.edu
+Email: hyz4@cornell.edu<br>
 Office Hours: Thursday 4:30-5:30pm in Hollister 372
 
 **Lauren Pothuru**
-Email: lsp75@cornell.edu
+
+Email: lsp75@cornell.edu<br>
 Office Hours: TBD
 
 ## TAs:
 
 **Chris Chen**
 
-Email: cc2785@cornell.edu
+Email: cc2785@cornell.edu<br>
 Office Hours: Friday, 10-11am in Hollister 206
 
 **Temi Adebowale**
-Email: ta375@cornell.edu
+
+Email: ta375@cornell.edu<br>
 Office Hours: TBD
 
 **Annie Chen**
-Email: anc76@cornell.edu
+
+Email: anc76@cornell.edu<br>
 Office Hours: TBD
 
 **Chelsea She**
-Email: cms556@cornell.edu
+
+Email: cms556@cornell.edu<br>
 Office Hours: TBD
 
 **Arsh Singh**
-Email: as4274@cornell.edu
+
+Email: as4274@cornell.edu<br>
 Office Hours: TBD
-
-
-### Office Hours Schedule
-
-The instructor and TA office hours schedule is as follows:
-
-**TBD** 
 
 Please note that some schedules may be subject to change; always check the latest comments under the pinned OH thread or the course website for the most up-to-date information.
 
