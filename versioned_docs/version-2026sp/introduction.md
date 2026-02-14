@@ -25,12 +25,12 @@ Office Hours: Wednesday, 3-4pm in Gates 114
 **Hannah Zhou**
 
 Email: hyz4@cornell.edu<br />
-Office Hours: Thursday 4:30-5:30pm in Hollister 372
+Office Hours: Thursday, 4:30-5:30pm in Hollister 372
 
 **Lauren Pothuru**
 
 Email: lsp75@cornell.edu<br />
-Office Hours: TBD
+Office Hours: Tuesday, 11:30am-12:30pm in Hollister 306
 
 ## TAs:
 
@@ -42,22 +42,22 @@ Office Hours: Friday, 10-11am in Hollister 206
 **Temi Adebowale**
 
 Email: ta375@cornell.edu<br />
-Office Hours: TBD
+Office Hours: Tuesday, 1:30-2:30pm in Hollister 320
 
 **Annie Chen**
 
 Email: anc76@cornell.edu<br />
-Office Hours: TBD
+Office Hours: Wednesday, 10:30-11:30am in Hollister 320
 
 **Chelsea She**
 
 Email: cms556@cornell.edu<br />
-Office Hours: TBD
+Office Hours: Thursday, 3-4pm in Hollister 206
 
 **Arsh Singh**
 
 Email: as4274@cornell.edu<br />
-Office Hours: TBD
+Office Hours: Tuesday, 4:30-5:30pm in Hollitser 320
 
 Please note that some schedules may be subject to change; always check the latest comments under the pinned OH thread or the course website for the most up-to-date information.
 
@@ -92,6 +92,8 @@ However, we _highly_ recommend that you have taken CS 1110, or have equivalent p
 Apply [here](https://forms.gle/dncsyqkkrZF5t3ob9) by **Tuesday, February 10th** at **11:59pm**. It includes a general information questionnaire so we have the information necessary for enrollment, as well as a preassessment you must complete (see Pre-Course Assessment below).
 
 We will be distributing enrollment/permission pins soon after the application period closes.
+
+If you are still interested in taking the course, please email cc2785@cornell.edu by February 20th.
 
 ### Pre-Course Assessment
 
