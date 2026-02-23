@@ -9,9 +9,7 @@ This unit covers the first two lectures of the course, and introduces you to the
 
 Homework: HW1 and HW2, due TBD respectively.
 
-Slides: TBD
-
-Demos: TBD
+Slides: [Lecture 1](https://docs.google.com/presentation/d/1BJDA9CFEl4meJo18tijA44FXopYuG68fhMXJ5mdia8A/edit?usp=sharing)
 
 ## JavaScript
 
