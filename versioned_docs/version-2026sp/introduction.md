@@ -57,7 +57,7 @@ Office Hours: Thursday, 3-4pm in Hollister 206
 **Arsh Singh**
 
 Email: as4274@cornell.edu<br />
-Office Hours: Tuesday, 4:30-5:30pm in Hollitser 320
+Office Hours: Tuesday, 4:30-5:30pm in Hollister 320
 
 Please note that some schedules may be subject to change; always check the latest comments under the pinned OH thread or the course website for the most up-to-date information.
 

@@ -7,7 +7,7 @@ Welcome to Unit 1: JavaScript and TypeScript!
 
 This unit covers the first two lectures of the course, and introduces you to the basics of JavaScript and TypeScript. We'll be using these languages throughout the course, so it's important to get a good grasp of them early on.
 
-Homework: HW1 and HW2, due TBD respectively.
+Homework: [HW1](/docs/assignment1) and HW2, due March 2nd and March 9th respectively.
 
 Slides: [Lecture 1](https://docs.google.com/presentation/d/1BJDA9CFEl4meJo18tijA44FXopYuG68fhMXJ5mdia8A/edit?usp=sharing)
 
