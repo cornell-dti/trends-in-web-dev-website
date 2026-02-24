@@ -11,13 +11,13 @@ You are allowed max 3 slip days (out of 6 total for all assignments besides the 
 
 The class is scheduled to finish well before finals week.
 
-Assignment 1: Due on CMSX by TBD
+[Assignment 1](/docs/assignment1): Due on CMSX by March 2nd at 11:59pm
 
-Assignment 2: Due on CMSX by TBD
+Assignment 2: Due on CMSX by March 9th at 11:59pm
 
-Assignment 3: Due on CMSX by TBD
+Assignment 3: Due on CMSX by March 23rd at 11:59pm
 
-Assignment 4: Due on CMSX by TBD
+Assignment 4: Due on CMSX by April 6th at 11:59pm
 
 Assignment 5 (Final Project): Due by May 5 at 11:59pm
 
