@@ -21,7 +21,7 @@ Email: [kyle.harms@cornell.edu](mailto:kyle.harms@cornell.edu)
 
 Email: es999@cornell.edu <br />
 Office Hours: Wednesday, 3-4pm in Gates 114 <br />
-_Note: On February 24, office hours will be held virtually from 1:00–2:00 PM._
+_Note: On February 24, office hours will be held [virtually](https://meet.google.com/dqh-xcgj-ptj) from 1:00–2:00 PM._
 
 **Hannah Zhou**
 
