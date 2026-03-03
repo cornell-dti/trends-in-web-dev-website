@@ -9,7 +9,11 @@ This unit covers the first two lectures of the course, and introduces you to the
 
 Homework: [HW1](/docs/assignment1) and HW2, due March 2nd and March 9th respectively.
 
-Slides: [Lecture 1](https://docs.google.com/presentation/d/1BJDA9CFEl4meJo18tijA44FXopYuG68fhMXJ5mdia8A/edit?usp=sharing)
+Slides: 
+
+[Lecture 1](https://docs.google.com/presentation/d/1BJDA9CFEl4meJo18tijA44FXopYuG68fhMXJ5mdia8A/edit?usp=sharing) 
+
+[Lecture 2](https://docs.google.com/presentation/d/1mzl2aqZkz21wm6ReGj9jqko3pOi_cfciWM6UTethBDA/edit?usp=sharing)
 
 ## JavaScript
 
