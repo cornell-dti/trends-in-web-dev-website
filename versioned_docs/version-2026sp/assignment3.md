@@ -5,7 +5,7 @@ title: Assignment 3
 
 # Assignment 3: Gallery
 
-**Due Oct 22 by 11:59pm**. As with all assignments, you are allowed up to 3 slip days for this assignment.
+**Due March 23rd by 11:59pm**. As with all assignments, you are allowed up to 3 slip days for this assignment.
 
 For this assignment, you'll be building a simple gallery app to display, filter, and paginate some data. By the end of this assignment, you should have a web app that looks like this.
 ![Gallery preview](./a3preview.png)
@@ -14,7 +14,7 @@ Download the starter code here, and get your development environment ready.
 
 1. Donwload the starter code.
    ```bash
-   pnpm dlx degit cornell-dti/trends-mono-fa25/hw-3-starter a3
+   pnpm dlx degit cornell-dti/trends-mono-sp26/hw-3-starter a3
    ```
 2. Open the folder in your IDE. Make sure you open the directory right above `src`.
 3. Download dependencies.
