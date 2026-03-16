@@ -10,6 +10,7 @@ This unit will cover the basics of frontend development using React, a popular f
 Homework: [HW3](/docs/assignment3), due Oct 22 respectively.
 
 Slides: [Lec 03](https://docs.google.com/presentation/d/1FQDggLtjVZU-0urIKHpcxfNbcc-26YpeNTsHX3zW-oI/edit?usp=sharing)
+[Lec 4](https://docs.google.com/presentation/d/1PQLVGeIvYjmQwgWettqXWqOvh60ct6Ui4d7j2SC3goE/edit?usp=sharing)
 
 ## Why React?
 
