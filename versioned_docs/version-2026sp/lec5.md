@@ -9,7 +9,7 @@ This lecture is the beginning of our introduction into backend, starting with da
 
 Homework: HW4, due Oct 29 respectively.
 
-[Lecture Slides](https://docs.google.com/presentation/d/1kxCCzdY6MOMdFP7kVT06e4NJvZxpHwwwVU0pWU1P8yY/edit)
+[Lecture Slides](https://docs.google.com/presentation/d/1gZtYyWZT5LiOaiBVodv16fpM33JTX8toc8zl-lnC6No/edit?usp=sharing)
 
 ## Data Fetching
 
