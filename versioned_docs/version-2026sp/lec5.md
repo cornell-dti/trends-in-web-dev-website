@@ -7,7 +7,7 @@ Welcome to Lecture 5!
 
 This lecture is the beginning of our introduction into backend, starting with data fetching from the frontend.
 
-Homework: HW4, due Oct 29 respectively.
+Homework: HW4, due April 4.
 
 [Lecture Slides](https://docs.google.com/presentation/d/1gZtYyWZT5LiOaiBVodv16fpM33JTX8toc8zl-lnC6No/edit?usp=sharing)
 
