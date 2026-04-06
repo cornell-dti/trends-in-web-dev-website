@@ -8,7 +8,7 @@ We will introduce Express.js today, which is a backend web framework to help us 
 
 Homework: MS1, due Oct 31
 
-[Lecture Slides](https://docs.google.com/presentation/d/1mlzPsMicTSNz97K7VlBi0WkdrKv4BXNGg-xp12Wp9-I/edit?slide=id.g3432863c193_0_4#slide=id.g3432863c193_0_4)
+[Lecture Slides](https://docs.google.com/presentation/d/14CM_VnMZTLy1S_rviC4E8FARx_8wij-u-tTmKM8Q5V0/edit?usp=sharing)
 
 ## Intro to Express.js
 
