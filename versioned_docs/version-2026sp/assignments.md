@@ -13,9 +13,9 @@ The class is scheduled to finish well before finals week.
 
 [Assignment 1](/docs/assignment1): Due on CMSX by March 2nd at 11:59pm
 
-Assignment 2: Due on CMSX by March 9th at 11:59pm
+[Assignment 2](/docs/assignment2): Due on CMSX by March 9th at 11:59pm
 
-Assignment 3: Due on CMSX by March 23rd at 11:59pm
+[Assignment 3](/docs/assignment3): Due on CMSX by March 23rd at 11:59pm
 
 Assignment 4: Due on CMSX by April 6th at 11:59pm
 

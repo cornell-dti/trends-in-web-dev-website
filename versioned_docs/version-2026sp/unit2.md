@@ -7,11 +7,13 @@ Welcome to Unit 2!
 
 This unit will cover the basics of frontend development using React, a popular frontend framework.
 
-Homework: HW3, due Oct 22 respectively.
+Homework: [HW3](/docs/assignment3), due Oct 22 respectively.
 
-Slides: [Here](https://docs.google.com/presentation/d/16MGUmS8-FX1_F2Dc8LvkflhS9dYRDRGK2PMXBGPNUo8/edit?usp=sharing)
+Slides: 
+[Lec 03](https://docs.google.com/presentation/d/1FQDggLtjVZU-0urIKHpcxfNbcc-26YpeNTsHX3zW-oI/edit?usp=sharing)
+[Lec 04](https://docs.google.com/presentation/d/1PQLVGeIvYjmQwgWettqXWqOvh60ct6Ui4d7j2SC3goE/edit?usp=sharing)
 
-## How React?
+## Why React?
 
 Allows developers to create reusable UI components and manage the state of those components efficiently. React uses a virtual DOM (Document Object Model) to improve performance by minimizing the amount of DOM manipulation required when a user interacts with a React application. This allows for efficient updates and rendering of components, making it a popular choice for building complex and high-performing web and mobile applications.
 

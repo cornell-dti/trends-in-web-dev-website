@@ -5,7 +5,7 @@ title: Assignment 4
 
 # Assignment 4: Identity Picker
 
-**Due Oct 29 at 11:59pm**. As with all assignments, you are allowed up to 3 slip days for this assignment.
+**Due April 6th at 11:59pm**. As with all assignments, you are allowed up to 3 slip days for this assignment.
 
 For this short assignment, you'll be fetching data from an API and using the data on the frontend. We will be ~~participating in identity fraud~~ building an identity picker, sort of like a character select screen.
 ![Identity picker preview](./a4preview.png)
@@ -14,7 +14,7 @@ Download the starter code here, and get your development environment ready.
 
 1. Donwload the starter code.
    ```bash
-   pnpm dlx degit cornell-dti/trends-mono-fa25/hw-4-starter a4
+   pnpm dlx degit cornell-dti/trends-mono-sp26/hw-4-starter a4
    ```
 2. Open the folder in your IDE. Make sure you open the directory right above `pages`.
 3. Download dependencies.

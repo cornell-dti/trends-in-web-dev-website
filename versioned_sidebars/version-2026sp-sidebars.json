@@ -18,6 +18,14 @@
       {
         "type": "doc",
         "id": "version-2026sp/unit1"
+      },
+      {
+        "type": "doc",
+        "id": "version-2026sp/unit2"
+      }, 
+      {
+        "type": "doc",
+        "id": "version-2026sp/lec5"
       }
     ],
     "Assignments": [
@@ -32,6 +40,18 @@
       {
         "type": "doc",
         "id": "version-2026sp/assignment2"
+      },
+      {
+        "type": "doc",
+        "id": "version-2026sp/assignment3"
+      },
+            {
+        "type": "doc",
+        "id": "version-2026sp/assignment4"
+      },
+      {
+        "type": "doc",
+        "id": "version-2026sp/finalproject"
       }
     ]
   }
