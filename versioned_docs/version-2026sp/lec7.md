@@ -9,8 +9,7 @@ This lecture will go over integrating databases (specifically Firebase), to our 
 
 Homework: Milestone 2, due Nov 14
 
-<!-- [Lecture Slides](https://docs.google.com/presentation/d/1t9rl3YAVq2Dt8a-H7rvBaHIe7HfyV4j26XNhcWc438w/edit?usp=sharing) -->
-Lecture Slides will be added soon!
+[Lecture Slides](https://docs.google.com/presentation/d/1gn_gxvd_s6E6sJq2AygebUFDvBvo2QfmCms5d9I86Vc/edit?usp=sharing)
 
 ## Intro to Databases and Firebase
 
@@ -256,11 +255,11 @@ This philosophy helps us prefer real-time queries over Promise-based queries, be
 
 ## Sample code
 
-This week's sample code starter can be found in the files under [this directory](https://github.com/cornell-dti/trends-fa23-lec7-demo).
+This week's sample code starter can be found in the files under [this directory](https://github.com/cornell-dti/trends-mono-sp26/tree/main/demos/lec7).
 
-[demo solution](https://github.com/michelleli01/trends-lec7-demo-soln)
+demo solution will be added after the Lecture!
 
-## Instruction to connect Firebase with demo code
+## Instruction to connect Firebase with a project
 
 ### Create new Firebase webapp and database
 
@@ -284,7 +283,7 @@ This week's sample code starter can be found in the files under [this directory]
 
 ### Connect your codebase to Firebase
 
-This guideline specifically refers to this lecture's demo code
+This guideline specifically refers to connecting a production database to your codebase, unlike SP26's demo in which we connected to a test database. The steps are mostly the same, but here there is an extra step involving a service account to connect to our database.
 
 1. On left sidebar, click Setting icon (next to _Project Overview_), then _Project settings_
 2. Choose _Service accounts_ tab, then _Generate new private key_ (do not expose this key on internet - ex: Git, each of the team members need to generate separate private key themselves)
