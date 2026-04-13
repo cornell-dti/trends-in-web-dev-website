@@ -7,7 +7,7 @@ Welcome to Lecture 7!
 
 This lecture will go over integrating databases (specifically Firebase), to our web app.
 
-Homework: Milestone 2, due Nov 14
+Homework: Milestone 3, due April 24
 
 [Lecture Slides](https://docs.google.com/presentation/d/1gn_gxvd_s6E6sJq2AygebUFDvBvo2QfmCms5d9I86Vc/edit?usp=sharing)
 
