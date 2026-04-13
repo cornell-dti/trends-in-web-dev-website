@@ -9,7 +9,8 @@ This lecture will go over integrating databases (specifically Firebase), to our 
 
 Homework: Milestone 2, due Nov 14
 
-[Lecture Slides](https://docs.google.com/presentation/d/1t9rl3YAVq2Dt8a-H7rvBaHIe7HfyV4j26XNhcWc438w/edit?usp=sharing)
+<!-- [Lecture Slides](https://docs.google.com/presentation/d/1t9rl3YAVq2Dt8a-H7rvBaHIe7HfyV4j26XNhcWc438w/edit?usp=sharing) -->
+Lecture Slides will be added soon!
 
 ## Intro to Databases and Firebase
 
