@@ -3,7 +3,8 @@ id: lec8
 title: Lecture 8
 ---
 
-[Lecture Slides](https://docs.google.com/presentation/d/1zbwbp_VKe3KoTpxlilfAS6Z2B4R86VJYDN2MQpkN6z4/edit?usp=sharing)
+Lecture slides will be posted soon!
+<!-- [Lecture Slides](https://docs.google.com/presentation/d/1zbwbp_VKe3KoTpxlilfAS6Z2B4R86VJYDN2MQpkN6z4/edit?usp=sharing) -->
 
 [Final Project](finalproject)
 
@@ -302,5 +303,6 @@ addDoc(collection(db, 'tasks'), task);
 
 ## Demo code
 
-Feel free to reference our [demo code](https://github.com/cornell-dti/trends-mono-sp25/tree/main/demos/lec8)
-to implement authentication in your final project!
+The demo will be posted soon! 
+<!-- Feel free to reference our [demo code](https://github.com/cornell-dti/trends-mono-sp25/tree/main/demos/lec8)
+to implement authentication in your final project! -->
