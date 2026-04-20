@@ -3,8 +3,8 @@ id: lec8
 title: Lecture 8
 ---
 
-Lecture slides will be posted soon!
-<!-- [Lecture Slides](https://docs.google.com/presentation/d/1zbwbp_VKe3KoTpxlilfAS6Z2B4R86VJYDN2MQpkN6z4/edit?usp=sharing) -->
+<!-- Lecture slides will be posted soon! -->
+[Lecture Slides](https://docs.google.com/presentation/d/1pUnFzn9p5GsmzQQoehW1fOhjpzcffvYH---JmQwBjqE/edit?usp=sharing)
 
 [Final Project](finalproject)
 
