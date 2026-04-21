@@ -49,7 +49,7 @@ For this milestone, we expect a skeleton of a website. So, by this checkpoint, y
 
 ### Milestone 3
 
-**Due: April 24th, 2026 by 11:59 PM (No slip days allowed for this check-in)**
+**Due: April 24th, 2026 by 11:59 PM.**
 For this milestone, you should have fully functioning prototype with maybe some minor bugs and getting your web application ready to be deployed. This is your final TA check in.
 
 **Requirements**
