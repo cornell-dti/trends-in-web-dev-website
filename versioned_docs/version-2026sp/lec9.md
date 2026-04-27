@@ -10,7 +10,7 @@ title: Lecture 9
 # Quick Announcements
 
 - Final Project Demonstration
-  - Wednesday 5/4 7:30 - 8:45 PM
+  - Monday 5/4 7:30 - 8:45 PM
   - Location: Upson 216
   - Attendance of your whole team is required!
   - Structure of the demo day:
