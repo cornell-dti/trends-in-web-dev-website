@@ -3,15 +3,15 @@ id: lecture9
 title: Lecture 9
 ---
 
-[Lecture Slides](https://docs.google.com/presentation/d/12gDtUx8ToDNzP_-Ar8lWmF2UXNK3RdaanDj7GlMWTJk/edit?usp=sharing)
+[Lecture Slides](https://docs.google.com/presentation/d/1gXts4lVmD_pmwmXQWYI6bm_j3dyjuY4bTKCl6eB4vLs/edit?usp=sharing)
 
 [Final Project Instructions](finalproject)
 
 # Quick Announcements
 
 - Final Project Demonstration
-  - Wednesday 12/3 7:30 - 8:45 PM
-  - Location: Upson 206
+  - Monday 5/4 7:30 - 8:45 PM
+  - Location: Upson 216
   - Attendance of your whole team is required!
   - Structure of the demo day:
     - Each team will be assigned a personal table to demo your project.
