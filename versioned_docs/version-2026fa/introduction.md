@@ -46,7 +46,7 @@ Please note that some schedules may be subject to change; always check the lates
 
 This course meets once a week for 10 weeks for a total of 9 lectures and a final project presentation.
 
-We will meet weekly at **TBD**. Lecture 1 will start on the week of **September 21st**.
+We will meet weekly at **Philips 203**. Lecture 1 will start on **September 21st**.
 
 ## Course Description
 
@@ -66,11 +66,11 @@ However, we _highly_ recommend that you have taken CS 1110, or have equivalent p
 
 ## Course Application
 
-Apply [here](https://docs.google.com/forms/d/e/1FAIpQLSdi76uiPGyFWR0OffAFIAivySmi8_FJY8MxryCgDyCeWClISw/viewform?usp=header) by **Wednesday, September 16th** at **11:59pm**. It includes a general information questionnaire so we have the information necessary for enrollment, as well as a preassessment you must complete (see Pre-Course Assessment below).
+Apply [here](https://docs.google.com/forms/d/e/1FAIpQLSdi76uiPGyFWR0OffAFIAivySmi8_FJY8MxryCgDyCeWClISw/viewform?usp=header) by **Saturday, September 20th** at **11:59pm**. It includes a general information questionnaire so we have the information necessary for enrollment, as well as a preassessment you must complete (see Pre-Course Assessment below).
 
 We will be distributing enrollment/permission pins soon after the application period closes.
 
-If you are still interested in taking the course, please email hyz4@cornell.edu by September 25th.
+If you are still interested in taking the course, please email hyz4@cornell.edu by September 25th! 
 
 ### Pre-Course Assessment
 
@@ -109,44 +109,44 @@ We highly recommend that you have a computer capable of running a modern web bro
       <td colSpan="2" style={{textAlign: "center"}}>Frontend</td>
     </tr>
     <tr>
-      <td>TBD</td>
-      <td rowSpan="2">Unit 1: JavaScript and TypeScript</td>
+      <td>9/21</td>
+      <td rowSpan="2">Unit 1: Intros & JavaScript and TypeScript</td>
     </tr>
     <tr>
-      <td>TBD</td>
+      <td>9/28</td>
     </tr>
     <tr>
-      <td>TBD</td>
+      <td>10/5</td>
       <td rowSpan="2">Unit 2: React</td>
     </tr>
     <tr>
-      <td>TBD</td>
+      <td>10/12</td>
     </tr>
     <tr>
       <td colSpan="2" style={{textAlign: "center"}}>Backend</td>
     </tr>
     <tr>
-      <td>TBD</td>
+      <td>10/19</td>
       <td>Data Fetching</td>
     </tr>
     <tr>
-      <td>TBD</td>
+      <td>10/26</td>
       <td>Express</td>
     </tr>
     <tr>
-      <td>TBD</td>
+      <td>11/2</td>
       <td>Databases</td>
     </tr>
     <tr>
-      <td>TBD</td>
+      <td>11/9</td>
       <td>Authentication</td>
     </tr>
     <tr>
-      <td>TBD</td>
+      <td>11/16</td>
       <td>Deployment</td>
     </tr>
     <tr>
-      <td>TBD</td>
+      <td>11/30 (Tentative)</td>
       <td>Final Project Presentation</td>
     </tr>
   </tbody>
@@ -163,11 +163,11 @@ The class is scheduled to finish well before finals week.
 
 | Assignment   | Topic                   | Due Date          |
 | ------------ | ----------------------- | ----------------- |
-| Assignment 1 | JavaScript Fundamentals | TBD  |
-| Assignment 2 | TypeScript Fundamentals | TBD  |
-| Assignment 3 | Frontend Capstone       | TBD |
-| Assignment 4 | Data Fetching           | TBD |
-| Assignment 5 | Final Project           | TBD |
+| Assignment 1 | JavaScript Fundamentals | 9/28  |
+| Assignment 2 | TypeScript Fundamentals | 8/5  |
+| Assignment 3 | Frontend Capstone       | 10/19 |
+| Assignment 4 | Data Fetching           | 10/26 |
+| Assignment 5 | Final Project           | 12/3 |
 
 More details regarding the final project will be released upon starting the course.
 
