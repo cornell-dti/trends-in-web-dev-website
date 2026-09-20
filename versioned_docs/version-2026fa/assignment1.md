@@ -5,7 +5,7 @@ title: Assignment 1
 
 # Assignment 1: Javascript Fundamentals
 
-## Due March 2nd by 11:59pm
+## Due September 28th by 11:59pm
 
 Run the following command in an appropriate folder on your system:
 
