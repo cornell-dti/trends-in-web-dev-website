@@ -9,7 +9,7 @@ Node is a JavaScript runtime that allows you to run JavaScript code outside of a
 
 Go to [this website](https://nodejs.org/en/download/) and follow the instructions to install it on your workstation.
 
-For consistency, please use the latest Node LTS (currently, as of Fall 2026, this is Node 26).
+For consistency, please use the latest Node LTS (currently, as of Fall 2025, this is Node 22).
 
 ## Install `git`
 

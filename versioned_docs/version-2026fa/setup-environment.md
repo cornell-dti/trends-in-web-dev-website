@@ -9,7 +9,7 @@ Node is a JavaScript runtime that allows you to run JavaScript code outside of a
 
 Go to [this website](https://nodejs.org/en/download/) and follow the instructions to install it on your workstation.
 
-For consistency, please use the latest Node LTS (currently, as of Spring 2025, this is Node 24).
+For consistency, please use the latest Node LTS (currently, as of Fall 2026, this is Node 26).
 
 ## Install `git`
 
@@ -88,7 +88,7 @@ npx tsx your-file.ts  # or `npx tsx` for REPL (interactive mode)
 To make sure you've got everything set up correctly, `cd` into a directory of your choice and run:
 
 ```bash
-pnpm dlx degit cornell-dti/trends-mono-sp26/frontend-starter your-project-name
+pnpm dlx degit cornell-dti/trends-mono-fa26/frontend-starter your-project-name
 ```
 
 This will create a new directory called `your-project-name` with a React project inside. `cd` into it and run `pnpm install` to install all the dependencies.
