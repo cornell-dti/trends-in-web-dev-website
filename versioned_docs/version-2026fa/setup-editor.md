@@ -32,4 +32,4 @@ Once installed, add these lines to your VSCode Settings (refer to [this link](ht
 
 Prettier is a code formatter that will automatically format your code to be consistent with the rest of the class.
 
-Install it the same way you did ESLint and it should automatically work!
+Install it the same way you did ESLint, then turn on "Format on Save" in your VSCode settings. It should be working after that!
