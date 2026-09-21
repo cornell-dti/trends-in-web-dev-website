@@ -11,15 +11,15 @@ You are allowed max 3 slip days (out of 6 total for all assignments besides the 
 
 The class is scheduled to finish well before finals week.
 
-Assignment 1: Due on CMSX by TBD at 11:59pm
+Assignment 1: Due on CMSX by September 28th at 11:59pm
 
-Assignment 2: Due on CMSX by TBD at 11:59pm
+Assignment 2: Due on CMSX by October 5th at 11:59pm
 
-Assignment 3: Due on CMSX by TBD at 11:59pm
+Assignment 3: Due on CMSX by October 19th at 11:59pm
 
-Assignment 4: Due on CMSX by TBD at 11:59pm
+Assignment 4: Due on CMSX by November 2nd at 11:59pm
 
-Assignment 5 (Final Project): Due by TBD at 11:59pm
+Assignment 5 (Final Project): Due (tentatively) by November 30th at 11:59pm
 
 ---
 
@@ -32,13 +32,13 @@ If you're trying to create a new frontend React project on your own, `cd` into a
 The following command creates an incredibly simple React project:
 
 ```bash
-pnpm dlx degit cornell-dti/trends-mono-sp26/frontend-starter your-project-name
+pnpm dlx degit cornell-dti/trends-mono-fa26/frontend-starter your-project-name
 ```
 
 The following command creates a more advanced React project with a component library, icons, and routing built in for you:
 
 ```bash
-pnpm dlx degit cornell-dti/trends-mono-sp26/frontend-starter-advanced your-project-name
+pnpm dlx degit cornell-dti/trends-mono-fa26/frontend-starter-advanced your-project-name
 ```
 
 Note that neither of these projects include a backend!
