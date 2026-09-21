@@ -120,29 +120,29 @@ We highly recommend that you have a computer capable of running a modern web bro
       <td rowSpan="2">Unit 2: React</td>
     </tr>
     <tr>
-      <td>10/12</td>
+      <td>10/19</td>
     </tr>
     <tr>
       <td colSpan="2" style={{textAlign: "center"}}>Backend</td>
     </tr>
     <tr>
-      <td>10/19</td>
+      <td>10/26</td>
       <td>Data Fetching</td>
     </tr>
     <tr>
-      <td>10/26</td>
+      <td>11/2</td>
       <td>Express</td>
     </tr>
     <tr>
-      <td>11/2</td>
+      <td>11/9</td>
       <td>Databases</td>
     </tr>
     <tr>
-      <td>11/9</td>
+      <td>11/16</td>
       <td>Authentication</td>
     </tr>
     <tr>
-      <td>11/16</td>
+      <td>11/23</td>
       <td>Deployment</td>
     </tr>
     <tr>
