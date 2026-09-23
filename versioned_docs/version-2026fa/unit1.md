@@ -13,7 +13,16 @@ Slides:
 
 [Lecture 1](https://docs.google.com/presentation/d/1E-99qEU7E0ecnZl2RBG-yLH5FBlecrdU6ysJ0P8ttmU/edit?usp=sharing) 
 
-Lecture 2 (TBD)
+To get the updated demo for lecture 1, run the following:
+
+```bash
+cd your/working/directory
+pnpm dlx degit cornell-dti/trends-mono-fa26/demos/lec1 my-project-name
+cd my-project-name
+pnpm install
+```
+
+Lecture 2
 
 ## JavaScript
 
