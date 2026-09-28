@@ -13,7 +13,7 @@ Slides:
 
 [Lecture 1](https://docs.google.com/presentation/d/1E-99qEU7E0ecnZl2RBG-yLH5FBlecrdU6ysJ0P8ttmU/edit?usp=sharing) 
 
-To get the updated demo for lecture 1, run the following:
+To get the updated demo for Lecture 1, run the following:
 
 ```bash
 cd your/working/directory
@@ -22,7 +22,7 @@ cd my-project-name
 pnpm install
 ```
 
-Lecture 2
+[Lecture 2](https://docs.google.com/presentation/d/1MjwMU3jAWD1JorbQVN8mSYhS5DJVt-CQXM3wmw_eSSk/edit?usp=sharing)
 
 ## JavaScript
 
