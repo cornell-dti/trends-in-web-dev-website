@@ -5,12 +5,12 @@ title: Assignment 2
 
 # Assignment 2: Typescript Fundamentals
 
-## Due March 9 by 11:59pm
+## Due October 5 by 11:59pm
 
 Run the following command in an appropriate folder on your system:
 
 ```bash
-pnpm dlx degit cornell-dti/trends-mono-sp26/hw-2-starter my-project-name
+pnpm dlx degit cornell-dti/trends-mono-fa26/hw-2-starter my-project-name
 cd my-project-name
 pnpm install
 ```

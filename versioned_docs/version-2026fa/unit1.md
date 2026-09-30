@@ -7,7 +7,7 @@ Welcome to Unit 1: JavaScript and TypeScript!
 
 This unit covers the first two lectures of the course, and introduces you to the basics of JavaScript and TypeScript. We'll be using these languages throughout the course, so it's important to get a good grasp of them early on.
 
-Homework: [HW1](/docs/assignment1) and HW2(TBD), due September 28th and October 5th respectively.
+Homework: [HW1](/docs/assignment1) and [HW2](/docs/assignment2), due September 28th and October 5th respectively.
 
 Slides: 
 
@@ -23,6 +23,15 @@ pnpm install
 ```
 
 [Lecture 2](https://docs.google.com/presentation/d/1MjwMU3jAWD1JorbQVN8mSYhS5DJVt-CQXM3wmw_eSSk/edit?usp=sharing)
+
+To get the update demo for Lecture 2, run the following:
+
+```bash
+cd your/working/directory
+pnpm dlx degit cornell-dti/trends-mono-fa26/demos/lec2 my-project-name
+cd my-project-name
+pnpm install
+```
 
 ## JavaScript
 
