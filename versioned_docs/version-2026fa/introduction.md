@@ -20,17 +20,17 @@ Email: [kyle.harms@cornell.edu](mailto:kyle.harms@cornell.edu)
 **Esha Shah**
 
 Email: es999@cornell.edu <br />
-Office Hours: TBD <br />
+Office Hours: Wednesday, 1:30-2:30pm in Carpenter 103D <br />
 
 **Hannah Zhou**
 
 Email: hyz4@cornell.edu<br />
-Office Hours: TBD
+Office Hours: Tuesday, 5-6pm in Hollister 206 <br />
 
 **Temi Adebowale**
 
 Email: ta375@cornell.edu<br />
-Office Hours: TBD
+Office Hours: Thursday, 1:30-2:30pm in Carpenter 103C <br />
 
 ## TAs:
 
