@@ -7,11 +7,11 @@ Welcome to Unit 2!
 
 This unit will cover the basics of frontend development using React, a popular frontend framework.
 
-Homework: [HW3](/docs/assignment3), due Oct 22 respectively.
+Homework: HW3
 
 Slides: 
-[Lec 03](https://docs.google.com/presentation/d/1FQDggLtjVZU-0urIKHpcxfNbcc-26YpeNTsHX3zW-oI/edit?usp=sharing)
-[Lec 04](https://docs.google.com/presentation/d/1PQLVGeIvYjmQwgWettqXWqOvh60ct6Ui4d7j2SC3goE/edit?usp=sharing)
+[Lec 03](https://docs.google.com/presentation/d/1QCNsGqugHVP6u4RDSIF2bVqNyDDYlscEGYsz06_wrnI/edit?usp=sharing)
+Lec 04
 
 ## Why React?
 
