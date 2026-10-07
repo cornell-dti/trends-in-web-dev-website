@@ -7,10 +7,20 @@ Welcome to Unit 2!
 
 This unit will cover the basics of frontend development using React, a popular frontend framework.
 
-Homework: HW3
+Homework:[HW3](/docs/assignment3)
 
 Slides: 
 [Lec 03](https://docs.google.com/presentation/d/1QCNsGqugHVP6u4RDSIF2bVqNyDDYlscEGYsz06_wrnI/edit?usp=sharing)
+
+To get the updated demo for Lecture 3, run the following:
+
+```bash
+cd your/working/directory
+pnpm dlx degit cornell-dti/trends-mono-fa26/demos/lec3 my-project-name
+cd my-project-name
+pnpm install
+```
+
 Lec 04
 
 ## Why React?
