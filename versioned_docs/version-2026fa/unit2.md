@@ -21,7 +21,17 @@ cd my-project-name
 pnpm install
 ```
 
-Lec 04
+[Lec 04](https://docs.google.com/presentation/d/1Uxhyj36YgfUWl95fHbl8z5-UdFPCBSqErs-9osRu3Ds/edit?usp=sharing)
+
+To get the demo for Lecture 4, run the following:
+
+```bash
+cd your/working/directory
+pnpm dlx degit cornell-dti/trends-mono-fa26/demos/lec4 lec4
+cd lec4
+pnpm install
+pnpm dev
+```
 
 ## Why React?
 
