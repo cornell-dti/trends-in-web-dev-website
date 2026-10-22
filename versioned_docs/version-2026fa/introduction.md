@@ -30,7 +30,7 @@ Office Hours: Tuesday, 5-6pm in Hollister 206 <br />
 **Temi Adebowale**
 
 Email: ta375@cornell.edu<br />
-Office Hours: Thursday, 1:30-2:30pm in Carpenter 103C <br />
+Office Hours: Thursday, 1:15-2:15pm in Upson 152 <br />
 
 ## TAs:
 
