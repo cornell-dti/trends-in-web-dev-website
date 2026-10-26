@@ -1,15 +1,15 @@
 ---
 id: lec5
-title: Lecture 5
+title: Lecture 5 / Data Fetching
 ---
 
 Welcome to Lecture 5!
 
 This lecture is the beginning of our introduction into backend, starting with data fetching from the frontend.
 
-Homework: [HW4](/docs/assignment4), due April 6th.
+Homework: [HW4](/docs/assignment4), due November 2nd.
 
-[Lecture Slides](https://docs.google.com/presentation/d/1gZtYyWZT5LiOaiBVodv16fpM33JTX8toc8zl-lnC6No/edit?usp=sharing)
+[Lecture Slides](https://docs.google.com/presentation/d/1LtgHW77SVmuIcmZ8fOPNFYjCtQ73v6O6XY7Vvk6NS-I/edit?usp=sharing)
 
 ## Data Fetching
 
@@ -21,7 +21,7 @@ ways to fetch data out there, which we will cover later.
 
 ### HTTP Requests and Responses
 
-So far, the information we've talked about has been mostly about the client side of a web application. Clients are computers users use to access our web applications (phones, tablets, laptops, gaming consoles, etc). Client side refers to the **processing that takes place locally** on the user's machine where the client can see the results. So, tasks that requires browsers to run scripes on the client machine without involving any processing on the server are client side tasks. Examples of client side operations are rendering images, registering user input, or clicking buttons.
+So far, the information we've talked about has been mostly about the client side of a web application. Clients are computers users use to access our web applications (phones, tablets, laptops, gaming consoles, etc). Client side refers to the **processing that takes place locally** on the user's machine where the client can see the results. So, tasks that requires browsers to run scripts on the client machine without involving any processing on the server are client side tasks. Examples of client side operations are rendering images, registering user input, or clicking buttons.
 
 In the final half of he course, we will be talking about the server side of a web application. Servers are also computers, however servers centralize information and run code to communicate with multiple clients in addition to executing operations on data. So, server side refers to the processing that is **not visible** to the client and is done on the server. So, tasks such as validating submitted data and requests, storing and retrieving data from databases, and sending corrent data to the client are all examples of server side operations.
 
@@ -296,16 +296,16 @@ try {
 
 Check out Postman to send API requests! [Here](https://www.postman.com/)
 
-This example from lecture sends a request to the Cornell Course Roster API with [this](https://classes.cornell.edu/api/2.0/search/classes.json?roster=FA25&subject=CS) specific request:
+This example from lecture sends a request to the Cornell Course Roster API with [this](https://classes.cornell.edu/api/2.0/search/classes.json?roster=FA26&subject=CS) specific request:
 ![postman example](postman.png)
 
 ## Live Demo Material
 
-For live demos, please refer to [this repo](https://github.com/cornell-dti/trends-mono-fa25/tree/main/demos). You can clone it and run it locally to follow along with the live demo by running:
+For live demos, please refer to [this repo](https://github.com/cornell-dti/trends-mono-fa26/tree/main/demos/lec5). You can download the starter and run it locally to follow along with the live demo by running:
 
 ```bash
-git clone https://github.com/cornell-dti/trends-mono-fa25.git
-cd trends-mono-fa25/demos
+pnpm dlx degit cornell-dti/trends-mono-fa26/demos/lec5 lecture-5
+cd lecture-5
 pnpm install
 pnpm dev
 ```

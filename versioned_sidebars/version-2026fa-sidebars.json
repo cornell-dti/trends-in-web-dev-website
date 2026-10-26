@@ -22,6 +22,10 @@
       {
         "type": "doc",
         "id": "version-2026fa/unit2"
+      },
+      {
+        "type": "doc",
+        "id": "version-2026fa/lec5"
       }
     ],
     "Assignments": [
@@ -40,6 +44,14 @@
       {
         "type": "doc",
         "id": "version-2026fa/assignment3"
+      },
+      {
+        "type": "doc",
+        "id": "version-2026fa/assignment4"
+      },
+      {
+        "type": "doc",
+        "id": "version-2026fa/finalproject"
       }
     ]
   }
