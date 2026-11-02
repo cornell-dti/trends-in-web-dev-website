@@ -6,9 +6,9 @@ Welcome to Lecture 6!
 
 We will introduce Express.js today, which is a backend web framework to help us with routing and middleware security.
 
-Homework: MS1, due Oct 31
+Homework: A4 due Nov 2nd. MS1, due Nov 5th
 
-[Lecture Slides](https://docs.google.com/presentation/d/14CM_VnMZTLy1S_rviC4E8FARx_8wij-u-tTmKM8Q5V0/edit?usp=sharing)
+[Lecture Slides](https://docs.google.com/presentation/d/1n1CwuWqqON8hFvWG09bpZqv4NLzKujRi_BsOPIZvX_E/edit?usp=sharing)
 
 ## Intro to Express.js
 
@@ -115,4 +115,4 @@ Postman is an API platform used for building and using APIs.
 
 ## Sample code
 
-This week's sample code starter can be found in the files under [this directory](https://github.com/cornell-dti/trends-mono-fa25).
+This week's sample code starter can be found in the files under [this directory](https://github.com/cornell-dti/trends-mono-fa26).
