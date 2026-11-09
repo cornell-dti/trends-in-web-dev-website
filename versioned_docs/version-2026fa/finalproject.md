@@ -80,7 +80,7 @@ Completing your first full-stack web development project is something worth cele
 reach out to Hannah, Temi , or Esha.
 
 :::tip
-Need help? Come to [office hours](/docs/2026sp/introduction) and we can help you debug. Also feel free to post questions on Ed!
+Need help? Come to [office hours](/docs/2026fa/introduction) and we can help you debug. Also feel free to post questions on Ed!
 :::
 
 :::danger
@@ -147,6 +147,7 @@ This is subject to change.
 - Get in contact with your partner(s) early! _Better initial planning means less frustrations later on._
 - Be realistic. We know you are ambitious, but also understand your own capabilities, and avoid changing ideas halfway through.
 - Use git.
+  - Follow the [Git and GitHub tutorial](./github.md) to set up Git, clone the repository, and sync your work.
   - It is great for sharing code between you and your partner/team members. _Please_ don't just email code back and forth.
   - Use git branches!
     - When developing a feature, you should open up a new GitHub branch rather than committing and pushing directly to the main branch. This will allow you to develop your feature independently of the current state of main (and what your partners are doing) and only merge in when you are sure your feature is done and works.
