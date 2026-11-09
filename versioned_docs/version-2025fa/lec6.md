@@ -2,6 +2,7 @@
 id: lec6
 title: Lecture 6
 ---
+
 Welcome to Lecture 6!
 
 We will introduce Express.js today, which is a backend web framework to help us with routing and middleware security.
