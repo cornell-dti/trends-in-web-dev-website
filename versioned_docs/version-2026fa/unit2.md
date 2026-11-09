@@ -9,7 +9,7 @@ This unit will cover the basics of frontend development using React, a popular f
 
 Homework:[HW3](/docs/assignment3)
 
-Slides: 
+Slides:
 [Lec 03](https://docs.google.com/presentation/d/1QCNsGqugHVP6u4RDSIF2bVqNyDDYlscEGYsz06_wrnI/edit?usp=sharing)
 
 To get the updated demo for Lecture 3, run the following:

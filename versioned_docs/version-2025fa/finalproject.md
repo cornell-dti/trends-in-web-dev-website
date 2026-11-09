@@ -66,7 +66,7 @@ For this milestone, you should have fully functioning prototype with maybe some 
 Submit your final work! Great job and we're all excited for demo day!!
 **Make sure to fill out this [Peer Review Form (coming soon)](#) for all members on your team**
 
-#### FINAL PRESENTATION DAY: December 3rd, 2025 (7:30 PM) in Upson 
+#### FINAL PRESENTATION DAY: December 3rd, 2025 (7:30 PM) in Upson
 
 **Requirements**
 

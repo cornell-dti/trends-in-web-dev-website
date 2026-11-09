@@ -4,6 +4,7 @@ title: Lecture 8
 ---
 
 <!-- Lecture slides will be posted soon! -->
+
 [Lecture Slides](https://docs.google.com/presentation/d/1pUnFzn9p5GsmzQQoehW1fOhjpzcffvYH---JmQwBjqE/edit?usp=sharing)
 
 [Final Project](finalproject)
@@ -304,7 +305,6 @@ addDoc(collection(db, 'tasks'), task);
 ## Demo code
 
 The current demo is adding Authentication to our [Courseplan Clone](https://github.com/cornell-dti/trends-mono-sp26/tree/main/demos/lec8)
-
 
 The old demo for this class created a TODO App:
 Feel free to reference our [demo code](https://github.com/cornell-dti/trends-mono-sp25/tree/main/demos/lec8)

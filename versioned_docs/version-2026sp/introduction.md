@@ -120,6 +120,7 @@ By the end of the course, a student will be able to:
 We highly recommend that you have a computer capable of running a modern web browser and text editor, as well as access to a stable internet connection.
 
 ## Course Schedule
+
 <table>
   <thead>
     <tr>
@@ -184,13 +185,13 @@ You are allowed max 3 slip days (out of 6 total for all assignments besides the 
 
 The class is scheduled to finish well before finals week.
 
-| Assignment   | Topic                   | Due Date          |
-| ------------ | ----------------------- | ----------------- |
-| Assignment 1 | JavaScript Fundamentals | March 2nd  |
-| Assignment 2 | TypeScript Fundamentals | March 9th  |
-| Assignment 3 | Frontend Capstone       | March 23rd |
-| Assignment 4 | Data Fetching           | April 6th |
-| Assignment 5 | Final Project           | May 5th by 11:59pm  |
+| Assignment   | Topic                   | Due Date           |
+| ------------ | ----------------------- | ------------------ |
+| Assignment 1 | JavaScript Fundamentals | March 2nd          |
+| Assignment 2 | TypeScript Fundamentals | March 9th          |
+| Assignment 3 | Frontend Capstone       | March 23rd         |
+| Assignment 4 | Data Fetching           | April 6th          |
+| Assignment 5 | Final Project           | May 5th by 11:59pm |
 
 More details regarding the final project will be released upon starting the course.
 

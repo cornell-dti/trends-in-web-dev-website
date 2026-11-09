@@ -70,7 +70,7 @@ Apply [here](https://docs.google.com/forms/d/e/1FAIpQLSdi76uiPGyFWR0OffAFIAivySm
 
 We will be distributing enrollment/permission pins soon after the application period closes.
 
-If you are still interested in taking the course, please email hyz4@cornell.edu by September 25th! 
+If you are still interested in taking the course, please email hyz4@cornell.edu by September 25th!
 
 ### Pre-Course Assessment
 
@@ -97,6 +97,7 @@ By the end of the course, a student will be able to:
 We highly recommend that you have a computer capable of running a modern web browser and text editor, as well as access to a stable internet connection.
 
 ## Course Schedule
+
 <table>
   <thead>
     <tr>
@@ -161,13 +162,13 @@ You are allowed max 3 slip days (out of 6 total for all assignments besides the 
 
 The class is scheduled to finish well before finals week.
 
-| Assignment   | Topic                   | Due Date          |
-| ------------ | ----------------------- | ----------------- |
-| Assignment 1 | JavaScript Fundamentals | 9/28  |
-| Assignment 2 | TypeScript Fundamentals | 8/5  |
-| Assignment 3 | Frontend Capstone       | 10/19 |
-| Assignment 4 | Data Fetching           | 10/26 |
-| Assignment 5 | Final Project           | 12/3 |
+| Assignment   | Topic                   | Due Date |
+| ------------ | ----------------------- | -------- |
+| Assignment 1 | JavaScript Fundamentals | 9/28     |
+| Assignment 2 | TypeScript Fundamentals | 8/5      |
+| Assignment 3 | Frontend Capstone       | 10/19    |
+| Assignment 4 | Data Fetching           | 10/26    |
+| Assignment 5 | Final Project           | 12/3     |
 
 More details regarding the final project will be released upon starting the course.
 

@@ -4,13 +4,16 @@ title: Live Courseplan Clone Demo
 ---
 
 # Demo
+
 Starting from lecture 3, we will build a Courseplan Clone Demo, combining all the concepts we have learned so far. This demo will be a simplified version of the Courseplan website, which allows students to view and manage their courses.
 
 ## Learning objectives
+
 - Understand how to structure a full-stack web application using React, Express, and Firebase.
 - Learn how to implement user authentication and authorization using Firebase Auth.
 
 ## Setup
+
 First let us up the project. Please follow this video tutorial. We will be pulling from a starter repo. As each lecture progresses, we will be adding more code.
 
 ```bash
@@ -27,13 +30,14 @@ If you are getting errors such as a package not existing, then this is most like
 
 ```bash
 git clone <git repo URL>
-git pull 
+git pull
 cd demos/lec<number>
 pnpm i or yarn install
 pnpm dev
 ```
 
 ## Demonstration
+
 <iframe
   width="560"
   height="315"
@@ -43,6 +47,7 @@ pnpm dev
 ></iframe>
 
 ## Breakdown of the demos
+
 - Lec 2-4: Setting up the frontend using React and TypeScript.
 - Lec 5: Implementing HTTP requests using React hooks and Axios.
 - Lec 6: Implementing the backend using Express.

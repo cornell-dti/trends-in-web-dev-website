@@ -9,9 +9,9 @@ This unit covers the first two lectures of the course, and introduces you to the
 
 Homework: [HW1](/docs/assignment1) and [HW2](/docs/assignment2), due September 28th and October 5th respectively.
 
-Slides: 
+Slides:
 
-[Lecture 1](https://docs.google.com/presentation/d/1E-99qEU7E0ecnZl2RBG-yLH5FBlecrdU6ysJ0P8ttmU/edit?usp=sharing) 
+[Lecture 1](https://docs.google.com/presentation/d/1E-99qEU7E0ecnZl2RBG-yLH5FBlecrdU6ysJ0P8ttmU/edit?usp=sharing)
 
 To get the updated demo for Lecture 1, run the following:
 
