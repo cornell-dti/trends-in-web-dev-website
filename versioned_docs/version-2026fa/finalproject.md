@@ -46,6 +46,7 @@ For this milestone, we expect a skeleton of a website. So, by this checkpoint, y
 - Express API & server that supports HTTP requests
   - at least one of each HTTP request type (`GET`, `POST`, `PUT`, `DELETE`)
   - full implementation is not necessary, we just want to see the outline of each route function
+- *New* : Please submit a link to your Github repository on CMSX. We recommended creating a txt file and pasting a URL to your repo in it. This will allow us to check your progress and provide feedback on your code.
 
 ### Milestone 3
 
@@ -59,6 +60,7 @@ For this milestone, you should have fully functioning prototype with maybe some 
   - at least one of each HTTP request type (`GET`, `POST`, `PUT`, `DELETE`)
   - full implementation should be completed here with proper read/write functionality to your Firebase database
 - Authentication
+- *New* : Please submit a link to your Github repository on CMSX. We recommended creating a txt file and pasting a URL to your repo in it. This will allow us to check your progress and provide feedback on your code.
 
 ### Final Project
 
