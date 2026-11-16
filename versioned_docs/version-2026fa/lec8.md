@@ -5,7 +5,7 @@ title: Lecture 8
 
 <!-- Lecture slides will be posted soon! -->
 
-[Lecture Slides](https://docs.google.com/presentation/d/1pUnFzn9p5GsmzQQoehW1fOhjpzcffvYH---JmQwBjqE/edit?usp=sharing)
+[Lecture Slides](https://docs.google.com/presentation/d/1Hd2UpHUfVpmIeG_oub992iwwxR6KyBcM0Fe9fpMUFwk/edit?usp=sharing)
 
 [Final Project](finalproject)
 
