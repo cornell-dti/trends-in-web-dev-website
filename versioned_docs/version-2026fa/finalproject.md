@@ -21,15 +21,14 @@ we've seen in the past that might help you get started!
 
 ## Milestones
 
-The project will be divided into a number of milestones to help you progress in
-a reasonable way.
+The project will be divided into a number of milestones to help you progress in a reasonable way. **Your team must meet with your assigned TA for each of the three milestones.** Each meeting can take place virtually or in person.
 
 Your remaining slip days are still valid for this. The group's allotted slip days is the max of your group members'. **You are allowed to use at most 3 slip days per each of Milestones 1, 2, 3.**
 
 ### Milestone 1
 
 **Due: November 6th, 2026 by 11:59 PM**
-This milestone is primarily focused to allow you to ideate ideas with your team (check out project suggestions for inspiration!). You will meet with your assigned TA for idea approval and roadmapping. Your assigned TA will be your primary point of contact for any trouble you face while working on the project. All our TAs are incredibly kind and supportive so don't feel intimidated!
+This milestone is primarily focused to allow you to ideate ideas with your team (check out project suggestions or [past student projects](https://new.cornelldti.org/course/trends) for inspiration!). At your meeting, discuss your roadmap and get your TA’s approval for your project idea. Your assigned TA will be your primary point of contact for any trouble you face while working on the project. All our TAs are incredibly kind and supportive so don't feel intimidated!
 
 **Requirements**
 
@@ -38,7 +37,7 @@ This milestone is primarily focused to allow you to ideate ideas with your team 
 ### Milestone 2
 
 **Due: November 13th, 2026 by 11:59 PM**
-For this milestone, we expect a skeleton of a website. So, by this checkpoint, you should have established your frontend pages and outlined the API routes you plan on implementing in Express. Your frontend and backend should be properly connected and can communicate with one another locally. Again, make sure your TA approves and has checked in with you.
+For this milestone, we expect a skeleton of a website. So, by this checkpoint, you should have established your frontend pages and outlined the API routes you plan on implementing in Express. Your frontend and backend should be properly connected and can communicate with one another locally. At your meeting, walk your assigned TA through your pages and API routes for approval.
 
 **Requirements**
 
@@ -51,7 +50,7 @@ For this milestone, we expect a skeleton of a website. So, by this checkpoint, y
 ### Milestone 3
 
 **Due: November 20th, 2026 by 11:59 PM.**
-For this milestone, you should have fully functioning prototype with maybe some minor bugs and getting your web application ready to be deployed. This is your final TA check in.
+For this milestone, you should have fully functioning prototype with maybe some minor bugs and getting your web application ready to be deployed. Demo your prototype at your final meeting with your assigned TA.
 
 **Requirements**
 
