@@ -12,7 +12,7 @@
     "format:check": "prettier --check '**/*.{ts,js,tsx,jsx,scss,css,html,md}'"
   },
   "dependencies": {
-    "@docusaurus/core": "2.0.0-beta.7",
+    "@docusaurus/core": "2.3.1",
     "@docusaurus/preset-classic": "2.0.0-beta.7",
     "@docusaurus/theme-classic": "2.0.0-beta.7",
     "@mdx-js/react": "^1.6.22",
