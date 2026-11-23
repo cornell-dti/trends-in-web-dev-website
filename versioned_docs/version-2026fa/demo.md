@@ -47,3 +47,4 @@ pnpm dev
 - Lec 6: Implementing the backend using Express.
 - Lec 7: Integrating Firebase for data storage.
 - Lec 8: Implementing user authentication and authorization using Firebase Auth.
+- Lec 9: Deplying demo using Vercel and Google Cloud Run

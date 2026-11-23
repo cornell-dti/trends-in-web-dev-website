@@ -46,7 +46,7 @@ Please note that some schedules may be subject to change; always check the lates
 
 This course meets once a week for 10 weeks for a total of 9 lectures and a final project presentation.
 
-We will meet weekly at **Philips 203**. Lecture 1 will start on **September 21st**.
+We will meet weekly at **Phillips 203**. Lecture 1 will start on **September 21st**.
 
 ## Course Description
 

@@ -1,6 +1,6 @@
 ---
 id: lec5
-title: Lecture 5 / Data Fetching
+title: Lecture 5
 ---
 
 Welcome to Lecture 5!

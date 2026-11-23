@@ -3,15 +3,15 @@ id: lec9
 title: Lecture 9
 ---
 
-[Lecture Slides](https://docs.google.com/presentation/d/1gXts4lVmD_pmwmXQWYI6bm_j3dyjuY4bTKCl6eB4vLs/edit?usp=sharing)
+[Lecture Slides](https://docs.google.com/presentation/d/19hYPVOnGaGTs9WuPwHAozivuwK65lpcmtC_dQ1H_Tm8/edit?usp=sharing)
 
 [Final Project Instructions](finalproject)
 
 # Quick Announcements
 
 - Final Project Demonstration
-  - Monday 5/4 7:30 - 8:45 PM
-  - Location: Upson 216
+  - Monday 11/30 7:30 - 8:45 PM
+  - Location: Phillips 203
   - Attendance of your whole team is required!
   - Structure of the demo day:
     - Each team will be assigned a personal table to demo your project.
@@ -59,7 +59,7 @@ Platforms like **Google Cloud Run** make it easy to deploy Docker containers. Cl
 
 ### Steps to Deploy (Backend)
 
-We have prepared a comprehensive guide in the [lecture demo repository](https://github.com/cornell-dti/trends-mono-fa25/tree/main/demos/lec9/server).
+We have prepared a comprehensive guide in the [lecture demo repository](https://github.com/cornell-dti/trends-mono-fa26/tree/main/demos/lec9/server).
 
 **Summary of Steps:**
 
@@ -87,6 +87,6 @@ Some further technologies:
 
 # Final Course Feedback (10% of your Grade)
 
-Let us know your thoughts by filling out [Final Project Feedback Form](https://forms.gle/W9zELJCdKKsdvxRn8) and [Final Feedback Form](https://forms.gle/UjSrQhccHbgcdcoY9) by **Dec 3 (11:59PM)**.
+Let us know your thoughts by filling out [Final Project Feedback Form](https://forms.gle/Dx9bqgCJ5p4MckfS8) and [Final Feedback Form](https://forms.gle/ZUmExxx5Rbj8ZRwK6) by **Nov 30th (11:59PM)**.
 
 Thank you!
