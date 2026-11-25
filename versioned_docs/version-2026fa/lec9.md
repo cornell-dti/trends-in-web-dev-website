@@ -18,6 +18,9 @@ title: Lecture 9
     - You can visit other team's table to learn about other team's projects.
     - Instructors will visit each table one by one to grade your projects.
   - Pizza will be provided!
+- Fill out the feedback forms by **Dec 2nd (11:59PM)** (10% of your grade)
+  - [Final Feedback](https://forms.gle/azvrHfDcZsQRBwSk7)
+  - [Project Feedback](https://forms.gle/UPjzXv8wqnp42Gjx9)
 
 # Containerization Concepts
 
@@ -87,6 +90,6 @@ Some further technologies:
 
 # Final Course Feedback (10% of your Grade)
 
-Let us know your thoughts by filling out [Final Project Feedback Form](https://forms.gle/Dx9bqgCJ5p4MckfS8) and [Final Feedback Form](https://forms.gle/ZUmExxx5Rbj8ZRwK6) by **Nov 30th (11:59PM)**.
+Let us know your thoughts by filling out [Project Feedback](https://forms.gle/UPjzXv8wqnp42Gjx9) and [Final Feedback](https://forms.gle/azvrHfDcZsQRBwSk7) by **Dec 2nd (11:59PM)**.
 
 Thank you!

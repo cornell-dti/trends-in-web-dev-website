@@ -28,7 +28,7 @@ Your remaining slip days are still valid for this. The group's allotted slip day
 ### Milestone 1
 
 **Due: November 6th, 2026 by 11:59 PM**
-This milestone is primarily focused to allow you to ideate ideas with your team (check out project suggestions or [past student projects](https://new.cornelldti.org/course/trends) for inspiration!). At your meeting, discuss your roadmap and get your TA’s approval for your project idea. Your assigned TA will be your primary point of contact for any trouble you face while working on the project. All our TAs are incredibly kind and supportive so don't feel intimidated!
+This milestone is primarily focused to allow you to ideate ideas with your team (check out project suggestions or [past student projects](https://new.cornelldti.org/course/trends#:~:text=Past%20student%20projects) for inspiration!). At your meeting, discuss your roadmap and get your TA’s approval for your project idea. Your assigned TA will be your primary point of contact for any trouble you face while working on the project. All our TAs are incredibly kind and supportive so don't feel intimidated!
 
 **Requirements**
 
@@ -65,9 +65,9 @@ For this milestone, you should have fully functioning prototype with maybe some 
 
 **Due: November 30th, 2026 by 11:59 PM**
 Submit your final work! Great job and we're all excited for demo day!!
-**Make sure to fill out this [Peer Review Form (coming soon)](#) for all members on your team**
+**Make sure to fill out this [Peer Review Form](https://forms.gle/Hafrk1itEVTRgdnD8) for all members on your team** (5% of your project grade).
 
-#### FINAL PRESENTATION DAY: November 30th, 2026 (7:30 PM) in (TBD) Location.
+#### FINAL PRESENTATION DAY: November 30th, 2026 (7:30 PM) in Phillips 203.
 
 **Requirements**
 
@@ -78,7 +78,7 @@ Please prepare to present a demo that is approximately **5 minutes**. Please als
 - Something you would like to improve upon if you were to continue working on the project
 
 Completing your first full-stack web development project is something worth celebrating! If you are in a group, please try to have all members present. We are excited to see all of your presentations! If there are any questions or concerns,
-reach out to Hannah, Temi , or Esha.
+reach out to Hannah, Temi, or Esha.
 
 :::tip
 Need help? Come to [office hours](/docs/2026fa/introduction) and we can help you debug. Also feel free to post questions on Ed!
@@ -89,8 +89,6 @@ Do not push private API keys, Firebase service accounts, or other sensitive info
 
 Note that firebase configs for the frontend are fine (and **should be**) included in your submission.
 :::
-
-Submit a zip file of your project to CMSX and fill out this [Final Project Link (coming soon)](#) by the deadline!
 
 ## Optional Extensions
 
@@ -106,42 +104,29 @@ If you're looking for an added challenge, consider doing one or more of these ex
 This is subject to change.
 
 - Frontend (25%)
-
   - Use of ES6 & TypeScript
   - Component structure
   - Use of hooks
   - Functional programming
-
 - Database/Backend (20%)
-
   - Data fetching
   - Data insertion
   - Data deletion
   - Proper frontend/backend communication
-
 - Auth (10%)
-
   - Authentication (using Firebase auth)
-
 - Styling (5%)
-
 - Deployment (5%)
-
 - Code style and file structure (5%)
-
 - Effort (10%)
-
   - This may seem like an arbitrary measure, but we expect most people to
-    get most of the points here; the only way to lose points is if it is
-    clear that not a lot of effort has been put in or you are consistently
-    missing milestones.
-
+  get most of the points here; the only way to lose points is if it is
+  clear that not a lot of effort has been put in or you are consistently
+  missing milestones.
 - Milestones (15%)
-
   - Each milestone is worth 5% of your grade.
-
 - Peer Review (5%)
-  - Fill out this [Peer Review Form (coming soon)](#) for all members on your team
+  - Fill out this [Peer Review Form](https://forms.gle/Hafrk1itEVTRgdnD8) for all members on your team
 
 ## Tips for Success!
 

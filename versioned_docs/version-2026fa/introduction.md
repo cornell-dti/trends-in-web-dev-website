@@ -181,7 +181,7 @@ First, we will determine your numerical grade. This will be done by the followin
 | Assignment           | Percentage of Grade                                                  |
 | -------------------- | -------------------------------------------------------------------- |
 | Attendance           | 20% (based on weekly lecture forms, can miss 1 of 9 without penalty) |
-| Filling out Feedback | 10%                                                                  |
+| Filling out Feedback | 10% ([Final Feedback](https://forms.gle/azvrHfDcZsQRBwSk7) and [Project Feedback](https://forms.gle/UPjzXv8wqnp42Gjx9)) |
 | Final Project        | 30%                                                                  |
 | Assignments          | 40%                                                                  |
 
